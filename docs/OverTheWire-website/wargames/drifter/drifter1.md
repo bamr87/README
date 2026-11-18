@@ -2,7 +2,9 @@
 gamename: drifter
 layout: default
 level: 1
-source_file: drifter1.md
+source_file: wargames/drifter/drifter1.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/drifter/drifter1.md
 title: Drifter1
 ---
 Level 1 is a file parsing / heap corruption bug, with C++ classes.

@@ -21,17 +21,20 @@ permalink: /fr/docs/development/prd/
 preview: /images/previews/product-requirements-document.png
 sidebar:
   nav: docs
-source_file: prd.md
+source_file: fr/docs/development/prd.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/prd.md
 tags:
 - prd
 - requirements
 - product
 - vision
-title: Document d'exigences produit
+title: Document d'exigences produit Zer0-Mistakes
 translated_from_sha: 591ee4d82bd6
 translation_of: pages/_docs/development/prd.md
 translation_source_url: /docs/development/prd/
 ---
+
 # Document d'exigences produit
 
 Le thème Jekyll Zer0-Mistakes conserve son PRD complet — vision, personas d'utilisateurs, exigences fonctionnelles, architecture technique, indicateurs clés de performance, feuille de route et critères d'acceptation — comme référence pour les contributeurs dans la documentation technique du dépôt.

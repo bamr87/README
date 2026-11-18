@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29577137232
 slice: system-engineer/1001
-source_file: 2026-07-17-system-engineer-1001.md
+source_file: pages/_quest-reports/2026-07-17-system-engineer-1001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-17-system-engineer-1001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-17-system-engineer-1001.md
 tags:
 - system-engineer
 - level-1001
@@ -25,13 +27,14 @@ tags:
 - kubernetes-orchestration
 theme: Kubernetes Orchestration
 tier: Warrior
-title: 2026 07 17 System Engineer 1001
+title: System Engineer · L1001 · 2026-07-17
 verdict: warn
 walk_date: '2026-07-17'
 ---
+
 > **Slice** `system-engineer/1001` · **Level** 1001 (Kubernetes Orchestration) · **Warrior tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-17
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29577137232) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-17-system-engineer-1001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-17-system-engineer-1001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29577137232) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-17-system-engineer-1001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-17-system-engineer-1001.md)
 
 ---
 

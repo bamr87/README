@@ -6,12 +6,15 @@ date: 2026-09-19 02:55:36+00:00
 description: The four extension points this theme guarantees consumers — a code-block-ready
   event, asset frontmatter, the wiki index shape, and _includes/custom overrides.
 lastmod: 2026-09-19 02:55:36+00:00
-source_file: extension-points.md
+source_file: docs/development/extension-points.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/development/extension-points.md
 tags:
 - development
 - contributing
 title: Extension Points
 ---
+
 # Extension Points
 
 The contracts a downstream site can build on, and the reasoning behind each. The consumer-facing version of this page — with live, working examples — ships with the theme at [`/docs/customization/extension-points/`](../../pages/_docs/customization/extension-points.md). This file is the maintainer's copy: what the contract is, why it exists, and what will break if it changes.

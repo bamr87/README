@@ -5,9 +5,12 @@ draft: true
 lastmod: 2025-01-27
 layout: default
 permalink: /privacy-policy/
-source_file: privacy-policy.md
+source_file: pages/privacy-policy.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/privacy-policy.md
 title: Privacy Policy
 ---
+
 # Privacy Policy
 
 _Last updated: January 27, 2025_

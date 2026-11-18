@@ -52,7 +52,9 @@ rewards:
   - 📊 Data Sage — Enhanced stats visualization on character sheet
   progression_points: 100
 skill_focus: frontend
-source_file: side-quest-stats-dashboard.md
+source_file: pages/_quests/0010/side-quest-stats-dashboard.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0010/side-quest-stats-dashboard.md
 tags:
 - '0010'
 - contributor
@@ -62,7 +64,7 @@ tags:
 - liquid
 - gamified-learning
 - project-based
-title: '📊 Stats Dashboard: Enhancing Your Data Visualization'
+title: 'Stats Dashboard: Enhancing Your Data Visualization'
 validation_criteria:
   completion_requirements:
   - New stats visualization include created
@@ -281,7 +283,7 @@ Once your enhanced stats dashboard renders on your profile, you've earned the **
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Forge Your Character: Crafting Your Contributor Identity]] **Recommended:** [[Badge Collector: Showcasing Your Achievements]] **Unlocks:** [[Contribution Calendar: Mapping Your Journey Through Time]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0010/README|Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0001/forge-your-character|Forge Your Character: Crafting Your Contributor Identity]] **Recommended:** [[it-journey/pages/_quests/0001/side-quest-badge-collector|Badge Collector: Showcasing Your Achievements]] **Unlocks:** [[it-journey/pages/_quests/0010/side-quest-contribution-calendar|Contribution Calendar: Mapping Your Journey Through Time]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

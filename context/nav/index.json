@@ -4,14 +4,31 @@
   "order": [
     "it-journey",
     "zer0-mistakes",
-    "barodybroject",
     "bashcrawl",
     "scripts",
-    "OverTheWire-website"
+    "OverTheWire-website",
+    "bamr87",
+    "bamr87.github.io",
+    "bashos",
+    "cv-pro",
+    "djangoerp",
+    "fredgar-ai",
+    "githubai",
+    "gitorio",
+    "godotgo",
+    "law-ai",
+    "lifehacker.dev",
+    "ocrmd",
+    "outbox",
+    "rewind-arcade",
+    "SCHEMA",
+    "vs-sonic-pi",
+    "zer0-CMS",
+    "zpl-viewer"
   ],
   "counts": {
-    "projects": 6,
-    "pages": 2291
+    "projects": 23,
+    "pages": 4348
   },
   "projects": {
     "it-journey": {
@@ -20,11 +37,11 @@
       "tree": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
       "registered": true,
-      "pages": 972,
-      "sections": 99,
-      "max_depth": 7,
-      "skipped": 17,
-      "fingerprint": "f3bd0eadf6aaa70b"
+      "pages": 557,
+      "sections": 54,
+      "max_depth": 5,
+      "skipped": 0,
+      "fingerprint": "a237764155ae7cf9"
     },
     "zer0-mistakes": {
       "title": "Zer0 Mistakes",
@@ -32,23 +49,11 @@
       "tree": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
       "registered": true,
-      "pages": 684,
-      "sections": 100,
+      "pages": 558,
+      "sections": 95,
       "max_depth": 6,
-      "skipped": 9,
-      "fingerprint": "e20fbda967575408"
-    },
-    "barodybroject": {
-      "title": "Barody Project",
-      "corpus": "docs/barodybroject",
-      "tree": "context/nav/barodybroject.json",
-      "browse": "docs/browse/barodybroject.md",
-      "registered": true,
-      "pages": 269,
-      "sections": 56,
-      "max_depth": 7,
-      "skipped": 8,
-      "fingerprint": "ba6ba8ee5ae0cefe"
+      "skipped": 2,
+      "fingerprint": "e46a70d6f67dbdb1"
     },
     "bashcrawl": {
       "title": "Bash Crawl",
@@ -56,11 +61,11 @@
       "tree": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
       "registered": true,
-      "pages": 95,
-      "sections": 17,
+      "pages": 80,
+      "sections": 16,
       "max_depth": 3,
-      "skipped": 5,
-      "fingerprint": "4c3b2e998a3f9aef"
+      "skipped": 0,
+      "fingerprint": "fe25737df1f1b2a5"
     },
     "scripts": {
       "title": "Scripts",
@@ -68,11 +73,11 @@
       "tree": "context/nav/scripts.json",
       "browse": "docs/browse/scripts.md",
       "registered": true,
-      "pages": 29,
+      "pages": 25,
       "sections": 5,
       "max_depth": 3,
-      "skipped": 1,
-      "fingerprint": "529720b4afba9a54"
+      "skipped": 0,
+      "fingerprint": "e3d3face0a2e07dd"
     },
     "OverTheWire-website": {
       "title": "OverTheWire",
@@ -84,7 +89,223 @@
       "sections": 17,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "ceab543eb82ca094"
+      "fingerprint": "d13ab0297f60cc87"
+    },
+    "bamr87": {
+      "title": "Fleet Hub",
+      "corpus": "docs/bamr87",
+      "tree": "context/nav/bamr87.json",
+      "browse": "docs/browse/bamr87.md",
+      "registered": true,
+      "pages": 275,
+      "sections": 40,
+      "max_depth": 4,
+      "skipped": 0,
+      "fingerprint": "657a249fb83ef242"
+    },
+    "bamr87.github.io": {
+      "title": "Personal Site",
+      "corpus": "docs/bamr87.github.io",
+      "tree": "context/nav/bamr87.github.io.json",
+      "browse": "docs/browse/bamr87.github.io.md",
+      "registered": true,
+      "pages": 94,
+      "sections": 19,
+      "max_depth": 5,
+      "skipped": 0,
+      "fingerprint": "9dbe4519b0f1f8cd"
+    },
+    "bashos": {
+      "title": "BashOS",
+      "corpus": "docs/bashos",
+      "tree": "context/nav/bashos.json",
+      "browse": "docs/browse/bashos.md",
+      "registered": true,
+      "pages": 80,
+      "sections": 15,
+      "max_depth": 4,
+      "skipped": 0,
+      "fingerprint": "d97d9acc627e6fd1"
+    },
+    "cv-pro": {
+      "title": "CV Pro",
+      "corpus": "docs/cv-pro",
+      "tree": "context/nav/cv-pro.json",
+      "browse": "docs/browse/cv-pro.md",
+      "registered": true,
+      "pages": 32,
+      "sections": 6,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "18b990201059e6d1"
+    },
+    "djangoerp": {
+      "title": "Django ERP",
+      "corpus": "docs/djangoerp",
+      "tree": "context/nav/djangoerp.json",
+      "browse": "docs/browse/djangoerp.md",
+      "registered": true,
+      "pages": 18,
+      "sections": 3,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "20ddf64fe1501ab3"
+    },
+    "fredgar-ai": {
+      "title": "Fredgar AI",
+      "corpus": "docs/fredgar-ai",
+      "tree": "context/nav/fredgar-ai.json",
+      "browse": "docs/browse/fredgar-ai.md",
+      "registered": true,
+      "pages": 38,
+      "sections": 6,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "6acbd5f9b5a9273f"
+    },
+    "githubai": {
+      "title": "GitHub AI",
+      "corpus": "docs/githubai",
+      "tree": "context/nav/githubai.json",
+      "browse": "docs/browse/githubai.md",
+      "registered": true,
+      "pages": 54,
+      "sections": 10,
+      "max_depth": 4,
+      "skipped": 0,
+      "fingerprint": "3199ee0d55b1adce"
+    },
+    "gitorio": {
+      "title": "Gitorio",
+      "corpus": "docs/gitorio",
+      "tree": "context/nav/gitorio.json",
+      "browse": "docs/browse/gitorio.md",
+      "registered": true,
+      "pages": 145,
+      "sections": 37,
+      "max_depth": 5,
+      "skipped": 0,
+      "fingerprint": "93265378ad22b394"
+    },
+    "godotgo": {
+      "title": "GodotGo",
+      "corpus": "docs/godotgo",
+      "tree": "context/nav/godotgo.json",
+      "browse": "docs/browse/godotgo.md",
+      "registered": true,
+      "pages": 31,
+      "sections": 6,
+      "max_depth": 4,
+      "skipped": 0,
+      "fingerprint": "1e16c4ff34423103"
+    },
+    "law-ai": {
+      "title": "Law AI",
+      "corpus": "docs/law-ai",
+      "tree": "context/nav/law-ai.json",
+      "browse": "docs/browse/law-ai.md",
+      "registered": true,
+      "pages": 301,
+      "sections": 74,
+      "max_depth": 6,
+      "skipped": 0,
+      "fingerprint": "221ca68765577dac"
+    },
+    "lifehacker.dev": {
+      "title": "Lifehacker",
+      "corpus": "docs/lifehacker.dev",
+      "tree": "context/nav/lifehacker.dev.json",
+      "browse": "docs/browse/lifehacker.dev.md",
+      "registered": true,
+      "pages": 137,
+      "sections": 12,
+      "max_depth": 4,
+      "skipped": 1,
+      "fingerprint": "1587a747f10b0283"
+    },
+    "ocrmd": {
+      "title": "OCRmd",
+      "corpus": "docs/ocrmd",
+      "tree": "context/nav/ocrmd.json",
+      "browse": "docs/browse/ocrmd.md",
+      "registered": true,
+      "pages": 26,
+      "sections": 4,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "4f7fa88f3a3ddcd7"
+    },
+    "outbox": {
+      "title": "Outbox",
+      "corpus": "docs/outbox",
+      "tree": "context/nav/outbox.json",
+      "browse": "docs/browse/outbox.md",
+      "registered": true,
+      "pages": 22,
+      "sections": 4,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "4502267585c36300"
+    },
+    "rewind-arcade": {
+      "title": "Rewind Arcade",
+      "corpus": "docs/rewind-arcade",
+      "tree": "context/nav/rewind-arcade.json",
+      "browse": "docs/browse/rewind-arcade.md",
+      "registered": true,
+      "pages": 76,
+      "sections": 11,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "739dd7de909b9687"
+    },
+    "SCHEMA": {
+      "title": "SCHEMA Protocol",
+      "corpus": "docs/SCHEMA",
+      "tree": "context/nav/SCHEMA.json",
+      "browse": "docs/browse/SCHEMA.md",
+      "registered": true,
+      "pages": 36,
+      "sections": 10,
+      "max_depth": 5,
+      "skipped": 0,
+      "fingerprint": "3af5a8ad7a54eefa"
+    },
+    "vs-sonic-pi": {
+      "title": "VS Sonic Pi",
+      "corpus": "docs/vs-sonic-pi",
+      "tree": "context/nav/vs-sonic-pi.json",
+      "browse": "docs/browse/vs-sonic-pi.md",
+      "registered": true,
+      "pages": 118,
+      "sections": 6,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "3b6f3f4d049a2c4d"
+    },
+    "zer0-CMS": {
+      "title": "Zer0 CMS",
+      "corpus": "docs/zer0-CMS",
+      "tree": "context/nav/zer0-CMS.json",
+      "browse": "docs/browse/zer0-CMS.md",
+      "registered": true,
+      "pages": 1201,
+      "sections": 181,
+      "max_depth": 6,
+      "skipped": 6,
+      "fingerprint": "59103111812aba85"
+    },
+    "zpl-viewer": {
+      "title": "ZPL Viewer",
+      "corpus": "docs/zpl-viewer",
+      "tree": "context/nav/zpl-viewer.json",
+      "browse": "docs/browse/zpl-viewer.md",
+      "registered": true,
+      "pages": 19,
+      "sections": 4,
+      "max_depth": 3,
+      "skipped": 0,
+      "fingerprint": "bc06688437978d88"
     },
     "adr": {
       "title": "Adr",
@@ -92,11 +313,11 @@
       "tree": "context/nav/adr.json",
       "browse": "docs/browse/adr.md",
       "registered": false,
-      "pages": 3,
+      "pages": 4,
       "sections": 0,
       "max_depth": 1,
       "skipped": 0,
-      "fingerprint": "4a1e5aee1763e8ad"
+      "fingerprint": "5e760fee94927e8b"
     },
     "amendments": {
       "title": "Amendments",
@@ -109,6 +330,18 @@
       "max_depth": 1,
       "skipped": 0,
       "fingerprint": "2de79048bf37776f"
+    },
+    "brain": {
+      "title": "Brain",
+      "corpus": "docs/brain",
+      "tree": "context/nav/brain.json",
+      "browse": "docs/browse/brain.md",
+      "registered": false,
+      "pages": 182,
+      "sections": 2,
+      "max_depth": 2,
+      "skipped": 0,
+      "fingerprint": "99c56b18965350be"
     },
     "results": {
       "title": "Results",

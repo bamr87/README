@@ -72,7 +72,9 @@ oven:
 permalink: /recipes/no-knead-focaccia/
 ratio: '5 flour : 4 water'
 ratio_basis: flour
-source_file: no-knead-focaccia.md
+source_file: pages/_recipes/no-knead-focaccia.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_recipes/no-knead-focaccia.md
 steps:
 - items:
   - text: Whisk the flour, salt and yeast together in a large bowl. Pour in the water
@@ -118,10 +120,11 @@ times:
   prep: 20
   rest: 720
   rest_label: Ferment
-title: No Knead Focaccia
+title: No-Knead Focaccia
 yield:
   amount: 12
   singular: piece
   unit: pieces
 ---
+
 Focaccia is the recipe that proves ratios are worth learning. There is nothing in it but flour, water, salt, yeast and oil — the whole character of the bread lives in the proportions, and in leaving it alone long enough. Once you can read the table at the bottom of this page, you can rebuild this bread at any size, in any pan, without a recipe at all.

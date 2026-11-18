@@ -65,7 +65,9 @@ rewards:
   - Ability to participate in community discussions
   - Foundation for version control learning
 skill_focus: fullstack
-source_file: hello-noob.md
+source_file: pages/_quests/0000/hello-noob.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/hello-noob.md
 sub_title: 'Level 0000 (0) Main Quest: First Steps in Digital Collaboration'
 tags:
 - '0000'
@@ -74,7 +76,7 @@ tags:
 - beginner
 - init-world
 - community-entry
-title: Hello Noob
+title: 'Hello n00b: Your First Steps into the IT Journey'
 validation_criteria:
   completion_requirements:
   - Successfully create a GitHub account
@@ -371,7 +373,7 @@ Your GitHub account opens up incredible possibilities:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

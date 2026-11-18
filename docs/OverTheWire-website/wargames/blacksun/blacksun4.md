@@ -2,7 +2,9 @@
 gamename: blacksun
 layout: default
 level: 4
-source_file: blacksun4.md
+source_file: wargames/blacksun/blacksun4.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/blacksun/blacksun4.md
 title: Blacksun4
 ---
 level4 is an installation of Apache and PHP with an introduced heap vulnerability.

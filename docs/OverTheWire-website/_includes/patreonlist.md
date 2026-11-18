@@ -1,5 +1,7 @@
 ---
-source_file: patreonlist.md
+source_file: _includes/patreonlist.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/_includes/patreonlist.md
 title: Patreonlist
 ---
 {% raw %}

@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29494904212
 slice: data-scientist/1100
-source_file: 2026-07-16-data-scientist-1100.md
+source_file: pages/_quest-reports/2026-07-16-data-scientist-1100.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-16-data-scientist-1100.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-16-data-scientist-1100.md
 tags:
 - data-scientist
 - level-1100
@@ -25,13 +27,14 @@ tags:
 - data-engineering
 theme: Data Engineering
 tier: Master
-title: 2026 07 16 Data Scientist 1100
+title: Data Scientist · L1100 · 2026-07-16
 verdict: fail
 walk_date: '2026-07-16'
 ---
+
 > **Slice** `data-scientist/1100` · **Level** 1100 (Data Engineering) · **Master tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-16
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29494904212) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-16-data-scientist-1100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-16-data-scientist-1100.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29494904212) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-16-data-scientist-1100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-16-data-scientist-1100.md)
 
 ---
 
@@ -39,7 +42,7 @@ walk_date: '2026-07-16'
 
 I walked window **1 of 3** of the Data Scientist's Level **1100 (Data Engineering, Master tier)** — five `main_quest` files, dependency-sorted, played end-to-end by the sealed agentic **execute** engine and then re-read by me as a linked learner journey. The headline is **fail**: only the one genuinely on-theme data quest holds up.
 
-**Data Warehousing** (the single SQL / dimensional-modeling quest in this window) is excellent — **92%, every runnable snippet ran and matched the documented output**. The other four quests are not really data-science content at all; they are GitHub-Actions / agentic-CI automation chapters from two unrelated quest lines that happen to carry the `1100` level tag. Each of those four ships copy-pasteable code with a **verified runtime bug**: two share the identical leaked-Jekyll-`{​% raw %​}` artifact that breaks `${​{ ... }​}` expressions, and two share GitHub-Actions permission / git-identity defects. A data-scientist learner who reached this level for warehousing would sail through the first quest and then hit four broken automation workflows that a maintainer should fix before learners rely on the code.
+**Data Warehousing** (the single SQL / dimensional-modeling quest in this window) is excellent — **92%, every runnable snippet ran and matched the documented output**. The other four quests are not really data-science content at all; they are GitHub-Actions / agentic-CI automation chapters from two unrelated quest lines that happen to carry the `1100` level tag. Each of those four ships copy-pasteable code with a **verified runtime bug**: two share the identical leaked-Jekyll-`{% raw %}` artifact that breaks `${{ ... }}` expressions, and two share GitHub-Actions permission / git-identity defects. A data-scientist learner who reached this level for warehousing would sail through the first quest and then hit four broken automation workflows that a maintainer should fix before learners rely on the code.
 
 ## 🗺️ The Journey
 
@@ -48,8 +51,8 @@ I walked window **1 of 3** of the Data Scientist's Level **1100 (Data Engineerin
 | 1 | ✅ pass | Data Warehousing: Build a Dimensional Star Schema in SQL | 92 | Every SQL/DuckDB snippet executed as documented; only a minor SQLite-FK-enforcement caveat. |
 | 2 | ⚠️ warn | The Editor's Eye: A Reviewer, and the Dragon It Becomes | 64 | Sound design, but a real YAML syntax error in the BROKEN example + an actionlint-confirmed script-injection anti-pattern in the "safe CI" reference code. |
 | 3 | ❌ fail | The Bard Forge: The Quest That Writes Quests | 57 | Logic works, but the `contents: read`-only permissions block 403s the script's own `gh pr view`, and the proposal-PR `git commit` fails (exit 128) with no git identity. |
-| 4 | ❌ fail | The Agent Pantheon: Multi-Agent Lifecycle Management | 54 | Leaked `{​% raw %​}` breaks the artifact-name expression, two referenced scripts never provided, and a status-enum / workflow-filename mismatch. |
-| 5 | ❌ fail | The Autonomy Scales: Mapping Agent Autonomy Levels | 59 | Same leaked-`{​% raw %​}` artifact (×4) causes a verified `bad substitution`; `\n` in a double-quoted PR body never becomes a newline; unscoped PR lookup. |
+| 4 | ❌ fail | The Agent Pantheon: Multi-Agent Lifecycle Management | 54 | Leaked `{% raw %}` breaks the artifact-name expression, two referenced scripts never provided, and a status-enum / workflow-filename mismatch. |
+| 5 | ❌ fail | The Autonomy Scales: Mapping Agent Autonomy Levels | 59 | Same leaked-`{% raw %}` artifact (×4) causes a verified `bad substitution`; `\n` in a double-quoted PR body never becomes a newline; unscoped PR lookup. |
 
 ## 🔬 Evidence
 
@@ -69,10 +72,10 @@ All outcomes below come from commands the execute engine actually ran in its dis
 - **Smuggle-guard logic** — content-only diff → *"'Smuggle guard passed: content-only.'"*; a diff adding `.github/workflows/evil.yml` → *"correctly failed with exit 1."* **passed**
 - **Loop-breaker** (`git log -1 --format='%an'` vs `content-review[bot]`) → *"correctly
 produced skip=true for a bot-authored commit and skip=false for a human-authored commit."* **passed**
-- **BROKEN example YAML** `with: { ref: ${​{ github.head_ref }​} }` → **failed**: *"both
-PyYAML … and Ruby's Psych … reject it, because the flow-mapping `{ }` collides with the unquoted `${​{ }​}` expression syntax. A learner pasting this exact block gets a hard YAML syntax error."*
+- **BROKEN example YAML** `with: { ref: ${{ github.head_ref }} }` → **failed**: *"both
+PyYAML … and Ruby's Psych … reject it, because the flow-mapping `{ }` collides with the unquoted `${{ }}` expression syntax. A learner pasting this exact block gets a hard YAML syntax error."*
 - **actionlint (v1.7.12)** on Chapter 1 + boss-fight "SLAIN" workflow → *"both flag
-`git push origin HEAD:${​{ github.head_ref }​}` … as … 'potentially untrusted. avoid using it directly in inline scripts.' — a genuine script-injection anti-pattern."* **passed (finding confirmed by the run)**
+`git push origin HEAD:${{ github.head_ref }}` … as … 'potentially untrusted. avoid using it directly in inline scripts.' — a genuine script-injection anti-pattern."* **passed (finding confirmed by the run)**
 - **fetch-depth clash** — combining the boss-fight `fetch-depth: 2` checkout with the
 Chapter 2 smuggle-guard `git diff "origin/${BASE}...HEAD"` → *"fails with 'fatal: ambiguous argument origin/main...HEAD'."* **reasoned via reproduction**
 
@@ -86,8 +89,8 @@ any permission explicitly sets all unlisted scopes to `none` — including `pull
 
 ### 4. The Agent Pantheon — ❌ 54 (ran 5/6, 3 passed, 2 failed, 1 reasoned)
 - **`_data/agents.yml`** → *"parses cleanly via PyYAML — 3 valid agent entries."* **passed**
-- **Leaked Jekyll tag** — `name: health-report-${​% raw %​}{​{ github.run_id }​}{​% endraw %​}`
-→ *"the resulting string is `health-report-${​% raw %​}{​{ github.run_id }​}{​% endraw %​}` — NOT `${​{ github.run_id }​}` … the artifact name would literally contain the Jekyll tag text."* **failed**
+- **Leaked Jekyll tag** — `name: health-report-${% raw %}{{ github.run_id }}{% endraw %}`
+→ *"the resulting string is `health-report-${% raw %}{{ github.run_id }}{% endraw %}` — NOT `${{ github.run_id }}` … the artifact name would literally contain the Jekyll tag text."* **failed**
 - **Missing scripts** — `load_registry.py`, `agent_health_check.py` → *"neither script
 exists anywhere in the quest content; a learner … gets an immediate 'No such file or directory' failure on the very first job step."* **failed**
 - **`python3 scripts/validate_quest.py --quest q17`** → *"failed with … No such file or directory — the validator is never provided or linked."* **failed**
@@ -96,8 +99,8 @@ absent from the Chapter 1 enum; `agent-health-check.yml` vs the created `agent-h
 
 ### 5. The Autonomy Scales — ❌ 59 (ran 2/5, 1 passed, 1 failed, 2 skipped, 1 reasoned)
 - **`_data/autonomy-matrix.yml`** → *"parses cleanly with PyYAML (5 task_classifications …); yamllint only flags cosmetic issues."* **passed**
-- **Leaked Jekyll tag ×4** — `${​% raw %​}{​{ github.event.issue.number }​}{​% endraw %​}` in
-`feature-agent-l2.yml` → *"I extracted the exact `run:` string and executed it in bash: `line 1: ${​% raw %​}…{​% endraw %​}: bad substitution`, exit 1."* **failed**
+- **Leaked Jekyll tag ×4** — `${% raw %}{{ github.event.issue.number }}{% endraw %}` in
+`feature-agent-l2.yml` → *"I extracted the exact `run:` string and executed it in bash: `line 1: ${% raw %}…{% endraw %}: bad substitution`, exit 1."* **failed**
 - **`\n` in PR body** — `--body "…\n\n…"` in a plain double-quoted bash string → *"bash does
 NOT convert `\n` to a real newline in this context — literal `\n\n` would land in the PR body."* **reasoned via reproduction**
 - **`review_autonomy_compliance.sh`** — passes `bash -n` but *"unscoped … `gh pr list
@@ -108,9 +111,9 @@ NOT convert `\n` to a real newline in this context — literal `\n\n` would land
 Grouped by quest; every item is evidenced by a command run (or an exact quoted line) above. No issue is raised for the passing Data Warehousing quest beyond its one minor accuracy caveat.
 
 - **[high] The Editor's Eye · boss-fight BROKEN example (lines ~195–211)** — *Observed:*
-`with: { ref: ${​{ github.head_ref }​} }` is a hard YAML syntax error (PyYAML + Ruby Psych both reject the flow-mapping/`${​{ }​}` collision). *Fix:* quote the expression inside the flow mapping or use block style, so the block fails for the intended pedagogical reason, not on paste.
+`with: { ref: ${{ github.head_ref }} }` is a hard YAML syntax error (PyYAML + Ruby Psych both reject the flow-mapping/`${{ }}` collision). *Fix:* quote the expression inside the flow mapping or use block style, so the block fails for the intended pedagogical reason, not on paste.
 - **[high] The Editor's Eye · Chapter 1 + boss-fight git push** — *Observed:* actionlint
-flags `git push origin HEAD:${​{ github.head_ref }​}` in `run:` as an untrusted-expression script-injection risk — in a quest whose whole premise is "event-safe" CI. *Fix:* pass `github.head_ref` through `env:` and reference `"$HEAD_REF"`; add an explicit callout.
+flags `git push origin HEAD:${{ github.head_ref }}` in `run:` as an untrusted-expression script-injection risk — in a quest whose whole premise is "event-safe" CI. *Fix:* pass `github.head_ref` through `env:` and reference `"$HEAD_REF"`; add an explicit callout.
 - **[medium] The Editor's Eye · fetch-depth mismatch** — *Observed:* naively combining the
 boss-fight `fetch-depth: 2` checkout with the Chapter 2 smuggle guard's `origin/main...HEAD` diff → "ambiguous argument … unknown revision". *Fix:* show one consolidated workflow with a single consistent `fetch-depth: 0`.
 - **[high] The Bard Forge · Chapter 1 permissions** — *Observed:* `permissions: contents:
@@ -118,13 +121,13 @@ read` alone zeroes `pull-requests`, so `mine_merge.sh`'s `gh pr view` 403s. *Fix
 - **[high] The Bard Forge · Chapter 2 "Open proposal PR"** — *Observed:* `git commit` on a
 fresh clone with no identity → exit 128 (reproduced). *Fix:* add `git config user.name / user.email` before the commit.
 - **[high] The Agent Pantheon · Chapter 2 artifact name** — *Observed:* leaked
-`${​% raw %​}{​{ github.run_id }​}{​% endraw %​}` yields a literal Jekyll string, not the run ID. *Fix:* wrap the whole fenced block in `{​% raw %​}`/`{​% endraw %​}` at the Markdown level so the visible YAML is plain `${​{ github.run_id }​}`.
+`${% raw %}{{ github.run_id }}{% endraw %}` yields a literal Jekyll string, not the run ID. *Fix:* wrap the whole fenced block in `{% raw %}`/`{% endraw %}` at the Markdown level so the visible YAML is plain `${{ github.run_id }}`.
 - **[high] The Agent Pantheon · missing scripts** — *Observed:* `load_registry.py`,
 `agent_health_check.py`, and `scripts/validate_quest.py` are referenced but never provided → "No such file or directory". *Fix:* provide/link them or mark clearly as platform-supplied and out of scope.
 - **[medium] The Agent Pantheon · internal inconsistencies** — *Observed:* `status: beta`
 absent from the documented enum; `agent-health-check.yml` vs the created `agent-health-monitor.yml`. *Fix:* reconcile the enum and the filename everywhere.
 - **[high] The Autonomy Scales · Chapter 3 `feature-agent-l2.yml`** — *Observed:* leaked
-`${​% raw %​}{​{ github.event.issue.number }​}{​% endraw %​}` (×4) → verified `bad substitution` at runtime. *Fix:* strip the leaked raw tags so the block renders valid `${​{ github.event.issue.number }​}`.
+`${% raw %}{{ github.event.issue.number }}{% endraw %}` (×4) → verified `bad substitution` at runtime. *Fix:* strip the leaked raw tags so the block renders valid `${{ github.event.issue.number }}`.
 - **[medium] The Autonomy Scales · PR-body `\n`** — *Observed:* `\n\n` in a plain double-quoted bash arg stays literal. *Fix:* use `$'...\n\n...'` or a heredoc.
 - **[medium] The Autonomy Scales · `review_autonomy_compliance.sh`** — *Observed:* unscoped
 `gh pr list --search "head:copilot/"` returns the first match every iteration. *Fix:* scope the lookup to the specific run/branch.
@@ -145,7 +148,7 @@ The most important finding of this walk is structural: **Level 1100 here is a di
 **Prerequisite reality:** 4 of the 5 quests declare required/recommended prerequisites that live *outside* this window (earlier levels or other chapters). That is expected for a windowed sweep (window 1 of 3; the ledger accumulates the rest), but it means **this window does not stand alone as a journey** — a Data Scientist arriving for "Data Engineering mastery" gets one on-theme quest and four DevOps/agentic-automation quests from stories they haven't started.
 
 **Cross-quest defect patterns** (the real value of reading the chain as one journey):
-- The **leaked Jekyll `{​% raw %​}` artifact** appears identically in *both* gh-600 quests
+- The **leaked Jekyll `{% raw %}` artifact** appears identically in *both* gh-600 quests
 (#4 and #5) — this is a **systemic rendering bug in the gh-600 source**, not two isolated typos, and any fix pass should sweep the whole `quest_line: gh-600` for the same pattern.
 - The **GitHub-Actions safety defects** (permission scoping in #3, script-injection in #2,
 git-identity in #3) cluster in the two *Self-Operating Website* quests — ironic given both quests explicitly teach "safe/event-safe automation." A learner following that line literally copies an anti-pattern the quest is trying to warn against.

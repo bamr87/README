@@ -5,8 +5,10 @@ contributor_data: copilot
 excerpt: AI Pair-Programming Sorcerer — Wizard class, Code generation & documentation
 lastmod: '2026-03-21T00:00:00.000Z'
 permalink: /contributors/copilot/
-source_file: README.md
-title: Readme
+source_file: pages/_about/contribute/contributors/copilot/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/contribute/contributors/copilot/README.md
+title: GitHub Copilot
 username: copilot
 ---
 <link rel="stylesheet" href="{{ '/assets/css/contributor-profile.css' | relative_url }}">

@@ -14,17 +14,20 @@ permalink: /fr/docs/development/documentation/
 preview: /images/previews/documentation.png
 sidebar:
   nav: docs
-source_file: documentation.md
+source_file: fr/docs/development/documentation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/documentation.md
 tags:
 - documentation
 - mdx
 - markdown
 - architecture
-title: Architecture de la documentation
+title: Documentation
 translated_from_sha: 7443f2de6a96
 translation_of: pages/_docs/development/documentation.md
 translation_source_url: /docs/development/documentation/
 ---
+
 # Architecture de la documentation
 
 Le thème Zer0-Mistakes met en œuvre un système de documentation double conçu pour servir différents publics avec des formats de contenu appropriés.
@@ -252,11 +255,11 @@ bundle exec htmlproofer _site --check-links
 
 ## Associé
 
-- [PRD](/docs/development/prd/)
+- [[zer0-mistakes/pages/_docs/development/prd|PRD]]
 - [Guide de contribution](https://github.com/bamr87/zer0-mistakes/blob/main/CONTRIBUTING.md)
 
 ## Voir aussi
 
-- [[Development]]
-- [[front-matter]]
-- [[Obsidian Vault Integration]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]
+- [[zer0-mistakes/pages/_docs/obsidian/index|Obsidian Vault Integration]]

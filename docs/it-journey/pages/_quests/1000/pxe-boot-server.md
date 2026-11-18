@@ -85,7 +85,9 @@ rewards:
   - The foundation of bare-metal provisioning - the step every fleet installer, imaging
     tool and homelab cluster starts from
 skill_focus: devops
-source_file: pxe-boot-server.md
+source_file: pages/_quests/1000/pxe-boot-server.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/pxe-boot-server.md
 sub_title: 'Level 1000 (8) Quest: Main Quest - Summon Machines From the Wire'
 tags:
 - '1000'
@@ -95,7 +97,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: 'UEFI firmware ships with Homebrew''s QEMU:'
+title: 'Summon Machines From the Wire: Build a PXE Boot Server'
 validation_criteria:
   completion_requirements:
   - A QEMU virtual machine boots the Debian installer from your server in legacy BIOS
@@ -156,9 +158,9 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Linux Fundamentals](/quests/0000/linux-fundamentals/) and [Bash Scripting](/quests/0010/bash-scripting/)
+- [ ] Completion of [[it-journey/pages/_quests/0000/linux-fundamentals|Linux Fundamentals]] and [[it-journey/pages/_quests/0010/bash-scripting|Bash Scripting]]
 - [ ] Basic IP networking: addresses, subnets, the router as the default gateway
-- [ ] Recommended: [Forge Your Own Dev Server](/quests/1000/forge-your-own-dev-server/), which gives you a Linux box that makes an excellent permanent boot server
+- [ ] Recommended: [[it-journey/pages/_quests/1000/forge-your-own-dev-server|Forge Your Own Dev Server]], which gives you a Linux box that makes an excellent permanent boot server
 
 ### 🛠️ System Requirements
 - [ ] QEMU with x86-64 system emulation
@@ -810,8 +812,8 @@ flowchart LR
 
 ## 🗺️ Next Steps in Your Journey
 
-- [Infrastructure as Code](/quests/1000/infrastructure-as-code/) - describe the machines you can now summon
-- [Forge Your Own Dev Server](/quests/1000/forge-your-own-dev-server/) - turn a spare box into a permanent home for your boot server
+- [[it-journey/pages/_quests/1000/infrastructure-as-code|Infrastructure as Code]] - describe the machines you can now summon
+- [[it-journey/pages/_quests/1000/forge-your-own-dev-server|Forge Your Own Dev Server]] - turn a spare box into a permanent home for your boot server
 - Add an **unattended install** to the menu: Debian's preseed (`auto=true url=http://...`) or a cloud-init seed turns a summoned installer into a finished machine
 
 ### Character Class Recommendations
@@ -845,6 +847,6 @@ flowchart LR
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Linux Fundamentals: Enter the Penguin's Domain]] · [[Bash Scripting: Automation Fundamentals]] **Unlocks:** [[Infrastructure as Code: Terraform Fundamentals and State]] **Related:** [[Forge Your Own Dev Server: Bare Metal to Watchtower]]
+**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Linux Fundamentals: Enter the Penguin's Domain]] · [[Bash Scripting: Automation Fundamentals]] **Unlocks:** [[it-journey/pages/_quests/1000/infrastructure-as-code|Infrastructure as Code: Terraform Fundamentals and State]] **Related:** [[it-journey/pages/_quests/1000/forge-your-own-dev-server|Forge Your Own Dev Server: Bare Metal to Watchtower]]

@@ -19,17 +19,20 @@ keywords:
 lastmod: 2026-09-05 00:00:00+00:00
 layout: article
 preview: /images/favicon_gpt_computer_retro.png
-source_file: 2025-01-15-docker-jekyll-guide.md
+source_file: pages/_posts/2025-01-15-docker-jekyll-guide.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/2025-01-15-docker-jekyll-guide.md
 tags:
 - docker
 - jekyll
 - devops
 - containerization
-title: 2025 01 15 Docker Jekyll Guide
+title: 'Docker for Jekyll Development: A Complete Guide'
 ---
+
 Docker gives you the same Jekyll environment on every machine — same Ruby, same gems, same build output whether you are on macOS, Windows, or Linux. This guide walks through the compose setup this theme actually uses, and the three decisions most Docker/Jekyll guides get wrong.
 
-> **Skip the typing:** the theme's [Site Builder](/quickstart/site-builder/) generates a `docker-compose.yml` like the one below for your own site, writes it to disk, and can run `docker compose up` for you while Claude explains the output. Everything on this page still applies when you want to understand or tune what it produced.
+> **Skip the typing:** the theme's [[zer0-mistakes/pages/_quickstart/site-builder|Site Builder]] generates a `docker-compose.yml` like the one below for your own site, writes it to disk, and can run `docker compose up` for you while Claude explains the output. Everything on this page still applies when you want to understand or tune what it produced.
 
 ## Why Use Docker for Jekyll?
 

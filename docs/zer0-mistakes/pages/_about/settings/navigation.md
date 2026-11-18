@@ -5,10 +5,13 @@ lastmod: 2026-04-04 00:00:00+00:00
 layout: admin
 permalink: /about/settings/navigation/
 preview: /images/previews/navigation-editor.png
-source_file: navigation.md
+source_file: pages/_about/settings/navigation.md
 source_icon: bi-signpost-2
-title: Navigation
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/settings/navigation.md
+title: Navigation Editor
 ---
+
 <ul class="nav nav-tabs" id="navTabs" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="tab-overview" data-bs-toggle="tab" data-bs-target="#pane-overview" type="button" role="tab" aria-controls="pane-overview" aria-selected="true">
@@ -29,12 +32,10 @@ title: Navigation
 
 <div class="tab-content pt-4" id="navTabContent">
 
-  <!-- ═══════ Overview Tab ═══════ -->
   <div class="tab-pane fade show active" id="pane-overview" role="tabpanel">
     {% include components/nav-editor.html %}
   </div>
 
-  <!-- ═══════ Editor Tab ═══════ -->
   <div class="tab-pane fade" id="pane-editor" role="tabpanel">
 
     <p class="text-body-secondary mb-3">Select a navigation file to edit. Changes are reflected in the Export YAML tab.</p>
@@ -61,7 +62,6 @@ title: Navigation
 
   </div>
 
-  <!-- ═══════ Export YAML Tab ═══════ -->
   <div class="tab-pane fade" id="pane-export" role="tabpanel">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h5 class="mb-0"><i class="bi bi-filetype-yml me-1"></i> Navigation YAML</h5>

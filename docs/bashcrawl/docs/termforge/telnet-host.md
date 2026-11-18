@@ -1,5 +1,7 @@
 ---
-source_file: telnet-host.md
+source_file: docs/termforge/telnet-host.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/termforge/telnet-host.md
 title: TermForge Telnet Host
 ---
 # TermForge Telnet Host

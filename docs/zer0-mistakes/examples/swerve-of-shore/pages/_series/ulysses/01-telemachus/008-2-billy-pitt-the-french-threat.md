@@ -11,11 +11,13 @@ order: 8.2
 preview: /assets/images/posts/008-2-billy-pitt-the-french-threat.jpg
 section: 01-telemachus
 series: ulysses
-source_file: 008-2-billy-pitt-the-french-threat.md
-source_url: https://www.swerveofshore.com/post/008-2-billy-pitt-the-french-threat
+source_file: examples/swerve-of-shore/pages/_series/ulysses/01-telemachus/008-2-billy-pitt-the-french-threat.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/ulysses/01-telemachus/008-2-billy-pitt-the-french-threat.md
 sub-title: Episode 1 · Telemachus
-title: 008 2 Billy Pitt The French Threat
+title: 008.2 - Billy Pitt & The French Threat
 ---
+
 From the *Episode 1 · Telemachus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/008-2-billy-pitt-the-french-threat), by Brandon Nicklaus.
 
 > What is Buck talking about when he states "Billy Pitt had them built". Let's dive in a bit:

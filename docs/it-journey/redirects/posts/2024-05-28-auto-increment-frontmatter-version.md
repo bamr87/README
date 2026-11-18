@@ -2,6 +2,8 @@
 permalink: /posts/2024/05/28/auto-increment-frontmatter-version/
 redirect_to: https://lifehacker.dev/posts/2024/05/28/auto-increment-frontmatter-version/
 sitemap: false
-source_file: 2024-05-28-auto-increment-frontmatter-version.md
-title: 2024 05 28 Auto Increment Frontmatter Version
+source_file: redirects/posts/2024-05-28-auto-increment-frontmatter-version.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/redirects/posts/2024-05-28-auto-increment-frontmatter-version.md
+title: Auto Increment Frontmatter Version
 ---

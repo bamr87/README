@@ -3,22 +3,11 @@ description: Browse all tags and discover content by topic
 lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /tags/
-source_file: tags.md
+source_file: pages/tags.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/tags.md
 title: Tags
 ---
-<!--
-  ===================================================================
-  TAGS INDEX PAGE - Browse all tags
-  ===================================================================
-
-File: tags.md Path: pages/tags.md Purpose: Display all tags with post counts and links to tagged posts
-
-  This page provides:
-  - Alphabetical list of all tags
-  - Post count for each tag
-  - Direct links to posts grouped by tag
-  - Tag cloud visualization
-=================================================================== -->
 
 <header class="tags-header mb-5">
   <h1 class="display-5">
@@ -28,10 +17,6 @@ File: tags.md Path: pages/tags.md Purpose: Display all tags with post counts and
     Explore content organized by topic. Click any tag to see related articles.
   </p>
 </header>
-
-<!-- ========================== -->
-<!-- TAG CLOUD                  -->
-<!-- ========================== -->
 
 {% comment %} Collect all tags with counts (posts + notebooks) {% endcomment %}
 {% assign tag_sources = site.posts | concat: site.notebooks %}
@@ -69,9 +54,6 @@ File: tags.md Path: pages/tags.md Purpose: Display all tags with post counts and
   </div>
 </section>
 
-<!-- ========================== -->
-<!-- TAGS WITH POSTS            -->
-<!-- ========================== -->
 <section class="tags-list">
   <h2 class="h4 mb-4 pb-2 border-bottom">
     <i class="bi bi-list-ul me-2"></i>All Tags ({{ unique_tags.size }})
@@ -81,7 +63,7 @@ File: tags.md Path: pages/tags.md Purpose: Display all tags with post counts and
     {% assign tagged_posts = tag_sources | where_exp: "post", "post.tags contains tag" %}
     
     <article class="tag-section mb-5" id="{{ tag | slugify }}">
-      <!-- Tag Header -->
+
       <div class="d-flex align-items-center mb-3">
         <h3 class="h5 mb-0">
           <i class="bi bi-tag-fill text-primary me-2"></i>{{ tag }}
@@ -92,7 +74,6 @@ File: tags.md Path: pages/tags.md Purpose: Display all tags with post counts and
         </a>
       </div>
       
-      <!-- Posts with this tag -->
       <ul class="list-group list-group-flush">
         {% for post in tagged_posts %}
           <li class="list-group-item d-flex justify-content-between align-items-start px-0">
@@ -125,9 +106,6 @@ File: tags.md Path: pages/tags.md Purpose: Display all tags with post counts and
   {% endfor %}
 </section>
 
-<!-- ========================== -->
-<!-- BACK TO TOP                -->
-<!-- ========================== -->
 <div class="text-center mt-5 pt-4 border-top" id="top">
   <a href="#" class="btn btn-outline-secondary">
     <i class="bi bi-arrow-up me-2"></i>Back to Top

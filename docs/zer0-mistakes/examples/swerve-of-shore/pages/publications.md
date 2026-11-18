@@ -7,9 +7,12 @@ permalink: /publications/
 sidebar:
   nav: series
   title: Browse the series
-source_file: publications.md
+source_file: examples/swerve-of-shore/pages/publications.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/publications.md
 title: Publications
 ---
+
 {% include page-header.html %}
 
 The original site keeps a Publications section for work that outgrows a single numbered entry.

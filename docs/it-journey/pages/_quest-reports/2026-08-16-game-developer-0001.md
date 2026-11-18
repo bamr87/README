@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/31943420548
 slice: game-developer/0001
-source_file: 2026-08-16-game-developer-0001.md
+source_file: pages/_quest-reports/2026-08-16-game-developer-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-08-16-game-developer-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-08-16-game-developer-0001.md
 tags:
 - game-developer
 - level-0001
@@ -26,13 +28,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 08 16 Game Developer 0001
+title: Game Developer · L0001 · 2026-08-16
 verdict: fail
 walk_date: '2026-08-16'
 ---
+
 > **Slice** `game-developer/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ❌ fail (avg 45.0%) · **Walked** 2026-08-16
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/31943420548) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-16-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-16-game-developer-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/31943420548) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-16-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-16-game-developer-0001.md)
 
 ---
 
@@ -60,7 +63,7 @@ All figures below are from the sealed `walk-evidence.json` (mode: `execute`, rea
 
 **2. it-journey-stack-analysis — 49% (fail).** Per-dimension: `commands_work 2 · content_accuracy 2 · completeness 2 · clarity 3 · structure 2 · safety 5`. Snippets: **available 17 (4 runnable), recorded 20, ran 13, passed 10, failed 3, skipped 2, reasoned 5**. Engine cloned and tested against the live `bamr87/it-journey` repo and recorded three genuine failures — the Python "Guardian 2.0" stub (missing `_check_lychee`/`_check_openai_key` → AttributeError), the sample Dockerfile (references a nonexistent root `requirements.txt`), and the bare `quest_validator.py` invocation (errors without a directory/quest argument). Nice positive: the Bootstrap SRI hash in the quest is verifiably byte-for-byte correct.
 
-**3. personal-site — 15% (fail).** Per-dimension: `commands_work 0 · content_accuracy 1 · completeness 0 · clarity 0 · structure 0 · safety 5`. Snippets: **available 0 (0 runnable), recorded 1, ran 0, reasoned 1** — there is literally nothing to run. Engine summary: *"QUEST.md is an unfinished draft, not a working tutorial… no runnable code, no ordered steps, and no way for a learner to actually build or verify a GitHub Pages site."* I confirmed this reading the source: objectives are the generic auto-seed (lines 59-63, explicitly flagged "auto-seeded during framework alignment"), and §1 is a raw service link table with unrendered `{​% raw %​}{​{ site.github_user }​}{​% endraw %​}` Liquid (lines 71-92).
+**3. personal-site — 15% (fail).** Per-dimension: `commands_work 0 · content_accuracy 1 · completeness 0 · clarity 0 · structure 0 · safety 5`. Snippets: **available 0 (0 runnable), recorded 1, ran 0, reasoned 1** — there is literally nothing to run. Engine summary: *"QUEST.md is an unfinished draft, not a working tutorial… no runnable code, no ordered steps, and no way for a learner to actually build or verify a GitHub Pages site."* I confirmed this reading the source: objectives are the generic auto-seed (lines 59-63, explicitly flagged "auto-seeded during framework alignment"), and §1 is a raw service link table with unrendered `{% raw %}{{ site.github_user }}{% endraw %}` Liquid (lines 71-92).
 
 **4. self-operating-website-01-the-summoning — 71% (warn).** Per-dimension: `commands_work 5 · content_accuracy 2 · completeness 3 · clarity 3 · structure 3 · safety 5`. Snippets: **available 9 (3 runnable), recorded 9, ran 7, passed 7, failed 0, skipped 1, reasoned 1**. Every runnable snippet passed — including the quest's specific claim that the `bamr87/zer0-mistakes` root layout fails with `Liquid::SyntaxError: Unknown tag 'include_cached'` without `jekyll-include-cache`. The score is held down entirely by content accuracy: the "Reproduce It" PR#1/#2/#11 mapping is wrong against the live `bamr87/lifehacker.dev` repo.
 
@@ -71,7 +74,7 @@ All figures below are from the sealed `walk-evidence.json` (mode: `execute`, rea
 
 Grouped by severity. Each item cites what was *observed* (engine-verified `tested`, or `reasoned` from source where no command was run).
 
-- **HIGH · personal-site · whole body · `tested`/`reasoned`** — The file is an unfinished draft, not a quest. Objectives are the generic auto-seed placeholder (source lines 59-63, self-flagged as needing author refinement) and the only content is a link table with unrendered `{​% raw %​}{​{ … }​}{​% endraw %​}` Liquid (lines 71-92). Engine ran 0 runnable snippets (nothing exists to run) and scored it 15%. *Fix:* replace with an actual step-by-step GitHub Pages walkthrough (create `<user>.github.io` repo → add `index.html` → enable Pages → verify live URL) and real objectives + a completion check.
+- **HIGH · personal-site · whole body · `tested`/`reasoned`** — The file is an unfinished draft, not a quest. Objectives are the generic auto-seed placeholder (source lines 59-63, self-flagged as needing author refinement) and the only content is a link table with unrendered `{% raw %}{{ … }}{% endraw %}` Liquid (lines 71-92). Engine ran 0 runnable snippets (nothing exists to run) and scored it 15%. *Fix:* replace with an actual step-by-step GitHub Pages walkthrough (create `<user>.github.io` repo → add `index.html` → enable Pages → verify live URL) and real objectives + a completion check.
 - **HIGH · personal-site · §1 table rows 2 & 6 · `reasoned`** — Both rows point at the identical `…github.io/` URL yet are labelled "Domain 1 (GitHub Pages)" and "Domain 3 (Cloudflare)" (source lines 76, 80). Factually contradictory. *Fix:* clarify what Cloudflare actually fronts or drop the row.
 - **HIGH · it-journey-stack-analysis · Python "Guardian 2.0" (lines 280-306) · `tested`** — Engine instantiated the class and hit an `AttributeError` from missing `_check_lychee`/`_check_openai_key`. *Fix:* stub the methods (`return False`) or label the class non-runnable pseudocode.
 - **HIGH · it-journey-stack-analysis · Dockerfile sample (lines 434-445) · `tested`** — Fails to build; references a root `requirements.txt` that doesn't exist. *Fix:* match the real repo (`FROM ruby:3.2.3`, apt `python3`, COPY the real requirements paths).

@@ -51,17 +51,20 @@ Supporting contracts:
 
 Requirement ids are stable: features cite them in `features/features.yml` (`prd:`), and an id is never renumbered or reused.
 
-- **FR1 · Crawl**: aggregate markdown from every active registry project (clone/pull, branch pins, external repos) — stages 1–3 (existing).
+- **FR1 · Collect**: take the official documentation of every active registry project in one stage: clone, select by the `collect:` rules, screen for secrets, normalize, weave links, write `docs/`, and remove what upstream dropped. An unreachable repository is frozen, not lost.
 - **FR2 · Extract**: derive per-project facts offline from the corpus: identity (title/summary/headings), governance signals (SCHEMA.md, CLAUDE.md, AGENTS.md, …), structure, rollups (tags/categories/languages/words), key documents, and a corpus fingerprint for change detection.
 - **FR3 · Navigate**: turn each corpus's folder hierarchy into one canonical navigation tree — sections from folders, landing pages from `index.md`/`README.md`, labels from frontmatter titles, ordering from frontmatter and the registry, grouping from `nav.groups` — and render it to three surfaces: `context/nav/*.json` (frontend-agnostic), `nav.yml` (the MkDocs sidebar plus the matching `exclude_docs`), and `docs/browse/*.md` (human content maps). No sidebar entry may point at a page the reader cannot open, and any published page deliberately left out of the sidebar must be declared as such (`not_in_nav`) rather than silently orphaned.
 - **FR4 · Synthesize**: render facts into per-project cards with a frontmatter contract; optionally AI-enrich the essence paragraph.
 - **FR5 · Assemble**: build the consolidated apex README; inject the fleet table into the root README `AUTO:projects` span; mirror the fleet overview to the published site home (`docs/index.md`).
 - **FR6 · Index**: build a term index + manifest so queries need no rescan; navigation section titles are indexed alongside cards and facts.
-- **FR7 · Serve**: answer queries via CLI (`query/card/facts/nav/apex/status/projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_doc`, `get_schema`, `context_status` + `context://` resources).
+- **FR7 · Serve**: answer queries via CLI (`query/card/facts/nav/apex/status/projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_doc`, `get_schema`, `context_status`, `get_note`, `get_neighbours`, `get_hot`, `vault_lint` + `context://` resources).
 - **FR8 · Evolve**: scheduled CI re-crawls, rebuilds, schema-lints, and commits; hooks allow agents to extend every build.
 - **FR9 · Read a document** (shipped, README-010, #59): an MCP `get_doc` tool returns one indexed corpus page by path, confined to `docs/` and capped in size, so a client can follow a `search_context`/`get_nav` pointer without leaving MCP.
 - **FR10 · Provenance** (planned, README-011, #60): every MCP answer carries its source (engine or upstream repo), commit, path, enrichment mode and a trust marker, with upstream text fenced as untrusted data.
 - **FR11 · Survey and docs review**: survey the documentation of every repository in the fleet inventory (`_data/fleet.yml`) on its default branch — a shallow clone each, run through the registered checks and scored — and write a manifest per repository (`context/sources/<name>.json`), the health report (`context/reports/fleet_health.{json,md}`) and the docs review (`context/reports/docs_review.{json,md}`): every repository's documents in one place, checked against the hub's documentation framework (`specs/DOCS.md`). `survey --workspace DIR` reviews the local checkouts under `DIR`, each on its current branch, and writes only the docs review; `survey --local PATH` checks one working tree and writes nothing. The survey never touches the corpus, the navigation surfaces or the pyramid.
+- **FR12 · Vault**: `docs/` opens as an Obsidian vault. Every link is resolved by one resolver, and permalink and title links that would not resolve in Obsidian or MkDocs are woven into path-qualified wikilinks at ingest.
+- **FR13 · Second brain**: each build regenerates notes in `docs/brain/`: concepts from shared tags and unanswered links, project notes, a hot cache, a change log and vault health, with AI summaries cached so a keyless build reproduces them. `notes/` holds hand and agent-written notes.
+- **FR14 · Obsidian on the site**: the published site shows wikilinks, callouts, backlinks, a global and a local graph, hover previews, a quick switcher, a canvas and a table of every note.
 
 ## 5. Non-functional requirements
 
@@ -78,9 +81,11 @@ The commands and gates `AGENTS.md` names (§ Stack & commands):
 
 ```bash
 # pipeline and queries
-bash scripts/aggregate.sh                                # crawl the registry's repos into docs/ (FR1)
+python3 -m scripts.context_engine collect [<name>...] [--workspace DIR]   # clone, screen, normalize, weave, write docs/ (FR1)
+python3 -m scripts.context_engine hot | note <target> | neighbours <target> | lint | save <title> <body>   # the vault (FR12-FR13)
 python3 -m scripts.context_engine build [--ai auto|off|anthropic|xai|mock]
 python3 -m scripts.context_engine sync|status|projects
+python3 -m scripts.context_engine hot | note <target> | neighbours <target> | lint | save <title> <body>
 python3 -m scripts.context_engine query <terms> | card <name> | facts <name> | apex
 python3 -m scripts.context_engine nav [<name>] [--depth N] [--json]
 python3 -m scripts.context_engine fleet [--json]         # the survey's inventory (_data/fleet.yml)
@@ -119,23 +124,31 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | [README-011](features/features.yml) | MCP provenance and trust markers | planned | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | FR10 |
 | [README-012](features/features.yml) | Fleet survey and docs review | shipped | [`scripts/context_engine/survey.py`](scripts/context_engine/survey.py) · [`README.md`](README.md) | FR11 |
 | [README-013](features/features.yml) | Missions in constitution §1 | planned | [`docs/constitution.md`](docs/constitution.md) | §1.1 |
+| [README-014](features/features.yml) | Collect | shipped | [`scripts/context_engine/collect.py`](scripts/context_engine/collect.py) · [`scripts/README.md`](scripts/README.md) | FR1 |
+| [README-015](features/features.yml) | Obsidian vault | shipped | [`scripts/context_engine/vault.py`](scripts/context_engine/vault.py) · [`README.md`](README.md) | FR12 |
+| [README-016](features/features.yml) | Second brain notes | shipped | [`scripts/context_engine/brain.py`](scripts/context_engine/brain.py) · [`README.md`](README.md) | FR13 |
+| [README-017](features/features.yml) | Obsidian views on the site | shipped | route `/brain/` · [`MKDOCS.md`](MKDOCS.md) | FR14 |
+| [README-018](features/features.yml) | Vault reads for agents | shipped | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | FR7 |
 
 **Requirement → feature trace**
 
 | Requirement | Features |
 | --- | --- |
-| FR1 | README-001 |
+| FR1 | README-001, README-014 |
 | FR2 | README-002 |
 | FR3 | README-003, README-009 |
 | FR4 | README-004 |
 | FR5 | README-005, README-009 |
 | FR6 | README-006 |
-| FR7 | README-007 |
+| FR7 | README-007, README-018 |
 | FR8 | README-008 |
 | FR9 | README-010 |
 | FR10 | README-011 |
 | FR11 | README-012 |
 | §1.1 | README-013 |
+| FR12 | README-015 |
+| FR13 | README-016 |
+| FR14 | README-017 |
 <!-- features:end -->
 
 ## 7. Success criteria

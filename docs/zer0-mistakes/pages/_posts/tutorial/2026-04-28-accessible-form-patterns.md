@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-06-22 12:00:00+00:00
 layout: article
 preview: /images/previews/accessible-form-patterns-labels-errors-and-helpful.png
-source_file: 2026-04-28-accessible-form-patterns.md
+source_file: pages/_posts/tutorial/2026-04-28-accessible-form-patterns.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/tutorial/2026-04-28-accessible-form-patterns.md
 tags:
 - accessibility
 - forms
 - html
 - frontend
-title: 2026 04 28 Accessible Form Patterns
+title: 'Accessible Form Patterns: Labels, Errors, and Helpful States'
 ---
+
 Accessible forms are easier for everyone to complete. They help screen reader users, keyboard users, people on small screens, and anyone moving quickly through a task.
 
 This tutorial covers a few patterns that make forms more reliable without adding much complexity.

@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29329246935
 slice: data-scientist/1100
-source_file: 2026-07-14-data-scientist-1100.md
+source_file: pages/_quest-reports/2026-07-14-data-scientist-1100.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-14-data-scientist-1100.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-14-data-scientist-1100.md
 tags:
 - data-scientist
 - level-1100
@@ -25,13 +27,14 @@ tags:
 - data-engineering
 theme: Data Engineering
 tier: Master
-title: 2026 07 14 Data Scientist 1100
+title: Data Scientist · L1100 · 2026-07-14
 verdict: fail
 walk_date: '2026-07-14'
 ---
+
 > **Slice** `data-scientist/1100` · **Level** 1100 (Data Engineering) · **Master tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-14
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29329246935) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-14-data-scientist-1100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-14-data-scientist-1100.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29329246935) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-14-data-scientist-1100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-14-data-scientist-1100.md)
 
 ---
 
@@ -72,8 +75,8 @@ is the **last** rule, and GitHub CODEOWNERS is "last matching pattern wins", so 
 `GH_TOKEN`/`GITHUB_TOKEN` env, so `gh` fails in Actions with the standard "set the GH_TOKEN environment variable" error.
 - `agent-audit-trail.yml` (lines 249–293) → **reasoned**: `workflow_run.workflows:
 ["*Agent*", "*Copilot*"]` uses wildcards this filter doesn't support (needs exact names); the final `git push` has no `permissions: contents: write` and will likely 403.
-- Verified via PyYAML that all three YAML blocks parse, but every `${​{ ... }​}`
-expression is wrapped in literal `{​% raw %​}...{​% endraw %​}` — copied from raw markdown they are not valid Actions expressions.
+- Verified via PyYAML that all three YAML blocks parse, but every `${{ ... }}`
+expression is wrapped in literal `{% raw %}...{% endraw %}` — copied from raw markdown they are not valid Actions expressions.
 - Audit heredoc reproduced locally → produces a pretty-printed multi-line JSON block, not JSON-Lines, contradicting the `.jsonl` filename the workflow uses.
 
 ### 2. The Grand Capstone — 68% ⚠️ (22 turns · commands_work 3/5, content_accuracy 3/5, safety 5/5)
@@ -148,7 +151,7 @@ it is never supplied. *Fix:* add a downloadable `orders.csv` or a short "generat
 **Medium**
 - **Capstone · Challenge 4.1 `acceptance-criteria.json` (line 312) · invalid JSON.** The
 leading `// …` comment breaks the `jq -e` check `validate-capstone.sh` itself runs (S4). Observed `jq: parse error: Invalid numeric literal`. *Fix:* move the comment to prose above the fenced block.
-- **The Warden's Pact · Ch.2 `guardrail-file-scope.yml` (line 155) · missing `GH_TOKEN`.** `gh pr view` will fail in Actions. *Fix:* add `env: { GH_TOKEN: ${​{ secrets.GITHUB_TOKEN }​} }`.
+- **The Warden's Pact · Ch.2 `guardrail-file-scope.yml` (line 155) · missing `GH_TOKEN`.** `gh pr view` will fail in Actions. *Fix:* add `env: { GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} }`.
 - **The Warden's Pact · Ch.4 `agent-audit-trail.yml` (lines 254, 292) · wildcard
 `workflow_run.workflows` + missing push permissions.** *Fix:* use exact workflow names and add `permissions: contents: write`.
 - **Stream Processing · Ch.3 windowing has no runnable code.** The Intermediate Challenge

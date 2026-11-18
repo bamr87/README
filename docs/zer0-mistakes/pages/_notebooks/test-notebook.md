@@ -11,7 +11,9 @@ lastmod: 2025-11-30 05:20:10+00:00
 layout: notebook
 mathjax: true
 permalink: /notebooks/test-notebook/
-source_file: test-notebook.md
+source_file: pages/_notebooks/test-notebook.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_notebooks/test-notebook.md
 tags:
 - jupyter
 - python

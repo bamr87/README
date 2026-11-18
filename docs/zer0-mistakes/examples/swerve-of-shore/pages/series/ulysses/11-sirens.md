@@ -7,9 +7,12 @@ permalink: /series/ulysses/11-sirens/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 11-sirens.md
-title: 11 Sirens
+source_file: examples/swerve-of-shore/pages/series/ulysses/11-sirens.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/11-sirens.md
+title: 11 · Sirens
 ---
+
 {% include page-header.html %}
 
 Episode 11 of *Ulysses*. 4pm, the Ormond Hotel bar.

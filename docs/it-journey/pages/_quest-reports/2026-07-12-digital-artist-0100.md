@@ -14,8 +14,10 @@ quest_count: 3
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29190829265
 slice: digital-artist/0100
-source_file: 2026-07-12-digital-artist-0100.md
+source_file: pages/_quest-reports/2026-07-12-digital-artist-0100.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-12-digital-artist-0100.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-12-digital-artist-0100.md
 tags:
 - digital-artist
 - level-0100
@@ -25,13 +27,14 @@ tags:
 - frontend-containers
 theme: Frontend & Containers
 tier: Adventurer
-title: 2026 07 12 Digital Artist 0100
+title: Digital Artist · L0100 · 2026-07-12
 verdict: pass
 walk_date: '2026-07-12'
 ---
+
 > **Slice** `digital-artist/0100` · **Level** 0100 (Frontend & Containers) · **Adventurer tier** · **Engine verdict** ✅ pass · **Walked** 2026-07-12
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-12-digital-artist-0100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-12-digital-artist-0100.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-12-digital-artist-0100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-12-digital-artist-0100.md)
 
 ---
 
@@ -93,7 +96,7 @@ Per-dimension: commands_work **4**, content_accuracy **3**, completeness **4**, 
 - Step 5 & Step 6 Liquid (raw/endraw stripped) → **passed** — rendered via
 liquidjs to the exact expected `<div class="contributor-sheet contributor-theme--cyberpunk">` and the `<link … relative_url>` output.
 - Step 5/6 with raw/endraw **left in** → **passed (warning verified accurate)** —
-confirmed the literal `{​% if %​}`/`{​{ theme_class }​}` tags leak into output, exactly as the quest's two ⚠️ warnings promise. The warnings are load-bearing and correct.
+confirmed the literal `{% if %}`/`{{ theme_class }}` tags leak into output, exactly as the quest's two ⚠️ warnings promise. The warnings are load-bearing and correct.
 - Step 5 YAML (`profile: { theme: … }`) → **passed** (PyYAML).
 - Mermaid architecture diagram → **passed** — rendered to a valid 17.7 KB SVG.
 - Step 8 `git checkout -b / add / commit` → **passed** in a fresh `git init` sandbox.

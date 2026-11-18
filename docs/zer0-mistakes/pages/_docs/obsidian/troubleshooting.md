@@ -9,13 +9,16 @@ lastmod: 2026-04-24 15:06:30+00:00
 layout: default
 permalink: /docs/obsidian/troubleshooting/
 preview: /images/previews/obsidian-integration-troubleshooting.png
-source_file: troubleshooting.md
+source_file: pages/_docs/obsidian/troubleshooting.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/obsidian/troubleshooting.md
 tags:
 - obsidian
 - troubleshooting
 - debugging
 title: Obsidian Integration Troubleshooting
 ---
+
 # Obsidian Integration Troubleshooting
 
 ## A wiki-link renders as broken (`wiki-link-broken`) on the site, but works in Obsidian
@@ -113,8 +116,8 @@ Open an issue at [github.com/bamr87/zer0-mistakes/issues](https://github.com/bam
 
 ## See also
 
-- [[Obsidian Vault Integration]]
-- [[Obsidian Syntax Reference]]
-- [[Obsidian Authoring Workflow]]
-- [[Obsidian Graph View]]
-- [[Getting Started with the Obsidian Vault]]
+- [[zer0-mistakes/pages/_docs/obsidian/index|Obsidian Vault Integration]]
+- [[zer0-mistakes/pages/_docs/obsidian/syntax-reference|Obsidian Syntax Reference]]
+- [[zer0-mistakes/pages/_docs/obsidian/authoring-workflow|Obsidian Authoring Workflow]]
+- [[zer0-mistakes/pages/_docs/obsidian/graph|Obsidian Graph View]]
+- [[zer0-mistakes/pages/_docs/obsidian/getting-started|Getting Started with the Obsidian Vault]]

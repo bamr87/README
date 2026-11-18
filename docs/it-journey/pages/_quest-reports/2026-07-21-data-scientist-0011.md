@@ -15,8 +15,10 @@ quest_count: 4
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29826801543
 slice: data-scientist/0011
-source_file: 2026-07-21-data-scientist-0011.md
+source_file: pages/_quest-reports/2026-07-21-data-scientist-0011.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-21-data-scientist-0011.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-21-data-scientist-0011.md
 tags:
 - data-scientist
 - level-0011
@@ -26,13 +28,14 @@ tags:
 - ai-assisted-development
 theme: AI-Assisted Development
 tier: Apprentice
-title: 2026 07 21 Data Scientist 0011
+title: Data Scientist · L0011 · 2026-07-21
 verdict: warn
 walk_date: '2026-07-21'
 ---
+
 > **Slice** `data-scientist/0011` · **Level** 0011 (AI-Assisted Development) · **Apprentice tier** · **Engine verdict** ⚠️ warn (avg 66.8%) · **Walked** 2026-07-21
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29826801543) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-21-data-scientist-0011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-21-data-scientist-0011.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29826801543) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-21-data-scientist-0011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-21-data-scientist-0011.md)
 
 ---
 
@@ -100,10 +103,10 @@ Grouped by quest; every item is evidenced by a command result (§🔬) or a quot
 - **low** · the "AI Conversation Capture Format" template omits `layout: post` (unlike the working Step-4 example) — builds but renders unstyled. · *Fix:* add `layout: post`.
 
 **Prompt Crystal (`prompt-crystal-mastery-vscode-copilot.md`)**
-- **high** · Chapter 4 prompt-file schema · *Observed:* templates use `name`/`description`/`version`/`inputs: […]` frontmatter with `{​{ inputs.x }​}` substitution; documented VS Code "prompt files" use `mode`/`description`/`tools`/`model` and `${input:variableName}` — so a learner's files likely won't have variables substituted. · *Fix:* verify against current docs and correct the schema.
+- **high** · Chapter 4 prompt-file schema · *Observed:* templates use `name`/`description`/`version`/`inputs: […]` frontmatter with `{{ inputs.x }}` substitution; documented VS Code "prompt files" use `mode`/`description`/`tools`/`model` and `${input:variableName}` — so a learner's files likely won't have variables substituted. · *Fix:* verify against current docs and correct the schema.
 - **medium** · code-fence labeling · 5 ` ```javascript ` blocks (L194, 205, 581, 948,
   952) are plain English prompt text and throw `SyntaxError` under `node`. · *Fix:* retag as ` ```text `/` ```markdown `.
-- **low** · `{​% raw %​}…{​% endraw %​}` Liquid wrapper leaks into raw-source view as clutter around every `{​{ inputs.x }​}`. · *Fix:* cleaner escaping or a note.
+- **low** · `{% raw %}…{% endraw %}` Liquid wrapper leaks into raw-source view as clutter around every `{{ inputs.x }}`. · *Fix:* cleaner escaping or a note.
 
 **Summon the Golem (`ouroboros-loop-03-summon-the-golem.md`)** — no blocking issues.
 - **low** · level-numbering · metadata says "Level 0011" but sibling links use `/quests/0101/` and `/quests/1011/`; unexplained. · *Fix:* reconcile / explain the binary level-per-quest scheme (see §🔗).

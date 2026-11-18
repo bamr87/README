@@ -17,15 +17,18 @@ keywords:
 - SSH key
 - getting started
 lastmod: '2026-06-13T00:00:00.000Z'
-source_file: start.md
+source_file: pages/_notes/zero/start.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/zero/start.md
 tags:
 - onboarding
 - setup
 - environment
 - getting-started
-title: Initialize
+title: 'Start: IT-Journey Character Initialization Guide'
 updated: 2026-06-13 00:00:00+00:00
 ---
+
 # Initialize
 
 Every journey needs a starting state. This is the character sheet for the IT-Journey "zero" — the configuration you set once and rarely revisit, but which every subsequent step depends on.
@@ -90,6 +93,6 @@ Checklist of tools to install before starting any quest. Each item links to setu
 
 Once the inventory is checked off, head to the first quest in the sequence:
 
-- [Quest: Begin Your IT Journey](/quests/0000/begin-your-it-journey/)
-- [Quest: Git Basics](/quests/0000/git-basics/)
+- [[it-journey/pages/_quests/0000/begin-your-it-journey|Quest: Begin Your IT Journey]]
+- [[it-journey/pages/_quests/0000/git-basics|Quest: Git Basics]]
 - Notes: Take Good Notes

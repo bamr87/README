@@ -14,7 +14,9 @@ permalink: /fr/docs/features/breadcrumbs/
 preview: /images/previews/breadcrumbs-navigation.png
 sidebar:
   nav: docs
-source_file: breadcrumbs.md
+source_file: fr/docs/features/breadcrumbs.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/breadcrumbs.md
 tags:
 - navigation
 - breadcrumbs
@@ -25,6 +27,7 @@ translated_from_sha: 02ed2d34de6a
 translation_of: pages/_docs/features/breadcrumbs.md
 translation_source_url: /docs/features/breadcrumbs/
 ---
+
 # Navigation par fil d'Ariane
 
 Navigation hiérarchique par fil d'Ariane indiquant l'emplacement de la page actuelle dans la structure du site.
@@ -293,12 +296,12 @@ Testez les données structurées sur :
 
 ## Voir aussi
 
-- [Optimisation SEO](/docs/seo/meta-tags/)
-- [Navigation](/docs/customization/navigation/)
-- [Navigation par barre latérale](/docs/features/sidebar-navigation/)
+- [[zer0-mistakes/pages/_docs/seo/meta-tags|Optimisation SEO]]
+- [[zer0-mistakes/pages/_docs/customization/navigation|Navigation]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Navigation par barre latérale]]
 
 ## Voir aussi
 
-- [[Features]]
-- [[Sidebar Navigation System]]
-- [[Keyboard Navigation]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation System]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]

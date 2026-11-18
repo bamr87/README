@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 6
-source_file: semtex6.md
+source_file: wargames/semtex/semtex6.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex6.md
 title: Semtex6
 ---
 ICMP forging

@@ -2,7 +2,9 @@
 gamename: bandit
 layout: default
 level: 9
-source_file: bandit9.md
+source_file: wargames/bandit/bandit9.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/bandit/bandit9.md
 title: Bandit9
 ---
 Level Goal

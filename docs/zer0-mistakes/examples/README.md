@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: examples/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/README.md
 title: Examples
 ---
 # Examples

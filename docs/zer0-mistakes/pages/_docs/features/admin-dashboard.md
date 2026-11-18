@@ -6,13 +6,15 @@ description: Admin-style layout and dashboard partials for surfacing site config
   build info, and feature flags in a single place.
 difficulty: intermediate
 estimated_reading_time: 8 minutes
-lastmod: 2026-06-15 00:00:00+00:00
+lastmod: 2026-11-15 00:00:00+00:00
 layout: default
 permalink: /docs/features/admin-dashboard/
 preview: /images/previews/admin-layout-configuration-dashboards.png
 sidebar:
   nav: docs
-source_file: admin-dashboard.md
+source_file: pages/_docs/features/admin-dashboard.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/admin-dashboard.md
 tags:
 - admin
 - dashboard
@@ -20,6 +22,7 @@ tags:
 - configuration
 title: Admin Layout & Configuration Dashboards
 ---
+
 # Admin Layout & Configuration Dashboards
 
 The zer0-mistakes theme ships an `admin` layout and a set of dashboard partials for surfacing site configuration, build metadata, and feature flags — all in one place, without requiring a CMS or backend.
@@ -47,13 +50,28 @@ icon: bi-gear
 | `icon` | string | Bootstrap Icons class shown in the page header (e.g. `bi-gear`) |
 | `admin_nav` | boolean | Show the admin sidebar (default: `true`) |
 | `admin_section` | string | Active section key for sidebar highlighting |
-| `admin_actions` | array | Header action buttons (`label`, `url`, `icon`, `style`) |
+| `admin_actions` | array | Header actions (`label`, `url`, `icon`, `style`): the first is a button, the rest open from "More actions" |
+
+### Header Actions
+
+`admin_actions` stays usable at every screen width. The first entry renders as a button (its `style` applies, default `btn-outline-secondary`); any further entries become items of a **More actions** (⋯) dropdown next to it, where `style` is ignored. On narrow screens the actions wrap onto their own line under the page title:
+
+```yaml
+admin_actions:
+  - label: Theme Customizer
+    url: /about/settings/theme/
+    icon: bi-palette
+    style: btn-outline-primary
+  - label: Component Showcase
+    url: /about/settings/components/
+    icon: bi-grid-3x3-gap
+```
 
 ### Layout Structure
 
 ```text
 Admin page
-├── Admin header  (breadcrumbs + icon + title + action buttons)
+├── Admin header  (breadcrumbs + icon + title + actions)
 ├── Admin sidebar (collapsible; collapses to offcanvas on mobile)
 └── Main content  (page body, tab panels, data tables, …)
 ```
@@ -66,7 +84,17 @@ A dedicated sidebar navigation partial is included automatically with the admin 
 _includes/navigation/admin-nav.html
 ```
 
-It renders a vertical nav with links to all admin/settings pages.
+It renders a vertical nav with links to all admin/settings pages, read from `_data/navigation/admin.yml`. Each item's `group:` key places it under a small-caps section label — **Configure**, **System** and **Links** in the theme's own file — and sections appear in the order they first occur in the file. Items without a `group:` are listed together without a label, so a navigation file written before groups existed keeps working:
+
+```yaml
+- title: Configuration
+  url: /about/config/
+  icon: bi-gear
+  group: Configure
+  description: View and export site configuration
+```
+
+The current page is marked with `aria-current` and a light tint of the active skin's colour. Counts show as plain numbers and statuses as a coloured dot with a word (for example Analytics "Off", Environment "Dev").
 
 ## Tabbed Admin Pages
 
@@ -120,10 +148,10 @@ Add your content here. Use Bootstrap 5 components freely.
 
 ## Related
 
-- [Dynamic Navigation](/docs/features/dynamic-navigation/)
-- [Theme Configuration](/docs/customization/)
+- [[zer0-mistakes/pages/_docs/features/dynamic-navigation|Dynamic Navigation]]
+- [[zer0-mistakes/pages/_docs/customization/index|Theme Configuration]]
 
 ## See also
 
-- [[Features]]
-- [[Customization]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]

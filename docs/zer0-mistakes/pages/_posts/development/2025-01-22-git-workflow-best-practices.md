@@ -21,15 +21,18 @@ keywords:
 lastmod: 2026-04-25 20:20:00+00:00
 layout: article
 preview: /images/previews/git-workflow-best-practices-for-modern-teams.png
-source_file: 2025-01-22-git-workflow-best-practices.md
+source_file: pages/_posts/development/2025-01-22-git-workflow-best-practices.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/development/2025-01-22-git-workflow-best-practices.md
 tags:
 - git
 - version-control
 - workflow
 - collaboration
 - code-review
-title: Create a feature branch
+title: Git Workflow Best Practices for Modern Teams
 ---
+
 ![Git workflow best practices for modern development teams - branching, commits, and code review](/assets/images/previews/git-workflow-best-practices-for-modern-teams.png "Git workflow best practices for modern teams"){: .img-fluid .rounded .mb-4}
 
 A reliable **Git workflow** is the backbone of modern software development. This guide walks through the branching strategies, commit conventions, and code review practices that help teams ship faster, with fewer regressions and far fewer merge headaches.

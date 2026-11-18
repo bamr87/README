@@ -1,12 +1,11 @@
 # Temporary files
 temp/
-raw_docs/
 
 # Shallow clones the fleet survey keeps between runs
 .cache/
 
-# MkDocs build output
-site/
+# MkDocs build output. Anchored: the corpus has its own site/ directories.
+/site/
 
 # Script output files
 output/temp/

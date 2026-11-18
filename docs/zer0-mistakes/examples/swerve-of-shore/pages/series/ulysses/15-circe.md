@@ -7,9 +7,12 @@ permalink: /series/ulysses/15-circe/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 15-circe.md
-title: 15 Circe
+source_file: examples/swerve-of-shore/pages/series/ulysses/15-circe.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/15-circe.md
+title: 15 · Circe
 ---
+
 {% include page-header.html %}
 
 Episode 15 of *Ulysses*. Midnight, Nighttown.

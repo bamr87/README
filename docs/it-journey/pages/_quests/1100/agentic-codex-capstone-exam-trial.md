@@ -76,7 +76,9 @@ rewards:
   skills_unlocked:
   - All Domain 1–6 skills
 skill_focus: security
-source_file: agentic-codex-capstone-exam-trial.md
+source_file: pages/_quests/1100/agentic-codex-capstone-exam-trial.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/agentic-codex-capstone-exam-trial.md
 sub_title: Level 1100 Quest 4/4 — The Grand Capstone — All Domains
 tags:
 - '1100'
@@ -88,7 +90,7 @@ tags:
 - epic
 - main_quest
 - hands-on
-title: Our Agentic SDLC
+title: 'Trial of the Agentic Codex: The Grand Capstone'
 validation_criteria:
   completion_requirements:
   - All 6 domain challenge scenarios completed
@@ -145,7 +147,7 @@ graph TD
 
 The following 6 chapters map directly to the GH-600 exam domains.
 
-> 🏰 **A worked answer key exists.** The IT-Journey repository itself implements every seal below — its AI fleet, kill switches, autonomy matrix, drift guard, and audit trails are mapped file-by-file in [GH-600 in the Wild](/notes/gh-600/implemented-in-it-journey/). Consult it when you are stuck, the way you would check a solved example — but the trial wants *your* build, in *your* repository.
+> 🏰 **A worked answer key exists.** The IT-Journey repository itself implements every seal below — its AI fleet, kill switches, autonomy matrix, drift guard, and audit trails are mapped file-by-file in [[it-journey/pages/_notes/gh-600/implemented-in-it-journey|GH-600 in the Wild]]. Consult it when you are stuck, the way you would check a solved example — but the trial wants *your* build, in *your* repository.
 
 ---
 
@@ -227,7 +229,7 @@ jobs:
 
 > **Task:** Ensure every agent run emits structured logs that can be queried.
 
-*Refer to Q3 ([Observability & Control](/quests/1000/agentic-observability-and-control/)) for the full pattern.*
+*Refer to Q3 ([[it-journey/pages/_quests/1000/agentic-observability-and-control|Observability & Control]]) for the full pattern.*
 
 ---
 
@@ -273,7 +275,7 @@ permissions:
 
 > **Task:** Add a failure escalation workflow that creates an issue when an agent fails.
 
-*Refer to Q7 ([Safe Execution & Error Handling](/quests/1001/agentic-safe-execution-and-error-handling/)) for the full pattern.*
+*Refer to Q7 ([[it-journey/pages/_quests/1001/agentic-safe-execution-and-error-handling|Safe Execution & Error Handling]]) for the full pattern.*
 
 ---
 
@@ -297,13 +299,13 @@ permissions:
 
 > **Task:** Produce a drift check that compares current agent state to expected state.
 
-*Refer to Q9 ([State Persistence & Drift](/quests/1010/agentic-state-persistence-and-drift/)) for `detect_drift.py`.*
+*Refer to Q9 ([[it-journey/pages/_quests/1010/agentic-state-persistence-and-drift|State Persistence & Drift]]) for `detect_drift.py`.*
 
 ### Challenge 3.3: Implement cross-surface context handoff
 
 > **Task:** Show a `context-handoff.json` passed between an issue → PR → branch context.
 
-*Refer to Q10 ([State Continuity Cross-Tools](/quests/1010/agentic-state-continuity-cross-tools/)) for the schema and `inject_cross_surface_context.py`.*
+*Refer to Q10 ([[it-journey/pages/_quests/1010/agentic-state-continuity-cross-tools|State Continuity Cross-Tools]]) for the schema and `inject_cross_surface_context.py`.*
 
 ---
 
@@ -346,13 +348,13 @@ permissions:
 
 > **Task:** Take a failed workflow run and produce a 5-Why RCA document.
 
-*Refer to Q12 ([Failure Root Cause Analysis](/quests/1010/agentic-failure-root-cause-analysis/)) for the full RCA template.*
+*Refer to Q12 ([[it-journey/pages/_quests/1010/agentic-failure-root-cause-analysis|Failure Root Cause Analysis]]) for the full RCA template.*
 
 ### Challenge 4.3: Iterate on agent instructions
 
 > **Task:** Make one instruction change, measure the before/after difference.
 
-*Refer to Q13 ([Behavior Tuning](/quests/1011/agentic-behavior-tuning/)) for the instruction changelog template.*
+*Refer to Q13 ([[it-journey/pages/_quests/1011/agentic-behavior-tuning|Behavior Tuning]]) for the instruction changelog template.*
 
 ---
 
@@ -364,25 +366,25 @@ permissions:
 
 > **Task:** Create a fan-out or chain orchestration with 3 sub-agents.
 
-*Refer to Q14 ([Multi-Agent Orchestration Patterns](/quests/1011/agentic-multi-agent-orchestration-patterns/)) for the fan-out and chain patterns.*
+*Refer to Q14 ([[it-journey/pages/_quests/1011/agentic-multi-agent-orchestration-patterns|Multi-Agent Orchestration Patterns]]) for the fan-out and chain patterns.*
 
 ### Challenge 5.2: Add tracing to the multi-agent run
 
 > **Task:** Each sub-agent emits a trace entry with a shared correlation ID.
 
-*Refer to Q15 ([Multi-Agent Observability](/quests/1011/agentic-multi-agent-observability/)) for `trace_writer.py`.*
+*Refer to Q15 ([[it-journey/pages/_quests/1011/agentic-multi-agent-observability|Multi-Agent Observability]]) for `trace_writer.py`.*
 
 ### Challenge 5.3: Add failure recovery to the orchestrator
 
 > **Task:** Orchestrator continues after one sub-agent fails and produces a recovery plan.
 
-*Refer to Q16 ([Multi-Agent Failure Recovery](/quests/1011/agentic-multi-agent-failure-recovery/)) for `recovery_coordinator.py`.*
+*Refer to Q16 ([[it-journey/pages/_quests/1011/agentic-multi-agent-failure-recovery|Multi-Agent Failure Recovery]]) for `recovery_coordinator.py`.*
 
 ### Challenge 5.4: Register all agents in the agent registry
 
 > **Task:** Publish `_data/agents.yml` with all 3 agents registered.
 
-*Refer to Q17 ([Multi-Agent Lifecycle Management](/quests/1100/agentic-multi-agent-lifecycle-management/)) for the registry schema.*
+*Refer to Q17 ([[it-journey/pages/_quests/1100/agentic-multi-agent-lifecycle-management|Multi-Agent Lifecycle Management]]) for the registry schema.*
 
 ---
 
@@ -394,13 +396,13 @@ permissions:
 
 > **Task:** Complete `_data/autonomy-matrix.yml` with 5 task types at appropriate levels.
 
-*Refer to Q18 ([Autonomy Levels Matrix](/quests/1100/agentic-autonomy-levels-matrix/)) for the matrix schema.*
+*Refer to Q18 ([[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix|Autonomy Levels Matrix]]) for the matrix schema.*
 
 ### Challenge 6.2: Implement 3 guardrails
 
 > **Task:** CODEOWNERS file-scope boundary, approval gate environment, forbidden actions list.
 
-*Refer to Q19 ([Guardrails & Human-in-the-Loop](/quests/1100/agentic-guardrails-and-human-in-the-loop/)) for each guardrail.*
+*Refer to Q19 ([[it-journey/pages/_quests/1100/agentic-guardrails-and-human-in-the-loop|Guardrails & Human-in-the-Loop]]) for each guardrail.*
 
 ---
 
@@ -502,25 +504,25 @@ Adjust paths to match where your trial actually put each artifact — the script
 
 | Quest | Domain | Link |
 |---|---|---|
-| Q1 | D1 | [Agentic SDLC Integration](/quests/0111/agentic-sdlc-integration/) |
-| Q2 | D1 | [Plan vs Action Boundaries](/quests/0111/agentic-plan-vs-action-boundaries/) |
-| Q3 | D1 | [Observability & Control](/quests/1000/agentic-observability-and-control/) |
-| Q4 | D2 | [Tool Selection & Permissions](/quests/1000/agentic-tool-selection-and-permissions/) |
-| Q5 | D2 | [MCP Server Mastery](/quests/1000/agentic-mcp-server-mastery/) |
-| Q6 | D2 | [Dev Environment Integration](/quests/1001/agentic-dev-environment-integration/) |
-| Q7 | D2 | [Safe Execution & Error Handling](/quests/1001/agentic-safe-execution-and-error-handling/) |
-| Q8 | D3 | [Memory Strategies](/quests/1001/agentic-memory-strategies/) |
-| Q9 | D3 | [State Persistence & Drift](/quests/1010/agentic-state-persistence-and-drift/) |
-| Q10 | D3 | [State Continuity Cross-Tools](/quests/1010/agentic-state-continuity-cross-tools/) |
-| Q11 | D4 | [Success Criteria & Signals](/quests/1010/agentic-success-criteria-and-signals/) |
-| Q12 | D4 | [Failure Root Cause Analysis](/quests/1010/agentic-failure-root-cause-analysis/) |
-| Q13 | D4 | [Behavior Tuning](/quests/1011/agentic-behavior-tuning/) |
-| Q14 | D5 | [Multi-Agent Orchestration Patterns](/quests/1011/agentic-multi-agent-orchestration-patterns/) |
-| Q15 | D5 | [Multi-Agent Observability](/quests/1011/agentic-multi-agent-observability/) |
-| Q16 | D5 | [Multi-Agent Failure Recovery](/quests/1011/agentic-multi-agent-failure-recovery/) |
-| Q17 | D5 | [Multi-Agent Lifecycle Management](/quests/1100/agentic-multi-agent-lifecycle-management/) |
-| Q18 | D6 | [Autonomy Levels Matrix](/quests/1100/agentic-autonomy-levels-matrix/) |
-| Q19 | D6 | [Guardrails & HITL](/quests/1100/agentic-guardrails-and-human-in-the-loop/) |
+| Q1 | D1 | [[it-journey/pages/_quests/0111/agentic-sdlc-integration\|Agentic SDLC Integration]] |
+| Q2 | D1 | [[it-journey/pages/_quests/0111/agentic-plan-vs-action-boundaries\|Plan vs Action Boundaries]] |
+| Q3 | D1 | [[it-journey/pages/_quests/1000/agentic-observability-and-control\|Observability & Control]] |
+| Q4 | D2 | [[it-journey/pages/_quests/1000/agentic-tool-selection-and-permissions\|Tool Selection & Permissions]] |
+| Q5 | D2 | [[it-journey/pages/_quests/1000/agentic-mcp-server-mastery\|MCP Server Mastery]] |
+| Q6 | D2 | [[it-journey/pages/_quests/1001/agentic-dev-environment-integration\|Dev Environment Integration]] |
+| Q7 | D2 | [[it-journey/pages/_quests/1001/agentic-safe-execution-and-error-handling\|Safe Execution & Error Handling]] |
+| Q8 | D3 | [[it-journey/pages/_quests/1001/agentic-memory-strategies\|Memory Strategies]] |
+| Q9 | D3 | [[it-journey/pages/_quests/1010/agentic-state-persistence-and-drift\|State Persistence & Drift]] |
+| Q10 | D3 | [[it-journey/pages/_quests/1010/agentic-state-continuity-cross-tools\|State Continuity Cross-Tools]] |
+| Q11 | D4 | [[it-journey/pages/_quests/1010/agentic-success-criteria-and-signals\|Success Criteria & Signals]] |
+| Q12 | D4 | [[it-journey/pages/_quests/1010/agentic-failure-root-cause-analysis\|Failure Root Cause Analysis]] |
+| Q13 | D4 | [[it-journey/pages/_quests/1011/agentic-behavior-tuning\|Behavior Tuning]] |
+| Q14 | D5 | [[it-journey/pages/_quests/1011/agentic-multi-agent-orchestration-patterns\|Multi-Agent Orchestration Patterns]] |
+| Q15 | D5 | [[it-journey/pages/_quests/1011/agentic-multi-agent-observability\|Multi-Agent Observability]] |
+| Q16 | D5 | [[it-journey/pages/_quests/1011/agentic-multi-agent-failure-recovery\|Multi-Agent Failure Recovery]] |
+| Q17 | D5 | [[it-journey/pages/_quests/1100/agentic-multi-agent-lifecycle-management\|Multi-Agent Lifecycle Management]] |
+| Q18 | D6 | [[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix\|Autonomy Levels Matrix]] |
+| Q19 | D6 | [[it-journey/pages/_quests/1100/agentic-guardrails-and-human-in-the-loop\|Guardrails & HITL]] |
 | CAP | All | **You are here** |
 
 ## 🏆 Capstone Rewards
@@ -536,7 +538,7 @@ Adjust paths to match where your trial actually put each artifact — the script
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] · [[GH-600 Skills Checklist]] **Prerequisites:** [[Initiation Rites: Embedding Agents in the SDLC]] · [[The Three Sigils: Plan, Reason, Act]] · [[The All-Seeing Eye: Observability & Control for Autonomous Agents]] · [[Forging the Agent's Arsenal: Tool Selection & Permissions]] · [[The MCP Conclave: Mastering Model Context Protocol Servers]] · [[Bind the Agent to the Realm: Dev Environment Integration]] · [[The Shield of Retries: Safe Execution and Error Handling]] · [[Vaults of Recollection: Agent Memory Strategies]] · [[Anchoring the Drifting Agent: State Persistence and Drift Prevention]] · [[Crossing the Tool Planes: State Continuity Across Tools]] · [[The Oracle's Rubric: Defining Agent Success Criteria and Signals]] · [[The Necromancer's Inquest: Agent Failure Root Cause Analysis]] · [[Reforging the Agent's Mind: Behavior Tuning Through Instructions]] · [[The Council of Many: Multi-Agent Orchestration Patterns]] · [[The Scribe's Codex: Observability in Multi-Agent Systems]] · [[When Familiars Fall: Multi-Agent Failure Recovery]] · [[The Agent Pantheon: Multi-Agent Lifecycle Management]] · [[The Autonomy Scales: Mapping Agent Autonomy Levels]] · [[The Warden's Pact: Guardrails and Human-in-the-Loop Patterns]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] · [[it-journey/pages/_notes/gh-600/skills-checklist|GH-600 Skills Checklist]] **Prerequisites:** [[it-journey/pages/_quests/0111/agentic-sdlc-integration|Initiation Rites: Embedding Agents in the SDLC]] · [[it-journey/pages/_quests/0111/agentic-plan-vs-action-boundaries|The Three Sigils: Plan, Reason, Act]] · [[The All-Seeing Eye: Observability & Control for Autonomous Agents]] · [[Forging the Agent's Arsenal: Tool Selection & Permissions]] · [[it-journey/pages/_quests/1000/agentic-mcp-server-mastery|The MCP Conclave: Mastering Model Context Protocol Servers]] · [[it-journey/pages/_quests/1001/agentic-dev-environment-integration|Bind the Agent to the Realm: Dev Environment Integration]] · [[it-journey/pages/_quests/1001/agentic-safe-execution-and-error-handling|The Shield of Retries: Safe Execution and Error Handling]] · [[it-journey/pages/_quests/1001/agentic-memory-strategies|Vaults of Recollection: Agent Memory Strategies]] · [[Anchoring the Drifting Agent: State Persistence and Drift Prevention]] · [[it-journey/pages/_quests/1010/agentic-state-continuity-cross-tools|Crossing the Tool Planes: State Continuity Across Tools]] · [[The Oracle's Rubric: Defining Agent Success Criteria and Signals]] · [[The Necromancer's Inquest: Agent Failure Root Cause Analysis]] · [[Reforging the Agent's Mind: Behavior Tuning Through Instructions]] · [[it-journey/pages/_quests/1011/agentic-multi-agent-orchestration-patterns|The Council of Many: Multi-Agent Orchestration Patterns]] · [[The Scribe's Codex: Observability in Multi-Agent Systems]] · [[it-journey/pages/_quests/1011/agentic-multi-agent-failure-recovery|When Familiars Fall: Multi-Agent Failure Recovery]] · [[it-journey/pages/_quests/1100/agentic-multi-agent-lifecycle-management|The Agent Pantheon: Multi-Agent Lifecycle Management]] · [[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix|The Autonomy Scales: Mapping Agent Autonomy Levels]] · [[The Warden's Pact: Guardrails and Human-in-the-Loop Patterns]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

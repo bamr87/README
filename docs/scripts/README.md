@@ -1,10 +1,12 @@
 ---
 source_file: README.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/README.md
 title: 🛠️ scripts
 ---
 # 🛠️ scripts
 
-> Standalone Bash utilities for project scaffolding, GitHub repository management and multi-repo maintenance.
+> scripts' direction is to become the ultimate open home for all things project and repository automation: data, tools, resources and transparency, with standalone Bash utilities for scaffolding, GitHub management and multi-repo maintenance, for everyone ([constitution](docs/constitution.md) §1).
 
 [![CI](https://github.com/bamr87/scripts/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/scripts/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/scripts)](LICENSE)
 
@@ -95,7 +97,7 @@ PROJECT_TYPE=django PROJECT_NAME=my-api SETUP_DOCKER=true SETUP_CI=true \
 ./project-init.sh --type react --name my-react-app --dir ~/projects/my-react-app
 ```
 
-To set your own defaults, copy [`.env.example`](.env.example) and either pass it with `--config FILE` (any mode; it is applied where it appears, so put it first and let later flags override it) or save it as `.env` in the directory you run the wizard from (interactive mode only; a `.env` overrides flags and `--config`). Only the variables below are read; the rest of `.env.example` is reserved and currently ignored. An unsupported `PROJECT_TYPE` stops the wizard before anything is created. Key options:
+To set your own defaults, copy [`.env.example`](dot-env.example) and either pass it with `--config FILE` (any mode; it is applied where it appears, so put it first and let later flags override it) or save it as `.env` in the directory you run the wizard from (interactive mode only; a `.env` overrides flags and `--config`). Only the variables below are read; the rest of `.env.example` is reserved and currently ignored. Both files are parsed as `KEY=VALUE` lines (optional `export `, `#` comments, matching quotes, a leading `~/` for `$HOME`), never sourced: `$(...)`, backticks and `$VAR` stay literal, so running the wizard inside an untrusted checkout cannot execute its `.env`. Prompt answers are stored verbatim too, apostrophes included. An unsupported `PROJECT_TYPE` stops the wizard before anything is created. Key options:
 
 | Variable | Description | Options |
 | --- | --- | --- |
@@ -131,6 +133,8 @@ Forking and cloning strategies that go beyond `git clone` — shallow and sparse
 ./forkme.sh --analyze-only owner/repo
 ```
 
+Each `--file-types` entry must be a plain extension (letters and digits, comma-separated); anything else exits non-zero before cloning, because the list builds a `find … -delete` expression.
+
 → [Full ForkMe documentation](FORKME/FORKME.md) · [Quick reference](FORKME/FORKME-QUICK-REFERENCE.md)
 
 ### StashMe
@@ -147,6 +151,8 @@ Saves uncommitted changes across every git repo under a directory tree to timest
 ./STASHME/stashme.sh --cleanup                          # remove old stashme branches
 ```
 
+`--max-depth` must be a non-negative integer; anything else exits non-zero before the search runs.
+
 → [Full StashMe documentation](STASHME/STASHME.md) · [Quick reference](STASHME/STASHME-QUICK-REFERENCE.md)
 
 ### Git Init
@@ -160,6 +166,8 @@ Creates a git repo (and optionally the GitHub remote) in interactive or headless
 ./git_init.sh --headless -n localrepo --no-push
 ./git_init.sh --headless -n previewme --dry-run                 # preview only
 ```
+
+`--dry-run` prints each command shell-quoted (`printf %q`), so a name such as `it's-a-test` shows exactly the argument that would be passed.
 
 ### Rename Directory
 
@@ -206,7 +214,7 @@ The [docs index](docs/README.md) lists every document with a one-line summary: t
 
 ## ✅ Development
 
-The gates are ShellCheck, the offline smoke test [`tests/smoke.sh`](tests/smoke.sh) (side-effect-free `--help` for every tool, `CREATE_GITHUB_REPO` / `PUSH_TO_GITHUB` honored, run against a sandboxed `HOME` and a stub `gh`), the markdown one-paragraph-per-line rule and the docs index check, all in the [Quick start](#quick-start) block. In CI, [`smoke.yml`](.github/workflows/smoke.yml) runs ShellCheck and the smoke test (the hub's shared `standard-ci.yml` shellchecks nothing here), [`markdown-oneline.yml`](.github/workflows/markdown-oneline.yml) enforces the prose rule and [`ci.yml`](.github/workflows/ci.yml) calls the hub's shared `standard-ci.yml`. [`claude.yml`](.github/workflows/claude.yml) is the `@claude` handler, and `conformance.yml`, `release.yml` (release-please) and `verify.yml` are likewise thin callers of hub workflows. Conventions for new scripts, commits and branches live in [AGENTS.md](AGENTS.md).
+The gates are ShellCheck, the offline smoke test [`tests/smoke.sh`](tests/smoke.sh) (side-effect-free `--help` for every tool, `CREATE_GITHUB_REPO` / `PUSH_TO_GITHUB` honored, run against a sandboxed `HOME` and a stub `gh`), the markdown one-paragraph-per-line rule and the docs index check, all in the [Quick start](#quick-start) block. In CI, [`smoke.yml`](dot-github/workflows/smoke.yml) runs ShellCheck and the smoke test (the hub's shared `standard-ci.yml` shellchecks nothing here), [`markdown-oneline.yml`](dot-github/workflows/markdown-oneline.yml) enforces the prose rule and [`ci.yml`](dot-github/workflows/ci.yml) calls the hub's shared `standard-ci.yml`. [`claude.yml`](dot-github/workflows/claude.yml) is the `@claude` handler, and `conformance.yml`, `release.yml` (release-please) and `verify.yml` are likewise thin callers of hub workflows. Conventions for new scripts, commits and branches live in [AGENTS.md](AGENTS.md).
 
 ## Contributing
 
@@ -222,5 +230,4 @@ MIT — see [LICENSE](LICENSE).
 
 ---
 
-<!-- bamr87-portfolio-footer -->
 Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

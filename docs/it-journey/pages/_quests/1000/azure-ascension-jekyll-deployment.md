@@ -29,13 +29,15 @@ primary_technology: azure-static-web-apps
 quest_series: Cloud Deployment Quests
 quest_type: main_quest
 skill_focus: devops
-source_file: azure-ascension-jekyll-deployment.md
+source_file: pages/_quests/1000/azure-ascension-jekyll-deployment.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1000/azure-ascension-jekyll-deployment.md
 tags:
 - azure
 - jekyll
 - static-web-apps
 - ci-cd
-title: 'setup: verifies prerequisites and provisions the Azure Static Web App'
+title: 'Azure Ascension: Deploying Jekyll to the Cloud Kingdom'
 ---
 *Rise, cloud wanderer! This quest guides you through deploying the IT-Journey Jekyll site to Azure Static Web Apps, wiring up CI/CD, and verifying a clean production build.*
 
@@ -124,7 +126,7 @@ stored as `AZURE_STATIC_WEB_APPS_API_TOKEN` under **Settings → Secrets and var
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1000 (8) - Cloud Computing]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/30090038199
 slice: security-specialist/1011
-source_file: 2026-07-24-security-specialist-1011.md
+source_file: pages/_quest-reports/2026-07-24-security-specialist-1011.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-24-security-specialist-1011.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-24-security-specialist-1011.md
 tags:
 - security-specialist
 - level-1011
@@ -25,13 +27,14 @@ tags:
 - security-compliance
 theme: Security & Compliance
 tier: Warrior
-title: 2026 07 24 Security Specialist 1011
+title: Security Specialist · L1011 · 2026-07-24
 verdict: warn
 walk_date: '2026-07-24'
 ---
+
 > **Slice** `security-specialist/1011` · **Level** 1011 (Security & Compliance) · **Warrior tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-24
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30090038199) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-24-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-24-security-specialist-1011.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30090038199) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-24-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-24-security-specialist-1011.md)
 
 ---
 
@@ -39,7 +42,7 @@ walk_date: '2026-07-24'
 
 I played the first 5 of the 12 level-1011 quests on the **Security Specialist** path (Warrior tier, theme *Security & Compliance*), walking them in the planner's order as a learner would, and reasoning about the chain while consuming the workflow-sealed execute-engine evidence. The engine actually ran each quest's safe snippets in a disposable sandbox: **2 pass · 3 warn · 0 fail**, average **72.8%**.
 
-Headline verdict: **⚠️ warn** — the slice is safe and pedagogically sound, and the genuinely hands-on lab material (the multi-agent tracing labs, the Juice Shop docker lab) was *verified to work end-to-end*. But four separate copy-paste-verbatim bugs were witnessed by real command execution: a MySQL 8.0 `GRANT` break, a `sha256sum --check` placeholder error, a silently-no-op trace `collect` glob, and — most serious — a GitHub Actions workflow whose expressions are corrupted by **leaked Jekyll `{​% raw %​}` tags** so it cannot be pasted into `.github/workflows/` as published.
+Headline verdict: **⚠️ warn** — the slice is safe and pedagogically sound, and the genuinely hands-on lab material (the multi-agent tracing labs, the Juice Shop docker lab) was *verified to work end-to-end*. But four separate copy-paste-verbatim bugs were witnessed by real command execution: a MySQL 8.0 `GRANT` break, a `sha256sum --check` placeholder error, a silently-no-op trace `collect` glob, and — most serious — a GitHub Actions workflow whose expressions are corrupted by **leaked Jekyll `{% raw %}` tags** so it cannot be pasted into `.github/workflows/` as published.
 
 The most important *chain* finding a maintainer should note: for the **Security Specialist** character specifically, only quest 1 (Security Fundamentals) is on-theme. Quests 2–5 are **GH-600 Agentic AI certification** content that happens to share the `1011` level code — a DevOps/AI track, not a security track. That is a coherence observation about the slice, not a defect in any single quest (details in §🔗 Chain Continuity).
 
@@ -51,7 +54,7 @@ The most important *chain* finding a maintainer should note: for the **Security 
 | 2 | ⚠️ warn | Reforging the Agent's Mind: Tuning Behavior by Instruction | 68 | Safe, graceful scripts, but its core objective (editing `AGENTS.md`) is never exercised and the baseline loop has a per-task bug. |
 | 3 | ✅ pass | The Council of Many: Multi-Agent Coordination | 83 | Best of the slice — the hands-on trace lab ran exactly as documented; two YAML-narrative gaps remain. |
 | 4 | ✅ pass | The Council of Many: Multi-Agent Orchestration Patterns | 80 | Runnable self-check + YAMLs valid; honest about stub scripts; misses `download-artifact@v4` nesting behavior. |
-| 5 | ⚠️ warn | The Scribe's Codex: Observability in Multi-Agent Systems | 68 | Python/jq artifacts all ran correctly, but Chapter 1's workflow is broken by leaked `{​% raw %​}` templating tags. |
+| 5 | ⚠️ warn | The Scribe's Codex: Observability in Multi-Agent Systems | 68 | Python/jq artifacts all ran correctly, but Chapter 1's workflow is broken by leaked `{% raw %}` templating tags. |
 
 ## 🔬 Evidence
 
@@ -71,7 +74,7 @@ All results below come from commands the execute engine **actually ran** in the 
 
 ### 3. The Council of Many: Multi-Agent Coordination — 83% ✅ (ran 6/4 · 5 passed · 1 failed · 4 reasoned)
 - ✅ **passed** — the Hands-On Lab's three bash steps (mint `$CID` + `trace()`, run the seeded-fault council, stitch with `jq -s 'sort_by(.seq)'`) ran flawlessly and produced output **matching the quest's "Expected" block exactly** in content and field order (only cosmetic: real `jq` output is tab-separated vs. the doc's space-aligned columns).
-- ✅ **passed** — all four YAML snippets parse as valid YAML (PyYAML) and pass yamllint (line-length warnings only); the mermaid diagram renders via `mmdc` with no errors. Note this quest correctly wraps its Actions YAML in block-level `{​% raw %​}…{​% endraw %​}`, so `${​{ }​}` renders intact — the right pattern (contrast quest 5).
+- ✅ **passed** — all four YAML snippets parse as valid YAML (PyYAML) and pass yamllint (line-length warnings only); the mermaid diagram renders via `mmdc` with no errors. Note this quest correctly wraps its Actions YAML in block-level `{% raw %}…{% endraw %}`, so `${{ }}` renders intact — the right pattern (contrast quest 5).
 - ❌ **failed** — the Chapter 2 *collect step* `cat trace-*-"$cid"/*.jsonl | jq -s 'sort_by(.ts)…'` run verbatim **exits 0 with an empty output file**. It globs per-agent *directories*, but the naming shown two snippets earlier is a flat `trace-$CORRELATION_ID.jsonl` per job — a silent no-op with no error to debug.
 
 ### 4. Multi-Agent Orchestration Patterns — 80% ✅ (ran 4/1 · 4 passed · 0 failed · 1 reasoned)
@@ -81,7 +84,7 @@ All results below come from commands the execute engine **actually ran** in the 
 
 ### 5. The Scribe's Codex: Observability — 68% ⚠️ (ran 6/4 · 5 passed · 1 failed · 1 skipped · 1 reasoned)
 - ✅ **passed** — `trace_writer.py` printed its two `[TRACE]` lines and wrote a valid `trace-task-42-1001.jsonl`; `aggregate_traces.py` against 3 synthetic trace files produced a correct time-sorted `audit-log.json` (*"Found 3 trace files" / "Unified audit log written: 5 events across 3 agents" / "1 failure events detected"*); all three Chapter 4 `jq` queries produced exactly the described output.
-- ❌ **failed** — the Chapter 1 workflow is broken as published: **5 occurrences** of leaked Liquid tags corrupt every Actions expression, e.g. `outputs: ${​% raw %​}{​{ steps.init_trace.outputs.correlation_id }​}{​% endraw %​}` instead of `${​{ steps.init_trace.outputs.correlation_id }​}` (confirmed by reading source lines 110, 116, 124, 137–138). Pasted verbatim into `.github/workflows/`, `correlation_id` / `env.CORRELATION_ID` / artifact names are all literal broken strings.
+- ❌ **failed** — the Chapter 1 workflow is broken as published: **5 occurrences** of leaked Liquid tags corrupt every Actions expression, e.g. `outputs: ${% raw %}{{ steps.init_trace.outputs.correlation_id }}{% endraw %}` instead of `${{ steps.init_trace.outputs.correlation_id }}` (confirmed by reading source lines 110, 116, 124, 137–138). Pasted verbatim into `.github/workflows/`, `correlation_id` / `env.CORRELATION_ID` / artifact names are all literal broken strings.
 - ⚪ **skipped** — `python3 scripts/validate_quest.py --quest q15` references a platform script that exists nowhere in the quest or sandbox; could not be executed.
 
 ## 🐞 Issues Found
@@ -89,7 +92,7 @@ All results below come from commands the execute engine **actually ran** in the 
 Every item below is backed by a command the engine ran (§Evidence) or an exact quoted line I read from the quest source. Grouped by severity.
 
 **HIGH**
-1. **high · Scribe's Codex (Observability) · Chapter 1 YAML workflow (source lines ~110, 116, 124, 137–138)** — *Observed:* 5 leaked `${​% raw %​}{​{ … }​}{​% endraw %​}` fragments; the central "correlation ID" workflow is non-functional if copied verbatim. *Fix:* wrap the entire fenced block in a single block-level `{​% raw %​}`/`{​% endraw %​}` pair (as sibling quest *Multi-Agent Coordination* correctly does) so it renders as plain `${​{ … }​}`.
+1. **high · Scribe's Codex (Observability) · Chapter 1 YAML workflow (source lines ~110, 116, 124, 137–138)** — *Observed:* 5 leaked `${% raw %}{{ … }}{% endraw %}` fragments; the central "correlation ID" workflow is non-functional if copied verbatim. *Fix:* wrap the entire fenced block in a single block-level `{% raw %}`/`{% endraw %}` pair (as sibling quest *Multi-Agent Coordination* correctly does) so it renders as plain `${{ … }}`.
 2. **high · Security Fundamentals · Chapter 3 SQL least-privilege example** — *Observed:* `GRANT ALL PRIVILEGES … TO 'app_user'@'%'` fails on MySQL 8.0.46 with `ERROR 1410`. *Fix:* prepend `CREATE USER 'app_user'@'%' IDENTIFIED BY '…';` (and the `10.0.%` host), or note that GRANT no longer auto-creates users on MySQL 8.0+.
 3. **high · Reforging the Agent's Mind · Objective 3 / Chapter 3** — *Observed:* the quest's core objective, "modify `copilot-instructions.md` and `AGENTS.md`", is never exercised or validated by any runnable step. *Fix:* add a runnable edit step (e.g. a `cat >> AGENTS.md <<'EOF' … EOF`) plus a Quest-Validation check that those files changed.
 

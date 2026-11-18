@@ -28,7 +28,9 @@ slug: features
 social_media:
   og_type: article
   twitter_card: summary_large_image
-source_file: index.md
+source_file: fr/about/features/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/features/index.md
 tags:
 - jekyll
 - theme
@@ -42,12 +44,13 @@ technical_requirements:
 - Ruby 2.7+ with Bundler
 - VS Code with GitHub Copilot (recommended)
 - Docker for containerized development
-title: Version Management
+title: Fonctionnalités du thème Zer0-Mistakes
 translated_from_sha: 059735857124
 translation_of: pages/_about/features/index.md
 translation_source_url: /about/features/
 type: default
 ---
+
 ## 🤖 Aperçu des fonctionnalités du thème améliorées par l'IA
 
 Le thème Zer0-Mistakes est un **thème Jekyll prêt pour la production** construit sur Bootstrap 5, offrant une automatisation complète, un suivi des statistiques et des **outils de développement optimisés pour VS Code Copilot** suivant les principes IT-Journey.
@@ -83,7 +86,7 @@ Chaque fonctionnalité incarne nos principes fondamentaux :
 | **Bascule mode sombre** | ✅ Actif | Changement de thème selon le système |
 | **Design réactif** | ✅ Actif | Mobile-first, prise en charge de tous les appareils |
 | **Habillages de thème personnalisés** | ✅ Actif | Plusieurs jeux de couleurs disponibles |
-| **[Bouton retour en haut](/about/features/add-floating-back-to-top-button/)** | ✅ Actif | Navigation optimisée pour mobile |
+| **[[zer0-mistakes/pages/_about/features/add-floating-back-to-top-button\|Bouton retour en haut]]** | ✅ Actif | Navigation optimisée pour mobile |
 | **Table des matières auto-générée** | ✅ Actif | Table des matières intelligente |
 | **Barres latérales flottantes** | ✅ Actif | Navigation contextuelle |
 | **Coloration syntaxique du code** | ✅ Actif | Coloration syntaxique Rouge |
@@ -108,8 +111,8 @@ Chaque fonctionnalité incarne nos principes fondamentaux :
 {: .table .table-bordered .table-striped .table-hover .table-responsive}
 | Fonctionnalité | Statut | Documentation |
 | ----------------------------------------------------- | ----------- | ------------- |
-| **[Tableau de bord des statistiques](/about/features/statistics-dashboard/)** | ✅ Actif | Analyse complète du site |
-| **[Générateur de statistiques de contenu](/about/stats/)** | ✅ Actif | Métriques de contenu automatisées |
+| **[[zer0-mistakes/pages/_about/features/statistics-dashboard\|Tableau de bord des statistiques]]** | ✅ Actif | Analyse complète du site |
+| **[[zer0-mistakes/pages/_about/stats\|Générateur de statistiques de contenu]]** | ✅ Actif | Métriques de contenu automatisées |
 | **Analyse des catégories** | ✅ Actif | Suivi de la répartition des sujets |
 | **Visualisation en nuage de tags** | ✅ Actif | Affichages de tags interactifs |
 | **Suivi du nombre de mots** | ✅ Actif | Métriques du volume de contenu |
@@ -120,8 +123,8 @@ Chaque fonctionnalité incarne nos principes fondamentaux :
 {: .table .table-bordered .table-striped .table-hover .table-responsive}
 | Fonctionnalité | Statut | Documentation |
 | ----------------------------------------------------- | ----------- | ------------- |
-| **[Automatisation complète des gems](/about/features/comprehensive-gem-automation-system/)** | ✅ Actif | Automatisation complète de la construction et des versions |
-| **[Système de versionnage automatisé](/about/features/automated-version-build-system/)** | ✅ Actif | Automatisation du versionnage sémantique |
+| **[[zer0-mistakes/pages/_about/features/comprehensive-gem-automation-system\|Automatisation complète des gems]]** | ✅ Actif | Automatisation complète de la construction et des versions |
+| **[[zer0-mistakes/pages/_about/features/automated-version-build-system\|Système de versionnage automatisé]]** | ✅ Actif | Automatisation du versionnage sémantique |
 | **Flux de travail CI/CD** | ✅ Actif | Intégration GitHub Actions |
 | **Tests multi-Ruby** | ✅ Actif | Ruby 2.7, 3.0, 3.1, 3.2 |
 | **Publication automatisée** | ✅ Actif | Automatisation des versions RubyGems |
@@ -198,36 +201,36 @@ Lorsque vous travaillez avec les fonctionnalités de Zer0-Mistakes à l'aide de 
 {: .table .table-bordered .table-striped .table-hover .table-responsive}
 | Guide de fonctionnalité | Domaine d'intérêt | Prise en charge du développement IA | Complexité |
 |---------------|------------|----------------------|------------|
-| **[Guide de développement assisté par IA](/about/features/ai-development-guide/)** | **Flux de travail et bonnes pratiques VS Code Copilot** | ✅ **Guide complet d'intégration de l'IA** | 🟡 **Intermédiaire** |
-| **[Système complet d'automatisation des gems](/about/features/comprehensive-gem-automation-system/)** | Publications sans clic et CI/CD | ✅ Intégration IA complète | ⚔️ Avancé |
-| **[Système de build automatisé des versions](/about/features/automated-version-build-system/)** | Automatisation du versionnage sémantique | ✅ Flux de travail assistés par IA | 🟡 Intermédiaire |
-| **[Tableau de bord des statistiques](/about/features/statistics-dashboard/)** | Analytique et métriques de performance | ✅ Analyses optimisées par l'IA | 🟡 Intermédiaire |
-| **[Bouton Retour en haut](/about/features/add-floating-back-to-top-button/)** | Implémentation de composant d'interface | ✅ Motifs compatibles Copilot | 🟢 Débutant |
-| **[Référence technique Jekyll](/about/features/jekyll/)** | Intégration Jekyll de base | ✅ Automatisation des commandes | 🟢 Débutant |
+| **[[zer0-mistakes/pages/_about/features/ai-development-guide\|Guide de développement assisté par IA]]** | **Flux de travail et bonnes pratiques VS Code Copilot** | ✅ **Guide complet d'intégration de l'IA** | 🟡 **Intermédiaire** |
+| **[[zer0-mistakes/pages/_about/features/comprehensive-gem-automation-system\|Système complet d'automatisation des gems]]** | Publications sans clic et CI/CD | ✅ Intégration IA complète | ⚔️ Avancé |
+| **[[zer0-mistakes/pages/_about/features/automated-version-build-system\|Système de build automatisé des versions]]** | Automatisation du versionnage sémantique | ✅ Flux de travail assistés par IA | 🟡 Intermédiaire |
+| **[[zer0-mistakes/pages/_about/features/statistics-dashboard\|Tableau de bord des statistiques]]** | Analytique et métriques de performance | ✅ Analyses optimisées par l'IA | 🟡 Intermédiaire |
+| **[[zer0-mistakes/pages/_about/features/add-floating-back-to-top-button\|Bouton Retour en haut]]** | Implémentation de composant d'interface | ✅ Motifs compatibles Copilot | 🟢 Débutant |
+| **[[zer0-mistakes/pages/_about/features/jekyll-technical-reference\|Référence technique Jekyll]]** | Intégration Jekyll de base | ✅ Automatisation des commandes | 🟢 Débutant |
 
 ### 🎯 **Parcours d'apprentissage**
 
 **Pour les débutants** (🟢) :
 
-1. Commencez par le [Guide d'intégration Jekyll](/about/features/jekyll/)
-2. Implémentez le [Bouton Retour en haut](/about/features/add-floating-back-to-top-button/)
-3. Explorez la [vitrine des composants Bootstrap](/about/theme/)
+1. Commencez par le [[zer0-mistakes/pages/_about/features/jekyll-technical-reference|Guide d'intégration Jekyll]]
+2. Implémentez le [[zer0-mistakes/pages/_about/features/add-floating-back-to-top-button|Bouton Retour en haut]]
+3. Explorez la [[zer0-mistakes/pages/_about/theme|vitrine des composants Bootstrap]]
 
 **Pour le développement optimisé par l'IA** (🤖) :
 
-1. **Maîtrisez le [Guide de développement assisté par IA](/about/features/ai-development-guide/)** - Essentiel pour les flux de travail VS Code Copilot
+1. **Maîtrisez le [[zer0-mistakes/pages/_about/features/ai-development-guide|Guide de développement assisté par IA]]** - Essentiel pour les flux de travail VS Code Copilot
 2. Appliquez les techniques d'IA au développement de fonctionnalités et à l'automatisation
 3. Contribuez aux bonnes pratiques de développement avec l'IA
 
 **Pour les développeurs intermédiaires** (🟡) :
 
-1. Configurez le [Tableau de bord des statistiques](/about/features/statistics-dashboard/)
-2. Configurez le [Système de versionnage automatisé](/about/features/automated-version-build-system/)
+1. Configurez le [[zer0-mistakes/pages/_about/features/statistics-dashboard|Tableau de bord des statistiques]]
+2. Configurez le [[zer0-mistakes/pages/_about/features/automated-version-build-system|Système de versionnage automatisé]]
 3. Personnalisez les composants du thème avec l'assistance de l'IA
 
 **Pour les utilisateurs avancés** (⚔️) :
 
-1. Implémentez le [Système d'automatisation complet](/about/features/comprehensive-gem-automation-system/)
+1. Implémentez le [[zer0-mistakes/pages/_about/features/comprehensive-gem-automation-system|Système d'automatisation complet]]
 2. Développez des fonctionnalités personnalisées à l'aide de motifs établis
 3. Contribuez aux systèmes d'automatisation et d'intégration de l'IA
 

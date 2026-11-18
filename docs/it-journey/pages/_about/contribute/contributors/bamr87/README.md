@@ -6,8 +6,10 @@ excerpt: IT Wizard, Software Architect, Tech Enthusiast.
 lastmod: '2026-03-21T15:12:32.000Z'
 mermaid: true
 permalink: /contributors/bamr87/
-source_file: README.md
-title: Add the GitHub profile repository as a remote repository
+source_file: pages/_about/contribute/contributors/bamr87/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/contribute/contributors/bamr87/README.md
+title: Bamr87
 username: bamr87
 ---
 <link rel="stylesheet" href="{{ '/assets/css/contributor-profile.css' | relative_url }}">
@@ -29,9 +31,6 @@ Here's some of my progress:
 [![roadmap.sh](https://api.roadmap.sh/v1-badge/tall/6553d32668ca6026132e78a8?variant=dark)](https://roadmap.sh/u/bamr87)
 
 [![roadmap.sh](https://api.roadmap.sh/v1-badge/wide/6553d32668ca6026132e78a8?variant=dark)](https://roadmap.sh/u/bamr87)
-
-<!---
-bamr87/bamr87 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile. You can click the Preview link to take a look at your changes. --->
 
 <summary>Add this repo as a sub-tree</summary>
 <details>

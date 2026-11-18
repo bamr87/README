@@ -22,11 +22,13 @@ objectives:
     all:
     - command: alias
     - output_includes: alias ll=
-source_file: 03-aliases.md
+source_file: courses/shell-craft/03-aliases.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/shell-craft/03-aliases.md
 teaches:
 - alias
 - shortcuts
-title: 03 Aliases
+title: Aliases
 xp: 25
 ---
 An **alias** is a nickname for a longer command line. The shell swaps it in before running anything.

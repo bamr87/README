@@ -31,6 +31,10 @@ Any other MCP client can launch it the same way (command `python3`, args `mcp/se
 | `get_doc` | `path`, `max_chars?` | One page of the `docs/` corpus listed in `docs/docs_index.json`: its body without front matter, headed by `project · repo · path`, truncated at `max_chars` (default 20000) with a `[truncated: N of M characters]` note |
 | `get_schema` | `path?` | A `SCHEMA.md` from the structure pyramid (default: root) |
 | `context_status` | — | Freshness manifest: generation time, enrichment, fingerprints |
+| `get_note` | `target` | One vault note with its text, backlinks and outgoing links; takes a path, title or alias |
+| `get_neighbours` | `target`, `depth?` | Notes within `depth` links of a note, in either direction |
+| `get_hot` | — | The hot cache: recent changes, most linked pages, cross-repository concepts |
+| `vault_lint` | — | Unresolved link targets and orphan notes |
 
 ## Resources
 

@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - Continued progress through the Level 1111 Leadership & Innovation quest line
 skill_focus: leadership
-source_file: mentorship-programs.md
+source_file: pages/_quests/1111/mentorship-programs.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1111/mentorship-programs.md
 sub_title: 'Level 1111 (15) Quest: Main Quest - Mentorship'
 tags:
 - '1111'
@@ -83,7 +85,7 @@ tags:
 - sponsorship
 - growth
 - gamified-learning
-title: A private, versioned mentoring journal protects continuity
+title: 'Mentorship Programs: Growing Engineering Talent'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -131,7 +133,7 @@ You'll know you've truly mastered this quest when you can:
 
 ### 📋 Knowledge Requirements
 - [ ] Real engineering experience worth passing on
-- [ ] Completion of [Technical Leadership](/quests/1111/technical-leadership/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]] (recommended)
 - [ ] Willingness to have honest, uncomfortable conversations
 
 ### 🛠️ System Requirements
@@ -371,17 +373,17 @@ Skipping a one-on-one quietly tells someone they don't matter. Protect the slot 
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Building Technical Communities](/quests/1111/building-technical-communities/) - Grow mentorship into a movement
+- 🎯 [[it-journey/pages/_quests/1111/building-technical-communities|Building Technical Communities]] - Grow mentorship into a movement
 
 **Explore Side Adventures**:
-- ⚔️ [Career Advancement](/quests/1111/career-advancement/) - Plan the climb deliberately
-- ⚔️ [Technical Leadership](/quests/1111/technical-leadership/) - Revisit the leadership core
+- ⚔️ [[it-journey/pages/_quests/1111/career-advancement|Career Advancement]] - Plan the climb deliberately
+- ⚔️ [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]] - Revisit the leadership core
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Career Advancement](/quests/1111/career-advancement/)  
-**🏗️ System Engineer**: Explore [Building Technical Communities](/quests/1111/building-technical-communities/)  
-**🛡️ Security Specialist**: Advance to [Technical Leadership](/quests/1111/technical-leadership/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1111/career-advancement|Career Advancement]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1111/building-technical-communities|Building Technical Communities]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]]
 
 ## 📚 Resources
 
@@ -410,6 +412,6 @@ Skipping a one-on-one quietly tells someone they don't matter. Protect the slot 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1111: Leadership & Innovation]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Technical Leadership: Leading Without Authority and Setting Tech Vision]] **Unlocks:** [[Building Technical Communities: Growing Developer Ecosystems]] · [[Career Advancement Strategies: Growing from Engineer to Leader]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1111/README|Level 1111: Leadership & Innovation]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Technical Leadership: Leading Without Authority and Setting Tech Vision]] **Unlocks:** [[Building Technical Communities: Growing Developer Ecosystems]] · [[Career Advancement Strategies: Growing from Engineer to Leader]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

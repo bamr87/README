@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Access to the rest of the Level 1010 Monitoring & Observability quest line
 skill_focus: devops
-source_file: monitoring-fundamentals.md
+source_file: pages/_quests/1010/monitoring-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/monitoring-fundamentals.md
 sub_title: 'Level 1010 (10) Quest: Main Quest - Monitoring Fundamentals'
 tags:
 - '1010'
@@ -85,7 +87,7 @@ tags:
 - devops
 - conceptual
 - gamified-learning
-title: A one-file way to emit Prometheus-style metrics for inspection.
+title: 'Monitoring Fundamentals: Metrics, Logs, and Traces'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -422,17 +424,17 @@ annotations:
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Prometheus & Grafana](/quests/1010/prometheus-grafana/) - Build the metrics pillar for real
+- 🎯 [[it-journey/pages/_quests/1010/prometheus-grafana|Prometheus & Grafana]] - Build the metrics pillar for real
 
 **Explore Side Adventures**:
-- ⚔️ [ELK Stack](/quests/1010/elk-stack/) - Master the logs pillar
-- ⚔️ [Distributed Tracing](/quests/1010/distributed-tracing/) - Master the traces pillar
+- ⚔️ [[it-journey/pages/_quests/1010/elk-stack|ELK Stack]] - Master the logs pillar
+- ⚔️ [[it-journey/pages/_quests/1010/distributed-tracing|Distributed Tracing]] - Master the traces pillar
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)  
-**🏗️ System Engineer**: Explore [Prometheus & Grafana](/quests/1010/prometheus-grafana/)  
-**🛡️ Security Specialist**: Advance to [Alerting Systems](/quests/1010/alerting-systems/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1010/distributed-tracing|Distributed Tracing]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1010/prometheus-grafana|Prometheus & Grafana]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1010/alerting-systems|Alerting Systems]]
 
 ## 📚 Resources
 
@@ -461,6 +463,6 @@ annotations:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1010 - Monitoring & Observability]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Prometheus & Grafana: Metrics Collection and Visualization]] · [[ELK Stack: Elasticsearch, Logstash, and Kibana for Log Analysis]] · [[Distributed Tracing: OpenTelemetry and Jaeger]] · [[Alerting Systems: Alertmanager, Routing, and On-Call]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1010 - Monitoring & Observability]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[it-journey/pages/_quests/1010/prometheus-grafana|Prometheus & Grafana: Metrics Collection and Visualization]] · [[ELK Stack: Elasticsearch, Logstash, and Kibana for Log Analysis]] · [[Distributed Tracing: OpenTelemetry and Jaeger]] · [[Alerting Systems: Alertmanager, Routing, and On-Call]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

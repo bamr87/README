@@ -1,5 +1,7 @@
 ---
 source_file: CHANGELOG.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/CHANGELOG.md
 title: Changelog
 ---
 # Changelog

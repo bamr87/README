@@ -11,14 +11,17 @@ image: /assets/images/posts/ai-productivity.jpg
 lastmod: 2026-04-18 19:29:48+00:00
 layout: article
 preview: /images/previews/10-ai-tools-that-will-transform-your-productivity-.png
-source_file: 2025-01-25-ai-tools-productivity.md
+source_file: pages/_posts/technology/2025-01-25-ai-tools-productivity.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/technology/2025-01-25-ai-tools-productivity.md
 tags:
 - ai
 - productivity
 - tools
 - automation
-title: Just write a comment describing what you want
+title: 10 AI Tools That Will Transform Your Productivity in 2025
 ---
+
 Artificial intelligence is revolutionizing how we work. Here are the top AI tools that can dramatically improve your productivity.
 
 ## Code & Development

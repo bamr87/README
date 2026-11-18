@@ -14,7 +14,9 @@ permalink: /docs/features/smart-404/
 preview: /images/previews/smart-404-site-configuration-detection.png
 sidebar:
   nav: docs
-source_file: smart-404.md
+source_file: pages/_docs/features/smart-404.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/smart-404.md
 tags:
 - setup
 - '404'
@@ -22,6 +24,7 @@ tags:
 - ux
 title: Smart 404 & Site Configuration Detection
 ---
+
 # Smart 404 & Site Configuration Detection
 
 The zer0-mistakes `404.html` is not a plain "page not found" placeholder. It detects how the site is deployed and offers context-aware guidance to the visitor.
@@ -90,10 +93,10 @@ The theme's `404.html` is only used when no local override exists.
 
 ## Related
 
-- [Quick Start Guide](/docs/getting-started/quick-start/)
-- [Bare-Minimum Starter](/docs/quickstart/bare-minimum/)
+- [[zer0-mistakes/pages/_docs/getting-started/quick-start|Quick Start Guide]]
+- [[zer0-mistakes/pages/_docs/quickstart/bare-minimum|Bare-Minimum Starter]]
 
 ## See also
 
-- [[Features]]
-- [[Getting Started]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/getting-started/index|Getting Started]]

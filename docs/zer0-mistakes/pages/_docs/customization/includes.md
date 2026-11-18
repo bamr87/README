@@ -6,13 +6,15 @@ description: Guide to the 70+ reusable include components organized by category 
   maximum flexibility.
 difficulty: intermediate
 estimated_reading_time: 20 minutes
-lastmod: 2026-09-03 00:00:00+00:00
+lastmod: 2026-11-15 00:00:00+00:00
 layout: default
 permalink: /docs/customization/includes/
 preview: /images/previews/include-components.png
 sidebar:
   nav: docs
-source_file: includes.md
+source_file: pages/_docs/customization/includes.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/customization/includes.md
 tags:
 - includes
 - components
@@ -20,6 +22,7 @@ tags:
 - jekyll
 title: Include Components
 ---
+
 # Include Components
 
 The Zer0-Mistakes theme includes 70+ reusable components organized by category.
@@ -110,7 +113,8 @@ _includes/
 
 | Include | Purpose |
 |---------|---------|
-| `content/giscus.html` | GitHub Discussions comments |
+| `content/comments.html` | Comment section: the gate, heading, and giscus widget |
+| `content/giscus.html` | GitHub Discussions comments widget |
 | `content/intro.html` | Page introduction |
 | `content/seo.html` | SEO meta tags |
 | `content/sitemap.html` | Sitemap entry |
@@ -127,10 +131,10 @@ _includes/
 ### Comments Include
 
 ```liquid
-{% raw %}{% if page.comments != false and site.giscus.enabled %}
-  {% include content/giscus.html %}
-{% endif %}{% endraw %}
+{% raw %}{% include content/comments.html %}{% endraw %}
 ```
+
+One line renders the whole comment section, and only when `site.giscus.enabled` is true and the page has not set `comments: false`. Pass `default_on=false` to show comments only on pages that set `comments: true`. See [[zer0-mistakes/pages/_docs/features/giscus-comments#comments-in-your-own-layout|Giscus Comments]] for the other parameters and the widget's config keys.
 
 ## Core Includes
 
@@ -185,7 +189,7 @@ sidebar:
 {% raw %}{% include navigation/sidebar-left.html %}{% endraw %}
 ```
 
-See [Sidebar Navigation](/docs/features/sidebar-navigation/) for the full mode and option reference.
+See [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation]] for the full mode and option reference.
 
 ## Landing Page Includes
 
@@ -316,9 +320,9 @@ bundle show jekyll-theme-zer0
 
 ## Related
 
-- [Layouts](/docs/customization/layouts/)
-- [Jekyll Liquid](/docs/liquid/)
-- [Bootstrap Integration](/docs/bootstrap/)
+- [[zer0-mistakes/pages/_docs/customization/layouts|Layouts]]
+- [[zer0-mistakes/pages/_docs/liquid/index|Jekyll Liquid]]
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Bootstrap Integration]]
 
 ## Technical Reference
 
@@ -328,6 +332,6 @@ For contributor-level details (component API reference, include parameters, exte
 
 ## See also
 
-- [[Customization]]
-- [[Layouts]]
-- [[Bootstrap 5 Integration in Zer0-Mistakes|Bootstrap 5 Integration]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/pages/_docs/customization/layouts|Layouts]]
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Bootstrap 5 Integration]]

@@ -11,14 +11,17 @@ image: /assets/images/posts/startup-funding.jpg
 lastmod: 2026-04-18 19:29:48+00:00
 layout: article
 preview: /images/previews/the-complete-guide-to-startup-funding-in-2025.png
-source_file: 2025-01-20-startup-funding-guide.md
+source_file: pages/_posts/business/2025-01-20-startup-funding-guide.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/business/2025-01-20-startup-funding-guide.md
 tags:
 - startup
 - funding
 - venture-capital
 - entrepreneurship
-title: 2025 01 20 Startup Funding Guide
+title: The Complete Guide to Startup Funding in 2025
 ---
+
 Starting a business is exciting, but securing funding can be one of the most challenging aspects of entrepreneurship. This comprehensive guide will walk you through the various stages of startup funding and help you understand which options are best for your business.
 
 ## Understanding Funding Stages

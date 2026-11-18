@@ -1,8 +1,9 @@
 ---
-source_file: README.md
+source_file: docs/amendments/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/amendments/README.md
 title: Amendments — it-journey
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — it-journey
 
 > The append-only log of changes to [the constitution](../constitution.md). Process: constitution § 8.
@@ -14,4 +15,5 @@ title: Amendments — it-journey
 | # | Title | Status | Affects |
 | --- | --- | --- | --- |
 | [0001](0001-ratify-constitution.md) | Ratify the constitution | ratified on merge | whole constitution |
+| [0004](0004-mission-statement.md) | Missions | proposed | constitution §1; PRD §1.1; FR-ITJ-018 |
 | [NEW](proposed/editorial-charter.md) | Editorial charter for quests | proposed | constitution § 9 (new); FR-ITJ-016, FR-ITJ-017 |

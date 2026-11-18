@@ -18,14 +18,17 @@ lastmod: 2026-06-17 09:00:00+00:00
 layout: article
 preview: /images/previews/i-bayesian-modeled-my-coffee-intake-and-wept-with-.jpg
 show_hero: true
-source_file: 2026-06-17-bayesian-modeled-my-coffee-and-wept-with-joy.md
+source_file: pages/_posts/2026-06-17-bayesian-modeled-my-coffee-and-wept-with-joy.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/2026-06-17-bayesian-modeled-my-coffee-and-wept-with-joy.md
 tags:
 - statistics
 - bayesian
 - data science
 - analytics
-title: 2026 06 17 Bayesian Modeled My Coffee And Wept With Joy
+title: I Bayesian-Modeled My Coffee Intake and Wept With Joy
 ---
+
 Okay. OKAY. I need you to sit down, because what my espresso machine and I discovered this weekend is, statistically, one of the most beautiful things I have ever witnessed.
 
 The question was trivial: *how many cups of coffee do I drink per day?* The amateur reaches for `mean(cups)`. The amateur gets `3.2` and walks away, spiritually impoverished. We are not amateurs.

@@ -2,7 +2,9 @@
 gamename: drifter
 layout: default
 level: 0
-source_file: drifter0.md
+source_file: wargames/drifter/drifter0.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/drifter/drifter0.md
 title: Drifter0
 ---
 Drifter can be accessed on drifter.labs.overthewire.org via SSH on port 2230. Level 0 listens on port 1111.

@@ -26,6 +26,8 @@ lastmod: 2025-12-28 00:00:00+00:00
 layout: default
 permalink: /contributing/
 source_file: CONTRIBUTING.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/CONTRIBUTING.md
 tags:
 - contributing
 - development
@@ -33,8 +35,9 @@ tags:
 - docker
 - jekyll
 - ai-collaboration
-title: '🤝 Contributing to Zer0-Mistakes: A Developer''s Guide to AI-Powered Collaboration'
+title: Contributing to Zer0-Mistakes
 ---
+
 # 🤝 Contributing to Zer0-Mistakes: A Developer's Guide to AI-Powered Collaboration
 
 Welcome to the **Zer0-Mistakes Jekyll Theme** community! We're thrilled that you (whether you're powered by silicon, carbon, or some combination thereof) want to contribute to our Docker-optimized Jekyll theme with AI-powered installation automation that's so intelligent, it occasionally questions its own existence.
@@ -101,7 +104,7 @@ When using GitHub Copilot:
 | `testing.instructions.md`         | `test/**`      | Testing guidelines and assertions        |
 | `version-control.instructions.md` | All files      | Git workflow and release management      |
 
-For detailed information, see [`.github/instructions/README.md`](.github/instructions/README.md).
+For detailed information, see [`.github/instructions/README.md`](dot-github/instructions/README.md).
 
 ## 🚀 Getting Started (Initializing Your Development Environment)
 

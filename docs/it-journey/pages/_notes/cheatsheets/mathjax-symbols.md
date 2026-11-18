@@ -21,14 +21,16 @@ permalink: /notes/cheatsheets/mathjax-symbols/
 redirect_from:
 - /docs/jekyll/jekyll-math-symbols-with-mathjax/
 - /docs/jekyll-math-symbols-with-mathjax/
-source_file: mathjax-symbols.md
+source_file: pages/_notes/cheatsheets/mathjax-symbols.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/cheatsheets/mathjax-symbols.md
 subcategory: jekyll
 tags:
 - mathjax
 - mathematics
 - jekyll
 - latex
-title: Mathjax Symbols
+title: Jekyll — Math Symbols with MathJax
 ---
 > Display mathematical notation in web pages with MathJax.
 

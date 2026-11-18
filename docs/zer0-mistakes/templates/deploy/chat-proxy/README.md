@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: templates/deploy/chat-proxy/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/templates/deploy/chat-proxy/README.md
 title: AI Chat Proxy (Cloudflare Worker)
 ---
 # AI Chat Proxy (Cloudflare Worker)
@@ -182,7 +184,7 @@ With this in place the chat only works for you, even though the site is public.
 
 ### Via GitHub Actions (this repo's live setup — workers.dev, API key)
 
-[`.github/workflows/deploy-chat-proxy.yml`](../../../.github/workflows/deploy-chat-proxy.yml) deploys [`wrangler.toml`](wrangler.toml) on every push to `main` that touches the proxy (and on manual dispatch), and sets the Worker's `ANTHROPIC_API_KEY` from a GitHub secret. One-time setup:
+[`.github/workflows/deploy-chat-proxy.yml`](../../../dot-github/workflows/deploy-chat-proxy.yml) deploys [`wrangler.toml`](wrangler.toml) on every push to `main` that touches the proxy (and on manual dispatch), and sets the Worker's `ANTHROPIC_API_KEY` from a GitHub secret. One-time setup:
 
 1. Cloudflare → **My Profile → API Tokens → Create Token → "Edit Cloudflare Workers"**. Note your **Account ID** (Workers & Pages overview).
 2. Add three **repo → Settings → Secrets and variables → Actions** secrets: `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`, `ANTHROPIC_API_KEY`.

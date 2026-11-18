@@ -8,9 +8,12 @@ permalink: /series/ulysses/06-hades/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 06-hades.md
-title: 06 Hades
+source_file: examples/swerve-of-shore/pages/series/ulysses/06-hades.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/06-hades.md
+title: 06 · Hades
 ---
+
 {% include page-header.html %}
 
 Episode 6 of *Ulysses*. 11am, the funeral procession to Glasnevin.

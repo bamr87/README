@@ -13,7 +13,9 @@ permalink: /docs/ruby-101/
 prerequisites:
 - Ruby installed
 preview: /images/previews/ruby-101.png
-source_file: ruby-101.md
+source_file: pages/_docs/ruby-101.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/ruby-101.md
 tags:
 - ruby
 - bundler
@@ -22,6 +24,7 @@ tags:
 - beginner
 title: Ruby 101
 ---
+
 # Ruby 101
 
 This page covers the Ruby fundamentals you need to work with the Zer0-Mistakes Jekyll theme — from installing gems to managing dependencies with Bundler.
@@ -250,15 +253,15 @@ bundle exec jekyll serve
 
 ## Next Steps
 
-- [Ruby & Bundler reference](/docs/ruby/) — Deeper dive into version management
-- [Installation Guide](/docs/installation/) — Full environment setup
-- [Jekyll Guide](/docs/jekyll/) — Understanding the static-site generator
-- [Docker Development](/docs/docker/) — Container-based workflow
+- [[zer0-mistakes/pages/_docs/ruby/index|Ruby & Bundler reference]] — Deeper dive into version management
+- [[zer0-mistakes/pages/_docs/installation|Installation Guide]] — Full environment setup
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Guide]] — Understanding the static-site generator
+- [[zer0-mistakes/pages/_docs/docker/index|Docker Development]] — Container-based workflow
 
 ---
 
 ## See also
 
-- [[Ruby]]
-- [[Jekyll]]
-- [[Installation]]
+- [[zer0-mistakes/pages/_docs/ruby/index|Ruby]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/pages/_docs/installation|Installation]]

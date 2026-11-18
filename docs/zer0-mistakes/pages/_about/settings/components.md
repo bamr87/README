@@ -7,10 +7,13 @@ lastmod: 2026-06-26 00:00:00+00:00
 layout: admin
 permalink: /about/settings/components/
 preview: /images/previews/theme-preview.png
-source_file: components.md
+source_file: pages/_about/settings/components.md
 source_icon: bi-grid-3x3-gap
-title: Components
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/settings/components.md
+title: Component Showcase
 ---
+
 <p class="text-body-secondary">
 Live render of <code>_includes/components/component-showcase.html</code> — the reusable Bootstrap 5.3 pattern gallery. The breadcrumb and list-group entries here are <strong>demo links only</strong>: they are intentionally inert (<code>href="#"</code>) so this include never injects site-absolute paths that would 404 on remote-theme consumers (issue #219).
 </p>

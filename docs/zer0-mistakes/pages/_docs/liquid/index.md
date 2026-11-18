@@ -12,12 +12,15 @@ prerequisites: []
 preview: /images/previews/liquid.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/liquid/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/liquid/index.md
 tags:
 - liquid
 - jekyll
 title: Liquid
 ---
+
 # Liquid
 
 Liquid is the templating language used by Jekyll to process templates and create dynamic content.
@@ -177,12 +180,12 @@ Explore Liquid usage in Zer0-Mistakes:
 
 ## Related
 
-- [Jekyll Guide](/docs/jekyll/)
-- [Front Matter](/docs/front-matter/)
-- [Jekyll Liquid Templating](/docs/liquid/)
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Guide]]
+- [[zer0-mistakes/pages/_docs/front-matter|Front Matter]]
+- [[zer0-mistakes/pages/_docs/liquid/index|Jekyll Liquid Templating]]
 
 ## See also
 
-- [[Jekyll]]
-- [[Customization]]
-- [[front-matter]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]

@@ -58,7 +58,9 @@ rewards:
   unlocks_features:
   - Continue The Self-Operating Website campaign
 skill_focus: security
-source_file: self-operating-website-04-the-sigils-of-trust.md
+source_file: pages/_quests/1001/self-operating-website-04-the-sigils-of-trust.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1001/self-operating-website-04-the-sigils-of-trust.md
 tags:
 - '1001'
 - oauth
@@ -66,8 +68,9 @@ tags:
 - automation
 - ci-cd
 - gamified-learning
-title: .github/workflows/content-factory.yml (excerpt)
+title: 'The Sigils of Trust: Auth, Secrets, and the Kill Switch'
 ---
+
 *The War Machine is built. The forges hum, the runners stand ready — and that is exactly the moment a wise realm grows afraid. An automaton that can open pull requests can also, if mis-bound, delete branches, rewrite settings, or push to `main` at three in the morning while you sleep. Raw power without bound is not a servant; it is a loose elemental.*
 
 *This chapter is where you bind the elemental. You will inscribe the **Sigils of Trust** — the credentials, scopes, and switches that let the robot act on your behalf while making it physically impossible for it to escalate beyond its station. The real-world skill is **least-privilege automation security**: choosing OAuth over long-lived keys, minting a bot identity with no admin powers, and wiring a kill switch you can flip the instant something feels wrong.*
@@ -97,7 +100,7 @@ In the old tales, a summoner never handed a spirit the master key to the castle.
 
 Before you inscribe a single sigil, gather these:
 
-- **Prior chapter:** Finish [Chapter III — The War Machine](/quests/1000/self-operating-website-03-the-war-machine/). You need a working CI/CD workflow to bind — this chapter secures what that one built.
+- **Prior chapter:** Finish [[it-journey/pages/_quests/1000/self-operating-website-03-the-war-machine|Chapter III — The War Machine]]. You need a working CI/CD workflow to bind — this chapter secures what that one built.
 - **Tools:** Git, the [`gh` CLI](https://cli.github.com/) (authenticated to your account via `gh auth login`), and a text editor or IDE.
 - **A GitHub repository you own** with Actions enabled, plus permission to manage its secrets and variables (Settings → Secrets and variables → Actions).
 - **Accounts & tokens:** a GitHub account that can create a **fine-grained Personal Access Token**, and a **Claude Code OAuth token** to drive the agent steps. Generate the OAuth token by running `claude setup-token` in the [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code/overview) (it prints a long-lived token intended for CI); this quest stores that value as the `CLAUDE_CODE_OAUTH_TOKEN` secret.
@@ -294,9 +297,9 @@ graph LR
 
 The robot is now bound — it can act, but never escalate, and you hold the word of unbinding. Next, give it something worthy to do: forge content on its own.
 
-- **Previous chapter:** [The War Machine](/quests/1000/self-operating-website-03-the-war-machine/)
-- **Next chapter:** [The Content Forge](/quests/1010/self-operating-website-05-the-content-forge/)
-- **Campaign hub:** [The Self-Operating Website](/quests/codex/self-operating-website/)
+- **Previous chapter:** [[it-journey/pages/_quests/1000/self-operating-website-03-the-war-machine|The War Machine]]
+- **Next chapter:** [[it-journey/pages/_quests/1010/self-operating-website-05-the-content-forge|The Content Forge]]
+- **Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|The Self-Operating Website]]
 
 ## 📚 Resource Codex
 
@@ -308,6 +311,6 @@ The robot is now bound — it can act, but never escalate, and you hold the word
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Self-Operating Website]] **Previous:** [[The War Machine]] **Next:** [[The Content Forge]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Previous:** [[The War Machine]] **Next:** [[The Content Forge]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

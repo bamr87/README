@@ -70,7 +70,9 @@ rewards:
   - 🔧 PC assembly and fault isolation
   - 🧪 UEFI setup and memory testing
 skill_focus: infrastructure
-source_file: twin-rigs-05-the-great-forge.md
+source_file: pages/_quests/0110/twin-rigs-05-the-great-forge.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/twin-rigs-05-the-great-forge.md
 tags:
 - '0110'
 - hardware
@@ -80,7 +82,7 @@ tags:
 - main_quest
 - hands-on
 - gamified-learning
-title: Etcher's AppImage works here too, from https://etcher.balena.io/
+title: 'The Great Forge: Assemble a Desktop from Bare Parts'
 validation_criteria:
   completion_requirements:
   - The rig reaches firmware reliably
@@ -104,7 +106,7 @@ By the end of this chapter you will:
 
 ## 🗺️ Quest Prerequisites
 
-- **[Chapter I](/quests/0010/twin-rigs-01-the-war-chest/)** — a ledger that passes every check, and the parts it lists
+- **[[it-journey/pages/_quests/0010/twin-rigs-01-the-war-chest|Chapter I]]** — a ledger that passes every check, and the parts it lists
 - **A Phillips #2 screwdriver** and a clear, dry, well-lit table
 - **Your motherboard manual** — open it now and keep it open, because it outranks this quest for your exact board
 - **A USB drive** — for the memory test in Chapter 4
@@ -275,9 +277,9 @@ graph LR
 
 The rig stands ready, with an empty drive and a blank mind. Next you give it an operating system.
 
-- ➡️ **Next chapter:** [Chapter VI — The Steam Rite](/quests/0111/twin-rigs-06-the-steam-rite/)
-- ⬅️ **Previous chapter:** [Chapter IV — The Caravan Road](/quests/0101/twin-rigs-04-the-caravan-road/)
-- 👑 **Campaign hub:** [Epic Quest: The Twin Rigs](/quests/codex/twin-rigs/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/0111/twin-rigs-06-the-steam-rite|Chapter VI — The Steam Rite]]
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/0101/twin-rigs-04-the-caravan-road|Chapter IV — The Caravan Road]]
+- 👑 **Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]]
 
 ## 📚 Resource Codex
 
@@ -287,6 +289,6 @@ The rig stands ready, with an empty drive and a blank mind. Next you give it an 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Twin Rigs]] **Level hub:** [[Level 0110 (6) - Database Mastery]] **Previous:** [[The Caravan Road: Turn the Pi into a Console]] **Next:** [[The Steam Rite: Install SteamOS on the Great Rig]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]] **Level hub:** [[it-journey/pages/_quests/0110/README|Level 0110 (6) - Database Mastery]] **Previous:** [[it-journey/pages/_quests/0101/twin-rigs-04-the-caravan-road|The Caravan Road: Turn the Pi into a Console]] **Next:** [[it-journey/pages/_quests/0111/twin-rigs-06-the-steam-rite|The Steam Rite: Install SteamOS on the Great Rig]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

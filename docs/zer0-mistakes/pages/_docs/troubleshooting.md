@@ -12,13 +12,16 @@ prerequisites: []
 preview: /images/previews/troubleshooting.png
 sidebar:
   nav: docs
-source_file: troubleshooting.md
+source_file: pages/_docs/troubleshooting.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/troubleshooting.md
 tags:
 - troubleshooting
 - jekyll
 - docker
 title: Troubleshooting
 ---
+
 # Troubleshooting
 
 Solutions to common issues when developing with Zer0-Mistakes.
@@ -170,14 +173,14 @@ docker-compose exec jekyll jekyll serve --config "_config.yml,_config_dev.yml"
 
 ## Related
 
-- [Installation Guide](/docs/installation/)
-- [Docker Guide](/docs/docker/)
-- [Jekyll Configuration](/docs/jekyll/)
+- [[zer0-mistakes/pages/_docs/installation|Installation Guide]]
+- [[zer0-mistakes/pages/_docs/docker/index|Docker Guide]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Configuration]]
 
 ## See also
 
-- [[Installation]]
-- [[Docker]]
-- [[Ruby]]
-- [[Jekyll]]
-- [[Obsidian Integration Troubleshooting]]
+- [[zer0-mistakes/pages/_docs/installation|Installation]]
+- [[zer0-mistakes/pages/_docs/docker/index|Docker]]
+- [[zer0-mistakes/pages/_docs/ruby/index|Ruby]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/pages/_docs/obsidian/troubleshooting|Obsidian Integration Troubleshooting]]

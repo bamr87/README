@@ -2,7 +2,9 @@
 lastmod: 2025-01-27 00:00:00+00:00
 layout: default
 preview: /images/previews/stats-page-enhancement-summary.png
-source_file: STATS_ENHANCEMENT_SUMMARY.md
+source_file: pages/_about/features/STATS_ENHANCEMENT_SUMMARY.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/features/STATS_ENHANCEMENT_SUMMARY.md
 title: Stats Page Enhancement Summary
 ---
 # Stats Page Enhancement Summary

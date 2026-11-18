@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29494904212
 slice: digital-artist/0001
-source_file: 2026-07-16-digital-artist-0001.md
+source_file: pages/_quest-reports/2026-07-16-digital-artist-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-16-digital-artist-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-16-digital-artist-0001.md
 tags:
 - digital-artist
 - level-0001
@@ -25,13 +27,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 07 16 Digital Artist 0001
+title: Digital Artist · L0001 · 2026-07-16
 verdict: warn
 walk_date: '2026-07-16'
 ---
+
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-16
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29494904212) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-16-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-16-digital-artist-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29494904212) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-16-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-16-digital-artist-0001.md)
 
 ---
 
@@ -62,7 +65,7 @@ All command outcomes below come verbatim from the sealed `walk-evidence.json` (e
 ### 1. GitHub Pages Basics — 82 / pass · ran 9/7 runnable snippets (9 passed, 0 failed, 1 skipped, 3 reasoned)
 - `git init && git add . && git commit -m "Initial site"` on a real `jekyll new` scaffold → **passed** (7 files committed, exit 0).
 - `_config.yml` `url`/`baseurl` + `bundle exec jekyll build --baseurl "/my-castle"` → **passed**: every href in `_site/index.html` correctly prefixed `/my-castle/…`, confirming `relative_url`/baseurl mechanics.
-- `JEKYLL_ENV=production bundle exec jekyll build` with `{​% if jekyll.environment == "production" %​}{​% include analytics.html %​}{​% endif %​}` → **passed**: include absent from dev build, present in production build (verified end-to-end with a real `_includes/analytics.html`).
+- `JEKYLL_ENV=production bundle exec jekyll build` with `{% if jekyll.environment == "production" %}{% include analytics.html %}{% endif %}` → **passed**: include absent from dev build, present in production build (verified end-to-end with a real `_includes/analytics.html`).
 - `gh api -X POST repos/:owner/my-castle/pages …` → **passed**: `:owner` placeholder verified to resolve to the repo owner (401 on fake token, i.e. syntactically/semantically correct).
 - `gh repo create --public --source=. --push` flags all validated against `--help`.
 - **skipped**: Windows PowerShell block (no PowerShell on Linux sandbox). **reasoned**: macOS `brew install gh`, the DNS A/CNAME tables. `gh auth login` / actual publish → untested (needs real GitHub credentials — inherent, not a defect).
@@ -113,7 +116,7 @@ Every item below is either engine-observed (cites a recorded command result) or,
 
 **Reasoned-only (no execute evidence — quests the engine could not score)**
 - **[YAML Configuration] · uncovered** — no engine evidence (max_turns). Static read: the quest is well-structured (syntax → front matter/`_config.yml` → data files/pitfalls → production config) and its Chapter 4 plugin list **does** include `jekyll-remote-theme` (line 415) — which is exactly the plugin whose absence made Jekyll Fundamentals' `remote_theme` no-op. Its commands (`yamllint`, `--config` layering, `strict_front_matter: true`) look runnable but were **not verified this session**. Needs a re-run with a higher turn budget.
-- **[Liquid Templating] · uncovered** — no engine evidence (max_turns + a serve-binding permission denial). Static read: Chapter 2's "New" badge snippet uses `{​% elsif post.date > site.time | date: "%s" | minus: 604800 %​}` — a date-vs-string comparison whose correctness I **could not** verify without running it; a real learner could plausibly hit a type mismatch here. Flag for a targeted re-run.
+- **[Liquid Templating] · uncovered** — no engine evidence (max_turns + a serve-binding permission denial). Static read: Chapter 2's "New" badge snippet uses `{% elsif post.date > site.time | date: "%s" | minus: 604800 %}` — a date-vs-string comparison whose correctness I **could not** verify without running it; a real learner could plausibly hit a type mismatch here. Flag for a targeted re-run.
 
 ## 🔗 Chain Continuity
 

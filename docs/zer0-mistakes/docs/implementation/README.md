@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: docs/implementation/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/README.md
 title: Implementation Documentation
 ---
 # Implementation Documentation
@@ -28,9 +30,9 @@ This directory contains:
 
 If you're looking for **how to use** these features, see the user documentation:
 
-- [Features Documentation](/docs/features/) — User guides for theme features
-- [Mermaid Diagrams](/docs/features/mermaid-diagrams/)
-- [PostHog Analytics](/docs/features/posthog-analytics/)
+- [[zer0-mistakes/pages/_docs/features/index|Features Documentation]] — User guides for theme features
+- [[zer0-mistakes/pages/_docs/features/mermaid-diagrams|Mermaid Diagrams]]
+- [[zer0-mistakes/pages/_docs/features/posthog-analytics|PostHog Analytics]]
 
 ## Contributing
 

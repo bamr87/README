@@ -1,0 +1,115 @@
+{
+  "corpus": {
+    "file_count": 26,
+    "fingerprint": "80e60cd0271c44ff",
+    "path": "docs/ocrmd",
+    "present": true,
+    "total_bytes": 261713
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Usage",
+      "Configuration",
+      "Documentation",
+      "Project structure",
+      "Development",
+      "Contributing",
+      "Changelog"
+    ],
+    "readme": "README.md",
+    "summary": "Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search.",
+    "title": "ocrmd"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "docs/ARCHITECTURE.md",
+    "docs/reference/cli.md",
+    "docs/scanning.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/ocrmd.md",
+    "fingerprint": "4f7fa88f3a3ddcd7",
+    "index": "ocrmd/README.md",
+    "max_depth": 3,
+    "pages": 26,
+    "present": true,
+    "sections": 4,
+    "skipped": 0,
+    "title": "OCRmd",
+    "top_sections": [
+      {
+        "index": "ocrmd/docs/README.md",
+        "pages": 19,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/ocrmd.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "tooling",
+    "name": "ocrmd",
+    "registry_description": "Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search.",
+    "repo": "bamr87/ocrmd",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/ocrmd"
+  },
+  "rollups": {
+    "categories": {
+      "ocrmd": 26
+    },
+    "code_languages": [
+      "text",
+      "plaintext",
+      "sh",
+      "python",
+      "toml",
+      "bash",
+      "markdown"
+    ],
+    "indexed_documents": 26,
+    "top_tags": [],
+    "total_words": 39851
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": false,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "PRD.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 19,
+        "name": "docs"
+      },
+      {
+        "doc_count": 1,
+        "name": "examples"
+      }
+    ]
+  }
+}

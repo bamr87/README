@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: templates/consumer/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/templates/consumer/README.md
 title: Consumer adoption kit
 ---
 # Consumer adoption kit
@@ -115,7 +117,7 @@ Generation is script-driven and never runs inside `jekyll build`, so GitHub Page
 `zer0.json` is the zer0-CMS project file. Start from `zer0.json.template`, then:
 
 - point each `contentFolders[].path` at a directory that exists (the doctor reports a missing one as an error) and add a folder per collection the site actually has;
-- keep each content type's `required: true` fields equal to that collection's `required:` list plus `global.required_fields` in this theme's [`.github/config/frontmatter_schema.yml`](../../.github/config/frontmatter_schema.yml), which is what `scripts/lint-pages` enforces;
+- keep each content type's `required: true` fields equal to that collection's `required:` list plus `global.required_fields` in this theme's [`.github/config/frontmatter_schema.yml`](../../dot-github/config/frontmatter_schema.yml), which is what `scripts/lint-pages` enforces;
 - keep the `$schema` line so editors validate it.
 
 An existing `frontmatter.json` (Front Matter CMS) can stay until `zer0.json` covers every field it defines. Make sure `.gitignore` does not ignore `zer0.json`, and add it to `exclude:` in `_config.yml` so it is not published.
@@ -150,10 +152,12 @@ From a theme checkout:
 ```bash
 ./scripts/bin/audit-consumer --consumer-path /path/to/site            # report
 ./scripts/bin/audit-consumer --consumer-path /path/to/site --strict   # CI gate
-./scripts/bin/audit-consumer --consumer-path /path/to/site --fix      # delete IDENTICAL copies
+./scripts/bin/audit-consumer --consumer-path /path/to/site --fix      # delete IDENTICAL copies, refresh STALE vendored _data
 ./scripts/bin/sync-plugins   --consumer-path /path/to/site            # vendor required plugins
 ```
 
-`--fix` deletes only files byte-identical to the theme's, which is the cheapest cleanup available: those forks are doing nothing but going stale. Files you fork on purpose belong in `.theme-overrides.yml`, and an override whose `reason` has been fixed upstream is your cue to delete the fork and take the theme's copy back.
+Among themable files, `--fix` deletes only those byte-identical to the theme's, which is the cheapest cleanup available: those forks are doing nothing but going stale. Files you fork on purpose belong in `.theme-overrides.yml`, and an override whose `reason` has been fixed upstream is your cue to delete the fork and take the theme's copy back.
 
 > `remote_theme` does not deliver `_plugins/` — GitHub Pages will not load plugins from a remote theme. `sync-plugins` is how those get vendored, and it is why they rot independently of the theme version.
+
+> `remote_theme` does not deliver `_data/` either, so your copies of the theme's registries (`_data/theme_skins.yml`, `_data/theme_backgrounds.yml`) and of `_data/ui-text.yml` never update with it. Re-run the audit after every theme update: `STALE` registries are replaced by `--fix`, and `MISSING_KEYS` lists the labels to add to your `ui-text.yml`.

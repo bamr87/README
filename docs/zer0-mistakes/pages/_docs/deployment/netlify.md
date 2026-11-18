@@ -16,7 +16,9 @@ prerequisites:
 preview: /images/previews/deploy-to-netlify.png
 sidebar:
   nav: docs
-source_file: netlify.md
+source_file: pages/_docs/deployment/netlify.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/deployment/netlify.md
 tags:
 - deployment
 - netlify
@@ -24,6 +26,7 @@ tags:
 - ci-cd
 title: Deploy to Netlify
 ---
+
 # Deploy to Netlify
 
 > Deploy your Jekyll site to Netlify with continuous deployment from GitHub.
@@ -249,11 +252,11 @@ If HTTPS isn't working:
 
 ## Next Steps
 
-- [Custom Domain Setup](/docs/deployment/custom-domain/)
-- [Security Headers](/docs/development/security/) — Harden your site
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Custom Domain Setup]]
+- [[zer0-mistakes/pages/_docs/development/security|Security Headers]] — Harden your site
 
 ## See also
 
-- [[Deployment]]
-- [[Deploy to GitHub Pages]]
-- [[Custom Domain Setup]]
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment]]
+- [[zer0-mistakes/pages/_docs/deployment/github-pages|Deploy to GitHub Pages]]
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Custom Domain Setup]]

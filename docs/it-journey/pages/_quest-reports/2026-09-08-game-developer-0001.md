@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/34219408279
 slice: game-developer/0001
-source_file: 2026-09-08-game-developer-0001.md
+source_file: pages/_quest-reports/2026-09-08-game-developer-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-09-08-game-developer-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-09-08-game-developer-0001.md
 tags:
 - game-developer
 - level-0001
@@ -25,13 +27,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 09 08 Game Developer 0001
+title: Game Developer · L0001 · 2026-09-08
 verdict: warn
 walk_date: '2026-09-08'
 ---
+
 > **Slice** `game-developer/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-09-08
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/34219408279) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-09-08-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-09-08-game-developer-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/34219408279) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-09-08-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-09-08-game-developer-0001.md)
 
 ---
 
@@ -64,7 +67,7 @@ Every outcome below is a command the execute engine actually ran in its disposab
 - Built a real Jekyll site, applied the quest's exact `_config.yml` (`url: "https://username.github.io"` / `baseurl: "/my-castle"`); `jekyll build` produced correctly prefixed links (`/my-castle/assets/main.css`).
 - `bundle exec jekyll serve --baseurl "/my-castle"` (run as `jekyll serve --baseurl "/my-castle" --port 4099`) logged `Server address: http://127.0.0.1:4099/my-castle/`, matching the quest.
 - Wrote `www.mysite.dev` to a `CNAME` file, rebuilt, confirmed Jekyll copies it verbatim into `_site/CNAME`.
-- `JEKYLL_ENV` test: a plain `jekyll build` omitted the `{​% if jekyll.environment == "production" %​}` marker (count 0); `JEKYLL_ENV=production jekyll build` included it (count 1) — exactly the behavior the quest claims.
+- `JEKYLL_ENV` test: a plain `jekyll build` omitted the `{% if jekyll.environment == "production" %}` marker (count 0); `JEKYLL_ENV=production jekyll build` included it (count 1) — exactly the behavior the quest claims.
 - `git init && git add . && git commit -m "Initial site"` ran cleanly. `gh repo create ...`, `gh api -X POST repos/:owner/.../pages ...`, and every `brew`/`winget`/`sudo apt install gh` line were correctly `skipped`/`reasoned` — they require live GitHub auth or a different OS, unavailable in this sandbox.
 - **Real completeness gap (`tested` by absence):** the "GitHub Actions Build" secondary objective is listed in Quest Objectives but the body never shows a `.github/workflows/jekyll.yml` or explains the Settings → Pages "Build and deployment: GitHub Actions" source option — only a Resources link. A learner cannot satisfy that named objective from this quest's content alone.
 - Minor: `gh api -X POST repos/:owner/my-castle/pages ...` uses the older `:owner` placeholder; current `gh api --help` (v2.98.0, installed in sandbox) documents `{owner}`/`{repo}` — flagged as a possible staleness risk, not confirmed broken (no live auth to test resolution).
@@ -82,7 +85,7 @@ Every outcome below is a command the execute engine actually ran in its disposab
 ### 3. YAML Configuration — ✅ 100 (16 available, 13 ran / 13 passed / 3 skipped / 4 reasoned)
 - Dimensions: commands_work 5, content_accuracy 5, completeness 5, clarity 5, structure 5, safety 5.
 - All 8 YAML snippets (core shapes, front matter, `_config.yml`, `_data/team.yml`, `plugins.yml`, `_config_dev.yml`, `strict_front_matter.yml`) parsed with `yaml.safe_load` exactly as documented.
-- The Chapter 3 Liquid loop was **actually rendered** with the Ruby `liquid` gem against a context built from the real `_data/team.yml` and produced exactly `<p>Ada Lovelace - Architect</p>` and `<p>Grace Hopper - Compiler Smith</p>`, with the `{​% if member.active %​}` guard correctly working.
+- The Chapter 3 Liquid loop was **actually rendered** with the Ruby `liquid` gem against a context built from the real `_data/team.yml` and produced exactly `<p>Ada Lovelace - Architect</p>` and `<p>Grace Hopper - Compiler Smith</p>`, with the `{% if member.active %}` guard correctly working.
 - `yamllint` (v1.38.0) ran clean (exit 0, one minor style warning) against every constructed YAML file.
 - Every "pitfall" claim was individually reproduced: `yes`/`on` unquoted → boolean `True`; `version: 1.20` → float `1.2` (trailing zero lost, `"1.20"` stays a string); unquoted `title: Jekyll: a static generator` → real `ScannerError`; `zip: 01234` → parsed as octal `668`; `|` vs `>` block scalars produced literal-newline vs folded-space text exactly as described.
 - The tab-indentation claim was verified directly: a YAML file with a literal tab under a list raised `ScannerError: found character '\t' that cannot start any token`, and `yamllint` flagged it (exit 1).

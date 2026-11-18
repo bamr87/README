@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:57+00:00
 description: The reusable Liquid component library in _includes/components for Zer0-Mistakes,
   how components consume design tokens, and how to add new ones.
 lastmod: 2026-09-03 00:00:00+00:00
-source_file: components.md
+source_file: docs/ui/components.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/components.md
 tags:
 - ui
 - styling
 - theme
 title: Components
 ---
+
 # Components
 
 Reusable Liquid partials in `_includes/components/`. Components consume design tokens (`var(--zer0-*)`) and Bootstrap 5 utilities.
@@ -371,7 +374,7 @@ Copy `_data/landing.yml` into your fork and edit values; omit keys to fall back 
 
 See all patterns rendered with every skin:
 
-**[/about/settings/theme-preview/](/about/settings/theme-preview/)**
+**[[zer0-mistakes/pages/_about/settings/theme-preview|/about/settings/theme-preview/]]**
 
 ---
 
@@ -403,4 +406,4 @@ When one of these theme components changes visually, update its twin (and its `@
 
 ---
 
-> **User guide**: For usage and configuration examples (how to use includes as a theme user), see [Include Components](/docs/customization/includes/) in the user documentation.
+> **User guide**: For usage and configuration examples (how to use includes as a theme user), see [[zer0-mistakes/pages/_docs/customization/includes|Include Components]] in the user documentation.

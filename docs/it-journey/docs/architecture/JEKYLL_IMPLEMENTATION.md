@@ -1,5 +1,7 @@
 ---
-source_file: JEKYLL_IMPLEMENTATION.md
+source_file: docs/architecture/JEKYLL_IMPLEMENTATION.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/architecture/JEKYLL_IMPLEMENTATION.md
 title: Jekyll Implementation Details
 ---
 # Jekyll Implementation Details

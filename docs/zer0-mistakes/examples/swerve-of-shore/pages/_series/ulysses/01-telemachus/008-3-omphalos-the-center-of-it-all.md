@@ -11,11 +11,13 @@ order: 8.3
 preview: /assets/images/posts/008-3-omphalos-the-center-of-it-all.jpg
 section: 01-telemachus
 series: ulysses
-source_file: 008-3-omphalos-the-center-of-it-all.md
-source_url: https://www.swerveofshore.com/post/008-3-omphalos-the-center-of-it-all
+source_file: examples/swerve-of-shore/pages/_series/ulysses/01-telemachus/008-3-omphalos-the-center-of-it-all.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/ulysses/01-telemachus/008-3-omphalos-the-center-of-it-all.md
 sub-title: Episode 1 · Telemachus
-title: 008 3 Omphalos The Center Of It All
+title: '008.3 - Omphalos: The Center of It All'
 ---
+
 From the *Episode 1 · Telemachus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/008-3-omphalos-the-center-of-it-all), by Brandon Nicklaus.
 
 > The term “omphalos” appears twice in the first episode of Ulysses, each time adding layers to the novel’s themes of history, identity, and intellectual rebellion.

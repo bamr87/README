@@ -12,9 +12,12 @@ illustrations:
   title: The Journey Begins
 permalink: /books/zer0-tales/01-the-missing-pixel/
 preview: /assets/images/wizard-on-journey.png
-source_file: 01-the-missing-pixel.md
-title: 01 The Missing Pixel
+source_file: pages/_books/zer0-tales/01-the-missing-pixel.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_books/zer0-tales/01-the-missing-pixel.md
+title: The Missing Pixel
 ---
+
 Once upon a build, in a website tucked behind a friendly green checkmark, there lived a careful little wizard named Zer0.
 
 Zer0 counted everything. Every heading, every link, every semicolon — twice on Fridays.

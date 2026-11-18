@@ -27,18 +27,21 @@ quickstart:
   step: 3
 sidebar:
   nav: quickstart
-source_file: github-setup.md
+source_file: fr/quickstart/github-setup.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/quickstart/github-setup.md
 tags:
 - github
 - git
 - deployment
 - github-pages
 - version-control
-title: Configuration GitHub
+title: 'Configuration GitHub : forker, configurer et déployer sur Pages'
 translated_from_sha: 642910d38e2c
 translation_of: pages/_quickstart/github-setup.md
 translation_source_url: /quickstart/github-setup/
 ---
+
 # Configuration GitHub
 
 Authentifiez-vous auprès de GitHub, forkez le thème et déployez votre site sur GitHub Pages.
@@ -56,7 +59,7 @@ flowchart LR
 
 ## Prérequis
 
-- [Configuration de la machine](/quickstart/machine-setup/) terminée (Docker, Git, GitHub CLI)
+- [[zer0-mistakes/pages/_quickstart/machine-setup|Configuration de la machine]] terminée (Docker, Git, GitHub CLI)
 - Un [compte GitHub](https://github.com/signup)
 
 ## Étape 1 — S'authentifier avec GitHub CLI

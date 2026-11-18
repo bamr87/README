@@ -3,9 +3,13 @@ description: Services and support options for the Zer0-Mistakes ecosystem.
 lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /services/
-source_file: services.md
+source_file: pages/services.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/services.md
 title: Services
 ---
+
+
 This page exists to document available services and support offerings.
 
 For now:

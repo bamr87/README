@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29826801543
 slice: system-engineer/0101
-source_file: 2026-07-21-system-engineer-0101.md
+source_file: pages/_quest-reports/2026-07-21-system-engineer-0101.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-21-system-engineer-0101.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-21-system-engineer-0101.md
 tags:
 - system-engineer
 - level-0101
@@ -25,13 +27,14 @@ tags:
 - ci-cd-devops
 theme: CI/CD & DevOps
 tier: Adventurer
-title: 2026 07 21 System Engineer 0101
+title: System Engineer · L0101 · 2026-07-21
 verdict: warn
 walk_date: '2026-07-21'
 ---
+
 > **Slice** `system-engineer/0101` · **Level** 0101 (CI/CD & DevOps) · **Adventurer tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-21
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29826801543) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-21-system-engineer-0101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-21-system-engineer-0101.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29826801543) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-21-system-engineer-0101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-21-system-engineer-0101.md)
 
 ---
 
@@ -49,7 +52,7 @@ Walked in `walk-plan.json` order (dependency-sorted window, index 0 of 3):
 |---|:--:|---|--:|---|
 | 1 | ✅ pass | CI/CD Fundamentals: The Build-Test-Deploy Pipeline | 85 | Accurate, well-built spine; only real defect is an unconfigured `git commit`/`git push` in the Ch.3 bash block. |
 | 2 | ❌ fail | Docker Containerization Mastery: Level 0101 (5) Quest | 51 | One working Dockerfile surrounded by empty placeholders; objectives promise Compose/security/cloud that are never taught. |
-| 3 | ⚠️ warn | GitHub Actions Basics: Workflow Automation for Modern DevOps | 74 | Concepts verified correct, but two YAML blocks carry inline `{​% raw %​}`/`{​% endraw %​}` tags that break copy-paste from source. |
+| 3 | ⚠️ warn | GitHub Actions Basics: Workflow Automation for Modern DevOps | 74 | Concepts verified correct, but two YAML blocks carry inline `{% raw %}`/`{% endraw %}` tags that break copy-paste from source. |
 | 4 | ⚠️ warn | Forging the La(zy)TeX CV: Binary Level 0101 (5) Quest | 77 | Template compiles + links work, but the "stock LaTeX install" claim is false (needs `enumitem`/`titlesec`); thematically off-path for this character. |
 | 5 | ✅ pass | The Warden's Gate: Kill Switches and Stage Gates | 88 | Technically excellent gate/kill-switch/permissions lesson; assumes a prior "First Turn" repo the slice never builds. |
 
@@ -79,7 +82,7 @@ Dimensions: commands_work 3 · content_accuracy 4 · completeness 4 · clarity 3
 - **passed** `mkdir -p .github/workflows` (macOS/Linux/Cloud paths) and the Windows `New-Item` equivalent.
 - **passed** Ch.1 "Hello Actions" full workflow YAML, Ch.2 `on:` triggers block, Ch.2 `needs:` job-ordering YAML — all parse and match current GitHub Actions semantics; the matrix math (2×3 − 1 exclude = 5 jobs) checks out.
 - **failed** `gh run list` (Cloud Realms path) — errored with no authenticated repo context in the sandbox (expected for a bare runner; a real Codespace would satisfy it).
-- **failed** Ch.2 Secrets/Permissions YAML and Ch.3 Matrix YAML — contain **inline** literal `{​% raw %​}`/`{​% endraw %​}` tags mid-expression, e.g. `API_TOKEN: ${​% raw %​}{​{ secrets.DEPLOY_TOKEN }​}{​% endraw %​}` (line 291) and `runs-on: ${​% raw %​}{​{ matrix.os }​}{​% endraw %​}` (line 333). As raw source they are not valid GitHub Actions expression syntax.
+- **failed** Ch.2 Secrets/Permissions YAML and Ch.3 Matrix YAML — contain **inline** literal `{% raw %}`/`{% endraw %}` tags mid-expression, e.g. `API_TOKEN: ${% raw %}{{ secrets.DEPLOY_TOKEN }}{% endraw %}` (line 291) and `runs-on: ${% raw %}{{ matrix.os }}{% endraw %}` (line 333). As raw source they are not valid GitHub Actions expression syntax.
 
 ### 4 · Forging the La(zy)TeX CV — ⚠️ 77 · ran 4/5 runnable (4 passed, 0 failed)
 Dimensions: commands_work 4 · content_accuracy 3 · completeness 4 · clarity 4 · structure 4 · safety 5.
@@ -99,7 +102,7 @@ Grouped by severity; each cites what was observed (tested = command actually run
 
 **HIGH**
 - **[Docker Mastery · Completeness]** *(tested — engine grep + snippet skips)* The objectives + "Portfolio Artifacts Created" checklist promise Docker Compose, security best practices, and cloud deployment, but the body teaches only a single `hello-world` Dockerfile; the 5 platform fences (lines 114–150) are empty placeholder comments. **Fix:** either add real runnable content for Compose (`docker-compose.yml` + `docker compose up`), a hardening example (non-root `USER`, multi-stage, `trivy`/`docker scan`), and a registry-push/deploy step — or remove those items from the objectives/checklist so the quest stops promising what it never teaches. Also fill Ch.1 steps 1/2/4 (lines 166–169), which currently just restate their titles.
-- **[GitHub Actions Basics · Ch.2 & Ch.3 YAML]** *(tested — 2 failed YAML parses)* Inline `{​% raw %​}…{​% endraw %​}` tags mid-expression at lines 291 and 333 (and inline in prose at lines 116 and 375) are invalid GitHub Actions syntax **in the raw source**. A learner who copies from GitHub's source view / the `.md` gets a broken workflow. **Fix:** wrap the whole fenced block with the raw tags on their own lines (the pattern *CI/CD Fundamentals* uses at lines 381/395, which renders correctly), rather than embedding the tags inside the expression.
+- **[GitHub Actions Basics · Ch.2 & Ch.3 YAML]** *(tested — 2 failed YAML parses)* Inline `{% raw %}…{% endraw %}` tags mid-expression at lines 291 and 333 (and inline in prose at lines 116 and 375) are invalid GitHub Actions syntax **in the raw source**. A learner who copies from GitHub's source view / the `.md` gets a broken workflow. **Fix:** wrap the whole fenced block with the raw tags on their own lines (the pattern *CI/CD Fundamentals* uses at lines 381/395, which renders correctly), rather than embedding the tags inside the expression.
 - **[CI/CD Fundamentals · Ch.3 bash block]** *(tested — reproduced fatal error)* `git commit -am` fails with *"empty ident name … Please tell me who you are"* on any fresh machine; the quest never teaches `git config --global user.name/user.email`. **Fix:** add a one-line git-identity setup in the platform section or immediately before the Ch.3 snippet.
 
 **MEDIUM**
@@ -134,7 +137,7 @@ Reading the five quests as one linear journey a System Engineer would actually t
   - This is **window 1 of 3** — I walked **5 of the 13** quests in the level. The other 8 are out of scope for this run and unassessed here.
   - Sandbox limits mean anything needing a live authenticated GitHub context (`gh run list`, `gh workflow run … && gh run watch`, running a workflow on a real runner) was **skipped/reasoned**, not tested — this affects the two GitHub-Actions-heavy quests (#3, #5) most. Their YAML was parse-validated and their logic inspected, but no end-to-end Actions run was observed.
   - Cross-OS blocks (macOS `brew`/`winget`, Windows PowerShell) were skipped because the sandbox is Linux; the Linux/Cloud equivalents were run where they exist.
-  - On the `{​% raw %​}` finding I add nuance the engine (which reads raw `.md`) can't: Jekyll *strips* `{​% raw %​}`/`{​% endraw %​}` when rendering, so a learner copying from the **published page** likely gets valid syntax; the real hazard is copying from the **raw markdown / GitHub source view**. I did not render the page, so this rendered-vs-raw distinction is **reasoned**, while the failed YAML parse of the raw source is **tested**.
+  - On the `{% raw %}` finding I add nuance the engine (which reads raw `.md`) can't: Jekyll *strips* `{% raw %}`/`{% endraw %}` when rendering, so a learner copying from the **published page** likely gets valid syntax; the real hazard is copying from the **raw markdown / GitHub source view**. I did not render the page, so this rendered-vs-raw distinction is **reasoned**, while the failed YAML parse of the raw source is **tested**.
 - **Confidence:** High on the per-quest verdicts (machine-checked, real commands). High on the chain-continuity findings, which come from directly quoted frontmatter/prerequisite lines. Medium on the exact learner impact of the templating tags, pending a rendered-page check.
 
 ---

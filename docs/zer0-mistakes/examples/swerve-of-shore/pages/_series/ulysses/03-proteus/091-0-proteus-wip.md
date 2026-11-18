@@ -13,12 +13,14 @@ order: 91.0
 preview: /assets/images/posts/091-0-proteus-wip.jpg
 section: 03-proteus
 series: ulysses
-source_file: 091-0-proteus-wip.md
-source_url: https://www.swerveofshore.com/post/091-0-proteus-wip
+source_file: examples/swerve-of-shore/pages/_series/ulysses/03-proteus/091-0-proteus-wip.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/ulysses/03-proteus/091-0-proteus-wip.md
 sub-title: Episode 3 · Proteus
-title: 091 0 Proteus Wip
+title: 091.0 - Proteus - WIP
 wip: true
 ---
+
 An in-progress entry in the *Episode 3 · Proteus* thread on [Swerve of Shore](https://www.swerveofshore.com/post/091-0-proteus-wip), by Brandon Nicklaus.
 
 > Sandymount Strand - A area of sandy beach that tide comes and goes. Stephen is walking on this observing his surroundings and thinking through thoughts. South side of the mouth of the Liffey. Stephen arrived here by assumed public transport after leaving his teaching job in Dalkey.

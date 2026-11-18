@@ -14,7 +14,9 @@ permalink: /fr/docs/development/release-management/
 preview: /images/previews/release-management.png
 sidebar:
   nav: docs
-source_file: release-management.md
+source_file: fr/docs/development/release-management.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/release-management.md
 tags:
 - release
 - versioning
@@ -25,6 +27,7 @@ translated_from_sha: 7d4039713c7b
 translation_of: pages/_docs/development/release-management.md
 translation_source_url: /docs/development/release-management/
 ---
+
 # Gestion des versions
 
 Les versions suivent [Conventional Commits](https://www.conventionalcommits.org/) et [Semantic Versioning](https://semver.org/). Le processus de publication est entièrement automatisé via `scripts/bin/release` :

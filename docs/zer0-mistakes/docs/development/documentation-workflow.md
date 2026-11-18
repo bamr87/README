@@ -6,16 +6,19 @@ date: 2026-05-31 20:54:46+00:00
 description: 'Contributor guide to the dual docs architecture: when to write in docs/
   vs pages/_docs/, front matter requirements, and the review pipeline.'
 lastmod: 2026-05-31 20:54:46+00:00
-source_file: documentation-workflow.md
+source_file: docs/development/documentation-workflow.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/development/documentation-workflow.md
 tags:
 - development
 - contributing
 - documentation
 title: Documentation Workflow
 ---
+
 # Documentation Workflow
 
-> **Canonical rules** are in [`.github/instructions/documentation.instructions.md`](../../.github/instructions/documentation.instructions.md). This file is a quick-reference summary for contributors.
+> **Canonical rules** are in [`.github/instructions/documentation.instructions.md`](../../dot-github/instructions/documentation.instructions.md). This file is a quick-reference summary for contributors.
 
 ## Two-Tier Architecture
 

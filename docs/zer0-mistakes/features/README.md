@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: features/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/features/README.md
 title: Features Directory
 ---
 # Features Directory
@@ -69,7 +71,7 @@ When adding a new feature:
 5. Link to documentation if available
 6. Update the features page if needed
 
-See [.github/instructions/features.instructions.md](../.github/instructions/features.instructions.md) for the full schema and validation steps.
+See [.github/instructions/features.instructions.md](../dot-github/instructions/features.instructions.md) for the full schema and validation steps.
 
 ## Validation
 

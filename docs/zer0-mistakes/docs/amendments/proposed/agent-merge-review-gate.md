@@ -6,12 +6,15 @@ date: 2026-10-30 00:00:00+00:00
 description: Proposed amendment that lets agents merge PRs meeting the mergeable-PR
   checklist and holds gated PRs behind a review gate.
 lastmod: 2026-10-30 00:00:00+00:00
-source_file: agent-merge-review-gate.md
+source_file: docs/amendments/proposed/agent-merge-review-gate.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/amendments/proposed/agent-merge-review-gate.md
 tags:
 - governance
 - amendments
-title: NEW — Agent merge of mergeable PRs, and a review gate
+title: 'Proposed: Agent merge of mergeable PRs, and a review gate'
 ---
+
 # NEW — Agent merge of mergeable PRs, and a review gate
 
 - **Status:** proposed

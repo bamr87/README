@@ -19,11 +19,13 @@ objectives:
     all:
     - command: echo
     - arg: $MANA
-source_file: 02-arithmetic.md
+source_file: courses/shell-craft/02-arithmetic.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/shell-craft/02-arithmetic.md
 teaches:
 - let
 - numbers
-title: 02 Arithmetic
+title: Arithmetic
 xp: 25
 ---
 Shell variables hold **text**. To do arithmetic, you have to ask for it:

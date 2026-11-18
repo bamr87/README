@@ -3,22 +3,11 @@ description: Browse all categories and discover content by topic
 lastmod: 2026-04-18 19:30:22+00:00
 layout: default
 permalink: /categories/
-source_file: categories.md
+source_file: pages/categories.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/categories.md
 title: Categories
 ---
-<!--
-  ===================================================================
-  CATEGORIES INDEX PAGE - Browse all categories
-  ===================================================================
-
-File: categories.md Path: pages/categories.md Purpose: Display all categories with post counts and links to categorized posts
-
-  This page provides:
-  - Alphabetical list of all categories
-  - Post count for each category
-  - Direct links to posts grouped by category
-  - Category overview visualization
-=================================================================== -->
 
 <header class="categories-header mb-5">
   <h1 class="display-5">
@@ -28,10 +17,6 @@ File: categories.md Path: pages/categories.md Purpose: Display all categories wi
     Explore content organized by category. Click any category to see related articles.
   </p>
 </header>
-
-<!-- ========================== -->
-<!-- CATEGORY OVERVIEW          -->
-<!-- ========================== -->
 
 {% comment %} Collect all categories with counts (posts + notebooks) {% endcomment %}
 {% assign category_sources = site.posts | concat: site.notebooks %}
@@ -69,9 +54,6 @@ File: categories.md Path: pages/categories.md Purpose: Display all categories wi
   </div>
 </section>
 
-<!-- ========================== -->
-<!-- CATEGORIES WITH POSTS      -->
-<!-- ========================== -->
 <section class="categories-list">
   <h2 class="h4 mb-4 pb-2 border-bottom">
     <i class="bi bi-list-ul me-2"></i>All Categories ({{ unique_categories.size }})
@@ -81,7 +63,7 @@ File: categories.md Path: pages/categories.md Purpose: Display all categories wi
     {% assign categorized_posts = category_sources | where_exp: "post", "post.categories contains category" %}
     
     <article class="category-section mb-5" id="{{ category | slugify }}">
-      <!-- Category Header -->
+
       <div class="d-flex align-items-center mb-3">
         <h3 class="h5 mb-0">
           <i class="bi bi-folder-fill text-success me-2"></i>{{ category }}
@@ -92,7 +74,6 @@ File: categories.md Path: pages/categories.md Purpose: Display all categories wi
         </a>
       </div>
       
-      <!-- Posts in this category -->
       <ul class="list-group list-group-flush">
         {% for post in categorized_posts %}
           <li class="list-group-item d-flex justify-content-between align-items-start px-0">
@@ -115,7 +96,7 @@ File: categories.md Path: pages/categories.md Purpose: Display all categories wi
   {% endfor %}
   
   {% if unique_categories.size == 0 %}
-    <!-- Empty state -->
+
     <div class="text-center py-5">
       <i class="bi bi-folder-x display-1 text-muted mb-3"></i>
       <h3 class="h5 text-muted">No Categories Yet</h3>
@@ -126,9 +107,6 @@ File: categories.md Path: pages/categories.md Purpose: Display all categories wi
   {% endif %}
 </section>
 
-<!-- ========================== -->
-<!-- BACK TO TOP LINK           -->
-<!-- ========================== -->
 <div class="text-center mt-5" id="top">
   <a href="{{ '/posts/' | relative_url }}" class="btn btn-outline-primary">
     <i class="bi bi-arrow-left me-1"></i>Back to All Posts

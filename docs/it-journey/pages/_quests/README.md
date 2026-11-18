@@ -20,13 +20,15 @@ preview: /images/previews/quests-index.webp
 quest_browser: true
 quest_paths: true
 quest_progression: true
-source_file: README.md
+source_file: pages/_quests/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/README.md
 tags:
 - quests
 - learning-path
 - index
 - gamified-learning
-title: Readme
+title: 'Quest Realm: Your Gamified IT Learning Hub'
 toc: true
 toc_sticky: true
 ---
@@ -36,11 +38,11 @@ Use the **Tier Map**, **class paths**, and **Browse All Quests** above to chart 
 
 ## Codex & Reference
 
-- [📖 Codex Glossary](/quests/codex/glossary/) — dictionary of digital spells and terms
-- [🗺️ World Map](/quests/codex/world-map/) — navigate the digital realms
-- [🎒 Inventory](/quests/inventory/) — track and export your learner progress
-- [🛠️ Tools Collection](/quests/tools/) — cross-level version control and workflow quests
-- [🏰 Overworld Hub](/quests/home/) — your central command center
+- [[it-journey/pages/_quests/codex/glossary|📖 Codex Glossary]] — dictionary of digital spells and terms
+- [[it-journey/pages/_quests/codex/world_map|🗺️ World Map]] — navigate the digital realms
+- [[it-journey/pages/_quests/inventory/README|🎒 Inventory]] — track and export your learner progress
+- [[it-journey/pages/_quests/tools/README|🛠️ Tools Collection]] — cross-level version control and workflow quests
+- [[it-journey/pages/_quests/home|🏰 Overworld Hub]] — your central command center
 
 ## Getting Started
 
@@ -54,7 +56,7 @@ Use the **Tier Map**, **class paths**, and **Browse All Quests** above to chart 
 
 ### For Experienced Adventurers
 
-1. **Explore the [World Map](/quests/codex/world-map/)** for orientation.
+1. **Explore the [[it-journey/pages/_quests/codex/world_map|World Map]]** for orientation.
 2. **Assess your level** using the Tier Map above (or the full level reference under *How Progression Works*) and jump straight to the matching hub.
 3. **Pick a specialization** from the class paths and follow its level chain.
 
@@ -83,8 +85,8 @@ This collection grows through community contributions — typo fixes, new quests
 
 **Stuck on a quest?**
 
-- 📖 Check the [Glossary](/quests/codex/glossary/) for term definitions.
-- 🗺️ Consult the [World Map](/quests/codex/world-map/) for navigation.
+- 📖 Check the [[it-journey/pages/_quests/codex/glossary|Glossary]] for term definitions.
+- 🗺️ Consult the [[it-journey/pages/_quests/codex/world_map|World Map]] for navigation.
 - 💬 Join community discussions via Giscus comments.
 - 🐛 Report issues or suggest improvements via GitHub Issues.
 

@@ -91,7 +91,9 @@ rewards:
   unlocks_features:
   - A portfolio repository with a parts ledger, health reports, and boss-fight evidence
 skill_focus: infrastructure
-source_file: twin-rigs.md
+source_file: pages/_quests/codex/twin-rigs.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/codex/twin-rigs.md
 tags:
 - '1001'
 - raspberry-pi
@@ -102,7 +104,7 @@ tags:
 - open-source
 - project-based
 - gamified-learning
-title: Twin Rigs
+title: 'Epic Quest: The Twin Rigs'
 validation_criteria:
   completion_requirements:
   - All eight chapters completed and the Throttle Wraith defeated
@@ -145,9 +147,9 @@ By the end of this campaign you will have:
 
 ## 🗺️ Quest Prerequisites
 
-- **Terminal comfort** — you can move between folders, run commands, and read errors. The [Terminal Fundamentals](/quests/0000/terminal-fundamentals/) quest covers this.
-- **A little Linux** — both rigs run Linux. [Linux Fundamentals](/quests/0000/linux-fundamentals/) is the right warm-up.
-- **Git basics** — you will keep your ledger and reports in a repository. See [Git Basics](/quests/0000/git-basics/).
+- **Terminal comfort** — you can move between folders, run commands, and read errors. The [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals]] quest covers this.
+- **A little Linux** — both rigs run Linux. [[it-journey/pages/_quests/0000/linux-fundamentals|Linux Fundamentals]] is the right warm-up.
+- **Git basics** — you will keep your ledger and reports in a repository. See [[it-journey/pages/_quests/0000/git-basics|Git Basics]].
 - **A second computer** — your fortress, used to flash drives and to reach the Pi over SSH.
 - **A real budget** — you are buying physical parts. Chapter I prices them before you spend anything, and you can play the Pi half alone for a fraction of the cost.
 - **A patient afternoon** — no soldering is required, and nothing here needs prior hardware experience.
@@ -184,14 +186,14 @@ Play them in order. If you only want one rig, Chapters I to IV finish the Pi, an
 
 | # | Chapter | Level | Difficulty | XP | You finish with |
 |---|---|---|---|---|---|
-| I | [The War Chest](/quests/0010/twin-rigs-01-the-war-chest/) | 0010 | 🟢 Easy | 40 | A checked parts ledger |
-| II | [The Rewind Cabinet](/quests/0011/twin-rigs-02-the-rewind-cabinet/) | 0011 | 🟡 Medium | 60 | A healthy, stress-tested Pi |
-| III | [Waking the Arcade](/quests/0100/twin-rigs-03-waking-the-arcade/) | 0100 | 🟡 Medium | 80 | A homebrew game running in ES-DE |
-| IV | [The Caravan Road](/quests/0101/twin-rigs-04-the-caravan-road/) | 0101 | 🟡 Medium | 80 | A Pi that behaves like a console |
-| V | [The Great Forge](/quests/0110/twin-rigs-05-the-great-forge/) | 0110 | 🔴 Hard | 120 | An assembled, memory-tested desktop |
-| VI | [The Steam Rite](/quests/0111/twin-rigs-06-the-steam-rite/) | 0111 | 🔴 Hard | 120 | SteamOS installed and reported |
-| VII | [The Free Stalls](/quests/1000/twin-rigs-07-the-free-stalls/) | 1000 | 🟡 Medium | 80 | An open source game library |
-| VIII | [The Throttle Wraith](/quests/1001/twin-rigs-08-the-throttle-wraith/) | 1001 | ⚔️ Epic | 200 | Streaming, plus proof under load |
+| I | [[it-journey/pages/_quests/0010/twin-rigs-01-the-war-chest\|The War Chest]] | 0010 | 🟢 Easy | 40 | A checked parts ledger |
+| II | [[it-journey/pages/_quests/0011/twin-rigs-02-the-rewind-cabinet\|The Rewind Cabinet]] | 0011 | 🟡 Medium | 60 | A healthy, stress-tested Pi |
+| III | [[it-journey/pages/_quests/0100/twin-rigs-03-waking-the-arcade\|Waking the Arcade]] | 0100 | 🟡 Medium | 80 | A homebrew game running in ES-DE |
+| IV | [[it-journey/pages/_quests/0101/twin-rigs-04-the-caravan-road\|The Caravan Road]] | 0101 | 🟡 Medium | 80 | A Pi that behaves like a console |
+| V | [[it-journey/pages/_quests/0110/twin-rigs-05-the-great-forge\|The Great Forge]] | 0110 | 🔴 Hard | 120 | An assembled, memory-tested desktop |
+| VI | [[it-journey/pages/_quests/0111/twin-rigs-06-the-steam-rite\|The Steam Rite]] | 0111 | 🔴 Hard | 120 | SteamOS installed and reported |
+| VII | [[it-journey/pages/_quests/1000/twin-rigs-07-the-free-stalls\|The Free Stalls]] | 1000 | 🟡 Medium | 80 | An open source game library |
+| VIII | [[it-journey/pages/_quests/1001/twin-rigs-08-the-throttle-wraith\|The Throttle Wraith]] | 1001 | ⚔️ Epic | 200 | Streaming, plus proof under load |
 
 *Chapters sit at different levels by design. The campaign uses the level number for progression, so a chapter's topic will not always match the theme of its level hub.*
 
@@ -235,9 +237,9 @@ Your real loot is the `twin-rigs` repository, and two machines you can repair yo
 
 ## 🔮 Next Adventures
 
-- 🕹️ **Begin the campaign:** [Chapter I — The War Chest](/quests/0010/twin-rigs-01-the-war-chest/)
-- 🐚 **Sharpen your shell:** [Bash Scripting](/quests/0010/bash-scripting/)
-- 🏛️ **Raise another epic:** [The Relic Raisers](/quests/codex/relic-raisers/)
+- 🕹️ **Begin the campaign:** [[it-journey/pages/_quests/0010/twin-rigs-01-the-war-chest|Chapter I — The War Chest]]
+- 🐚 **Sharpen your shell:** [[it-journey/pages/_quests/0010/bash-scripting|Bash Scripting]]
+- 🏛️ **Raise another epic:** [[it-journey/pages/_quests/codex/relic-raisers|The Relic Raisers]]
 
 ## 📚 Resource Codex
 
@@ -249,6 +251,6 @@ Your real loot is the `twin-rigs` repository, and two machines you can repair yo
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**First chapter:** [[The War Chest: Plan Two Rigs Before You Spend a Coin]] **Final chapter:** [[The Throttle Wraith: Prove Both Rigs Under Sustained Load]] **Codex:** [[Codex Glossary: Fantasy Terms to IT Reality]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**First chapter:** [[it-journey/pages/_quests/0010/twin-rigs-01-the-war-chest|The War Chest: Plan Two Rigs Before You Spend a Coin]] **Final chapter:** [[it-journey/pages/_quests/1001/twin-rigs-08-the-throttle-wraith|The Throttle Wraith: Prove Both Rigs Under Sustained Load]] **Codex:** [[it-journey/pages/_quests/codex/glossary|Codex Glossary: Fantasy Terms to IT Reality]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

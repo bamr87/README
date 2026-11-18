@@ -22,23 +22,26 @@ permalink: /fr/docs/features/cookbook-collection/
 preview: /images/zer0-mistakes-wizard.png
 sidebar:
   nav: docs
-source_file: cookbook-collection.md
+source_file: fr/docs/features/cookbook-collection.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/cookbook-collection.md
 tags:
 - recipes
 - cookbook
 - collections
 - layouts
 - unit-conversion
-title: Collection Cookbook
+title: Collection de recettes — Des recettes qui s'ajustent elles-mêmes
 translated_from_sha: c36a4d6c97f3
 translation_of: pages/_docs/features/cookbook-collection.md
 translation_source_url: /docs/features/cookbook-collection/
 ---
+
 # Collection Cookbook
 
 La collection `recipes` transforme le front matter en une page de recette fonctionnelle. Vous décrivez la recette sous forme de données — ingrédients avec quantités et unités, étapes, temps, un rendement — et le thème affiche la barre de faits, la liste de contrôle des ingrédients, la méthode, un tableau de pourcentages du boulanger et une barre de contrôle qui redimensionne chaque quantité et bascule toute la page entre les unités dans lesquelles elle a été écrite, le système métrique et le système impérial américain.
 
-Le thème est livré avec un cookbook de démonstration — [The Zer0 Kitchen](/recipes/) — qui met en œuvre tout ce qui figure sur cette page.
+Le thème est livré avec un cookbook de démonstration — [[zer0-mistakes/pages/_recipes/index|The Zer0 Kitchen]] — qui met en œuvre tout ce qui figure sur cette page.
 
 ## Ce que le lecteur obtient
 

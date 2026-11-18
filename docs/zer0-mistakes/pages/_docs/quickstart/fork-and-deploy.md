@@ -19,14 +19,17 @@ permalink: /docs/quickstart/fork-and-deploy/
 preview: /images/docs/quickstart/docs-deployment.png
 sidebar:
   nav: docs
-source_file: fork-and-deploy.md
+source_file: pages/_docs/quickstart/fork-and-deploy.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/quickstart/fork-and-deploy.md
 tags:
 - quickstart
 - github-pages
 - remote-theme
 - deployment
-title: Fork & Deploy to GitHub Pages
+title: Fork and Deploy to GitHub Pages
 ---
+
 # Fork & Deploy to GitHub Pages
 
 **What you'll do:** stand up a Zer0-Mistakes site you own and publish it to GitHub Pages, choosing between the low-maintenance *remote theme* model and the full-control *fork* model.
@@ -66,7 +69,7 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache"
 ```
 
-Add an `index.md` with front matter so you have a home page, then commit. The [Bare-Minimum Starter](/docs/quickstart/bare-minimum/) covers this minimal file set in more detail.
+Add an `index.md` with front matter so you have a home page, then commit. The [[zer0-mistakes/pages/_docs/quickstart/bare-minimum|Bare-Minimum Starter]] covers this minimal file set in more detail.
 
 ## Step 2b — Fork setup
 
@@ -102,7 +105,7 @@ Open `http://localhost:4000` to see your site. Without Docker, use `bundle insta
 3. Under **Build and deployment → Source**, choose **Deploy from a branch**.
 4. Select your `main` branch and the `/ (root)` folder, then **Save**.
 
-GitHub builds and publishes the site automatically on every push. The [Deploy to GitHub Pages](/docs/deployment/github-pages/) reference covers custom domains and the GitHub Actions alternative.
+GitHub builds and publishes the site automatically on every push. The [[zer0-mistakes/pages/_docs/deployment/github-pages|Deploy to GitHub Pages]] reference covers custom domains and the GitHub Actions alternative.
 
 ## Step 5 — Verify
 
@@ -116,9 +119,9 @@ GitHub builds and publishes the site automatically on every push. The [Deploy to
 - **Styles or layouts look unset** — for the remote-theme model, re-declare your
 `collections`, `defaults`, and `permalink` in your own `_config.yml`; they are not inherited from the theme.
 - **Pages 404 that you didn't create** — plugin-generated pages (author
-profiles, search, sitemap) are skipped by GitHub Pages safe mode; see the [Deploy to GitHub Pages](/docs/deployment/github-pages/) guide.
+profiles, search, sitemap) are skipped by GitHub Pages safe mode; see the [[zer0-mistakes/pages/_docs/deployment/github-pages|Deploy to GitHub Pages]] guide.
 
 ## Next steps
 
-- Customize colors and layout with the [Theme Guide](/docs/getting-started/theme-guide/).
-- Follow the [step-by-step Quick Start series](/quickstart/) for machine and Jekyll setup details.
+- Customize colors and layout with the [[zer0-mistakes/pages/_docs/getting-started/theme-guide|Theme Guide]].
+- Follow the [[zer0-mistakes/pages/_quickstart/index|step-by-step Quick Start series]] for machine and Jekyll setup details.

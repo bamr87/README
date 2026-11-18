@@ -58,7 +58,9 @@ rewards:
   unlocks_features:
   - Continue The Self-Operating Website campaign
 skill_focus: fullstack
-source_file: self-operating-website-05-the-content-forge.md
+source_file: pages/_quests/1010/self-operating-website-05-the-content-forge.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/self-operating-website-05-the-content-forge.md
 tags:
 - '1010'
 - claude-code
@@ -66,8 +68,9 @@ tags:
 - automation
 - ci-cd
 - gamified-learning
-title: .forge/backlog.yml — one item is claimed per run
+title: 'The Content Forge: Autonomous Generation That Refuses to Lie'
 ---
+
 *The forge glows in the deep keep of your realm. For chapters you have built defenses — guards, sigils, sentries that judge what others bring to the gate. But tonight the realm must do something braver: it must **create**. From a humble backlog of half-formed ideas, the forge will hammer out finished scrolls, autonomously, while you sleep.*
 
 *And here is the oath carved above the anvil — the **Prime Directive**: a scroll that claims something it cannot prove is never struck. The forge would rather produce nothing than produce a lie. The real-world skill you are forging is **backlog-driven content generation with a verification gate** — the difference between an automation that ships slop and one you can actually trust unattended.*
@@ -95,7 +98,7 @@ Every great forge needs three things: raw ore (a backlog of work items), a smith
 
 Before you stoke this forge, make sure these tools and trophies are already in your pack:
 
-- 🛡️ **Prior chapter cleared:** [Chapter IV — The Sigils of Trust](/quests/1001/self-operating-website-04-the-sigils-of-trust/). You should already trust an agent to act inside your repo behind least-privilege credentials.
+- 🛡️ **Prior chapter cleared:** [[it-journey/pages/_quests/1001/self-operating-website-04-the-sigils-of-trust|Chapter IV — The Sigils of Trust]]. You should already trust an agent to act inside your repo behind least-privilege credentials.
 - 🐙 **A GitHub repository you own**, with Actions enabled and permission to open pull requests from the workflow (`pull-requests: write`).
 - 🔑 **A `CLAUDE_CODE_OAUTH_TOKEN` repository secret** so the agent step can authenticate. (Generate it with `claude setup-token` and store it under *Settings → Secrets and variables → Actions*.)
 - 🧰 **Local tooling for testing:** Git, a text editor or IDE, Python 3.11+, and [`yq`](https://github.com/mikefarah/yq) (the Go implementation) to parse the YAML backlog.
@@ -384,8 +387,8 @@ graph LR
 
 The forge now strikes only true blades — but a true blade can still be dull. Next, the realm learns to read its own work with a critic's eye.
 
-- ➡️ **Next chapter:** [Chapter VI — The Editor's Eye](/quests/1100/self-operating-website-06-the-editors-eye/)
-- 🏰 **Campaign hub:** [Epic Quest: The Self-Operating Website](/quests/codex/self-operating-website/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1100/self-operating-website-06-the-editors-eye|Chapter VI — The Editor's Eye]]
+- 🏰 **Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]]
 
 ## 📚 Resource Codex
 
@@ -396,6 +399,6 @@ The forge now strikes only true blades — but a true blade can still be dull. N
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Self-Operating Website]] **Previous:** [[The Sigils of Trust]] **Next:** [[The Editor's Eye]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Previous:** [[The Sigils of Trust]] **Next:** [[The Editor's Eye]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

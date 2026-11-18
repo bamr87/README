@@ -26,17 +26,20 @@ prerequisites:
 preview: /images/previews/remote-theme-consumer-checklist.png
 sidebar:
   nav: docs
-source_file: remote-theme-checklist.md
+source_file: fr/docs/deployment/remote-theme-checklist.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/deployment/remote-theme-checklist.md
 tags:
 - github-pages
 - remote-theme
 - deployment
 - troubleshooting
-title: Liste de contrôle pour les consommateurs de Remote-Theme
+title: Liste de contrôle du consommateur de thème distant
 translated_from_sha: 5d09a61aea20
 translation_of: pages/_docs/deployment/remote-theme-checklist.md
 translation_source_url: /docs/deployment/remote-theme-checklist/
 ---
+
 # Liste de contrôle pour les consommateurs de Remote-Theme
 
 **Ce que vous allez faire :** configurer les fichiers et paramètres que GitHub Pages n'hérite *pas* lorsque vous consommez Zer0-Mistakes via `remote_theme`, afin que la recherche, la navigation, les commentaires et les liens internes fonctionnent tous.
@@ -48,7 +51,7 @@ translation_source_url: /docs/deployment/remote-theme-checklist/
 Le résultat est une chaîne de dégradations *silencieuses*. La liste de contrôle ci-dessous est le chemin le plus court pour les traiter toutes.
 
 > **Vous compilez en dehors de GitHub Pages ?** Si vous exécutez votre propre CI au lieu de Pages, consultez
-> la recette [Safe-Mode Build Overlay](/docs/deployment/build-overlay/) — elle
+> la recette [[zer0-mistakes/pages/_docs/deployment/build-overlay|Safe-Mode Build Overlay]] — elle
 > reproduit le comportement de suppression des plugins de Pages afin que votre build personnalisée corresponde
 > à la production.
 
@@ -154,5 +157,5 @@ Les badges de tags, le lien « Graphe complet » du graphe local, le fil d'Arian
 
 ## Voir aussi
 
-- [Déployer sur GitHub Pages](/docs/deployment/github-pages/)
-- [Domaine personnalisé](/docs/deployment/custom-domain/)
+- [[zer0-mistakes/pages/_docs/deployment/github-pages|Déployer sur GitHub Pages]]
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Domaine personnalisé]]

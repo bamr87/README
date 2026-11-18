@@ -11,14 +11,17 @@ featured: false
 lastmod: 2026-04-28 09:30:00+00:00
 layout: article
 preview: /images/previews/climate-data-primer-reading-trends-without-losing-.png
-source_file: 2026-04-28-climate-data-primer.md
+source_file: pages/_posts/science/2026-04-28-climate-data-primer.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/science/2026-04-28-climate-data-primer.md
 tags:
 - climate
 - data
 - statistics
 - research
-title: 2026 04 28 Climate Data Primer
+title: 'Climate Data Primer: Reading Trends Without Losing the Signal'
 ---
+
 Climate data is easy to misunderstand because the numbers often describe long-term patterns, not yesterday's weather. A single storm, heat wave, or cold snap can be dramatic, but climate trends emerge from many measurements over many years.
 
 This primer introduces the concepts that make climate datasets easier to read.

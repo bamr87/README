@@ -516,6 +516,8 @@ Effort is in pull requests, each independently mergeable and gated. Dates assume
 
 > **Status, 2026-09-15.** A first slice of Phases 1 and 2 shipped ahead of Phase 0: `engine survey` gathers every public repository in `_data/fleet.yml` with shallow blobless clones and scores its documentation against nine checks; the fleet-wide run is in `context/reports/fleet_health.md`. Phase 0.1 and 0.2 have since landed, so `main` is no longer drifted: the `.gitignore` patterns are anchored, the derived surfaces match the tracked corpus, `scripts/check_tracked_surfaces.py` is the D5 gate, and the aggregation cron runs both gates before it commits. Phase 0.6 (unwrap prose at ingest) landed separately in #26.
 
+> **Status, 2026-11-06.** Part of Phases 1 and 3 shipped through [ADR 0002](docs/adr/0002-docs-as-an-obsidian-vault.md): `engine collect` is the single gather-and-organize stage with page provenance, and `docs/brain/` generates cross-repository notes with cached AI summaries. Commit provenance lives in `context/vault/collect.json`, not in page front matter, so the corpus stays diff-stable.
+
 ### Phase 0 — Stabilize (this week)
 
 | PR | Change | Exit criterion |

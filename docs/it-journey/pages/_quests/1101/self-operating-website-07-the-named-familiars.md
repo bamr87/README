@@ -59,7 +59,9 @@ rewards:
   unlocks_features:
   - Continue The Self-Operating Website campaign
 skill_focus: devops
-source_file: self-operating-website-07-the-named-familiars.md
+source_file: pages/_quests/1101/self-operating-website-07-the-named-familiars.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1101/self-operating-website-07-the-named-familiars.md
 tags:
 - '1101'
 - claude-code
@@ -67,8 +69,9 @@ tags:
 - automation
 - ci-cd
 - gamified-learning
-title: .claude/agents/content-reviewer.md  (frontmatter shown)
+title: 'The Named Familiars: Agents, Skills, and a Self-Review Loop'
 ---
+
 *The keep had grown loud. A dozen spells now fired on their own — some at dawn, some on every pull request — yet none of them had a face. When a workflow misbehaved you could only point at "the YAML" and shrug. The realm needed **familiars**: named spirits, each bound to one duty, each carrying its own temperament, its own permitted tools, and its own list of forbidden acts. Only then could you say "the Reviewer overstepped" instead of "something somewhere went wrong."*
 
 *Today you learn to summon and name those familiars — and, because even a well-named spirit can drift, to teach one of them to audit the others. The real-world skill: separating an **agent** (who acts, with what tools, under what rules) from a **skill** (the procedure it follows), and building a self-review loop that keeps your automation fleet honest.*
@@ -96,7 +99,7 @@ In the old grimoires every incantation was a tangled scroll: persona, tools, and
 
 Before you summon a single familiar, make sure your camp is stocked. Walking in without these will leave you fighting the YAML instead of the boss:
 
-- **Prior chapter:** Complete [VI — The Editor's Eye](/quests/1100/self-operating-website-06-the-editors-eye/) — you need a working content-review loop to bind a familiar to.
+- **Prior chapter:** Complete [[it-journey/pages/_quests/1100/self-operating-website-06-the-editors-eye|VI — The Editor's Eye]] — you need a working content-review loop to bind a familiar to.
 - **Accounts:** A GitHub account and a repository you own (admin rights, so you can add secrets and run workflows).
 - **A Claude Code OAuth token** stored as the repo secret `CLAUDE_CODE_OAUTH_TOKEN` — this is the mana that powers every agent step. Generate it with `claude setup-token` and add it under **Settings → Secrets and variables → Actions**.
 - **Tools on your bench:** Git, a text editor or IDE, and the [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code) installed locally so you can test agents and skills before pushing.
@@ -343,8 +346,8 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- **Next chapter:** [VIII — The Cartographer](/quests/0101/self-operating-website-08-the-cartographer/) — teach the realm to map itself.
-- **Campaign hub:** [The Self-Operating Website](/quests/codex/self-operating-website/) — return to the full epic to track your progress.
+- **Next chapter:** [[it-journey/pages/_quests/0101/self-operating-website-08-the-cartographer|VIII — The Cartographer]] — teach the realm to map itself.
+- **Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|The Self-Operating Website]] — return to the full epic to track your progress.
 
 ## 📚 Resource Codex
 
@@ -354,6 +357,6 @@ graph LR
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Self-Operating Website]] **Previous:** [[The Editor's Eye]] **Next:** [[The Cartographer]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Previous:** [[The Editor's Eye]] **Next:** [[The Cartographer]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

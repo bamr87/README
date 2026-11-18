@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - The ability to instrument and visualize any service in the realm
 skill_focus: devops
-source_file: prometheus-grafana.md
+source_file: pages/_quests/1010/prometheus-grafana.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/prometheus-grafana.md
 sub_title: 'Level 1010 (10) Quest: Main Quest - Prometheus & Grafana'
 tags:
 - '1010'
@@ -83,7 +85,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Install Docker Desktop, then use the Compose file below
+title: 'Prometheus & Grafana: Metrics Collection and Visualization'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -427,17 +429,17 @@ groups:
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Alerting Systems](/quests/1010/alerting-systems/) - Fire alerts from these very queries
+- 🎯 [[it-journey/pages/_quests/1010/alerting-systems|Alerting Systems]] - Fire alerts from these very queries
 
 **Explore Side Adventures**:
-- ⚔️ [Distributed Tracing](/quests/1010/distributed-tracing/) - Add the traces pillar
-- ⚔️ [ELK Stack](/quests/1010/elk-stack/) - Add the logs pillar
+- ⚔️ [[it-journey/pages/_quests/1010/distributed-tracing|Distributed Tracing]] - Add the traces pillar
+- ⚔️ [[it-journey/pages/_quests/1010/elk-stack|ELK Stack]] - Add the logs pillar
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Distributed Tracing](/quests/1010/distributed-tracing/)  
-**🏗️ System Engineer**: Advance to [Alerting Systems](/quests/1010/alerting-systems/)  
-**🛡️ Security Specialist**: Explore [ELK Stack](/quests/1010/elk-stack/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1010/distributed-tracing|Distributed Tracing]]  
+**🏗️ System Engineer**: Advance to [[it-journey/pages/_quests/1010/alerting-systems|Alerting Systems]]  
+**🛡️ Security Specialist**: Explore [[it-journey/pages/_quests/1010/elk-stack|ELK Stack]]
 
 ## 📚 Resources
 
@@ -466,6 +468,6 @@ groups:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1010 - Monitoring & Observability]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Monitoring Fundamentals: Metrics, Logs, and Traces for Observability]] **Unlocks:** [[Alerting Systems: Alertmanager, Routing, and On-Call]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1010 - Monitoring & Observability]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Monitoring Fundamentals: Metrics, Logs, and Traces for Observability]] **Unlocks:** [[Alerting Systems: Alertmanager, Routing, and On-Call]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

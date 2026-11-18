@@ -13,17 +13,20 @@ lastmod: 2026-01-31 10:00:00+00:00
 layout: note
 machine_translated: true
 permalink: /fr/notes/docker-commands/
-source_file: docker-commands.md
+source_file: fr/notes/docker-commands.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/notes/docker-commands.md
 tags:
 - docker
 - containers
 - devops
 - reference
-title: Run container from image
+title: Référence des commandes Docker
 translated_from_sha: 1ba8b6bf9456
 translation_of: pages/_notes/docker-commands.md
 translation_source_url: /notes/docker-commands/
 ---
+
 ## Gestion des conteneurs
 
 ### Exécution de conteneurs

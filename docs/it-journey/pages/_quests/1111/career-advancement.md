@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - Continued progress through the Level 1111 Leadership & Innovation quest line
 skill_focus: career
-source_file: career-advancement.md
+source_file: pages/_quests/1111/career-advancement.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1111/career-advancement.md
 sub_title: 'Level 1111 (15) Quest: Main Quest - Career Advancement'
 tags:
 - '1111'
@@ -83,7 +85,7 @@ tags:
 - negotiation
 - personal-brand
 - gamified-learning
-title: A private, append-only brag doc is the single best career habit
+title: 'Career Advancement: IC vs Management and Leveling'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -132,7 +134,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Several years of engineering experience
 - [ ] An honest sense of what energizes vs drains you
-- [ ] Completion of [Technical Leadership](/quests/1111/technical-leadership/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1111/technical-leadership|Technical Leadership]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] A document tool for a brag doc and a promotion case
@@ -379,17 +381,17 @@ The biggest mistake is anchoring against yourself - discounting your number befo
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Architecture Reviews](/quests/1111/architecture-reviews/) - Show the judgment that earns the next level
+- 🎯 [[it-journey/pages/_quests/1111/architecture-reviews|Architecture Reviews]] - Show the judgment that earns the next level
 
 **Explore Side Adventures**:
-- ⚔️ [Mentorship Programs](/quests/1111/mentorship-programs/) - Lift others as you rise
-- ⚔️ [Tech Speaking and Writing](/quests/1111/tech-speaking-writing/) - Build the brand that opens doors
+- ⚔️ [[it-journey/pages/_quests/1111/mentorship-programs|Mentorship Programs]] - Lift others as you rise
+- ⚔️ [[it-journey/pages/_quests/1111/tech-speaking-writing|Tech Speaking and Writing]] - Build the brand that opens doors
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Architecture Reviews](/quests/1111/architecture-reviews/)  
-**🏗️ System Engineer**: Explore [Mentorship Programs](/quests/1111/mentorship-programs/)  
-**🛡️ Security Specialist**: Advance to [Tech Speaking and Writing](/quests/1111/tech-speaking-writing/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1111/architecture-reviews|Architecture Reviews]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1111/mentorship-programs|Mentorship Programs]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1111/tech-speaking-writing|Tech Speaking and Writing]]
 
 ## 📚 Resources
 
@@ -418,6 +420,6 @@ The biggest mistake is anchoring against yourself - discounting your number befo
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1111: Leadership & Innovation]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Innovation and R&D: Experimentation and Managing Technical Bets]] **Unlocks:** [[Architecture Reviews: Running Reviews, ADRs, and Trade-off Facilitation]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1111/README|Level 1111: Leadership & Innovation]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Innovation and R&D: Experimentation and Managing Technical Bets]] **Unlocks:** [[Architecture Reviews: Running Reviews, ADRs, and Trade-off Facilitation]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

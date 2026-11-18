@@ -6,12 +6,15 @@ date: 2026-04-21 04:03:45+00:00
 description: 'Migrate from Zer0-Mistakes 0.x to 1.0: how the legacy install.sh flags
   map onto the new modular CLI subcommands and declarative install profiles.'
 lastmod: 2026-04-21 04:03:45+00:00
-source_file: migration-from-0.x.md
+source_file: docs/installation/migration-from-0.x.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/migration-from-0.x.md
 tags:
 - installation
 - setup
 title: 'Migration: 0.x → 1.0'
 ---
+
 # Migration: 0.x → 1.0
 
 `zer0-mistakes` 1.0 introduces a modular CLI (`scripts/bin/install`) with subcommands and declarative profiles. The legacy `install.sh` flags **still work** as a bootstrap path — they translate to the new CLI under the hood and emit a one-line deprecation notice — but new sites and scripts should adopt the CLI directly.

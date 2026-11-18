@@ -15,13 +15,16 @@ prerequisites:
 preview: /images/previews/version-bump-workflow.png
 sidebar:
   nav: docs
-source_file: version-bump.md
+source_file: pages/_docs/development/version-bump.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/development/version-bump.md
 tags:
 - version
 - automation
 - github-actions
 title: Version Bump Workflow
 ---
+
 # Version Bump Workflow
 
 The theme uses [Conventional Commits](https://www.conventionalcommits.org/) to determine version increments automatically:

@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/34115397074
 slice: digital-artist/0001
-source_file: 2026-09-07-digital-artist-0001.md
+source_file: pages/_quest-reports/2026-09-07-digital-artist-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-09-07-digital-artist-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-09-07-digital-artist-0001.md
 tags:
 - digital-artist
 - level-0001
@@ -26,13 +28,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 09 07 Digital Artist 0001
+title: Digital Artist · L0001 · 2026-09-07
 verdict: warn
 walk_date: '2026-09-07'
 ---
+
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ⚠️ warn (avg 87.2%) · **Walked** 2026-09-07
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/34115397074) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-09-07-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-09-07-digital-artist-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/34115397074) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-09-07-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-09-07-digital-artist-0001.md)
 
 ---
 
@@ -60,7 +63,7 @@ All outcomes below are commands the execute engine actually ran in its own dispo
 
 ### 1. Advanced Markdown — ✅ 95 (available 13, runnable 4, ran 11, 0 failed, 1 skipped, 1 reasoned)
 - Dimensions: `commands_work` 5, `content_accuracy` 4, `completeness` 5, `clarity` 5, `structure` 5, `safety` 5.
-- **Passed:** macOS/Linux setup (`mkdir -p ~/md-quest && cd ~/md-quest && touch guide.md`) created the directory/file for real; the aligned three-column table, the `[^speed]` footnote, the four-backtick-wraps-three-backtick fenced code, the `{: .lead #intro }` attribute list, the definition list, the full YAML frontmatter block (parsed cleanly with PyYAML into `title`/`layout`/`date`/`tags`), and the `{​% raw %​}...{​% endraw %​}`-wrapped Liquid examples all rendered exactly as the quest claims, verified through real python-markdown/PyYAML/python-liquid renders.
+- **Passed:** macOS/Linux setup (`mkdir -p ~/md-quest && cd ~/md-quest && touch guide.md`) created the directory/file for real; the aligned three-column table, the `[^speed]` footnote, the four-backtick-wraps-three-backtick fenced code, the `{: .lead #intro }` attribute list, the definition list, the full YAML frontmatter block (parsed cleanly with PyYAML into `title`/`layout`/`date`/`tags`), and the `{% raw %}...{% endraw %}`-wrapped Liquid examples all rendered exactly as the quest claims, verified through real python-markdown/PyYAML/python-liquid renders.
 - **Reasoned (no Windows box in this Linux sandbox):** the PowerShell setup block — statically confirmed as a valid syntactic equivalent of the bash version.
 - **content_accuracy gap:** "Task lists render as real checkboxes" is stated as an unqualified fact, but vanilla kramdown needs `kramdown: input: GFM` (the `github-pages` gem's default, but not universal) for that to be literally true.
 - **Safety:** every executed command was local, non-destructive (`mkdir`, `touch`, `cd`) — no `rm`, `sudo`, or network mutation.

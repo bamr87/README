@@ -1,0 +1,143 @@
+{
+  "corpus": {
+    "file_count": 38,
+    "fingerprint": "c93bf0fe864f66a2",
+    "path": "docs/fredgar-ai",
+    "present": true,
+    "total_bytes": 276912
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Stack",
+      "Environment",
+      "Common tasks",
+      "Docker Compose",
+      "Documentation",
+      "Project structure",
+      "Development"
+    ],
+    "readme": "README.md",
+    "summary": "Fredgar AI's direction is to become the ultimate open home for all things financial: data, tools, resources and transparency, with queryable and auditable SEC EDGAR and FRED data, cited AI, and API-first access for everyone (constitution \u00a71).",
+    "title": "Fredgar AI"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "docs/distributed-storage.md",
+    "PRD.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/fredgar-ai.md",
+    "fingerprint": "6acbd5f9b5a9273f",
+    "index": "fredgar-ai/README.md",
+    "max_depth": 3,
+    "pages": 38,
+    "present": true,
+    "sections": 6,
+    "skipped": 0,
+    "title": "Fredgar AI",
+    "top_sections": [
+      {
+        "index": "fredgar-ai/docs/README.md",
+        "pages": 27,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/fredgar-ai.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "app",
+    "name": "fredgar-ai",
+    "registry_description": "Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries.",
+    "repo": "bamr87/fredgar-ai",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/fredgar-ai"
+  },
+  "rollups": {
+    "categories": {
+      "fredgar-ai": 38
+    },
+    "code_languages": [
+      "bash",
+      "plaintext",
+      "python",
+      "json",
+      "mermaid",
+      "sql"
+    ],
+    "indexed_documents": 38,
+    "top_tags": [
+      "entity-resolution",
+      "master-data",
+      "python",
+      "gleif",
+      "calibration",
+      "metrics",
+      "mdm",
+      "schema-org",
+      "web-scraping",
+      "iso3166",
+      "company-registry",
+      "validation",
+      "geocoding",
+      "sec-edgar",
+      "wikidata"
+    ],
+    "total_words": 37143
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": true,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "CONTRIBUTING.md",
+      "PRD.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 27,
+        "name": "docs"
+      },
+      {
+        "doc_count": 1,
+        "name": "data"
+      },
+      {
+        "doc_count": 1,
+        "name": "docker"
+      },
+      {
+        "doc_count": 1,
+        "name": "frontend"
+      },
+      {
+        "doc_count": 1,
+        "name": "tools"
+      }
+    ]
+  }
+}

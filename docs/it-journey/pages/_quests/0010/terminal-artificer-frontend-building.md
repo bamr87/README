@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - Ability to create user-friendly CLI tools
 skill_focus: fullstack
-source_file: terminal-artificer-frontend-building.md
+source_file: pages/_quests/0010/terminal-artificer-frontend-building.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0010/terminal-artificer-frontend-building.md
 sub_title: 'Level 0010 (2) Quest: Terminal Frontend Building'
 tags:
 - '0010'
@@ -83,7 +85,7 @@ tags:
 - cli
 - tool-mastery
 - hands-on
-title: Via Scoop
+title: 'Terminal Artificer: Forging the Glass Interface'
 validation_criteria:
   completion_requirements:
   - Install Gum on your local machine
@@ -366,7 +368,7 @@ Now that you can build interfaces, consider:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0010/README|Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

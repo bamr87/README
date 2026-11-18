@@ -6,12 +6,15 @@ date: 2026-05-31 20:54:52+00:00
 description: 'Configure base URLs for the Zer0-Mistakes theme across hosting scenarios:
   GitHub Pages user sites, project sites, and custom domains with baseurl.'
 lastmod: 2026-05-31 20:54:52+00:00
-source_file: url-configuration.md
+source_file: docs/installation/url-configuration.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/url-configuration.md
 tags:
 - installation
 - setup
 title: URL Configuration Guide
 ---
+
 # URL Configuration Guide
 
 This guide explains how to configure URLs for the Zer0-Mistakes Jekyll theme in different hosting scenarios.

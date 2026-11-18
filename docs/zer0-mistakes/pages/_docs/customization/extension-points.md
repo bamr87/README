@@ -18,7 +18,9 @@ layout: default
 permalink: /docs/customization/extension-points/
 scripts:
 - /assets/js/extension-points-demo.js
-source_file: extension-points.md
+source_file: pages/_docs/customization/extension-points.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/customization/extension-points.md
 styles:
 - /assets/css/extension-points-demo.css
 tags:
@@ -28,6 +30,7 @@ tags:
 - consumers
 title: Extension Points
 ---
+
 A theme consumed unpinned through `remote_theme` gives you exactly two kinds of surface: the ones it promises to keep, and the ones you reverse-engineer and then re-reverse-engineer after every refactor. This page is the first kind. Everything below is a contract — an event name, a `detail` shape, a frontmatter key, a JSON field — and the theme's own test suite fails if one of them changes shape.
 
 This page is also its own demonstration. The stylesheet and the script that decorate the code blocks below are attached by this page's frontmatter, and the extra button in each code-block header is added by that script through the event. Nothing here is special-cased in the theme.

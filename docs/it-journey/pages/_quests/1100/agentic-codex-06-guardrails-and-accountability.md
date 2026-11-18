@@ -61,7 +61,9 @@ rewards:
   - 🚧 Least-privilege guardrail engineering
   - 👤 Human-in-the-loop checkpoint design
 skill_focus: ai-ml
-source_file: agentic-codex-06-guardrails-and-accountability.md
+source_file: pages/_quests/1100/agentic-codex-06-guardrails-and-accountability.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/agentic-codex-06-guardrails-and-accountability.md
 tags:
 - '1100'
 - github-copilot
@@ -71,7 +73,7 @@ tags:
 - human-in-the-loop
 - gh-600
 - main_quest
-title: .github/agent-autonomy.yml — the action → level map the gate reads
+title: 'The Warden Pact: Guardrails & Accountability'
 validation_criteria:
   completion_requirements:
   - Can classify an agent action by reversibility, blast radius, and predictability
@@ -116,11 +118,11 @@ You will know you have mastered this chapter when you can:
 
 Before you take up the Warden's seal, gather your reagents. This is the final teaching chapter before the capstone trial, so it assumes the campaign's craft is already in your hands:
 
-- **The multi-agent coordination chapter** — complete [Chapter 5: Multi-Agent Coordination](/quests/1011/agentic-codex-05-multi-agent-coordination/) so you understand the council of familiars you are now learning to constrain.
+- **The multi-agent coordination chapter** — complete [[it-journey/pages/_quests/1011/agentic-codex-05-multi-agent-coordination|Chapter 5: Multi-Agent Coordination]] so you understand the council of familiars you are now learning to constrain.
 - **A GitHub repository you control** — with the rights to configure CODEOWNERS, branch protection, Environments, and workflow permissions.
 - **GitHub Copilot coding agent access** — or an equivalent CI-driven agent that opens branches and pull requests, so the guardrails have something real to guard.
 - **Comfort with GitHub Actions YAML** — you will read and write `permissions:` blocks, `environment:` keys, and conditional steps.
-- **Familiarity with the autonomy ladder** — if you have not seen the L0–L4 model, the [Autonomy Scales quest](/quests/1100/agentic-autonomy-levels-matrix/) in this domain is your warm-up.
+- **Familiarity with the autonomy ladder** — if you have not seen the L0–L4 model, the [[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix|Autonomy Scales quest]] in this domain is your warm-up.
 
 ## 🧙‍♂️ Chapter 1: The Autonomy Ladder — Classifying Action by Risk
 
@@ -442,9 +444,9 @@ Expected: both **REFUSED**, exit 1 — the forbidden path beats the friendly act
 
 These quests put the Warden Pact in your hands. Play them in order; each one drills a sub-skill of Domain 6 you will need for the capstone trial.
 
-- 🧭 **[The Autonomy Scales: Mapping Agent Autonomy Levels](/quests/1100/agentic-autonomy-levels-matrix/)** — build the full L0–L4 implementation matrix and the task-classification schema that decides which rung an action lands on (sub-skill 6.1).
-- 🛡️ **[The Warden's Pact: Guardrails and Human-in-the-Loop Patterns](/quests/1100/agentic-guardrails-and-human-in-the-loop/)** — implement all three guardrail types, the Environment approval gate, the forbidden-actions list, and the audit-trail workflow end-to-end (sub-skill 6.2).
-- 🏆 **[Trial of the Agentic Codex: The Grand Capstone](/quests/1100/agentic-codex-capstone-exam-trial/)** — the campaign's final exam: a full-length GH-600 trial spanning all six domains, where the Warden Pact you forged here is tested under pressure.
+- 🧭 **[[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix|The Autonomy Scales: Mapping Agent Autonomy Levels]]** — build the full L0–L4 implementation matrix and the task-classification schema that decides which rung an action lands on (sub-skill 6.1).
+- 🛡️ **[[it-journey/pages/_quests/1100/agentic-guardrails-and-human-in-the-loop|The Warden's Pact: Guardrails and Human-in-the-Loop Patterns]]** — implement all three guardrail types, the Environment approval gate, the forbidden-actions list, and the audit-trail workflow end-to-end (sub-skill 6.2).
+- 🏆 **[[it-journey/pages/_quests/1100/agentic-codex-capstone-exam-trial|Trial of the Agentic Codex: The Grand Capstone]]** — the campaign's final exam: a full-length GH-600 trial spanning all six domains, where the Warden Pact you forged here is tested under pressure.
 
 ## 🎮 Mastery Challenge
 
@@ -486,9 +488,9 @@ graph LR
 
 The Warden stands her post; the gate holds. Every clause of the Pact is sworn — autonomy is mapped, guardrails are raised, and the ledger records all. Only the trial remains.
 
-- 🏆 **The capstone:** [Trial of the Agentic Codex: The Grand Capstone](/quests/1100/agentic-codex-capstone-exam-trial/) — your full-length GH-600 exam across all six domains.
-- 👑 **Campaign hub:** [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/) — return to the overworld and review every domain you have cleared.
-- ↩️ **Previous chapter:** [Chapter 5 — Multi-Agent Coordination](/quests/1011/agentic-codex-05-multi-agent-coordination/) — revisit the council of familiars you learned to constrain.
+- 🏆 **The capstone:** [[it-journey/pages/_quests/1100/agentic-codex-capstone-exam-trial|Trial of the Agentic Codex: The Grand Capstone]] — your full-length GH-600 exam across all six domains.
+- 👑 **Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] — return to the overworld and review every domain you have cleared.
+- ↩️ **Previous chapter:** [[it-journey/pages/_quests/1011/agentic-codex-05-multi-agent-coordination|Chapter 5 — Multi-Agent Coordination]] — revisit the council of familiars you learned to constrain.
 
 ## 📚 Resource Codex
 
@@ -499,10 +501,10 @@ The Warden stands her post; the gate holds. Every clause of the Pact is sworn �
 - [Controlling permissions for `GITHUB_TOKEN`](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token) — least-privilege `permissions:` blocks
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) — the tool surface you scope and allow-list
 - [GitHub Models](https://docs.github.com/en/github-models) — summarize the audit ledger and reason over agent runs
-- 🏰 **In the wild (this repo):** [`_data/agents/autonomy-matrix.yml`](https://github.com/bamr87/it-journey/blob/main/_data/agents/autonomy-matrix.yml) classifies every recurring agent action L0–L4, [`.github/CODEOWNERS`](https://github.com/bamr87/it-journey/blob/main/.github/CODEOWNERS) holds the file-scope boundary, and the Warden Pact itself lives in [`AGENTS.md`](https://github.com/bamr87/it-journey/blob/main/AGENTS.md). Full domain map: [GH-600 in the Wild](/notes/gh-600/implemented-in-it-journey/)
+- 🏰 **In the wild (this repo):** [`_data/agents/autonomy-matrix.yml`](https://github.com/bamr87/it-journey/blob/main/_data/agents/autonomy-matrix.yml) classifies every recurring agent action L0–L4, [`.github/CODEOWNERS`](https://github.com/bamr87/it-journey/blob/main/.github/CODEOWNERS) holds the file-scope boundary, and the Warden Pact itself lives in [`AGENTS.md`](https://github.com/bamr87/it-journey/blob/main/AGENTS.md). Full domain map: [[it-journey/pages/_notes/gh-600/implemented-in-it-journey|GH-600 in the Wild]]
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Agentic Codex]] **Previous:** [[Chapter 5 — Multi-Agent Coordination]] **This chapter:** [[The Warden Pact: Guardrails & Accountability]] **Next:** [[Trial of the Agentic Codex: The Grand Capstone]] **Domain quests:** [[The Autonomy Scales: Mapping Agent Autonomy Levels]] · [[The Warden's Pact: Guardrails and Human-in-the-Loop Patterns]] **Reference:** [[Agent Guardrails and Responsible Autonomy]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] **Previous:** [[Chapter 5 — Multi-Agent Coordination]] **This chapter:** [[it-journey/pages/_quests/1100/agentic-codex-06-guardrails-and-accountability|The Warden Pact: Guardrails & Accountability]] **Next:** [[it-journey/pages/_quests/1100/agentic-codex-capstone-exam-trial|Trial of the Agentic Codex: The Grand Capstone]] **Domain quests:** [[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix|The Autonomy Scales: Mapping Agent Autonomy Levels]] · [[The Warden's Pact: Guardrails and Human-in-the-Loop Patterns]] **Reference:** [[Agent Guardrails and Responsible Autonomy]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29494904212
 slice: system-engineer/0101
-source_file: 2026-07-16-system-engineer-0101.md
+source_file: pages/_quest-reports/2026-07-16-system-engineer-0101.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-16-system-engineer-0101.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-16-system-engineer-0101.md
 tags:
 - system-engineer
 - level-0101
@@ -26,13 +28,14 @@ tags:
 - ci-cd-devops
 theme: CI/CD & DevOps
 tier: Adventurer ⚔️
-title: 2026 07 16 System Engineer 0101
+title: System Engineer · L0101 · 2026-07-16
 verdict: warn
 walk_date: '2026-07-16'
 ---
+
 > **Slice** `system-engineer/0101` · **Level** 0101 (CI/CD & DevOps) · **Adventurer ⚔️ tier** · **Engine verdict** ⚠️ warn (avg 83.6%) · **Walked** 2026-07-16
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29494904212) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-16-system-engineer-0101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-16-system-engineer-0101.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29494904212) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-16-system-engineer-0101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-16-system-engineer-0101.md)
 
 ---
 
@@ -40,7 +43,7 @@ walk_date: '2026-07-16'
 
 I walked the **System Engineer**, **Level 0101 (CI/CD & DevOps, Adventurer ⚔️)** slice — a **windowed** run covering **5 of the level's 13 quests** (window 1 of 3), in the dependency-sorted order the planner selected. The sandboxed execute engine scored the five at an **83.6% average (4 pass · 1 warn · 0 fail)**; I read every quest as a learner would and reason about the chain below.
 
-Headline verdict: **WARN**. The technical core across all five quests is genuinely strong — flagship commands (the `triage.sh` isolation build, the c8 coverage gate that both passes and correctly *fails* below threshold, the docker build/tag and rollback idioms, the env-var/config-layering examples, and the OIDC/least-privilege content) were **actually executed in the sandbox and behaved exactly as documented**. Two defects keep this from a clean pass: (1) **Testing Integration** references `test:unit`/`test:integration`/`test:e2e` npm scripts it never shows how to create — a literal `Missing script: "test:unit"` failure a beginner hits head-on — and (2) **Secrets Management** ships a Jekyll `{​% raw %​}{​% endraw %​}` templating artifact inside its Chapter 1 workflow YAML that breaks a verbatim copy-paste. Both are concrete, evidenced, copy-paste-fatal, and cheaply fixable by a content pass.
+Headline verdict: **WARN**. The technical core across all five quests is genuinely strong — flagship commands (the `triage.sh` isolation build, the c8 coverage gate that both passes and correctly *fails* below threshold, the docker build/tag and rollback idioms, the env-var/config-layering examples, and the OIDC/least-privilege content) were **actually executed in the sandbox and behaved exactly as documented**. Two defects keep this from a clean pass: (1) **Testing Integration** references `test:unit`/`test:integration`/`test:e2e` npm scripts it never shows how to create — a literal `Missing script: "test:unit"` failure a beginner hits head-on — and (2) **Secrets Management** ships a Jekyll `{% raw %}{% endraw %}` templating artifact inside its Chapter 1 workflow YAML that breaks a verbatim copy-paste. Both are concrete, evidenced, copy-paste-fatal, and cheaply fixable by a content pass.
 
 ## 🗺️ The Journey
 
@@ -55,7 +58,7 @@ snippet (docker build/tag, `gh api` fallback, rollback bash, `gh workflow run` f
 4. ✅ **Environment Management: Dev, Staging, and Prod Parity** — **88** · shell,
 PowerShell, `config.js`, and YAML base/override layering all executed as described; docker/terraform examples are illustrative placeholders not flagged as such.
 5. ✅ **Secrets Management: Secure CI Credentials** — **83** · accurate OIDC/least-
-privilege/rotation content with valid `gh`/`aws` syntax; the standout defect is the `{​% raw %​}` leak in the Chapter 1 workflow YAML.
+privilege/rotation content with valid `gh`/`aws` syntax; the standout defect is the `{% raw %}` leak in the Chapter 1 workflow YAML.
 
 ## 🔬 Evidence
 
@@ -107,7 +110,7 @@ access denied for myapp, repository does not exist`** (expected placeholder, but
 - **passed** — `gh` (2.96.0) and `aws` (2.35.15) present; `gh secret set`, `gh auth
 login`, `aws sts get-caller-identity`, `aws secretsmanager get-secret-value` are all valid current syntax. Both IAM policy JSON blocks and both workflow YAML blocks parse.
 - **failed** — **BUG:** the Chapter 1 workflow YAML (source line 234) contains literal,
-unrendered Jekyll templating: `STRIPE_API_KEY: ${​% raw %​}{​{ secrets.STRIPE_API_KEY }​}{​% endraw %​}`. Parsed as YAML this is the string `${​% raw %​}{​{ secrets.STRIPE_API_KEY }​}{​% endraw %​}` — **not** valid GitHub Actions expression syntax. A learner copying this block into a real workflow breaks the deploy.
+unrendered Jekyll templating: `STRIPE_API_KEY: ${% raw %}{{ secrets.STRIPE_API_KEY }}{% endraw %}`. Parsed as YAML this is the string `${% raw %}{{ secrets.STRIPE_API_KEY }}{% endraw %}` — **not** valid GitHub Actions expression syntax. A learner copying this block into a real workflow breaks the deploy.
 - **failed / skipped** — `gh secret set` and `aws` calls returned only credential/context
 errors (no auth in sandbox), expected. `gh secret set NAME` also assumes a repo context the platform-path instructions never establish.
 
@@ -119,7 +122,7 @@ Grouped by severity. Every item is either **tested** (a command actually run in 
 - **[tested] · Testing Integration · Chapter 2 / CI YAML (lines ~284/299/310, checkpoint
 ~322, flaky reporter ~369)** — Running `npm run test:unit` yields `npm error Missing script: "test:unit"`. The quest sets only a generic `scripts.test="node --test"` yet the CI YAML and Chapter 2 checkpoint depend on three named scripts. **Fix:** add an explicit step, e.g. `npm pkg set scripts.test:unit="node --test test/unit" scripts.test:integration=... scripts.test:e2e=...`, before the CI YAML.
 - **[tested] · Secrets Management · Chapter 1 workflow YAML (line 234)** — The
-`${​% raw %​}{​{ secrets.STRIPE_API_KEY }​}{​% endraw %​}` templating artifact leaks into the code block and breaks a verbatim copy. **Fix:** render it as clean `STRIPE_API_KEY: ${​{ secrets.STRIPE_API_KEY }​}` by wrapping the *whole* fenced block in a single `{​% raw %​}…{​% endraw %​}` pair (as the Cartographer quest does at lines 251/267) rather than inlining the tags inside the expression.
+`${% raw %}{{ secrets.STRIPE_API_KEY }}{% endraw %}` templating artifact leaks into the code block and breaks a verbatim copy. **Fix:** render it as clean `STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}` by wrapping the *whole* fenced block in a single `{% raw %}…{% endraw %}` pair (as the Cartographer quest does at lines 251/267) rather than inlining the tags inside the expression.
 
 ### Medium
 - **[tested] · Testing Integration · Linux Territory Path (line 182 vs requirement 127)**

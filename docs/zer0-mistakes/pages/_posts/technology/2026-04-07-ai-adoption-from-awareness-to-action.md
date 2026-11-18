@@ -11,7 +11,9 @@ featured: true
 lastmod: 2026-04-07 14:00:00+00:00
 layout: article
 preview: /images/previews/from-ai-awareness-to-action-the-skills-systems-and.png
-source_file: 2026-04-07-ai-adoption-from-awareness-to-action.md
+source_file: pages/_posts/technology/2026-04-07-ai-adoption-from-awareness-to-action.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/technology/2026-04-07-ai-adoption-from-awareness-to-action.md
 tags:
 - ai
 - manufacturing
@@ -19,8 +21,10 @@ tags:
 - strategy
 - b2b
 - content-operations
-title: 2026 04 07 Ai Adoption From Awareness To Action
+title: 'From AI Awareness to Action: The Skills, Systems, and Partnership Model That
+  Close the Gap'
 ---
+
 Every CEO and owner we have spoken with about the AI adoption landscape responds with the same question: "We agree. Now what? We don't have the people, the skills, or the bandwidth to do this ourselves."
 
 That response is not a sign of weakness. It is an accurate diagnosis of the situation. The RSM 2025 AI Survey found that the top three barriers to AI implementation in the middle market are:

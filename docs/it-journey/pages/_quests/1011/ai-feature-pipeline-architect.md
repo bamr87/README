@@ -54,7 +54,9 @@ rewards:
 - 🛠️ Multi-Agent System Integration Skills
 - 🎯 End-to-End Feature Delivery Capability
 skill_focus: devops
-source_file: ai-feature-pipeline-architect.md
+source_file: pages/_quests/1011/ai-feature-pipeline-architect.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/ai-feature-pipeline-architect.md
 sub_title: 'Level 1011 (11) Quest: AI-Powered Development Pipeline Orchestration'
 tags:
 - '1011'
@@ -63,7 +65,7 @@ tags:
 - pipeline-automation
 - feature-development
 - gamified-learning
-title: Install core development tools via Homebrew
+title: 'AI Feature Pipeline Architect: DevSecOps Mastery Quest'
 validation_criteria:
 - Successfully implement a 5-stage AI-orchestrated pipeline
 - Create dual-format artifacts (machine-parseable and human-readable)
@@ -612,11 +614,11 @@ Your newfound AI orchestration powers open several exciting paths:
 
 *May your pipelines flow smoothly, your AI agents collaborate harmoniously, and your features deploy flawlessly! You've mastered the art of AI-orchestrated development - now go forth and build the future of software engineering!* ⚔️✨🤖
 
-**Ready for your next epic adventure?** Check the [Quest Map](/quests/) for advanced AI and DevOps challenges, or dive into specialized tracks like MLOps, Cloud Architecture, or AI Safety!
+**Ready for your next epic adventure?** Check the [[it-journey/pages/_quests/README|Quest Map]] for advanced AI and DevOps challenges, or dive into specialized tracks like MLOps, Cloud Architecture, or AI Safety!
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1011 - Feature Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1011/README|Level 1011 - Feature Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -80,7 +80,9 @@ rewards:
   unlocks_features:
   - A clean Windows 11 fortress, ready for the Hello Windows quest
 skill_focus: devops
-source_file: install-windows-11.md
+source_file: pages/_quests/0000/install-windows-11.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/install-windows-11.md
 sub_title: 'Level 0000 (0) Quest: Main Quest - Install Windows 11'
 tags:
 - '0000'
@@ -91,7 +93,7 @@ tags:
 - bootable-usb
 - uefi
 - gamified-learning
-title: Install Rufus from the Windows Package Manager
+title: 'Install Windows 11: Summon a Fresh World onto a Blank Drive'
 validation_criteria:
   completion_requirements:
   - Windows 11 boots from the new SSD with the USB stick removed
@@ -671,9 +673,9 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- [Hello Windows: Mastering the Windows Development Environment](/quests/0000/hello-windows/) — turn your fresh install into a developer workstation with PowerShell, WSL2 and WinGet
-- [Terminal Fundamentals](/quests/0000/terminal-fundamentals/) — the incantations you'll cast in every World
-- [OS Selection](/quests/0000/os-selection/) — curious about the other Worlds? Compare Windows, macOS and Linux
+- [[it-journey/pages/_quests/0000/hello-win|Hello Windows: Mastering the Windows Development Environment]] — turn your fresh install into a developer workstation with PowerShell, WSL2 and WinGet
+- [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals]] — the incantations you'll cast in every World
+- [[it-journey/pages/_quests/0000/os-selection|OS Selection]] — curious about the other Worlds? Compare Windows, macOS and Linux
 
 ## 📚 Resource Codex
 
@@ -706,6 +708,6 @@ Microsoft screenshots are reproduced unaltered (resized only) under [Microsoft's
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[OS Selection]] · [[IT Fundamentals]] **Unlocks:** [[Hello Windows: Mastering the Windows Development Environment]] **Sequel quests:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Terminal Fundamentals: Command Line Navigation Quest]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[OS Selection]] · [[IT Fundamentals]] **Unlocks:** [[it-journey/pages/_quests/0000/hello-win|Hello Windows: Mastering the Windows Development Environment]] **Sequel quests:** [[it-journey/pages/_quests/0000/hello-win|Hello Windows: Mastering the Windows Development Environment]] · [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals: Command Line Navigation Quest]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

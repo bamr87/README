@@ -1,8 +1,9 @@
 ---
-source_file: README.md
+source_file: docs/adr/README.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/adr/README.md
 title: Architecture Decision Records
 ---
-<!-- kit: sdlc v0.1.0 · ADR index (UPS-WORK-04, decision D2: law-ai format) -->
 # Architecture Decision Records
 
 > The index and format of bashcrawl's Architecture Decision Records: one file per hard-to-reverse decision.

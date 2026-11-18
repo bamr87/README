@@ -9,9 +9,12 @@ layout: author
 machine_translated: true
 permalink: /fr/authors/bamr87/
 sidebar: false
-source_file: bamr87.md
-title: Bamr87
+source_file: fr/about/authors/bamr87.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/authors/bamr87.md
+title: Amr Abdel-Motaleb
 translated_from_sha: f6b87c0064c8
 translation_of: pages/_about/authors/bamr87.md
 translation_source_url: /authors/bamr87/
 ---
+

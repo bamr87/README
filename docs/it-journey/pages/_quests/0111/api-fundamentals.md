@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Access to the REST Principles and API Authentication quests
 skill_focus: backend
-source_file: api-fundamentals.md
+source_file: pages/_quests/0111/api-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/api-fundamentals.md
 sub_title: 'Level 0111 (7) Quest: Main Quest - API Fundamentals'
 tags:
 - '0111'
@@ -83,7 +85,7 @@ tags:
 - backend
 - hands-on
 - gamified-learning
-title: 'curl ships with macOS. Confirm it is present:'
+title: 'API Fundamentals: HTTP, Requests, and JSON'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -428,17 +430,17 @@ curl -s https://jsonplaceholder.typicode.com/posts/1 | jq '.title'
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [REST Principles](/quests/0111/rest-principles/) - Design APIs the right way
+- 🎯 [[it-journey/pages/_quests/0111/rest-principles|REST Principles]] - Design APIs the right way
 
 **Explore Side Adventures**:
-- ⚔️ [API Authentication](/quests/0111/api-authentication/) - Keys, tokens, and OAuth2
-- ⚔️ [Error Handling](/quests/0111/error-handling/) - Status codes and clean error responses
+- ⚔️ [[it-journey/pages/_quests/0111/api-authentication|API Authentication]] - Keys, tokens, and OAuth2
+- ⚔️ [[it-journey/pages/_quests/0111/error-handling|Error Handling]] - Status codes and clean error responses
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [REST Principles](/quests/0111/rest-principles/)  
-**🏗️ System Engineer**: Explore [API Authentication](/quests/0111/api-authentication/)  
-**🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0111/rest-principles|REST Principles]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0111/api-authentication|API Authentication]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0111/api-authentication|API Authentication]]
 
 ## 📚 Resources
 
@@ -468,6 +470,6 @@ curl -s https://jsonplaceholder.typicode.com/posts/1 | jq '.title'
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[REST Principles: Constraints, Resources, and Richardson Maturity]] · [[API Authentication: Keys, Tokens, OAuth2, and JWT]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[REST Principles: Constraints, Resources, and Richardson Maturity]] · [[it-journey/pages/_quests/0111/api-authentication|API Authentication: Keys, Tokens, OAuth2, and JWT]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -25,20 +25,23 @@ quickstart:
   step: 1
 sidebar:
   nav: quickstart
-source_file: machine-setup.md
+source_file: pages/_quickstart/machine-setup.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_quickstart/machine-setup.md
 tags:
 - docker
 - git
 - setup
 - development
 - cross-platform
-title: Machine Setup
+title: 'Machine Setup: Install Docker, Git, and Dev Tools'
 ---
+
 # Machine Setup
 
 Install the tools you need before starting Jekyll development. This guide covers **macOS**, **Windows**, and **Linux**.
 
-> **Prefer a guided setup?** The [Site Builder](/quickstart/site-builder/) runs these same checks live on your machine, shows the install command for your OS, and then walks you through configuring and launching a complete site with Claude alongside. This page is the manual reference behind its Prerequisites step.
+> **Prefer a guided setup?** The [[zer0-mistakes/pages/_quickstart/site-builder|Site Builder]] runs these same checks live on your machine, shows the install command for your OS, and then walks you through configuring and launching a complete site with Claude alongside. This page is the manual reference behind its Prerequisites step.
 
 ```mermaid
 flowchart LR
@@ -239,9 +242,9 @@ kill <PID>             # free the port
 
 ## Related
 
-- [Site Builder](/quickstart/site-builder/) — the guided path that runs these prerequisite checks for you.
-- [Site Builder reference](/docs/features/site-builder/) — what the wizard generates, the tools it exposes, and its safety boundaries.
-- [Jekyll Setup](/quickstart/jekyll-setup/) — the next step once these tools are installed.
+- [[zer0-mistakes/pages/_quickstart/site-builder|Site Builder]] — the guided path that runs these prerequisite checks for you.
+- [[zer0-mistakes/pages/_docs/features/site-builder|Site Builder reference]] — what the wizard generates, the tools it exposes, and its safety boundaries.
+- [[zer0-mistakes/pages/_quickstart/jekyll-setup|Jekyll Setup]] — the next step once these tools are installed.
 
 ---
 

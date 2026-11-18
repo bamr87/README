@@ -77,7 +77,9 @@ rewards:
   unlocks_features:
   - Access to the publishing quests of Level 0001 Web Fundamentals
 skill_focus: fullstack
-source_file: advanced-markdown.md
+source_file: pages/_quests/0001/advanced-markdown.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/advanced-markdown.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - Advanced Markdown'
 tags:
 - '0001'
@@ -88,7 +90,7 @@ tags:
 - main_quest
 - hands-on
 - beginner
-title: Create a Markdown file to experiment in
+title: 'Advanced Markdown: Tables, Footnotes & Kramdown'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -424,17 +426,17 @@ The `raw` / `endraw` fence tells Jekyll "print these tags as text, do not execut
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [SEO Optimization](/quests/0001/seo-optimization/) - Help search engines find your writing
+- 🎯 [[it-journey/pages/_quests/0001/seo-optimization|SEO Optimization]] - Help search engines find your writing
 
 **Explore Side Adventures**:
-- ⚔️ [Jekyll Plugins](/quests/0001/jekyll-plugins/) - Add build-time power to your content
-- ⚔️ [CSS Styling Basics](/quests/0001/css-styling-basics/) - Style the pages your Markdown becomes
+- ⚔️ [[it-journey/pages/_quests/0001/jekyll-plugins|Jekyll Plugins]] - Add build-time power to your content
+- ⚔️ [[it-journey/pages/_quests/0001/css-styling-basics|CSS Styling Basics]] - Style the pages your Markdown becomes
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)  
-**🏗️ System Engineer**: Explore [SEO Optimization](/quests/0001/seo-optimization/)  
-**🎨 Frontend Specialist**: Advance to [CSS Styling Basics](/quests/0001/css-styling-basics/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/jekyll-plugins|Jekyll Plugins]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/seo-optimization|SEO Optimization]]  
+**🎨 Frontend Specialist**: Advance to [[it-journey/pages/_quests/0001/css-styling-basics|CSS Styling Basics]]  
 
 ## 📚 Resources
 
@@ -463,6 +465,6 @@ The `raw` / `endraw` fence tells Jekyll "print these tags as text, do not execut
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[SEO Optimization]] · [[Jekyll Plugins]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[SEO Optimization]] · [[Jekyll Plugins]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

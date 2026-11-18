@@ -14,8 +14,10 @@ quest_count: 1
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/28791022929
 slice: security-specialist/0010
-source_file: 2026-07-06-security-specialist-0010.md
+source_file: pages/_quest-reports/2026-07-06-security-specialist-0010.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-06-security-specialist-0010.md
 tags:
 - security-specialist
 - level-0010
@@ -25,13 +27,14 @@ tags:
 - terminal-mastery
 theme: Terminal Mastery
 tier: Apprentice
-title: 📆 Quest Walkthrough — Security Specialist · Level 0010
+title: Security Specialist · L0010 · 2026-07-06
 verdict: warn
 walk_date: '2026-07-06'
 ---
+
 > **Slice** `security-specialist/0010` · **Level** 0010 (Terminal Mastery) · **Apprentice tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-06
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/28791022929) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/28791022929) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-security-specialist-0010.md)
 
 ---
 
@@ -39,7 +42,7 @@ walk_date: '2026-07-06'
 
 ## 🎯 Session Summary
 
-I walked **1 quest** — the only quest in this window (window **3 of 4**, offset 15) of the 16-quest **Level 0010 "Terminal Mastery"** slice for the **Security Specialist** path. The single quest, *Contribution Calendar: Mapping Your Journey Through Time*, earned a **warn** verdict at **62%**. The underlying design is sound — the execute engine verified the Liquid intensity-bucket logic and the CSS with real tooling — but **the quest's own fenced code blocks are broken as literally written**: every individual Liquid tag in Step 1 and Step 3 is wrapped in its own `{​% raw %​}...{​% endraw %​}` pair, so a learner who copy-pastes the raw `.md` source gets inert, un-executed tag text instead of a working include. A maintainer should treat the raw-tag escaping (high) and a non-matching CSS sibling combinator (medium) as the two concrete, verified defects to fix.
+I walked **1 quest** — the only quest in this window (window **3 of 4**, offset 15) of the 16-quest **Level 0010 "Terminal Mastery"** slice for the **Security Specialist** path. The single quest, *Contribution Calendar: Mapping Your Journey Through Time*, earned a **warn** verdict at **62%**. The underlying design is sound — the execute engine verified the Liquid intensity-bucket logic and the CSS with real tooling — but **the quest's own fenced code blocks are broken as literally written**: every individual Liquid tag in Step 1 and Step 3 is wrapped in its own `{% raw %}...{% endraw %}` pair, so a learner who copy-pastes the raw `.md` source gets inert, un-executed tag text instead of a working include. A maintainer should treat the raw-tag escaping (high) and a non-matching CSS sibling combinator (medium) as the two concrete, verified defects to fix.
 
 **Headline verdict: ⚠️ WARN** — the feature *can* work, but the copy-paste path the quest hands the learner does not.
 
@@ -59,10 +62,10 @@ All evidence below is from the sealed execute-mode run (`walk-evidence.json` / `
 
 - ✅ **`passed` — Background YAML (`contribution_calendar` example data):** parsed cleanly with PyYAML; valid list-of-weeks shape.
 - ❌ **`failed` — Step 1 include (`_includes/contributor/contribution_calendar.html`):**
-the block was copy-pasted verbatim and rendered with the `liquid` gem (v5.13.0). Output was the **literal, un-executed tag text** (e.g. `{​% assign calendar = include.calendar %​}`), producing "zero interactivity, no cells, nothing but escaped tag text." When the engine *stripped* the per-tag `{​% raw %​}/{​% endraw %​}` wrappers, the same logic rendered correctly — sample commits `3/0/7/20/1` produced `calendar-medium/zero/high/max/low`, confirming the bucket thresholds (`0 / <3 / <7 / <15 / else`) are correct.
+the block was copy-pasted verbatim and rendered with the `liquid` gem (v5.13.0). Output was the **literal, un-executed tag text** (e.g. `{% assign calendar = include.calendar %}`), producing "zero interactivity, no cells, nothing but escaped tag text." When the engine *stripped* the per-tag `{% raw %}/{% endraw %}` wrappers, the same logic rendered correctly — sample commits `3/0/7/20/1` produced `calendar-medium/zero/high/max/low`, confirming the bucket thresholds (`0 / <3 / <7 / <15 / else`) are correct.
 - ✅ **`passed` — Step 2 CSS (`assets/css/contributor-profile.css`):** copied into a
 real `.css` file; braces balanced (17/17), standard Grid / `aspect-ratio` / custom properties / media query all parse. *However*, jsdom testing of the wizard-theme rule surfaced a content-accuracy defect (see Issues).
-- ❌ **`failed` — Step 3 integration (`{​% include contributor/contribution_calendar.html … %​}`):**
+- ❌ **`failed` — Step 3 integration (`{% include contributor/contribution_calendar.html … %}`):**
 same raw/endraw corruption as Step 1 — rendering the line exactly as it appears in the source printed the include tag as text instead of executing it. The include-parameter syntax itself (`calendar=contributor.stats.contribution_calendar` → `include.calendar`) is otherwise correct Jekyll idiom once uncorrupted.
 - ⏭️ **`skipped` — Step 4 (`bundle exec jekyll serve`):** no Gemfile/bundler in the
 isolated sandbox (`bundle: command not found`). This is an **inherent limitation of testing a side-quest in isolation**, not a quest defect — the quest assumes a pre-existing Jekyll project from the prerequisite quest.
@@ -72,7 +75,7 @@ Per-dimension scores (engine): `commands_work 2 · content_accuracy 3 · complet
 ## 🐞 Issues Found
 
 - **HIGH · Contribution Calendar · Step 1 & Step 3 code fences · `raw`-tag corruption.**
-*Observed:* every Liquid tag is individually wrapped in `{​% raw %​}…{​% endraw %​}` (source lines 108–140 for Step 1, line 208 for Step 3). Rendering the verbatim blocks with the `liquid` gem produced escaped tag text, not a heatmap — a learner copying the raw `.md` (from GitHub, an editor, or this artifact) gets a completely non-functional feature. *Suggested fix:* stop wrapping each tag; wrap the whole block once (single `{​% raw %​}` … `{​% endraw %​}`), or verify the docs pipeline even needs escaping inside fenced code blocks — many Jekyll configs don't process Liquid inside fences at all.
+*Observed:* every Liquid tag is individually wrapped in `{% raw %}…{% endraw %}` (source lines 108–140 for Step 1, line 208 for Step 3). Rendering the verbatim blocks with the `liquid` gem produced escaped tag text, not a heatmap — a learner copying the raw `.md` (from GitHub, an editor, or this artifact) gets a completely non-functional feature. *Suggested fix:* stop wrapping each tag; wrap the whole block once (single `{% raw %}` … `{% endraw %}`), or verify the docs pipeline even needs escaping inside fenced code blocks — many Jekyll configs don't process Liquid inside fences at all.
 - **MEDIUM · Contribution Calendar · Step 2 CSS · wizard-theme sibling combinator is dead code.**
 *Observed:* the rule `.contributor-card--wizard ~ .contributor-calendar .calendar-*` (source lines 174–177) uses the general-sibling combinator `~`. jsdom confirmed it did **not** match when the calendar is nested *inside* the card container — which is exactly the structure Step 3 instructs ("add after the stats panel or achievement wall" inside `character_sheet.html`). It only matched when the calendar was a true following sibling. *Suggested fix:* use a descendant selector (`.contributor-card--wizard .contributor-calendar .calendar-*`, drop the `~`).
 - **MEDIUM · Contribution Calendar · Accessibility (Steps 1 & 4 checklist).**
@@ -106,4 +109,4 @@ exercised; (b) Step 4's `jekyll serve` was un-testable in isolation, so the rend
 - **Confidence:** **High** on the two `failed` code-fence defects and the CSS
 combinator finding (each backed by a real render/DOM test). **Medium** on the end-to-end profile integration, which could not be booted in the sandbox.
 
-_Machine summary (verbatim from `walk-evidence.md`):_ "The underlying Liquid logic and CSS design are sound … but the quest's own fenced code blocks are broken as literally written: every Liquid tag is individually wrapped in {​% raw %​}/{​% endraw %​}, so copy-pasting Step 1 or Step 3 verbatim produces inert, unexecuted tag text rather than a working include. A secondary, verified bug is that the wizard-theme CSS uses a sibling combinator that doesn't match the nested DOM structure the quest itself instructs learners to build."
+_Machine summary (verbatim from `walk-evidence.md`):_ "The underlying Liquid logic and CSS design are sound … but the quest's own fenced code blocks are broken as literally written: every Liquid tag is individually wrapped in {% raw %}/{% endraw %}, so copy-pasting Step 1 or Step 3 verbatim produces inert, unexecuted tag text rather than a working include. A secondary, verified bug is that the wizard-theme CSS uses a sibling combinator that doesn't match the nested DOM structure the quest itself instructs learners to build."

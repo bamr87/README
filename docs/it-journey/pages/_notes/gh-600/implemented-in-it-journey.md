@@ -9,7 +9,9 @@ draft: false
 lastmod: '2026-07-01T00:00:00.000Z'
 layout: default
 permalink: /notes/gh-600/implemented-in-it-journey/
-source_file: implemented-in-it-journey.md
+source_file: pages/_notes/gh-600/implemented-in-it-journey.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/gh-600/implemented-in-it-journey.md
 tags:
 - gh-600
 - agentic-ai
@@ -35,7 +37,7 @@ The Agentic Codex is not a thought experiment — **this repository runs on the 
 | Plan vs action separation | [`agent-plan-then-act.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/agent-plan-then-act.yml); walk→fix split in [`quest-perfection.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/quest-perfection.yml) | The quest loop's *walker* only witnesses (read-only); a separate *fixer* acts — planning and acting are different jobs, even different workflows |
 | Observability & control | Workflow step summaries + committed [`.quests/ledger.json`](https://github.com/bamr87/it-journey/blob/main/.quests/README.md) + `.quests/DASHBOARD.md` | Every autonomous run leaves a trace a human can audit without re-running |
 
-*Taught by [Chapter I — Initiation Rites](/quests/0111/agentic-codex-01-agents-in-the-sdlc/).*
+*Taught by [[it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc|Chapter I — Initiation Rites]].*
 
 ## Domain 2 — Tool Use & Environment (18%)
 
@@ -46,7 +48,7 @@ The Agentic Codex is not a thought experiment — **this repository runs on the 
 | Environment integration | [`AGENTS.md`](https://github.com/bamr87/it-journey/blob/main/AGENTS.md) + [`.github/copilot-instructions.md`](https://github.com/bamr87/it-journey/blob/main/.github/copilot-instructions.md) + [`_data/ai.yml`](https://github.com/bamr87/it-journey/blob/main/_data/ai.yml) | The realm's law, written for the agent; ONE config file for every model call |
 | Safe execution paths | Claude-Code→API fallback in `run.sh`; `timeout-minutes` + `concurrency` on every lane; `needs-human` escalation | Failures retry once (fallback), then surface loudly — never a silent green |
 
-*Taught by [Chapter II — Forging the Arsenal](/quests/1000/agentic-codex-02-tool-use-and-environment/).*
+*Taught by [[it-journey/pages/_quests/1000/agentic-codex-02-tool-use-and-environment|Chapter II — Forging the Arsenal]].*
 
 ## Domain 3 — Memory, State & Execution (19%)
 
@@ -56,7 +58,7 @@ The Agentic Codex is not a thought experiment — **this repository runs on the 
 | Durable progress, resumability | The quest-perfection **ledger**: each slice's status survives across daily runs; stuck/needs_human slices are skipped, not repeated | The next run reads the register and continues instead of repeating |
 | Context-drift detection | [`scripts/ai/drift-guard.sh`](https://github.com/bamr87/it-journey/blob/main/scripts/ai/drift-guard.sh), wired between plan and act in the reference pipeline | Snapshot at plan time, verify before acting, exit 78 aborts on a moved world |
 
-*Taught by [Chapter III — Vaults of Recollection](/quests/1001/agentic-codex-03-memory-state-and-execution/).*
+*Taught by [[it-journey/pages/_quests/1001/agentic-codex-03-memory-state-and-execution|Chapter III — Vaults of Recollection]].*
 
 ## Domain 4 — Evaluation & Tuning (19%)
 
@@ -67,7 +69,7 @@ The Agentic Codex is not a thought experiment — **this repository runs on the 
 | Failure RCA | [`docs/agents/rca-template.md`](https://github.com/bamr87/it-journey/blob/main/docs/agents/rca-template.md) + `gh run download` forensics convention | Classify by layer, 5-Why to a root cause in *our* system, then ship the prevention |
 | Instructions as code | [`docs/agents/instructions-changelog.md`](https://github.com/bamr87/it-journey/blob/main/docs/agents/instructions-changelog.md) | Every behavior change carries its reason and its measured outcome |
 
-*Taught by [Chapter IV — The Oracle Rubric](/quests/1010/agentic-codex-04-evaluation-and-tuning/).*
+*Taught by [[it-journey/pages/_quests/1010/agentic-codex-04-evaluation-and-tuning|Chapter IV — The Oracle Rubric]].*
 
 ## Domain 5 — Multi-Agent Coordination (17%)
 
@@ -78,7 +80,7 @@ The Agentic Codex is not a thought experiment — **this repository runs on the 
 | Failure recovery | `continue-on-error`/skip semantics in the perfection loop; ledger marks slices `stuck`/`needs_human` (escalate) instead of blind retry | Stalled vs conflicting handled differently; escalation is a first-class outcome |
 | Lifecycle management | [`_data/agents/registry.yml`](https://github.com/bamr87/it-journey/blob/main/_data/agents/registry.yml) + weekly [`agent-audit.yml`](https://github.com/bamr87/it-journey/blob/main/.github/workflows/agent-audit.yml) | Provision by row, deprecate by status flip, audited quarterly (`review_date`) |
 
-*Taught by [Chapter V — The Council of Many](/quests/1011/agentic-codex-05-multi-agent-coordination/).*
+*Taught by [[it-journey/pages/_quests/1011/agentic-codex-05-multi-agent-coordination|Chapter V — The Council of Many]].*
 
 ## Domain 6 — Guardrails & Accountability (9%)
 
@@ -90,17 +92,17 @@ The Agentic Codex is not a thought experiment — **this repository runs on the 
 | Forbidden-actions pact | The Warden Pact in [`AGENTS.md`](https://github.com/bamr87/it-journey/blob/main/AGENTS.md) | A constraint that holds regardless of instruction — decline, comment, label, stop |
 | Audit trail | Committed ledger + Actions run logs + PR history + the audit artifact in the reference pipeline | Instruction, action, and outcome reconstructable from the repo's own history |
 
-*Taught by [Chapter VI — The Warden Pact](/quests/1100/agentic-codex-06-guardrails-and-accountability/).*
+*Taught by [[it-journey/pages/_quests/1100/agentic-codex-06-guardrails-and-accountability|Chapter VI — The Warden Pact]].*
 
 ## Try it yourself
 
 1. Read a chapter, then its artifact above — the pattern is identical, at scale.
 2. Run the reference pipeline in your fork: create the `agent-approval`
 Environment with yourself as required reviewer, set `AGENT_DEMO_ENABLED=true`, dispatch **🜂 Agent Plan-then-Act**, and watch the execute job wait for your seal.
-3. Face the [Grand Capstone](/quests/1100/agentic-codex-capstone-exam-trial/) — this repository is a worked answer key, but the trial wants *your* build.
+3. Face the [[it-journey/pages/_quests/1100/agentic-codex-capstone-exam-trial|Grand Capstone]] — this repository is a worked answer key, but the trial wants *your* build.
 
 ## Related
 
-- [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/) — the campaign hub
-- [GH-600 Study Hub](/notes/gh-600/) — domains, weights, and the quest line
-- [Epic Quest: The Self-Operating Website](/quests/codex/self-operating-website/) — the campaign that *builds* a fleet like this one
+- [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] — the campaign hub
+- [[it-journey/pages/_notes/gh-600/index|GH-600 Study Hub]] — domains, weights, and the quest line
+- [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] — the campaign that *builds* a fleet like this one

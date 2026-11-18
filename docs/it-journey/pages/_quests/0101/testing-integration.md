@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Deeper Level 0101 pipeline quests
 skill_focus: devops
-source_file: testing-integration.md
+source_file: pages/_quests/0101/testing-integration.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/testing-integration.md
 sub_title: 'Level 0101 (5) Quest: Main Quest - Testing'
 tags:
 - '0101'
@@ -83,7 +85,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Install Node via Homebrew
+title: 'Testing Integration: Tiered CI/CD Test Gates'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -464,17 +466,17 @@ The operational playbook: **detect** by re-running failures, **quarantine** a kn
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Deployment Pipelines](/quests/0101/deployment-pipelines/) - Ship what you've proven
+- 🎯 [[it-journey/pages/_quests/0101/deployment-pipelines|Deployment Pipelines]] - Ship what you've proven
 
 **Explore Side Adventures**:
-- ⚔️ [Workflow Optimization](/quests/0101/workflow-optimization/) - Make slow suites fast
-- ⚔️ [Artifact Management](/quests/0101/artifact-management/) - Version what passed the gates
+- ⚔️ [[it-journey/pages/_quests/0101/workflow-optimization|Workflow Optimization]] - Make slow suites fast
+- ⚔️ [[it-journey/pages/_quests/0101/artifact-management|Artifact Management]] - Version what passed the gates
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Deployment Pipelines](/quests/0101/deployment-pipelines/)  
-**🏗️ System Engineer**: Explore [Workflow Optimization](/quests/0101/workflow-optimization/)  
-**🛡️ Security Specialist**: Check out [Secrets Management](/quests/0101/secrets-management/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0101/deployment-pipelines|Deployment Pipelines]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0101/workflow-optimization|Workflow Optimization]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0101/secrets-management|Secrets Management]]
 
 ## 📚 Resources
 
@@ -503,6 +505,6 @@ The operational playbook: **detect** by re-running failures, **quarantine** a kn
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] **Unlocks:** [[Deployment Pipelines: Production Release Automation Strategies]] · [[Workflow Optimization: Caching Strategies and Pipeline Parallelization]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0101 - CI/CD & DevOps]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] **Unlocks:** [[Deployment Pipelines: Production Release Automation Strategies]] · [[Workflow Optimization: Caching Strategies and Pipeline Parallelization]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

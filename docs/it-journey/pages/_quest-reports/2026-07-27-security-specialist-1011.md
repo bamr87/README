@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/30264458312
 slice: security-specialist/1011
-source_file: 2026-07-27-security-specialist-1011.md
+source_file: pages/_quest-reports/2026-07-27-security-specialist-1011.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-27-security-specialist-1011.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-27-security-specialist-1011.md
 tags:
 - security-specialist
 - level-1011
@@ -25,13 +27,14 @@ tags:
 - security-compliance
 theme: Security & Compliance
 tier: Warrior
-title: 2026 07 27 Security Specialist 1011
+title: Security Specialist · L1011 · 2026-07-27
 verdict: warn
 walk_date: '2026-07-27'
 ---
+
 > **Slice** `security-specialist/1011` · **Level** 1011 (Security & Compliance) · **Warrior tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-27
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30264458312) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-27-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-27-security-specialist-1011.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30264458312) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-27-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-27-security-specialist-1011.md)
 
 ---
 
@@ -100,7 +103,7 @@ All command outcomes below are from the sealed `walk-evidence.json` (engine `--m
 - **HIGH · Behavior Tuning · Exercise 13.1 ↔ Quest Validation (source lines 150, 242–243).** *Observed:* the baseline script `exit 1`s without writing `baseline-results.jsonl` when no prior agent-task runs exist, yet the Quest Validation self-check's first line `test -f work/gh-600/baseline-results.jsonl` requires that file — I saw both the script step and the validation step **fail** in the sandbox. A learner following every documented step cannot complete the quest. *Fix:* add a bootstrap/seed path (e.g. a `--dry-run`/sample-record mode) so learners without live GH Actions history can produce the file, or explicitly gate the exercise on the prior quest that establishes that history.
 - **HIGH · Behavior Tuning · Objective 3 "Implement instruction changes."** *Observed (reasoned from source):* the stated objective of editing `copilot-instructions.md`/`AGENTS.md` is never turned into a runnable/showable exercise or a validation check — the checklist only verifies baseline/log/changelog files. *Fix:* add a concrete before/after edit step and a validation check confirming the instruction files were actually modified.
 - **HIGH · Observability · Chapter 1 `traced_subtask.py` (source lines 131–148).** *Observed:* the Ch.1 workflow references `traced_subtask.py`, which is never defined, and the quest's own self-contained fallback (call `trace_writer.py` directly) was **executed and confirmed broken** — it ignores the CLI flags and writes to a different filename than the workflow expects. The "instrument sub-agents" objective has no fully working artifact. *Fix:* provide `traced_subtask.py`, or give `trace_writer.py` real `--correlation-id/--subtask/--output` argparse support (or show the exact env-var invocation that matches its current interface).
-- **MEDIUM · Orchestration Patterns · Ch.3 `orchestrator-chain.yml` `task_description` input (source line 224).** *Observed (reasoned):* the required input is declared but never referenced in any step. *Fix:* use `${​{ github.event.inputs.task_description }​}` or drop the input.
+- **MEDIUM · Orchestration Patterns · Ch.3 `orchestrator-chain.yml` `task_description` input (source line 224).** *Observed (reasoned):* the required input is declared but never referenced in any step. *Fix:* use `${{ github.event.inputs.task_description }}` or drop the input.
 - **MEDIUM · Orchestration Patterns · Objectives vs. exercises (source lines 88–102).** *Observed (reasoned):* "event-driven" is named as one of the three mapped patterns and appears in the table (`workflow_run`, `repository_dispatch`) but is never given an exercise; "Test aggregation" is only declared in YAML, never exercised against sample data. *Fix:* add a minimal event-driven exercise and a toy `aggregate_results.py` + fixture, or soften the objectives to "introduced conceptually."
 - **MEDIUM · Security Fundamentals · Knowledge checks.** *Observed (reasoned):* 9 knowledge-check questions across 3 chapters have no answer key, so learners cannot self-verify. *Fix:* add a collapsible answer key.
 - **MEDIUM · Coordination · Ch.3 escalation example.** *Observed (reasoned by engine):* the `continue-on-error: true` + `if: failure()` recover pattern likely doesn't fire for the demonstrated agent per GitHub `needs`-context semantics. *Fix:* correct the example or add an explicit callout, since this nuance is exactly what the target exam tests.

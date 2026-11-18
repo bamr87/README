@@ -2,7 +2,9 @@
 gamename: vortex
 layout: default
 level: 14
-source_file: vortex14.md
+source_file: wargames/vortex/vortex14.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/vortex/vortex14.md
 title: Vortex14
 ---
 Bad Encryption

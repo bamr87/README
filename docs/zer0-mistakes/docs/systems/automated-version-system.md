@@ -6,12 +6,15 @@ date: 2025-09-28 23:25:58+00:00
 description: How the automated version-bump system analyzes commits on main and performs
   the matching semantic version bump and release without manual steps.
 lastmod: 2026-06-01 03:38:46+00:00
-source_file: automated-version-system.md
+source_file: docs/systems/automated-version-system.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/automated-version-system.md
 tags:
 - systems
 - automation
 title: 🤖 Automated Version Bump System
 ---
+
 # 🤖 Automated Version Bump System
 
 This system automatically analyzes commits pushed to the main branch and performs appropriate version bumps with automated releases.

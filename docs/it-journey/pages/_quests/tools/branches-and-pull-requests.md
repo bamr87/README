@@ -32,14 +32,16 @@ primary_technology: Collaboration
 quest_series: Tools Collection
 quest_type: main_quest
 skill_focus: devops
-source_file: branches-and-pull-requests.md
+source_file: pages/_quests/tools/branches-and-pull-requests.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/tools/branches-and-pull-requests.md
 tags:
 - Collaboration
 - Git
 - GitHub
 - Pull Requests
 - Version Control
-title: Branches And Pull Requests
+title: Mastering Branches and Pull Requests for Developers
 ---
 * * * *
 
@@ -121,7 +123,7 @@ So next time you open a PR, channel your inner mage. Make it clear. Make it test
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0010/README|Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: templates/deploy/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/templates/deploy/README.md
 title: Deploy templates
 ---
 # Deploy templates

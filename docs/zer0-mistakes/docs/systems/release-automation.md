@@ -6,12 +6,15 @@ date: 2025-11-26 05:12:01+00:00
 description: 'The v2.0 modular release automation system for Zer0-Mistakes: its architecture,
   scripts, and the end-to-end flow from version bump to publish.'
 lastmod: 2026-06-01 03:38:46+00:00
-source_file: release-automation.md
+source_file: docs/systems/release-automation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/release-automation.md
 tags:
 - systems
 - automation
 title: Release Automation System
 ---
+
 # Release Automation System
 
 **Version:** 2.0 (Modular Architecture)  

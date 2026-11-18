@@ -1,0 +1,110 @@
+---
+source_file: PRD.md
+source_repo: bamr87/djangoerp
+source_url: https://github.com/bamr87/djangoerp/blob/main/PRD.md
+title: PRD — djangoerp
+---
+# PRD — djangoerp
+
+> Product requirements for DjangoERP — the problem, target users, goals, current features and open questions — with anything the sources do not state marked TBD.
+
+Derived from the README, agent docs, config and code in [`bamr87/djangoerp`](https://github.com/bamr87/djangoerp). Anything not stated in those sources is marked **TBD**; success metrics are proposals. Open work is tracked in [GitHub Issues](https://github.com/bamr87/djangoerp/issues), the backlog of record.
+
+## 1. Overview / problem
+
+A Django 6 + Django REST Framework ERP built outward from a double-entry accounting core into a modular enterprise system supporting order-to-cash, procure-to-pay and make-to-stock. The financial core was consolidated from `amrs-project`; supply-chain and planning modules re-implement designs from ERPNext, Odoo, Tryton, InvenTree and frePPLe.
+
+## 1.1 Missions
+
+Django ERP's direction is to become the ultimate open home for all things enterprise resource planning — data, tools, resources and transparency, gathered in one place that anyone can inspect and reuse.
+
+1. **Provide data, tools, resources and transparency for all stakeholders, finance and operations professionals, and the general public.** Operators, accountants, developers and anyone studying how an ERP should work are first-class audiences. The aim is a shared, inspectable commons: the same ledger, the same modules, and the same API for everyone.
+2. **Grow a modular, API-first ERP outward from a double-entry accounting core, covering order-to-cash, procure-to-pay and make-to-stock, with a ledger that stays auditable.** Chart of accounts, journal entries, invoices and payments, inventory, purchasing, sales, manufacturing and MRP planning should compose as open Django apps rather than a monolith no one can read.
+3. **Keep that system open and comparable: Django and Django REST Framework, modular apps, and designs that can be studied against established open ERPs rather than locked behind a vendor.** The financial core, consolidated from earlier work, and supply-chain and planning modules informed by open-source predecessors, should remain something a practitioner can inspect, extend and teach from.
+
+These missions set the course; they do not claim the work is finished. They serve the PRD's scope: a Django 6 and Django REST Framework ERP built outward from a double-entry core into a modular enterprise system.
+
+**Requirement**
+
+- MR1: Constitution §1 states one direction statement and exactly three numbered missions, and the README and AGENTS.md taglines match that direction and link to constitution §1.
+
+Feature [DJERP-009](features/features.yml) traces to requirement MR1.
+
+## 2. Target users
+
+- Small/medium businesses or developers needing an API-first ERP backend
+- ERP consultants prototyping processes
+
+## 3. Goals and non-goals
+
+**Goals**
+
+- Correct double-entry postings with enforced invariants
+- End-to-end O2C, P2P and make-to-stock flows
+- A documented JWT-authenticated REST API
+
+**Non-goals**
+
+- A full end-user UI: TBD (not described in README)
+
+## 4. Core features (current)
+
+- Apps: accounts, coa, company, core, journal, invoices, reports, partners, products, inventory, purchasing, sales, manufacturing, mrp
+- Multi-warehouse stock ledger with moving-average costing
+- BOMs, work orders and an MRP planning engine
+- Async financial reports via Celery
+- Swagger/ReDoc API docs
+- Docker / docker-compose with PostgreSQL
+
+## Feature catalog
+
+Every user-facing capability has a stable id in the feature catalog [`features/features.yml`](features/features.yml). Each entry names the PRD requirements it serves (`prd:`); the trace below is the reverse view.
+
+| ID | Feature | Status | Where | Requirements |
+| --- | --- | --- | --- | --- |
+| [DJERP-001](features/features.yml) | Apps: accounts, coa, company, core, journal, invoices,… | shipped | [`djangoerp/urls.py`](djangoerp/urls.py) · [`README.md`](README.md) | TBD |
+| [DJERP-002](features/features.yml) | Multi-warehouse stock ledger with moving-average costing | shipped | [`inventory/models.py`](inventory/models.py) · [`README.md`](README.md) | TBD |
+| [DJERP-003](features/features.yml) | BOMs, work orders and an MRP planning engine | shipped | [`mrp/engine.py`](mrp/engine.py) · [`README.md`](README.md) | TBD |
+| [DJERP-004](features/features.yml) | Async financial reports via Celery | shipped | [`djangoerp/celery.py`](djangoerp/celery.py) · [`README.md`](README.md) | TBD |
+| [DJERP-005](features/features.yml) | Swagger/ReDoc API docs | shipped | [`djangoerp/urls.py`](djangoerp/urls.py) · [`README.md`](README.md) | TBD |
+| [DJERP-006](features/features.yml) | Docker / docker-compose with PostgreSQL | shipped | [`docker-compose.yml`](docker-compose.yml) · [`README.md`](README.md) | TBD |
+| [DJERP-007](features/features.yml) | Reversing entries for posted journal entries | shipped | [`journal/services.py`](journal/services.py) · [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) | FR3 |
+| [DJERP-008](features/features.yml) | Fiscal periods, lock dates and period-close entry | planned | [`journal/models.py`](journal/models.py) · [docs](https://github.com/bamr87/djangoerp/issues/45) | FR4 |
+| [DJERP-009](features/features.yml) | Constitution missions | planned | [`docs/constitution.md`](docs/constitution.md) · [`PRD.md`](PRD.md) | MR1 |
+
+**Requirement → feature trace**
+
+| Requirement | Features |
+| --- | --- |
+| TBD | DJERP-001, DJERP-002, DJERP-003, DJERP-004, DJERP-005, DJERP-006 |
+| FR3 | DJERP-007 |
+| FR4 | DJERP-008 |
+| MR1 | DJERP-009 |
+
+## 5. Requirements
+
+**Functional**
+
+- FR1: Every business document posts balanced journal entries per the posting matrix (docs/ARCHITECTURE.md)
+- FR2: API authenticated via JWT
+- FR3: Posted journal entries can be corrected by a reversing entry that is idempotent, linked to the original and audit-logged (shipped — `POST /api/journal/entries/{id}/reverse/`, [#44](https://github.com/bamr87/djangoerp/issues/44), DJERP-007)
+- FR4: Fiscal periods and a lock date block postings into closed periods, and period close posts P&L to retained earnings (planned — [#45](https://github.com/bamr87/djangoerp/issues/45), DJERP-008)
+
+**Non-functional**
+
+- NFR1: Python ≥ 3.12, Django 6.1
+- NFR2: Containerized deployment
+- NFR3: Security/compliance requirements (audit, SoD): TBD
+
+## 6. Success metrics (proposed — not defined in sources)
+
+- Test coverage of posting invariants
+- API response times: TBD
+
+## 7. Roadmap / open questions
+
+- Multi-currency, tax and localization scope: TBD
+
+## 8. Links
+
+- [README.md](README.md) · [AGENTS.md](AGENTS.md) · [CHANGELOG.md](CHANGELOG.md) · [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) · [API routes](docs/reference/api-routes.md)

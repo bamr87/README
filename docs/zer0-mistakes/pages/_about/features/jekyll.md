@@ -6,9 +6,12 @@ lastmod: 2026-06-14 14:30:00+00:00
 permalink: /notes/jekyll/
 preview: /images/previews/jekyll.png
 published: false
-source_file: jekyll.md
-title: Jekyll Cheatsheet
+source_file: pages/_about/features/jekyll.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/features/jekyll.md
+title: 'Jekyll Cheatsheet: Setup, Liquid Filters & Templates'
 ---
+
 # Jekyll Cheatsheet
 
 Use this reference for common Jekyll setup commands, Liquid template syntax, folder conventions, and built-in filters.

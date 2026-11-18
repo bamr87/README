@@ -1,5 +1,7 @@
 ---
-source_file: POSTHOG_ANALYTICS.md
+source_file: docs/setup/POSTHOG_ANALYTICS.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/setup/POSTHOG_ANALYTICS.md
 title: PostHog Analytics for IT-Journey Scripts
 ---
 # PostHog Analytics for IT-Journey Scripts
@@ -19,7 +21,7 @@ Every script reads its configuration from the environment at runtime — **no to
 
 When `POSTHOG_PROJECT_TOKEN` is **unset**, the scripts skip analytics entirely — no client is created, no network call is made, and behavior/exit codes are identical to before. This means CI without the secret runs unchanged; set the token (locally in `.env`, in CI as a secret) only where you want capture.
 
-See [`.env.example`](../../.env.example) for the variable stubs.
+See [`.env.example`](../../dot-env.example) for the variable stubs.
 
 ## Events
 
@@ -56,4 +58,4 @@ The integration was verified end-to-end by pointing `POSTHOG_HOST` at a local mo
 - The event capture is placed **before** each script's `exit`, so events are not
 lost when a script exits non-zero (e.g. content-freshness exiting `1` on critical content).
 
-For further PostHog work in this repo, see the agent skill under [`.claude/skills/integration-ruby/`](../../.claude/skills/integration-ruby/).
+For further PostHog work in this repo, see the agent skill under [`.claude/skills/integration-ruby/`](../../dot-claude/skills/integration-ruby/).

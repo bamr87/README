@@ -22,13 +22,15 @@ objectives:
     all:
     - command: cat
     - output_includes: second
-source_file: 05-write.md
+source_file: courses/workshop/05-write.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/workshop/05-write.md
 teaches:
 - echo
 - '>'
 - '>>'
 - cat
-title: 05 Write
+title: Writing files from the shell
 xp: 25
 ---
 You don't need an editor for small files. `echo` plus a redirect is enough:

@@ -22,16 +22,20 @@ sidebar:
   base: /docs/
   nav: pages
   title: All docs
-source_file: sidebar-page-tree.md
+source_file: fr/docs/features/sidebar-page-tree.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/sidebar-page-tree.md
 tags:
 - navigation
 - sidebar
 - liquid
-title: 'Barre latérale en arborescence de pages (`nav: pages`)'
+title: Barre latérale en arborescence de pages — navigation automatique depuis les
+  URL de vos pages
 translated_from_sha: 78aaa54a3a5c
 translation_of: pages/_docs/features/sidebar-page-tree.md
 translation_source_url: /docs/features/sidebar-page-tree/
 ---
+
 # Barre latérale en arborescence de pages (`nav: pages`)
 
 Le mode de barre latérale `pages` construit l'arborescence de la barre latérale gauche **à partir des URL de votre contenu** — sans fichier `_data/navigation/*.yml` à rédiger ou à maintenir à jour. Indiquez-lui un chemin de base et il liste chaque page sous ce préfixe, groupée par son premier segment de chemin en sections repliables.

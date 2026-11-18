@@ -1,5 +1,7 @@
 ---
-source_file: Button.prompt.md
+source_file: _design-system/components/core/Button.prompt.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_design-system/components/core/Button.prompt.md
 title: Button.Prompt
 ---
 Themed Bootstrap 5.3 button for zer0-mistakes — use for every CTA, form submit, and toolbar action.

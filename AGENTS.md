@@ -6,7 +6,7 @@
 
 ## What this repo is
 
-`bamr87/README` (branch `main`) is the fleet's documentation engine. It aggregates the Markdown of the projects in `_data/projects.yml` into a corpus, distills it upward (facts → cards → the apex README), builds a query index, and serves it to AI clients over MCP. Its survey reads every repository in `_data/fleet.yml` and writes two reports: `fleet_health` (scores) and `docs_review` (every repository's documents in one place, checked against the hub's documentation framework, [specs/DOCS.md](https://github.com/bamr87/bamr87/blob/main/specs/DOCS.md)). A scheduled workflow reruns the pipeline, so the context follows the fleet.
+`bamr87/README` (branch `main`) is the fleet's documentation engine. It collects the official documentation of the projects in `_data/projects.yml` into `docs/`, which is an Obsidian vault; generates a second brain over it in `docs/brain/` (concepts, project notes, hot cache, log, health); distills it upward (facts → cards → the apex README); builds a query index and a link graph; and serves them to AI clients over MCP. Its survey reads every repository in `_data/fleet.yml` and writes two reports: `fleet_health` (scores) and `docs_review` (every repository's documents in one place, checked against the hub's documentation framework, [specs/DOCS.md](https://github.com/bamr87/bamr87/blob/main/specs/DOCS.md)). A scheduled workflow reruns the pipeline, so the context follows the fleet.
 
 A change is done when `python tests/test_runner.py --type quick`, `python3 scripts/schema_lint.py check .`, `python3 -m scripts.context_engine navcheck` and `python3 scripts/check_tracked_surfaces.py` all pass, and the nearest `README.md` says what changed.
 
@@ -16,9 +16,10 @@ Python 3 (stdlib + PyYAML, requests, nltk, pytest); MkDocs Material for the site
 
 ```bash
 pip install -r requirements.txt                     # pip install -r requirements-docs.txt for the site
-bash scripts/aggregate.sh                           # crawl the registry's repos into docs/ (self-bootstraps .venv)
+python3 -m scripts.context_engine collect           # clone, select, normalize, weave links, write docs/ (--workspace DIR reads checkouts)
 python3 -m scripts.context_engine build             # rebuild the pyramid (--ai auto|off|anthropic|xai|mock)
 python3 -m scripts.context_engine sync              # registry -> repos.txt
+python3 -m scripts.context_engine hot               # second brain: also note / neighbours / lint / save
 python3 -m scripts.context_engine query <terms>     # also: card / facts / apex / status / projects / fleet / nav
 python3 -m scripts.context_engine survey [repo]     # fleet survey of default branches -> fleet_health + docs_review
 python3 -m scripts.context_engine survey --workspace ~/github   # review local checkouts -> docs_review only
@@ -38,31 +39,34 @@ See [`SCHEMA.md`](SCHEMA.md) and each directory's own `SCHEMA.md`. The pipeline,
 
 | Stage | Input | Output | Entry point |
 | --- | --- | --- | --- |
-| Aggregate | `repos.txt` (from the registry) | `raw_docs/` | `scripts/aggregate.sh` (a repo it cannot fetch fails the run) |
-| Process | `raw_docs/` | `docs/{project}/` + front matter | `scripts/process.py` |
+| Collect | registry `collect:` rules | `docs/{project}/`, `context/vault/collect.json`, `log.jsonl` | `collect.py` (a repo it cannot fetch fails the run) |
 | Validate | `docs/` | reports, in-place fixes | `scripts/run_doc_checks.sh` |
 | Index corpus | `docs/` | `docs/docs_index.json`, `docs/results/*.json` | `generate_docs_index.py`, `generate_docs_report.py` |
+| Brain | `docs/` + registry `brain:` + `notes/` | `docs/brain/`, `docs/.obsidian/`, `context/vault/synthesis.json` | `brain.py` |
 | Navigate | `docs/` + registry `navigation:` | `context/nav/`, `nav.yml`, `docs/browse/` | `scripts/context_engine/navigator.py` |
 | Distill | corpus + registry + nav | `context/` pyramid, README AUTO span, `docs/index.md` | `python3 -m scripts.context_engine build` |
 | Survey | `_data/fleet.yml` or local checkouts | `context/sources/`, `context/reports/{fleet_health,docs_review}.*` | `survey.py`, `gather/`, `analyze/` |
+| Graph | `docs/` | `context/vault/graph.json` | `vault.py` |
 | Serve | `context/` | CLI and MCP answers | `cli.py`, `mcp/server.py` |
+| Publish | `docs/` + the graph | the site: wikilinks, backlinks, graph, canvas | `brain_site/hook.py` |
 
-Engine modules (`scripts/context_engine/`): `registry` (registry + navigation contract) → `extractor` (facts) → `navigator` (one nav tree for `context/nav/`, `nav.yml`, `docs/browse/`) → `synthesizer` (cards) → `assembler` (apex, AUTO span, site index, context SCHEMA) → `indexer` → `query` (the one read path for CLI and MCP) → `builder`/`cli`. `ai.py` is the provider-agnostic enrichment layer, and `screen.py` the injection screen on what goes into it and comes out of it. `analyze/` holds the survey checks; `analyze/framework.py` is the UPS-DOC rows and `analyze/review.py` the docs review. `scripts/harmonize/` is a legacy, optional Grok-only reorganizer outside the pipeline.
+Engine modules (`scripts/context_engine/`): `registry` (registry, collection, navigation and brain rules) → `collect` (the ETL) → `vault` (what a note and a link are; the one link resolver) → `extractor` (facts) → `brain` (generated notes) → `navigator` (one nav tree for `context/nav/`, `nav.yml`, `docs/browse/`) → `synthesizer` (cards) → `assembler` (apex, AUTO span, site index, context SCHEMA) → `indexer` → `query` (the one read path for CLI and MCP) → `builder`/`cli`. `ai.py` is the provider-agnostic enrichment layer, and `screen.py` the injection screen on what goes into it and comes out of it; `redact.py` (secrets) and `hidden.py` (hidden carriers) screen every page at collect. `analyze/` holds the survey checks; `analyze/framework.py` is the UPS-DOC rows and `analyze/review.py` the docs review. `scripts/harmonize/` is a legacy, optional Grok-only reorganizer outside the pipeline.
 
 ## Conventions
 
 - **Backlog of record:** GitHub Issues with the fleet labels. **Definition of Done:** `.github/pull_request_template.md`. **Decisions:** `docs/adr/`.
 - **Commits:** Conventional Commits. **Branches:** `feature/`, `fix/`, `docs/`, `refactor/`, `test/`, `chore/` off `main`. `CHANGELOG.md` is release-please's.
-- **Registry first.** `_data/projects.yml` is the only hand-edited definition of what is aggregated, and it owns the navigation contract (grouping, labels, depth, exclusions). `_data/fleet.yml` is the separate, hand-maintained inventory the survey reads. Never edit `repos.txt`. A project's `url` must be `https://github.com/<owner>/<repo>` and its `branch` letters, digits, `.`, `_`, `/` and `-`, not starting with `-`: `registry.py` rejects anything else, naming the project, before `sync` writes `repos.txt`.
-- **Generated surfaces are never hand-edited:** `context/**`, `docs/**` (the corpus, `docs/index.md`, `docs/browse/`), `repos.txt`, `nav.yml`, and the README `AUTO:projects` span. Fix the registry, the upstream repo or the engine, then rebuild. Never add a `nav:` key to `mkdocs.yml` (it would shadow the inherited one).
+- **Registry first.** `_data/projects.yml` is the only hand-edited definition of what is aggregated. It owns what counts as official documentation (`collect:`), the navigation contract (grouping, labels, depth, exclusions) and the rules for generated notes (`brain:`). `_data/fleet.yml` is the separate, hand-maintained inventory the survey reads. Never edit `repos.txt`.
+- **Generated surfaces are never hand-edited:** `context/**`, `docs/**` (the corpus, `docs/brain/`, `docs/index.md`, `docs/browse/`), `repos.txt`, `nav.yml`, and the README `AUTO:projects` span. Fix the registry, the upstream repo or the engine, then rebuild. Never add a `nav:` key to `mkdocs.yml` (it would shadow the inherited one).
 - **Builds succeed with no key** (heuristic mode) and are diff-stable: outputs carry corpus fingerprints, not timestamps. Keep it that way.
-- **The corpus layout is the navigation contract.** `process.py` keeps each upstream's directory structure under `docs/{repo}/`; don't flatten it. Published ≠ navigable: `navigation.publish_hidden`/`navigate_hidden` and `nav.yml` `not_in_nav` declare the gap.
+- **The corpus layout is the navigation contract.** `collect.py` keeps each upstream's directory structure under `docs/{repo}/`; don't flatten it. Its one rename is a dot-prefixed segment (`.github` → `dot-github`), because neither GitHub Pages nor Obsidian shows those.
+- **`docs/` is an Obsidian vault, and `vault.py` is the only link resolver.** The crawl, the notes, the query layer and `brain_site/hook.py` all use it, so they cannot disagree. Write durable cross-repository knowledge in `notes/`, the one hand-written source in the vault. Published ≠ navigable: `navigation.publish_hidden`/`navigate_hidden` and `nav.yml` `not_in_nav` declare the gap.
 - **Every page must be safe in the nav:** `scripts/fix_frontmatter_icons.py` normalizes upstream `icon:` values at ingest and in `run_doc_checks.sh --apply`.
-- **No credential reaches the corpus:** `process.py` runs every page through the secret screen (`scripts/context_engine/redact.py`). A GitHub, Anthropic, xAI, AWS or Slack token or a PEM private key is replaced with `[REDACTED:<kind>]`, listed in `docs/results/secret_screen.json` without its value, and the crawl fails before it commits. Revoke the credential and remove it upstream; the placeholder allowlist (`your…`, `example`, `xxxx`, …) is for documentation examples, never a way to let a real value through.
+- **No credential reaches the corpus:** `collect.py` runs every page through the secret screen (`scripts/context_engine/redact.py`). A GitHub, Anthropic, xAI, AWS or Slack token or a PEM private key is replaced with `[REDACTED:<kind>]`, listed in `docs/results/secret_screen.json` without its value, and the crawl fails before it commits. Revoke the credential and remove it upstream; the placeholder allowlist (`your…`, `example`, `xxxx`, …) is for documentation examples, never a way to let a real value through.
 - **The MCP server is read-only**; never add write tools. It reads through `query.py`.
 - **Front matter is the corpus contract** (`title`, `tags`, `category`, dates): processing scripts stay front-matter-aware and idempotent, because the `--apply` fixers run repeatedly in CI. Card and fact contracts change in `synthesizer.py`/`extractor.py`, never in their outputs.
 - **Hooks** (`hooks.d/<stage>/` executables, one directory per stage in `config.HOOK_STAGES`) are non-fatal unless `CONTEXT_HOOKS_STRICT=1`. They run with an allowlisted environment that never carries the build's provider keys (extra variables are named in `CONTEXT_HOOK_ENV`), and their output is secret-screened before it is logged ([hooks.d/README.md](hooks.d/README.md)).
-- **The corpus is untrusted input.** `process.py` drops hidden carriers at ingest; `screen.py` screens facts and AI output at build (`enrichment: quarantined`, fatal under `CONTEXT_INJECTION_STRICT=1`). Upstream text goes into a prompt only through `ai.wrap_facts`.
+- **The corpus is untrusted input.** `collect.py` drops hidden carriers at ingest (`hidden.py`); `screen.py` screens facts and AI output at build (`enrichment: quarantined`, fatal under `CONTEXT_INJECTION_STRICT=1`). Upstream text goes into a prompt only through `ai.wrap_facts`.
 - **Tests:** unit tests in `tests/unit/test_cases/` (unittest discovery); `test_context_engine.py` covers the engine, schema lint and MCP dispatch and `test_fleet_survey.py` the survey and the docs framework checks — extend them with the code. Integration tests (`--type integration`) clone real repos and need the network.
 - **One paragraph per line** (`tools/unwrap-prose.py`, vendored — never edit it here). The crawl unwraps the corpus at ingest, because a push to `main` can only fail the prose gate.
 - **SCHEMA protocol:** a structural change updates the governing `SCHEMA.md` in the same commit; `scripts/`, `_data/` and `mcp/` are `coverage: full`. New scripts fit a pipeline stage and get a row in `scripts/SCHEMA.md` and a section in `scripts/README.md`.
@@ -71,9 +75,9 @@ Engine modules (`scripts/context_engine/`): `registry` (registry + navigation co
 
 ## CI and the site
 
-- `aggregate-docs.yaml` (weekly + manual; kill switch for the cron: repository variable `AGGREGATE_DOCS_ENABLED=false`): sync → crawl → corpus index → build (AI enrichment when keys exist) → schema lint → commit. `docs/` and `context/` churn on their own; treat them as build artifacts.
+- `aggregate-docs.yaml` (weekly + manual; kill switch for the cron: repository variable `AGGREGATE_DOCS_ENABLED=false`): sync → collect → corpus index → build (AI enrichment when keys exist) → schema lint → commit. `docs/` and `context/` churn on their own; treat them as build artifacts.
 - `docs-quality-check.yaml` (PRs, `quality/*`): schema lint, `navcheck`, `check_tracked_surfaces.py`, then doc lint and front matter checks.
-- `deploy-pages.yaml`: builds MkDocs Material (not `--strict`; aggregated pages carry expected broken cross-references) and publishes `docs/` to Pages. `ci.yml` calls the hub's `standard-ci.yml`.
+- `deploy-pages.yaml`: runs after each refresh and on pushes; builds MkDocs Material (not `--strict`; aggregated pages carry expected broken cross-references) and publishes `docs/` to Pages. `ci.yml` calls the hub's `standard-ci.yml`.
 - `docker-compose.yml` runs Wiki.js + Postgres (`scripts/wiki-manage.sh`, [`WIKIJS-QUICKSTART.md`](WIKIJS-QUICKSTART.md)); copy `.env.example` to `.env` first.
 
 ## Fleet context

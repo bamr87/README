@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: termforge/README.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/termforge/README.md
 title: TermForge
 ---
 # TermForge

@@ -77,7 +77,9 @@ rewards:
   unlocks_features:
   - Access to the rest of the Level 1001 Kubernetes Orchestration quest line
 skill_focus: devops
-source_file: kubernetes-fundamentals.md
+source_file: pages/_quests/1001/kubernetes-fundamentals.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1001/kubernetes-fundamentals.md
 sub_title: 'Level 1001 (9) Quest: Main Quest - Kubernetes Fundamentals'
 tags:
 - '1001'
@@ -86,7 +88,7 @@ tags:
 - cloud-engineering
 - hands-on
 - gamified-learning
-title: Install kubectl and a local cluster tool with Homebrew
+title: 'Kubernetes Fundamentals: Container Orchestration Essentials'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -511,17 +513,17 @@ kubectl get events --sort-by=.lastTimestamp
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Pods and Workloads](/quests/1001/k8s-pods-workloads/) - Make your deployments resilient
+- 🎯 [[it-journey/pages/_quests/1001/k8s-pods-workloads|Pods and Workloads]] - Make your deployments resilient
 
 **Explore Side Adventures**:
-- ⚔️ [Services and Networking](/quests/1001/k8s-services-networking/) - Connectivity and Ingress
-- ⚔️ [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/) - Configuration management
+- ⚔️ [[it-journey/pages/_quests/1001/k8s-services-networking|Services and Networking]] - Connectivity and Ingress
+- ⚔️ [[it-journey/pages/_quests/1001/k8s-config-secrets|ConfigMaps and Secrets]] - Configuration management
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Pods and Workloads](/quests/1001/k8s-pods-workloads/)  
-**🏗️ System Engineer**: Explore [Services and Networking](/quests/1001/k8s-services-networking/)  
-**🛡️ Security Specialist**: Advance to [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1001/k8s-pods-workloads|Pods and Workloads]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1001/k8s-services-networking|Services and Networking]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1001/k8s-config-secrets|ConfigMaps and Secrets]]
 
 ## 📚 Resources
 
@@ -552,6 +554,6 @@ Before marking this quest as complete, ensure you've:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Kubernetes Pods and Workloads: Deployments and StatefulSets]] · [[Kubernetes Services and Networking: Ingress and DNS Configuration]] · [[Kubernetes ConfigMaps and Secrets: Configuration Management Best Practices]] **Sequel quests:** [[Monitoring Fundamentals: Master Metrics, Logs & Traces for Observability]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1001/README|Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[it-journey/pages/_quests/1001/k8s-pods-workloads|Kubernetes Pods and Workloads: Deployments and StatefulSets]] · [[Kubernetes Services and Networking: Ingress and DNS Configuration]] · [[Kubernetes ConfigMaps and Secrets: Configuration Management Best Practices]] **Sequel quests:** [[Monitoring Fundamentals: Master Metrics, Logs & Traces for Observability]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -1,0 +1,67 @@
+---
+source_file: PRD.md
+source_repo: bamr87/zer0-CMS
+source_url: https://github.com/bamr87/zer0-CMS/blob/main/PRD.md
+title: zer0-CMS — Product requirements
+---
+# zer0-CMS — Product requirements
+
+> What the product must do, with stable requirement ids (`FRn`, `NFRn`) that features in [`features/features.yml`](features/features.yml) name under `prd:`. The constitution (§ 3) ranks this document under AGENTS.md and above the feature catalog. Seeded with the books requirements; the rest of the platform's requirements are still described by [`docs/plan/capabilities.yml`](docs/plan/capabilities.yml) and [`docs/plan/TARGET.md`](docs/plan/TARGET.md) until they are lifted here.
+
+## 1.1 Missions
+
+zer0-CMS's direction is to become the ultimate open home for all things markdown site operations — data, tools, resources and transparency, gathered in one place that anyone can inspect and reuse.
+
+1. **Provide data, tools, resources and transparency for all stakeholders, content operators, CMS practitioners and the general public.** Editors, reviewers, site operators, agent authors, and the general public are first-class audiences. The aim is a shared, open commons: the same sources, the same tools, and the same trail of evidence for everyone.
+2. **Turn a repository of markdown into something you can actually operate: a governed CMS with a studio, a site renderer and a VS Code extension, where publishing goes through a gate a human has to walk through.** Agents declare their effect and permissions; page content and user input are treated as untrusted. The path is one Python platform (Django, with Wagtail as a headless library), a React studio, and a VS Code extension with the studio's capabilities.
+3. **Put that platform in every editor's, agent's and builder's hands.** Serve it so zer0-themed markdown sites can be drafted, reviewed and published in the open — an open toolkit for working with all things markdown site operations.
+
+These missions set the course; they do not claim the work is finished. They serve the README and PRD: an agent-native CMS for markdown sites, with a human publish gate. The earlier incomplete §1 sentence — "zer0-CMS turns a repository of markdown into something you can actually operate" — is absorbed into mission 2. Invariants in §2 (headless frontends, declared effects, suggest-by-default, no live LLMs in tests, and the rest) are unchanged. Every feature must trace to them.
+
+## 1. Requirements
+
+### Functional
+
+- FR1: An author can keep a long-form fiction project — including one book of a series — in the books library as a re-importable file tree (manifest, outline and chapter plan, chapters, act guides, character bible, continuity ledger with a timeline, style guide), open it in the studio's Books area, and continue it with the book assistant, whose every result is a suggestion a person reviews (`books.manage`, `books.write` in the capability ledger).
+- FR2: An author can carry a book's chapters — one book of a serial such as the books library's `cost-line` pilot — to a Substack publication, as drafts while they are in progress and as posts once marked published, keyed by each chapter's canonical URL so that a re-sync never makes a second post; by Substack's sanctioned routes (its post importer reading an RSS feed, or a paste-ready copy) by default, with any unofficial route behind the same adapter interface, off unless the deployment arms it.
+
+### Non-functional
+
+- NFR1: A book in the library round-trips through `import_books` and `export_books` byte for byte, and passes `books validate` with no errors.
+- NFR2: A Substack sync is designed for failure: it detects each failure as retryable or in doubt, contains it to its chapter, retries only failures that cannot have published (with backoff), ledgers a write in doubt as unconfirmed and refuses it until a person forces past it, and logs every outcome without a credential; credentials come from the environment only.
+
+## Feature catalog
+
+Every user-facing capability has a stable id in the feature catalog [`features/features.yml`](features/features.yml). Each entry names the PRD requirements it serves (`prd:`); the trace below is the reverse view.
+
+| ID | Feature | Status | Where | Requirements |
+| --- | --- | --- | --- | --- |
+| [ZER0-001](features/features.yml) | Wagtail admin: pages, revisions, media, workflows | shipped | route `/admin/` · [`content/README.md`](content/README.md) | TBD |
+| [ZER0-002](features/features.yml) | Agent suggestions, reviewed in the editor | shipped | route `/admin/suggestions/page/` · [`content/suggestions/services.py`](content/suggestions/services.py) | TBD |
+| [ZER0-003](features/features.yml) | Agent review as a moderation task | shipped | route `/admin/workflows/` · [`content/workflow/models.py`](content/workflow/models.py) | TBD |
+| [ZER0-004](features/features.yml) | Agent runs report | shipped | route `/admin/reports/agent-runs/` · [`content/agents/README.md`](content/agents/README.md) | TBD |
+| [ZER0-010](features/features.yml) | GraphQL API | shipped | route `/graphql/` · [`schemas/graphql/schema.graphql`](schemas/graphql/schema.graphql) | TBD |
+| [ZER0-011](features/features.yml) | REST API: agent runs, graph, suggestions, tools | shipped | route `/api/v2/docs/` · [`schemas/openapi/openapi.json`](schemas/openapi/openapi.json) | TBD |
+| [ZER0-012](features/features.yml) | MCP server over the one tool registry | shipped | route `/mcp/` · [`content/mcp_server/README.md`](content/mcp_server/README.md) | TBD |
+| [ZER0-013](features/features.yml) | Jekyll sites imported and exported byte for byte | shipped | [`content/importers/jekyll.py`](content/importers/jekyll.py) · [`content/README.md`](content/README.md) | TBD |
+| [ZER0-020](features/features.yml) | Health, readiness and version probes | shipped | route `/readyz` · [`content/ops/README.md`](content/ops/README.md) | TBD |
+| [ZER0-021](features/features.yml) | Request ids, the error envelope and structured logs | shipped | route `/api/v2/docs/` · [`content/ops/README.md`](content/ops/README.md) | TBD |
+| [ZER0-040](features/features.yml) | The studio: write, create and publish | shipped | route `/studio/write` · [`web/README.md`](web/README.md) | TBD |
+| [ZER0-041](features/features.yml) | The studio's review inbox and revisions | shipped | route `/studio/review` · [`web/README.md`](web/README.md) | TBD |
+| [ZER0-042](features/features.yml) | Agent runs with a live step timeline | shipped | route `/studio/ai` · [`web/README.md`](web/README.md) | TBD |
+| [ZER0-043](features/features.yml) | The studio's AI area: assistants, pipelines, output schemas, providers and models | shipped | route `/studio/ai` · [`content/ai/README.md`](content/ai/README.md) | TBD |
+| [ZER0-044](features/features.yml) | Briefs, conversations and the editor's AI panel | shipped | route `/studio/create/briefs` · [`content/ai/README.md`](content/ai/README.md) | TBD |
+| [ZER0-045](features/features.yml) | The studio's Outbox desk: the belt, arena trials and the claim desk | shipped | route `/studio/outbox` · [`content/outboxdesk/README.md`](content/outboxdesk/README.md) | TBD |
+| [ZER0-046](features/features.yml) | A site's Voice tab: every layer of its voice, who reads it, and the guard on a text | shipped | route `/studio/sites` · [`content/voice/README.md`](content/voice/README.md) | TBD |
+| [ZER0-047](features/features.yml) | Editorial directives become briefs, and the page that answers one closes it | shipped | route `/studio/sites` · [`content/sites/README.md`](content/sites/README.md) | TBD |
+| [ZER0-030](features/features.yml) | Metadata panel: front matter as typed controls | shipped | [`src/panel/panelProvider.ts`](src/panel/panelProvider.ts) · [`README.md`](README.md) | TBD |
+| [ZER0-031](features/features.yml) | Dashboard: every site's content in one place | shipped | [`src/dashboard/dashboardPanel.ts`](src/dashboard/dashboardPanel.ts) · [`README.md`](README.md) | TBD |
+| [ZER0-032](features/features.yml) | Governed publishing: draft → guard → approve → publish → ledger | shipped | [`src/core/governance/`](src/core/governance) · [`README.md`](README.md) | TBD |
+| [ZER0-033](features/features.yml) | Bundled MCP server for the editor's agents | shipped | [`src/mcp/server.ts`](src/mcp/server.ts) · [`README.md`](README.md) | TBD |
+| [ZER0-048](features/features.yml) | Missions in constitution §1 | planned | [`docs/constitution.md`](docs/constitution.md) | §1.1 |
+
+**Requirement → feature trace**
+
+| Requirement | Features |
+| --- | --- |
+| §1.1 | ZER0-048 |

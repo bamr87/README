@@ -10,11 +10,14 @@ location: Denver, CO
 name: Amr Abdel-Motaleb
 permalink: /about/bamr87/
 preview: /images/previews/amr-abdel-motaleb.png
-source_file: bamr87.md
-title: Amr Abdel-Motaleb
+source_file: pages/_about/profile/bamr87.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/profile/bamr87.md
+title: Amr Abdel-Motaleb — Software Architect & IT Journey Author
 twitter: bamr42
 website: https://it-journey.dev
 ---
+
 # Amr Abdel-Motaleb
 
 IT Wizard, Software Architect, and Tech Enthusiast based in Denver, CO. Creator of the [Zer0-Mistakes](https://github.com/bamr87/zer0-mistakes) Jekyll theme and the [IT-Journey](https://it-journey.dev) learning platform.
@@ -25,13 +28,11 @@ IT Wizard, Software Architect, and Tech Enthusiast based in Denver, CO. Creator 
 
 ## GitHub activity
 
-<!-- GitHub contribution calendar (bundled under assets/vendor/) -->
 <script src="{{ '/assets/vendor/github-calendar/github-calendar.min.js' | relative_url }}"></script>
 <link rel="stylesheet" href="{{ '/assets/vendor/github-calendar/github-calendar-responsive.css' | relative_url }}" />
 
-<!-- Prepare a container for your calendar. -->
 <div class="calendar" aria-label="GitHub contribution calendar for bamr87">
-    <!-- Loading stuff -->
+
     Loading the data just for you.
 </div>
 

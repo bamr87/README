@@ -66,7 +66,9 @@ rewards:
   - 🧩 Diagnosing a layered software stack
   - ⚖️ Handling game files legally
 skill_focus: infrastructure
-source_file: twin-rigs-03-waking-the-arcade.md
+source_file: pages/_quests/0100/twin-rigs-03-waking-the-arcade.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0100/twin-rigs-03-waking-the-arcade.md
 tags:
 - '0100'
 - raspberry-pi
@@ -76,7 +78,7 @@ tags:
 - main_quest
 - hands-on
 - gamified-learning
-title: Twin Rigs 03 Waking The Arcade
+title: 'Waking the Arcade: Bring Rewind Arcade to Life on the Pi'
 validation_criteria:
   completion_requirements:
   - retropi doctor reports no failures
@@ -100,7 +102,7 @@ By the end of this chapter you will:
 
 ## 🗺️ Quest Prerequisites
 
-- **[Chapter II](/quests/0011/twin-rigs-02-the-rewind-cabinet/)** — a healthy Pi running 64-bit Raspberry Pi OS with the desktop
+- **[[it-journey/pages/_quests/0011/twin-rigs-02-the-rewind-cabinet|Chapter II]]** — a healthy Pi running 64-bit Raspberry Pi OS with the desktop
 - **A monitor or TV, keyboard, and mouse** on the Pi for this chapter, because ES-DE needs a graphical session
 - **A USB gamepad** — a keyboard works for the first test
 
@@ -312,9 +314,9 @@ The reference build for this chapter is the public repository itself:
 
 It runs, but it still needs a keyboard and a patient owner. Next you turn it into a console.
 
-- ➡️ **Next chapter:** [Chapter IV — The Caravan Road](/quests/0101/twin-rigs-04-the-caravan-road/)
-- ⬅️ **Previous chapter:** [Chapter II — The Rewind Cabinet](/quests/0011/twin-rigs-02-the-rewind-cabinet/)
-- 👑 **Campaign hub:** [Epic Quest: The Twin Rigs](/quests/codex/twin-rigs/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/0101/twin-rigs-04-the-caravan-road|Chapter IV — The Caravan Road]]
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/0011/twin-rigs-02-the-rewind-cabinet|Chapter II — The Rewind Cabinet]]
+- 👑 **Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]]
 
 ## 📚 Resource Codex
 
@@ -325,6 +327,6 @@ It runs, but it still needs a keyboard and a patient owner. Next you turn it int
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Twin Rigs]] **Level hub:** [[Level 0100 - Frontend Development & Docker]] **Previous:** [[The Rewind Cabinet: Raise a Healthy Raspberry Pi]] **Next:** [[The Caravan Road: Turn the Pi into a Console]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]] **Level hub:** [[it-journey/pages/_quests/0100/README|Level 0100 - Frontend Development & Docker]] **Previous:** [[it-journey/pages/_quests/0011/twin-rigs-02-the-rewind-cabinet|The Rewind Cabinet: Raise a Healthy Raspberry Pi]] **Next:** [[it-journey/pages/_quests/0101/twin-rigs-04-the-caravan-road|The Caravan Road: Turn the Pi into a Console]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

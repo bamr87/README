@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Access to the API Documentation quest
 skill_focus: backend
-source_file: api-versioning.md
+source_file: pages/_quests/0111/api-versioning.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/api-versioning.md
 sub_title: 'Level 0111 (7) Quest: Main Quest - API Versioning'
 tags:
 - '0111'
@@ -83,7 +85,7 @@ tags:
 - backend
 - conceptual
 - gamified-learning
-title: GitHub versions its API via an Accept header (header versioning)
+title: 'API Versioning: URI, Headers, and Backward Compatibility'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -386,17 +388,17 @@ Throughout, **backward compatibility** within a version is sacred: once `v1` is 
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [API Documentation](/quests/0111/api-documentation/) - Document versions with OpenAPI
+- 🎯 [[it-journey/pages/_quests/0111/api-documentation|API Documentation]] - Document versions with OpenAPI
 
 **Explore Side Adventures**:
-- ⚔️ [Error Handling](/quests/0111/error-handling/) - The `410 Gone` and friends
-- ⚔️ [Rate Limiting](/quests/0111/rate-limiting/) - Another contract you must keep
+- ⚔️ [[it-journey/pages/_quests/0111/error-handling|Error Handling]] - The `410 Gone` and friends
+- ⚔️ [[it-journey/pages/_quests/0111/rate-limiting|Rate Limiting]] - Another contract you must keep
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [API Documentation](/quests/0111/api-documentation/)  
-**🏗️ System Engineer**: Explore [Error Handling](/quests/0111/error-handling/)  
-**🛡️ Security Specialist**: Check out [API Authentication](/quests/0111/api-authentication/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0111/api-documentation|API Documentation]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0111/error-handling|Error Handling]]  
+**🛡️ Security Specialist**: Check out [[it-journey/pages/_quests/0111/api-authentication|API Authentication]]
 
 ## 📚 Resources
 
@@ -426,6 +428,6 @@ Throughout, **backward compatibility** within a version is sacred: once `v1` is 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[REST Principles: Constraints, Resources, and Richardson Maturity]] **Unlocks:** [[API Documentation: OpenAPI, Swagger, and Contract-First]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0111 - API Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[REST Principles: Constraints, Resources, and Richardson Maturity]] **Unlocks:** [[it-journey/pages/_quests/0111/api-documentation|API Documentation: OpenAPI, Swagger, and Contract-First]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

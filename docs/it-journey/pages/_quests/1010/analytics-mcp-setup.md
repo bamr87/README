@@ -28,17 +28,6 @@ keywords:
   - analytics-data-api
 lastmod: '2026-06-14T18:00:00.000Z'
 layout: quest
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 📊 Data Analyst
-  - 🛠️ DevOps Engineer
-  primary_paths:
-  - DevOps Automation
-  - Web Analytics
-  skill_trees:
-  - MCP & AI Tooling
-  - Web Analytics
 learning_style: hands-on
 level: '1010'
 permalink: /quests/1010/analytics-mcp-setup/
@@ -64,17 +53,6 @@ quest_dependencies:
   unlocks_quests:
   - /quests/1010/query-traffic-with-mcp/
 quest_line: The Observability Path
-quest_mapping:
-  biome: Terminal
-  coordinates: '[10, 0]'
-  realm: Observability
-  region: Warrior
-quest_relationships:
-  child_quests: []
-  parallel_quests: []
-  parent_quest: null
-  sequel_quests:
-  - /quests/1010/query-traffic-with-mcp/
 quest_series: Measure & Master Your Site
 quest_type: main_quest
 rewards:
@@ -89,8 +67,9 @@ rewards:
   unlocks_features:
   - Live analytics access for your AI agent
 skill_focus: devops
-snippet: Give your agent eyes on the traffic.
-source_file: analytics-mcp-setup.md
+source_file: pages/_quests/1010/analytics-mcp-setup.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/analytics-mcp-setup.md
 sub_title: 'Level 1010 (10) Quest: Main Quest - Model Context Protocol'
 tags:
 - '1010'
@@ -101,7 +80,7 @@ tags:
 - hands-on
 - gamified-learning
 - observability
-title: 'Expect: type: service_account | has private_key: true'
+title: Connect Google Analytics to Your AI Agent via MCP
 validation_criteria:
   completion_requirements:
   - The google-analytics MCP server is registered and connects
@@ -114,6 +93,7 @@ validation_criteria:
   - Explain why GA_PROPERTY_ID differs from the G- measurement ID
   - Distinguish a service-account key from an OAuth client file
 ---
+
 ## 📖 The Legend Behind This Quest
 
 Your site has been quietly collecting analytics for months, but nobody reads them. In this quest you'll give your AI agent **eyes on the traffic** by connecting Google Analytics through a **Model Context Protocol (MCP)** server — the standard way agents gain new tools. By the end, you can ask your agent "how's traffic this week?" and it will actually know.
@@ -215,4 +195,4 @@ A successful run returns active users, sessions, and page views for your propert
 
 ## ➡️ Next Quest
 
-Your agent can see the traffic — now learn to ask it the right questions. Continue to **[Query Your Traffic with the GA MCP Tools](/quests/1010/query-traffic-with-mcp/)**.
+Your agent can see the traffic — now learn to ask it the right questions. Continue to **[[it-journey/pages/_quests/1010/query-traffic-with-mcp|Query Your Traffic with the GA MCP Tools]]**.

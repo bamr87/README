@@ -15,13 +15,16 @@ prerequisites:
 preview: /images/previews/deploy-to-github-pages.png
 sidebar:
   nav: docs
-source_file: github-pages.md
+source_file: pages/_docs/deployment/github-pages.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/deployment/github-pages.md
 tags:
 - github-pages
 - deployment
 - hosting
 title: Deploy to GitHub Pages
 ---
+
 # Deploy to GitHub Pages
 
 GitHub Pages provides free hosting for Jekyll sites with automatic builds on every push.
@@ -101,7 +104,7 @@ To use a custom domain:
 3. Check **Enforce HTTPS**
 4. Configure DNS at your domain registrar
 
-See [Custom Domain Setup](/docs/deployment/custom-domain/) for detailed DNS configuration.
+See [[zer0-mistakes/pages/_docs/deployment/custom-domain|Custom Domain Setup]] for detailed DNS configuration.
 
 ## Troubleshooting
 
@@ -180,8 +183,8 @@ This allows custom plugins and more build control.
 
 ## Next Steps
 
-- [Custom Domain Setup](/docs/deployment/custom-domain/)
-- [Netlify Deployment](/docs/deployment/netlify/) — For more hosting features
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Custom Domain Setup]]
+- [[zer0-mistakes/pages/_docs/deployment/netlify|Netlify Deployment]] — For more hosting features
 
 ## Technical Reference
 
@@ -191,7 +194,7 @@ For contributor-level details (deploy target module architecture, profile system
 
 ## See also
 
-- [[Deployment]]
-- [[Custom Domain Setup]]
-- [[Deploy to Netlify]]
-- [[Docker]]
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment]]
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Custom Domain Setup]]
+- [[zer0-mistakes/pages/_docs/deployment/netlify|Deploy to Netlify]]
+- [[zer0-mistakes/docker/README|Docker]]

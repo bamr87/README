@@ -1,0 +1,254 @@
+---
+source_file: docs/ISSUE-PIPELINE.md
+source_repo: bamr87/bamr87
+source_url: https://github.com/bamr87/bamr87/blob/main/docs/ISSUE-PIPELINE.md
+title: Issue Pipeline
+---
+# Issue Pipeline
+
+> The three-tier loop that turns an open issue into a merge-ready PR: label state machine, evidence bundles, caps, autonomy gates and the two human brakes.
+
+The loop that turns an **open issue** into a **merge-ready pull request**, in three tiers. Sibling of the [daily fleet-pulse loop](DAILY-ANALYSIS.md): that one fixes broken *workflows*, this one resolves *issues*.
+
+| | | |
+| --- | --- | --- |
+| **Workflow** | [`.github/workflows/issue-pipeline.yml`](../dot-github/workflows/issue-pipeline.yml) | daily 07:37 UTC + dispatch |
+| **Queue builder** | [`.github/scripts/dash-gen/issue_pipeline.py`](../dot-github/scripts/dash-gen/issue_pipeline.py) | `dash issues` |
+| **Evidence harness** | [`tools/issue-evidence.sh`](../tools/issue-evidence.sh) | `dash evidence <repo> <n>` |
+| **Tier contracts** | [`pipeline_contracts.py`](../dot-github/scripts/dash-gen/pipeline_contracts.py), [handoff](../dot-github/scripts/dash-gen/pipeline-handoff.schema.json) and [verdict](../dot-github/scripts/dash-gen/pipeline-verdict.schema.json) schemas | `dash issues handoff …`, `dash issues verdict …` |
+| **Config** | [`_data/fleet.yml`](../_data/fleet.yml) → `issue_pipeline:` | caps, taxonomy, autonomy |
+| **Snapshot** | `_data/issue_pipeline.yml` (committed) | rendered at `/issue-pipeline/` |
+| **Tests** | `python3 .github/scripts/dash-gen/test_issue_pipeline.py` | no network, no pytest |
+
+Issues reach the pipeline from people, from the fleet doctor's tickets, and — since 2026-10 — from the daily [repo scout](SCOUT.md), which walks a sample of repositories and files well-formed proposals (fix / update / feature) labelled from this taxonomy; they enter at intake like any other issue.
+
+## The three tiers
+
+### Tier 1 — intake
+
+Every open issue that is not already in the pipeline gets:
+
+1. **A real reproduction.** [`tools/issue-evidence.sh`](../tools/issue-evidence.sh)
+clones the repo into an isolated sandbox, installs its toolchain (its own `venv` / `node_modules` / `vendor/bundle`), and runs the project's own lint, test, and build. Output, timings, and exit codes are captured per phase.
+2. **Structured content to pass on** — the thing that makes tiers 2 and 3 cheap:
+log excerpts trimmed to the failing lines, a screenshot for stacks that render one, an environment table (toolchain versions, commit SHA, OS), and a list of candidate files ranked by how many of the issue's terms they contain.
+3. **A rewritten body** in the house template — context, reproduction, expected
+vs actual, scope, mechanically checkable acceptance criteria, references — with the reporter's original words preserved verbatim in a collapsed section.
+4. **Labels**: type, priority, size, plus an assignee.
+5. **A decision**: `agent:ready` (tier 2 may implement it) or `agent:blocked` with one specific question and a recommendation.
+6. **A handoff**, recorded by a deterministic step after the agent, never by it: the issue, its repo, its checkbox acceptance criteria, its evidence bundle and its size, as `issue-pipeline-handoff/v1` ([contracts](#contracts-between-tiers)).
+
+### Tier 2 — implement
+
+Takes an `agent:ready` issue whose handoff passes the [contract](#contracts-between-tiers) (one that fails never reaches the work order and moves to `agent:blocked` with the reason), implements it on `agent/issue-<n>`, and opens a **draft** PR — in the hub, or in the submodule that owns the code. Tests and docs are part of the change, not a follow-up: the PR body must show the test failing before and passing after. The issue moves to `agent:in-pr`.
+
+**Visual repos.** When the target declares a visual-evidence standard (zer0-mistakes: `.github/skills/visual-evidence/SKILL.md`), the artifacts that standard asks for — generated before/after evidence and refreshed pixel baselines — are part of the change too, and they can only be *rendered*: inside a Playwright Docker image against a live site. **The runner has Docker**, and the tier's allowlist includes `docker`, `node`, `ruby`, `curl` and the repo's `test/` and `scripts/` entry points, so the agent runs the repo's tooling (`python3 scripts/ci/visual_evidence_autogen.py all --base origin/main`) before opening the PR. That is what makes a UI PR green on its **first** CI run. This was learned from [bamr87/zer0-mistakes#454](https://github.com/bamr87/zer0-mistakes/pull/454): an agent that believed Docker was gated shipped a README in place of the montages and left nine stale baselines that three passes could diagnose but none could refresh. The repo side of the fix is zer0-mistakes' `visual-evidence-autogen.yml`, which renders whatever an author could not; the hub side is this allowlist and prompt.
+
+### Tier 3 — complete
+
+Drives a pipeline PR to genuinely mergeable: CI green (root cause fixed, never `continue-on-error`), tests covering the change, docs and `SCHEMA.md` rows current, body accurate. Then it posts a per-criterion verdict, and only when `dash issues verdict check` passes does it run `gh pr ready` and move the issue to `agent:done`; a deterministic backstop reverts both when the check fails ([contracts](#contracts-between-tiers)).
+
+A red pixel-snapshot or evidence-gate check on a visual repo is a producible artifact, not a code bug: tier 3 runs the same Docker-based tooling as tier 2, **looks at the expected/actual/diff montage**, and regenerates baselines only when the diff is the change the PR describes. A diff that is not the described change is a regression to fix, never to bless.
+
+**It never merges.** Handing over a green, reviewable PR is the end of the pipeline.
+
+## Contracts between tiers
+
+A label plus prose is not a handoff. Tier 1 used to mark an issue `agent:ready` and tier 2 took its word for it; tier 3 wrote that every acceptance criterion was met, in its own words, and labelled the issue `agent:done`. Nothing checked either claim ([ADP-01](agentic-patterns/patterns/01-prompt-chaining.md), [ADP-11](agentic-patterns/patterns/11-goal-setting-and-monitoring.md)). Two contracts in [`pipeline_contracts.py`](../dot-github/scripts/dash-gen/pipeline_contracts.py) close that, each enforced by a deterministic step rather than by the agent that made the claim. Both judge the same thing: the issue's **checkbox acceptance criteria**. When the body has an `Acceptance criteria` (or `Definition of done`, `Done when`) section holding checkboxes, those are the criteria; otherwise every checkbox is. The reporter's original, preserved below the house template's marker, fenced code and plain bullets never count.
+
+### The handoff: tier 1 → tier 2
+
+`issue-pipeline-handoff/v1`, [`pipeline-handoff.schema.json`](../dot-github/scripts/dash-gen/pipeline-handoff.schema.json):
+
+| Field | Rule |
+| --- | --- |
+| `issue` | `owner/repo#N`, and it is the issue being checked |
+| `owner_repo` | the issue's own repo, owned by the hub's owner: tier 2 opens its PR there |
+| `acceptance_criteria` | at least one checkbox criterion |
+| `evidence` | the last evidence bundle a trusted author (owner, member, collaborator or a bot) posted on the issue (`key` for this issue, `at`, `url`), or `null` when none was built; a stranger's evidence marker is ignored, so a comment naming another issue cannot get this one blocked |
+| `size` | one of the size labels |
+
+1. **Recorded after tier 1.** `dash issues handoff record` builds the handoff for each issue on tier 1's queue that the agent left at `agent:ready`, uploads it as the `issue-handoffs` artifact, and records it on the issue: appended to tier 1's marker comment between hidden markers, replaced in place on a later run.
+2. **Checked before tier 2.** The queue builder rebuilds the handoff from the issue as it stands (a person may have edited it since) and validates it, and it checks that the handoff tier 1 recorded is bound to this issue: one copied from another issue, or carried along by a transfer, names another `issue` or `owner_repo`. Only the capped tier-2 shortlist is checked, so it costs no extra request.
+3. **A failure is held back and blocked.** The issue is left out of `issue-workorder-t2.md` (listed at its end with the reasons) and reported in the snapshot's `handoff:` block, and tier 2's next step moves it to `agent:blocked`, off `agent:ready`, with a comment naming each problem. Its slot is not refilled that run. Fix the issue, then put `agent:ready` back; tier 2 checks it again.
+
+A dry run (`dry_run: true`) shows the check in the scan summary without blocking anything. `dash issues handoff check --repo R --issue N` runs it read-only on one issue. On 2026-11-15, 34 of the 35 issues then at `agent:ready` passed; the one that failed had its acceptance criteria as plain bullets.
+
+### The verdict: tier 3 → `agent:done`
+
+`issue-pipeline-verdict/v1`, [`pipeline-verdict.schema.json`](../dot-github/scripts/dash-gen/pipeline-verdict.schema.json). Tier 3 posts it on the PR as a fenced code block with the info string `pipeline-verdict`, holding a JSON array with one entry per checkbox criterion of every issue the PR closes:
+
+| Field | Rule |
+| --- | --- |
+| `issue` | `owner/repo#N`, or `#N` for the PR's own repo |
+| `criterion_text` | the criterion verbatim (`dash issues verdict template` prints them); matched ignoring case, code and emphasis marks, whitespace runs and trailing punctuation |
+| `status` | `met`, `unmet` or `unverifiable` |
+| `evidence` | required for `met`: a test id that names a test (the path of a test or spec file, optionally with `::name`, `[param]` or `:line`, such as `tools/test_x.py::test_y` or `spec/x_spec.rb:42`, or a `::`-qualified id with a test or spec name in it), a run URL, or a line anchor (`path#L10-L20`); a word such as `tested` or `manual-test` is not a test id, and prose is not evidence |
+| `note` | optional, not checked |
+
+`dash issues verdict check --repo R --pr N` reads the last such block from a trusted author (owner, member, collaborator or a bot; anyone can comment on a public PR) and exits 0 only when every criterion of every issue has exactly one entry and all of them are `met` with evidence. A missing, duplicate or unlisted entry fails, and so does an issue with no checkbox criteria: it is `unverifiable`, because there is nothing to check a claim against. Tier 3 may run `gh pr ready` and apply `agent:done` only after the check passes; otherwise the PR stays a draft with the unmet list. After tier 3, `dash issues verdict backstop` re-checks every PR on its queue that was a draft at the scan and is ready now, or whose issue gained `agent:done` since the scan. Where the check fails, the PR goes back to draft, that `agent:done` comes off, and the PR gets the unmet list. A PR that was already ready before the run, or an earlier run's `agent:done`, is left alone.
+
+## State lives in labels
+
+```
+        ┌──────────┐   T1 enriches    ┌─────────────┐   T2 implements   ┌──────────────┐
+new ───▶│ (no tag) │ ───────────────▶ │ agent:ready │ ────────────────▶ │ agent:in-pr  │
+        └──────────┘                  └─────────────┘                   └──────────────┘
+              │                              │                                  │
+              │ human gap                    │ spec contradicts code            │ T3: CI green
+              ▼                              ▼                                  ▼
+        ┌───────────────┐             ┌───────────────┐                  ┌────────────┐
+        │ agent:blocked │◀────────────│ agent:blocked │                  │ agent:done │
+        └───────────────┘             └───────────────┘                  └────────────┘
+```
+
+Stage is **derived from labels**, so every run reconciles current state instead of replaying events. That is deliberate:
+
+- a cancelled run, a missed webhook, or a token that stopped firing downstream events costs one cycle of latency, not a stuck issue;
+- a human re-queues, skips, or stops any issue by editing one label — no tooling, no commit;
+- the pipeline is idempotent, so re-running it is always safe.
+
+This repo has already lost three weeks of fleet data to a silently broken `workflow_run` chain. The sweep design is the direct answer to that.
+
+### The two human brakes
+
+| Label | Effect |
+| --- | --- |
+| `agent:hold` | The issue is excluded from **every** tier. Nothing touches it. |
+| `human-review` | Tiers 1 and 2 run in full; tier 3 finishes all the work and then **leaves the PR as a draft** with a comment, instead of marking it ready. |
+
+`human-review` is the tag referenced by "assuming human review is not required via tag": without it a completed PR is marked ready for review automatically; with it, a person makes that call.
+
+Some issues get `human-review` behaviour without the label — `assisted` autonomy is forced for `security` types and `size:xl` issues (configurable under `issue_pipeline.autonomy`).
+
+### The human's order
+
+Labels say *where* an issue is; they cannot say *which comes first*, and the pipeline computes priority rather than reading a `priority:` label (T1 writes that label from its own score). [`_data/work_queue.yml`](../_data/work_queue.yml) is where a person overrules both. A key in its `order:` list goes ahead of every unpinned issue in its tier, in that order (still within the per-repo and cross-repo sub-caps). A `priority:` entry replaces the computed priority, which T1's work order then applies as the label. The [Work board](WORK-BOARD.md) (`/work`) writes the file by drag and drop and shows the next run's cut line before you commit. The snapshot carries every open issue under `backlog:` and every pipeline PR under `pipeline_prs:`, so the board can show what waits behind the capped queues.
+
+### An expedite sprint's items
+
+While `_data/fleet.yml` `budget.sprints` declares an active [expedite sprint](EXPEDITE-SPRINTS.md#the-sprint-ceiling-and-circuit-breaker) (constitution § 27), every issue and pipeline PR in its repositories is a sprint item. On a schedule, the sprint's switch `vars.EXPEDITE_SPRINT_ENABLED` = `'false'` holds them all out of the queues (`sprint-off`); a dispatch bypasses it. The item a closed sprint declared stays held until a new declaration. A held item takes no slot. The scan reserves for the whole run: on the capped queues, in tier order, each tier job this run starts (`--run-tiers`; none on a dry run) that can run a sprint item reserves its full `budget.call_sites` cap (T1 $40, T2 $60, T3 $60) against the sprint's ceiling, and a tier that does not fit loses its sprint items (`budget-skip`). Tier 2 counts as able to run one when its queue holds a sprint issue or tier 1's does, since tier 1 may mark that issue `agent:ready` before tier 2 re-scans. The re-scan, a new process, is handed the room the scan reserved for it (`--sprint-grant`, the scan's `sprint_t2_usd` output) and runs sprint items only inside it, settling no other tier; an item that reached `agent:ready` some other way waits for the next run.
+
+The tier jobs batch several issues in one session, so no ledger attributes their cost to a sprint item; the caps they were allowed are the estimate. A scan that reserved anything records it as a row in the snapshot's `sprint.reservations` (`--record-run`, the run id and attempt), and carries every earlier row of a sprint still declared, read from its checkout, from the hub's default branch as it is now and from the publish fallback branch `chore/issue-pipeline`; a record it cannot read stops the scan. The next run, the loop runner and JEV count those rows as the sprint's estimated spend. The tier jobs gate on the record (`sprint_record`, the attempt whose snapshot was published): tier 1 or tier 3 with a sprint item in its queue runs only in that attempt, and tier 2's re-scan gets its room only then. A re-run of a failed tier job, or a run whose snapshot did not publish, therefore spends nothing on sprint items: tier 1 and tier 3 skip that queue whole, and tier 2 runs only its other items. The snapshot's `sprint:` block also lists the active sprint, its spend, this run's reservation by tier, every held item and the circuit breaker's events. A declaration that bounds nothing stops the scan before any API call.
+
+### Prerequisites before dependents
+
+An issue names its prerequisites in its body: `Blocked by #12`, `Depends on bamr87/other#3, #4 and #5` (case-insensitive; a bare `#n` is the same repo; refs inside fenced code are ignored). GitHub's native blocked-by links are added when the issue's list payload counts some (`issue_dependencies_summary`), one request each; a 404 or 403 leaves the body refs alone. After every repo is swept, `resolve_dependencies` gives each issue `blocked_by` (every ref), `open_blockers` (those still open), `open_dependents`, `dep_boost` and `deps_reason`:
+
+- **An open blocker keeps the issue off the T2 queue.** It stays `agent:ready`, and the backlog and the [Work board](WORK-BOARD.md) show `deps_reason` (`blocked by bamr87/x#12`). Intake is not held back: enriching a blocked issue is still useful. Closing the blocker releases it on the next run.
+- **A prerequisite goes first within its priority band.** The sort is `rank`, priority, `dep_boost` (open dependents, capped by `dependencies.boost_cap`), readiness, age. The boost never crosses a band: a P2 that unblocks three issues still waits behind a P1, because priority is the statement of urgency and the boost only orders work inside it. A pinned `rank` beats both.
+- **Cycles are reported, not looped on.** A walk that visits each issue once finds them; every member gets `deps_reason: dependency cycle: A → B → A` and none reaches T2 until a human breaks the cycle. The run log and the snapshot's `dependencies.cycles` list them.
+- **State costs almost nothing.** A ref in the sweep is open; a ref to a swept repo that is not in the sweep is closed. Only refs to repos outside the sweep cost a request, and they share `dependencies.max_lookups` with the native fetches. A ref that cannot be resolved never blocks; it is listed under `dependencies.unresolved`.
+
+Sub-issue links are not read as blockers: a parent epic is not blocked by its children. Order an epic's phases with `Blocked by` on each sub-issue.
+
+## What is deterministic vs what the AI decides
+
+Everything selective happens in Python, before any model runs:
+
+| Decided in code | Decided by the agent |
+| --- | --- |
+| which issues are in this run's queue | what the evidence actually means |
+| stage, from labels | how to write the spec |
+| type, priority, size, owner, autonomy | the implementation |
+| the gap list, and who can close each | ready vs blocked, and why |
+| caps and the cross-repo sub-cap | the root cause of a red check |
+| marker-based dedupe | |
+| the handoff check: criteria, owner repo, size, evidence | the acceptance criteria themselves (tier 1) |
+| the verdict check: one `met` with evidence per criterion | each criterion's verdict and its evidence (tier 3) |
+
+The agents act on a pre-vetted, capped, deduped list — the same guarantee that keeps the remediation loop from spamming the fleet. An agent that misreads a signal wastes a review, not a weekend.
+
+### Scoring
+
+- **Priority** — a base per type, plus severity keywords, plus a bump when the
+repo's CI is already red (from `_data/fleet_triage.yml`), plus repo status, engagement, and a capped age factor → `P0`–`P3`.
+- **Readiness** — `100 − Σ gap weights`. Below `readiness.min_score` (70), tier 1 must not pass the issue on.
+- **Gaps** carry `by: agent` (closable from the code and the evidence) or
+`by: human` (a product decision no evidence resolves). A remaining `human` gap is precisely what makes an issue `agent:blocked` rather than `agent:ready`.
+
+## Caps and cost
+
+From [`_data/fleet.yml`](../_data/fleet.yml):
+
+| Cap | Default | Why |
+| --- | --- | --- |
+| `tiers.intake.max_issues` | 8 | issues enriched per run |
+| `tiers.intake.max_per_repo` | 3 | one noisy backlog can't consume the run |
+| `tiers.implement.max_issues` | 3 | draft PRs opened per run |
+| `tiers.implement.max_cross_repo` | 2 | bounds PRs landing outside the hub |
+| `tiers.complete.max_prs` | 4 | PRs driven toward mergeable per run |
+| `evidence.max_runs` | 6 | sandboxes built per run — the expensive half |
+| `evidence.ttl_days` | 7 | a newer bundle is reused, not rebuilt |
+| `evidence.timeout_minutes` | 8 | per **phase**; the step's own timeout is the hard ceiling |
+| `dependencies.boost_cap` | 3 | most open dependents that still raise a prerequisite |
+| `dependencies.max_lookups` | 20 | REST calls per run for native links and refs outside the sweep |
+
+## Latency, stated plainly
+
+Tier 2 **re-scans** at the start of its job, so an issue enriched by tier 1 can be implemented in the *same* run.
+
+Tier 3 works from the queue `scan` built at the start of the run, because a PR opened minutes ago has no settled CI to read. **A PR opened by tier 2 therefore gets its tier 3 pass on the next run.** To finish one sooner, dispatch the workflow with `tiers: 3` once its checks have gone green.
+
+## Tokens
+
+| Secret | Needed for |
+| --- | --- |
+| `CLAUDE_CODE_OAUTH_TOKEN` | all three agent tiers (OAuth-first house convention; `ANTHROPIC_API_KEY` is the fallback) |
+| `FLEET_TOKEN` | cross-repo PRs — **and** any PR whose CI must actually run |
+
+GitHub does not fire workflow events for refs pushed with `GITHUB_TOKEN`, so a PR opened with it arrives **with no checks** and tier 3 has nothing to read. The workflow probes `FLEET_TOKEN` for real (`gh api user`) rather than checking that it is merely set — a set-but-expired token has silently degraded this fleet's automation before — and reports the degradation in the run summary.
+
+## Operating it
+
+```bash
+# See the queues without touching anything
+tools/dash issues --print
+
+# Just one repo
+tools/dash issues --repos bamr87/it-journey --no-snapshot --print
+
+# Create/refresh the label taxonomy (dry-run by default)
+tools/dash issues --sync-labels            # preview
+tools/dash issues --sync-labels --apply    # write
+
+# Would tier 2 take this issue? (the handoff check, read-only)
+tools/dash issues handoff check --repo bamr87/it-journey --issue 42
+
+# Tier 3's verdict for a pipeline PR: the block to fill in, then the check
+tools/dash issues verdict template --repo bamr87/it-journey --pr 57
+tools/dash issues verdict check --repo bamr87/it-journey --pr 57
+
+# Build one issue's evidence bundle locally
+tools/dash evidence bamr87/it-journey 42
+open .evidence/it-journey-42/evidence.md
+
+# Run the tests
+python3 .github/scripts/dash-gen/test_issue_pipeline.py
+```
+
+Dispatch inputs: `tiers` (`all`/`1`/`2`/`3`/`1-2`/`2-3`), `repos`, the three cap overrides, `sync_labels` (fleet-wide taxonomy refresh), and `dry_run` (scan and publish the queues, run no agent).
+
+## Safety properties
+
+- **Draft PRs only. No tier may merge.** `autonomy.never_merge` is `true` and every prompt says so explicitly.
+- **Nothing under `projects/` is ever edited** — those are submodule working trees. Cross-repo work happens in a scratch clone.
+- **Claims are checked, not trusted.** Tier 2 starts only from an issue whose handoff passes, and tier 3's "done" is a verdict a script checks, with a backstop that reverts it ([contracts](#contracts-between-tiers)).
+- **Issue text is never executed.** Anyone can open an issue and the runner holds
+a fleet token, so `issue-evidence.sh` *extracts and reports* candidate repro commands but only runs what a caller passes via `--cmd`. The issue body reaches the harness through a file, never through argv.
+- **Credentials are scrubbed** from every log the harness writes, and the clone
+command is redacted before it is echoed — the logs are published as artifacts and quoted into issue comments.
+- **Generated surfaces are off-limits** to tier 2 and 3 (`_site/`, `_reports/`,
+`_data/*_usage.yml`, `_data/fleet_triage.yml`, `_data/issue_pipeline.yml`, the README AUTO span, `projects/SCHEMA.md`).
+- **No bare `git push` to a protected branch** — the snapshot publishes through
+[`utilities/publish-data`](../dot-github/actions/utilities/publish-data/action.yml), which falls back to a pull request.
+- **Turn the whole thing off** with `issue_pipeline.enabled: false` in `_data/fleet.yml`.
+
+## See also
+
+- [`docs/DAILY-ANALYSIS.md`](DAILY-ANALYSIS.md) — the workflow-fixing sibling loop
+- [`docs/AI-INTEGRATION.md`](AI-INTEGRATION.md) — Claude auth and the AI surfaces
+- [`docs/DASH.md`](DASH.md) — the dash architecture
+- [`docs/WORK-BOARD.md`](WORK-BOARD.md) — reorder and reprioritise the queues by drag and drop
+- [`docs/ESTIMATION.md`](ESTIMATION.md) — issues as client engagements
+- [`docs/EVALS.md`](EVALS.md) — tier 1's eval set (`evals/t1-intake/`): past intakes and the exit that stood, rerun when this workflow changes

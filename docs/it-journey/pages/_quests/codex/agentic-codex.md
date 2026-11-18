@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - The Grand Capstone — Trial of the Agentic Codex
 skill_focus: ai-ml
-source_file: agentic-codex.md
+source_file: pages/_quests/codex/agentic-codex.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/codex/agentic-codex.md
 tags:
 - '1100'
 - github-copilot
@@ -82,7 +84,7 @@ tags:
 - mcp
 - ci-cd
 - project-based
-title: Agentic Codex
+title: 'Epic Quest: The Agentic Codex'
 validation_criteria:
   completion_requirements:
   - All six chapters completed and their domain seals broken
@@ -116,24 +118,24 @@ Play in order. Weights cite Learn ranges only.
 
 | # | Chapter | Level | Domain (Learn weight) | Difficulty |
 |---|---|---|---|---|
-| I | [Initiation Rites: Agents in the SDLC](/quests/0111/agentic-codex-01-agents-in-the-sdlc/) | `0111` | D1 · Agentic AI in the SDLC (**15–20%**) | 🟡 Medium |
-| II | [Forging the Arsenal: Tool Use & Environment](/quests/1000/agentic-codex-02-tool-use-and-environment/) | `1000` | D2 · Tools & Environment (**20–25%**) | 🔴 Hard |
-| III | [Vaults of Recollection: Memory & State](/quests/1001/agentic-codex-03-memory-state-and-execution/) | `1001` | D3 · Memory, State & Execution (**10–15%**) | 🔴 Hard |
-| IV | [The Oracle Rubric: Evaluation & Tuning](/quests/1010/agentic-codex-04-evaluation-and-tuning/) | `1010` | D4 · Evaluation & Tuning (**15–20%**) | 🔴 Hard |
-| V | [The Council of Many: Multi-Agent Systems](/quests/1011/agentic-codex-05-multi-agent-coordination/) | `1011` | D5 · Multi-Agent Coordination (**15–20%**) | 🔴 Hard |
-| VI | [The Warden Pact: Guardrails & Accountability](/quests/1100/agentic-codex-06-guardrails-and-accountability/) | `1100` | D6 · Guardrails & Accountability (**10–15%**) | 🔴 Hard |
+| I | [[it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc\|Initiation Rites: Agents in the SDLC]] | `0111` | D1 · Agentic AI in the SDLC (**15–20%**) | 🟡 Medium |
+| II | [[it-journey/pages/_quests/1000/agentic-codex-02-tool-use-and-environment\|Forging the Arsenal: Tool Use & Environment]] | `1000` | D2 · Tools & Environment (**20–25%**) | 🔴 Hard |
+| III | [[it-journey/pages/_quests/1001/agentic-codex-03-memory-state-and-execution\|Vaults of Recollection: Memory & State]] | `1001` | D3 · Memory, State & Execution (**10–15%**) | 🔴 Hard |
+| IV | [[it-journey/pages/_quests/1010/agentic-codex-04-evaluation-and-tuning\|The Oracle Rubric: Evaluation & Tuning]] | `1010` | D4 · Evaluation & Tuning (**15–20%**) | 🔴 Hard |
+| V | [[it-journey/pages/_quests/1011/agentic-codex-05-multi-agent-coordination\|The Council of Many: Multi-Agent Systems]] | `1011` | D5 · Multi-Agent Coordination (**15–20%**) | 🔴 Hard |
+| VI | [[it-journey/pages/_quests/1100/agentic-codex-06-guardrails-and-accountability\|The Warden Pact: Guardrails & Accountability]] | `1100` | D6 · Guardrails & Accountability (**10–15%**) | 🔴 Hard |
 
 Source: [GH-600 study guide — Skills at a glance](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-600).
 
-> Every chapter ends in a hands-on lab (mostly `bash` / `jq` / `gh`). The [Grand Capstone](/quests/1100/agentic-codex-capstone-exam-trial/) gates behind all six chapters.
+> Every chapter ends in a hands-on lab (mostly `bash` / `jq` / `gh`). The [[it-journey/pages/_quests/1100/agentic-codex-capstone-exam-trial|Grand Capstone]] gates behind all six chapters.
 
 **Campaign XP (front matter):** hub `progression_points: 200`; chapters and capstone sum to roughly +600 across the series. The level-banner `6000–7000` range comes from the binary level hub (`1100` in `_data/quests/levels.yml`), not this campaign’s score — treat front-matter `progression_points` as the source of truth for Agentic Codex XP.
 
 ## Start here
 
-→ **[Chapter I — Initiation Rites: Agents in the SDLC](/quests/0111/agentic-codex-01-agents-in-the-sdlc/)**
+→ **[[it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc|Chapter I — Initiation Rites: Agents in the SDLC]]**
 
-Optional map: [GH-600 Study Hub](/notes/gh-600/) · [Skills checklist](/notes/gh-600/skills-checklist/) · [Implemented in IT-Journey](/notes/gh-600/implemented-in-it-journey/) · [Grand Capstone](/quests/1100/agentic-codex-capstone-exam-trial/)
+Optional map: [[it-journey/pages/_notes/gh-600/index|GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/skills-checklist|Skills checklist]] · [[it-journey/pages/_notes/gh-600/implemented-in-it-journey|Implemented in IT-Journey]] · [[it-journey/pages/_quests/1100/agentic-codex-capstone-exam-trial|Grand Capstone]]
 
 ## Study apparatus
 

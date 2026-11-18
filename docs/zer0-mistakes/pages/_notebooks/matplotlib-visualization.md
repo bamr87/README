@@ -9,11 +9,13 @@ jupyter_metadata: true
 lastmod: 2026-07-01 03:24:10+00:00
 layout: notebook
 permalink: /notebooks/matplotlib-visualization/
-source_file: matplotlib-visualization.md
+source_file: pages/_notebooks/matplotlib-visualization.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_notebooks/matplotlib-visualization.md
 tags:
 - jupyter
 - python
-title: Data Visualization with Matplotlib
+title: Matplotlib Visualization
 ---
 ---
 title: "Data Visualization with Matplotlib" description: "Create professional charts and visualizations from weather data using Python's Matplotlib library" date: 2025-01-27 lastmod: 2025-01-27 author: "Zer0-Mistakes Team" layout: notebook difficulty: intermediate tags: [python, matplotlib, visualization, data-science, charts] categories: [Notebooks, Tutorials] toc: true
@@ -251,4 +253,4 @@ In this tutorial, you learned:
 **Next steps:**
 - Try [Seaborn](https://seaborn.pydata.org/) for statistical visualizations
 - Explore [Plotly](https://plotly.com/python/) for interactive charts
-- Check out our [Python Statistics](/notebooks/python-statistics/) tutorial
+- Check out our [[zer0-mistakes/pages/_notebooks/python-statistics|Python Statistics]] tutorial

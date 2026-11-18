@@ -77,13 +77,16 @@ faq_items:
 lastmod: 2026-03-28 00:00:00+00:00
 layout: default
 permalink: /faq/
-source_file: faq.md
+source_file: pages/faq.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/faq.md
 tags:
 - faq
 - help
 - support
-title: Faq
+title: Frequently Asked Questions
 ---
+
 Find answers to common questions about the **zer0-mistakes** Jekyll theme below. Can't find what you're looking for? [Open a discussion](https://github.com/bamr87/zer0-mistakes/discussions) or [file an issue](https://github.com/bamr87/zer0-mistakes/issues).
 
 ---

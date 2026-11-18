@@ -15,13 +15,15 @@ keywords:
 - contributor stats
 lastmod: '2026-05-24T00:00:00.000Z'
 permalink: /stats/
-source_file: stats.md
+source_file: pages/stats.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/stats.md
 tags:
 - statistics
 - analytics
 - meta
 - content-metrics
-title: Stats
+title: IT-Journey Statistics Portal
 ---
 <div class="container my-5">
   <div class="row">
@@ -49,9 +51,8 @@ title: Stats
 
   {% if site.data.content_statistics %}
   
-  <!-- Overview Cards -->
   <div class="row g-4 mb-5">
-    <!-- Total Posts Card -->
+
     <div class="col-md-3">
       <div class="card h-100 border-primary">
         <div class="card-body text-center">
@@ -64,7 +65,6 @@ title: Stats
       </div>
     </div>
 
-    <!-- Total Categories Card -->
     <div class="col-md-3">
       <div class="card h-100 border-success">
         <div class="card-body text-center">
@@ -77,7 +77,6 @@ title: Stats
       </div>
     </div>
 
-    <!-- Total Tags Card -->
     <div class="col-md-3">
       <div class="card h-100 border-info">
         <div class="card-body text-center">
@@ -90,7 +89,6 @@ title: Stats
       </div>
     </div>
 
-    <!-- Data Freshness Card -->
     <div class="col-md-3">
       <div class="card h-100 border-warning">
         <div class="card-body text-center">
@@ -102,7 +100,6 @@ title: Stats
     </div>
   </div>
 
-  <!-- Categories Section -->
   <div class="row mb-5">
     <div class="col-lg-6">
       <div class="card">
@@ -124,7 +121,6 @@ title: Stats
       </div>
     </div>
 
-    <!-- Tags Section -->
     <div class="col-lg-6">
       <div class="card">
         <div class="card-header bg-success text-white">
@@ -146,7 +142,6 @@ title: Stats
     </div>
   </div>
 
-  <!-- Additional Metrics -->
   <div class="row mb-5">
     <div class="col-lg-12">
       <div class="card">

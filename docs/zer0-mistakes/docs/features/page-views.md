@@ -20,7 +20,9 @@ dependencies:
 description: How the theme tracks a page view and renders the count, with a local-first
   provider and an optional counter endpoint
 lastmod: 2026-08-23
-source_file: page-views.md
+source_file: docs/features/page-views.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/features/page-views.md
 tags:
 - features
 - analytics
@@ -29,6 +31,7 @@ tags:
 title: Page View Counter
 type: feature-implementation
 ---
+
 # Page View Counter
 
 ## Overview

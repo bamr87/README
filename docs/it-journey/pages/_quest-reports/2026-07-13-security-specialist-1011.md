@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29248386306
 slice: security-specialist/1011
-source_file: 2026-07-13-security-specialist-1011.md
+source_file: pages/_quest-reports/2026-07-13-security-specialist-1011.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-13-security-specialist-1011.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-13-security-specialist-1011.md
 tags:
 - security-specialist
 - level-1011
@@ -26,13 +28,14 @@ tags:
 - security-compliance
 theme: Security & Compliance
 tier: Warrior
-title: 2026 07 13 Security Specialist 1011
+title: Security Specialist · L1011 · 2026-07-13
 verdict: fail
 walk_date: '2026-07-13'
 ---
+
 > **Slice** `security-specialist/1011` · **Level** 1011 (Security & Compliance) · **Warrior tier** · **Engine verdict** ❌ fail (avg 66.0%) · **Walked** 2026-07-13
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29248386306) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-13-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-13-security-specialist-1011.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29248386306) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-13-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-13-security-specialist-1011.md)
 
 ---
 
@@ -40,13 +43,13 @@ walk_date: '2026-07-13'
 
 I walked a **5-quest window** (window 1 of 3, offset 5) of the Security Specialist's Level **1011 — Security & Compliance (Warrior tier)** as a learner, using the sealed machine evidence the workflow pre-computed in `--mode execute` (I did **not** re-run the engine). The window is a bimodal slice: the genuine security line (**Secure Coding**, 82% ✅ and **Threat Modeling**, 91% ✅) is technically sound and its runnable snippets behave as claimed, but the three AI/agentic quests that share the `1011` level code — **Multi-Agent Failure Recovery** (50% ❌), **AI Feature Pipeline Architect** (30% ❌, and `draft: true`), and **The Sealed Evidence** (77% ⚠️) — range from partially-broken to almost-entirely-non-functional when their code is actually executed.
 
-The headline verdict is **fail** for the slice as a walkable path: two of five quests have code that does not run as written (verified in the sandbox — a leaked Jekyll `{​% raw %​}` template in Actions YAML, a checkpoint-key naming mismatch, a nonexistent PyPI package, and five unimplemented stub classes), and a learner following the level in order hits those walls. The core Security-Mastery arc a security specialist would actually take is healthy; the failures are cross-listed non-security content swept in by level code. A maintainer's highest-value action is to fix (or de-list) the two failing quests and decide whether they belong on this character's path at all.
+The headline verdict is **fail** for the slice as a walkable path: two of five quests have code that does not run as written (verified in the sandbox — a leaked Jekyll `{% raw %}` template in Actions YAML, a checkpoint-key naming mismatch, a nonexistent PyPI package, and five unimplemented stub classes), and a learner following the level in order hits those walls. The core Security-Mastery arc a security specialist would actually take is healthy; the failures are cross-listed non-security content swept in by level code. A maintainer's highest-value action is to fix (or de-list) the two failing quests and decide whether they belong on this character's path at all.
 
 ## 🗺️ The Journey
 
 Quests in planner order (each: verdict · title · score · one-line takeaway):
 
-1. ❌ **When Familiars Fall: Multi-Agent Failure Recovery** — **50** — solid narrative, but both runnable artifacts fail in the sandbox (leaked `{​% raw %​}` tags, checkpoint-key mismatch, deprecated `::set-output`) and 3 referenced scripts are never provided.
+1. ❌ **When Familiars Fall: Multi-Agent Failure Recovery** — **50** — solid narrative, but both runnable artifacts fail in the sandbox (leaked `{% raw %}` tags, checkpoint-key mismatch, deprecated `::set-output`) and 3 referenced scripts are never provided.
 2. ❌ **AI Feature Pipeline Architect: DevSecOps Mastery Quest** — **30** — `draft: true`; reads well but 8 of its runnable snippets fail — nonexistent `mcp-client` package, wrong imports, and five unimplemented orchestrator stub classes. No working artifact is obtainable.
 3. ⚠️ **The Sealed Evidence: Slaying the Self-Grading Golem** — **77** — conceptually excellent security architecture (mint→seal→consume→restore) that hand-simulates correctly, but has **no runnable local lab** and one under-cited platform claim.
 4. ✅ **Secure Coding: Preventing the OWASP Top 10** — **82** — strongest hands-on quest; bcrypt/bandit/pip-audit/allowlist/command-injection snippets all run and behave as claimed. Two real bugs: `detect-secrets` scans only tracked files, and a `%s` SQL placeholder that fails on stdlib sqlite3.
@@ -60,7 +63,7 @@ All outcomes below come from the sealed `walk-evidence.json` (`executed: true`, 
 Dimensions: commands_work **2**, content_accuracy **2**, completeness **2**, clarity 3, structure 3, safety 5. Snippets run: **4/2 (2✗)**.
 - `passed` · mermaid Quest Network diagram parses.
 - **`failed`** · yaml `orchestrator-with-recovery.yml` — parses, but contains literal
-`${​% raw %​}{​{ steps.run.outputs.status }​}{​% endraw %​}` (×3): leaked Liquid templating that would land verbatim in a learner's `.github/workflows/*.yml` and silently break step-output interpolation.
+`${% raw %}{{ steps.run.outputs.status }}{% endraw %}` (×3): leaked Liquid templating that would land verbatim in a learner's `.github/workflows/*.yml` and silently break step-output interpolation.
 - **`failed`** · `python recovery_coordinator.py --results-dir ./results/ --task-id test-task-123`
 — with realistic downloaded-artifact JSON (`subtask1-result/subtask1-analysis.json`, `checkpoint_available=true`) the script produced strategy `redelegate`/task `unknown` instead of the expected `retry_from_checkpoint`, because `results.get(f"{agent_id}-result")` builds key `sub-agent-1-result` which never matches the `subtask1-*` naming used everywhere else in the same quest. Reproducible naming-mismatch bug that defeats the quest's core checkpoint-recovery objective even though the script exits 0.
 - `passed` · same script with empty results dir + both agents failed (degenerate path runs).
@@ -111,7 +114,7 @@ Dimensions: commands_work 4, content_accuracy 5, completeness 4, clarity 5, stru
 
 Every issue below is backed by a sandbox command result (`tested`) or an exact quoted line from the quest source (`reasoned`).
 
-**HIGH** · *Multi-Agent Failure Recovery* · Ch.2 YAML `orchestrator-with-recovery.yml` (lines 126, 161, 191–193) · **tested** — leaked `${​% raw %​}{​{ … }​}{​% endraw %​}` Jekyll tags sit inside GitHub Actions expressions; copy-pasted verbatim they break step-output interpolation. *Fix:* strip the `{​% raw %​}`/`{​% endraw %​}` wrappers so learners get clean `${​{ … }​}` syntax.
+**HIGH** · *Multi-Agent Failure Recovery* · Ch.2 YAML `orchestrator-with-recovery.yml` (lines 126, 161, 191–193) · **tested** — leaked `${% raw %}{{ … }}{% endraw %}` Jekyll tags sit inside GitHub Actions expressions; copy-pasted verbatim they break step-output interpolation. *Fix:* strip the `{% raw %}`/`{% endraw %}` wrappers so learners get clean `${{ … }}` syntax.
 
 **HIGH** · *Multi-Agent Failure Recovery* · Ch.3 `recovery_coordinator.py` line 245 · **tested** — `results.get(f"{agent_id}-result")` builds key `sub-agent-1-result` which never matches the `subtask1-result` artifact / `subtask1-*.json` path / `subtask1-analysis` stem used elsewhere, so checkpoint detection always falls through to `redelegate`. *Fix:* reconcile the artifact name, path glob, and lookup key on one scheme; verify with a fixture.
 
@@ -171,6 +174,6 @@ Net: the security specialist's *actual* Security & Compliance journey (fundament
 - **Coverage / limits:** This is **window 1 of 3** (offset 5) of a 12-quest level, so I
 saw 5 of 12 quests; `security-fundamentals` and the rest sit in other windows and were **not** walked here. OS-gated setup blocks (brew/winget/apt/snap) and credentialed CI steps (the `claude-run` CONSUME step) were correctly `skipped`, not failed — I did not treat those as defects. Conceptual quests (Threat Modeling, The Sealed Evidence) have few runnable snippets, so their scores lean more on `reasoned`/hand-simulated evidence than executed commands; I weighted their issues accordingly.
 - **Confidence:** High on the two executed failures (the naming-mismatch bug, the leaked
-`{​% raw %​}` tags, the nonexistent package, and the stub classes are concrete, reproducible sandbox results). Medium on the conceptual-quest gaps, which rest on static reasoning. I introduced no scores of my own and invented no output.
+`{% raw %}` tags, the nonexistent package, and the stub classes are concrete, reproducible sandbox results). Medium on the conceptual-quest gaps, which rest on static reasoning. I introduced no scores of my own and invented no output.
 
 _(Machine summary quoted verbatim from `./walk-evidence.md`: "5 quests evaluated · ✅ 2 pass · ⚠️ 1 warn · ❌ 2 fail · avg 66.0% · ~$3.4591".)_

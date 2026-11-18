@@ -26,7 +26,9 @@ slug: features
 social_media:
   og_type: article
   twitter_card: summary_large_image
-source_file: index.md
+source_file: pages/_about/features/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/features/index.md
 tags:
 - jekyll
 - theme
@@ -40,9 +42,10 @@ technical_requirements:
 - Ruby 2.7+ with Bundler
 - VS Code with GitHub Copilot (recommended)
 - Docker for containerized development
-title: Version Management
+title: Zer0-Mistakes Theme Features
 type: default
 ---
+
 ## 🤖 AI-Enhanced Theme Features Overview
 
 The Zer0-Mistakes theme is a **production-ready Jekyll theme** built on Bootstrap 5, featuring comprehensive automation, statistics tracking, and **VS Code Copilot-optimized developer tools** following IT-Journey principles.
@@ -78,7 +81,7 @@ Every feature embodies our core principles:
 | **Dark Mode Toggle** | ✅ Active | System-aware theme switching |
 | **Responsive Design** | ✅ Active | Mobile-first, all device support |
 | **Custom Theme Skins** | ✅ Active | Multiple color schemes available |
-| **[Back to Top Button](/about/features/add-floating-back-to-top-button/)** | ✅ Active | Mobile-optimized navigation |
+| **[[zer0-mistakes/pages/_about/features/add-floating-back-to-top-button\|Back to Top Button]]** | ✅ Active | Mobile-optimized navigation |
 | **Auto-Generated TOC** | ✅ Active | Smart table of contents |
 | **Floating Sidebars** | ✅ Active | Context-aware navigation |
 | **Code Syntax Highlighting** | ✅ Active | Rouge syntax highlighter |
@@ -103,8 +106,8 @@ Every feature embodies our core principles:
 {: .table .table-bordered .table-striped .table-hover .table-responsive}
 | Feature | Status | Documentation |
 | ----------------------------------------------------- | ----------- | ------------- |
-| **[Statistics Dashboard](/about/features/statistics-dashboard/)** | ✅ Active | Comprehensive site analytics |
-| **[Content Statistics Generator](/about/stats/)** | ✅ Active | Automated content metrics |
+| **[[zer0-mistakes/pages/_about/features/statistics-dashboard\|Statistics Dashboard]]** | ✅ Active | Comprehensive site analytics |
+| **[[zer0-mistakes/pages/_about/stats\|Content Statistics Generator]]** | ✅ Active | Automated content metrics |
 | **Category Analysis** | ✅ Active | Topic distribution tracking |
 | **Tag Cloud Visualization** | ✅ Active | Interactive tag displays |
 | **Word Count Tracking** | ✅ Active | Content volume metrics |
@@ -115,8 +118,8 @@ Every feature embodies our core principles:
 {: .table .table-bordered .table-striped .table-hover .table-responsive}
 | Feature | Status | Documentation |
 | ----------------------------------------------------- | ----------- | ------------- |
-| **[Comprehensive Gem Automation](/about/features/comprehensive-gem-automation-system/)** | ✅ Active | Complete build & release automation |
-| **[Automated Version System](/about/features/automated-version-build-system/)** | ✅ Active | Semantic versioning automation |
+| **[[zer0-mistakes/pages/_about/features/comprehensive-gem-automation-system\|Comprehensive Gem Automation]]** | ✅ Active | Complete build & release automation |
+| **[[zer0-mistakes/pages/_about/features/automated-version-build-system\|Automated Version System]]** | ✅ Active | Semantic versioning automation |
 | **CI/CD Workflows** | ✅ Active | GitHub Actions integration |
 | **Multi-Ruby Testing** | ✅ Active | Ruby 2.7, 3.0, 3.1, 3.2 |
 | **Automated Publishing** | ✅ Active | RubyGems release automation |
@@ -193,36 +196,36 @@ When working with Zer0-Mistakes features using VS Code Copilot:
 {: .table .table-bordered .table-striped .table-hover .table-responsive}
 | Feature Guide | Focus Area | AI Development Support | Complexity |
 |---------------|------------|----------------------|------------|
-| **[AI-Assisted Development Guide](/about/features/ai-development-guide/)** | **VS Code Copilot workflows & best practices** | ✅ **Complete AI integration guide** | 🟡 **Intermediate** |
-| **[Comprehensive Gem Automation System](/about/features/comprehensive-gem-automation-system/)** | Zero-click releases & CI/CD | ✅ Full AI integration | ⚔️ Advanced |
-| **[Automated Version Build System](/about/features/automated-version-build-system/)** | Semantic versioning automation | ✅ AI-assisted workflows | 🟡 Intermediate |
-| **[Statistics Dashboard](/about/features/statistics-dashboard/)** | Analytics & performance metrics | ✅ AI-powered insights | 🟡 Intermediate |
-| **[Back to Top Button](/about/features/add-floating-back-to-top-button/)** | UI component implementation | ✅ Copilot-friendly patterns | 🟢 Beginner |
-| **[Jekyll Technical Reference](/about/features/jekyll/)** | Core Jekyll integration | ✅ Command automation | 🟢 Beginner |
+| **[[zer0-mistakes/pages/_about/features/ai-development-guide\|AI-Assisted Development Guide]]** | **VS Code Copilot workflows & best practices** | ✅ **Complete AI integration guide** | 🟡 **Intermediate** |
+| **[[zer0-mistakes/pages/_about/features/comprehensive-gem-automation-system\|Comprehensive Gem Automation System]]** | Zero-click releases & CI/CD | ✅ Full AI integration | ⚔️ Advanced |
+| **[[zer0-mistakes/pages/_about/features/automated-version-build-system\|Automated Version Build System]]** | Semantic versioning automation | ✅ AI-assisted workflows | 🟡 Intermediate |
+| **[[zer0-mistakes/pages/_about/features/statistics-dashboard\|Statistics Dashboard]]** | Analytics & performance metrics | ✅ AI-powered insights | 🟡 Intermediate |
+| **[[zer0-mistakes/pages/_about/features/add-floating-back-to-top-button\|Back to Top Button]]** | UI component implementation | ✅ Copilot-friendly patterns | 🟢 Beginner |
+| **[[zer0-mistakes/pages/_about/features/jekyll-technical-reference\|Jekyll Technical Reference]]** | Core Jekyll integration | ✅ Command automation | 🟢 Beginner |
 
 ### 🎯 **Learning Pathways**
 
 **For Beginners** (🟢):
 
-1. Start with [Jekyll Integration Guide](/about/features/jekyll/)
-2. Implement [Back to Top Button](/about/features/add-floating-back-to-top-button/)
-3. Explore [Bootstrap component showcase](/about/theme/)
+1. Start with [[zer0-mistakes/pages/_about/features/jekyll-technical-reference|Jekyll Integration Guide]]
+2. Implement [[zer0-mistakes/pages/_about/features/add-floating-back-to-top-button|Back to Top Button]]
+3. Explore [[zer0-mistakes/pages/_about/theme|Bootstrap component showcase]]
 
 **For AI-Powered Development** (🤖):
 
-1. **Master [AI-Assisted Development Guide](/about/features/ai-development-guide/)** - Essential for VS Code Copilot workflows
+1. **Master [[zer0-mistakes/pages/_about/features/ai-development-guide|AI-Assisted Development Guide]]** - Essential for VS Code Copilot workflows
 2. Apply AI techniques to feature development and automation
 3. Contribute to AI development best practices
 
 **For Intermediate Developers** (🟡):
 
-1. Set up [Statistics Dashboard](/about/features/statistics-dashboard/)
-2. Configure [Automated Version System](/about/features/automated-version-build-system/)
+1. Set up [[zer0-mistakes/pages/_about/features/statistics-dashboard|Statistics Dashboard]]
+2. Configure [[zer0-mistakes/pages/_about/features/automated-version-build-system|Automated Version System]]
 3. Customize theme components with AI assistance
 
 **For Advanced Users** (⚔️):
 
-1. Implement [Complete Automation System](/about/features/comprehensive-gem-automation-system/)
+1. Implement [[zer0-mistakes/pages/_about/features/comprehensive-gem-automation-system|Complete Automation System]]
 2. Develop custom features using established patterns
 3. Contribute to the automation and AI integration systems
 

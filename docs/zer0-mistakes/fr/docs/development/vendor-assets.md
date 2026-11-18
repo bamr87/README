@@ -15,16 +15,19 @@ prerequisites: []
 preview: /images/previews/vendor-assets.png
 sidebar:
   nav: docs
-source_file: vendor-assets.md
+source_file: fr/docs/development/vendor-assets.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/vendor-assets.md
 tags:
 - assets
 - bootstrap
 - github-pages
-title: Ressources tierces (bundles locaux)
+title: Ressources tierces
 translated_from_sha: 7676f7374d66
 translation_of: pages/_docs/development/vendor-assets.md
 translation_source_url: /docs/development/vendor-assets/
 ---
+
 # Ressources tierces (bundles locaux)
 
 Les bibliothèques tierces (Bootstrap, jQuery, Bootstrap Icons, MathJax, Mermaid, Font Awesome, GitHub Calendar, etc.) sont **committées** sous `assets/vendor/`. **La build Jekyll par défaut de GitHub Pages n'exécute ni `npm` ni `curl`**, donc tout ce dont le thème a besoin à l'exécution doit être présent dans le dépôt (ou dans la gem publiée).
@@ -73,6 +76,6 @@ Après la mise à niveau des versions, mettez à jour `package.json` / le lockfi
 
 ## Voir aussi
 
-- [[Development]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
 - [[Bootstrap Integration]]
-- [[Dependency Updates]]
+- [[zer0-mistakes/pages/_docs/development/dependency-updates|Dependency Updates]]

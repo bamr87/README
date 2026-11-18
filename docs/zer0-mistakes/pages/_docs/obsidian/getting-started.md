@@ -9,13 +9,16 @@ lastmod: '2026-04-24T15:06:30Z'
 layout: default
 permalink: /docs/obsidian/getting-started/
 preview: /images/previews/getting-started-with-the-obsidian-vault.png
-source_file: getting-started.md
+source_file: pages/_docs/obsidian/getting-started.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/obsidian/getting-started.md
 tags:
 - obsidian
 - setup
 - vault
 title: Getting Started with the Obsidian Vault
 ---
+
 # Getting Started with the Obsidian Vault
 
 ## 1. Open the repository as a vault
@@ -87,10 +90,10 @@ Obsidian shows these fields in its **Properties** sidebar; the values map 1:1 to
 
 ## See also
 
-- [[Obsidian Vault Integration]]
-- [[Obsidian Syntax Reference]]
-- [[Obsidian Authoring Workflow]]
-- [[Obsidian Integration Troubleshooting]]
-- [[Obsidian Graph View]]
-- [[front-matter]]
-- [[Installation]]
+- [[zer0-mistakes/pages/_docs/obsidian/index|Obsidian Vault Integration]]
+- [[zer0-mistakes/pages/_docs/obsidian/syntax-reference|Obsidian Syntax Reference]]
+- [[zer0-mistakes/pages/_docs/obsidian/authoring-workflow|Obsidian Authoring Workflow]]
+- [[zer0-mistakes/pages/_docs/obsidian/troubleshooting|Obsidian Integration Troubleshooting]]
+- [[zer0-mistakes/pages/_docs/obsidian/graph|Obsidian Graph View]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]

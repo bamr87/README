@@ -1,0 +1,648 @@
+{
+  "schema_version": "1.0",
+  "engine_version": "1.0.0",
+  "project": "bashos",
+  "title": "BashOS",
+  "corpus": "docs/bashos",
+  "counts": {
+    "pages": 80,
+    "sections": 15,
+    "max_depth": 4,
+    "skipped": 0
+  },
+  "skipped": [],
+  "fingerprint": "d97d9acc627e6fd1",
+  "tree": {
+    "type": "section",
+    "title": "BashOS",
+    "index": "bashos/README.md",
+    "pages": 80,
+    "children": [
+      {
+        "type": "page",
+        "title": "bashOS (README)",
+        "path": "bashos/README.md",
+        "rel": "README.md",
+        "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "bashos (AGENTS)",
+        "path": "bashos/AGENTS.md",
+        "rel": "AGENTS.md"
+      },
+      {
+        "type": "page",
+        "title": "bashos (CLAUDE)",
+        "path": "bashos/CLAUDE.md",
+        "rel": "CLAUDE.md"
+      },
+      {
+        "type": "page",
+        "title": "bashOS tools",
+        "path": "bashos/tools/README.md",
+        "rel": "tools/README.md",
+        "folder": "tools"
+      },
+      {
+        "type": "page",
+        "title": "Changelog",
+        "path": "bashos/CHANGELOG.md",
+        "rel": "CHANGELOG.md"
+      },
+      {
+        "type": "page",
+        "title": "Contributing to bashOS",
+        "path": "bashos/CONTRIBUTING.md",
+        "rel": "CONTRIBUTING.md"
+      },
+      {
+        "type": "page",
+        "title": "Security Policy",
+        "path": "bashos/SECURITY.md",
+        "rel": "SECURITY.md"
+      },
+      {
+        "type": "section",
+        "title": "chui",
+        "rel": "chui",
+        "index": "bashos/chui/README.md",
+        "pages": 3,
+        "children": [
+          {
+            "type": "page",
+            "title": "chui",
+            "path": "bashos/chui/README.md",
+            "rel": "chui/README.md",
+            "is_index": true
+          },
+          {
+            "type": "section",
+            "title": "Documentation",
+            "rel": "chui/docs",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "Keyboard",
+                "path": "bashos/chui/docs/KEYS.md",
+                "rel": "chui/docs/KEYS.md"
+              },
+              {
+                "type": "page",
+                "title": "Rebuild / deploy",
+                "path": "bashos/chui/docs/REBUILD.md",
+                "rel": "chui/docs/REBUILD.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "Documentation",
+        "rel": "docs",
+        "index": "bashos/docs/README.md",
+        "pages": 26,
+        "children": [
+          {
+            "type": "page",
+            "title": "bashos documentation",
+            "path": "bashos/docs/README.md",
+            "rel": "docs/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "bashOS Services",
+            "path": "bashos/docs/SERVICES.md",
+            "rel": "docs/SERVICES.md"
+          },
+          {
+            "type": "page",
+            "title": "bashos \u2014 Constitution",
+            "path": "bashos/docs/constitution.md",
+            "rel": "docs/constitution.md"
+          },
+          {
+            "type": "page",
+            "title": "bashOS, the operating system",
+            "path": "bashos/docs/OS.md",
+            "rel": "docs/OS.md"
+          },
+          {
+            "type": "page",
+            "title": "bashOS: a reference architecture for the agent appliance",
+            "path": "bashos/docs/ARCHITECTURE.md",
+            "rel": "docs/ARCHITECTURE.md"
+          },
+          {
+            "type": "page",
+            "title": "one-os",
+            "path": "bashos/docs/ONE-OS.md",
+            "rel": "docs/ONE-OS.md"
+          },
+          {
+            "type": "page",
+            "title": "The bashOS Desktop",
+            "path": "bashos/docs/DESKTOP.md",
+            "rel": "docs/DESKTOP.md"
+          },
+          {
+            "type": "page",
+            "title": "The bashOS Desktop \u2014 a tour",
+            "path": "bashos/docs/DESKTOP-TOUR.md",
+            "rel": "docs/DESKTOP-TOUR.md"
+          },
+          {
+            "type": "page",
+            "title": "The bashOS Orchestration Harness",
+            "path": "bashos/docs/HARNESS.md",
+            "rel": "docs/HARNESS.md"
+          },
+          {
+            "type": "page",
+            "title": "The engine: OpenCode at the core of bashOS",
+            "path": "bashos/docs/OPENCODE.md",
+            "rel": "docs/OPENCODE.md"
+          },
+          {
+            "type": "page",
+            "title": "The Forge Pattern \u2014 dev-server monitoring as bashOS userland",
+            "path": "bashos/docs/FORGE.md",
+            "rel": "docs/FORGE.md"
+          },
+          {
+            "type": "section",
+            "title": "Amendments \u2014 bashos",
+            "rel": "docs/amendments",
+            "index": "bashos/docs/amendments/README.md",
+            "pages": 3,
+            "children": [
+              {
+                "type": "page",
+                "title": "Amendments \u2014 bashos",
+                "path": "bashos/docs/amendments/README.md",
+                "rel": "docs/amendments/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "0001 \u2014 Ratify the constitution",
+                "path": "bashos/docs/amendments/0001-ratify-constitution.md",
+                "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NNNN \u2014 Title of the amendment",
+                "path": "bashos/docs/amendments/0000-template.md",
+                "rel": "docs/amendments/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "Architecture Decision Records",
+            "rel": "docs/adr",
+            "index": "bashos/docs/adr/README.md",
+            "pages": 6,
+            "children": [
+              {
+                "type": "page",
+                "title": "Architecture Decision Records",
+                "path": "bashos/docs/adr/README.md",
+                "rel": "docs/adr/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "ADR 0001 \u2014 Record architecture decisions",
+                "path": "bashos/docs/adr/0001-record-architecture-decisions.md",
+                "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0002 \u2014 bashOS the OS is an Omarchy-style layer on Debian 13, imaged\u2026",
+                "path": "bashos/docs/adr/0002-bashos-os-debian-mkosi.md",
+                "rel": "docs/adr/0002-bashos-os-debian-mkosi.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0003 \u2014 bashOS by BASH Consulting is a fork of Omarchy, kept current\u2026",
+                "path": "bashos/docs/adr/0003-bashos-on-omarchy.md",
+                "rel": "docs/adr/0003-bashos-on-omarchy.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0004 \u2014 one-os lives in bashos: one tool to build, boot, manage and\u2026",
+                "path": "bashos/docs/adr/0004-one-os.md",
+                "rel": "docs/adr/0004-one-os.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR NNNN \u2014 Title in sentence case",
+                "path": "bashos/docs/adr/0000-template.md",
+                "rel": "docs/adr/0000-template.md"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "title": "bashOS L6 OS Shell \u2014 Frontend Docs",
+            "rel": "docs/frontend",
+            "index": "bashos/docs/frontend/README.md",
+            "pages": 6,
+            "children": [
+              {
+                "type": "page",
+                "title": "bashOS L6 OS Shell \u2014 Frontend Docs",
+                "path": "bashos/docs/frontend/README.md",
+                "rel": "docs/frontend/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "PostHog.com OS-Style Desktop Frontend \u2014 Research Brief",
+                "path": "bashos/docs/frontend/posthog-os-research.md",
+                "rel": "docs/frontend/posthog-os-research.md"
+              },
+              {
+                "type": "page",
+                "title": "PRD: bashOS L6 OS Shell (evolution of desktop GUI)",
+                "path": "bashos/docs/frontend/PRD-os-shell.md",
+                "rel": "docs/frontend/PRD-os-shell.md"
+              },
+              {
+                "type": "page",
+                "title": "Relation: desktop GUI (PR #20) \u2194 OS-shell evolution (this folder)",
+                "path": "bashos/docs/frontend/RELATION-TO-DESKTOP.md",
+                "rel": "docs/frontend/RELATION-TO-DESKTOP.md"
+              },
+              {
+                "type": "page",
+                "title": "ROADMAP: bashOS L6 OS Shell (on desktop GUI)",
+                "path": "bashos/docs/frontend/ROADMAP-os-shell.md",
+                "rel": "docs/frontend/ROADMAP-os-shell.md"
+              },
+              {
+                "type": "page",
+                "title": "SPEC: bashOS L6 OS Shell (evolution of gui/web)",
+                "path": "bashos/docs/frontend/SPEC-os-shell.md",
+                "rel": "docs/frontend/SPEC-os-shell.md"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "one-os",
+        "rel": "one-os",
+        "index": "bashos/one-os/README.md",
+        "pages": 40,
+        "children": [
+          {
+            "type": "page",
+            "title": "one-os (README)",
+            "path": "bashos/one-os/README.md",
+            "rel": "one-os/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "one-os (CLAUDE)",
+            "path": "bashos/one-os/CLAUDE.md",
+            "rel": "one-os/CLAUDE.md"
+          },
+          {
+            "type": "page",
+            "title": "one-os \u2014 Implementation Plan",
+            "path": "bashos/one-os/PLAN.md",
+            "rel": "one-os/PLAN.md"
+          },
+          {
+            "type": "page",
+            "title": "one-os \u2014 working notes for coding agents",
+            "path": "bashos/one-os/AGENTS.md",
+            "rel": "one-os/AGENTS.md"
+          },
+          {
+            "type": "section",
+            "title": "Documentation",
+            "rel": "one-os/docs",
+            "index": "bashos/one-os/docs/README.md",
+            "pages": 36,
+            "children": [
+              {
+                "type": "page",
+                "title": "one-os documentation",
+                "path": "bashos/one-os/docs/README.md",
+                "rel": "one-os/docs/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "Documentation tools",
+                "path": "bashos/one-os/docs/tools/README.md",
+                "rel": "one-os/docs/tools/README.md",
+                "folder": "one-os/docs/tools"
+              },
+              {
+                "type": "page",
+                "title": "Epic: bashOS and Amrchy as bootable systems",
+                "path": "bashos/one-os/docs/epics/0001-bashos-and-amrchy.md",
+                "rel": "one-os/docs/epics/0001-bashos-and-amrchy.md",
+                "folder": "one-os/docs/epics"
+              },
+              {
+                "type": "page",
+                "title": "Field report: SteamOS on an X870E desktop \u2014 \"No networks found\"",
+                "path": "bashos/one-os/docs/field-reports/2026-11-12-steamos-silent-network.md",
+                "rel": "one-os/docs/field-reports/2026-11-12-steamos-silent-network.md",
+                "folder": "one-os/docs/field-reports"
+              },
+              {
+                "type": "page",
+                "title": "Hardware checklist (PLAN \u00a79)",
+                "path": "bashos/one-os/docs/hardware-checklist.md",
+                "rel": "one-os/docs/hardware-checklist.md"
+              },
+              {
+                "type": "page",
+                "title": "Hardware results",
+                "path": "bashos/one-os/docs/hardware-results.md",
+                "rel": "one-os/docs/hardware-results.md"
+              },
+              {
+                "type": "page",
+                "title": "Phase 0 spike report",
+                "path": "bashos/one-os/docs/spike.md",
+                "rel": "one-os/docs/spike.md"
+              },
+              {
+                "type": "page",
+                "title": "Troubleshooting",
+                "path": "bashos/one-os/docs/troubleshooting.md",
+                "rel": "one-os/docs/troubleshooting.md"
+              },
+              {
+                "type": "section",
+                "title": "Adr",
+                "rel": "one-os/docs/adr",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "ADR-0001: Ventoy as the boot manager",
+                    "path": "bashos/one-os/docs/adr/0001-ventoy-as-boot-manager.md",
+                    "rel": "one-os/docs/adr/0001-ventoy-as-boot-manager.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "ADR-0002: Build a payload, not a dd image",
+                    "path": "bashos/one-os/docs/adr/0002-payload-not-dd-image.md",
+                    "rel": "one-os/docs/adr/0002-payload-not-dd-image.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "ADR-0003: File-based self-test hook",
+                    "path": "bashos/one-os/docs/adr/0003-selftest-hook-mechanism.md",
+                    "rel": "one-os/docs/adr/0003-selftest-hook-mechanism.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "ADR-0004: qemu-guest-agent as the VM control channel",
+                    "path": "bashos/one-os/docs/adr/0004-guest-agent-control-channel.md",
+                    "rel": "one-os/docs/adr/0004-guest-agent-control-channel.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Developer Guide",
+                "rel": "one-os/docs/developer-guide",
+                "pages": 4,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Architecture",
+                    "path": "bashos/one-os/docs/developer-guide/01-architecture.md",
+                    "rel": "one-os/docs/developer-guide/01-architecture.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Live VMs and debugging",
+                    "path": "bashos/one-os/docs/developer-guide/03-vm-tooling.md",
+                    "rel": "one-os/docs/developer-guide/03-vm-tooling.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Testing",
+                    "path": "bashos/one-os/docs/developer-guide/02-testing.md",
+                    "rel": "one-os/docs/developer-guide/02-testing.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Working with Claude Code",
+                    "path": "bashos/one-os/docs/developer-guide/04-claude-code.md",
+                    "rel": "one-os/docs/developer-guide/04-claude-code.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Operator Guide",
+                "rel": "one-os/docs/operator-guide",
+                "pages": 6,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Building the image",
+                    "path": "bashos/one-os/docs/operator-guide/02-building.md",
+                    "rel": "one-os/docs/operator-guide/02-building.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Flashing from the command line",
+                    "path": "bashos/one-os/docs/operator-guide/03-flashing-cli.md",
+                    "rel": "one-os/docs/operator-guide/03-flashing-cli.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Maintenance",
+                    "path": "bashos/one-os/docs/operator-guide/04-maintenance.md",
+                    "rel": "one-os/docs/operator-guide/04-maintenance.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Remote sessions: drive a machine and run Claude Code on it",
+                    "path": "bashos/one-os/docs/operator-guide/06-remote-sessions.md",
+                    "rel": "one-os/docs/operator-guide/06-remote-sessions.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "The flash wizard",
+                    "path": "bashos/one-os/docs/operator-guide/01-flash-wizard.md",
+                    "rel": "one-os/docs/operator-guide/01-flash-wizard.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "The network boot server (PXE)",
+                    "path": "bashos/one-os/docs/operator-guide/05-network-boot-server.md",
+                    "rel": "one-os/docs/operator-guide/05-network-boot-server.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "Reference",
+                "rel": "one-os/docs/reference",
+                "pages": 6,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Environment variables",
+                    "path": "bashos/one-os/docs/reference/environment.md",
+                    "rel": "one-os/docs/reference/environment.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Make targets",
+                    "path": "bashos/one-os/docs/reference/make-targets.md",
+                    "rel": "one-os/docs/reference/make-targets.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "manifest.yaml reference",
+                    "path": "bashos/one-os/docs/reference/manifest.md",
+                    "rel": "one-os/docs/reference/manifest.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "On-stick tools reference",
+                    "path": "bashos/one-os/docs/reference/stick-tools.md",
+                    "rel": "one-os/docs/reference/stick-tools.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "scripts/oneos-vm reference",
+                    "path": "bashos/one-os/docs/reference/oneos-vm.md",
+                    "rel": "one-os/docs/reference/oneos-vm.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Stick layout and ventoy.json",
+                    "path": "bashos/one-os/docs/reference/stick-layout.md",
+                    "rel": "one-os/docs/reference/stick-layout.md"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "title": "User Guide",
+                "rel": "one-os/docs/user-guide",
+                "pages": 8,
+                "children": [
+                  {
+                    "type": "page",
+                    "title": "Adding and updating ISOs",
+                    "path": "bashos/one-os/docs/user-guide/06-adding-isos.md",
+                    "rel": "one-os/docs/user-guide/06-adding-isos.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Booting on a PC",
+                    "path": "bashos/one-os/docs/user-guide/02-booting.md",
+                    "rel": "one-os/docs/user-guide/02-booting.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Getting started",
+                    "path": "bashos/one-os/docs/user-guide/01-getting-started.md",
+                    "rel": "one-os/docs/user-guide/01-getting-started.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Install an OS onto another drive",
+                    "path": "bashos/one-os/docs/user-guide/05-install-an-os.md",
+                    "rel": "one-os/docs/user-guide/05-install-an-os.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Install SteamOS",
+                    "path": "bashos/one-os/docs/user-guide/07-steamos.md",
+                    "rel": "one-os/docs/user-guide/07-steamos.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "Network install with netboot.xyz",
+                    "path": "bashos/one-os/docs/user-guide/04-network-install.md",
+                    "rel": "one-os/docs/user-guide/04-network-install.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "one-os quick reference",
+                    "path": "bashos/one-os/docs/user-guide/quick-reference.md",
+                    "rel": "one-os/docs/user-guide/quick-reference.md"
+                  },
+                  {
+                    "type": "page",
+                    "title": "The home base",
+                    "path": "bashos/one-os/docs/user-guide/03-home-base.md",
+                    "rel": "one-os/docs/user-guide/03-home-base.md"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "title": "os \u2014 bashOS as the operating system",
+        "rel": "os",
+        "index": "bashos/os/README.md",
+        "pages": 4,
+        "children": [
+          {
+            "type": "page",
+            "title": "os \u2014 bashOS as the operating system",
+            "path": "bashos/os/README.md",
+            "rel": "os/README.md",
+            "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "bashOS migrations",
+            "path": "bashos/os/migrations/README.md",
+            "rel": "os/migrations/README.md",
+            "folder": "os/migrations"
+          },
+          {
+            "type": "section",
+            "title": "os/image \u2014 the bootable bashOS image",
+            "rel": "os/image",
+            "index": "bashos/os/image/README.md",
+            "pages": 2,
+            "children": [
+              {
+                "type": "page",
+                "title": "os/image \u2014 the bootable bashOS image",
+                "path": "bashos/os/image/README.md",
+                "rel": "os/image/README.md",
+                "is_index": true
+              },
+              {
+                "type": "page",
+                "title": "bashOS first-boot seed (example)",
+                "path": "bashos/os/image/seed.example/README.md",
+                "rel": "os/image/seed.example/README.md",
+                "folder": "os/image/seed.example"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

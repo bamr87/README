@@ -56,7 +56,9 @@ rewards:
   - 🏆 Guild Member — Officially joined the Guild of Contributors
   progression_points: 200
 skill_focus: devops
-source_file: forge-your-character.md
+source_file: pages/_quests/0001/forge-your-character.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/forge-your-character.md
 tags:
 - '0001'
 - contributor
@@ -67,7 +69,7 @@ tags:
 - gamified-learning
 - hands-on
 - character-creation
-title: '⚔️ Forge Your Character: Crafting Your Contributor Identity'
+title: 'Forge Your Character: Crafting Your Contributor Identity'
 validation_criteria:
   completion_requirements:
   - Contributor data file exists in _data/contributors/
@@ -369,7 +371,7 @@ Your level is calculated from total XP:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Terminal Mastery: Conquering the Command-Line Realm]] · [[Git Workflow Mastery: Branches, Merging & Team Collaboration]] **Unlocks:** [[Avatar Forge: Crafting Your Digital Portrait]] · [[Badge Collector: Showcasing Your Achievements]] · [[Stats Dashboard: Enhancing Your Data Visualization]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0001/README|Level 001 - Journeyman Challenges]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[it-journey/pages/_quests/0001/terminal-mastery|Terminal Mastery: Conquering the Command-Line Realm]] · [[it-journey/pages/_quests/0001/git-workflow-mastery|Git Workflow Mastery: Branches, Merging & Team Collaboration]] **Unlocks:** [[it-journey/pages/_quests/0001/side-quest-avatar-forge|Avatar Forge: Crafting Your Digital Portrait]] · [[it-journey/pages/_quests/0001/side-quest-badge-collector|Badge Collector: Showcasing Your Achievements]] · [[it-journey/pages/_quests/0010/side-quest-stats-dashboard|Stats Dashboard: Enhancing Your Data Visualization]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

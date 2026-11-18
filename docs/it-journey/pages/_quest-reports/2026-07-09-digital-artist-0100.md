@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29190829265
 slice: digital-artist/0100
-source_file: 2026-07-09-digital-artist-0100.md
+source_file: pages/_quest-reports/2026-07-09-digital-artist-0100.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-09-digital-artist-0100.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-09-digital-artist-0100.md
 tags:
 - digital-artist
 - level-0100
@@ -25,13 +27,14 @@ tags:
 - frontend-containers
 theme: Frontend & Containers
 tier: Adventurer
-title: 2026 07 09 Digital Artist 0100
+title: Digital Artist · L0100 · 2026-07-09
 verdict: fail
 walk_date: '2026-07-09'
 ---
+
 > **Slice** `digital-artist/0100` · **Level** 0100 (Frontend & Containers) · **Adventurer tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-09
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-09-digital-artist-0100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-09-digital-artist-0100.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-09-digital-artist-0100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-09-digital-artist-0100.md)
 
 ---
 
@@ -47,7 +50,7 @@ I walked the first window (5 of 8 quests) of the **Digital Artist → Level 0100
 |---|:--:|---|--:|---|
 | 1 | ❌ | Docker Container Fundamentals: Images to Registries | — (errored) | Engine hit max-turns curling a container the sandbox can't run — **unscored**, not a proven quest defect. |
 | 2 | ✅ | Docker Compose Orchestration: Multi-Container Apps | 83 | Technically excellent; every compose/lifecycle claim verified — one real bug: `--scale web=3` collides with a fixed host port. |
-| 3 | ❌ | Dockering Jekyll with Bootstrap 5 | 33 | Breaks at nearly every checkpoint: `jekyll new .` conflict, phantom `cd`, `{​% raw %​}`-wrapped include, gem-persistence crash, Bootstrap 4 markup. |
+| 3 | ❌ | Dockering Jekyll with Bootstrap 5 | 33 | Breaks at nearly every checkpoint: `jekyll new .` conflict, phantom `cd`, `{% raw %}`-wrapped include, gem-persistence crash, Bootstrap 4 markup. |
 | 4 | ❌ | Frontend Forests: Building a Jekyll Site with Bootstrap | 55 | Scaffolding works, but the core Bootstrap step edits files that don't exist in the default theme; no concrete CDN snippet; placeholder objectives. |
 | 5 | ⚠️ | The Artisan's Forge: Refactoring Jekyll Theme Components | 78 | Solid, verified refactoring pattern — but the new SCSS partial is never imported, so a green build ships zero nanobar styling. |
 
@@ -81,8 +84,8 @@ claim verified); postgres named-volume + bind-mount; volume persistence across `
 - `failed` — `docker-compose run jekyll jekyll new .` → conflicts with the
 Dockerfile/compose files created two steps earlier. Engine confirmed the workaround `jekyll new . --force` `passed`.
 - `failed` — `cd my-jekyll-site` → **directory never exists** (`jekyll new .` installs into the current dir, so there is no subfolder).
-- `failed` — `index.html` containing `{​% raw %​}{​% include head.html %​}{​% endraw %​}`
-→ the `{​% raw %​}` wrapper is in the *copy-pasteable* sample, so the include (and thus Bootstrap) never loads when built.
+- `failed` — `index.html` containing `{% raw %}{% include head.html %}{% endraw %}`
+→ the `{% raw %}` wrapper is in the *copy-pasteable* sample, so the include (and thus Bootstrap) never loads when built.
 - `failed` — final `docker-compose up` → crashes `Bundler::GemNotFound` because installed gems don't persist between container runs (no bundle volume).
 - `reasoned` — the `head.html` Bootstrap tags carry `integrity="sha384-xxx"` placeholder hashes.
 - Dimensions: commands_work 1, content_accuracy 1, completeness 2, clarity 2, structure 2, safety 4.
@@ -100,7 +103,7 @@ Step 3/4 "Edit `_layouts/default.html`" → **these files don't exist** in a fre
 ### 5 · The Artisan's Forge: Refactoring Jekyll Theme Components — ⚠️ 78
 - Snippets: **ran 11, passed 11, failed 0, skipped 1, reasoned 2** (runnable 3).
 - `passed` — full refactor verified end-to-end in a real **Jekyll 4.4.1** build:
-`touch _includes/components/nanobar.html`, the `{​% include %​}` tag, the `{​% if site.nanobar.enabled %​}` config guard, the `nanobar:` YAML config, `mkdir -p _sass/components && touch _nanobar.scss`, the SCSS partial, the custom-property `style` attribute, the scroll-progress `<script>`, the BEFORE/AFTER footer restructuring, `bundle exec jekyll build`, and the `nanobar.enabled: false` toggle.
+`touch _includes/components/nanobar.html`, the `{% include %}` tag, the `{% if site.nanobar.enabled %}` config guard, the `nanobar:` YAML config, `mkdir -p _sass/components && touch _nanobar.scss`, the SCSS partial, the custom-property `style` attribute, the scroll-progress `<script>`, the BEFORE/AFTER footer restructuring, `bundle exec jekyll build`, and the `nanobar.enabled: false` toggle.
 - **Not surfaced as a failure by the engine but flagged in its summary:** the quest
 never shows how to `@import "components/nanobar"` into a compiled stylesheet, so a learner gets a green `jekyll build` with **no nanobar CSS actually shipped**.
 - `skipped` — `docker-compose exec -T jekyll …` (Compose V1 binary absent in sandbox).
@@ -114,8 +117,8 @@ Every item below cites a command the engine ran or an exact line from the quest 
 - **HIGH · Step 2.3 (`jekyll new .` conflict)** — observed the command `failed`
 against the Dockerfile/compose files created two steps earlier. *Fix:* run `jekyll new .` in an empty dir first, or document `--force` and why.
 - **HIGH · Step 3.1 (`cd my-jekyll-site`)** — observed the directory does not exist. *Fix:* remove the step; `jekyll new .` stays in the current directory.
-- **HIGH · Step 4 (`{​% raw %​}{​% include head.html %​}{​% endraw %​}`)** — observed the
-built site never includes Bootstrap because the `raw` wrapper is in the pasteable sample. *Fix:* use plain `{​% include head.html %​}`.
+- **HIGH · Step 4 (`{% raw %}{% include head.html %}{% endraw %}`)** — observed the
+built site never includes Bootstrap because the `raw` wrapper is in the pasteable sample. *Fix:* use plain `{% include head.html %}`.
 - **HIGH · Final `docker-compose up` (gem persistence)** — observed
 `Bundler::GemNotFound` crash. *Fix:* add a named `bundle_cache:/usr/local/bundle` volume, or run `bundle install && jekyll serve` in the serving container.
 - **MEDIUM · Bootstrap 5 markup accuracy** — sample uses `data-toggle`, `sr-only`,

@@ -3,9 +3,12 @@ description: Interactive Jupyter notebooks with tutorials and data analysis exam
 lastmod: 2026-04-18 19:30:20+00:00
 layout: default
 permalink: /notebooks/
-source_file: notebooks.md
+source_file: pages/notebooks.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/notebooks.md
 title: Notebooks
 ---
+
 <div class="container-fluid">
   <div class="row mb-4">
     <div class="col">
@@ -16,7 +19,6 @@ title: Notebooks
 
   {% if site.notebooks and site.notebooks.size > 0 %}
   
-  <!-- Difficulty Filter -->
   <div class="row mb-4">
     <div class="col">
       <div class="d-flex flex-wrap gap-2 align-items-center">
@@ -35,7 +37,6 @@ title: Notebooks
     </div>
   </div>
 
-  <!-- Notebooks Grid -->
   <div class="row row-cols-1 row-cols-md-2 g-4" id="notebooks-grid">
     {% assign sorted_notebooks = site.notebooks | sort: "date" | reverse %}
     {% for nb in sorted_notebooks %}

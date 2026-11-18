@@ -1,5 +1,7 @@
 ---
-source_file: rca-template.md
+source_file: docs/agents/rca-template.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/agents/rca-template.md
 title: Agent Failure RCA — <date> <short title>
 ---
 # Agent Failure RCA — <date> <short title>

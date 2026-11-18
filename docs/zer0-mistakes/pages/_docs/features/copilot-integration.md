@@ -12,7 +12,9 @@ permalink: /docs/features/copilot-integration/
 preview: /images/previews/github-copilot-integration.png
 sidebar:
   nav: docs
-source_file: copilot-integration.md
+source_file: pages/_docs/features/copilot-integration.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/copilot-integration.md
 tags:
 - copilot
 - ai
@@ -20,6 +22,7 @@ tags:
 - github
 title: GitHub Copilot Integration
 ---
+
 # GitHub Copilot Integration
 
 The Zer0-Mistakes theme includes comprehensive GitHub Copilot instructions to enhance AI-assisted development.
@@ -231,11 +234,11 @@ Recommended settings:
 
 ## Related
 
-- [Development Documentation](/docs/development/documentation/)
+- [[zer0-mistakes/pages/_docs/development/documentation|Development Documentation]]
 - [Contributing Guide](https://github.com/bamr87/zer0-mistakes/blob/main/CONTRIBUTING.md)
-- [Scripts Guide](/docs/development/scripts/)
+- [[zer0-mistakes/pages/_docs/development/scripts|Scripts Guide]]
 
 ## See also
 
-- [[Features]]
-- [[Development]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]

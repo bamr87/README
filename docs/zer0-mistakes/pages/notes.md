@@ -3,9 +3,12 @@ description: Quick reference notes, cheatsheets, and command snippets for develo
 lastmod: 2026-04-18 19:30:21+00:00
 layout: default
 permalink: /notes/
-source_file: notes.md
+source_file: pages/notes.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/notes.md
 title: Notes
 ---
+
 <div class="container-fluid">
   <div class="row mb-4">
     <div class="col">
@@ -16,7 +19,6 @@ title: Notes
 
   {% if site.notes and site.notes.size > 0 %}
   
-  <!-- Tag Filter -->
   <div class="row mb-4">
     <div class="col">
       <div class="d-flex flex-wrap gap-2 align-items-center">
@@ -38,7 +40,6 @@ title: Notes
     </div>
   </div>
 
-  <!-- Notes Grid -->
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="notes-grid">
     {% assign sorted_notes = site.notes | sort: "date" | reverse %}
     {% for note in sorted_notes %}

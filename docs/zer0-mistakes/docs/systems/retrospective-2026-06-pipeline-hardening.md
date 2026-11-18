@@ -7,15 +7,19 @@ description: What broke the gem auto-publish, how the hardened-trunk + autonomou
   issue pipeline was built, and how four open PRs' CI failures were fixed honestly
   — with the decisions and lessons behind each.
 lastmod: 2026-06-26
-source_file: retrospective-2026-06-pipeline-hardening.md
+source_file: docs/systems/retrospective-2026-06-pipeline-hardening.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/retrospective-2026-06-pipeline-hardening.md
 tags:
 - retrospective
 - ci
 - release
 - automation
 - autonomy
-title: Retrospective — Pipeline hardening & autonomous issue pipeline (June 2026)
+title: Retrospective — Release pipeline repair, autonomous issue pipeline, and CI-failure
+  cleanup
 ---
+
 # Retrospective — Pipeline hardening & autonomous issue pipeline (June 2026)
 
 A working retrospective for the multi-session thread that (1) fixed why the `jekyll-theme-zer0` gem stopped auto-publishing, (2) designed and built an autonomous issue→PR pipeline on top of the existing continuous-evolution loop, and (3) cleaned up the CI failures that pipeline's own PRs were left with. It complements [`continuous-evolution.md`](./continuous-evolution.md) (the system) and [`release-automation.md`](./release-automation.md) (the release mechanics); this doc is the *story and the lessons*, not the reference.

@@ -51,14 +51,16 @@ rewards:
   progression_points: 0
   skills_unlocked: []
 skill_focus: fullstack
-source_file: frontend-docker.md
+source_file: pages/_quests/0100/frontend-docker.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0100/frontend-docker.md
 tags:
 - docker
 - jekyll
 - bootstrap
 - frontend
 - containers
-title: Frontend Docker
+title: Dockering Jekyll with Bootstrap 5
 validation_criteria:
   completion_requirements: []
   skill_demonstrations: []
@@ -217,7 +219,7 @@ And there you have it! Your Docker-powered Jekyll site with Bootstrap 5 is up an
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0100 - Frontend Development & Docker]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0100/README|Level 0100 - Frontend Development & Docker]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

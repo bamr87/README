@@ -52,7 +52,9 @@ rewards:
   - 📆 Timekeeper — Contribution calendar displayed on character sheet
   progression_points: 100
 skill_focus: frontend
-source_file: side-quest-contribution-calendar.md
+source_file: pages/_quests/0010/side-quest-contribution-calendar.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0010/side-quest-contribution-calendar.md
 tags:
 - '0010'
 - contributor
@@ -62,7 +64,7 @@ tags:
 - liquid
 - gamified-learning
 - project-based
-title: '📆 Contribution Calendar: Mapping Your Journey Through Time'
+title: 'Contribution Calendar: Mapping Your Journey Through Time'
 validation_criteria:
   completion_requirements:
   - Calendar heatmap include created
@@ -217,7 +219,7 @@ Edit `_includes/contributor/character_sheet.html` and add after the stats panel 
 
 ### Step 4: Verify
 
-> **Prerequisite:** This step needs the working Jekyll project and `Gemfile` you set up in the [Forge Your Character](/quests/0001/forge-your-character/) quest. Run this from that project's root — without it, `bundle exec jekyll serve` will fail with a missing bundler/Gemfile error.
+> **Prerequisite:** This step needs the working Jekyll project and `Gemfile` you set up in the [[it-journey/pages/_quests/0001/forge-your-character|Forge Your Character]] quest. Run this from that project's root — without it, `bundle exec jekyll serve` will fail with a missing bundler/Gemfile error.
 
 ```bash
 bundle exec jekyll serve
@@ -245,7 +247,7 @@ Once your contribution calendar renders on your profile, you've earned the **Tim
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Forge Your Character: Crafting Your Contributor Identity]] **Recommended:** [[Stats Dashboard: Enhancing Your Data Visualization]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0010/README|Level 0010 - Terminal Enhancement & Shell Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0001/forge-your-character|Forge Your Character: Crafting Your Contributor Identity]] **Recommended:** [[it-journey/pages/_quests/0010/side-quest-stats-dashboard|Stats Dashboard: Enhancing Your Data Visualization]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

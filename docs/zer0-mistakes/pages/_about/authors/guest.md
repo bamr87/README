@@ -8,9 +8,12 @@ lastmod: 2026-06-22 00:00:00+00:00
 layout: author
 permalink: /authors/guest/
 sidebar: false
-source_file: guest.md
-title: Guest
+source_file: pages/_about/authors/guest.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/authors/guest.md
+title: Become an Author — Contribute to zer0-mistakes
 ---
+
 The **Guest Author** credits one-off and first-time contributions. Anyone can write for zer0-mistakes — this page is your starting point, from a single guest post all the way to your own author profile.
 
 ## Contribute an article

@@ -59,7 +59,9 @@ rewards:
   - 🚧 Guardrail Engineering
   - 👤 HITL Pattern Design
 skill_focus: security
-source_file: agentic-guardrails-and-human-in-the-loop.md
+source_file: pages/_quests/1100/agentic-guardrails-and-human-in-the-loop.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/agentic-guardrails-and-human-in-the-loop.md
 sub_title: 'Level 1100 Quest 3/4 — Domain 6: Responsible Agentic AI'
 tags:
 - '1100'
@@ -70,7 +72,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: .github/CODEOWNERS
+title: 'The Warden''s Pact: Guardrails and Human-in-the-Loop Patterns'
 validation_criteria:
   completion_requirements:
   - At least 3 guardrail types implemented (file scope, approval gate, audit trail)
@@ -100,7 +102,7 @@ graph LR
 
 - A GitHub repository where you can configure CODEOWNERS, branch protection, and Environments
 - Familiarity with GitHub Actions workflows
-- Completed [Agentic Tool Selection & Permissions](/quests/1000/agentic-tool-selection-and-permissions/) so you understand the agent surface you're guarding
+- Completed [[it-journey/pages/_quests/1000/agentic-tool-selection-and-permissions|Agentic Tool Selection & Permissions]] so you understand the agent surface you're guarding
 
 ## ⚔️ The Quest Begins
 
@@ -357,11 +359,11 @@ python3 scripts/validate_quest.py --quest q19
 | 🛡️ The Warden Badge | Earned on completion |
 | 🚧 Guardrail Engineering | Skill unlocked |
 | 100 XP | Added to Level 1100 total |
-| Unlocks | [Capstone: Trial of the Agentic Codex](/quests/1100/agentic-codex-capstone-exam-trial/) |
+| Unlocks | [[it-journey/pages/_quests/1100/agentic-codex-capstone-exam-trial\|Capstone: Trial of the Agentic Codex]] |
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[The Autonomy Scales: Mapping Agent Autonomy Levels]] **Unlocks:** [[Trial of the Agentic Codex: The Grand Capstone]] **Sequel quests:** [[Trial of the Agentic Codex: The Grand Capstone]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[it-journey/pages/_quests/1100/agentic-autonomy-levels-matrix|The Autonomy Scales: Mapping Agent Autonomy Levels]] **Unlocks:** [[it-journey/pages/_quests/1100/agentic-codex-capstone-exam-trial|Trial of the Agentic Codex: The Grand Capstone]] **Sequel quests:** [[it-journey/pages/_quests/1100/agentic-codex-capstone-exam-trial|Trial of the Agentic Codex: The Grand Capstone]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

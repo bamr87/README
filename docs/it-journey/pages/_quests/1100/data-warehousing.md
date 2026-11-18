@@ -76,7 +76,9 @@ rewards:
   unlocks_features:
   - Access to the Apache Spark and Data Quality quests
 skill_focus: data-engineering
-source_file: data-warehousing.md
+source_file: pages/_quests/1100/data-warehousing.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/data-warehousing.md
 sub_title: 'Level 1100 (12) Quest: Main Quest - Data Warehousing'
 tags:
 - '1100'
@@ -86,7 +88,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: 'DuckDB needs no server and runs in any container or notebook:'
+title: 'Data Warehousing: Build a Dimensional Star Schema in SQL'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -135,7 +137,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Solid SQL: `SELECT`, `JOIN`, `GROUP BY`, aggregate functions
 - [ ] Comfort with primary keys and foreign keys
-- [ ] Completion of [ETL Pipeline Design](/quests/1100/etl-pipeline-design/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1100/etl-pipeline-design|ETL Pipeline Design]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -445,17 +447,17 @@ This is why Snowflake, BigQuery, Redshift, Parquet files, and DuckDB are all col
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Apache Spark](/quests/1100/apache-spark/) - Scale dimensional builds with distributed compute
+- 🎯 [[it-journey/pages/_quests/1100/apache-spark|Apache Spark]] - Scale dimensional builds with distributed compute
 
 **Explore Side Adventures**:
-- ⚔️ [Data Quality Engineering](/quests/1100/data-quality/) - Validate every dimension and fact
-- ⚔️ [Stream Processing](/quests/1100/stream-processing/) - Feed the warehouse in real time
+- ⚔️ [[it-journey/pages/_quests/1100/data-quality|Data Quality Engineering]] - Validate every dimension and fact
+- ⚔️ [[it-journey/pages/_quests/1100/stream-processing|Stream Processing]] - Feed the warehouse in real time
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Apache Spark](/quests/1100/apache-spark/)  
-**🏗️ System Engineer**: Explore [Stream Processing](/quests/1100/stream-processing/)  
-**📊 Data Scientist**: Advance to [Data Quality Engineering](/quests/1100/data-quality/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1100/apache-spark|Apache Spark]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1100/stream-processing|Stream Processing]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1100/data-quality|Data Quality Engineering]]
 
 ## 📚 Resources
 
@@ -484,6 +486,6 @@ This is why Snowflake, BigQuery, Redshift, Parquet files, and DuckDB are all col
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data Engineering]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] **Unlocks:** [[Apache Spark Mastery: Big Data Processing with PySpark & Scala]] · [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data Engineering]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] **Unlocks:** [[Apache Spark Mastery: Big Data Processing with PySpark & Scala]] · [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

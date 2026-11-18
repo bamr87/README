@@ -24,13 +24,15 @@ objectives:
     - command: ls
     - option: F
     - output_includes: spell.sh*
-source_file: 04-permissions.md
+source_file: courses/workshop/04-permissions.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/workshop/04-permissions.md
 teaches:
 - chmod
 - chmod +x
 - ls -F
 - permissions
-title: 04 Permissions
+title: Making it executable
 xp: 30
 ---
 Every file carries **permissions**: who may **r**ead, **w**rite and e**x**ecute it. A script is only text until it has the execute permission:

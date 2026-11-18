@@ -1,5 +1,7 @@
 ---
-source_file: STASHME.md
+source_file: STASHME/STASHME.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/STASHME/STASHME.md
 title: 💾 StashMe - Complete Documentation
 ---
 # 💾 StashMe - Complete Documentation
@@ -339,7 +341,8 @@ gh auth status
 Check the directory path and depth:
 
 ```bash
-# Increase search depth
+# Increase search depth (a non-negative integer; anything else exits with
+# "Invalid --max-depth" before the search runs)
 ./stashme.sh --max-depth 5
 
 # Include hidden directories

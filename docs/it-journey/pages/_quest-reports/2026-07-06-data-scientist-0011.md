@@ -14,8 +14,10 @@ quest_count: 3
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/28791022929
 slice: data-scientist/0011
-source_file: 2026-07-06-data-scientist-0011.md
+source_file: pages/_quest-reports/2026-07-06-data-scientist-0011.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-06-data-scientist-0011.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-06-data-scientist-0011.md
 tags:
 - data-scientist
 - level-0011
@@ -25,13 +27,14 @@ tags:
 - ai-assisted-development
 theme: AI-Assisted Development
 tier: Apprentice
-title: 2026 07 06 Data Scientist 0011
+title: Data Scientist · L0011 · 2026-07-06
 verdict: fail
 walk_date: '2026-07-06'
 ---
+
 > **Slice** `data-scientist/0011` · **Level** 0011 (AI-Assisted Development) · **Apprentice tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-06
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/28791022929) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-data-scientist-0011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-data-scientist-0011.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/28791022929) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-data-scientist-0011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-data-scientist-0011.md)
 
 ---
 
@@ -39,7 +42,7 @@ walk_date: '2026-07-06'
 
 I walked the **Data Scientist → Level 0011 (Apprentice · "AI-Assisted Development")** slice as a learner would: three `main_quest` pages in planner order — the PRD Codex, the GitHub Pages Hidden Gem, and the Prompt Crystal (VS Code Copilot). The machine evidence was sealed by the workflow's execute-mode engine (I consumed `walk-evidence.json` verbatim — I did not re-run the engine); I then read each quest source and reasoned about them as one linked path.
 
-**Headline verdict: FAIL for the slice as a walkable learning path**, even though the average is a middling 59.7% (0 pass · 2 warn · 1 fail). The reason is ordering + a hard blocker: the **first** quest a learner meets, *The PRD Codex* (score **39, fail**), is **not runnable as written** — every one of its core `docker compose build/run prd-machine …` commands failed in the clean sandbox with `no configuration file provided: not found`, because the quest never tells the learner where the `docker-compose.yml` / `scripts/prd-machine` it depends on comes from. A beginner starting this level in order hits a wall on quest 1. The other two quests are usable (warn): the GitHub Pages quest's Jekyll build-and-serve path **actually worked end-to-end in the sandbox**, and the Prompt Crystal's shell scaffolding **all ran clean** — both just ship fixable content defects (wrong extension IDs, leftover authoring placeholders, and Liquid `{​% raw %​}` artifacts). All three are read-only findings for a later content pass; I changed nothing.
+**Headline verdict: FAIL for the slice as a walkable learning path**, even though the average is a middling 59.7% (0 pass · 2 warn · 1 fail). The reason is ordering + a hard blocker: the **first** quest a learner meets, *The PRD Codex* (score **39, fail**), is **not runnable as written** — every one of its core `docker compose build/run prd-machine …` commands failed in the clean sandbox with `no configuration file provided: not found`, because the quest never tells the learner where the `docker-compose.yml` / `scripts/prd-machine` it depends on comes from. A beginner starting this level in order hits a wall on quest 1. The other two quests are usable (warn): the GitHub Pages quest's Jekyll build-and-serve path **actually worked end-to-end in the sandbox**, and the Prompt Crystal's shell scaffolding **all ran clean** — both just ship fixable content defects (wrong extension IDs, leftover authoring placeholders, and Liquid `{% raw %}` artifacts). All three are read-only findings for a later content pass; I changed nothing.
 
 ## 🗺️ The Journey
 
@@ -50,7 +53,7 @@ Conceptually sound and well-structured, but a learner can't run a single core co
 2. ⚠️ **Hidden Gem Quest: Publish AI Chats on GitHub Pages** — **65 / warn** ·
 The central Jekyll workflow genuinely builds and serves in the sandbox; spoiled by a wrong VS Code extension ID and visible template scaffolding never deleted from the opening.
 3. ⚠️ **Forging the Prompt Crystal: VS Code Copilot Mastery Quest** — **75 / warn** ·
-Strongest of the three; all scaffolding commands run, but it overstates Copilot's `{​{ inputs.x }​}` templating and leaves `{​% raw %​}` website-rendering artifacts in copy-paste fragments.
+Strongest of the three; all scaffolding commands run, but it overstates Copilot's `{{ inputs.x }}` templating and leaves `{% raw %}` website-rendering artifacts in copy-paste fragments.
 
 Difficulty as declared: 🟡 Medium, 🟢 Easy, 🟡 Medium. Note the ordering hazard — the hardest-to-run and only *failing* quest is presented **first**.
 
@@ -90,7 +93,7 @@ Snippet coverage: **ran 9 of 9 runnable** (9 passed · 0 failed) · 3 skipped ·
 paths: `mkdir -p .github/prompts && touch .github/copilot-instructions.md` (macOS/Linux), the PowerShell `New-Item …` equivalents, and the Cloud `echo … > .github/copilot-instructions.md`. Zero command failures.
 - **skipped** — the `code --install-extension GitHub.copilot …` lines (Copilot CLI install can't run in the sandbox) — a coverage gap, not a defect.
 - **reasoned** — the 23 prompt/template text blocks are illustrative, not executable.
-Two content problems verified in source: the `.prompt.md` templates literally carry `{​% raw %​}{​{ inputs.x }​}{​% endraw %​}` Liquid escaping (lines 794–829, 861–919), and the frontmatter `inputs:` + `{​{ inputs.x }​}` convention (lines 789–791, 856–858, 898–900) implies native Copilot variable substitution that does not exist.
+Two content problems verified in source: the `.prompt.md` templates literally carry `{% raw %}{{ inputs.x }}{% endraw %}` Liquid escaping (lines 794–829, 861–919), and the frontmatter `inputs:` + `{{ inputs.x }}` convention (lines 789–791, 856–858, 898–900) implies native Copilot variable substitution that does not exist.
 
 ## 🐞 Issues Found
 
@@ -104,10 +107,10 @@ sample output claims `Total signals processed: 146`, but 60 + 81 + 1 = **142**. 
 `code --install-extension ms-vscode.vscode-github-pull-requests-and-issues` **failed**; ID is wrong. *Fix:* use `GitHub.vscode-pull-request-github` in both the macOS and Linux blocks.
 - **HIGH · GitHub Pages · Opening / Objectives (lines 103, 105)** — *Observed
 (reasoned):* un-deleted authoring scaffolding is published to the learner: `> *Note: objectives auto-seeded during framework alignment…*` and `*[Opening paragraph that sets the fantasy context…]*`. *Fix:* delete both.
-- **HIGH · Prompt Crystal · Chapter 4 `{​{ inputs.x }​}` templating (lines 785–829,
-852–920)** — *Observed (reasoned):* the quest presents `inputs:` frontmatter + `{​{ inputs.x }​}` as if VS Code Copilot renders variables; it does not. *Fix:* state it's a manual find-and-replace placeholder convention, or drop the templating claim.
+- **HIGH · Prompt Crystal · Chapter 4 `{{ inputs.x }}` templating (lines 785–829,
+852–920)** — *Observed (reasoned):* the quest presents `inputs:` frontmatter + `{{ inputs.x }}` as if VS Code Copilot renders variables; it does not. *Fix:* state it's a manual find-and-replace placeholder convention, or drop the templating claim.
 - **HIGH · Prompt Crystal · `.prompt.md` code fences (lines 794–829, 861–919)** —
-*Observed (reasoned):* fragments literally contain `{​% raw %​}…{​% endraw %​}` Liquid escaping that would break if copy-pasted into a real prompt file. *Fix:* strip the tags, or add a visible note they are website-render artifacts.
+*Observed (reasoned):* fragments literally contain `{% raw %}…{% endraw %}` Liquid escaping that would break if copy-pasted into a real prompt file. *Fix:* strip the tags, or add a visible note they are website-render artifacts.
 - **MEDIUM · PRD Codex · conflicts Expected Output (lines 400–410)** — *Observed
 (reasoned):* claims "4 conflicts" but shows only 2, both `fix` type; the Conflict Types table's `revert`/`contradiction` rows are never illustrated. *Fix:* show all 4 or add a truncation marker plus one non-`fix` example.
 - **MEDIUM · PRD Codex · code fence languages (Best Practices block ~484; Expected
@@ -142,13 +145,13 @@ non-runnable quest (PRD Codex) leads, and the easy, fully-working GitHub Pages q
 - **Mode:** `execute` (sandboxed). I did **not** run the engine — per the skill and my
 constraints, the workflow pre-computed and sealed `walk-evidence.json` / `walk-evidence.md`, and I consumed them verbatim. I did not edit, regenerate, or hand-write any evidence, plan, or quest file.
 - **What I ran vs. reasoned:** all `passed`/`failed`/`skipped` verdicts are the
-engine's real sandbox command results (Docker 28.0.4 present; PRD's compose commands failed; the Jekyll build/serve and all Copilot scaffolding commands ran). Everything I label **reasoned** — arithmetic errors, placeholder scaffolding, wrong URLs, `{​% raw %​}` artifacts, `{​{ inputs.x }​}` overstatement, fence-language mismatches — I confirmed by reading the quest source and citing exact lines; I did not execute those parts.
+engine's real sandbox command results (Docker 28.0.4 present; PRD's compose commands failed; the Jekyll build/serve and all Copilot scaffolding commands ran). Everything I label **reasoned** — arithmetic errors, placeholder scaffolding, wrong URLs, `{% raw %}` artifacts, `{{ inputs.x }}` overstatement, fence-language mismatches — I confirmed by reading the quest source and citing exact lines; I did not execute those parts.
 - **Coverage / limits:** Snippet coverage was strong for PRD Codex (13 runnable ran)
 and Prompt Crystal (9/9 runnable ran), thinner for GitHub Pages (3 runnable, though the full build-and-serve chain executed). The 23 "reasoned" blocks in Prompt Crystal are prompt-text illustrations that are not meant to execute — not a testing gap. Extension-install and OS-specific (Windows/macOS `brew`, Codespaces) commands were correctly **skipped** as unrunnable in a Linux sandbox; their syntax was inspected, not executed. No network access beyond what the Jekyll build needed.
 - **Slice verdict rationale:** I set `overall_verdict: fail` despite a 59.7% average
 because the honest learner outcome is that the *entry* quest cannot be completed as written — a blocking, not cosmetic, failure. The two `warn` quests are genuinely usable once their listed defects are fixed.
 - **Confidence:** High on command outcomes (real sandbox execution) and on the source
-citations (verified line-by-line). Lower only on the exact user-facing impact of the Copilot `{​{ inputs.x }​}` behavior, which depends on VS Code version — flagged as reasoned. One slice, one report; no content was changed and nothing was merged.
+citations (verified line-by-line). Lower only on the exact user-facing impact of the Copilot `{{ inputs.x }}` behavior, which depends on VS Code version — flagged as reasoned. One slice, one report; no content was changed and nothing was merged.
 
 ---
 

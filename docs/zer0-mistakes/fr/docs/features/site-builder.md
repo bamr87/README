@@ -31,7 +31,9 @@ prerequisites:
   API key) or an xAI key
 sidebar:
   nav: docs
-source_file: site-builder.md
+source_file: fr/docs/features/site-builder.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/site-builder.md
 tags:
 - ai
 - claude
@@ -41,11 +43,12 @@ tags:
 - onboarding
 - docker
 - proxy
-title: Générateur de site
+title: Site Builder (assistant de configuration guidé par IA — Claude ou Grok)
 translated_from_sha: 198273b3a509
 translation_of: pages/_docs/features/site-builder.md
 translation_source_url: /docs/features/site-builder/
 ---
+
 # Générateur de site
 
 Le Générateur de site est l'assistant d'intégration du thème. La moitié « formulaire » fonctionne partout où le thème s'affiche, y compris sur GitHub Pages. La moitié « IA » se connecte via le proxy de développement local avec **votre propre jeton de fournisseur — Claude (Anthropic) ou Grok (xAI)** — et transforme l'assistant en une construction assistée : l'assistant voit chaque réponse, propose et applique des valeurs, vérifie la machine, lit le code source du thème, écrit le projet, exécute Docker et, dans une session ouverte, modifie un site existant fichier par fichier et génère des images pour celui-ci.
@@ -97,7 +100,7 @@ L'étape Connexion affiche une carte par fournisseur depuis `_data/site_builder.
 
 Changer de fournisseur définit également le `ai_chat.provider` du site généré à l'étape Intégrations, et le choix d'image préconfigure `preview_images`, de sorte que le site que vous construisez est prêt pour le fournisseur que vous avez utilisé ; `.env.example` liste les clés correspondantes.
 
-Le proxy fait autorité : il décide quels fournisseurs sont configurés, fixe le fournisseur et le modèle lorsqu'on le lui demande, et effectue la traduction pour xAI afin que le navigateur parle toujours le dialecte Anthropic Messages. Le widget de discussion présent sur chaque page bénéficie du même choix (`ai_chat.provider`) — voir [Assistant de discussion IA](/docs/features/ai-chat-assistant/).
+Le proxy fait autorité : il décide quels fournisseurs sont configurés, fixe le fournisseur et le modèle lorsqu'on le lui demande, et effectue la traduction pour xAI afin que le navigateur parle toujours le dialecte Anthropic Messages. Le widget de discussion présent sur chaque page bénéficie du même choix (`ai_chat.provider`) — voir [[zer0-mistakes/pages/_docs/features/ai-chat-assistant|Assistant de discussion IA]].
 
 ## Étapes guidées ou session ouverte
 
@@ -265,6 +268,6 @@ Les scénarios résident dans `test/visual/site-builder-scenarios.mjs` (`blog`, 
 
 ## Ressources associées
 
-- [Démarrage rapide du Site Builder](/quickstart/site-builder/) est le guide pas à pas destiné aux nouveaux utilisateurs.
-- [Assistant de chat IA](/docs/features/ai-chat-assistant/) documente le proxy partagé et ses modes d'authentification.
-- [Configuration de la machine](/quickstart/machine-setup/) est la référence manuelle pour l'étape Prérequis.
+- [[zer0-mistakes/pages/_quickstart/site-builder|Démarrage rapide du Site Builder]] est le guide pas à pas destiné aux nouveaux utilisateurs.
+- [[zer0-mistakes/pages/_docs/features/ai-chat-assistant|Assistant de chat IA]] documente le proxy partagé et ses modes d'authentification.
+- [[zer0-mistakes/pages/_quickstart/machine-setup|Configuration de la machine]] est la référence manuelle pour l'étape Prérequis.

@@ -1,0 +1,209 @@
+{
+  "OverTheWire-website": {
+    "branch": "gh-pages",
+    "commit": "828d6bc8576a529598628c35c3ea0156c1730edb",
+    "commit_date": "2026-11-10",
+    "pages": 232,
+    "repo": "OverTheWireOrg/OverTheWire-website",
+    "status": "live",
+    "tracked_markdown": 232
+  },
+  "SCHEMA": {
+    "branch": "main",
+    "commit": "5270ed58f6fbae3a4e4fb234bc2235bf4c8a0fe8",
+    "commit_date": "2026-11-18",
+    "pages": 36,
+    "repo": "bamr87/SCHEMA",
+    "status": "live",
+    "tracked_markdown": 39
+  },
+  "bamr87": {
+    "branch": "main",
+    "commit": "93483869321baba4be6185e2877073e2f09861b5",
+    "commit_date": "2026-11-18",
+    "pages": 275,
+    "repo": "bamr87/bamr87",
+    "status": "live",
+    "tracked_markdown": 646
+  },
+  "bamr87.github.io": {
+    "branch": "main",
+    "commit": "5416a65516277469f99dcc230457c3512e5a6a8c",
+    "commit_date": "2026-11-18",
+    "pages": 94,
+    "repo": "bamr87/bamr87.github.io",
+    "status": "live",
+    "tracked_markdown": 160
+  },
+  "bashcrawl": {
+    "branch": "main",
+    "commit": "a644fbbcead2ef1c16c0ce42e0dac5fb442d38e8",
+    "commit_date": "2026-11-18",
+    "pages": 80,
+    "repo": "bamr87/bashcrawl",
+    "status": "live",
+    "tracked_markdown": 88
+  },
+  "bashos": {
+    "branch": "main",
+    "commit": "8b220e1762ae8e3e75e37a888cbda8823baa287b",
+    "commit_date": "2026-11-18",
+    "pages": 80,
+    "repo": "bamr87/bashos",
+    "status": "live",
+    "tracked_markdown": 95
+  },
+  "cv-pro": {
+    "branch": "main",
+    "commit": "261e6aeda21b7d80443ff88dc2482d5f2f8de9f5",
+    "commit_date": "2026-11-18",
+    "pages": 32,
+    "repo": "bamr87/cv-pro",
+    "status": "live",
+    "tracked_markdown": 36
+  },
+  "djangoerp": {
+    "branch": "main",
+    "commit": "ca47145def5d4bc7a2aa355806caa3f3f2003919",
+    "commit_date": "2026-11-18",
+    "pages": 18,
+    "repo": "bamr87/djangoerp",
+    "status": "live",
+    "tracked_markdown": 20
+  },
+  "fredgar-ai": {
+    "branch": "main",
+    "commit": "61113efdb3c2f123f9f033db49865422d0a2faa7",
+    "commit_date": "2026-11-18",
+    "pages": 38,
+    "repo": "bamr87/fredgar-ai",
+    "status": "live",
+    "tracked_markdown": 94
+  },
+  "githubai": {
+    "branch": "main",
+    "commit": "2065d55dc123e95bf24124e5ba76b509277a7d4f",
+    "commit_date": "2026-11-18",
+    "pages": 54,
+    "repo": "bamr87/githubai",
+    "status": "live",
+    "tracked_markdown": 83
+  },
+  "gitorio": {
+    "branch": "main",
+    "commit": "c324d78d8e38db301981b63e9ec1a02f170b23ce",
+    "commit_date": "2026-11-18",
+    "pages": 145,
+    "repo": "bamr87/gitorio",
+    "status": "live",
+    "tracked_markdown": 276
+  },
+  "godotgo": {
+    "branch": "main",
+    "commit": "1249b008f062b9dff9d15392bdf3f6026d07332a",
+    "commit_date": "2026-11-18",
+    "pages": 31,
+    "repo": "bamr87/godotgo",
+    "status": "live",
+    "tracked_markdown": 43
+  },
+  "it-journey": {
+    "branch": "main",
+    "commit": "683ac7759a4489c1bfabd05e8c40a6679626c083",
+    "commit_date": "2026-11-18",
+    "pages": 557,
+    "repo": "bamr87/it-journey",
+    "status": "live",
+    "tracked_markdown": 1097
+  },
+  "law-ai": {
+    "branch": "main",
+    "commit": "0716f1486ef2544a9d02840865f1d21e79c852c8",
+    "commit_date": "2026-11-18",
+    "pages": 301,
+    "repo": "bamr87/law-ai",
+    "status": "live",
+    "tracked_markdown": 321
+  },
+  "lifehacker.dev": {
+    "branch": "main",
+    "commit": "4b8b503f0916d0cc78578e6e3cc9bdd865facfb7",
+    "commit_date": "2026-11-18",
+    "pages": 138,
+    "repo": "bamr87/lifehacker.dev",
+    "status": "live",
+    "tracked_markdown": 507
+  },
+  "ocrmd": {
+    "branch": "main",
+    "commit": "bd2aeb826081746116e2d19890217483b6a0457d",
+    "commit_date": "2026-11-18",
+    "pages": 26,
+    "repo": "bamr87/ocrmd",
+    "status": "live",
+    "tracked_markdown": 29
+  },
+  "outbox": {
+    "branch": "main",
+    "commit": "0e39cfb52f3bd9651576f2e474af7b8ed6ebe7f1",
+    "commit_date": "2026-11-18",
+    "pages": 22,
+    "repo": "bamr87/outbox",
+    "status": "live",
+    "tracked_markdown": 27
+  },
+  "rewind-arcade": {
+    "branch": "main",
+    "commit": "bddc9710432b2874bfc4b37dc7625501c8452dd1",
+    "commit_date": "2026-11-18",
+    "pages": 76,
+    "repo": "bamr87/rewind-arcade",
+    "status": "live",
+    "tracked_markdown": 79
+  },
+  "scripts": {
+    "branch": "main",
+    "commit": "4aacaf5915f668f476d4deb8cdb9eac313dd8740",
+    "commit_date": "2026-11-18",
+    "pages": 25,
+    "repo": "bamr87/scripts",
+    "status": "live",
+    "tracked_markdown": 27
+  },
+  "vs-sonic-pi": {
+    "branch": "main",
+    "commit": "b105cda8fbe22dd749fbded290a3f2a08fca95d7",
+    "commit_date": "2026-11-18",
+    "pages": 118,
+    "repo": "bamr87/vs-sonic-pi",
+    "status": "live",
+    "tracked_markdown": 131
+  },
+  "zer0-CMS": {
+    "branch": "main",
+    "commit": "d0c3a6cc3eae1dceb7a0292401612ab3ee01a685",
+    "commit_date": "2026-11-18",
+    "pages": 1207,
+    "repo": "bamr87/zer0-CMS",
+    "status": "live",
+    "tracked_markdown": 1499
+  },
+  "zer0-mistakes": {
+    "branch": "main",
+    "commit": "e6105005bb0484e7962f7f494c0d50f23d56492b",
+    "commit_date": "2026-11-18",
+    "pages": 560,
+    "repo": "bamr87/zer0-mistakes",
+    "status": "live",
+    "tracked_markdown": 721
+  },
+  "zpl-viewer": {
+    "branch": "main",
+    "commit": "debbd56565072d9e68b8377f75c1848dcc91475e",
+    "commit_date": "2026-11-18",
+    "pages": 19,
+    "repo": "bamr87/zpl-viewer",
+    "status": "live",
+    "tracked_markdown": 21
+  }
+}

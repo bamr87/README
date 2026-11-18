@@ -8,10 +8,12 @@ description: An open-source platform that takes you from zer0 to her0 in IT — 
 draft: false
 excerpt: IT-Journey is an open-source platform that turns curiosity into capability
   — a free, gamified path from your first command to systems you design yourself.
-lastmod: '2026-06-26T00:00:00.000Z'
+lastmod: '2026-11-15T00:00:00.000Z'
 permalink: /about/
 slug: about
-source_file: about.md
+source_file: pages/_about/about.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_about/about.md
 tags:
 - about
 - mission
@@ -20,9 +22,10 @@ tags:
 - gamification
 - learning
 - ai-development
-title: About
+title: About IT-Journey — From zer0 to her0
 toc: true
 ---
+
 <style>
 .itj-about-hero { margin: 0.5rem 0 2.5rem; padding: 3rem 1.5rem; border: 1px solid var(--zer0-color-border, rgba(168,85,247,0.35)); border-radius: 1rem; text-align: center; background:
     radial-gradient(1200px 400px at 50% -20%, rgba(168,85,247,0.22), transparent 70%),
@@ -54,7 +57,7 @@ We teach by doing, because the evidence is hard to argue with. A [meta-analysis 
 
 So the unit of learning here is the **quest**: a self-contained mission with a clear objective, a real artifact you produce, and a way to verify you got it right. Quests are organized into levels and tiers — a 4-bit map from `0000` toward her0 — so the difficulty climbs as your confidence does, and you always know the next step. That structure is not decoration. Clear goals, immediate feedback, and a staircase of increasing challenge are the same mechanics that make games hard to put down, pointed at learning instead of leaderboards.
 
-Start where you are. [Open the quest map](/quests/), pick the level that matches your nerve, and run the first command.
+Start where you are. [[it-journey/pages/_quests/README|Open the quest map]], pick the level that matches your nerve, and run the first command.
 
 ## The pillars
 
@@ -85,9 +88,11 @@ You will see this principle in how the site itself is written: guides link to th
 
 ### Keep It Simple — KIS
 
-The [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) is a bias toward the boring, readable solution over the clever one. Simple systems are easier to understand, change, and debug — and easier to teach. Clarity over cleverness is also a writing rule here: plain words over jargon, short sentences over impressive ones. If a paragraph needs a second read to parse, it failed.
+Keep It Simple is a bias toward the boring, readable solution over the clever one. Simple systems are easier to understand, change, and debug — and easier to teach. Clarity over cleverness is also a writing rule here: plain words over jargon, short sentences over impressive ones. If a paragraph needs a second read to parse, it failed.
 
 Simplicity is not the absence of depth. It is the discipline of finding the most direct route to a real goal and refusing to add weight that does not earn its place.
+
+The two codes are deliberate: KIS is this pillar, and KISS — the classic [keep it stupid simple](https://en.wikipedia.org/wiki/KISS_principle) maxim — is its everyday heuristic, listed with the working approaches below.
 
 ### Release Early and Often — REnO
 
@@ -129,27 +134,26 @@ That openness is Design for Failure pointed inward. We would rather show a worki
 | **Builder with AI** | Real patterns for building with AI, with the human-review loop kept intact. |
 | **Educator** | Accurate, open, well-structured material you can build a lesson on — and reuse freely. |
 
+## Where we're headed
+
+The plan is as open as the code. The [feature list]({{ '/about/features/' | relative_url }}) shows what you can use today. The [product requirements document (PRD)](https://github.com/bamr87/it-journey/blob/main/PRD.md) says what the platform must do and why, and its [roadmap](https://github.com/bamr87/it-journey/blob/main/PRD.md#7-road-roadmap) lists the milestones still ahead; they are plans, not live features, until they reach the feature list. Every release is recorded in the [changelog](https://github.com/bamr87/it-journey/blob/main/CHANGELOG.md), and [how we version releases]({{ '/about/versioning/' | relative_url }}) explains what the numbers mean.
+
 ## Join the journey
 
-There are two good ways in. If you want to learn, [open the quest map](/quests/) and start the level that matches where you are. If you want to build the platform itself, the project is open source and the door is unlocked — [report an issue](https://github.com/bamr87/it-journey/issues), [open a discussion](https://github.com/bamr87/it-journey/discussions), or send a pull request. New to contributing? [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/) is a kind place to begin.
+There are two good ways in. If you want to learn, [[it-journey/pages/_quests/README|open the quest map]] and start the level that matches where you are. If you want to build the platform itself, the project is open source and the door is unlocked — [report an issue](https://github.com/bamr87/it-journey/issues), [open a discussion](https://github.com/bamr87/it-journey/discussions), or send a pull request. New to contributing? [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/) is a kind place to begin.
 
 {% if site.founder %}
 This platform was founded by **{{ site.founder }}** — an IT nerd trying to be an IT hero — and is kept alive by a community of contributors.
-{% else %}
-This platform was founded by **Amr Abdel-Motaleb** — an IT nerd trying to be an IT hero — and is kept alive by a community of contributors.
 {% endif %}
 
 {% if site.maintainers and site.maintainers.size > 0 %}
 **Maintainers:** {% for maintainer in site.maintainers %}[{{ maintainer.name }}]({{ maintainer.profile }}){% unless forloop.last %} · {% endunless %}{% endfor %}
 {% endif %}
 
-**Built with open tools:**
 {% if site.powered_by and site.powered_by.size > 0 %}
-{% for tech in site.powered_by %}[{{ tech.name }}]({{ tech.url }}){% unless forloop.last %} · {% endunless %}{% endfor %}.
-{% else %}
-[Jekyll](https://jekyllrb.com/), [GitHub Pages](https://pages.github.com/), [Bootstrap](https://getbootstrap.com/), and [Ruby](https://www.ruby-lang.org/).
+**Built with open tools:** {% for tech in site.powered_by %}[{{ tech.name }}]({{ tech.url }}){% unless forloop.last %} · {% endunless %}{% endfor %}.
 {% endif %}
 
-**Get in touch:** {% if site.email %}[email](mailto:{{ site.email }}){% else %}[email](mailto:contact@it-journey.dev){% endif %} · [GitHub Issues](https://github.com/bamr87/it-journey/issues) · [Discussions](https://github.com/bamr87/it-journey/discussions)
+**Get in touch:** {% if site.email %}[email](mailto:{{ site.email }}) · {% endif %}[GitHub Issues](https://github.com/bamr87/it-journey/issues) · [Discussions](https://github.com/bamr87/it-journey/discussions)
 
 > The information age made knowledge abundant. We are here to make it learnable. Pick a quest, run the first command, and go from zer0 to her0.

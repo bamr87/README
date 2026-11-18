@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/31881173929
 slice: game-developer/0001
-source_file: 2026-08-15-game-developer-0001.md
+source_file: pages/_quest-reports/2026-08-15-game-developer-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-08-15-game-developer-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-08-15-game-developer-0001.md
 tags:
 - game-developer
 - level-0001
@@ -25,13 +27,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 08 15 Game Developer 0001
+title: Game Developer · L0001 · 2026-08-15
 verdict: warn
 walk_date: '2026-08-15'
 ---
+
 > **Slice** `game-developer/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-08-15
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/31881173929) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-15-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-15-game-developer-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/31881173929) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-15-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-15-game-developer-0001.md)
 
 ---
 
@@ -95,7 +98,7 @@ Reasoned issues (content-review / static read, **not** command-verified):
 
 - **MEDIUM** · GitHub Pages Basics · Secondary objective "GitHub Actions Build" (line 114) · **Reasoned:** listed as an objective but never taught in the body — only a generic "Understanding GitHub Actions" doc link and a passing mention; no Settings → Pages → Source: GitHub Actions walkthrough or example workflow. · **Fix:** teach it briefly or downgrade/remove the objective.
 - **LOW** · Git Workflow Mastery · Secondary objective "Undo Safely" (lines 112, 356) · **Reasoned:** `git restore`/`git revert`/`git reflog` are billed as a secondary objective but appear only in one prose admonition, with no worked example unlike every other skill. · **Fix:** add a short worked example.
-- **LOW** · Liquid Templating · Chapter 2 loop example (line ~266) · **Reasoned, needs verification (I did NOT run this):** `{​% raw %​}{​% elsif post.date > site.time | date: "%s" | minus: 604800 %​}{​% endraw %​}` compares a date object against a filtered string; worth confirming it evaluates as intended in a real build. I could not test it because this quest errored in the engine. · **Fix:** verify in a live build; simplify if it doesn't behave.
+- **LOW** · Liquid Templating · Chapter 2 loop example (line ~266) · **Reasoned, needs verification (I did NOT run this):** `{% raw %}{% elsif post.date > site.time | date: "%s" | minus: 604800 %}{% endraw %}` compares a date object against a filtered string; worth confirming it evaluates as intended in a real build. I could not test it because this quest errored in the engine. · **Fix:** verify in a live build; simplify if it doesn't behave.
 
 **No other blocking issues** were found in the two quests that were actually walked — the two `failed` snippets in Git Workflow Mastery are sandbox-auth limitations, not quest defects.
 

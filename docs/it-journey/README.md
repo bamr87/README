@@ -6,6 +6,8 @@ lastmod: 2026-11-02 00:00:00+00:00
 layout: home
 permalink: /readme/
 source_file: README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/README.md
 tags:
 - it-journey
 - jekyll
@@ -13,11 +15,11 @@ tags:
 - learning-path
 - quests
 - documentation
-title: IT-Journey
+title: README - it-journey
 ---
 # IT-Journey
 
-> Gamified, open-source platform for learning IT and software development through hands-on quests, zer0 to her0.
+> IT-Journey's direction is to become the ultimate open home for all things IT learning: data, tools, resources and transparency, with gamified quests from zer0 to her0, practical tutorials, and AI-enhanced learning for everyone ([constitution](docs/constitution.md) §1).
 
 [![CI](https://github.com/bamr87/it-journey/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/it-journey/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/it-journey)](LICENSE) [![Live site](https://img.shields.io/badge/live-it--journey.dev-2ea44f)](https://it-journey.dev/)
 
@@ -78,7 +80,7 @@ make hooks-install           # once per clone: pre-commit one-paragraph-per-line
 - [docs/README.md](docs/README.md) — the index of every document in the repository, one line each.
 - [AGENTS.md](AGENTS.md) — commands, layout, conventions and the rules agents and contributors follow.
 - [scripts/ai/README.md](scripts/ai/README.md) — the AI runner and the content, issue and quest lanes.
-- [.github/instructions/quest.instructions.md](.github/instructions/quest.instructions.md) — how to write a quest that passes validation.
+- [.github/instructions/quest.instructions.md](dot-github/instructions/quest.instructions.md) — how to write a quest that passes validation.
 
 ## Project structure
 
@@ -118,5 +120,4 @@ Released under the [MIT License](LICENSE).
 
 ---
 
-<!-- bamr87-portfolio-footer -->
 Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

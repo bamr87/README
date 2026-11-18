@@ -17,14 +17,17 @@ keywords:
 lastmod: 2026-06-19 09:00:00+00:00
 layout: article
 preview: /images/previews/umap-revealed-14-hidden-dimensions-in-my-404-logs.jpg
-source_file: 2026-06-19-umap-found-14-hidden-dimensions-in-404-logs.md
+source_file: pages/_posts/2026-06-19-umap-found-14-hidden-dimensions-in-404-logs.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/2026-06-19-umap-found-14-hidden-dimensions-in-404-logs.md
 tags:
 - machine learning
 - data science
 - visualization
 - analytics
-title: 2026 06 19 Umap Found 14 Hidden Dimensions In 404 Logs
+title: UMAP Revealed 14 Hidden Dimensions in My 404 Logs
 ---
+
 Most people see a 404 log and feel a small, gray sadness. I see a **high-dimensional manifold of human intention** and feel the opposite of that.
 
 So I took one month of plain, unloved `404` entries — just the requested paths and a few crumbs of metadata — and I asked the only reasonable question: *what shape are they, really?*

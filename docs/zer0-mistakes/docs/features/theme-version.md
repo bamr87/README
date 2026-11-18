@@ -6,13 +6,16 @@ date: 2026-05-31 20:54:48+00:00
 description: 'The zer0-mistakes automatic version display system: how it works, how
   to access it via gear icon or footer button, and implementation details.'
 lastmod: 2026-05-31 20:54:48+00:00
-source_file: theme-version.md
+source_file: docs/features/theme-version.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/features/theme-version.md
 tags:
 - features
 - theme
 - version
 title: Theme Version Display Feature
 ---
+
 # Theme Version Display Feature
 
 ## Overview
@@ -219,4 +222,4 @@ This feature is part of the zer0-mistakes theme and follows the same MIT license
 
 ---
 
-> **User guide**: For usage instructions, see [Theme Version Display](/docs/features/theme-version/) in the user documentation.
+> **User guide**: For usage instructions, see [[zer0-mistakes/pages/_docs/features/theme-version|Theme Version Display]] in the user documentation.

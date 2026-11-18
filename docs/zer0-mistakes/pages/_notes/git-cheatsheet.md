@@ -11,14 +11,17 @@ difficulty: beginner
 lastmod: 2026-01-31 10:00:00+00:00
 layout: note
 permalink: /notes/git-cheatsheet/
-source_file: git-cheatsheet.md
+source_file: pages/_notes/git-cheatsheet.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_notes/git-cheatsheet.md
 tags:
 - git
 - version-control
 - cheatsheet
 - reference
-title: Initialize a new repository
+title: Git Commands Cheatsheet
 ---
+
 ## Getting Started
 
 ### Initialize & Clone

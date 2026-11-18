@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/33183081731
 slice: digital-artist/0001
-source_file: 2026-08-28-digital-artist-0001.md
+source_file: pages/_quest-reports/2026-08-28-digital-artist-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-08-28-digital-artist-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-08-28-digital-artist-0001.md
 tags:
 - digital-artist
 - level-0001
@@ -26,13 +28,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 08 28 Digital Artist 0001
+title: Digital Artist · L0001 · 2026-08-28
 verdict: fail
 walk_date: '2026-08-28'
 ---
+
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ❌ fail (avg 56.6%) · **Walked** 2026-08-28
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/33183081731) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-28-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-28-digital-artist-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/33183081731) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-28-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-28-digital-artist-0001.md)
 
 ---
 
@@ -48,11 +51,11 @@ Walked in planner order (window index 2 of 6; `stats.total_quests` = 26):
 
 | # | Verdict | Quest | Type | Score | One-line takeaway |
 |---|:--:|---|---|--:|---|
-| 1 | ⚠️ | The GitHub Pages Portal: Forging Your Digital Realm | main | 68 | Most snippets run cleanly, but Chapter 3's Jekyll setup has a confirmed index.html/index.markdown build conflict and a leaked `{​% raw %​}` wrapper that breaks a copy-pasted link. |
+| 1 | ⚠️ | The GitHub Pages Portal: Forging Your Digital Realm | main | 68 | Most snippets run cleanly, but Chapter 3's Jekyll setup has a confirmed index.html/index.markdown build conflict and a leaked `{% raw %}` wrapper that breaks a copy-pasted link. |
 | 2 | ❌ | Stack Attack Analysis: IT-Journey | side | 44 | A static analysis report, not a tutorial — most descriptive snippets pass isolated syntax checks but contain verified factual errors against the live repo (Jekyll version, Gemfile contents, directory names). |
 | 3 | ❌ | Build a Personal Website with GitHub Pages | side | 16 | Unfinished stub: zero fenced code blocks, no GitHub Pages setup steps, broken unrendered Liquid tags, a duplicate-URL table error. |
 | 4 | ✅ | The Summoning: Raise the Site and Give It a Voice | main | 95 | Every runnable snippet (config, Gemfile, brand.yml, voice.html, session-scribe.sh) executed and worked exactly as described, including a real remote-theme Jekyll build. |
-| 5 | ⚠️ | SEO Optimization: Meta Tags, Sitemaps & Structured Data | main | 60 | Well-structured and mostly accurate, but a real build confirms the central `{​% raw %​}{​% seo %​}{​% endraw %​}` snippet renders as literal text instead of invoking jekyll-seo-tag. |
+| 5 | ⚠️ | SEO Optimization: Meta Tags, Sitemaps & Structured Data | main | 60 | Well-structured and mostly accurate, but a real build confirms the central `{% raw %}{% seo %}{% endraw %}` snippet renders as literal text instead of invoking jekyll-seo-tag. |
 
 Avg **56.6%** · 1 pass / 2 warn / 2 fail · engine cost ≈ $3.30 · engine wall time ≈ 1,023s across 69 turns.
 
@@ -64,7 +67,7 @@ All outcomes below are commands the execute engine actually ran in its disposabl
 - Dimensions: commands_work 3, content_accuracy 3, completeness 3, clarity 4, structure 4, safety 5.
 - `git --version`, HTML-creation heredocs (macOS/Linux), and `git add`/`git commit` all ran cleanly and produced the expected files/output; `gem install --user-install jekyll bundler` installed 26 gems with no permission errors, confirming the quest's own `Gem::FilePermissionError` workaround note.
 - **Confirmed bug 1 (`tested`, `failed`):** running `jekyll new . --force` in Chapter 3 into the same directory Chapter 1 already populated with `index.html` produces a real `_site` build conflict — reproduced with `jekyll build`: `Conflict: The following destination is shared by multiple files ... index.markdown - index.html`. The static `index.html` silently wins, so the learner's Jekyll/Liquid content in `index.markdown` never appears on the built site. The quest never tells the learner to delete/rename the Chapter 1 `index.html` first.
-- **Confirmed bug 2 (`tested`, `failed`):** the Chapter 3 Step 5 `index.markdown` sample contains `[View Site]({​% raw %​}{​{ site.url }​}{​% endraw %​})`. Building this literally with Jekyll renders `<a href="{​{ site.url }​}">View Site</a>` — the `{​% raw %​}`/`{​% endraw %​}` wrapper (leftover from how the quest's own doc-rendering pipeline prevents evaluation of the sample) leaks into the copy-pasteable snippet and produces a broken, unevaluated link.
+- **Confirmed bug 2 (`tested`, `failed`):** the Chapter 3 Step 5 `index.markdown` sample contains `[View Site]({% raw %}{{ site.url }}{% endraw %})`. Building this literally with Jekyll renders `<a href="{{ site.url }}">View Site</a>` — the `{% raw %}`/`{% endraw %}` wrapper (leftover from how the quest's own doc-rendering pipeline prevents evaluation of the sample) leaks into the copy-pasteable snippet and produces a broken, unevaluated link.
 - `git clone https://github.com/yourusername/your-repo-name.git` fails as literally written (`fatal: could not read Username for 'https://github.com'`) — expected for a placeholder URL, but no explicit "replace this" callout is given.
 - `bundle install` timed out after 2 minutes in the sandbox due to restricted network egress — scored as an environment limitation, not a quest defect, but the quest gives no expected-duration/troubleshooting guidance for that step.
 - The two Gemfiles presented back-to-back (the one `jekyll new .` generates, pinning `jekyll ~>4.4.1`/`minima` directly, vs. Step 3's hand-written `github-pages`-gem Gemfile) are never reconciled — following the steps literally leaves conflicting Gemfiles in the same directory.
@@ -84,8 +87,8 @@ All outcomes below are commands the execute engine actually ran in its disposabl
 ### 3. Build a Personal Website with GitHub Pages — ❌ 16 (0 available/runnable code blocks, 1 recorded item, 0 ran, 1 skipped)
 - Dimensions: commands_work 0, content_accuracy 1, completeness 0, clarity 0, structure 1, safety 5.
 - **Confirmed (`tested`, `skipped` — nothing to run):** the quest body contains zero fenced code blocks, shell commands, git commands, or config snippets — confirmed by a full read of the 45-line file and a check for code fences. There is no repo-creation step, no `_config.yml`, no `git push`, no "enable Pages in Settings" instruction — the actions implied by the title never appear.
-- **Confirmed accuracy error:** row 2 and row 6 of the services table both list the identical URL `https://{​{ site.github_user }​}.github.io/` while claiming row 2 is "hosted by GitHub Pages" and row 6 is "Domain 3, hosted by Cloudflare" — a copy-paste error misrepresenting a Cloudflare-fronted custom domain.
-- **Confirmed rendering bug:** every dynamic value in the doc is broken raw, unrendered Liquid — `{​% raw %​}{​{ site.github_user }​}{​% endraw %​}` and `{​{ site.github_base_url }​}` appear literally in the rendered prose and table cells instead of being substituted.
+- **Confirmed accuracy error:** row 2 and row 6 of the services table both list the identical URL `https://{{ site.github_user }}.github.io/` while claiming row 2 is "hosted by GitHub Pages" and row 6 is "Domain 3, hosted by Cloudflare" — a copy-paste error misrepresenting a Cloudflare-fronted custom domain.
+- **Confirmed rendering bug:** every dynamic value in the doc is broken raw, unrendered Liquid — `{% raw %}{{ site.github_user }}{% endraw %}` and `{{ site.github_base_url }}` appear literally in the rendered prose and table cells instead of being substituted.
 - The doc points to `travis-ci.org` as CI/CD guidance; Travis CI's free OSS service was sunset years ago and virtually all GitHub Pages/Jekyll CI today uses GitHub Actions — outdated guidance presented as current.
 
 ### 4. The Summoning: Raise the Site and Give It a Voice — ✅ 95 (9 available / 3 runnable, 8 ran, 8 passed, 0 failed, 1 skipped, 1 reasoned)
@@ -99,7 +102,7 @@ All outcomes below are commands the execute engine actually ran in its disposabl
 ### 5. SEO Optimization — ⚠️ 60 (11 available / 5 runnable, 6 ran, 5 passed, 1 failed, 4 skipped, 3 reasoned)
 - Dimensions: commands_work 2, content_accuracy 3, completeness 4, clarity 3, structure 4, safety 4.
 - `bundle add jekyll-seo-tag jekyll-sitemap` ran against a real `jekyll new` scaffold and correctly appended `gem "jekyll-seo-tag", "~> 2.9"` / `gem "jekyll-sitemap", "~> 1.4"` to the Gemfile, confirming the quest's inline note.
-- **Confirmed bug (`tested`, `failed`):** built a real Jekyll site with the Chapter 2 `<head>` snippet `{​% raw %​}{​% seo %​}{​% endraw %​}` in `_layouts/default.html` — the rendered `_site/index.html` contained the **literal text `{​% seo %​}`**, not any generated SEO tags, because `raw`/`endraw` explicitly tells Liquid not to process what's inside it. Copy-pasting this block as instructed does not work and defeats the chapter's central teaching point.
+- **Confirmed bug (`tested`, `failed`):** built a real Jekyll site with the Chapter 2 `<head>` snippet `{% raw %}{% seo %}{% endraw %}` in `_layouts/default.html` — the rendered `_site/index.html` contained the **literal text `{% seo %}`**, not any generated SEO tags, because `raw`/`endraw` explicitly tells Liquid not to process what's inside it. Copy-pasting this block as instructed does not work and defeats the chapter's central teaching point.
 - The `<head>` meta/canonical block, Open Graph `<meta>` block, `_config.yml`, and the JSON-LD `Article` structured-data block all parsed cleanly (Python `html.parser`, PyYAML, `json.loads` respectively).
 - `bundle exec jekyll serve` could not complete in the sandbox (no network access to fetch newly-added gems) — an environment limitation, not a quest defect.
 - Minor accuracy slips: the Chapter 1 example meta description is only 119 characters, though the same block's comment and the Novice Challenge both instruct "aim for ~150-160 characters"; and the sample `_config.yml` nests `twitter: yourhandle` under `author:`, which may not be read by `jekyll-seo-tag` for Twitter Card generation (its schema expects a separate top-level `twitter:` block).
@@ -109,12 +112,12 @@ All outcomes below are commands the execute engine actually ran in its disposabl
 Every item cites what was actually run/observed (`tested`) or read directly from source/frontmatter/network data (`reasoned`); severities as the engine scored them (the character-fit finding's severity is my own judgment).
 
 - **HIGH · The GitHub Pages Portal · Chapter 3 Jekyll setup ordering · `tested`** — `jekyll new . --force` run in the same directory as the Chapter 1 `index.html` creates a real `_site` build conflict; the static `index.html` silently wins over the learner's `index.markdown`. **Fix:** instruct the learner to delete/rename the Chapter 1 `index.html` before running `jekyll new . --force`.
-- **HIGH · The GitHub Pages Portal · Chapter 3 Step 5 `index.markdown` sample · `tested`** — `[View Site]({​% raw %​}{​{ site.url }​}{​% endraw %​})` renders as a literal, unevaluated Liquid tag when built. **Fix:** remove the `{​% raw %​}`/`{​% endraw %​}` wrapper from the copy-pasteable sample; keep it only in the quest's own doc-rendering pipeline.
+- **HIGH · The GitHub Pages Portal · Chapter 3 Step 5 `index.markdown` sample · `tested`** — `[View Site]({% raw %}{{ site.url }}{% endraw %})` renders as a literal, unevaluated Liquid tag when built. **Fix:** remove the `{% raw %}`/`{% endraw %}` wrapper from the copy-pasteable sample; keep it only in the quest's own doc-rendering pipeline.
 - **HIGH · Stack Attack Analysis · multiple sections · `tested`** — Five independently verified factual errors against the live repo: Jekyll version (claims 3.9.5, real is 3.10.0), a nonexistent `jekyll-theme-zer0` Gemfile dependency, a `lvl_000`/`lvl_001` directory-naming claim that contradicts the real `0000`/`0001` structure, a `docker-compose.yml` example the real repo has explicitly moved away from for Ruby-version compatibility, and a `requirements.txt` list that doesn't match the real file. **Fix:** regenerate or hand-correct all version/path/dependency claims against a fresh clone of the repo, and re-verify before publishing similar auto-generated "stack analysis" quests.
 - **HIGH · Stack Attack Analysis · `LinkHealthGuardian` Python snippet · `tested`** — Instantiating the class exactly as shown raises `AttributeError` because `_check_lychee`/`_check_openai_key` are referenced but never defined. **Fix:** either implement the stubbed methods or explicitly label the class as illustrative pseudocode.
 - **HIGH · Build a Personal Website · overall content · `tested`** — Zero runnable code, no actual GitHub Pages setup steps; the quest does not deliver on its title. **Fix:** replace the link table with a real step-by-step tutorial (create `<username>.github.io` repo, add `index.html`/`_config.yml`, push, enable Pages, verify the live URL).
-- **HIGH · Build a Personal Website · Template rendering · `tested`** — `{​% raw %​}{​{ site.github_user }​}{​% endraw %​}` / `{​{ site.github_base_url }​}` appear as literal unrendered text throughout the doc. **Fix:** fix the Liquid tags or replace with a plain placeholder like `<your-username>`.
-- **HIGH · SEO Optimization · Chapter 2 jekyll-seo-tag snippet · `tested`** — `{​% raw %​}{​% seo %​}{​% endraw %​}` renders as literal text `{​% seo %​}` in a real build instead of invoking the plugin. **Fix:** remove the `{​% raw %​}`/`{​% endraw %​}` wrapper from the copy-pasteable block, or clearly label it as doc-rendering-only.
+- **HIGH · Build a Personal Website · Template rendering · `tested`** — `{% raw %}{{ site.github_user }}{% endraw %}` / `{{ site.github_base_url }}` appear as literal unrendered text throughout the doc. **Fix:** fix the Liquid tags or replace with a plain placeholder like `<your-username>`.
+- **HIGH · SEO Optimization · Chapter 2 jekyll-seo-tag snippet · `tested`** — `{% raw %}{% seo %}{% endraw %}` renders as literal text `{% seo %}` in a real build instead of invoking the plugin. **Fix:** remove the `{% raw %}`/`{% endraw %}` wrapper from the copy-pasteable block, or clearly label it as doc-rendering-only.
 - **MEDIUM · The GitHub Pages Portal · Chapter 3 Gemfile reconciliation · `tested`** — Two different, incompatible Gemfiles (the `jekyll new .`-generated one and the hand-written `github-pages`-gem one) are presented back-to-back with no reconciliation. **Fix:** clarify which to keep, or show an edit/diff.
 - **MEDIUM · The GitHub Pages Portal · Custom Domain & CI/CD content gap · `reasoned`** — "Custom Domain Enchantment" and "Master Challenge: Custom Domain & CI/CD" are listed objectives/success criteria but no CNAME/DNS/GitHub Actions example appears anywhere in the body. **Fix:** add a minimal CNAME/DNS example and a sample Pages-deploy workflow YAML.
 - **MEDIUM · Build a Personal Website · Services table · `tested`** — Rows 2 and 6 share an identical URL while claiming different hosting providers (GitHub Pages vs. Cloudflare); the doc also cites `travis-ci.org`, a sunset service. **Fix:** correct the duplicate URL and replace the Travis CI reference with GitHub Actions.

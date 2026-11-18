@@ -72,7 +72,9 @@ rewards:
   unlocks_features:
   - Connection and resilience quests in the Database Mastery line
 skill_focus: data-engineering
-source_file: backup-recovery.md
+source_file: pages/_quests/0110/backup-recovery.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0110/backup-recovery.md
 sub_title: 'Level 0110 (6) Quest: Main Quest - The Vault of Restoration'
 tags:
 - '0110'
@@ -81,7 +83,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: 'Logical backup: a portable file that can recreate the database anywhere.'
+title: 'Backup and Recovery: Data Protection for Databases'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -130,7 +132,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Comfort running shell commands and SQL
 - [ ] Understanding of what a database stores
-- [ ] Completion of [Database Fundamentals](/quests/0110/database-fundamentals/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/0110/database-fundamentals|Database Fundamentals]] (recommended)
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -366,17 +368,17 @@ The drill answers three questions a real outage will ask: Does the backup restor
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Connection Pooling](/quests/0110/connection-pooling/) - Manage connections efficiently
+- 🎯 [[it-journey/pages/_quests/0110/connection-pooling|Connection Pooling]] - Manage connections efficiently
 
 **Explore Side Adventures**:
-- ⚔️ [Database Security](/quests/0110/database-security/) - Encrypt backups and control access
-- ⚔️ [Database Migrations](/quests/0110/database-migrations/) - Evolve schemas safely
+- ⚔️ [[it-journey/pages/_quests/0110/database-security|Database Security]] - Encrypt backups and control access
+- ⚔️ [[it-journey/pages/_quests/0110/database-migrations|Database Migrations]] - Evolve schemas safely
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Connection Pooling](/quests/0110/connection-pooling/)  
-**🏗️ System Engineer**: Explore [Database Security](/quests/0110/database-security/)  
-**📊 Data Scientist**: Advance to [Database Migrations](/quests/0110/database-migrations/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0110/connection-pooling|Connection Pooling]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0110/database-security|Database Security]]  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/0110/database-migrations|Database Migrations]]
 
 ## 📚 Resources
 
@@ -405,7 +407,7 @@ The drill answers three questions a real outage will ask: Does the backup restor
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Database Fundamentals: The Relational Model and ACID]] **Unlocks:** [[Connection Pooling: Efficient Database Resource Management]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0110 - Database Mastery]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0110/database-fundamentals|Database Fundamentals: The Relational Model and ACID]] **Unlocks:** [[it-journey/pages/_quests/0110/connection-pooling|Connection Pooling: Efficient Database Resource Management]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 </content>

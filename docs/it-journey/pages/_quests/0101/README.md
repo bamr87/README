@@ -13,7 +13,9 @@ local_graph: false
 mermaid: true
 permalink: /quests/0101/
 preview: /images/previews/level-0101-advanced-docker-devops.webp
-source_file: README.md
+source_file: pages/_quests/0101/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/README.md
 tags:
 - quests
 - '0101'
@@ -21,7 +23,7 @@ tags:
 - ci
 - cd
 - devops
-title: 'Level 0101: Advanced Docker & DevOps'
+title: Level 0101 - Advanced Docker & DevOps
 ---
 # Level 0101: Advanced Docker & DevOps
 
@@ -39,17 +41,17 @@ Level 0101 quests focus on:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Artifact Management: Build Output Storage and Dependency Caching](/quests/0101/artifact-management/) | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
-| [CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials](/quests/0101/cicd-fundamentals/) | 🟡 Medium | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [Deployment Pipelines: Production Release Automation Strategies](/quests/0101/deployment-pipelines/) | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Docker Containerization Mastery: Level 0101 (5) Quest](/quests/0101/docker-mastery/) | 🟡 Medium | 60-90 minutes | main_quest | ✅ Complete |
-| [Environment Management: Dev, Staging, and Production Configuration](/quests/0101/environment-management/) | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
-| [GitHub Actions Basics: Workflow Automation for Modern DevOps](/quests/0101/github-actions-basics/) | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0101/artifact-management\|Artifact Management: Build Output Storage and Dependency Caching]] | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0101/cicd-fundamentals\|CI/CD Fundamentals: Continuous Integration and Continuous Deployment Essentials]] | 🟡 Medium | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0101/deployment-pipelines\|Deployment Pipelines: Production Release Automation Strategies]] | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0101/docker-mastery-example\|Docker Containerization Mastery: Level 0101 (5) Quest]] | 🟡 Medium | 60-90 minutes | main_quest | ✅ Complete |
+| [[it-journey/pages/_quests/0101/environment-management\|Environment Management: Dev, Staging, and Production Configuration]] | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0101/github-actions-basics\|GitHub Actions Basics: Workflow Automation for Modern DevOps]] | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
 | [Jekyll Quest Tracking: Building Dynamic Collection Layouts](/quests/0101/side-quests/jekyll-quest-tracking/) | 🔴 Hard | 4-6 hours | side_quest | ✅ Complete |
-| [Forging the La(zy)TeX CV: Binary Level 0101 (5) Quest](/quests/0101/latex-cv-forging/) | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
-| [Secrets Management: Secure Configuration and Credential Handling](/quests/0101/secrets-management/) | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
-| [Testing Integration: Automated Quality Assurance in CI/CD Pipelines](/quests/0101/testing-integration/) | 🟡 Medium | 75-90 minutes | main_quest | 🔮 Placeholder |
-| [Workflow Optimization: Caching Strategies and Pipeline Parallelization](/quests/0101/workflow-optimization/) | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0101/the-lazytex-of-building-a-curriculum-vitae\|Forging the La(zy)TeX CV: Binary Level 0101 (5) Quest]] | 🟡 Medium | 90-120 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0101/secrets-management\|Secrets Management: Secure Configuration and Credential Handling]] | 🟡 Medium | 45-60 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0101/testing-integration\|Testing Integration: Automated Quality Assurance in CI/CD Pipelines]] | 🟡 Medium | 75-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/0101/workflow-optimization\|Workflow Optimization: Caching Strategies and Pipeline Parallelization]] | 🟡 Medium | 60-75 minutes | main_quest | 🔮 Placeholder |
 
 
 ### 🐳 Advanced Containers

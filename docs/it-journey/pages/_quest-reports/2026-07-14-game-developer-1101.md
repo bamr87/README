@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29329246935
 slice: game-developer/1101
-source_file: 2026-07-14-game-developer-1101.md
+source_file: pages/_quest-reports/2026-07-14-game-developer-1101.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-14-game-developer-1101.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-14-game-developer-1101.md
 tags:
 - game-developer
 - level-1101
@@ -26,13 +28,14 @@ tags:
 - machine-learning-ai
 theme: Machine Learning & AI
 tier: Master
-title: 2026 07 14 Game Developer 1101
+title: Game Developer · L1101 · 2026-07-14
 verdict: warn
 walk_date: '2026-07-14'
 ---
+
 > **Slice** `game-developer/1101` · **Level** 1101 (Machine Learning & AI) · **Master tier** · **Engine verdict** ⚠️ warn (avg 84.2%) · **Walked** 2026-07-14
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29329246935) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-14-game-developer-1101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-14-game-developer-1101.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29329246935) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-14-game-developer-1101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-14-game-developer-1101.md)
 
 ---
 

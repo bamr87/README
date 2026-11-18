@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/32961973812
 slice: game-developer/0001
-source_file: 2026-08-26-game-developer-0001.md
+source_file: pages/_quest-reports/2026-08-26-game-developer-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-08-26-game-developer-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-08-26-game-developer-0001.md
 tags:
 - game-developer
 - level-0001
@@ -26,13 +28,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 08 26 Game Developer 0001
+title: Game Developer · L0001 · 2026-08-26
 verdict: warn
 walk_date: '2026-08-26'
 ---
+
 > **Slice** `game-developer/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ⚠️ warn (avg 71.2%) · **Walked** 2026-08-26
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/32961973812) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-26-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-26-game-developer-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/32961973812) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-26-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-26-game-developer-0001.md)
 
 ---
 
@@ -63,7 +66,7 @@ All outcomes below are from commands the execute engine actually ran in its disp
 ### 1. Advanced Markdown — ✅ 97 (13 snippets recorded, 11 ran / 11 passed / 2 reasoned)
 - Dimensions: commands_work 5, content_accuracy 5, completeness 5, clarity 4, structure 5, safety 5.
 - Rendered with the **real Ruby `kramdown` 2.5.2 gem** (in Jekyll's default GFM-input mode) and the **real `liquid` 5.13 gem**: the pipe-table alignment (`:---`/`:--:`/`---:` → `text-align: left/center/right`), the `[^speed]` footnote (superscript + bottom `<div class="footnotes">`), the checkbox task list, the language-fenced Python code block (Rouge-highlighted), the `> **Note:**`/`⚠️ **Warning:**` blockquote callouts, the `{: .lead #intro }` Kramdown attribute list (→ exact `class="lead" id="intro"` HTML), and the definition list all produced precisely the HTML the quest claims.
-- The `{​% raw %​}...{​% endraw %​}` Liquid example rendered as literal unexecuted tag text, confirming the quest's own explanation of why it's needed inside a Jekyll-built page.
+- The `{% raw %}...{% endraw %}` Liquid example rendered as literal unexecuted tag text, confirming the quest's own explanation of why it's needed inside a Jekyll-built page.
 - Setup snippets (`mkdir -p ~/md-quest && cd ~/md-quest && touch guide.md`) ran cleanly on macOS/Linux paths; `code guide.md` couldn't launch (no VS Code binary in the headless sandbox — an environment gap, not a quest defect, and the Linux section already offers a nano/vim fallback).
 - Only nit: after creating `guide.md` in setup, the quest never explicitly tells the reader to paste the following examples into that file.
 

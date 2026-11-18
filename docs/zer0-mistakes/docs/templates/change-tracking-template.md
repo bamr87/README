@@ -6,11 +6,14 @@ date: 2025-10-26 19:20:20+00:00
 description: 'A reusable template for tracking a single change: its identifier, type,
   rationale, scope, and verification, when documenting work in Zer0-Mistakes.'
 lastmod: 2026-06-01 03:38:46+00:00
-source_file: change-tracking-template.md
+source_file: docs/templates/change-tracking-template.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/templates/change-tracking-template.md
 tags:
 - templates
 title: Change Tracking Template
 ---
+
 # Change Tracking Template
 
 **Change ID**: [Unique identifier]  

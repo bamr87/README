@@ -18,14 +18,17 @@ permalink: /docs/seo/
 preview: /images/previews/seo.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/seo/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/seo/index.md
 tags:
 - seo
 - meta
 - sitemap
 - search
-title: SEO Features
+title: 'Jekyll SEO Features: Meta Tags, Sitemaps & Schema'
 ---
+
 # SEO Features
 
 The Zer0-Mistakes theme ships Open Graph and Twitter Card meta tags, JSON-LD structured data, an XML sitemap, and a search index — all enabled automatically with no plugin required.
@@ -34,9 +37,9 @@ The Zer0-Mistakes theme ships Open Graph and Twitter Card meta tags, JSON-LD str
 
 | Feature | Purpose |
 |---------|---------|
-| [Meta Tags](/docs/seo/meta-tags/) | Open Graph, Twitter Cards, canonical URLs |
-| [Sitemap](/docs/seo/sitemap/) | XML sitemap and JSON search index |
-| [Breadcrumbs](/docs/features/breadcrumbs/) | Structured navigation markup |
+| [[zer0-mistakes/pages/_docs/seo/meta-tags\|Meta Tags]] | Open Graph, Twitter Cards, canonical URLs |
+| [[zer0-mistakes/pages/_docs/seo/sitemap\|Sitemap]] | XML sitemap and JSON search index |
+| [[zer0-mistakes/pages/_docs/features/breadcrumbs\|Breadcrumbs]] | Structured navigation markup |
 
 ## Quick Setup
 
@@ -76,13 +79,13 @@ author: "Specific Author"
 
 ## Related
 
-- [Meta Tags](/docs/seo/meta-tags/)
-- [Sitemap](/docs/seo/sitemap/)
-- [Breadcrumbs](/docs/features/breadcrumbs/)
+- [[zer0-mistakes/pages/_docs/seo/meta-tags|Meta Tags]]
+- [[zer0-mistakes/pages/_docs/seo/sitemap|Sitemap]]
+- [[zer0-mistakes/pages/_docs/features/breadcrumbs|Breadcrumbs]]
 
 ## See also
 
-- [[Analytics]]
-- [[front-matter]]
-- [[Features]]
-- [[Deployment]]
+- [[zer0-mistakes/fr/docs/analytics/index|Analytics]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment]]

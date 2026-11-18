@@ -1,5 +1,7 @@
 ---
-source_file: rename-directory-quick-reference.md
+source_file: docs/rename-directory-quick-reference.md
+source_repo: bamr87/scripts
+source_url: https://github.com/bamr87/scripts/blob/main/docs/rename-directory-quick-reference.md
 title: Rename Directory Utility - Quick Reference
 ---
 # Rename Directory Utility - Quick Reference

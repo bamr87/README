@@ -10,7 +10,9 @@ draft: false
 lastmod: '2026-05-17T00:00:00.000Z'
 layout: default
 permalink: /notes/gh-600/copilot-coding-agent-cheatsheet/
-source_file: copilot-coding-agent-cheatsheet.md
+source_file: pages/_notes/gh-600/copilot-coding-agent-cheatsheet.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/gh-600/copilot-coding-agent-cheatsheet.md
 tags:
 - gh-600
 - copilot
@@ -104,4 +106,4 @@ GITHUB_EVENT_NAME   # trigger event type
 
 ---
 
-*Part of: [[GH-600 Agentic AI Quick-Reference Notes]] · Hub: [[The Agentic Codex: GH-600 Study Hub]]*
+*Part of: [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] · Hub: [[The Agentic Codex: GH-600 Study Hub]]*

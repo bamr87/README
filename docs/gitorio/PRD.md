@@ -1,0 +1,146 @@
+---
+source_file: PRD.md
+source_repo: bamr87/gitorio
+source_url: https://github.com/bamr87/gitorio/blob/main/PRD.md
+title: PRD — gitorio (GitFactory)
+---
+# PRD — gitorio (GitFactory)
+
+> The product requirements for GitFactory: the problem, target users, goals, scope and proposed success measures.
+
+Product requirements for [`bamr87/gitorio`](https://github.com/bamr87/gitorio), derived from the README, agent docs, config and code in this repo. Anything not stated in those sources is marked **TBD**; success metrics are proposals.
+
+## 1. Overview / problem
+
+GitFactory (working title) is a Factorio-style factory builder for GitHub automation: users drag machines (triggers, Claude Code agents, actions) onto a canvas, connect them with belts, and Deploy compiles the blueprint into readable GitHub Actions workflows on their own repos. No servers: the frontend is static and GitHub is the database, event bus and compute layer.
+
+## 1.1 Missions
+
+GitFactory's direction is to become the ultimate open home for all things GitHub automation — data, tools, resources and transparency, gathered in one place that anyone can inspect and reuse.
+
+1. **Provide data, tools, resources and transparency for all stakeholders, automation engineers and practitioners, and the general public.** Maintainers, harness authors, agent builders and anyone automating a repository are first-class audiences. The aim is a shared, inspectable commons: the same blueprints, the same compiled workflows, and the same trail of configuration for everyone.
+2. **Let anyone design, compile and share visual blueprints that become readable, auditable GitHub Actions workflows on their own repos, with no hosted backend.** Users arrange triggers, Claude Code agents and actions on a canvas, connect them, and Deploy compiles the blueprint into workflow YAML that works without GitFactory. GitHub remains the database, event bus and compute layer; blueprints and prompts stay versioned in the repo.
+3. **Be the fleet's Harness Studio: observe every loop and harness live, design and configure new ones as reviewable blueprints, and manage them only through confirm-gated operations — read-only by default.** A versioned graph and config schema, and an engine and API any UI can consume, keep the front end independent of the back end; the studio stays extensible through plugin node types, engine adapters and config-driven behavior, with Jev as the foundation for numbering, fragments and generated files.
+
+These missions set the course; they do not claim the work is finished. They serve the PRD goals: compiling visual blueprints into auditable Actions YAML, versioned and shareable blueprints, guarded agent contracts, and factory-floor status from the Actions API.
+
+**Requirement**
+
+- MR1: Constitution §1 states one direction statement and exactly three numbered missions, and the README and AGENTS.md taglines match that direction and link to constitution §1.
+
+Feature [GITORIO-015](features/features.yml) traces to requirement MR1.
+
+## 2. Target users
+
+- Developers/maintainers who want AI-driven repo automation (triage, review, gardening) without running infrastructure
+- Fleet operators monitoring AI lanes across repos (Fleet Ops cockpit)
+
+## 3. Goals and non-goals
+
+**Goals**
+
+- Compile visual blueprints into auditable Actions YAML that works without GitFactory
+- Version blueprints and prompts in the repo, shareable as encoded strings
+- Give each agent a prompt contract, scoped tool grants, loop guards and telemetry
+- Render factory-floor status from the Actions API
+
+**Non-goals**
+
+- A bespoke runtime or hosted backend
+- Unbounded agents without guards
+
+## 4. Core features (current)
+
+- Drag-and-drop canvas ("Evidence Console" design language)
+- Blueprint → Actions workflow compiler with vitest invariant tests
+- Demo mode `?demo=1` on a fixture-backed three-repo fleet, no token needed
+- Fleet Ops cockpit and telemetry views
+- Packages absorbed under `packages/` (gitnexus, git-with-the-program)
+- Docker and VS Code task/debug workflows
+
+## Feature catalog
+
+Every user-facing capability has a stable id in the feature catalog [`features/features.yml`](features/features.yml). Each entry names the PRD requirements it serves (`prd:`); the trace below is the reverse view.
+
+| ID | Feature | Status | Where | Requirements |
+| --- | --- | --- | --- | --- |
+| [GITORIO-001](features/features.yml) | Drag-and-drop canvas | shipped | [`app/src/canvas`](app/src/canvas) · [`README.md`](README.md) | TBD |
+| [GITORIO-002](features/features.yml) | Blueprint → Actions workflow compiler with vitest invariant tests | shipped | [`app/src/compiler`](app/src/compiler) · [`README.md`](README.md) | FR1 |
+| [GITORIO-003](features/features.yml) | Demo mode ?demo=1 on a fixture-backed three-repo fleet | shipped | [`app/src/demo`](app/src/demo) · [`README.md`](README.md) | FR3, FR2 |
+| [GITORIO-004](features/features.yml) | Fleet Ops cockpit and telemetry views | shipped | [`app/src/fleet`](app/src/fleet) · [`README.md`](README.md) | TBD |
+| [GITORIO-005](features/features.yml) | Packages absorbed under packages/ | shipped | [`packages`](packages) · [`README.md`](README.md) | TBD |
+| [GITORIO-006](features/features.yml) | Docker and VS Code task/debug workflows | shipped | [`.vscode/tasks.json`](dot-vscode/tasks.json) · [`README.md`](README.md) | TBD |
+| [GITORIO-007](features/features.yml) | Harness Studio live map (Observe over fleetgraph/v1) | planned | [`app/src/map`](app/src/map) · [`docs/proposals/redesign-harness-studio.md`](docs/proposals/redesign-harness-studio.md) | FR4, FR7, FR12 |
+| [GITORIO-008](features/features.yml) | Design fragments from the blueprint editor | planned | [`app/src/canvas`](app/src/canvas) · [`docs/proposals/redesign-harness-studio.md`](docs/proposals/redesign-harness-studio.md) | FR5, FR8 |
+| [GITORIO-009](features/features.yml) | Manage via confirm-gated hub console ops | planned | [`app/src/fleet`](app/src/fleet) · [`docs/proposals/redesign-harness-studio.md`](docs/proposals/redesign-harness-studio.md) | FR6, NFR4 |
+| [GITORIO-010](features/features.yml) | Console embed of the live map | planned | [`app/src/state`](app/src/state) · [`docs/proposals/redesign-harness-studio.md`](docs/proposals/redesign-harness-studio.md) | FR9, NFR5 |
+| [GITORIO-011](features/features.yml) | JEV numbering and main-only generated files | planned | [`features`](features) · [`docs/proposals/redesign-harness-studio.md`](docs/proposals/redesign-harness-studio.md) | FR8 |
+| [GITORIO-012](features/features.yml) | Engine/API layer over fleetgraph/v1 | planned | [`app/src`](app/src) · [`docs/proposals/redesign-harness-studio.md`](docs/proposals/redesign-harness-studio.md) | FR10, NFR6 |
+| [GITORIO-013](features/features.yml) | Plugin SDK: node types, engine adapters, config-driven behavior | planned | [`app/src/machines`](app/src/machines) · [`docs/proposals/redesign-harness-studio.md`](docs/proposals/redesign-harness-studio.md) | FR11, FR12 |
+| [GITORIO-014](features/features.yml) | Community release 1.0 | planned | [`release-please-config.json`](release-please-config.json) · [`docs/proposals/redesign-harness-studio.md`](docs/proposals/redesign-harness-studio.md) | NFR6, NFR7 |
+| [GITORIO-015](features/features.yml) | Constitution missions | planned | [`docs/constitution.md`](docs/constitution.md) · [`PRD.md`](PRD.md) | MR1 |
+
+**Requirement → feature trace**
+
+| Requirement | Features |
+| --- | --- |
+| TBD | GITORIO-001, GITORIO-004, GITORIO-005, GITORIO-006 |
+| FR1 | GITORIO-002 |
+| FR3 | GITORIO-003 |
+| FR2 | GITORIO-003 |
+| FR4 | GITORIO-007 |
+| FR7 | GITORIO-007 |
+| FR12 | GITORIO-007, GITORIO-013 |
+| FR5 | GITORIO-008 |
+| FR8 | GITORIO-008, GITORIO-011 |
+| FR6 | GITORIO-009 |
+| NFR4 | GITORIO-009 |
+| FR9 | GITORIO-010 |
+| NFR5 | GITORIO-010 |
+| FR10 | GITORIO-012 |
+| NFR6 | GITORIO-012, GITORIO-014 |
+| FR11 | GITORIO-013 |
+| NFR7 | GITORIO-014 |
+| MR1 | GITORIO-015 |
+
+## 5. Requirements
+
+**Functional**
+
+- FR1: Compile produces valid, readable workflow YAML for each blueprint
+- FR2: Deploy writes workflows to the user's repo via their token
+- FR3: Demo mode makes no network calls
+- FR4 (proposed, G1/G2): Observe renders the fleet graph (`fleetgraph/v1`) live with per-node status, read-only
+- FR5 (proposed): Design emits reviewable artifacts — compiled workflows and JEV design fragments opened as PRs, never committed to `main`
+- FR6 (proposed): Manage sends op intents to confirm-gated hub console ops; the app holds no hub write credential and never acts through an MCP tunnel
+- FR7 (proposed): A shared graph schema with the hub registry and pipeline map, with a parity-tested status computation
+- FR8 (proposed, G5): New features, requirements and amendments are numbered at merge by JEV
+- FR9 (proposed): The live map embeds in the hub harness console
+- FR10 (proposed, G2): A UI-free engine/API package over a versioned `fleetgraph/v1` schema is the only graph logic both the app and the hub console consume
+- FR11 (proposed, G3): Node types register through a plugin API; execution targets plug in through an adapter interface (GitHub Actions, the local runner, at least one other engine)
+- FR12 (proposed, G1/G3): Harness and loop behavior is configured in schema-validated config files, and every hub loop and harness layer can be designed and configured in the studio
+
+**Non-functional**
+
+- NFR1: Static hosting only; Node 22 pinned (`.nvmrc`)
+- NFR2: Typecheck, lint, test and build pass in CI
+- NFR3: Token handled client-side only (storage policy: TBD)
+- NFR4 (proposed, G1/G2): Every cost figure is labelled "API-equivalent (estimate)" and separates estimated from reported spend
+- NFR5 (proposed): Live-map additions stay lazy-loaded within the first-paint bundle budget
+- NFR6 (proposed, G4): Releases follow semver; the extension API has a published stability and deprecation policy; schema versions carry compatibility tests
+- NFR7 (proposed, G4): Community-ready: license, contribution guide, code of conduct, security model, docs site, packaged releases and green CI with engine coverage ≥ 80%
+
+## 6. Success metrics (proposed — not defined in sources)
+
+- Blueprints compiled/deployed
+- Compiled-workflow failure rate
+- Demo-to-token conversion: TBD
+
+## 7. Roadmap / open questions
+
+- Final product name (README says working title)
+- See docs/ROADMAP.md and BACKLOG.md for planned work
+
+## 8. Links
+
+- [README.md](README.md) · [AGENTS.md](AGENTS.md) · [BACKLOG.md](BACKLOG.md) · [CHANGELOG.md](CHANGELOG.md) · [docs/ROADMAP.md](docs/ROADMAP.md) · [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)

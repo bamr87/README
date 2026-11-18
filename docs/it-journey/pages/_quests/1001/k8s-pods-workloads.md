@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Access to Services, Networking, and Configuration quests
 skill_focus: devops
-source_file: k8s-pods-workloads.md
+source_file: pages/_quests/1001/k8s-pods-workloads.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1001/k8s-pods-workloads.md
 sub_title: 'Level 1001 (9) Quest: Main Quest - K8s Workloads'
 tags:
 - '1001'
@@ -84,7 +86,7 @@ tags:
 - cloud-engineering
 - hands-on
 - gamified-learning
-title: Ensure your cluster from the previous quest is running
+title: 'Kubernetes Pods and Workloads: Deployments and StatefulSets'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -131,7 +133,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/)
+- [ ] Completion of [[it-journey/pages/_quests/1001/kubernetes-fundamentals|Kubernetes Fundamentals]]
 - [ ] Comfort applying YAML manifests with `kubectl apply`
 - [ ] Understanding of the reconciliation loop
 
@@ -530,16 +532,16 @@ kubectl logs job/migrate
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Services and Networking](/quests/1001/k8s-services-networking/) - Expose your workloads
+- 🎯 [[it-journey/pages/_quests/1001/k8s-services-networking|Services and Networking]] - Expose your workloads
 
 **Explore Side Adventures**:
-- ⚔️ [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/) - Inject configuration
+- ⚔️ [[it-journey/pages/_quests/1001/k8s-config-secrets|ConfigMaps and Secrets]] - Inject configuration
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Services and Networking](/quests/1001/k8s-services-networking/)  
-**🏗️ System Engineer**: Explore [ConfigMaps and Secrets](/quests/1001/k8s-config-secrets/)  
-**🛡️ Security Specialist**: Revisit [Kubernetes Fundamentals](/quests/1001/kubernetes-fundamentals/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1001/k8s-services-networking|Services and Networking]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1001/k8s-config-secrets|ConfigMaps and Secrets]]  
+**🛡️ Security Specialist**: Revisit [[it-journey/pages/_quests/1001/kubernetes-fundamentals|Kubernetes Fundamentals]]
 
 ## 📚 Resources
 
@@ -570,6 +572,6 @@ Before marking this quest as complete, ensure you've:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Kubernetes Fundamentals: Container Orchestration Essentials]] **Unlocks:** [[Kubernetes Services and Networking: Ingress and DNS Configuration]] · [[Kubernetes ConfigMaps and Secrets: Configuration Management Best Practices]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1001/README|Level 1001 (9) - Kubernetes Orchestration]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/1001/kubernetes-fundamentals|Kubernetes Fundamentals: Container Orchestration Essentials]] **Unlocks:** [[Kubernetes Services and Networking: Ingress and DNS Configuration]] · [[Kubernetes ConfigMaps and Secrets: Configuration Management Best Practices]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

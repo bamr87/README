@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29826801543
 slice: digital-artist/0001
-source_file: 2026-07-21-digital-artist-0001.md
+source_file: pages/_quest-reports/2026-07-21-digital-artist-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-21-digital-artist-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-21-digital-artist-0001.md
 tags:
 - digital-artist
 - level-0001
@@ -25,13 +27,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 07 21 Digital Artist 0001
+title: Digital Artist · L0001 · 2026-07-21
 verdict: warn
 walk_date: '2026-07-21'
 ---
+
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-21
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29826801543) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-21-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-21-digital-artist-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29826801543) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-21-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-21-digital-artist-0001.md)
 
 ---
 
@@ -57,7 +60,7 @@ All figures below are from the sealed execute run (`walk-evidence.json`, `mode: 
 
 ### 1. Advanced Markdown — 89 · pass · snippets 10/4 runnable, **10 ran · 10 passed · 0 failed · 2 skipped · 1 reasoned**
 Per-dimension: commands_work 4, content_accuracy 4, completeness 5, clarity 5, structure 5, safety 5.
-Verified live: `mkdir -p ~/md-quest && cd ~/md-quest && touch guide.md` **passed**; the aligned table (`| :--- | :--: | ---: |`), footnote (`[^speed]`), task list (`- [x]/- [ ]`), fenced ```python block, blockquote callouts, Kramdown attribute lists (`{: .lead #intro }`), definition list, full frontmatter file, and the `{​% raw %​}`-wrapped Liquid for-loop **all passed** when built through Jekyll+Kramdown. The two `code guide.md` platform blocks were **skipped** (editor-launch, not a testable assertion); the Cloud block was **reasoned** (comments only).
+Verified live: `mkdir -p ~/md-quest && cd ~/md-quest && touch guide.md` **passed**; the aligned table (`| :--- | :--: | ---: |`), footnote (`[^speed]`), task list (`- [x]/- [ ]`), fenced ```python block, blockquote callouts, Kramdown attribute lists (`{: .lead #intro }`), definition list, full frontmatter file, and the `{% raw %}`-wrapped Liquid for-loop **all passed** when built through Jekyll+Kramdown. The two `code guide.md` platform blocks were **skipped** (editor-launch, not a testable assertion); the Cloud block was **reasoned** (comments only).
 
 ### 2. Barodybroject Stack Analysis — 36 · fail · snippets 12/12 runnable, **12 ran · 5 passed · 7 failed · 0 skipped · 11 reasoned**
 Per-dimension: commands_work 1, content_accuracy 1, completeness 2, clarity 3, structure 2, safety 4. Failures recorded by the engine:

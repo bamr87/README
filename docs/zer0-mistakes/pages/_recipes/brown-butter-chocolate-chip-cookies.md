@@ -77,7 +77,9 @@ oven:
   temp_f: 375
 permalink: /recipes/brown-butter-chocolate-chip-cookies/
 ratio_basis: flour
-source_file: brown-butter-chocolate-chip-cookies.md
+source_file: pages/_recipes/brown-butter-chocolate-chip-cookies.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_recipes/brown-butter-chocolate-chip-cookies.md
 steps:
 - text: Melt the butter in a light-coloured skillet over medium heat, swirling, until
     it foams, quiets down, and the milk solids at the bottom turn deep amber and smell
@@ -126,4 +128,5 @@ yield:
   singular: cookie
   unit: cookies
 ---
+
 This is the recipe most people already have, written the way most people already have it: in cups. It is here to make a point about units. A cup of flour is anywhere from 120 to 145 grams depending on how you fill it, which is the single biggest reason the same cookie recipe behaves differently in two kitchens. Leave it in cups if that is how you cook — or press **Metric** and bake the version that repeats.

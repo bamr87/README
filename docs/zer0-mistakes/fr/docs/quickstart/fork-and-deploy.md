@@ -21,7 +21,9 @@ permalink: /fr/docs/quickstart/fork-and-deploy/
 preview: /images/docs/quickstart/docs-deployment.png
 sidebar:
   nav: docs
-source_file: fork-and-deploy.md
+source_file: fr/docs/quickstart/fork-and-deploy.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/quickstart/fork-and-deploy.md
 tags:
 - quickstart
 - github-pages
@@ -32,6 +34,7 @@ translated_from_sha: d5c4897cbad9
 translation_of: pages/_docs/quickstart/fork-and-deploy.md
 translation_source_url: /docs/quickstart/fork-and-deploy/
 ---
+
 # Forker et déployer sur GitHub Pages
 
 **Ce que vous allez faire :** mettre en place un site Zer0-Mistakes qui vous appartient et le publier sur GitHub Pages, en choisissant entre le modèle *remote theme* à faible maintenance et le modèle *fork* à contrôle total.
@@ -71,7 +74,7 @@ gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache"
 ```
 
-Ajoutez un `index.md` avec un front matter afin d'avoir une page d'accueil, puis committez. Le [Démarrage minimal](/docs/quickstart/bare-minimum/) couvre plus en détail cet ensemble minimal de fichiers.
+Ajoutez un `index.md` avec un front matter afin d'avoir une page d'accueil, puis committez. Le [[zer0-mistakes/pages/_docs/quickstart/bare-minimum|Démarrage minimal]] couvre plus en détail cet ensemble minimal de fichiers.
 
 ## Étape 2b — Configuration du fork
 
@@ -107,7 +110,7 @@ Ouvrez `http://localhost:4000` pour voir votre site. Sans Docker, utilisez `bund
 3. Sous **Build and deployment → Source**, choisissez **Deploy from a branch**.
 4. Sélectionnez votre branche `main` et le dossier `/ (root)`, puis **Save**.
 
-GitHub construit et publie le site automatiquement à chaque push. La référence [Déployer sur GitHub Pages](/docs/deployment/github-pages/) couvre les domaines personnalisés et l'alternative GitHub Actions.
+GitHub construit et publie le site automatiquement à chaque push. La référence [[zer0-mistakes/pages/_docs/deployment/github-pages|Déployer sur GitHub Pages]] couvre les domaines personnalisés et l'alternative GitHub Actions.
 
 ## Étape 5 — Vérifier
 
@@ -121,9 +124,9 @@ GitHub construit et publie le site automatiquement à chaque push. La référenc
 - **Les styles ou les layouts semblent non définis** — pour le modèle remote theme, redéclarez vos
 `collections`, `defaults` et `permalink` dans votre propre `_config.yml` ; ils ne sont pas hérités du thème.
 - **Erreurs 404 sur des pages que vous n'avez pas créées** — les pages générées par les plugins (profils
-d'auteur, recherche, sitemap) sont ignorées par le mode sécurisé de GitHub Pages ; voir le guide [Déployer sur GitHub Pages](/docs/deployment/github-pages/).
+d'auteur, recherche, sitemap) sont ignorées par le mode sécurisé de GitHub Pages ; voir le guide [[zer0-mistakes/pages/_docs/deployment/github-pages|Déployer sur GitHub Pages]].
 
 ## Étapes suivantes
 
-- Personnalisez les couleurs et la mise en page avec le [Guide du thème](/docs/getting-started/theme-guide/).
-- Suivez la [série de démarrage rapide pas à pas](/quickstart/) pour les détails de configuration de la machine et de Jekyll.
+- Personnalisez les couleurs et la mise en page avec le [[zer0-mistakes/pages/_docs/getting-started/theme-guide|Guide du thème]].
+- Suivez la [[zer0-mistakes/pages/_quickstart/index|série de démarrage rapide pas à pas]] pour les détails de configuration de la machine et de Jekyll.

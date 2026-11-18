@@ -1,5 +1,7 @@
 ---
-source_file: authoring-courses.md
+source_file: docs/authoring-courses.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/authoring-courses.md
 title: Authoring Courses
 ---
 # Authoring Courses

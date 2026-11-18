@@ -1,5 +1,7 @@
 ---
-source_file: hidden-gem.md
+source_file: docs/termforge/hidden-gem.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/termforge/hidden-gem.md
 title: Hidden Gem — DAEMON STORM
 ---
 # Hidden Gem — DAEMON STORM

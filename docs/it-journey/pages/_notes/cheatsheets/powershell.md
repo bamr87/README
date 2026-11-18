@@ -13,7 +13,9 @@ lastmod: '2022-01-10T21:54:00.000Z'
 redirect_from:
 - /notes/cheetsheets/powershell/
 - /notes/cheetsheets/2022-10-07-powershell/
-source_file: powershell.md
+source_file: pages/_notes/cheatsheets/powershell.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/cheatsheets/powershell.md
 tags:
 - powershell
 - windows
@@ -21,7 +23,7 @@ tags:
 - administration
 - cheatsheet
 - reference
-title: Powershell
+title: Windows PowerShell Cheatsheet
 ---
 Windows PowerShell is the successor of the windows cmd language, which itself has its roots in the ms-dos Bat language. All recent versions of Windows offer PowerShell (PS). PS may be seen as Microsoft's answer to the shells common in Unix/Linux (such as csh, bash, *etc.*). Its name reflects what sets it apart from those shells: an object pipeline and direct access to the .NET framework. In these notes some important PS commands are listed and PowerShell's most notable feature, the object pipeline, is discussed. From the outset it is important to note that, in contrast to Linux/Unix, *Windows PowerShell is completely case-insensitive.* The monospace text snippets below are valid PS and may be copied, pasted, and executed in a PowerShell- or a PowerShell_ISE-session. This is why the notes form a "Cheatsheet". As is common for cheatsheets, there is hardly any explanation, the examples speak for themselves. It must be stressed here that many of the basic PS commands are not at all orthogonal, so that many variant pipelines can lead to the same effect. Often an example is one out of a multitude of possibilities accomplishing the same task.
 

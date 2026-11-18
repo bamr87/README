@@ -1,9 +1,9 @@
 ---
-source_file: constitution.md
+source_file: docs/constitution.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/constitution.md
 title: bashcrawl — Constitution
 ---
-<!-- kit: governance v0.1.0 · seeded from bamr87/bamr87 templates/governance/. Owned by this repo after seeding;
-     change it ONLY through an amendment record in docs/amendments/ (see § 8). Validate: python3 <hub>/tools/governance_lint.py check . -->
 # bashcrawl — Constitution
 
 > The rules every change to this repo must satisfy, whoever makes it — a human or an AI agent.

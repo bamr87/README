@@ -57,7 +57,9 @@ rewards:
   skills_unlocked:
   - 🧭 Structured Agent Planning
 skill_focus: devops
-source_file: agentic-plan-vs-action-boundaries.md
+source_file: pages/_quests/0111/agentic-plan-vs-action-boundaries.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0111/agentic-plan-vs-action-boundaries.md
 sub_title: 'Level 0111 Quest 2/3 — Domain 1: Agent Architecture & SDLC'
 tags:
 - '0111'
@@ -67,7 +69,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: GitHub Copilot Agent Instructions
+title: 'The Three Sigils: Plan, Reason, Act'
 validation_criteria:
   completion_requirements:
   - Agent instructions file (copilot-instructions.md) created with explicit plan-first
@@ -358,19 +360,19 @@ python3 scripts/validate_quest.py --quest q2
 | 📜 Plan-First Architect Badge | Earned on completion |
 | 🧭 Structured Agent Planning | Skill unlocked |
 | 70 XP | Added to Level 0111 total |
-| Unlocks | [Q3: The All-Seeing Eye](/quests/1000/agentic-observability-and-control/) |
+| Unlocks | [[it-journey/pages/_quests/1000/agentic-observability-and-control\|Q3: The All-Seeing Eye]] |
 
 ---
 
 ## 🔗 Continue Your Journey
 
-- **Next quest:** [Q3: The All-Seeing Eye — Observability & Control](/quests/1000/agentic-observability-and-control/)
+- **Next quest:** [[it-journey/pages/_quests/1000/agentic-observability-and-control|Q3: The All-Seeing Eye — Observability & Control]]
 - **Prerequisite for:** All Domain 2+ quests
-- **Codex chapter:** [Initiation Rites: Agents in the SDLC](/quests/0111/agentic-codex-01-agents-in-the-sdlc/)
+- **Codex chapter:** [[it-journey/pages/_quests/0111/agentic-codex-01-agents-in-the-sdlc|Initiation Rites: Agents in the SDLC]]
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0111 (7) - API Development]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[Initiation Rites: Embedding Agents in the SDLC]] **Unlocks:** [[The All-Seeing Eye: Observability & Control for Autonomous Agents]] **Sequel quests:** [[The All-Seeing Eye: Observability & Control for Autonomous Agents]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0111/README|Level 0111 (7) - API Development]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] **Prerequisites:** [[it-journey/pages/_quests/0111/agentic-sdlc-integration|Initiation Rites: Embedding Agents in the SDLC]] **Unlocks:** [[The All-Seeing Eye: Observability & Control for Autonomous Agents]] **Sequel quests:** [[The All-Seeing Eye: Observability & Control for Autonomous Agents]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

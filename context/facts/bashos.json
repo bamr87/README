@@ -1,0 +1,159 @@
+{
+  "corpus": {
+    "file_count": 80,
+    "fingerprint": "fd132b1a44c3413f",
+    "path": "docs/bashos",
+    "present": true,
+    "total_bytes": 497578
+  },
+  "engine_version": "1.0.0",
+  "identity": {
+    "headings": [
+      "Overview",
+      "Features",
+      "Quick start",
+      "Commands",
+      "Terminal environment (macOS) \u2014 chui",
+      "The operating system (Linux) \u2014 os",
+      "Auth \u2014 Claude Code OAuth, wired into the engine",
+      "Desktop (GUI)",
+      "Architecture",
+      "Extending"
+    ],
+    "readme": "README.md",
+    "summary": "Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine.",
+    "title": "bashOS"
+  },
+  "key_docs": [
+    "README.md",
+    "CLAUDE.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "SECURITY.md",
+    "docs/frontend/posthog-os-research.md",
+    "one-os/PLAN.md"
+  ],
+  "navigation": {
+    "browse": "docs/browse/bashos.md",
+    "fingerprint": "d97d9acc627e6fd1",
+    "index": "bashos/README.md",
+    "max_depth": 4,
+    "pages": 80,
+    "present": true,
+    "sections": 15,
+    "skipped": 0,
+    "title": "BashOS",
+    "top_sections": [
+      {
+        "index": "bashos/chui/README.md",
+        "pages": 3,
+        "path": "chui",
+        "title": "chui",
+        "type": "section"
+      },
+      {
+        "index": "bashos/docs/README.md",
+        "pages": 26,
+        "path": "docs",
+        "title": "Documentation",
+        "type": "section"
+      },
+      {
+        "index": "bashos/one-os/README.md",
+        "pages": 40,
+        "path": "one-os",
+        "title": "one-os",
+        "type": "section"
+      },
+      {
+        "index": "bashos/os/README.md",
+        "pages": 4,
+        "path": "os",
+        "title": "os \u2014 bashOS as the operating system",
+        "type": "section"
+      }
+    ],
+    "tree": "context/nav/bashos.json"
+  },
+  "project": {
+    "branch": null,
+    "external": false,
+    "kind": "tooling",
+    "name": "bashos",
+    "registry_description": "Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine.",
+    "repo": "bamr87/bashos",
+    "status": "active",
+    "topics": [],
+    "url": "https://github.com/bamr87/bashos"
+  },
+  "rollups": {
+    "categories": {
+      "bashos": 80
+    },
+    "code_languages": [
+      "bash",
+      "plaintext",
+      "mermaid",
+      "ts",
+      "text",
+      "json",
+      "js",
+      "markdown"
+    ],
+    "indexed_documents": 80,
+    "top_tags": [
+      "ai",
+      "agentic-ai",
+      "architecture",
+      "linux",
+      "operating-systems",
+      "security",
+      "mcp",
+      "open-source",
+      "system-design"
+    ],
+    "total_words": 70196
+  },
+  "schema_version": "1.0",
+  "signals": {
+    "has_agents_md": true,
+    "has_changelog": true,
+    "has_claude_md": true,
+    "has_contributing": true,
+    "has_schema_md": false,
+    "has_security_policy": true
+  },
+  "structure": {
+    "root_docs": [
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CLAUDE.md",
+      "CONTRIBUTING.md",
+      "README.md",
+      "SECURITY.md"
+    ],
+    "top_dirs": [
+      {
+        "doc_count": 40,
+        "name": "one-os"
+      },
+      {
+        "doc_count": 26,
+        "name": "docs"
+      },
+      {
+        "doc_count": 4,
+        "name": "os"
+      },
+      {
+        "doc_count": 3,
+        "name": "chui"
+      },
+      {
+        "doc_count": 1,
+        "name": "tools"
+      }
+    ]
+  }
+}

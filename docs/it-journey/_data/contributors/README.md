@@ -1,9 +1,12 @@
 ---
 description: Data schema and instructions for IT-Journey contributor profiles
 lastmod: 2026-03-20
-source_file: README.md
+source_file: _data/contributors/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/_data/contributors/README.md
 title: Contributor Data Directory
 ---
+
 # Contributor Data Directory
 
 This directory contains YAML data files that power the gamified character profile system for IT-Journey contributors.

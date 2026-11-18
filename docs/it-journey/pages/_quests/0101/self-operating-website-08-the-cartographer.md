@@ -58,7 +58,9 @@ rewards:
   unlocks_features:
   - Continue The Self-Operating Website campaign
 skill_focus: fullstack
-source_file: self-operating-website-08-the-cartographer.md
+source_file: pages/_quests/0101/self-operating-website-08-the-cartographer.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/self-operating-website-08-the-cartographer.md
 tags:
 - '0101'
 - github
@@ -66,8 +68,9 @@ tags:
 - automation
 - ci-cd
 - gamified-learning
-title: triage.sh — does the bug live in MY repo or the THEME?
+title: 'The Cartographer: File Platform Bugs Upstream'
 ---
+
 *The bug bites at midnight. A page renders sideways, a build fails on a config you never touched, and your first instinct is to reach for a patch — a little override here, a `!important` there, a workaround buried in your own repo. But the Cartographer pauses. She asks a sharper question: is this **my** land, or the **continent** I'm standing on? Because if the fault lies in the bedrock — the shared theme, the platform everyone builds on — then patching your own corner just hides the crack while everyone else keeps falling through it.*
 
 *The real-world skill you forge here is **triage and stewardship**: telling a product bug from a platform bug, resisting the easy local hack, and filing a clean, maintainer-ready issue upstream so the fix lands once and helps everyone.*
@@ -95,7 +98,7 @@ In the Autonomous Realm, your website is a city, and the city is built on the sh
 
 Before you draw your first fault line, make sure your pack is stocked:
 
-- **Prior chapter:** Complete [Chapter VII — The Named Familiars](/quests/1101/self-operating-website-07-the-named-familiars/). This quest assumes you already have a working autonomous repo with named agents.
+- **Prior chapter:** Complete [[it-journey/pages/_quests/1101/self-operating-website-07-the-named-familiars|Chapter VII — The Named Familiars]]. This quest assumes you already have a working autonomous repo with named agents.
 - **Tools:** Git, a text editor or IDE, and a local Ruby/Jekyll toolchain (`bundle exec jekyll build` must run) so you can reproduce builds. A terminal with Bash for the triage script.
 - **Gemfile plugins:** The `bamr87/zer0-mistakes` theme relies on supporting plugins — at minimum `jekyll-remote-theme`, `jekyll-seo-tag`, and `jekyll-include-cache`. If you are reconstructing the environment from scratch rather than continuing an existing repo, a bare Gemfile will fail the build with unrelated `Unknown tag seo` / `Unknown tag include_cached` Liquid errors that have nothing to do with the bug you are triaging.
 - **Accounts:** A GitHub account and a repository you own. To file upstream you'll also need access to the upstream repo's issue tracker (for IT-Journey that's `bamr87/zer0-mistakes` — public, so you can open issues without special permissions).
@@ -318,8 +321,8 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- **Next chapter:** [IX — The Chronicle](/quests/1110/self-operating-website-09-the-chronicle/)
-- **Campaign hub:** [The Self-Operating Website](/quests/codex/self-operating-website/)
+- **Next chapter:** [[it-journey/pages/_quests/1110/self-operating-website-09-the-chronicle|IX — The Chronicle]]
+- **Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|The Self-Operating Website]]
 
 ## 📚 Resource Codex
 
@@ -331,6 +334,6 @@ graph LR
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Self-Operating Website]] **Previous:** [[The Named Familiars]] **Next:** [[The Chronicle]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Previous:** [[The Named Familiars]] **Next:** [[The Chronicle]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

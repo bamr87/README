@@ -20,12 +20,14 @@ objectives:
     all:
     - command: env
     - output_includes: GUILD=
-source_file: 01-variables.md
+source_file: courses/shell-craft/01-variables.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/shell-craft/01-variables.md
 teaches:
 - export
 - $VAR
 - env
-title: 01 Variables
+title: Variables
 xp: 25
 ---
 A **variable** is a name for a value. `export NAME=value` creates one, and `$NAME` uses it anywhere in a command line.

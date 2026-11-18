@@ -47,7 +47,9 @@ rewards:
   skill: CI/CD Pipeline Development
   tool: Automated Documentation System
 skill_focus: devops
-source_file: docs-in-a-row.md
+source_file: pages/_quests/0001/docs-in-a-row.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/docs-in-a-row.md
 sub_title: Aggregate, organize, and maintain documentation across your entire project
   ecosystem
 tags:
@@ -58,7 +60,7 @@ tags:
 - devops
 - ci-cd
 - workflow-automation
-title: '📚 The Knowledge Vault: Building an Automated Documentation Hub'
+title: 'The Knowledge Vault: Building an Automated Documentation Hub'
 validation_criteria:
 - GitHub Actions workflow executes successfully
 - Documentation aggregates from at least 2 repositories
@@ -728,7 +730,7 @@ May your documentation always be current, your automation reliable, and your kno
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0001/README|Level 001 - Journeyman Challenges]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

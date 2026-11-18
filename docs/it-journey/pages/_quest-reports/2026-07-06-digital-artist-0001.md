@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/30355858267
 slice: digital-artist/0001
-source_file: 2026-07-06-digital-artist-0001.md
+source_file: pages/_quest-reports/2026-07-06-digital-artist-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-06-digital-artist-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-06-digital-artist-0001.md
 tags:
 - digital-artist
 - level-0001
@@ -25,13 +27,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 07 06 Digital Artist 0001
+title: Digital Artist · L0001 · 2026-07-06
 verdict: fail
 walk_date: '2026-07-06'
 ---
+
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-06
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30355858267) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-digital-artist-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30355858267) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-06-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-06-digital-artist-0001.md)
 
 ---
 
@@ -72,7 +75,7 @@ undefined method 'iso8601' for Time` — the script (line 271, `Time.now.iso8601
 - ✅ `update_statistics.sh` — **passed** once the Ruby script was fixed.
 - ✅ `pages/stats.md` Liquid/Bootstrap template — **passed** (built with Jekyll
 4.4.1 against generated data): categories/tags loops, tag-cloud sizing, `first` on a Hash, and the freshness-badge epoch math all rendered correctly.
-- `reasoned`: `{​{ ... | number_with_delimiter }​}` (line 539) is **not** a real
+- `reasoned`: `{{ ... | number_with_delimiter }}` (line 539) is **not** a real
 Jekyll/Liquid filter — verified against jekyll-4.4.1's filters.rb; Liquid silently no-ops it, so "Total Words" renders unformatted.
 
 ### 2. Terminal Mastery — `pages/_quests/0001/terminal-mastery.md` — ran 18/21 runnable (9✔ 9✗), 1 reasoned

@@ -12,7 +12,9 @@ permalink: /docs/features/back-to-top/
 preview: /images/previews/back-to-top-button.png
 sidebar:
   nav: docs
-source_file: back-to-top.md
+source_file: pages/_docs/features/back-to-top.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/back-to-top.md
 tags:
 - ui
 - navigation
@@ -20,6 +22,7 @@ tags:
 - accessibility
 title: Back to Top Button
 ---
+
 # Back to Top Button
 
 A floating button that appears when users scroll down, providing quick navigation back to the top of the page.
@@ -257,11 +260,11 @@ Position to not interfere with mobile TOC button:
 
 ## Related
 
-- [Sidebar Navigation](/docs/features/sidebar-navigation/)
-- [Keyboard Navigation](/docs/features/keyboard-navigation/)
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
 
 ## See also
 
-- [[Features]]
-- [[Keyboard Navigation]]
-- [[Mobile TOC Floating Action Button]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
+- [[zer0-mistakes/pages/_docs/features/mobile-toc|Mobile TOC Floating Action Button]]

@@ -5,12 +5,15 @@ layout: default
 machine_translated: true
 permalink: /fr/about/stats-enhancement-summary/
 preview: /images/previews/stats-page-enhancement-summary.png
-source_file: STATS_ENHANCEMENT_SUMMARY.md
+source_file: fr/about/features/STATS_ENHANCEMENT_SUMMARY.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/about/features/STATS_ENHANCEMENT_SUMMARY.md
 title: Résumé des améliorations de la page de statistiques
 translated_from_sha: f147f2bc3a54
 translation_of: pages/_about/features/STATS_ENHANCEMENT_SUMMARY.md
 translation_source_url: /about/stats-enhancement-summary/
 ---
+
 # Résumé des améliorations de la page de statistiques
 
 ## Aperçu

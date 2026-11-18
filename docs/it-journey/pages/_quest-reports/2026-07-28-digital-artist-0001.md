@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/30355858267
 slice: digital-artist/0001
-source_file: 2026-07-28-digital-artist-0001.md
+source_file: pages/_quest-reports/2026-07-28-digital-artist-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-28-digital-artist-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-28-digital-artist-0001.md
 tags:
 - digital-artist
 - level-0001
@@ -25,13 +27,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 07 28 Digital Artist 0001
+title: Digital Artist · L0001 · 2026-07-28
 verdict: warn
 walk_date: '2026-07-28'
 ---
+
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-28
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30355858267) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-28-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-28-digital-artist-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30355858267) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-28-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-28-digital-artist-0001.md)
 
 ---
 
@@ -60,7 +63,7 @@ Dimensions: commands_work 4 · content_accuracy 4 · completeness 3 · clarity 4
 
 - `passed` — Installed Jekyll 4.4.1 + bundler, ran `jekyll new` / `bundle install` / `bundle exec jekyll build` on a fresh site → succeeded (only harmless minima/Sass deprecation warnings).
 - `passed` — `bundle exec jekyll build --baseurl "/my-castle"` → generated `_site/index.html` contains `href="/my-castle/assets/main.css"` and `href="/my-castle/about/"`; `relative_url` guidance in Chapter 2 verified correct.
-- `passed` — `JEKYLL_ENV=production bundle exec jekyll build` vs. a plain build with `{​% if jekyll.environment == "production" %​}…{​% endif %​}` → include emitted only in the production build, exactly as Chapter 4 describes.
+- `passed` — `JEKYLL_ENV=production bundle exec jekyll build` vs. a plain build with `{% if jekyll.environment == "production" %}…{% endif %}` → include emitted only in the production build, exactly as Chapter 4 describes.
 - `passed` — `git init && git add . && git commit` and `echo "www.mysite.dev" > CNAME` → both work as written.
 - `passed` (the key finding) — On a stock system with no `init.defaultBranch`, `git init` creates **`master`, not `main`** (verified live). The macOS/Windows/Linux paths never rename the branch (`git branch -M main` appears only in the Cloud Realms path), yet the "Enable Pages" step and `gh api … source[branch]=main` hardcode `main`.
 - `reasoned` — `gh repo create --push`, `gh api … pages`, DNS A/CNAME records, and the per-OS install/auth commands were validated for syntax (via `--help`, apt-cache policy, a fake-token call returning "no git remotes found" rather than a syntax error) but not executed, since they need real GitHub auth / a registrar.
@@ -114,7 +117,7 @@ Read in plan order, carrying prior state forward as a learner would:
 - **Plan order ≠ pedagogical order (windowing artifact).** The dependency frontmatter makes `jekyll-fundamentals` the root (`required_quests: []`, and it unlocks the other three technical quests). Yet this rotating window walks `github-pages-basics` **first**, even though its own frontmatter lists `required_quests: [jekyll-fundamentals]`, which appears **second**. Because this is window 2 of 6 of a 26-quest sweep, a learner doing the full level in intended order would already have `jekyll-fundamentals` behind them, so the real journey is sound — but the *window's* internal ordering is not learner-intuitive on its own. Not a content defect; noted so a maintainer doesn't mistake it for one.
 - **A latent cross-quest bug.** `github-pages-basics`' `master`-vs-`main` gap interacts with the chain: a learner who later runs `git-workflow-mastery` on a `master`-named repo (that quest's Linux/Codespaces setup sets `init.defaultBranch main` but the Pages quest never did) can end up with mismatched branch expectations between the two quests. Standardizing on `git branch -M main` in the Pages quest closes the gap for the whole path.
 - **`baseurl` is the connective tissue.** `yaml-configuration` (baseurl/config layering), `github-pages-basics` (project-site baseurl), and `liquid-templating` (`relative_url`) all lean on the same baseurl mental model. The engine independently verified `relative_url` resolves against baseurl in the Pages quest, so the three reinforce each other correctly — provided the ordering issue above (baseurl set before publish) is fixed.
-- **`liquid-templating` fits the chain by design** (recommended prereq `yaml-configuration` for its `site.data` loops; required `jekyll-fundamentals` for a running site). From source it is well-structured — four chapters (objects/tags/filters → loops/conditionals → includes/layouts → comments/raw/whitespace), each with knowledge checks and tiered challenges, and it correctly `{​% raw %​}`-wraps its own Liquid examples. I found no defect on read, but **I could not verify any of it in the sandbox**, so I make no `pass`/`fail` claim about it — only that it reads coherently and depends on state the earlier quests establish.
+- **`liquid-templating` fits the chain by design** (recommended prereq `yaml-configuration` for its `site.data` loops; required `jekyll-fundamentals` for a running site). From source it is well-structured — four chapters (objects/tags/filters → loops/conditionals → includes/layouts → comments/raw/whitespace), each with knowledge checks and tiered challenges, and it correctly `{% raw %}`-wraps its own Liquid examples. I found no defect on read, but **I could not verify any of it in the sandbox**, so I make no `pass`/`fail` claim about it — only that it reads coherently and depends on state the earlier quests establish.
 
 ## 🧠 Reasoning & Method
 

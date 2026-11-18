@@ -22,17 +22,20 @@ prerequisites: []
 preview: /images/previews/bootstrap-integration.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: fr/docs/bootstrap/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/bootstrap/index.md
 tags:
 - bootstrap
 - css
 - responsive
 - components
-title: Intégration de Bootstrap 5.3.3
+title: Intégration de Bootstrap 5 dans Zer0-Mistakes
 translated_from_sha: 3df6221d99c3
 translation_of: pages/_docs/bootstrap/index.md
 translation_source_url: /docs/bootstrap/
 ---
+
 # Intégration de Bootstrap 5.3.3
 
 Le thème Zer0-Mistakes est construit sur **Bootstrap 5.3.3**, offrant des mises en page responsives, des composants modernes et de puissants utilitaires.
@@ -235,7 +238,7 @@ const setTheme = (theme) => {
 setTheme('dark');  // or 'light'
 ```
 
-Voir [Modes de couleur](/docs/features/color-modes/) pour l'implémentation complète.
+Voir [[zer0-mistakes/pages/_docs/features/color-modes|Modes de couleur]] pour l'implémentation complète.
 
 ## Bootstrap Icons
 
@@ -385,14 +388,14 @@ document.querySelectorAll('.needs-validation').forEach(form => {
 
 ## Voir aussi
 
-- [Modes de couleur](/docs/features/color-modes/)
-- [Mises en page](/docs/customization/layouts/)
-- [Composants d'inclusion](/docs/customization/includes/)
+- [[zer0-mistakes/pages/_docs/features/color-modes|Modes de couleur]]
+- [[zer0-mistakes/pages/_docs/customization/layouts|Mises en page]]
+- [[zer0-mistakes/pages/_docs/customization/includes|Composants d'inclusion]]
 - [Maîtrise de CSS Grid (tutoriel)](/posts/2025/01/23/css-grid-mastery/)
 
 ## Voir aussi
 
-- [[Customization]]
-- [[Features]]
-- [[Jekyll]]
-- [[Liquid]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/fr/docs/liquid/index|Liquid]]

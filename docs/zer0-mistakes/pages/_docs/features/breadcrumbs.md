@@ -12,14 +12,17 @@ permalink: /docs/features/breadcrumbs/
 preview: /images/previews/breadcrumbs-navigation.png
 sidebar:
   nav: docs
-source_file: breadcrumbs.md
+source_file: pages/_docs/features/breadcrumbs.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/breadcrumbs.md
 tags:
 - navigation
 - breadcrumbs
 - seo
 - accessibility
-title: Breadcrumbs Navigation
+title: Breadcrumbs Navigation — Schema.org & Accessibility
 ---
+
 # Breadcrumbs Navigation
 
 Hierarchical breadcrumb navigation showing the current page's location within the site structure.
@@ -292,12 +295,12 @@ Test structured data at:
 
 ## Related
 
-- [SEO Optimization](/docs/seo/meta-tags/)
-- [Navigation](/docs/customization/navigation/)
-- [Sidebar Navigation](/docs/features/sidebar-navigation/)
+- [[zer0-mistakes/pages/_docs/seo/meta-tags|SEO Optimization]]
+- [[zer0-mistakes/pages/_docs/customization/navigation|Navigation]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation]]
 
 ## See also
 
-- [[Features]]
-- [[Sidebar Navigation System]]
-- [[Keyboard Navigation]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation System]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]

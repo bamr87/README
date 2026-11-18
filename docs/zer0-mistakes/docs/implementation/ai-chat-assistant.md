@@ -10,7 +10,9 @@ feature_id: ZER0-060
 lastmod: 2026-06-12 00:00:00+00:00
 layout: default
 permalink: /docs/implementation/ai-chat-assistant/
-source_file: ai-chat-assistant.md
+source_file: docs/implementation/ai-chat-assistant.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/implementation/ai-chat-assistant.md
 tags:
 - ai
 - chatbot
@@ -21,6 +23,7 @@ tags:
 - security
 title: AI Chat Assistant Implementation
 ---
+
 # AI Chat Assistant Implementation
 
 ## Summary

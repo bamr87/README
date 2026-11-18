@@ -15,7 +15,9 @@ permalink: /fr/docs/features/skip-to-content/
 preview: /images/previews/skip-to-content-accessibility-link.png
 sidebar:
   nav: docs
-source_file: skip-to-content.md
+source_file: fr/docs/features/skip-to-content.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/skip-to-content.md
 tags:
 - accessibility
 - wcag
@@ -26,6 +28,7 @@ translated_from_sha: 10f5ccd2de04
 translation_of: pages/_docs/features/skip-to-content.md
 translation_source_url: /docs/features/skip-to-content/
 ---
+
 # Lien d'accessibilité « Aller au contenu »
 
 Le thème Zer0-Mistakes intègre un lien d'évitement conforme au niveau AA de la norme WCAG 2.1, permettant aux utilisateurs du clavier de contourner la navigation.
@@ -255,11 +258,11 @@ Le lien doit annoncer :
 
 ## Ressources associées
 
-- [Navigation au clavier](/docs/features/keyboard-navigation/)
-- [Navigation dans la barre latérale](/docs/features/sidebar-navigation/)
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Navigation au clavier]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Navigation dans la barre latérale]]
 - [Normes d'accessibilité](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ## Voir aussi
 
-- [[Features]]
-- [[Keyboard Navigation]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]

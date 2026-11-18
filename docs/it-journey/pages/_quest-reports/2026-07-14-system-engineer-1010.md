@@ -14,8 +14,10 @@ quest_count: 1
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29329246935
 slice: system-engineer/1010
-source_file: 2026-07-14-system-engineer-1010.md
+source_file: pages/_quest-reports/2026-07-14-system-engineer-1010.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-14-system-engineer-1010.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-14-system-engineer-1010.md
 tags:
 - system-engineer
 - level-1010
@@ -25,13 +27,14 @@ tags:
 - monitoring-observability
 theme: Monitoring & Observability
 tier: Warrior
-title: 2026 07 14 System Engineer 1010
+title: System Engineer · L1010 · 2026-07-14
 verdict: warn
 walk_date: '2026-07-14'
 ---
+
 > **Slice** `system-engineer/1010` · **Level** 1010 (Monitoring & Observability) · **Warrior tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-14
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29329246935) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-14-system-engineer-1010.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-14-system-engineer-1010.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29329246935) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-14-system-engineer-1010.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-14-system-engineer-1010.md)
 
 ---
 
@@ -70,7 +73,7 @@ All evidence below comes from the sealed `walk-evidence.json` (execute mode, ses
 
 **Concurrency & workflow YAML (passed):**
 - The `concurrency` excerpt and the full `content-forge.yml` both parse under
-`yaml.safe_load` once the Jekyll `{​% raw %​}/{​% endraw %​}` wrapper is stripped, as instructed. The engine reasoned that `if: steps.select.outputs.forge_idle != 'true'` guards inherit an implicit `success()`, so a failed gate genuinely blocks the "Open the draft PR" step. ✅
+`yaml.safe_load` once the Jekyll `{% raw %}/{% endraw %}` wrapper is stripped, as instructed. The engine reasoned that `if: steps.select.outputs.forge_idle != 'true'` guards inherit an implicit `success()`, so a failed gate genuinely blocks the "Open the draft PR" step. ✅
 
 **The one failure (failed) — reproduced bug:**
 - `cat draft/claims.json | python .forge/verify.py` (the "Prime Directive gate" step
@@ -88,7 +91,7 @@ of the complete workflow). The engine simulated the exact step with **no `draft/
 
 - **HIGH · The Content Forge · "The Complete Forge Workflow", gate step (line 317), vs. agent prompt (lines 306–310) & the "brief in, draft out" contract (line 150).**
   *Observed:* The gate runs `cat draft/claims.json | python .forge/verify.py`, but
-the agent is only told to write `$DRAFT_PATH` (=`pages/_<collection>/<item_id>.md`) "plus a claims.json" — the `draft/claims.json` path is never defined, created, or reconciled anywhere. Reproduced: with no `draft/` dir, `cat` fails and `verify.py` throws an unhandled `JSONDecodeError` traceback instead of the showcased clean violation message. This breaks the Mastery Challenge's second checkbox ("a verification step aborts… and opens no PR when you plant a deliberately false claim") for anyone following it literally. *Suggested fix:* Pin one path and make the prompt and gate agree — e.g. prompt says *"Write ONLY `$DRAFT_PATH` plus `draft/claims.json`"* and the workflow `mkdir -p draft` (or `run-if-exists` guard), **or** change the gate to read a path derived from `$DRAFT_PATH`'s directory (e.g. `pages/_${​{ matrix.collection }​}/claims-${ITEM_ID}.json`).
+the agent is only told to write `$DRAFT_PATH` (=`pages/_<collection>/<item_id>.md`) "plus a claims.json" — the `draft/claims.json` path is never defined, created, or reconciled anywhere. Reproduced: with no `draft/` dir, `cat` fails and `verify.py` throws an unhandled `JSONDecodeError` traceback instead of the showcased clean violation message. This breaks the Mastery Challenge's second checkbox ("a verification step aborts… and opens no PR when you plant a deliberately false claim") for anyone following it literally. *Suggested fix:* Pin one path and make the prompt and gate agree — e.g. prompt says *"Write ONLY `$DRAFT_PATH` plus `draft/claims.json`"* and the workflow `mkdir -p draft` (or `run-if-exists` guard), **or** change the gate to read a path derived from `$DRAFT_PATH`'s directory (e.g. `pages/_${{ matrix.collection }}/claims-${ITEM_ID}.json`).
 
 - **MEDIUM · The Content Forge · Security warning vs. shown code (lines 171–192).**
 *Observed:* The bold ⚠️ warning describes the danger of `subprocess.run(cmd, shell=True)` on agent input, but the `verify.py` code shown directly below never uses `shell=True` — it already uses the safe argv-list form (`check["target"].split()`) plus an allowlist. Prose and code describe two different implementations, which reads as "this code is dangerous" when it isn't. *Suggested fix:* Reword to "the code below already applies mitigation #1 (no shell + allowlist) — here is what the unsafe version would look like," or show the `shell=True` line then the fixed version, so warning and code align.

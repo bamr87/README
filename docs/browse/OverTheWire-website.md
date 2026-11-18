@@ -11,20 +11,29 @@ nav_exclude: true
 
 Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) as it appears in the sidebar: **232 pages** across **17 sections** (max depth 3).
 
-- [Wargames](../OverTheWire-website/README.md)
-- [Index](../OverTheWire-website/rules/index.md)
+- [Wargames (README)](../OverTheWire-website/README.md)
+- [Rules](../OverTheWire-website/rules/index.md)
 - **Includes** <small>(3)</small>
   - [Games](../OverTheWire-website/_includes/games.md)
   - [Information](../OverTheWire-website/_includes/information.md)
   - [Patreonlist](../OverTheWire-website/_includes/patreonlist.md)
-- **[Index (wargames)](../OverTheWire-website/wargames/index.md)** <small>(219)</small>
-  - [Index](../OverTheWire-website/wargames/index.md)
+- **Information** <small>(8)</small>
+  - [Alumni](../OverTheWire-website/information/alumni.md)
+  - [Contact via chat](../OverTheWire-website/information/chat.md)
+  - [Donating](../OverTheWire-website/information/donate.md)
+  - [Edit&nbsp;Website](../OverTheWire-website/information/website.md)
+  - [SSH/infrastructure](../OverTheWire-website/information/sshinfra.md)
+  - [Staff](../OverTheWire-website/information/staff.md)
+  - [User data](../OverTheWire-website/information/userdata.md)
+  - [WeChall Scoreboard](../OverTheWire-website/information/wechall.md)
+- **[Wargames](../OverTheWire-website/wargames/index.md)** <small>(219)</small>
+  - [Wargames](../OverTheWire-website/wargames/index.md)
   - [Index](../OverTheWire-website/wargames/abraxas/index.md)
   - [Index](../OverTheWire-website/wargames/hes2010/index.md)
   - [Index](../OverTheWire-website/wargames/kishi/index.md)
   - [Index](../OverTheWire-website/wargames/monxla/index.md)
-  - **[Index (bandit)](../OverTheWire-website/wargames/bandit/index.md)** <small>(36)</small>
-    - [Index](../OverTheWire-website/wargames/bandit/index.md)
+  - **[Bandit](../OverTheWire-website/wargames/bandit/index.md)** <small>(36)</small>
+    - [Bandit](../OverTheWire-website/wargames/bandit/index.md)
     - [Bandit0](../OverTheWire-website/wargames/bandit/bandit0.md)
     - [Bandit1](../OverTheWire-website/wargames/bandit/bandit1.md)
     - [Bandit10](../OverTheWire-website/wargames/bandit/bandit10.md)
@@ -60,8 +69,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Bandit7](../OverTheWire-website/wargames/bandit/bandit7.md)
     - [Bandit8](../OverTheWire-website/wargames/bandit/bandit8.md)
     - [Bandit9](../OverTheWire-website/wargames/bandit/bandit9.md)
-  - **[Index (behemoth)](../OverTheWire-website/wargames/behemoth/index.md)** <small>(10)</small>
-    - [Index](../OverTheWire-website/wargames/behemoth/index.md)
+  - **[Behemoth](../OverTheWire-website/wargames/behemoth/index.md)** <small>(10)</small>
+    - [Behemoth](../OverTheWire-website/wargames/behemoth/index.md)
     - [Behemoth0](../OverTheWire-website/wargames/behemoth/behemoth0.md)
     - [Behemoth1](../OverTheWire-website/wargames/behemoth/behemoth1.md)
     - [Behemoth2](../OverTheWire-website/wargames/behemoth/behemoth2.md)
@@ -71,16 +80,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Behemoth6](../OverTheWire-website/wargames/behemoth/behemoth6.md)
     - [Behemoth7](../OverTheWire-website/wargames/behemoth/behemoth7.md)
     - [Behemoth8](../OverTheWire-website/wargames/behemoth/behemoth8.md)
-  - **[Index (blacksun)](../OverTheWire-website/wargames/blacksun/index.md)** <small>(7)</small>
-    - [Index](../OverTheWire-website/wargames/blacksun/index.md)
-    - [Blacksun0](../OverTheWire-website/wargames/blacksun/blacksun0.md)
-    - [Blacksun1](../OverTheWire-website/wargames/blacksun/blacksun1.md)
-    - [Blacksun2](../OverTheWire-website/wargames/blacksun/blacksun2.md)
-    - [Blacksun3](../OverTheWire-website/wargames/blacksun/blacksun3.md)
-    - [Blacksun4](../OverTheWire-website/wargames/blacksun/blacksun4.md)
-    - [Reading Material](../OverTheWire-website/wargames/blacksun/reading_material.md)
-  - **[Index (drifter)](../OverTheWire-website/wargames/drifter/index.md)** <small>(17)</small>
-    - [Index](../OverTheWire-website/wargames/drifter/index.md)
+  - **[Drifter](../OverTheWire-website/wargames/drifter/index.md)** <small>(17)</small>
+    - [Drifter](../OverTheWire-website/wargames/drifter/index.md)
     - [Drifter0](../OverTheWire-website/wargames/drifter/drifter0.md)
     - [Drifter1](../OverTheWire-website/wargames/drifter/drifter1.md)
     - [Drifter10](../OverTheWire-website/wargames/drifter/drifter10.md)
@@ -97,8 +98,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Drifter7](../OverTheWire-website/wargames/drifter/drifter7.md)
     - [Drifter8](../OverTheWire-website/wargames/drifter/drifter8.md)
     - [Drifter9](../OverTheWire-website/wargames/drifter/drifter9.md)
-  - **[Index (formulaone)](../OverTheWire-website/wargames/formulaone/index.md)** <small>(8)</small>
-    - [Index](../OverTheWire-website/wargames/formulaone/index.md)
+  - **[FormulaOne](../OverTheWire-website/wargames/formulaone/index.md)** <small>(8)</small>
+    - [FormulaOne](../OverTheWire-website/wargames/formulaone/index.md)
     - [Formulaone0](../OverTheWire-website/wargames/formulaone/formulaone0.md)
     - [Formulaone1](../OverTheWire-website/wargames/formulaone/formulaone1.md)
     - [Formulaone2](../OverTheWire-website/wargames/formulaone/formulaone2.md)
@@ -106,8 +107,16 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Formulaone4](../OverTheWire-website/wargames/formulaone/formulaone4.md)
     - [Formulaone5](../OverTheWire-website/wargames/formulaone/formulaone5.md)
     - [Formulaone6](../OverTheWire-website/wargames/formulaone/formulaone6.md)
-  - **[Index (krypton)](../OverTheWire-website/wargames/krypton/index.md)** <small>(8)</small>
-    - [Index](../OverTheWire-website/wargames/krypton/index.md)
+  - **[Index (blacksun)](../OverTheWire-website/wargames/blacksun/index.md)** <small>(7)</small>
+    - [Index](../OverTheWire-website/wargames/blacksun/index.md)
+    - [Blacksun0](../OverTheWire-website/wargames/blacksun/blacksun0.md)
+    - [Blacksun1](../OverTheWire-website/wargames/blacksun/blacksun1.md)
+    - [Blacksun2](../OverTheWire-website/wargames/blacksun/blacksun2.md)
+    - [Blacksun3](../OverTheWire-website/wargames/blacksun/blacksun3.md)
+    - [Blacksun4](../OverTheWire-website/wargames/blacksun/blacksun4.md)
+    - [Reading material](../OverTheWire-website/wargames/blacksun/reading_material.md)
+  - **[Krypton](../OverTheWire-website/wargames/krypton/index.md)** <small>(8)</small>
+    - [Krypton](../OverTheWire-website/wargames/krypton/index.md)
     - [Krypton0](../OverTheWire-website/wargames/krypton/krypton0.md)
     - [Krypton1](../OverTheWire-website/wargames/krypton/krypton1.md)
     - [Krypton2](../OverTheWire-website/wargames/krypton/krypton2.md)
@@ -115,8 +124,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Krypton4](../OverTheWire-website/wargames/krypton/krypton4.md)
     - [Krypton5](../OverTheWire-website/wargames/krypton/krypton5.md)
     - [Krypton6](../OverTheWire-website/wargames/krypton/krypton6.md)
-  - **[Index (leviathan)](../OverTheWire-website/wargames/leviathan/index.md)** <small>(9)</small>
-    - [Index](../OverTheWire-website/wargames/leviathan/index.md)
+  - **[Leviathan](../OverTheWire-website/wargames/leviathan/index.md)** <small>(9)</small>
+    - [Leviathan](../OverTheWire-website/wargames/leviathan/index.md)
     - [Leviathan0](../OverTheWire-website/wargames/leviathan/leviathan0.md)
     - [Leviathan1](../OverTheWire-website/wargames/leviathan/leviathan1.md)
     - [Leviathan2](../OverTheWire-website/wargames/leviathan/leviathan2.md)
@@ -125,8 +134,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Leviathan5](../OverTheWire-website/wargames/leviathan/leviathan5.md)
     - [Leviathan6](../OverTheWire-website/wargames/leviathan/leviathan6.md)
     - [Leviathan7](../OverTheWire-website/wargames/leviathan/leviathan7.md)
-  - **[Index (manpage)](../OverTheWire-website/wargames/manpage/index.md)** <small>(9)</small>
-    - [Index](../OverTheWire-website/wargames/manpage/index.md)
+  - **[Manpage](../OverTheWire-website/wargames/manpage/index.md)** <small>(9)</small>
+    - [Manpage](../OverTheWire-website/wargames/manpage/index.md)
     - [Manpage0](../OverTheWire-website/wargames/manpage/manpage0.md)
     - [Manpage1](../OverTheWire-website/wargames/manpage/manpage1.md)
     - [Manpage2](../OverTheWire-website/wargames/manpage/manpage2.md)
@@ -135,8 +144,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Manpage5](../OverTheWire-website/wargames/manpage/manpage5.md)
     - [Manpage6](../OverTheWire-website/wargames/manpage/manpage6.md)
     - [Manpage7](../OverTheWire-website/wargames/manpage/manpage7.md)
-  - **[Index (maze)](../OverTheWire-website/wargames/maze/index.md)** <small>(11)</small>
-    - [Index](../OverTheWire-website/wargames/maze/index.md)
+  - **[Maze](../OverTheWire-website/wargames/maze/index.md)** <small>(11)</small>
+    - [Maze](../OverTheWire-website/wargames/maze/index.md)
     - [Maze0](../OverTheWire-website/wargames/maze/maze0.md)
     - [Maze1](../OverTheWire-website/wargames/maze/maze1.md)
     - [Maze2](../OverTheWire-website/wargames/maze/maze2.md)
@@ -147,8 +156,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Maze7](../OverTheWire-website/wargames/maze/maze7.md)
     - [Maze8](../OverTheWire-website/wargames/maze/maze8.md)
     - [Maze9](../OverTheWire-website/wargames/maze/maze9.md)
-  - **[Index (narnia)](../OverTheWire-website/wargames/narnia/index.md)** <small>(11)</small>
-    - [Index](../OverTheWire-website/wargames/narnia/index.md)
+  - **[Narnia](../OverTheWire-website/wargames/narnia/index.md)** <small>(11)</small>
+    - [Narnia](../OverTheWire-website/wargames/narnia/index.md)
     - [Narnia0](../OverTheWire-website/wargames/narnia/narnia0.md)
     - [Narnia1](../OverTheWire-website/wargames/narnia/narnia1.md)
     - [Narnia2](../OverTheWire-website/wargames/narnia/narnia2.md)
@@ -159,8 +168,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Narnia7](../OverTheWire-website/wargames/narnia/narnia7.md)
     - [Narnia8](../OverTheWire-website/wargames/narnia/narnia8.md)
     - [Narnia9](../OverTheWire-website/wargames/narnia/narnia9.md)
-  - **[Index (natas)](../OverTheWire-website/wargames/natas/index.md)** <small>(36)</small>
-    - [Index](../OverTheWire-website/wargames/natas/index.md)
+  - **[Natas](../OverTheWire-website/wargames/natas/index.md)** <small>(36)</small>
+    - [Natas](../OverTheWire-website/wargames/natas/index.md)
     - [Natas0](../OverTheWire-website/wargames/natas/natas0.md)
     - [Natas1](../OverTheWire-website/wargames/natas/natas1.md)
     - [Natas10](../OverTheWire-website/wargames/natas/natas10.md)
@@ -196,8 +205,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Natas7](../OverTheWire-website/wargames/natas/natas7.md)
     - [Natas8](../OverTheWire-website/wargames/natas/natas8.md)
     - [Natas9](../OverTheWire-website/wargames/natas/natas9.md)
-  - **[Index (semtex)](../OverTheWire-website/wargames/semtex/index.md)** <small>(14)</small>
-    - [Index](../OverTheWire-website/wargames/semtex/index.md)
+  - **[Semtex](../OverTheWire-website/wargames/semtex/index.md)** <small>(14)</small>
+    - [Semtex](../OverTheWire-website/wargames/semtex/index.md)
     - [Semtex0](../OverTheWire-website/wargames/semtex/semtex0.md)
     - [Semtex1](../OverTheWire-website/wargames/semtex/semtex1.md)
     - [Semtex10](../OverTheWire-website/wargames/semtex/semtex10.md)
@@ -211,8 +220,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Semtex7](../OverTheWire-website/wargames/semtex/semtex7.md)
     - [Semtex8](../OverTheWire-website/wargames/semtex/semtex8.md)
     - [Semtex9](../OverTheWire-website/wargames/semtex/semtex9.md)
-  - **[Index (utumno)](../OverTheWire-website/wargames/utumno/index.md)** <small>(10)</small>
-    - [Index](../OverTheWire-website/wargames/utumno/index.md)
+  - **[Utumno](../OverTheWire-website/wargames/utumno/index.md)** <small>(10)</small>
+    - [Utumno](../OverTheWire-website/wargames/utumno/index.md)
     - [Utumno0](../OverTheWire-website/wargames/utumno/utumno0.md)
     - [Utumno1](../OverTheWire-website/wargames/utumno/utumno1.md)
     - [Utumno2](../OverTheWire-website/wargames/utumno/utumno2.md)
@@ -222,8 +231,8 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Utumno6](../OverTheWire-website/wargames/utumno/utumno6.md)
     - [Utumno7](../OverTheWire-website/wargames/utumno/utumno7.md)
     - [Utumno8](../OverTheWire-website/wargames/utumno/utumno8.md)
-  - **[Index (vortex)](../OverTheWire-website/wargames/vortex/index.md)** <small>(28)</small>
-    - [Index](../OverTheWire-website/wargames/vortex/index.md)
+  - **[Vortex](../OverTheWire-website/wargames/vortex/index.md)** <small>(28)</small>
+    - [Vortex](../OverTheWire-website/wargames/vortex/index.md)
     - [Vortex0](../OverTheWire-website/wargames/vortex/vortex0.md)
     - [Vortex1](../OverTheWire-website/wargames/vortex/vortex1.md)
     - [Vortex10](../OverTheWire-website/wargames/vortex/vortex10.md)
@@ -251,12 +260,3 @@ Every published page in [`docs/OverTheWire-website/`](../OverTheWire-website/) a
     - [Vortex7](../OverTheWire-website/wargames/vortex/vortex7.md)
     - [Vortex8](../OverTheWire-website/wargames/vortex/vortex8.md)
     - [Vortex9](../OverTheWire-website/wargames/vortex/vortex9.md)
-- **Information** <small>(8)</small>
-  - [Alumni](../OverTheWire-website/information/alumni.md)
-  - [Chat](../OverTheWire-website/information/chat.md)
-  - [Donate](../OverTheWire-website/information/donate.md)
-  - [Sshinfra](../OverTheWire-website/information/sshinfra.md)
-  - [Staff](../OverTheWire-website/information/staff.md)
-  - [Userdata](../OverTheWire-website/information/userdata.md)
-  - [Website](../OverTheWire-website/information/website.md)
-  - [Wechall](../OverTheWire-website/information/wechall.md)

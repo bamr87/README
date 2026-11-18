@@ -23,15 +23,18 @@ quickstart:
   step: 2
 sidebar:
   nav: quickstart
-source_file: jekyll-setup.md
+source_file: pages/_quickstart/jekyll-setup.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_quickstart/jekyll-setup.md
 tags:
 - jekyll
 - docker
 - development
 - configuration
 - theme
-title: Jekyll Setup
+title: 'Jekyll Setup: Run the Dev Server and Create Content'
 ---
+
 # Jekyll Setup
 
 Start your Docker-based Jekyll development server and create your first content. **No local Ruby installation needed** — everything runs inside the container.
@@ -49,7 +52,7 @@ flowchart LR
 
 ## Prerequisites
 
-Complete [Machine Setup](/quickstart/machine-setup/) first (Docker Desktop, Git, GitHub CLI).
+Complete [[zer0-mistakes/pages/_quickstart/machine-setup|Machine Setup]] first (Docker Desktop, Git, GitHub CLI).
 
 ## Step 1 — Clone the Repo
 

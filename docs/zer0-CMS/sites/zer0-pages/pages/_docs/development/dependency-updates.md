@@ -1,0 +1,52 @@
+---
+aliases:
+- /docs/development/dependency-updates/
+categories:
+- docs
+- development
+description: Guide to automated dependency management and Ruby gem updates for the
+  Zer0-Mistakes theme.
+difficulty: beginner
+estimated_reading_time: 10 minutes
+lastmod: 2026-06-16 00:00:00+00:00
+layout: default
+permalink: /docs/development/dependency-updates/
+prerequisites:
+- GitHub repository access
+preview: /images/previews/dependency-updates.png
+sidebar:
+  nav: docs
+source_file: sites/zer0-pages/pages/_docs/development/dependency-updates.md
+source_repo: bamr87/zer0-CMS
+source_url: https://github.com/bamr87/zer0-CMS/blob/main/sites/zer0-pages/pages/_docs/development/dependency-updates.md
+tags:
+- dependencies
+- gems
+- automation
+- security
+title: Dependency Updates
+type: doc
+---
+
+# Dependency Updates
+
+The theme uses a Zero-Pin strategy: `Gemfile` specifies no pinned versions; `Gemfile.lock` is committed to ensure reproducible builds. Dependencies are updated weekly via `bundle update` and a small automated PR workflow.
+
+## Quick Reference
+
+```bash
+# Update all gems
+bundle update
+
+# Check for security advisories
+bundle exec bundle-audit check --update
+
+# Verify site still builds
+bundle exec jekyll build
+```
+
+## Full Reference
+
+The complete dependency management guide — Zero-Pin strategy rationale, Dependabot configuration, update policy, lockfile management:
+
+**[Dependency Management → docs/systems/dependency-management.md](https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/dependency-management.md)**

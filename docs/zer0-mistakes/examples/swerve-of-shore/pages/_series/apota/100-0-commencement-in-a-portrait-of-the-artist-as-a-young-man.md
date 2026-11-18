@@ -13,11 +13,13 @@ order: 100.0
 preview: /assets/images/posts/100-0-commencement-in-a-portrait-of-the-artist-as-a-young-man.jpg
 section: apota
 series: apota
-source_file: 100-0-commencement-in-a-portrait-of-the-artist-as-a-young-man.md
-source_url: https://www.swerveofshore.com/post/100-0-commencement-in-a-portrait-of-the-artist-as-a-young-man
+source_file: examples/swerve-of-shore/pages/_series/apota/100-0-commencement-in-a-portrait-of-the-artist-as-a-young-man.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/_series/apota/100-0-commencement-in-a-portrait-of-the-artist-as-a-young-man.md
 sub-title: A Portrait of the Artist as a Young Man
-title: 100 0 Commencement In A Portrait Of The Artist As A Young Man
+title: 100.0 - Commencement in A Portrait of the Artist as a Young Man
 ---
+
 From the *A Portrait of the Artist as a Young Man* thread on [Swerve of Shore](https://www.swerveofshore.com/post/100-0-commencement-in-a-portrait-of-the-artist-as-a-young-man), by Brandon Nicklaus.
 
 > One quiet evening, sunk into the corner of a soft couch with the fire throwing little gold flickers across the room, I was doing the usual—aimlessly scrolling through social media—when a small announcement stopped me in my tracks: The James Joyce Centre was offering a course on A Portrait of the Artist as a Young Man. Intriguing. Impulsive click. It felt like an invitation. I clicked. I signed up. And just like that, six weeks of Joyce, Dublin, and Dedalus awaited me.

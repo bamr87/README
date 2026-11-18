@@ -17,17 +17,20 @@ prerequisites:
 preview: /images/previews/scripts.png
 sidebar:
   nav: docs
-source_file: scripts.md
+source_file: fr/docs/development/scripts.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/scripts.md
 tags:
 - scripts
 - automation
 - bash
 - utilities
-title: Bibliothèque d'automatisation de scripts shell
+title: Scripts
 translated_from_sha: 36431e67c424
 translation_of: pages/_docs/development/scripts.md
 translation_source_url: /docs/development/scripts/
 ---
+
 # Bibliothèque d'automatisation de scripts shell
 
 Le thème Zer0-Mistakes inclut une bibliothèque complète de scripts shell pour automatiser les tâches de développement courantes.
@@ -335,12 +338,12 @@ docker-compose up -d
 
 ## Connexes
 
-- [Guide de tests](/docs/development/testing/)
-- [Gestion des versions](/docs/development/release-management/)
-- [Pipeline CI/CD](/docs/development/ci-cd/)
+- [[zer0-mistakes/pages/_docs/development/testing|Guide de tests]]
+- [[zer0-mistakes/pages/_docs/development/release-management|Gestion des versions]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|Pipeline CI/CD]]
 
 ## Voir aussi
 
-- [[Development]]
-- [[Release Management]]
-- [[CI/CD Pipeline]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/pages/_docs/development/release-management|Release Management]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|CI/CD Pipeline]]

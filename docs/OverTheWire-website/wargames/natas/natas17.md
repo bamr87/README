@@ -2,7 +2,9 @@
 gamename: natas
 layout: default
 level: 17
-source_file: natas17.md
+source_file: wargames/natas/natas17.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/natas/natas17.md
 title: Natas17
 ---
     Username: natas17

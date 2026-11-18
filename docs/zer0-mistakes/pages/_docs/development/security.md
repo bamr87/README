@@ -14,7 +14,9 @@ prerequisites:
 preview: /images/previews/security-scanning.png
 sidebar:
   nav: docs
-source_file: security.md
+source_file: pages/_docs/development/security.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/development/security.md
 tags:
 - security
 - codeql
@@ -22,6 +24,7 @@ tags:
 - scanning
 title: Security Scanning
 ---
+
 # Security Scanning
 
 The Zer0-Mistakes theme uses GitHub CodeQL for automated security vulnerability scanning across multiple languages.
@@ -242,12 +245,12 @@ For critical issues:
 
 ## Related
 
-- [Testing Guide](/docs/development/testing/)
-- [CI/CD Pipeline](/docs/development/ci-cd/)
-- [Dependency Updates](/docs/development/dependency-updates/)
+- [[zer0-mistakes/pages/_docs/development/testing|Testing Guide]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|CI/CD Pipeline]]
+- [[zer0-mistakes/pages/_docs/development/dependency-updates|Dependency Updates]]
 
 ## See also
 
-- [[Development]]
-- [[Dependency Updates]]
-- [[CI/CD Pipeline]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/pages/_docs/development/dependency-updates|Dependency Updates]]
+- [[zer0-mistakes/pages/_docs/development/ci-cd|CI/CD Pipeline]]

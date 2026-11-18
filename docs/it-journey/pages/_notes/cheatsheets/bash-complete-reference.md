@@ -30,7 +30,9 @@ preview: Complete Bash reference covering commands, scripting, text processing, 
   control, networking, and advanced techniques.
 redirect_from:
 - /docs/bash-complete-reference/
-source_file: bash-complete-reference.md
+source_file: pages/_notes/cheatsheets/bash-complete-reference.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/cheatsheets/bash-complete-reference.md
 tags:
 - bash
 - shell
@@ -42,7 +44,7 @@ tags:
 - system-admin
 - automation
 - devops
-title: 🐚 The Complete BASH Reference
+title: 'Complete BASH Reference: Commands & Techniques'
 ---
 # 🐚 The Complete BASH Reference
 
@@ -53,7 +55,7 @@ title: 🐚 The Complete BASH Reference
 Want to put these commands into practice? Follow the [Terminal and Bash Learning Path](/docs/terminal/) and use Bashcrawl as your practice environment:
 
 - **[Play Bashcrawl Online](https://bamr87.github.io/bashcrawl/)**: Practice `pwd`, `ls -F`, `cat`, and `cd` immediately in the browser.
-- **[Bashcrawl Quest: Terminal Adventure RPG](/quests/0000/bashcrawl/)**: Turn the online experience into a guided quest checklist.
+- **[[it-journey/pages/_quests/0000/bashcrawl/README|Bashcrawl Quest: Terminal Adventure RPG]]**: Turn the online experience into a guided quest checklist.
 - **[Bashcrawl Repository](https://github.com/bamr87/bashcrawl/)**: Study the current full game with TUI, classic, native, tutorial, agent, and static web modes.
 - **[bashrun and Beyond](/quests/0000/side-quests/bash-run/)**: Extend the local Bashcrawl project with new rooms and scripts.
 
@@ -4635,11 +4637,11 @@ atrm job_number                  # Remove job
 - [Play Bashcrawl Online](https://bamr87.github.io/bashcrawl/)
 - [Bashcrawl Repository](https://github.com/bamr87/bashcrawl/)
 - [Terminal Shortcuts Cheat Sheet](/docs/terminal-shortcuts-cheat-sheet/)
-- [Terminal Fundamentals Quest](/quests/0000/terminal-fundamentals/)
-- [Bashcrawl Terminal Adventure](/quests/0000/bashcrawl/)
+- [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals Quest]]
+- [[it-journey/pages/_quests/0000/bashcrawl/README|Bashcrawl Terminal Adventure]]
 - [Bash-run Extension Quest](/quests/0000/side-quests/bash-run/)
-- [Bash Scripting Mastery](/quests/0010/bash-scripting/)
-- [Git Basics Quest](/quests/0000/git-basics/)
+- [[it-journey/pages/_quests/0010/bash-scripting|Bash Scripting Mastery]]
+- [[it-journey/pages/_quests/0000/git-basics|Git Basics Quest]]
 
 ### `man` and `help`
 ```bash

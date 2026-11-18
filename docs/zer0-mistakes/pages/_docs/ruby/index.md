@@ -12,12 +12,15 @@ prerequisites: []
 preview: /images/previews/ruby.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/ruby/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/ruby/index.md
 tags:
 - ruby
 - bundler
-title: Ruby & Bundler
+title: Ruby
 ---
+
 # Ruby & Bundler
 
 Jekyll is built with Ruby. Understanding the basics helps with troubleshooting and customization.
@@ -98,18 +101,18 @@ bundle update
 
 ## Learn More
 
-- [Ruby 101](/docs/ruby-101/) - Detailed Ruby basics
+- [[zer0-mistakes/pages/_docs/ruby-101|Ruby 101]] - Detailed Ruby basics
 - [Official Ruby Documentation](https://www.ruby-lang.org/en/documentation/)
 - [Bundler Documentation](https://bundler.io/docs.html)
 
 ## Related
 
-- [Installation Guide](/docs/installation/)
-- [Jekyll Guide](/docs/jekyll/)
-- [Docker Development](/docs/docker/)
+- [[zer0-mistakes/pages/_docs/installation|Installation Guide]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Guide]]
+- [[zer0-mistakes/pages/_docs/docker/index|Docker Development]]
 
 ## See also
 
-- [[Jekyll]]
-- [[Docker]]
-- [[Installation]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
+- [[zer0-mistakes/docker/README|Docker]]
+- [[zer0-mistakes/fr/docs/installation|Installation]]

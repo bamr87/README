@@ -1,5 +1,7 @@
 ---
-source_file: FRONTMATTER_STANDARDS.md
+source_file: docs/standards/FRONTMATTER_STANDARDS.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/standards/FRONTMATTER_STANDARDS.md
 title: Frontmatter Standards
 ---
 # Frontmatter Standards

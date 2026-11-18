@@ -7,13 +7,16 @@ date: 2026-06-12 00:00:00+00:00
 description: Structural coverage baseline recorded as part of T-005. Identifies the
   lowest-covered subsystems and links to the follow-up backlog tasks.
 lastmod: 2026-06-12 00:00:00+00:00
-source_file: coverage-baseline.md
+source_file: docs/development/coverage-baseline.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/development/coverage-baseline.md
 tags:
 - development
 - testing
 - coverage
-title: Test Coverage Baseline — 2026-06-12
+title: Test Coverage Baseline
 ---
+
 # Test Coverage Baseline — 2026-06-12
 
 Recorded as part of T-005 (Zer0-Mistake Quality Framework, roadmap v1.14; coverage end-goal lives in the v3.0 LTS milestone: ≥90% automated coverage). This document establishes the baseline from which that goal is measured and identifies the subsystems that need the most attention.

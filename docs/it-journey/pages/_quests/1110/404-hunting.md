@@ -53,7 +53,9 @@ rewards:
 - 🛠️ Jekyll Redirect Mastery
 - 🎯 CI Link Guardian Setup
 skill_focus: fullstack
-source_file: 404-hunting.md
+source_file: pages/_quests/1110/404-hunting.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/404-hunting.md
 sub_title: 'Level 1110 (14) Quest: Integration Spells for Link Integrity'
 tags:
 - '1110'
@@ -61,7 +63,7 @@ tags:
 - github-actions
 - link-integrity
 - devops
-title: Use WSL2 Ubuntu and follow Linux steps
+title: '404 Hunting: Binary Wards for Unbreakable Links'
 validation_criteria:
 - CI link checks pass on PRs and on a weekly schedule
 - 404 page provides helpful exits, recent content, and an issue link
@@ -441,7 +443,7 @@ Validation Recap:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1110 - Quality Assurance]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/1110/README|Level 1110 - Quality Assurance]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

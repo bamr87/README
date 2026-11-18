@@ -12,7 +12,9 @@ permalink: /docs/features/skip-to-content/
 preview: /images/previews/skip-to-content-accessibility-link.png
 sidebar:
   nav: docs
-source_file: skip-to-content.md
+source_file: pages/_docs/features/skip-to-content.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/skip-to-content.md
 tags:
 - accessibility
 - wcag
@@ -20,6 +22,7 @@ tags:
 - skip-link
 title: Skip-to-Content Accessibility Link
 ---
+
 # Skip-to-Content Accessibility Link
 
 The Zer0-Mistakes theme includes a WCAG 2.1 Level AA compliant skip link that allows keyboard users to bypass navigation.
@@ -249,11 +252,11 @@ The link should announce:
 
 ## Related
 
-- [Keyboard Navigation](/docs/features/keyboard-navigation/)
-- [Sidebar Navigation](/docs/features/sidebar-navigation/)
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
+- [[zer0-mistakes/pages/_docs/features/sidebar-navigation|Sidebar Navigation]]
 - [Accessibility Standards](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ## See also
 
-- [[Features]]
-- [[Keyboard Navigation]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]

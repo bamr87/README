@@ -20,9 +20,12 @@ layout: sitemap-collection
 permalink: /sitemap/
 sidebar: false
 slug: sitemap
-source_file: sitemap.md
-title: 🗺️ Comprehensive Site Map & Overview
+source_file: pages/sitemap.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/sitemap.md
+title: Comprehensive Site Map & Overview
 ---
+
 # 🗺️ Comprehensive Site Map & Overview
 
 Welcome to the complete site overview! This comprehensive dashboard provides detailed statistics, content analysis, collection overviews, and powerful navigation tools to help you discover and understand the entire structure and content of the site.

@@ -28,10 +28,21 @@ SITE_INDEX_PATH = DOCS_DIR / "index.md"     # MkDocs site home, mirrored from th
 MKDOCS_NAV_PATH = ROOT / "nav.yml"          # MkDocs nav + exclude_docs (INHERITed)
 BROWSE_DIR = DOCS_DIR / "browse"            # human content maps, one per corpus
 
+VAULT_DIR = CONTEXT_DIR / "vault"           # the graph, change log, AI synthesis cache
+GRAPH_PATH = VAULT_DIR / "graph.json"       # every note, edge and unresolved link
+COLLECT_MANIFEST_PATH = VAULT_DIR / "collect.json"   # what each crawl took from where
+CHANGE_LOG_PATH = VAULT_DIR / "log.jsonl"   # append-only: one line per corpus change
+SYNTHESIS_PATH = VAULT_DIR / "synthesis.json"        # cached AI summaries of concepts
+BRAIN_DIR = DOCS_DIR / "brain"              # generated second-brain notes
+NOTES_DIR = ROOT / "notes"                  # hand and agent-written notes (the only source)
+OBSIDIAN_DIR = DOCS_DIR / ".obsidian"       # vault settings for the Obsidian app
+CACHE_DIR = ROOT / ".cache" / "collect"     # shallow clones kept between crawls
+
 HOOKS_DIR = ROOT / "hooks.d"
 HOOK_STAGES = (
     "pre_build",
     "post_extract",
+    "post_brain",
     "post_navigate",
     "post_synthesize",
     "post_assemble",

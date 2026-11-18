@@ -1,5 +1,7 @@
 ---
-source_file: 0001-record-architecture-decisions.md
+source_file: docs/adr/0001-record-architecture-decisions.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/adr/0001-record-architecture-decisions.md
 title: ADR 0001 — Record architecture decisions
 ---
 # ADR 0001 — Record architecture decisions

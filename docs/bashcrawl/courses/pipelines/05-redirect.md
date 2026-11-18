@@ -23,12 +23,14 @@ objectives:
     - file_contains: /lab/pipelines/roster.txt
       text: dmitri
     - line_includes: uniq
-source_file: 05-redirect.md
+source_file: courses/pipelines/05-redirect.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/pipelines/05-redirect.md
 teaches:
 - '>'
 - '>>'
 - redirection
-title: 05 Redirect
+title: Saving your work
 xp: 30
 ---
 Output doesn't have to go to the screen:

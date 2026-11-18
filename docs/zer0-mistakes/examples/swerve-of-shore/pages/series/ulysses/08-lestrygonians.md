@@ -8,9 +8,12 @@ permalink: /series/ulysses/08-lestrygonians/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 08-lestrygonians.md
-title: 08 Lestrygonians
+source_file: examples/swerve-of-shore/pages/series/ulysses/08-lestrygonians.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/08-lestrygonians.md
+title: 08 · Lestrygonians
 ---
+
 {% include page-header.html %}
 
 Episode 8 of *Ulysses*. 1pm, lunch and the walk to it.

@@ -14,17 +14,20 @@ layout: article
 machine_translated: true
 permalink: /fr/posts/2025/01/20/startup-funding-guide/
 preview: /images/previews/the-complete-guide-to-startup-funding-in-2025.png
-source_file: 2025-01-20-startup-funding-guide.md
+source_file: fr/posts/business/2025-01-20-startup-funding-guide.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/posts/business/2025-01-20-startup-funding-guide.md
 tags:
 - startup
 - funding
 - venture-capital
 - entrepreneurship
-title: 2025 01 20 Startup Funding Guide
+title: Le guide complet du financement de startup en 2025
 translated_from_sha: 827630eab154
 translation_of: pages/_posts/business/2025-01-20-startup-funding-guide.md
 translation_source_url: /posts/2025/01/20/startup-funding-guide/
 ---
+
 Créer une entreprise est passionnant, mais obtenir un financement peut être l'un des aspects les plus difficiles de l'entrepreneuriat. Ce guide complet vous accompagnera à travers les différentes étapes du financement de startup et vous aidera à comprendre quelles options conviennent le mieux à votre entreprise.
 
 ## Comprendre les étapes de financement

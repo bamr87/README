@@ -11,14 +11,17 @@ image: /assets/images/posts/quantum-computing.jpg
 lastmod: 2026-04-18 19:29:48+00:00
 layout: article
 preview: /images/previews/quantum-computing-explained-from-qubits-to-quantum.png
-source_file: 2025-01-18-quantum-computing-explained.md
+source_file: pages/_posts/science/2025-01-18-quantum-computing-explained.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/science/2025-01-18-quantum-computing-explained.md
 tags:
 - quantum-computing
 - physics
 - technology
 - future
-title: 2025 01 18 Quantum Computing Explained
+title: 'Quantum Computing Explained: From Qubits to Quantum Advantage'
 ---
+
 Quantum computing represents one of the most significant technological advances of our time. This article breaks down the complex concepts into understandable pieces.
 
 ## What is Quantum Computing?

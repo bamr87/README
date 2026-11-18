@@ -12,7 +12,9 @@ featured: true
 lastmod: 2026-04-07 12:00:00+00:00
 layout: article
 preview: /images/previews/the-ai-adoption-map-where-ai-will-augment-replace-.png
-source_file: 2026-04-07-ai-adoption-map-function-by-function.md
+source_file: pages/_posts/technology/2026-04-07-ai-adoption-map-function-by-function.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/technology/2026-04-07-ai-adoption-map-function-by-function.md
 tags:
 - ai
 - manufacturing
@@ -21,8 +23,10 @@ tags:
 - marketing
 - finance
 - supply-chain
-title: 2026 04 07 Ai Adoption Map Function By Function
+title: 'The AI Adoption Map: Where AI Will Augment, Replace, and Transform Every Business
+  Function'
 ---
+
 Not every department will adopt AI at the same pace, and the reasons have less to do with technology than with people and organizational dynamics. This article walks through each major business function in a mid-market manufacturer or distributor and answers three questions: Where will AI augment your existing people? Where will it eventually replace certain roles or tasks? And what does the adoption timeline look like?
 
 We use a simple framework throughout:

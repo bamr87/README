@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/33249447521
 slice: digital-artist/0001
-source_file: 2026-08-29-digital-artist-0001.md
+source_file: pages/_quest-reports/2026-08-29-digital-artist-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-08-29-digital-artist-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-08-29-digital-artist-0001.md
 tags:
 - digital-artist
 - level-0001
@@ -26,13 +28,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 08 29 Digital Artist 0001
+title: Digital Artist · L0001 · 2026-08-29
 verdict: fail
 walk_date: '2026-08-29'
 ---
+
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ❌ fail (avg 56.0%) · **Walked** 2026-08-29
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/33249447521) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-29-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-29-digital-artist-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/33249447521) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-29-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-29-digital-artist-0001.md)
 
 ---
 
@@ -66,7 +69,7 @@ All outcomes below are commands the execute engine actually ran in its disposabl
 - **Confirmed bug 2 (`tested`, `failed` after patching bug 1):** `File.expand_path('../..', __FILE__)` resolves to `<site_root>/scripts`, one directory level too shallow — verified with a direct Ruby one-liner reproducing the exact miscalculation — so `@posts_dir`/`@output_file` point at nonexistent paths and `File.write` throws `Errno::ENOENT`.
 - **Confirmed bug 3 (`tested`, `failed` after patching both above):** `YAML.safe_load($1)` raises `Psych::DisallowedClass: Tried to load unspecified class: Date` on any post with an unquoted `date:` field — the standard Jekyll convention the quest's own example frontmatter uses — so `parse_post` silently returns `nil` for every real post and `total_posts` stays 0, contradicting the documented "Expected Output: Total posts: 76."
 - `update_statistics.sh` (the bash wrapper) itself is correctly written and passed (`passed`) — it just faithfully surfaces the broken generator's failure end-to-end.
-- The Bootstrap stats page (`pages/stats.md`) was `reasoned`, not executed (needs a full Jekyll+Bundler build not safe/practical in this sandbox), but the engine flagged that `{​{ ... | number_with_delimiter }​}` is not a real Jekyll/Liquid filter — a Rails ActiveSupport helper — so it silently no-ops rather than adding thousands separators.
+- The Bootstrap stats page (`pages/stats.md`) was `reasoned`, not executed (needs a full Jekyll+Bundler build not safe/practical in this sandbox), but the engine flagged that `{{ ... | number_with_delimiter }}` is not a real Jekyll/Liquid filter — a Rails ActiveSupport helper — so it silently no-ops rather than adding thousands separators.
 
 ### 2. Terminal Mastery — ❌ 46 (21 available / 21 runnable, 18 ran, 12 passed, 6 failed, 1 skipped, 2 reasoned)
 - Dimensions: commands_work 2, content_accuracy 2, completeness 2, clarity 2, structure 4, safety 4.

@@ -753,7 +753,7 @@ class TestInjectionScreen(ContextEngineFixture):
         import io
         from contextlib import redirect_stderr, redirect_stdout
         from unittest.mock import patch
-        from scripts.context_engine import builder, cli, config
+        from scripts.context_engine import builder, cli, config, vault
         context = self.tmp / "context"
         index_dir = context / "index"
         out, err = io.StringIO(), io.StringIO()
@@ -765,7 +765,14 @@ class TestInjectionScreen(ContextEngineFixture):
                 extract_facts=lambda project, docs_index=None: extractor.extract_facts(
                     project, docs_dir=self.docs_dir, docs_index=docs_index),
                 navigate=lambda registry, **_: navigator.build_fleet_nav(
-                    registry, docs_dir=self.docs_dir)), \
+                    registry, docs_dir=self.docs_dir),
+                # The brain and the graph write into docs/ and context/vault/;
+                # keep them in the fixture too.
+                generate_brain=lambda registry, ai=None: {
+                    "concepts": 0, "stubs": 0, "projects": 0, "ai_summaries": 0},
+                scan=lambda: vault.scan(self.docs_dir),
+                write_graph=lambda graph: vault.write_graph(
+                    graph, context / "vault" / "graph.json")), \
                 patch.multiple(assembler, CONTEXT_DIR=context,
                                APEX_PATH=context / "README.md"), \
                 patch.multiple(config, CARDS_DIR=context / "cards",
@@ -1169,8 +1176,9 @@ class TestMCPServer(unittest.TestCase):
         names = {tool["name"] for tool in response["result"]["tools"]}
         self.assertEqual(names, {"list_projects", "get_project", "search_context",
                                  "get_readme", "get_nav", "get_doc", "get_schema",
-                                 "context_status"})
-        self.assertEqual(len(response["result"]["tools"]), 8)
+                                 "context_status", "get_note", "get_neighbours",
+                                 "get_hot", "vault_lint"})
+        self.assertEqual(len(response["result"]["tools"]), 12)
 
     def test_unknown_method_is_json_rpc_error(self):
         response = self._call("prompts/list")

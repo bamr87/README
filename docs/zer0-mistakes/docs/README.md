@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: docs/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/README.md
 title: Developer Documentation
 ---
 # Developer Documentation
@@ -36,7 +38,9 @@ docs/
 │   ├── extending.md
 │   └── js-api.md
 │
-├── architecture/              # ADRs and system design
+├── adr/                       # Architecture decision records (NNNN-slug.md, indexed in adr/README.md)
+│
+├── architecture/              # System design and requirements
 │   ├── prd-requirements.md
 │   ├── prd-roadmap.md
 │   ├── project-structure.md
@@ -123,6 +127,7 @@ Live preview (built site): `/about/settings/theme-preview/`
 - [Layouts and Includes](architecture/layouts-includes.md)
 - [Build System](architecture/build-system.md)
 - [Product Requirements](architecture/prd-requirements.md)
+- [Architecture Decision Records](adr/README.md)
 
 ### Release Process
 

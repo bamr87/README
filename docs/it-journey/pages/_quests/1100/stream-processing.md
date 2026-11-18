@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Access to the Data Quality Engineering quest
 skill_focus: data-engineering
-source_file: stream-processing.md
+source_file: pages/_quests/1100/stream-processing.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/stream-processing.md
 sub_title: 'Level 1100 (12) Quest: Main Quest - Stream Processing'
 tags:
 - '1100'
@@ -84,7 +86,7 @@ tags:
 - data-engineering
 - hands-on
 - gamified-learning
-title: 'Bring up the single-broker Kafka (compose file in Chapter 2), then:'
+title: 'Stream Processing: Real-Time Data with Apache Kafka & Flink'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -132,7 +134,7 @@ You'll know you've truly mastered this quest when you can:
 
 ### 📋 Knowledge Requirements
 - [ ] Comfortable writing Python functions and using `pip` packages
-- [ ] The ETL stages and idempotency (complete [ETL Pipeline Design](/quests/1100/etl-pipeline-design/) first)
+- [ ] The ETL stages and idempotency (complete [[it-journey/pages/_quests/1100/etl-pipeline-design|ETL Pipeline Design]] first)
 - [ ] A mental model of message queues and how services pass messages
 
 ### 🛠️ System Requirements
@@ -466,16 +468,16 @@ A practical complement: make your **consumer idempotent** too - key writes on a 
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Data Quality Engineering](/quests/1100/data-quality/) - Guard the correctness of every event
+- 🎯 [[it-journey/pages/_quests/1100/data-quality|Data Quality Engineering]] - Guard the correctness of every event
 
 **Explore Side Adventures**:
-- ⚔️ [Apache Spark](/quests/1100/apache-spark/) - Batch-process the same data at scale
+- ⚔️ [[it-journey/pages/_quests/1100/apache-spark|Apache Spark]] - Batch-process the same data at scale
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Data Quality Engineering](/quests/1100/data-quality/)  
-**🏗️ System Engineer**: Revisit [Apache Spark](/quests/1100/apache-spark/) for Structured Streaming  
-**📊 Data Scientist**: Advance to [Data Quality Engineering](/quests/1100/data-quality/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1100/data-quality|Data Quality Engineering]]  
+**🏗️ System Engineer**: Revisit [[it-journey/pages/_quests/1100/apache-spark|Apache Spark]] for Structured Streaming  
+**📊 Data Scientist**: Advance to [[it-journey/pages/_quests/1100/data-quality|Data Quality Engineering]]
 
 ## 📚 Resources
 
@@ -505,6 +507,6 @@ A practical complement: make your **consumer idempotent** too - key writes on a 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data Engineering]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Requires:** [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] **Unlocks:** [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data Engineering]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Requires:** [[ETL Pipeline Design: Build Scalable Data Pipelines with Python]] **Unlocks:** [[Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

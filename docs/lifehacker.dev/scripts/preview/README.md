@@ -1,0 +1,65 @@
+---
+source_file: scripts/preview/README.md
+source_repo: bamr87/lifehacker.dev
+source_url: https://github.com/bamr87/lifehacker.dev/blob/main/scripts/preview/README.md
+title: scripts/preview
+---
+# scripts/preview
+
+> The dependency-free Trace Bloom banner renderer: how to run it, what it writes, and the rules for changing it.
+
+The Trace Bloom preview-banner renderer. Dependency-free JavaScript (Node ≥ 18, zero npm packages) — it runs on a bare CI runner, on a laptop with no bundle, and inside a browser.
+
+- **What it is and why:** [`docs/PREVIEW-IMAGES.md`](../../docs/PREVIEW-IMAGES.md)
+- **The aesthetic:** [`docs/TRACE-BLOOM.md`](../../docs/TRACE-BLOOM.md)
+- **Design tokens (edit here to re-skin):** [`_data/preview/design.json`](../../_data/preview/design.json)
+- **Sibling — in-body figures for the weekly epic:** [`scripts/media/`](../media/README.md) (same tokens, same contracts, exhibits instead of covers)
+
+```bash
+node scripts/preview/generate.mjs -f <article.md>   # one article
+node scripts/preview/generate.mjs --changed         # git-new/modified articles
+node scripts/preview/generate.mjs --all             # anything missing current art
+node scripts/preview/generate.mjs --all --force     # re-skin everything
+node scripts/preview/generate.mjs --scene -f <f>    # dump the scene as JSON
+node scripts/preview/sections.mjs                   # the six _config.yml fallback banners
+node scripts/preview/sections.mjs --check           # committed art == generated art?
+node scripts/preview/build-lab.mjs                  # rebuild docs/preview-lab.html
+ruby scripts/ci/lint_preview.rb                     # the gate
+
+node scripts/preview/illustrate.mjs -f <article.md> # Claude draws the subject, then re-renders
+node scripts/preview/illustrate.mjs --self-test     # the whitelist fixtures (offline)
+node scripts/preview/illustrate.mjs --check         # validate committed motifs (what the gate runs)
+
+node scripts/preview/xai.mjs -f <article.md>        # opt-in xAI Imagine JPEG cover (OAuth first, compressed)
+node scripts/preview/xai.mjs --compress-only        # recompress existing preview rasters; no API calls
+node scripts/preview/generate.mjs --provider xai --changed
+node scripts/preview/xai.mjs --self-test            # offline; no network
+```
+
+The generator is offline and free. The **illustrator** is the one part that calls a model — once per article, ever, through `scripts/ai/run.sh` (subscription auth, model from `_data/ai.yml illustrator_model`). Its output is committed to `_data/preview/motifs/<slug>.svg`, so every later render is offline again.
+
+`--provider xai` is a separate opt-in: one Imagine PNG per article, OAuth first, never a silent fallback to Trace Bloom. Terminal-only mint: `grok login` (official Grok CLI), then the script reads `~/.grok/auth.json`. Full steps: [`docs/PREVIEW-IMAGES.md`](../../docs/PREVIEW-IMAGES.md#terminal-only-oauth-no-kilo).
+
+| File | Job |
+|---|---|
+| `lib/core.mjs` | Hash, PRNG, value noise, lattices, relaxation, Dijkstra propagation, interference → a scene |
+| `lib/svg.mjs` | Scene → SVG: text metrics, headline fitting, safe-band layout, blooms, the animation contract |
+| `lib/motif.mjs` | The illustration contract: parse, whitelist, geometry checks, re-serialize, composite |
+| `lib/article.mjs` | Front-matter read, slug, section, `preview:` stamp, motif load |
+| `generate.mjs` | CLI + the skip/refresh policy (`--provider xai` dispatches to `xai.mjs`) |
+| `sections.mjs` | The six section fallback banners (`_config.yml` `defaults:`), captioned from each section's index page |
+| `illustrate.mjs` | The Claude rung: brief → validate → retry → commit the motif → re-render |
+| `xai.mjs` | Opt-in xAI Imagine raster covers (OAuth first; sidecar + bespoke stamp) |
+| `lib/xai_auth.mjs` | Resolve `XAI_OAUTH_TOKEN` → `~/.grok/auth.json` → Kilo store → `XAI_API_KEY` |
+| `build-lab.mjs` | Inlines `lib/` into the interactive explorer |
+
+## Rules that are not style preferences
+
+1. **Seed order is a contract.** `deriveParams` samples the parameter space in a
+fixed order; inserting a `pick()` above an existing one re-rolls every banner on the site. Append, never insert.
+2. **Bump `GENERATOR` in `lib/svg.mjs`** whenever the visual contract changes. That version is what makes `--all` refresh existing art instead of skipping it.
+3. **Never use a string replacement on front matter.** `$1`/`$&` expand. See the gotcha section in `docs/PREVIEW-IMAGES.md` — it corrupted a real article once.
+4. **Motion is never load-bearing.** Frame 0 must be a complete image, because that is the frame every social scraper captures.
+5. **No fallback rung.** If art cannot be made, fail loudly. A pipeline that silently degrades to a generic gradient is exactly what this replaced.
+
+After changing `lib/` or `design.json`: re-run `build-lab.mjs`, regenerate with `--all --force` **and `sections.mjs`** (the fallbacks share the tokens), and eyeball a contact sheet before committing.

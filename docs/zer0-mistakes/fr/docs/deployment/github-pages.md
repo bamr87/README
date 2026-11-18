@@ -17,7 +17,9 @@ prerequisites:
 preview: /images/previews/deploy-to-github-pages.png
 sidebar:
   nav: docs
-source_file: github-pages.md
+source_file: fr/docs/deployment/github-pages.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/deployment/github-pages.md
 tags:
 - github-pages
 - deployment
@@ -27,6 +29,7 @@ translated_from_sha: be0523b0bf14
 translation_of: pages/_docs/deployment/github-pages.md
 translation_source_url: /docs/deployment/github-pages/
 ---
+
 # Déployer sur GitHub Pages
 
 GitHub Pages offre un hébergement gratuit pour les sites Jekyll avec des builds automatiques à chaque push.
@@ -106,7 +109,7 @@ Pour utiliser un domaine personnalisé :
 3. Cochez **Enforce HTTPS**
 4. Configurez le DNS chez votre bureau d'enregistrement de domaine
 
-Consultez [Configuration d'un domaine personnalisé](/docs/deployment/custom-domain/) pour la configuration DNS détaillée.
+Consultez [[zer0-mistakes/pages/_docs/deployment/custom-domain|Configuration d'un domaine personnalisé]] pour la configuration DNS détaillée.
 
 ## Dépannage
 
@@ -185,8 +188,8 @@ Cela permet d'utiliser des plugins personnalisés et d'avoir un meilleur contrô
 
 ## Étapes suivantes
 
-- [Configuration d'un domaine personnalisé](/docs/deployment/custom-domain/)
-- [Déploiement Netlify](/docs/deployment/netlify/) — Pour plus de fonctionnalités d'hébergement
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Configuration d'un domaine personnalisé]]
+- [[zer0-mistakes/pages/_docs/deployment/netlify|Déploiement Netlify]] — Pour plus de fonctionnalités d'hébergement
 
 ## Référence technique
 
@@ -196,7 +199,7 @@ Pour les détails destinés aux contributeurs (architecture du module de cible d
 
 ## Voir aussi
 
-- [[Deployment]]
-- [[Custom Domain Setup]]
-- [[Deploy to Netlify]]
-- [[Docker]]
+- [[zer0-mistakes/pages/_docs/deployment/index|Deployment]]
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Custom Domain Setup]]
+- [[zer0-mistakes/pages/_docs/deployment/netlify|Deploy to Netlify]]
+- [[zer0-mistakes/docker/README|Docker]]

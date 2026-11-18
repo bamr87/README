@@ -12,7 +12,9 @@ permalink: /docs/features/vendored-assets/
 preview: /images/previews/vendored-bootstrap-icon-assets.png
 sidebar:
   nav: docs
-source_file: vendored-assets.md
+source_file: pages/_docs/features/vendored-assets.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/vendored-assets.md
 tags:
 - bootstrap
 - assets
@@ -21,6 +23,7 @@ tags:
 - performance
 title: Vendored Bootstrap & Icon Assets
 ---
+
 # Vendored Bootstrap & Icon Assets
 
 Bootstrap 5.3.3 CSS/JS and Bootstrap Icons are **committed** under `assets/vendor/` rather than loaded from a CDN. This ensures:
@@ -29,7 +32,7 @@ Bootstrap 5.3.3 CSS/JS and Bootstrap Icons are **committed** under `assets/vendo
 - **Offline development** — works without an internet connection
 - **Version pinning** — no surprise CDN updates breaking the theme
 
-For full details on refreshing vendor files, see the [Vendor Assets guide](/docs/development/vendor-assets/).
+For full details on refreshing vendor files, see the [[zer0-mistakes/pages/_docs/development/vendor-assets|Vendor Assets guide]].
 
 ## Directory Layout
 
@@ -102,11 +105,11 @@ Place site-specific CSS overrides in `assets/css/user-overrides.css` (you create
 
 ## Related
 
-- [Vendor Assets (Maintainer Guide)](/docs/development/vendor-assets/)
-- [Bootstrap Integration](/docs/bootstrap/)
-- [Dependency Updates](/docs/development/dependency-updates/)
+- [[zer0-mistakes/pages/_docs/development/vendor-assets|Vendor Assets (Maintainer Guide)]]
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Bootstrap Integration]]
+- [[zer0-mistakes/pages/_docs/development/dependency-updates|Dependency Updates]]
 
 ## See also
 
 - [[Bootstrap Integration]]
-- [[Development]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]

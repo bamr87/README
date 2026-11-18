@@ -7,9 +7,12 @@ permalink: /more/
 sidebar:
   nav: series
   title: Browse the series
-source_file: more.md
+source_file: examples/swerve-of-shore/pages/more.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/more.md
 title: More
 ---
+
 {% include page-header.html %}
 
 The overflow menu, mirroring the reference site's "More" item.

@@ -16,13 +16,15 @@ lastmod: '2026-07-02T00:00:00.000Z'
 layout: default
 permalink: /quests/ideas/
 sidebar: false
-source_file: quest-ideas.md
+source_file: pages/quest-ideas.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/quest-ideas.md
 tags:
 - quests
 - ideas
 - contribution
 - community
-title: Quest Ideas
+title: Quest Idea Forge
 toc: false
 ---
 <link rel="stylesheet" href="{{ '/assets/css/quest-idea-portal.css' | relative_url }}">

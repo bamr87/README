@@ -7,9 +7,12 @@ permalink: /series/ulysses/17-ithaca/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 17-ithaca.md
-title: 17 Ithaca
+source_file: examples/swerve-of-shore/pages/series/ulysses/17-ithaca.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/17-ithaca.md
+title: 17 · Ithaca
 ---
+
 {% include page-header.html %}
 
 Episode 17 of *Ulysses*. 2am, back at Eccles Street.

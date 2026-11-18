@@ -19,13 +19,16 @@ sidebar:
   base: /docs/
   nav: pages
   title: All docs
-source_file: sidebar-page-tree.md
+source_file: pages/_docs/features/sidebar-page-tree.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/sidebar-page-tree.md
 tags:
 - navigation
 - sidebar
 - liquid
-title: 'Page-tree sidebar (`nav: pages`)'
+title: Page-tree sidebar — auto-nav from your page URLs
 ---
+
 # Page-tree sidebar (`nav: pages`)
 
 The `pages` sidebar mode derives the left-sidebar tree **from your content's URLs** — no curated `_data/navigation/*.yml` file to write or keep in sync. Point it at a base path and it lists every page under that prefix, grouped by its first path segment into collapsible sections.

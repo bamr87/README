@@ -78,7 +78,9 @@ rewards:
   unlocks_features:
   - Access to the extension quests of Level 0001 Web Fundamentals
 skill_focus: fullstack
-source_file: analytics-integration.md
+source_file: pages/_quests/0001/analytics-integration.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/analytics-integration.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - Analytics'
 tags:
 - '0001'
@@ -88,7 +90,7 @@ tags:
 - main_quest
 - hands-on
 - beginner
-title: Edit your site's head/include where the analytics snippet will go
+title: 'Analytics Integration: Privacy-Aware Web Measurement'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -136,7 +138,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Familiarity with HTML and a little JavaScript
 - [ ] Basic command line navigation (`cd`, `ls`)
-- [ ] Recommended: completion of [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/)
+- [ ] Recommended: completion of [[it-journey/pages/_quests/0001/javascript-fundamentals|JavaScript Fundamentals]]
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -452,16 +454,16 @@ Finally, define a **goal**: the one action that means a visit succeeded - a news
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Jekyll Plugins](/quests/0001/jekyll-plugins/) - Extend your site's capabilities
+- 🎯 [[it-journey/pages/_quests/0001/jekyll-plugins|Jekyll Plugins]] - Extend your site's capabilities
 
 **Explore Side Adventures**:
-- ⚔️ [SEO Optimization](/quests/0001/seo-optimization/) - Bring in the visitors to measure
-- ⚔️ [JavaScript Fundamentals](/quests/0001/javascript-fundamentals/) - The events behind your tracking
+- ⚔️ [[it-journey/pages/_quests/0001/seo-optimization|SEO Optimization]] - Bring in the visitors to measure
+- ⚔️ [[it-journey/pages/_quests/0001/javascript-fundamentals|JavaScript Fundamentals]] - The events behind your tracking
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)  
-**🏗️ System Engineer**: Explore [SEO Optimization](/quests/0001/seo-optimization/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/jekyll-plugins|Jekyll Plugins]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/seo-optimization|SEO Optimization]]  
 **📊 Data Specialist**: Master your provider's reporting and goals  
 
 ## 📚 Resources
@@ -491,6 +493,6 @@ Finally, define a **goal**: the one action that means a visit succeeded - a news
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Jekyll Plugins]] · [[SEO Optimization]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[Jekyll Plugins]] · [[SEO Optimization]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

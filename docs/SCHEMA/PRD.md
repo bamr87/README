@@ -1,0 +1,101 @@
+---
+source_file: PRD.md
+source_repo: bamr87/SCHEMA
+source_url: https://github.com/bamr87/SCHEMA/blob/main/PRD.md
+title: PRD — Pyramid Schema (SCHEMA)
+---
+# PRD — Pyramid Schema (SCHEMA)
+
+> Product requirements for [`bamr87/SCHEMA`](https://github.com/bamr87/SCHEMA).
+> Derived from the README, agent docs, config and code in this repo. Anything not
+> stated in those sources is marked **TBD**; success metrics are proposals.
+
+## 1. Overview / problem
+
+Pyramid Schema defines the `SCHEMA.md` protocol and linter that let AI agents look up repository structure instead of guessing it. A `SCHEMA.md` in every directory records a structure table and placement/forbidden rules, making structure local, cheap and verifiable.
+
+
+## 1.1 Missions
+
+Pyramid Schema's direction is to become the ultimate open home for all things repository structure — data, tools, resources and transparency, gathered in one place that anyone can inspect and reuse.
+
+1. **Provide data, tools, resources and transparency for all stakeholders, software practitioners, agent builders and the general public.** Repo maintainers, monorepo owners, AI coding agents, and the general public are first-class audiences. The aim is a shared, open commons: the same sources, the same tools, and the same trail of evidence for everyone.
+2. **Make repository structure local, cheap, queryable and verifiable, so agents look it up instead of guessing.** A `SCHEMA.md` in every directory records a structure table and placement/forbidden rules; a linter scaffolds, checks and auto-fixes the pyramid.
+3. **Put that protocol and linter in every builder's hands.** Serve it through a versioned spec, a seed template and a distribution contract so adopters can vendor copies without drift — an open toolkit for working with all things repository structure.
+
+These missions set the course; they do not claim the work is finished. They serve the PRD goals in §3: a versioned specification, a linter, and a content-addressed distribution contract. The earlier mission paragraph is absorbed into these three. Every feature must trace to them.
+
+## 2. Target users
+
+- Repo maintainers adopting agent-friendly structure docs
+- AI coding agents navigating repositories
+- Monorepo owners federating schemas across submodules
+
+## 3. Goals and non-goals
+
+**Goals**
+
+- A versioned specification (`spec/`)
+- A linter to scaffold, check and auto-fix schema pyramids
+- A content-addressed distribution contract for vendored copies
+
+**Non-goals**
+
+- Source code, specs or scratch files at repo root
+- Hand-editing `DISTRIBUTION.yml`
+
+## 4. Core features (current)
+
+- `tools/schema_lint.py` (scaffold/check/fix)
+- Federation checks across submodule seams
+- `DISTRIBUTION.yml` + `tools/schema_dist.py`
+- CLAUDE.md protocol snippet (`protocol/`)
+- Seed templates and lint-green example fixture repos
+- Scenario test suite
+
+## Feature catalog
+
+Every user-facing capability has a stable id in the feature catalog [`features/features.yml`](features/features.yml). Each entry names the PRD requirements it serves (`prd:`); the trace below is the reverse view.
+
+| ID | Feature | Status | Where | Requirements |
+| --- | --- | --- | --- | --- |
+| [SCHEMA-001](features/features.yml) | tools/schema_lint.py | shipped | [`tools/schema_lint.py`](tools/schema_lint.py) · [`README.md`](README.md) | TBD |
+| [SCHEMA-002](features/features.yml) | Federation checks across submodule seams | shipped | [`tools/schema_lint.py`](tools/schema_lint.py) · [`README.md`](README.md) | TBD |
+| [SCHEMA-003](features/features.yml) | DISTRIBUTION.yml + tools/schema_dist.py | shipped | [`DISTRIBUTION.yml`](DISTRIBUTION.yml) · [`README.md`](README.md) | TBD |
+| [SCHEMA-004](features/features.yml) | CLAUDE.md protocol snippet | shipped | [`protocol`](protocol) · [`README.md`](README.md) | TBD |
+| [SCHEMA-005](features/features.yml) | Seed templates and lint-green example fixture repos | shipped | [`templates/SCHEMA.template.md`](templates/SCHEMA.template.md) · [`README.md`](README.md) | FR2 |
+| [SCHEMA-006](features/features.yml) | Scenario test suite | shipped | [`tests/test_schema_lint.py`](tests/test_schema_lint.py) · [`README.md`](README.md) | TBD |
+| [SCHEMA-007](features/features.yml) | Missions in constitution §1 | planned | [`docs/constitution.md`](docs/constitution.md) | §1.1 |
+
+**Requirement → feature trace**
+
+| Requirement | Features |
+| --- | --- |
+| TBD | SCHEMA-001, SCHEMA-002, SCHEMA-003, SCHEMA-004, SCHEMA-006 |
+| FR2 | SCHEMA-005 |
+| §1.1 | SCHEMA-007 |
+
+## 5. Requirements
+
+**Functional**
+
+- FR1: Every listed path in a SCHEMA table must exist and every unlisted path is flagged
+- FR2: Fixtures under `example/` stay lint-green
+
+**Non-functional**
+
+- NFR1: Python tooling with no heavy dependencies: TBD
+- NFR2: Spec changes are versioned
+
+## 6. Success metrics (proposed — not defined in sources)
+
+- Number of adopting repos
+- Lint false-positive rate: TBD
+
+## 7. Roadmap / open questions
+
+- Spec 1.0 stability criteria: TBD
+
+## 8. Links
+
+- [README.md](README.md) · [CLAUDE.md](CLAUDE.md) · [SCHEMA.md](SCHEMA.md) · [CHANGELOG.md](CHANGELOG.md)

@@ -1,9 +1,12 @@
 ---
 layout: default
 listinformation: true
-source_file: website.md
-title: Website
+source_file: information/website.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/information/website.md
+title: Edit&nbsp;Website
 ---
+
 Editing this website
 ====================
 

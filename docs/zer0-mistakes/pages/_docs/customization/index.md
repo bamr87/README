@@ -12,7 +12,9 @@ permalink: /docs/customization/
 preview: /images/previews/customization.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/customization/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/customization/index.md
 tags:
 - customization
 - layouts
@@ -20,6 +22,7 @@ tags:
 - navigation
 title: Customization
 ---
+
 # Customization
 
 Customize the Zer0-Mistakes theme to match your brand and requirements.
@@ -122,6 +125,6 @@ For contributor-level details (SCSS architecture, design token catalog, fork-saf
 ## See also
 
 - [[Bootstrap Integration]]
-- [[Features]]
-- [[Liquid]]
-- [[Jekyll]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/fr/docs/liquid/index|Liquid]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]

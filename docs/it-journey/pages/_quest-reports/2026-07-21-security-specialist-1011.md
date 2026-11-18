@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29826801543
 slice: security-specialist/1011
-source_file: 2026-07-21-security-specialist-1011.md
+source_file: pages/_quest-reports/2026-07-21-security-specialist-1011.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-21-security-specialist-1011.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-21-security-specialist-1011.md
 tags:
 - security-specialist
 - level-1011
@@ -25,13 +27,14 @@ tags:
 - security-compliance
 theme: Security & Compliance
 tier: Warrior
-title: 2026 07 21 Security Specialist 1011
+title: Security Specialist · L1011 · 2026-07-21
 verdict: fail
 walk_date: '2026-07-21'
 ---
+
 > **Slice** `security-specialist/1011` · **Level** 1011 (Security & Compliance) · **Warrior tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-21
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29826801543) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-21-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-21-security-specialist-1011.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29826801543) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-21-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-21-security-specialist-1011.md)
 
 ---
 
@@ -43,7 +46,7 @@ walk_date: '2026-07-21'
 - **Mode:** `execute` — engine evidence pre-computed and **sealed** by the workflow, then read alongside every quest source as a learner would.
 - **Headline verdict:** ❌ **FAIL** — avg score **68.8%**, split **2 pass · 1 warn · 2 fail**.
 
-Quest 1 (`security-fundamentals`) is a genuinely good conceptual security quest and passes cleanly. The other four are all **GH-600 "Agentic Codex" quests** — DevOps/AI-ML material that happens to share the `1011` level code but belongs to a different quest line and skill focus than a Security Specialist expects here. Two of them are **blocking-broken as written**: `agentic-multi-agent-orchestration-patterns` ships workflow YAML corrupted by leaked Jekyll `{​% raw %​}` tags inside every `${​{ }​}` expression (confirmed by execution) plus three referenced Python scripts that don't exist, and `agentic-behavior-tuning` has a baseline script that prints `✅ Baseline recorded` while silently failing to write its output file, leaving its own validation unsatisfiable in a fresh environment. A maintainer should treat those two as the priority fixes; the middle survey quest (`agentic-codex-05`) is the strongest of the chain and actually works.
+Quest 1 (`security-fundamentals`) is a genuinely good conceptual security quest and passes cleanly. The other four are all **GH-600 "Agentic Codex" quests** — DevOps/AI-ML material that happens to share the `1011` level code but belongs to a different quest line and skill focus than a Security Specialist expects here. Two of them are **blocking-broken as written**: `agentic-multi-agent-orchestration-patterns` ships workflow YAML corrupted by leaked Jekyll `{% raw %}` tags inside every `${{ }}` expression (confirmed by execution) plus three referenced Python scripts that don't exist, and `agentic-behavior-tuning` has a baseline script that prints `✅ Baseline recorded` while silently failing to write its output file, leaving its own validation unsatisfiable in a fresh environment. A maintainer should treat those two as the priority fixes; the middle survey quest (`agentic-codex-05`) is the strongest of the chain and actually works.
 
 ## 🗺️ The Journey
 
@@ -52,7 +55,7 @@ Quest 1 (`security-fundamentals`) is a genuinely good conceptual security quest 
 | 1 | ✅ pass | Security Fundamentals: CIA Triad and Defense in Depth | 81 | Solid, accurate conceptual quest; runnable lab + checksum both worked. Gaps are pedagogical (Risk Mgmt promised-not-taught, buried safety warning). |
 | 2 | ❌ fail | Reforging the Agent's Mind: Tuning Behavior by Instruction | 55 | Baseline script reports success while writing nothing; validation can't pass without un-bootstrapped live-repo infra. |
 | 3 | ✅ pass | The Council of Many: Multi-Agent Coordination | 87 | Strongest quest — trace lab + all YAML ran and matched expected output exactly. One reasoned semantics doubt on the escalate pattern. |
-| 4 | ❌ fail | The Council of Many: Multi-Agent Orchestration Patterns | 45 | Copy-paste-broken: leaked `${​% raw %​}{​{…}​}{​% endraw %​}` in every expression + 3 missing scripts. Self-check goes green on a non-functional deliverable. |
+| 4 | ❌ fail | The Council of Many: Multi-Agent Orchestration Patterns | 45 | Copy-paste-broken: leaked `${% raw %}{{…}}{% endraw %}` in every expression + 3 missing scripts. Self-check goes green on a non-functional deliverable. |
 | 5 | ⚠️ warn | The Scribe's Codex: Observability in Multi-Agent Systems | 76 | Scripts + jq all run and produce correct output, but the workflow calls an undefined script and the pipeline is never wired end-to-end. |
 
 ## 🔬 Evidence
@@ -83,7 +86,7 @@ All command outcomes below come from the sealed `walk-evidence.json` execute run
 
 ### 4. `agentic-multi-agent-orchestration-patterns.md` — 45, ❌ fail · ran 6 (3 passed, 3 failed)
 
-- Write `orchestrator-fan-out.yml` / `orchestrator-chain.yml` — **failed**. Files parse as YAML but every `${​{ }​}` expression is corrupted into a literal string by interleaved Jekyll tags, e.g. `outputs.subtasks == '${​% raw %​}{​{ steps.plan.outputs.subtasks }​}{​% endraw %​}'`. I confirmed this directly in the source (line 124 and throughout Ch.2/Ch.3): GitHub Actions only evaluates `${​{ … }​}`, so these expressions never fire. Copy-pasting the quest breaks outputs, `matrix.subtask`, and every `needs.*.outputs.*`.
+- Write `orchestrator-fan-out.yml` / `orchestrator-chain.yml` — **failed**. Files parse as YAML but every `${{ }}` expression is corrupted into a literal string by interleaved Jekyll tags, e.g. `outputs.subtasks == '${% raw %}{{ steps.plan.outputs.subtasks }}{% endraw %}'`. I confirmed this directly in the source (line 124 and throughout Ch.2/Ch.3): GitHub Actions only evaluates `${{ … }}`, so these expressions never fire. Copy-pasting the quest breaks outputs, `matrix.subtask`, and every `needs.*.outputs.*`.
 - `python3 work/gh-600/scripts/partition_task.py …` — **failed**: `No such file or directory`. `partition_task.py`, `run_subtask.py`, `aggregate_results.py` are referenced by the workflows but **never provided** anywhere in the quest.
 - `mkdir -p …`, write `sub-agent-contract.json`, Quest Validation self-check — **passed**. The JSON schema is valid draft-07. **But** the self-check prints all three ✅ purely on file-presence, so a learner sees full green on a non-functional pipeline.
 
@@ -99,7 +102,7 @@ All command outcomes below come from the sealed `walk-evidence.json` execute run
 
 **High**
 
-- **high · `agentic-multi-agent-orchestration-patterns` · Ch.2 & Ch.3 YAML blocks (from ~line 124) · tested** — Leaked `{​% raw %​}/{​% endraw %​}` tags are interleaved *inside* each expression, producing `${​% raw %​}{​{ … }​}{​% endraw %​}`, which GitHub Actions will never evaluate. Confirmed via `yaml.safe_load` (deserializes to the broken literal string) and by direct source read. **Fix:** wrap the whole fenced block in `{​% raw %​}…{​% endraw %​}` at the Liquid level (as `agentic-codex-05` correctly does at its lines 137/174), leaving the `${​{ … }​}` expressions intact.
+- **high · `agentic-multi-agent-orchestration-patterns` · Ch.2 & Ch.3 YAML blocks (from ~line 124) · tested** — Leaked `{% raw %}/{% endraw %}` tags are interleaved *inside* each expression, producing `${% raw %}{{ … }}{% endraw %}`, which GitHub Actions will never evaluate. Confirmed via `yaml.safe_load` (deserializes to the broken literal string) and by direct source read. **Fix:** wrap the whole fenced block in `{% raw %}…{% endraw %}` at the Liquid level (as `agentic-codex-05` correctly does at its lines 137/174), leaving the `${{ … }}` expressions intact.
 - **high · `agentic-multi-agent-orchestration-patterns` · fan-out workflow deps · tested** — `partition_task.py`, `run_subtask.py`, `aggregate_results.py` are invoked but never supplied (`No such file or directory`). **Fix:** ship minimal working stubs, or explicitly mark them as learner-authored placeholders.
 - **high · `agentic-behavior-tuning` · Exercise 13.1 `measure_agent_baseline.sh` · tested** — Prints `✅ Baseline recorded` while the `continue` branch skips the only write, so the output file is never created; the success `echo` is unconditional. **Fix:** count successfully-recorded tasks and only print success when `count > 0`, else print a clear skip/failure summary and exit non-zero.
 - **high · `agentic-behavior-tuning` · Exercise 13.1 prerequisites + Quest Validation · tested** — The baseline (and thus the first validation check) is unattainable without a live authenticated repo containing `agent-task.yml` and prior agent runs — infra the quest never bootstraps. **Fix:** provide a minimal bootstrap or label the exercise "requires an existing production-like repo, not completable in a fresh sandbox."
@@ -134,7 +137,7 @@ All command outcomes below come from the sealed `walk-evidence.json` execute run
 
 ## 🧠 Reasoning & Method
 
-- **What I ran vs. reasoned about:** I did **not** execute the agentic engine — per the workflow contract the evidence was pre-computed deterministically and **sealed** into `walk-evidence.json` / `walk-evidence.md` (the engine's child `claude` processes can't authenticate from an agent's Bash tool). I consumed that evidence **as-is** — no edits, no regeneration — and independently **read all five quest sources in plan order** as a learner to produce the Chain Continuity findings and to cross-check the machine evidence against the actual text. Several issues are corroborated by both the sealed execution *and* my direct source read (the `${​% raw %​}` corruption at line 124; the buried safety warning at line 207; the Risk Management objective absent from every chapter).
+- **What I ran vs. reasoned about:** I did **not** execute the agentic engine — per the workflow contract the evidence was pre-computed deterministically and **sealed** into `walk-evidence.json` / `walk-evidence.md` (the engine's child `claude` processes can't authenticate from an agent's Bash tool). I consumed that evidence **as-is** — no edits, no regeneration — and independently **read all five quest sources in plan order** as a learner to produce the Chain Continuity findings and to cross-check the machine evidence against the actual text. Several issues are corroborated by both the sealed execution *and* my direct source read (the `${% raw %}` corruption at line 124; the buried safety warning at line 207; the Risk Management objective absent from every chapter).
 - **Mode & sandbox:** `execute` mode, sandboxed by the engine in a disposable dir (Linux, `gh 2.96.0`, Python 3.12). Every `passed`/`failed` above traces to a real command in that sandbox; everything I judged from text alone is tagged **reasoned**.
 - **Coverage & limits:** This is a **windowed** walk — 5 of the level's 12 quests (window 0 of 3); the remaining 8 belong to later windows in the perfection sweep. Snippet coverage was partial by nature: OS-specific installs (`brew`/`winget`/`sudo apt`) were **skipped** on a Linux sandbox; GitHub Actions workflow semantics (the `continue-on-error` escalate pattern) could not be executed offline and are **reasoned**, not tested; `scripts/validate_quest.py` (Q15) was **skipped** as absent platform tooling. Total engine cost ≈ $2.70 across the five quests.
 - **Confidence:** High on the two FAIL quests — their blocking bugs were reproduced by execution and I re-confirmed them in the source. High on quest 1 and quest 3 passing. Medium on the `agentic-codex-05` escalate-pattern doubt (reasoned from documented GH Actions semantics; needs a live-workflow check). I made **zero** content edits and touched only this one report file.

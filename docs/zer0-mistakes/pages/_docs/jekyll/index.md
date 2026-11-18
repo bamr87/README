@@ -14,13 +14,16 @@ prerequisites:
 preview: /images/previews/jekyll.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/jekyll/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/jekyll/index.md
 tags:
 - jekyll
 - getting-started
 - docker
 title: Jekyll
 ---
+
 # Jekyll
 
 Jekyll is the static site generator that powers Zer0-Mistakes. This section covers everything you need to work with Jekyll effectively.
@@ -29,7 +32,7 @@ Jekyll is the static site generator that powers Zer0-Mistakes. This section cove
 
 ### Prerequisites
 
-- Complete the [Installation Guide](/docs/installation/)
+- Complete the [[zer0-mistakes/pages/_docs/installation|Installation Guide]]
 - Have Docker Desktop running (or Ruby + Bundler installed)
 
 ### Run Locally
@@ -94,27 +97,27 @@ docker-compose exec jekyll jekyll clean
 
 ### Configuration & Setup
 
-- [Jekyll Configuration](/docs/jekyll/) — Site settings and options
-- [Front Matter](/docs/front-matter/) — Page metadata and options
-- [Code Highlighting](/docs/jekyll/code-highlighting/) — Syntax highlighting
-- [Pagination](/docs/jekyll/pagination/) — Post navigation
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll Configuration]] — Site settings and options
+- [[zer0-mistakes/pages/_docs/front-matter|Front Matter]] — Page metadata and options
+- [[zer0-mistakes/pages/_docs/jekyll/code-highlighting|Code Highlighting]] — Syntax highlighting
+- [[zer0-mistakes/pages/_docs/jekyll/pagination|Pagination]] — Post navigation
 
 ### Features
 
-See the [Features](/docs/features/) section for:
+See the [[zer0-mistakes/pages/_docs/features/index|Features]] section for:
 
-- [Mermaid Diagrams](/docs/features/mermaid-diagrams/) — Flowcharts and diagrams
-- [MathJax Math](/docs/features/mathjax-math/) — Mathematical notation
-- [Giscus Comments](/docs/features/giscus-comments/) — GitHub Discussions comments
-- [PostHog Analytics](/docs/features/posthog-analytics/) — Privacy-first analytics
+- [[zer0-mistakes/pages/_docs/features/mermaid-diagrams|Mermaid Diagrams]] — Flowcharts and diagrams
+- [[zer0-mistakes/pages/_docs/features/mathjax-math|MathJax Math]] — Mathematical notation
+- [[zer0-mistakes/pages/_docs/features/giscus-comments|Giscus Comments]] — GitHub Discussions comments
+- [[zer0-mistakes/pages/_docs/features/posthog-analytics|PostHog Analytics]] — Privacy-first analytics
 
 ### Deployment
 
-See the [Deployment](/docs/deployment/) section for:
+See the [[zer0-mistakes/pages/_docs/deployment/index|Deployment]] section for:
 
-- [GitHub Pages](/docs/deployment/github-pages/) — Free hosting with GitHub
-- [Netlify](/docs/deployment/netlify/) — Advanced hosting features
-- [Custom Domain](/docs/deployment/custom-domain/) — Use your own domain
+- [[zer0-mistakes/pages/_docs/deployment/github-pages|GitHub Pages]] — Free hosting with GitHub
+- [[zer0-mistakes/pages/_docs/deployment/netlify|Netlify]] — Advanced hosting features
+- [[zer0-mistakes/pages/_docs/deployment/custom-domain|Custom Domain]] — Use your own domain
 
 ## Resources
 
@@ -124,14 +127,14 @@ See the [Deployment](/docs/deployment/) section for:
 
 ## Related
 
-- [Ruby & Bundler](/docs/ruby/) — Ruby dependency management
-- [Liquid Templating](/docs/liquid/) — Template language reference
-- [Docker Development](/docs/docker/) — Container-based workflow
+- [[zer0-mistakes/pages/_docs/ruby/index|Ruby & Bundler]] — Ruby dependency management
+- [[zer0-mistakes/pages/_docs/liquid/index|Liquid Templating]] — Template language reference
+- [[zer0-mistakes/pages/_docs/docker/index|Docker Development]] — Container-based workflow
 
 ## See also
 
-- [[Liquid]]
-- [[Ruby]]
-- [[Docker]]
-- [[Customization]]
-- [[front-matter]]
+- [[zer0-mistakes/fr/docs/liquid/index|Liquid]]
+- [[zer0-mistakes/fr/docs/ruby/index|Ruby]]
+- [[zer0-mistakes/docker/README|Docker]]
+- [[zer0-mistakes/docs/ui/customization|Customization]]
+- [[zer0-mistakes/fr/docs/front-matter|front-matter]]

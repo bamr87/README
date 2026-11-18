@@ -1,0 +1,527 @@
+---
+source_file: PRD.md
+source_repo: bamr87/bamr87
+source_url: https://github.com/bamr87/bamr87/blob/main/PRD.md
+title: PRD — bamr87 (dash)
+---
+# PRD — bamr87 (dash)
+
+> Product requirements for [`bamr87/bamr87`](https://github.com/bamr87/bamr87).
+> Derived from the README, agent docs, config and code in this repo. Anything not
+> stated in those sources is marked **TBD**; success metrics are proposals.
+
+## 1. Overview / problem
+
+The bamr87 hub's direction is to become the ultimate open home for the fleet: the control plane, the shared standards, and a public window onto every project. See [constitution § 1](docs/constitution.md#1-mission).
+
+1. Provide data, tools, resources and transparency for all stakeholders, operators, contributors and the general public — the project registry, the Harness Console, the public documentation site, and the catalogs that make every repo visible and auditable.
+2. Be the source of fleet standards and the path they take into each repo — the constitution, amendments, the PRD, the feature catalog, the Universal Project Standard, kits and fan-out — so a rule is written once in the hub, ratified by the maintainer merging, and adopted consistently across the fleet.
+3. Run a reliable, agentic control plane for the work itself — the dash, the loops, JEV, the issue pipeline and the harness — so planning, execution, review and cost across the mounted projects stay governed, observable and local-first where they can be.
+
+Today the repo is simultaneously the GitHub profile README, the fleet control plane ("dash") that vendors every project as a Git submodule, and the public Harness Console site. It hosts shared standards, kits and reusable actions (e.g. `claude-run`) that the rest of the fleet consumes.
+
+## 2. Target users
+
+- Amr, as the operator of the whole repo fleet
+- Visitors to the GitHub profile / portfolio
+- Fleet repos (and their agents) consuming reusable actions, kits and specs
+
+## 3. Goals and non-goals
+
+**Goals**
+
+- One registry (`_data/projects.yml`) and submodule map for every project
+- Generate the profile portfolio, catalog and dashboards from data rather than by hand
+- Provide shared kits/specs (Universal Project Standard in `specs/`) and fan them out to repos
+- Monitor fleet health (harness scorecard, triage, daily reports)
+
+**Non-goals**
+
+- A shared package build across submodules (each project builds independently)
+- Hand-editing generated files (README AUTO span, CATALOG.md, generated `_data` snapshots)
+
+## 4. Core features (current)
+
+- `tools/dash` CLI router and `tools/dash-gen` generators (`.github/scripts/dash-gen/`)
+- Harness Console (FastAPI, `tools/console/`) published static as the Pages site
+- Submodule fleet under `projects/` driven by `_data/projects.yml` + `.gitmodules`
+- Templates/kits fanned out via `tools/fanout.sh`
+- Pyramid Schema `SCHEMA.md` chain and `tools/schema_lint.py`
+- Daily reports (`_reports/`), triage snapshots and `features/` index
+- Docker dev environment (`tools/dash up`: devenv, console, Postgres, Redis)
+
+## Feature catalog
+
+Every user-facing capability has a stable id in the feature catalog [`features/features.yml`](features/features.yml). Each entry names the PRD requirements it serves (`prd:`); the trace below is the reverse view.
+
+| ID | Feature | Status | Where | Requirements |
+| --- | --- | --- | --- | --- |
+| [HUB-001](features/features.yml) | Portfolio + dashboard from the registry | shipped | route `/portfolio` · [`docs/DASH.md`](docs/DASH.md) | FR2, FR5 |
+| [HUB-002](features/features.yml) | Projects board | shipped | [`projects`](projects) · [`docs/DASH.md`](docs/DASH.md) | FR5 |
+| [HUB-003](features/features.yml) | Fleet triage inbox | shipped | route `/inbox` · [`docs/DAILY-ANALYSIS.md`](docs/DAILY-ANALYSIS.md) | FR5 |
+| [HUB-004](features/features.yml) | Issue pipeline board | shipped | route `/loops/issue_pipeline` · [`docs/ISSUE-PIPELINE.md`](docs/ISSUE-PIPELINE.md) | FR5 |
+| [HUB-005](features/features.yml) | AI harnesses inventory board | shipped | route `/harnesses` · [`docs/HARNESS-OPS.md`](docs/HARNESS-OPS.md) | FR5 |
+| [HUB-006](features/features.yml) | Six-layer harness scorecard | shipped | route `/harnesses/health` · [`docs/HARNESS.md`](docs/HARNESS.md) | FR5 |
+| [HUB-007](features/features.yml) | Fleet features index | shipped | [`features`](features) · [`docs/VERIFICATION.md`](docs/VERIFICATION.md) | FR4, FR5 |
+| [HUB-013](features/features.yml) | Harness Console (local control plane UI) | shipped | [`tools/console/`](tools/console) · [`docs/HARNESS-OPS.md`](docs/HARNESS-OPS.md) | FR5 |
+| [HUB-022](features/features.yml) | The public site is the console (GitHub Pages) | shipped | route `/connect` · [`docs/CONSOLE-PAGES.md`](docs/CONSOLE-PAGES.md) | FR5 |
+| [HUB-015](features/features.yml) | Roadmap | shipped | route `/roadmap` · [`.claude/README.md`](dot-claude/README.md) | FR5 |
+| [HUB-016](features/features.yml) | Engagements ledger | shipped | route `/engagements` · [`docs/ESTIMATION.md`](docs/ESTIMATION.md) | FR5 |
+| [HUB-017](features/features.yml) | Actions usage analytics | shipped | route `/costs` · [`docs/DAILY-ANALYSIS.md`](docs/DAILY-ANALYSIS.md) | FR5 |
+| [HUB-008](features/features.yml) | Drift gate | shipped | [`tools/check-drift.sh`](tools/check-drift.sh) · [`docs/DASH.md`](docs/DASH.md) | FR1, FR2 |
+| [HUB-009](features/features.yml) | Fan-out engine | shipped | [`tools/fanout.sh`](tools/fanout.sh) · [`docs/STANDARDS.md`](docs/STANDARDS.md) | FR6 |
+| [HUB-010](features/features.yml) | Agent verification kit + fleet-verify gate | shipped | [`templates/verify/`](templates/verify) · [`docs/VERIFICATION.md`](docs/VERIFICATION.md) | FR6 |
+| [HUB-011](features/features.yml) | Repo evolution loop | shipped | [`.github/workflows/repo-evolution.yml`](dot-github/workflows/repo-evolution.yml) · [`docs/EVOLUTION.md`](docs/EVOLUTION.md) | NFR3 |
+| [HUB-012](features/features.yml) | Fleet pulse + remediation doctor | shipped | [`.github/workflows/fleet-pulse.yml`](dot-github/workflows/fleet-pulse.yml) · [`docs/DAILY-ANALYSIS.md`](docs/DAILY-ANALYSIS.md) | NFR3 |
+| [HUB-014](features/features.yml) | Local data lake + Phoenix traces | shipped | [`.github/scripts/dash-gen/fleet_lake.py`](dot-github/scripts/dash-gen/fleet_lake.py) · [`docs/HARNESS-OPS.md`](docs/HARNESS-OPS.md) | TBD |
+| [HUB-018](features/features.yml) | Registry reconciliation | shipped | [`.github/workflows/reconcile-registry.yml`](dot-github/workflows/reconcile-registry.yml) · [`docs/DASH.md`](docs/DASH.md) | FR1 |
+| [HUB-019](features/features.yml) | Schema vendor loop | shipped | [`.github/workflows/schema-vendor.yml`](dot-github/workflows/schema-vendor.yml) · [`docs/SCHEMA-FRAMEWORK.md`](docs/SCHEMA-FRAMEWORK.md) | FR6 |
+| [HUB-021](features/features.yml) | Terminal command center | shipped | [`tools/tui/app.py`](tools/tui/app.py) · [`docs/DASH.md`](docs/DASH.md) | TBD |
+| [HUB-020](features/features.yml) | CV projection | shipped | [`.github/scripts/dash-gen/cv_fragment.py`](dot-github/scripts/dash-gen/cv_fragment.py) · [`.claude/skills/sync-cv/SKILL.md`](dot-claude/skills/sync-cv/SKILL.md) | TBD |
+| [HUB-023](features/features.yml) | Governance kit: constitution, amendments, PRD and feature link | shipped | [`tools/governance_lint.py`](tools/governance_lint.py) · [`templates/governance/README.md`](templates/governance/README.md) | FR4, FR6 |
+| [HUB-024](features/features.yml) | Fleet activity log (proposed) | planned | [`docs/prd/FLEET-ACTIVITY-LOG.md`](docs/prd/FLEET-ACTIVITY-LOG.md) | FR7, FR8, FR9, FR10, FR11, FR12, FR13, FR14, FR15, NFR4, NFR5, NFR6 |
+| [HUB-025](features/features.yml) | Harness pipeline map (proposed) | planned | [`docs/prd/HARNESS-PIPELINE-MAP.md`](docs/prd/HARNESS-PIPELINE-MAP.md) | FR16, FR17, FR18, FR19, FR20, NFR7 |
+| [HUB-026](features/features.yml) | GitHub workflow nodes on the pipeline map (proposed) | planned | [`docs/prd/HARNESS-PIPELINE-MAP.md`](docs/prd/HARNESS-PIPELINE-MAP.md) | FR21 |
+| [HUB-027](features/features.yml) | Backlog fan-out routine | partial | [`.github/workflows/backlog-fanout.yml`](dot-github/workflows/backlog-fanout.yml) · [`docs/BACKLOG-FANOUT.md`](docs/BACKLOG-FANOUT.md) | FR6, FR22, FR23 |
+| [HUB-028](features/features.yml) | Work board: rebalance the loops' work by drag and drop | shipped | route `/work` · [`docs/WORK-BOARD.md`](docs/WORK-BOARD.md) | FR5, FR6 |
+| [HUB-029](features/features.yml) | Daily repo deep dive: one repo a day, every repo once per cycle | partial | route `/deep-dive` · [`docs/DEEP-DIVE.md`](docs/DEEP-DIVE.md) | FR24, FR25, NFR8 |
+| [HUB-030](features/features.yml) | Real-time bot activity dashboard | partial | route `/live` · [`tools/console/docs/realtime-bot-dashboard-spec.md`](tools/console/docs/realtime-bot-dashboard-spec.md) | FR5 |
+| [HUB-031](features/features.yml) | Harness Console MCP layer: the console's API for any AI agent | shipped | [`tools/console/mcp_layer/server.py`](tools/console/mcp_layer/server.py) · [`tools/console/docs/mcp-layer.md`](tools/console/docs/mcp-layer.md) | FR26, NFR9 |
+| [HUB-032](features/features.yml) | Claude spend accounting: every CI run priced, estimated or proved free | shipped | [`.github/scripts/dash-gen/ai_usage_collector.py`](dot-github/scripts/dash-gen/ai_usage_collector.py) · [`docs/AI-INTEGRATION.md`](docs/AI-INTEGRATION.md) | FR27, NFR10 |
+| [HUB-033](features/features.yml) | The fleet's one release-please workflow, degrading to a warning without a PR credential | shipped | [`.github/workflows/release-please.yml`](dot-github/workflows/release-please.yml) · [`docs/RELEASES.md`](docs/RELEASES.md) | FR3, FR6 |
+| [HUB-034](features/features.yml) | Workflow atlas: maintain and design the hub's GitHub Actions | shipped | route `/workflows` · [`docs/WORKFLOW-ATLAS.md`](docs/WORKFLOW-ATLAS.md) | FR5, FR21 |
+| [HUB-035](features/features.yml) | JEV: conflict-free numbering + tiered PR conflict triage | partial | [`tools/jev/README.md`](tools/jev/README.md) · [`docs/JEV.md`](docs/JEV.md) | FR28, NFR11 |
+| [HUB-036](features/features.yml) | Fleet work-tracking framework on GitHub Projects (proposed) | planned | [`templates/projects/framework.yml`](templates/projects/framework.yml) · [`docs/PROJECTS-FRAMEWORK.md`](docs/PROJECTS-FRAMEWORK.md) | FR29, NFR12 |
+| [HUB-037](features/features.yml) | Projects coverage gate: every open issue/PR tracked with required fields (proposed) | planned | [`tools/projects_lint.py`](tools/projects_lint.py) · [`docs/PROJECTS-FRAMEWORK.md`](docs/PROJECTS-FRAMEWORK.md) | FR29, NFR12 |
+| [HUB-038](features/features.yml) | Features/PRD ↔ project sync and console Projects panel (proposed) | planned | [`docs/PROJECTS-FRAMEWORK.md`](docs/PROJECTS-FRAMEWORK.md) | FR30, NFR12 |
+| [HUB-039](features/features.yml) | Claude Code OTel telemetry in the console and MCP | shipped | [`tools/console/claude_telemetry.py`](tools/console/claude_telemetry.py) · [`docs/OBSERVABILITY.md`](docs/OBSERVABILITY.md) | TBD |
+| [HUB-040](features/features.yml) | Claude subscription shown as a discounted rate off API list prices | shipped | [`tools/console/subscription.py`](tools/console/subscription.py) · [`docs/OBSERVABILITY.md`](docs/OBSERVABILITY.md) | FR31 |
+| [HUB-041](features/features.yml) | GitHub Projects in the console: cross-owner aggregation, linked view and guarded write-back | partial | [`tools/console/gh_projects.py`](tools/console/gh_projects.py) · [`docs/PROJECTS-FRAMEWORK.md`](docs/PROJECTS-FRAMEWORK.md) | FR32, FR33, FR34 |
+| [HUB-042](features/features.yml) | Docs site conformance: site exists, index complete, links resolve | planned | [`tools/conformance.py`](tools/conformance.py) · [`docs/amendments/0007-public-docs-site.md`](docs/amendments/0007-public-docs-site.md) | FR35 |
+| [HUB-043](features/features.yml) | Public docs site: every fleet repo publishes all its documentation | planned | [`docs/constitution.md`](docs/constitution.md) · [`docs/amendments/0007-public-docs-site.md`](docs/amendments/0007-public-docs-site.md) | FR36 |
+| [HUB-044](features/features.yml) | Architecture research harness: literature-grounded fleet architecture review and research papers | planned | [`docs/ARCH-RESEARCH-HARNESS.md`](docs/ARCH-RESEARCH-HARNESS.md) | FR37, FR38, FR39, FR40, FR41 |
+| [HUB-045](features/features.yml) | Review gate: needs-amr label holds a PR from agent merge | planned | [`docs/constitution.md`](docs/constitution.md) · [`docs/amendments/0009-agent-merge-review-gate.md`](docs/amendments/0009-agent-merge-review-gate.md) | FR42 |
+| [HUB-046](features/features.yml) | Evidence conformance: checks major/frontend PRs for tests, visuals and review | planned | [`tools/conformance.py`](tools/conformance.py) · [`docs/amendments/0010-major-change-evidence.md`](docs/amendments/0010-major-change-evidence.md) | FR43 |
+| [HUB-047](features/features.yml) | Major-change evidence: JEV-judged major PRs, tests, visual before/after, JEV + QA Lead review | planned | [`docs/constitution.md`](docs/constitution.md) · [`docs/amendments/0010-major-change-evidence.md`](docs/amendments/0010-major-change-evidence.md) | FR44 |
+| [HUB-048](features/features.yml) | Eval baseline: per-role eval sets, pinned models, run tracing | planned | [`docs/constitution.md`](docs/constitution.md) · [`docs/amendments/0011-eval-baseline-risk-tiers.md`](docs/amendments/0011-eval-baseline-risk-tiers.md) | FR45 |
+| [HUB-049](features/features.yml) | Risk tiers: reversible/external/money tags gate agent actions | planned | [`docs/constitution.md`](docs/constitution.md) · [`docs/amendments/0011-eval-baseline-risk-tiers.md`](docs/amendments/0011-eval-baseline-risk-tiers.md) | FR46 |
+| [HUB-050](features/features.yml) | AI-ready foundation: API layer, MCP, agent docs and metadata in every repo | planned | [`docs/constitution.md`](docs/constitution.md) · [`docs/amendments/0013-ai-ready-foundation.md`](docs/amendments/0013-ai-ready-foundation.md) | FR47 |
+| [HUB-051](features/features.yml) | AIEO AI-readiness check: scores every repo's AI foundation | planned | `tools/aieo/` · [`docs/amendments/0013-ai-ready-foundation.md`](docs/amendments/0013-ai-ready-foundation.md) | FR48 |
+| [HUB-052](features/features.yml) | Backstage catalog-info.yaml export of the registry | planned | [`.github/scripts/dash-gen`](dot-github/scripts/dash-gen) · [`docs/DASH.md`](docs/DASH.md) | FR49 |
+| [HUB-053](features/features.yml) | Fan-out campaigns page: per-repo PR, CI and merge state per kit rollout | planned | [`tools/fanout.sh`](tools/fanout.sh) · [`docs/STANDARDS.md`](docs/STANDARDS.md) | FR50 |
+| [HUB-054](features/features.yml) | Tag selectors for --target | planned | [`tools/fanout.sh`](tools/fanout.sh) · [`docs/DASH.md`](docs/DASH.md) | FR51 |
+| [HUB-055](features/features.yml) | Copier-style 3-way kit upgrade for hand-edited files | planned | [`tools/fanout.sh`](tools/fanout.sh) · [`docs/STANDARDS.md`](docs/STANDARDS.md) | FR52 |
+| [HUB-056](features/features.yml) | Governance records lint: amendment status, constitution order, doc links | planned | [`tools/governance_lint.py`](tools/governance_lint.py) · [`docs/amendments/README.md`](docs/amendments/README.md) | FR53 |
+| [HUB-057](features/features.yml) | Centrally managed loop kill switches | planned | [`_data/fleet.yml`](_data/fleet.yml) · [`docs/AI-INTEGRATION.md`](docs/AI-INTEGRATION.md) | FR54 |
+| [HUB-058](features/features.yml) | Agentic design patterns map | partial | [`docs/agentic-patterns/patterns.json`](docs/agentic-patterns/patterns.json) · [`docs/agentic-patterns/README.md`](docs/agentic-patterns/README.md) | FR55 |
+| [HUB-059](features/features.yml) | JEV: loop step specs — one spec per agent step, rendered the same in CI and locally | partial | [`tools/jev/steps/README.md`](tools/jev/steps/README.md) · [`docs/JEV.md`](docs/JEV.md) | FR45 |
+| [HUB-060](features/features.yml) | JEV: run a loop's agent step locally (the loop runner) | partial | [`tools/jev/loop.py`](tools/jev/loop.py) · [`docs/JEV.md`](docs/JEV.md) | FR56 |
+| [HUB-061](features/features.yml) | JEV: ratification, acceptance and completion recorded after the maintainer merges | shipped | [`tools/jev/ratify.py`](tools/jev/ratify.py) · [`docs/JEV.md`](docs/JEV.md) | FR57 |
+| [HUB-062](features/features.yml) | Fleet frontend platform: registry frontend: block, tiers and UPS-FE-70..73 | partial | [`tools/frontend_registry.py`](tools/frontend_registry.py) · [`docs/FRONTEND-PLATFORM.md`](docs/FRONTEND-PLATFORM.md) | FR58 |
+| [HUB-063](features/features.yml) | JEV: the loop runner's context pack — the fleet's planes, read on the host for a sealed agent | partial | [`tools/jev/context.py`](tools/jev/context.py) · [`docs/JEV.md`](docs/JEV.md) | FR59 |
+| [HUB-064](features/features.yml) | In-flight job status for agents: state, ages and slowness diagnostics | shipped | [`tools/console/mcp_layer/server.py`](tools/console/mcp_layer/server.py) · [`tools/console/docs/job-status.md`](tools/console/docs/job-status.md) | FR60 |
+| [HUB-065](features/features.yml) | Fleet PR review workflow with one sticky summary | partial | [`.github/workflows/pr-review.yml`](dot-github/workflows/pr-review.yml) · [`templates/pr-review/README.md`](templates/pr-review/README.md) | FR61 |
+| [HUB-066](features/features.yml) | Quest Log showcase: every deep-dived repo gets an article, two LinkedIn drafts and a better first screen | partial | [`.claude/skills/deep-dive-showcase/SKILL.md`](dot-claude/skills/deep-dive-showcase/SKILL.md) · [`docs/SHOWCASE.md`](docs/SHOWCASE.md) | FR62, NFR8 |
+| [HUB-067](features/features.yml) | The editor is a front door: every harness surface from VS Code through tools/dash | shipped | [`.vscode/launch.json`](dot-vscode/launch.json) · [`.vscode/README.md`](dot-vscode/README.md) | FR63 |
+| [HUB-068](features/features.yml) | Workloads placed across fleet nodes, with OpenTofu for node infrastructure | partial | [`tools/fleetcore/nodes.py`](tools/fleetcore/nodes.py) · [`docs/PLATFORM.md`](docs/PLATFORM.md) | FR64 |
+| [HUB-069](features/features.yml) | Run a loop's agent step locally from the console, the TUI and the MCP (loop-run) | partial | route `/loops/repo_scout` · [`tools/console/README.md`](tools/console/README.md) | FR56, FR65 |
+| [HUB-070](features/features.yml) | JEV: the fleet doctor's step spec and local dry run (P3, step 1) | partial | [`tools/jev/steps/fleet-pulse/doctor.yml`](tools/jev/steps/fleet-pulse/doctor.yml) · [`docs/DAILY-ANALYSIS.md`](docs/DAILY-ANALYSIS.md) | FR56 |
+| [HUB-071](features/features.yml) | JEV: the evolution agent's step spec and local dry run (P3, step 2) | partial | [`tools/jev/steps/repo-evolution/evolve.yml`](tools/jev/steps/repo-evolution/evolve.yml) · [`docs/EVOLUTION.md`](docs/EVOLUTION.md) | FR56 |
+| [HUB-072](features/features.yml) | Fleet activity replay: live and historical animated view of agents, harnesses and containers (proposed) | planned | [`docs/prd/FLEET-ACTIVITY-REPLAY.md`](docs/prd/FLEET-ACTIVITY-REPLAY.md) | FR5, FR7, FR10, FR15, FR16, FR17, FR18, FR19, FR20, FR26, FR60, NFR4, NFR5, NFR6, NFR7, NFR9, FR66, FR67, FR68, NFR13, FR69 |
+| [HUB-073](features/features.yml) | Common harness protocol and platform: one agent-loop contract for console, CI, local and JEV harnesses (proposed) | planned | [`docs/prd/HARNESS-PROTOCOL.md`](docs/prd/HARNESS-PROTOCOL.md) | FR26, FR46, FR54, FR56, FR59, FR60, FR63, NFR9, NFR11, FR70, FR71, FR72, NFR14 |
+| [HUB-074](features/features.yml) | JEV: the fan-out agent fill's step specs and local dry run (P3, step 3) | partial | [`tools/jev/steps/fanout/agent-fill-standardize.yml`](tools/jev/steps/fanout/agent-fill-standardize.yml) · [`docs/SCHEMA-FRAMEWORK.md`](docs/SCHEMA-FRAMEWORK.md) | FR56 |
+| [HUB-075](features/features.yml) | Recursive harness refinement (Harness²): the surface check, the Propose–Probe–Compose plan and evidence tree, the experience library, the console's Refine page and review queue, the assistant | partial | route `/refine` · [`docs/HARNESS-REFINEMENT.md`](docs/HARNESS-REFINEMENT.md) | FR73 |
+| [HUB-076](features/features.yml) | The topic loop read back: directive → issue → pull request → merged, on the Content page | shipped | [`.github/scripts/dash-gen/content_atlas.py`](dot-github/scripts/dash-gen/content_atlas.py) · [`docs/CONTENT-ATLAS.md`](docs/CONTENT-ATLAS.md) | FR74 |
+| [HUB-077](features/features.yml) | The routine PM review: project, roadmap and release alignment | partial | [`tools/pm_review.py`](tools/pm_review.py) · [`docs/PM.md`](docs/PM.md) | FR75, NFR15 |
+| [HUB-078](features/features.yml) | The app portal: every fleet frontend opened inside the Harness Console, at its live address or its local stack | partial | route `/apps` · [`docs/FRONTEND-PLATFORM.md`](docs/FRONTEND-PLATFORM.md) | FR58, FR76 |
+| [HUB-079](features/features.yml) | The bashOS desktop: an icon for every fleet app, each opened in a window that shares one App Shell | partial | route `/desktop` · [`docs/FRONTEND-PLATFORM.md`](docs/FRONTEND-PLATFORM.md) | FR58, FR77 |
+| [HUB-080](features/features.yml) | The generated repo app: every repo in the fleet opens as an app, with or without a frontend of its own | partial | route `/apps/kvlite` · [`docs/FRONTEND-PLATFORM.md`](docs/FRONTEND-PLATFORM.md) | FR58, FR78 |
+| [HUB-081](features/features.yml) | Visual evidence standard: screenshots and front-end evidence for tutorials, guides and setup docs | planned | [`tools/guides_visual_lint.py`](tools/guides_visual_lint.py) · [`docs/VISUAL-EVIDENCE.md`](docs/VISUAL-EVIDENCE.md) | FR79 |
+| [HUB-082](features/features.yml) | Fleet activity replay: live and historical animated view of agents, harnesses and containers (proposed) | planned | [`docs/prd/FLEET-ACTIVITY-REPLAY.md`](docs/prd/FLEET-ACTIVITY-REPLAY.md) | FR5, FR7, FR10, FR15, FR16, FR17, FR18, FR19, FR20, FR26, FR60, NFR4, NFR5, NFR6, NFR7, NFR9, FR80, FR81, FR82, NFR16 |
+| [HUB-083](features/features.yml) | Fleet security posture from a weekly OpenSSF Scorecard sweep | partial | [`tools/scorecard_snapshot.py`](tools/scorecard_snapshot.py) · [`docs/SECURITY-POSTURE.md`](docs/SECURITY-POSTURE.md) | FR83 |
+| [HUB-084](features/features.yml) | JEV: roadmap FF ids assigned at merge | shipped | [`tools/jev/number.py`](tools/jev/number.py) · [`docs/JEV.md`](docs/JEV.md) | FR28 |
+| [HUB-085](features/features.yml) | Expedite sprints: one accelerated, monitored pilot at a time run by the fleet's agentic loops | planned | [`docs/EXPEDITE-SPRINTS.md`](docs/EXPEDITE-SPRINTS.md) | FR84 |
+| [HUB-087](features/features.yml) | Expedite sprints: one accelerated, monitored pilot at a time run by the fleet's agentic loops | planned | [`docs/EXPEDITE-SPRINTS.md`](docs/EXPEDITE-SPRINTS.md) | FR85 |
+| [HUB-088](features/features.yml) | Typed decisions gate the pipeline: a decision lockfile, traces and replay, the trim and verify loops | planned | [`docs/prd/AGENTIC-SDLC.md`](docs/prd/AGENTIC-SDLC.md) | FR86, FR87, FR88, NFR17, FR7, FR10, FR15, FR26, FR60, NFR4, NFR9 |
+| [HUB-089](features/features.yml) | The console's frame: a sidebar that folds, live counts, and pages that fail one at a time | shipped | [`tools/console/web/src/components/Shell.tsx`](tools/console/web/src/components/Shell.tsx) · [`tools/console/web/README.md`](tools/console/web/README.md) | FR89 |
+| [HUB-090](features/features.yml) | Scoped MCP write access: approved report jobs and Work-board prioritisation for remote agents | shipped | [`tools/console/mcp_layer/server.py`](tools/console/mcp_layer/server.py) · [`tools/console/docs/mcp-layer.md`](tools/console/docs/mcp-layer.md) | FR26, NFR9, FR90, NFR18 |
+| [HUB-091](features/features.yml) | MCP server lifecycle: centralized registry, config schema, lint and fan-out | planned | [`tools/mcp_servers_lint.py`](tools/mcp_servers_lint.py) · [`docs/MCP-SERVERS.md`](docs/MCP-SERVERS.md) | FR91 |
+| [HUB-092](features/features.yml) | The agent inventory: every AI agent registered, graded against the efficacy contract, and held complete by the drift gate | shipped | [`.github/scripts/dash-gen/agent_inventory.py`](dot-github/scripts/dash-gen/agent_inventory.py) · [`docs/AGENT-EFFICACY.md`](docs/AGENT-EFFICACY.md) | FR92, NFR19 |
+| [HUB-093](features/features.yml) | Grok ↔ Claude Code governance: handoff, audit trail, roles, escalation | planned | [`tools/governance_trace_lint.py`](tools/governance_trace_lint.py) · [`docs/prd/GROK-CLAUDE-GOVERNANCE.md`](docs/prd/GROK-CLAUDE-GOVERNANCE.md) | FR93, FR94 |
+| [HUB-094](features/features.yml) | The incident reflector: a week of agent incidents into candidate lessons for the experience library, on a local schedule | shipped | [`tools/jev/reflect.py`](tools/jev/reflect.py) · [`docs/HARNESS-REFINEMENT.md`](docs/HARNESS-REFINEMENT.md) | TBD |
+| [HUB-095](features/features.yml) | Claude Code executes; Grok bots set direction only | planned | [`tools/claude_code_executes_lint.py`](tools/claude_code_executes_lint.py) · [`docs/amendments/0032-claude-code-executes.md`](docs/amendments/0032-claude-code-executes.md) | FR95 |
+| [HUB-096](features/features.yml) | The fleet graph: what the control plane manages and how it relates, as one model | partial | [`tools/fleetcore/graph.py`](tools/fleetcore/graph.py) · [`docs/FLEET-GRAPH.md`](docs/FLEET-GRAPH.md) | FR96, NFR20 |
+| [HUB-097](features/features.yml) | Outcome learning (shadow): what happened to each loop's output and where its next slots would pay | partial | [`tools/fleetcore/learn.py`](tools/fleetcore/learn.py) · [`docs/LEARNING.md`](docs/LEARNING.md) | FR97 |
+| [HUB-098](features/features.yml) | Shared functional specification library | planned | [`docs/prd/FUNCTIONAL-SPEC-LIBRARY.md`](docs/prd/FUNCTIONAL-SPEC-LIBRARY.md) | FR98 |
+| [HUB-099](features/features.yml) | Per-repo functional spec manifest | planned | [`docs/prd/FUNCTIONAL-SPEC-LIBRARY.md`](docs/prd/FUNCTIONAL-SPEC-LIBRARY.md) | FR99 |
+| [HUB-100](features/features.yml) | Functional spec override ratification | planned | [`docs/prd/FUNCTIONAL-SPEC-LIBRARY.md`](docs/prd/FUNCTIONAL-SPEC-LIBRARY.md) | FR100 |
+| [HUB-101](features/features.yml) | Functional spec resolver, CI gate and docs parity | planned | [`docs/prd/FUNCTIONAL-SPEC-LIBRARY.md`](docs/prd/FUNCTIONAL-SPEC-LIBRARY.md) | FR101, FR102, FR103, NFR21 |
+| [HUB-102](features/features.yml) | Agentic loops history and statistics | planned | [`docs/prd/AGENTIC-LOOPS-DASHBOARD.md`](docs/prd/AGENTIC-LOOPS-DASHBOARD.md) | FR104, FR105 |
+| [HUB-103](features/features.yml) | Agentic loops dashboard | planned | [`docs/prd/AGENTIC-LOOPS-DASHBOARD.md`](docs/prd/AGENTIC-LOOPS-DASHBOARD.md) | FR106, FR107, FR108, NFR22, NFR23, NFR24 |
+| [HUB-104](features/features.yml) | Agentic loops dashboard as the Bash 365 foundation | planned | [`docs/prd/AGENTIC-LOOPS-DASHBOARD.md`](docs/prd/AGENTIC-LOOPS-DASHBOARD.md) | FR109, FR110, FR111, FR112 |
+| [HUB-105](features/features.yml) | The harness standard: every AI workflow found by any route, graded, with the lever that rebuilds it | shipped | route `/harnesses` · [`docs/HARNESS-OPS.md`](docs/HARNESS-OPS.md) | FR113, FR5 |
+| [HUB-106](features/features.yml) | Decision index: what waits on the maintainer across the fleet, in one call | shipped | [`tools/console/decision_index.py`](tools/console/decision_index.py) · [`docs/DECISION-INDEX.md`](docs/DECISION-INDEX.md) | FR114, NFR25, FR26, NFR20 |
+| [HUB-107](features/features.yml) | Automatic credential rotation: started by a secret-scanning alert, a schedule or a failing credential, for the credentials the weekly loop does not reach | planned | [`docs/prd/CREDENTIAL-ROTATION.md`](docs/prd/CREDENTIAL-ROTATION.md) · [`docs/TOKEN-ROTATION.md`](docs/TOKEN-ROTATION.md) | FR115, FR116, FR117, FR118, NFR26, NFR27 |
+| [HUB-108](features/features.yml) | Red-main resolver: every red default branch found, resolved where fleet rules allow, and handed over where they do not (proposed) | planned | [`docs/prd/RED-MAIN-RESOLVER.md`](docs/prd/RED-MAIN-RESOLVER.md) | FR42, FR119, FR120, FR121, FR122, NFR28 |
+| [HUB-109](features/features.yml) | CI review loop: each failed run on a red default branch traced through its workflow, judged for selectivity, and answered with a minimal diff (proposed) | planned | [`docs/prd/RED-MAIN-RESOLVER.md`](docs/prd/RED-MAIN-RESOLVER.md) | FR123, NFR28 |
+| [HUB-110](features/features.yml) | Agent news feed reactions | planned | [`docs/prd/AGENT-NEWS-FEED.md`](docs/prd/AGENT-NEWS-FEED.md) | FR124 |
+| [HUB-111](features/features.yml) | Agent news feed threads | planned | [`docs/prd/AGENT-NEWS-FEED.md`](docs/prd/AGENT-NEWS-FEED.md) | FR125 |
+| [HUB-112](features/features.yml) | Agent news feed | planned | [`docs/prd/AGENT-NEWS-FEED.md`](docs/prd/AGENT-NEWS-FEED.md) | FR126, FR127, FR128, NFR29, NFR30, NFR31 |
+| [HUB-113](features/features.yml) | Run the harness and its loops one stage at a time from Claude Code: /harness, /loops and /console slash commands over the console's operation allowlist | shipped | [`tools/console/ops_cli.py`](tools/console/ops_cli.py) · [`.claude/README.md`](dot-claude/README.md) | FR129, FR65, FR63 |
+| [HUB-114](features/features.yml) | The weekly routine: Friday closes the week, Saturday checks next week's schedule can run, Sunday plans it | shipped | [`tools/weekly/cli.py`](tools/weekly/cli.py) · [`docs/WEEKLY.md`](docs/WEEKLY.md) | FR130 |
+| [HUB-115](features/features.yml) | Weekly close-out and weekend-prep loops, scheduled and maintained from the Harness Console | partial | [`.github/workflows/weekly-closeout.yml`](dot-github/workflows/weekly-closeout.yml) · [`docs/WEEKLY-CLOSEOUT.md`](docs/WEEKLY-CLOSEOUT.md) | FR131 |
+| [HUB-116](features/features.yml) | On-premise compute node: local LLMs and Claude Code sessions on Amr's own machine (planned) | planned | [`docs/ONPREM-COMPUTE.md`](docs/ONPREM-COMPUTE.md) | FR64, FR56, FR65, FR130, FR131, FR132, FR133, NFR32 |
+| [HUB-117](features/features.yml) | PR queue: every open pull request, who moves it next, and bulk actions an agent carries out once Amr confirms | partial | [`tools/console/web/src/pages/PrQueue.tsx`](tools/console/web/src/pages/PrQueue.tsx) · [`docs/PR-QUEUE.md`](docs/PR-QUEUE.md) | FR134, FR135 |
+
+**Requirement → feature trace**
+
+| Requirement | Features |
+| --- | --- |
+| FR2 | HUB-001, HUB-008 |
+| FR5 | HUB-001, HUB-002, HUB-003, HUB-004, HUB-005, HUB-006, HUB-007, HUB-013, HUB-022, HUB-015, HUB-016, HUB-017, HUB-028, HUB-030, HUB-034, HUB-072, HUB-082, HUB-105 |
+| FR4 | HUB-007, HUB-023 |
+| FR1 | HUB-008, HUB-018 |
+| FR6 | HUB-009, HUB-010, HUB-019, HUB-023, HUB-027, HUB-028, HUB-033 |
+| NFR3 | HUB-011, HUB-012 |
+| TBD | HUB-014, HUB-021, HUB-020 |
+| FR7 | HUB-024, HUB-072, HUB-082, HUB-088 |
+| FR8 | HUB-024 |
+| FR9 | HUB-024 |
+| FR10 | HUB-024, HUB-072, HUB-082, HUB-088 |
+| FR11 | HUB-024 |
+| FR12 | HUB-024 |
+| FR13 | HUB-024 |
+| FR14 | HUB-024 |
+| FR15 | HUB-024, HUB-072, HUB-082, HUB-088 |
+| NFR4 | HUB-024, HUB-072, HUB-082, HUB-088 |
+| NFR5 | HUB-024, HUB-072, HUB-082 |
+| NFR6 | HUB-024, HUB-072, HUB-082 |
+| FR16 | HUB-025, HUB-072, HUB-082 |
+| FR17 | HUB-025, HUB-072, HUB-082 |
+| FR18 | HUB-025, HUB-072, HUB-082 |
+| FR19 | HUB-025, HUB-072, HUB-082 |
+| FR20 | HUB-025, HUB-072, HUB-082 |
+| NFR7 | HUB-025, HUB-072, HUB-082 |
+| FR21 | HUB-026, HUB-034 |
+| FR22 | HUB-027 |
+| FR23 | HUB-027 |
+| FR24 | HUB-029 |
+| FR25 | HUB-029 |
+| NFR8 | HUB-029, HUB-066 |
+| FR26 | HUB-031, HUB-072, HUB-073, HUB-082, HUB-088, HUB-090, HUB-106 |
+| NFR9 | HUB-031, HUB-072, HUB-073, HUB-082, HUB-088, HUB-090 |
+| FR27 | HUB-032 |
+| NFR10 | HUB-032 |
+| FR3 | HUB-033 |
+| FR28 | HUB-035, HUB-084 |
+| NFR11 | HUB-035, HUB-073 |
+| FR29 | HUB-036, HUB-037 |
+| NFR12 | HUB-036, HUB-037, HUB-038 |
+| FR30 | HUB-038 |
+| FR31 | HUB-040 |
+| FR32 | HUB-041 |
+| FR33 | HUB-041 |
+| FR34 | HUB-041 |
+| FR35 | HUB-042 |
+| FR36 | HUB-043 |
+| FR37 | HUB-044 |
+| FR38 | HUB-044 |
+| FR39 | HUB-044 |
+| FR40 | HUB-044 |
+| FR41 | HUB-044 |
+| FR42 | HUB-045, HUB-108 |
+| FR43 | HUB-046 |
+| FR44 | HUB-047 |
+| FR45 | HUB-048, HUB-059 |
+| FR46 | HUB-049, HUB-073 |
+| FR47 | HUB-050 |
+| FR48 | HUB-051 |
+| FR49 | HUB-052 |
+| FR50 | HUB-053 |
+| FR51 | HUB-054 |
+| FR52 | HUB-055 |
+| FR53 | HUB-056 |
+| FR54 | HUB-057, HUB-073 |
+| FR55 | HUB-058 |
+| FR56 | HUB-060, HUB-069, HUB-070, HUB-071, HUB-073, HUB-074, HUB-116 |
+| FR57 | HUB-061 |
+| FR58 | HUB-062, HUB-078, HUB-079, HUB-080 |
+| FR59 | HUB-063, HUB-073 |
+| FR60 | HUB-064, HUB-072, HUB-073, HUB-082, HUB-088 |
+| FR61 | HUB-065 |
+| FR62 | HUB-066 |
+| FR63 | HUB-067, HUB-073, HUB-113 |
+| FR64 | HUB-068, HUB-116 |
+| FR65 | HUB-069, HUB-113, HUB-116 |
+| FR66 | HUB-072 |
+| FR67 | HUB-072 |
+| FR68 | HUB-072 |
+| NFR13 | HUB-072 |
+| FR69 | HUB-072 |
+| FR70 | HUB-073 |
+| FR71 | HUB-073 |
+| FR72 | HUB-073 |
+| NFR14 | HUB-073 |
+| FR73 | HUB-075 |
+| FR74 | HUB-076 |
+| FR75 | HUB-077 |
+| NFR15 | HUB-077 |
+| FR76 | HUB-078 |
+| FR77 | HUB-079 |
+| FR78 | HUB-080 |
+| FR79 | HUB-081 |
+| FR80 | HUB-082 |
+| FR81 | HUB-082 |
+| FR82 | HUB-082 |
+| NFR16 | HUB-082 |
+| FR83 | HUB-083 |
+| FR84 | HUB-085 |
+| FR85 | HUB-087 |
+| FR86 | HUB-088 |
+| FR87 | HUB-088 |
+| FR88 | HUB-088 |
+| NFR17 | HUB-088 |
+| FR89 | HUB-089 |
+| FR90 | HUB-090 |
+| NFR18 | HUB-090 |
+| FR91 | HUB-091 |
+| FR92 | HUB-092 |
+| NFR19 | HUB-092 |
+| FR93 | HUB-093 |
+| FR94 | HUB-093 |
+| FR95 | HUB-095 |
+| FR96 | HUB-096 |
+| NFR20 | HUB-096, HUB-106 |
+| FR97 | HUB-097 |
+| FR98 | HUB-098 |
+| FR99 | HUB-099 |
+| FR100 | HUB-100 |
+| FR101 | HUB-101 |
+| FR102 | HUB-101 |
+| FR103 | HUB-101 |
+| NFR21 | HUB-101 |
+| FR104 | HUB-102 |
+| FR105 | HUB-102 |
+| FR106 | HUB-103 |
+| FR107 | HUB-103 |
+| FR108 | HUB-103 |
+| NFR22 | HUB-103 |
+| NFR23 | HUB-103 |
+| NFR24 | HUB-103 |
+| FR109 | HUB-104 |
+| FR110 | HUB-104 |
+| FR111 | HUB-104 |
+| FR112 | HUB-104 |
+| FR113 | HUB-105 |
+| FR114 | HUB-106 |
+| NFR25 | HUB-106 |
+| FR115 | HUB-107 |
+| FR116 | HUB-107 |
+| FR117 | HUB-107 |
+| FR118 | HUB-107 |
+| NFR26 | HUB-107 |
+| NFR27 | HUB-107 |
+| FR119 | HUB-108 |
+| FR120 | HUB-108 |
+| FR121 | HUB-108 |
+| FR122 | HUB-108 |
+| NFR28 | HUB-108, HUB-109 |
+| FR123 | HUB-109 |
+| FR124 | HUB-110 |
+| FR125 | HUB-111 |
+| FR126 | HUB-112 |
+| FR127 | HUB-112 |
+| FR128 | HUB-112 |
+| NFR29 | HUB-112 |
+| NFR30 | HUB-112 |
+| NFR31 | HUB-112 |
+| FR129 | HUB-113 |
+| FR130 | HUB-114, HUB-116 |
+| FR131 | HUB-115, HUB-116 |
+| FR132 | HUB-116 |
+| FR133 | HUB-116 |
+| NFR32 | HUB-116 |
+| FR134 | HUB-117 |
+| FR135 | HUB-117 |
+
+## 5. Requirements
+
+**Functional**
+
+- FR1: Registry and `.gitmodules` must agree on paths, URLs and branches
+- FR2: Profile README AUTO:projects span is regenerated by dash-gen
+- FR3: Reusable actions/workflows are versioned per docs/WORKFLOW-VERSIONING.md
+- FR4: Every fleet repo carries a feature catalog (`features/features.yml`) linked both ways to its PRD, plus a constitution and an amendment log (specs/WORK.md UPS-WORK-15, UPS-WORK-16), checked by `tools/governance_lint.py`
+- FR5: Dashboards, catalog and portfolio pages are generated from committed data (registry, snapshots), not written by hand
+- FR6: Standards and kits reach fleet repos only as PRs opened by `tools/fanout.sh` (additive, never to a default branch)
+- FR7–FR15 (proposed, Draft): fleet activity log — append-only event schema (FR7), standard version stamped from the target repo's AGENTS.md (FR8), event→amendment link table (FR9), fire-and-forget handler wrapper (FR10), drift query (FR11), declined (FR12), blocked-handoff (FR13) and retry (FR14) events, Harness Console reader (FR15); see [docs/prd/FLEET-ACTIVITY-LOG.md](docs/prd/FLEET-ACTIVITY-LOG.md)
+- FR16–FR20 (proposed, Draft): harness pipeline map — pipeline definition of every loop and AI routine as nodes and edges (FR16), reads the activity log's `fleet_event` / `fleet_event_amendment` only (FR17), running/idle/failed/unknown status per node from the log and job status (FR18), drill-down to events, PRs, standard version and amendment links (FR19), polled and on-demand refresh that renders with an empty or unavailable log (FR20); see [docs/prd/HARNESS-PIPELINE-MAP.md](docs/prd/HARNESS-PIPELINE-MAP.md)
+- FR21 (proposed): Every GitHub workflow is a node in the pipeline map showing its triggers (push, pull_request, schedule, workflow_dispatch, …), its cron schedule and its last run status (pass/fail), retrieved from the GitHub API and refreshable on demand from the Harness Console
+- FR22: Pending backlog items (open hub issues, PRD requirements with no shipped feature, catalog features not shipped) are fanned out on a configurable cadence (daily default, weekly option) as idempotent PRs — one stable branch per item — in the fleet repos each item applies to, through `tools/fanout.sh`, linking feature ids to requirement ids; the routine never merges and is a dry run until explicitly switched on (`_data/backlog_fanout.yml`)
+- FR23: Every backlog fan-out decision (fanned out, skipped, failed, retried) is emitted to the fleet activity log (event schema proposed in bamr87/bamr87#409) through a fire-and-forget local queue, so an unavailable log never blocks or fails the run
+- FR24: A daily deep-dive routine processes exactly one repo per day from an ordered rotation of every non-archived bamr87 repo, so every repo is processed once per 42-day cycle; each run is recorded in `_data/deep-dive.yml` (status, date, issues/PRs opened, findings, score, next focus) through a PR, and everything it files carries the `deep-dive` label; see [docs/DEEP-DIVE.md](docs/DEEP-DIVE.md)
+- FR25: The deep-dive tracker is refreshed daily from the GitHub API (open `deep-dive` issues/PRs per repo) as a never-auto-merged PR or a dry-run artifact, and the Harness Console shows cycle progress (x/N), the cycle calendar, per-repo status, scores, issue/PR links and the last/next repo at `/deep-dive`
+- FR26: The Harness Console's API is available as an MCP server (`tools/dash mcp`, `tools/console/mcp_layer/`) over stdio and streamable HTTP, exposing read tools and resources for fleet status, harness health and scorecard, live activity, sessions, jobs and logs, spend against budget, traces, workflow lines, observability, semantic code search and deep-dive progress, plus write tools (run an allowlisted op, cancel a job, workflow kill switch) that are off unless explicitly enabled; see [tools/console/docs/mcp-layer.md](tools/console/docs/mcp-layer.md)
+- FR27: Every Claude CI run in the fleet — in each registry repo and in the hub itself (`_data/fleet.yml` `hub.repo`) — is accounted in `_data/ai_usage.yml` with the SOURCE of its figure stated per run: the run's own reported `total_cost_usd` (summed per Claude session, de-duplicated by `session_id`), a token-rate price at API list prices including cache reads and writes, `no-spend` for a run that ran no Claude step, or an explicit estimate with a named basis; the monthly AI ceiling (`harnesses.budget.monthly_ai_usd`) is evaluated on the ACCOUNTED total (measured + estimated), never on the measured half alone; see [docs/AI-INTEGRATION.md](docs/AI-INTEGRATION.md#usage-dashboard-transparency--audit)
+- FR28: Sequential ids are assigned at MERGE, never in a pull request: a new feature, requirement, changelog entry, constitution amendment or roadmap entry is written as a fragment (`features/features.d/<slug>.yml`, `changelog.d/<slug>.md`, `docs/amendments/proposed/<slug>.md`, `_data/roadmap.d/<slug>.yml`) carrying `HUB-NEW` / `FR-NEW:<key>` / `number: NEW` / `FF-NEW` and referencing other new things by slug; one serialized process on the default branch (`tools/jev/number.py`, `jev-number.yml`) assigns the next free id, compiles the fragments into the numbered files, rewrites the slug references, regenerates every projection and publishes through the sanctioned bot-commit path. Assigned ids are immutable and never reused, generated files carry `merge=jev-regen` and append-only lists `merge=union` in `.gitattributes`, and CI regenerates and fails on drift rather than accepting a hand-merge; see [docs/JEV.md](docs/JEV.md) and [amendment 0002](docs/amendments/0002-conflict-free-numbering.md)
+- FR29: Every open issue and PR in a registry repo is an item of the Fleet Portfolio GitHub Project (and its domain project) carrying the required fields (Status, Priority, Area, Repo; Feature ID and PRD req when it changes a feature or requirement), defined once in `templates/projects/framework.yml` and checked by `tools/projects_lint.py`; see [docs/PROJECTS-FRAMEWORK.md](docs/PROJECTS-FRAMEWORK.md)
+- FR30: Feature ids in `features/features.yml` and PRD requirement ids are synced into the projects' Feature ID / PRD req single-select options, and the harness console shows project coverage (items untracked, items missing required fields, per repo) from a committed `_data/projects_board.yml`
+- FR31: The console must present Claude usage dollars as API-equivalent estimates, compare them with the flat subscription prorated to the same window as an effective discount, and report metered API spend separately, never summing the two.
+- FR32: The console must read GitHub Projects (v2) and their items across every fleet owner, cached, and report a missing read:project scope honestly instead of failing.
+- FR33: The console must link project items, issues, pull requests, commits, repos and FEAT/FR references into one cross-repo graph.
+- FR34: Write-back to projects, issues and pull requests must be allowlisted, off by default, dry-run first, applied only on confirmation with a matching plan id, idempotent, rate-capped and audited, and must never merge, delete or change settings.
+- FR35: The conformance gate must report, per fleet repo, whether its public docs site exists, whether it uses the zer0 theme, whether every non-excluded doc of record is on it, and whether its links resolve, warn-only for a repo until its fan-out PR lands and a hard failure after it (see HUB-043).
+- FR36: Every fleet repo must publish a public site containing all its documentation at <owner>.github.io/<repo> or its custom domain, built only with GitHub Pages and the zer0 theme, containing README, AGENTS.md, CHANGELOG and docs/ plus the PRD, feature catalog, constitution and amendments where they exist, excluding secrets and docs marked internal; private repos are flagged for Amr and never made public by an agent (see HUB-042).
+- FR37: The hub must survey every registry repo's high-level architecture on a rotating cadence, read-only, and record per-repo fitness and ranked findings.
+- FR38: Every architecture finding and paper must cite only entries of a versioned source registry that is refreshed at least quarterly.
+- FR39: Every architecture finding and recommendation must link to feature catalog ids and PRD requirement ids, and accepted recommendations must become Fleet project items.
+- FR40: The harness must turn a qualifying architecture challenge into a scoped research question and produce a research paper in docs/research/<slug>/ with a fixed structure, sources and metadata.
+- FR41: No research paper may be published until automated citation and traceability checks, an independent AI review and a maintainer merge have passed.
+- FR42: An agent must merge a PR only when it is mergeable (required checks green, required reviews satisfied, no conflicts, review gate passed), and never a PR labelled needs-amr or in a gated category.
+- FR43: The conformance gate must flag a major PR missing test evidence or a green CI link, a frontend PR missing visual evidence or a reasoned skip-evidence, and any such PR without passing non-author completeness reviews by JEV and QA Lead (or the interim reviewer); warn-only for a repo until its fan-out PR lands, then a hard failure (see HUB-047).
+- FR44: A PR judged major by JEV (or labelled major; interim: heuristics plus reviewer, when in doubt major) must list its added or updated tests and link a green CI run; every frontend-impacting PR must include before/after screenshots or a recording at two or more viewports; and every major or frontend PR must pass a completeness review by JEV and QA Lead, neither being its author (interim: QA Lead alone, then Amr) (see HUB-046).
+- FR45: Each agent role, harness and loop must keep an eval set of about 20 real past tasks, rerun it after any prompt, tool or model change as a required CI check, pin exact model versions from _data/fleet.yml ai_models.allowed (no aliases), move a step to a cheaper model only if evals pass, and trace tool calls per run (see HUB-049).
+- FR46: Every agent tool or action must carry reversible/external/money tags and a low/medium/high tier; high waits for Amr's approval, medium writes an audit record, a tier drops only after 25 consecutive clean approvals, and any run with private data, untrusted content and an external send requires a human gate (see HUB-048).
+- FR47: Every active fleet repo must expose, sized to its type, an API layer (OpenAPI 3.1 for apps and services, a static JSON data API for content sites, --json output for CLIs), an MCP server with an MCP Registry server.json manifest (each content site shipping its own local stdio server), AGENTS.md and llms.txt, and an ai-ready.yml manifest, starting from the templates/ai-ready/ kit; archived and retired repos are exempt (see HUB-051).
+- FR48: The conformance gate must run an AIEO ai-ready check on every non-exempt repo that fails a missing or invalid layer (OpenAPI, MCP server.json, llms.txt, --json output, JSON-LD) and reports an AI-readiness score; warn-only for a repo until its fan-out PR lands, then a hard failure, with the score advisory until AIEO passes its § 13 eval set and then failing below the minimum score (see HUB-050).
+- FR49: The hub must generate a Backstage-format catalog-info.yaml from _data/projects.yml deterministically, and check-drift must fail when the committed file is stale.
+- FR50: Every applied fan-out must be recorded as a campaign, and the console must show each campaign's per-repo PR, CI and merge state read-only.
+- FR51: Fleet commands taking --target must resolve tag, language and group selectors from the registry, excluding archived repos by default, and fail on an empty or unknown selection.
+- FR52: fanout.sh --upgrade --merge must 3-way-merge a hand-modified kit file against the recorded seed commit, and must open a draft PR instead of resolving a conflict.
+- FR53: governance_lint check must fail when a features.yml or PRD.md link targets a missing path, a numbered amendment record is not in a terminal status, constitution sections are not in ascending order, or a PRD requirement cites a feature id it is not mapped to.
+- FR54: Every scheduled or AI-calling workflow in the fleet must have a kill switch resolved from one switches map in _data/fleet.yml, changeable per repo, per loop, per group or globally through a dry-run-by-default, audited operation, with drift against live repo variables reported.
+- FR55: The hub must publish a per-chapter map of agentic design patterns to fleet evidence, where every rating cites a pinned permalink and every gap links an issue, with a machine-readable index linked from llms.txt.
+- FR56: The hub must run any loop agent step that has a step spec with a local: block on the maintainer's workstation with headless Claude Code, with the same planner, prompt bytes, allowlist and per-attempt cap as CI, inside an isolated and sandboxed session with no network and no GitHub credential, held to a monthly local ceiling, and publishing only the exact bytes of a dry-run preview under the maintainer's explicit --apply.
+- FR57: When the maintainer merges the pull request that proposes an amendment, adds an ADR or adds an ADR phase, the hub must record it without a human edit: the record's status becomes ratified or accepted with a link to that pull request, its merge date and who merged it, the index row follows, and an ADR whose tracking epic closes as completed with every sub-issue closed is marked completed; the record change is a pull request limited to those lines, merged with a merge commit only after every check passed and a diff check proved it holds nothing else.
+- FR58: Every fleet repo declares its frontend tier in the registry; shell-tier apps use the fleet tokens and app shell, tokens-tier sites, games and extensions use the fleet tokens, tier-none repos are N/A; the UPS-FE-70..73 checks warn until a repo's adoption PR merges, then fail.
+- FR59: Before a local loop attempt, the hub must give the sealed agent read-only, capped, redacted and freshness-stamped context from the fleet's data lake, code index, telemetry and the loop's own earlier attempts as a file beside the brief in its clone, built on the host without changing the reviewed prompt bytes, with a mode that turns it off for a CI-identical run and a mode that refuses to spend when a plane is unavailable.
+- FR60: The Harness Console must report each in-flight job's state (queued, running, stalled, done, failed), time since sent and since last progress, and slowness diagnostics, through its API, its MCP layer (job_status, jobs_list) and the Jobs page.
+- FR61: The hub must provide a reusable PR review workflow that posts at most one sticky summary comment per PR (none when clean), inline comments only for severity-tagged deduplicated findings, a fleet signature footer on every comment, never posts with the maintainer's personal token, skips content checks on Dependabot and release PRs, runs AI review only on opened, ready_for_review or label events behind the central switch, and sends cost and test tables to job summaries.
+- FR62: Every repo the deep-dive routine processes also gets a Quest Log showcase drafted for approval: a long-form article and a personal LinkedIn draft on bamr87.github.io, a company-page LinkedIn draft on bash-365.com and a presentation pull request in the repo itself, each a pull request a human merges, with nothing posted, published or changed in a repo's settings before that merge; the ledger records each repo's showcase (article, both drafts, presentation PRs) without changing its deep-dive status, and its projection counts the repos showcased this cycle; see docs/SHOWCASE.md
+- FR63: Every development tool, loop, gate and surface of the hub is reachable from the editor through the same entry points the CLI, the Harness Console's job API and CI run (`tools/dash`, a tool's own entry point, or `docker compose` against the hub's services), never a second implementation; every port, project, site, scenario and loop an editor configuration names comes from its registry and a gate (`tools/test_vscode_launch.py`) holds the pickers equal to those registries; a new surface adds its editor entry in the same pull request; fleet repos with a run, test or debug command carry their own `.vscode/launch.json` + `tasks.json` calling their own one-command entry points (UPS-REPO-40); see constitution § 20 and `.vscode/README.md`
+- FR64: The placement of every hub service on a fleet node is declared once in `_data/fleet.yml` `nodes:` and resolved by one implementation shared by every surface; a placement that would pin an edge-bound service off the edge, make a workload node call back to the edge, put durable data on a node without an off-box backup, or collide a link port is refused before anything runs; a node's durable infrastructure (its network and data volumes) is owned by OpenTofu with durable volumes protected from deletion; and no step that changes a machine runs without an explicit, planned deploy (constitution § 10.5)
+- FR65: The product must let an operator run a loop's agent step on their own machine from the console, the terminal dash and the fleet MCP through one job API, as a dry run that files nothing, with a live attempt confirmed as spend, at most one run per loop at a time, and apply refused until the § 11 write-path decision.
+- FR66: The hub must capture, read-only and label-gated by com.bamr87.fleet.*, the lifecycle and resource events of every fleet Docker container, plus agent session, console job and fleet_event activity, into one append-only fleet_activity store in the fleet's Postgres, each event carrying a source, a monotonic sequence, the container/project/repo, a correlating run or trace id and a redacted payload.
+- FR67: The Harness Console must serve captured activity through one read-only API that streams live events (SSE with Last-Event-ID resume) and replays any past window in order at a chosen speed from the same cursor format, filterable by source, project, container, agent and run, and exposed as MCP read tools.
+- FR68: The Harness Console must render captured activity as an animated timeline and node graph console plugin (live and replay modes, play/pause/scrub/speed, per-event drill-down to Grafana, Kibana and Phoenix), which shows recorded history in snapshot mode on Pages and renders an explicit empty or degraded state when the store or stream is unavailable.
+- FR69: Every fleet agent turn and tool call must be recorded as an OpenTelemetry GenAI span through the fleet's OTel Collector into Phoenix as the trace store of record, with span-derived metrics in Prometheus/Grafana and the same trace_id carried on every activity event, so the console can open any event's trace tree.
+- FR70: Every fleet harness (the Harness Console API, CI agent steps, local headless runs and each JEV tier) must run work as tasks with sessions, a typed event stream (task, turn, tool call, interrupt, budget, artifact, error) validated by one versioned schema, interrupts that pause for approval and resume, and enforced budgets, using MCP for tools and AGENTS.md for repo instructions.
+- FR71: Every harness task must emit one OpenTelemetry GenAI span tree to Phoenix, a root span per task with a child span per turn and per tool call, whose trace id is stamped on every harness event and redacted before export.
+- FR72: External agent protocols (the Unified Harness Protocol, A2A, AG-UI, Agent Client Protocol) must connect only through adapters that map to the fleet contract, each off by default, version-pinned and removable without changing the core.
+- FR73: The hub must be able to refine a loop's harness from the evidence of its own attempts: validate the harness surface as a sensor, propose, probe and compose edits to the loop's tunable half under its own caps and gates (never to a step spec's hard rules), and keep what each refinement learned in a reviewed library the next attempt reads.
+- FR74: The hub must read a filed editorial directive back from the site that answers it — the issue's state and the pull request that closes it, with that pull request's state — and show it beside the directive in the report, the brief and the Content page, without writing to the site's repository.
+- FR75: The product must review, on a schedule, every open issue and pull request of the registry repos against the Fleet project, the roadmap and each repo's release train, and report each mismatch with its evidence and a proposed fix.
+- FR76: The product must let a person open any frontend the registry declares from one place, in the browser and from a terminal, at its deployed address or at its local development stack and at a chosen device size, framing only addresses the registry declares and asking a visitor's own machine nothing unprompted.
+- FR77: The product must present the fleet as a desktop in the browser on the bashOS layout engine: an icon for every app, each opened in a window that shares one set of controls, every repo listed by the frontend component it has or is owed, and the same desktop usable at a phone's width.
+- FR78: The product must open every repo in the registry as an app, generating one from what the hub holds about a repo that has no frontend of its own, and must never publish a repo's README on the public site.
+- FR79: Tutorials, how-tos, setup docs, console/UI help pages and walkthrough articles must ship visual front-end evidence (screenshots, a short recording or a GIF) under docs/assets/guides/<slug>/ or test/evidence/<slug>/ with meaningful alt text and redaction of secrets/PII/tokens, or a one-line skip-visuals reason; a guides visual lint must flag gaps (warn-only per repo until adoption, then hard fail); when a PR changes a depicted UI it must update or re-capture the guide visuals in the same PR.
+- FR80: The hub must capture, read-only and label-gated by com.bamr87.fleet.*, the lifecycle and resource events of every fleet Docker container, plus agent session, console job and fleet_event activity, into one append-only fleet_activity store in the fleet's Postgres, each event carrying a source, a monotonic sequence, the container/project/repo, a correlating run or trace id and a redacted payload.
+- FR81: The Harness Console must serve captured activity through one read-only API that streams live events (SSE with Last-Event-ID resume) and replays any past window in order at a chosen speed from the same cursor format, filterable by source, project, container, agent and run, and exposed as MCP read tools.
+- FR82: The Harness Console must render captured activity as an animated timeline and node graph console plugin (live and replay modes, play/pause/scrub/speed, per-event drill-down to Grafana, Kibana and Phoenix), which shows recorded history in snapshot mode on Pages and renders an explicit empty or degraded state when the store or stream is unavailable.
+- FR83: The hub must record a read-only, weekly OpenSSF Scorecard result per public registry repo in the conformance snapshot, without filing issues or pinning dependencies.
+- FR84: The hub must support one expedite sprint at a time — declared by Amr in _data/work_queue.yml, spec-approved and merged through the review gate — run by the existing loops under a sprint ceiling with a circuit breaker, a sprint kill switch, a live record and DORA delivery metrics, without relaxing any quality gate.
+- FR85: The hub must support one expedite sprint at a time — declared by Amr in _data/work_queue.yml, spec-approved and merged through the review gate — run by the existing loops under a sprint ceiling with a circuit breaker, a sprint kill switch, a live record and DORA delivery metrics, without relaxing any quality gate.
+- FR86: A workflow consumes a pipeline decision only through the typed-decision action against an entry in _data/decisions.yml, which declares the question, its options or rubric, its confidence threshold and its conservative branch; a decision below threshold or unanswerable takes the conservative branch and never fails the step.
+- FR87: Every decision writes one trace (policy fingerprint, model version, inputs digest, usage, typed answer, confidence, cleared, outcome) that the lake keeps beside run cost, and the traces of a window can be replayed against the current lockfile and fuzzed for stability.
+- FR88: Test selection and matrix pruning run in shadow per repository until a nightly verify loop has reported zero missed failures over the declared window; a missed failure becomes a regression case in the decision's eval set, raises the threshold and demotes the repository, and an optimization is promoted only when minutes drop on the billing meter while missed failures stay at zero.
+- FR89: The console's frame must keep the current page in view in its navigation, show what needs attention beside the page that holds it, work from the keyboard and to a screen reader on every page, and keep the console usable when one page fails or the backend stops answering.
+- FR90: The MCP layer must let an operator grant a remote agent narrow write scopes in place of the broad write switch: starting and stopping allowlisted local report jobs, and applying Work-board priority, pin and note plans after their preview was approved. Each scoped call needs confirm=true, and a plan apply also needs the plan_id of its preview.
+- FR91: The hub must provide a centralized MCP server lifecycle — a registry (_data/mcp_servers.yml), standard (docs/MCP-SERVERS.md), constitution section, and a warn-then-fail config lint — so every fleet MCP server is named, configured without inline secrets, transported safely (stdio / loopback HTTP / opt-in tunnel), health-checked, and ready for spoke fan-out.
+- FR92: Every AI agent the fleet runs (a CI agent step, a local loop step, a scheduled local job or a JEV tier) must be registered in one generated inventory with its owner, trigger, kill switch, budget cap, model, efficacy KPIs and the data sources it reads with their writers, and the drift gate must fail a pull request that adds an agent without registering it.
+- FR93: Grok bots must hand off software and console work through a Fleet issue or Harness Console job that states the requirement, acceptance criteria and a link to the ratified governing amendment or PRD requirement; Claude Code executes against that spec; a Grok bot reviews the result for alignment with direction (not code) before merge; if Claude Code is unavailable or out of budget, work stops until Amr approves an alternative path.
+- FR94: Every software change PR must carry a 'Governed by:' line linking a ratified amendment or PRD requirement (FRn/NFRn/FR-NEW:<key>), checked by tools/governance_trace_lint.py (warn-only until adoption, then hard fail), with no orphan changes.
+- FR95: Software changes and Harness Console executions must be performed by Claude Code; Grok bots may only open direction-setting amendment PRs (constitution, amendments, changelog.d, and supporting feature/PRD/roadmap fragments in that PR), file issues/comments, and hand off implementation via Fleet issues or console jobs, with a warn-then-fail author check and an Amr OK required when Claude Code cannot run.
+- FR96: The product must answer, from the committed files alone, what depends on any workflow, action, data file, source or loop the hub manages, what that thing needs, and how any two are related, on the CLI, the API and MCP.
+- FR97: The product must record what became of each loop's output (landed, rejected, or left stale), estimate from it how likely each loop's next output is to land per repository, and show where the next slots would pay, in shadow until a gated change lets a loop act on it.
+- FR98: The hub must hold one central library of generic functional specifications, each with a stable FEAT-NNN id allocated at merge, each linked by a prd field to the PRD requirement it serves, stored in this monorepo and readable by every fleet repo, framework and application without vendoring a copy.
+- FR99: Every adopting repo must declare adoption in a root specs.json with a schema version, an array of adopted FEAT-NNN ids, an optional overrides object keyed by those ids for severity or scope narrowing, and an exclusions list for specs that do not apply.
+- FR100: An override that downgrades a required spec to advisory, or otherwise relaxes severity or applicable scope, must be proposed as an amendment-style record and must stay unapplied until the maintainer merges it. A change to a standard or a principle goes through a constitution amendment and is ratified only by that merge.
+- FR101: One fleet-level resolver must read each repo's manifest, load the matching library entries, and produce one resolved spec set per repo: core specs plus the framework-specific overlay for the repo's kinds, minus exclusions that are in force, with ratified override precedence applied last.
+- FR102: On every pull request, resolution must run and fail when a required spec in the resolved set lacks coverage or when the manifest names a spec id that is not in the library.
+- FR103: The docs site must render each repo's spec page from that same resolver output, so the page shows the set CI enforces, including coverage gaps and unknown ids.
+- FR104: Opening a loop on the dashboard must show the progress the source already has, the recent activity, and the history of earlier completed runs for that actor, each as a link to the underlying record. A history source that does not exist yet must be named as missing, and the row must still show what the console jobs, sessions and workflow runs already provide. The dashboard must not copy a transcript, a log body or a private repository into the row.
+- FR105: The dashboard must show counts by kind, source, status and flight, durations where start and finish exist, success and failure among completed runs, and idle and stale counts. A cost figure must appear only when the cost ledger or the live view already has one for that run, and a run with no figure must show no cost.
+- FR106: An operator must be able to open one dashboard and see every agent and harness at work, the repository it is on when the work names one, and a current status of working, idle, stale, failed, completed or unknown, with a link to the console page, job, session, workflow run, issue or pull request that already holds the detail.
+- FR107: The dashboard must show both populations and distinguish them. Routine and scheduled work covers Grok bot routines, JEV and fleet loops, console jobs and scheduled workflows. Live and ad-hoc work covers Claude Code sessions, cloud agents and console executions. A population with no source record must be listed and marked telemetry-missing.
+- FR108: The dashboard must distinguish in-flight work from completed work, and completed runs must stay visible as history after the next run starts.
+- FR109: This product must be the BASH Consulting showcase and the first end-to-end test of this build-out. The test includes the dashboard, the report of that walk, and the marketing that tells it. The report and the marketing are drafts a person reviews and publishes, in the brand voice A born-again solutions hero, born-again in the line, a play on Bash, the Bourne-again shell. That line is identity. It does not replace the dashboard's operational requirements. Agents must not auto-publish the drafts to GitHub, LinkedIn, the daily chronicle or lifehacker.dev.
+- FR110: This product must be the first example of harnessing the power of AI and of visualizing that power. It must be the operator's way to put their arms around AI capabilities that are available, powerful and omnipresent, by showing the agents and the frameworks in one picture of status, history and statistics.
+- FR111: This product must be the first and foundational application that Bash 365 is based on and evolves from. Later Bash 365 work starts from this picture of live and routine agentic loops. Adopting it on bash-365.com is a later change in that repository. This requirement does not edit that submodule and does not replace the Azure cost dashboard or the cloud phone offering.
+- FR112: This product must be the installation wizard and the creation of all the wizards, also known as the AI agents. The wizard presents the agents and loops that already exist as one installed picture. This requirement does not create an agent, write the agent inventory, or change a workflow or a setting. A later write that creates an agent waits until Amr merges the follow-up amendment agent-wizard-creation.
+- FR113: The harness inventory must find every workflow that reaches a model, by any route, grade each one against the harness standard declared in _data/fleet.yml harnesses.standard, and name the lever that rebuilds each harness that falls short; the agent-context kit's mention handler must pass that standard.
+- FR114: The product must answer in one call, on the CLI, the console API and MCP, what waits on the maintainer across every repo of the hub's owners: issues and pull requests carrying the review-gate label, pull requests that change a constitution, an amendment or an ADR, Dependabot pull requests that fail or are a major bump, and pull requests that are ready to merge, each with the reason it is listed and a per-repo inventory of open pull requests, Dependabot pull requests and issues.
+- FR115: Every credential the fleet's automation depends on must be declared by name in the token contract (_data/fleet.yml tokens:) with its owner, its scope and location (fleet, hub, one repository, an organization, or a third-party provider), its rotation class (automated, assisted or propagate), its maximum age and expiry lead, its triggers and its consumers; a secret a fleet workflow reads that the contract does not declare must be reported by name (see docs/prd/CREDENTIAL-ROTATION.md).
+- FR116: A GitHub secret-scanning alert for a covered credential (one whose alert type the token contract lists) must automatically start a rotation of the affected key instead of only flagging it; this is the key rotation protocol's first trigger, wired first for google_api_key alerts on bamr87/zer0-CMS (bamr87/bamr87#460). The alert must be detected by a secret_scanning_alert webhook delivery forwarded to the hub or by a scheduled poll of the secret-scanning alerts API that hides the secret, with the poll kept as the backstop. The rotation must contain first (revoke the affected key, or restrict it where the contract says so), then mint the replacement, update each consuming secret, verify the new credential and its consumers, resolve the alert as revoked and close the tracking issue. Where automation cannot perform a step (no provider API, no access, a secret that matches no key the owner controls, a consumer copy outside GitHub secrets) the rotation must still start by itself and hand that step to a person as an ordered, containment-first instruction that automation verifies before it performs the remaining steps, and automation must never resolve as revoked an alert whose key it did not revoke. A webhook delivery and a poll for one alert must produce one rotation, a failed step must leave the alert and the tracking issue open saying what is needed, and no step may print, log or store a secret value (acceptance criteria: docs/prd/CREDENTIAL-ROTATION.md § 7.1).
+- FR117: Beside the secret-scanning alert, the key rotation protocol must start a rotation of a declared credential on its schedule (maximum age, or its expiry less the lead) and on two more events read on the fleet's scheduled reads: a capability probe the provider rejects, or N consecutive consumer runs failing at authentication; a rate limit or spent usage window is never a trigger, an unreachable signal reads unknown instead of healthy, and one credential has at most one open rotation and one tracking issue.
+- FR118: A credential a provider can mint and revoke through an API must be rotated with no human step; a credential only a person can mint (a browser sign-in, a web form) must be rotated with one prepared step that states the command or link, the scopes, the expiry and where the value goes; in both cases the new credential must be verified by a capability probe and by its consumer running before the rotation is recorded as done and before the old credential is revoked.
+- FR119: The hub must detect every fleet repo whose default branch head is red in one batched GraphQL query of statusCheckRollup, on a schedule or on demand and never on a pull-request or push check, and must report a repo it could not read, a head with no checks and a head still pending as those states, never as green.
+- FR120: For each red default branch the hub must name the failing checks, the root cause with the log evidence it was read from, and the blocking pull request or issue, and classify the fix as merge, fix or settings; a cause it cannot establish must be reported as unclassified and never guessed.
+- FR121: The red-main resolver must act by itself only where fleet rules allow: merge the blocking pull request only when it is mergeable under constitution § 12, re-read against live state immediately before, with a merge commit and never with --admin, squash, rebase or a force-push, never one the review gate holds, and only in a repo that has ratified agent merge; mark a draft ready only when its checks pass and the pull request states that ready-for-review is intended; route every code fix to Claude Code as a handoff issue (§ 26); and never change a setting, a secret, branch protection, a tag or an external service.
+- FR122: Every red-main run must report what needs the maintainer with exact steps (what to change, where, the command and how to verify it), re-read each default branch after any resolution, and state its final state as green, red or pending, never inferring green from an action having succeeded.
+- FR123: For each failed run on a red default branch, and optionally a sample of failed pull-request runs, the hub must review the CI itself, read-only: trace the workflow at the run's commit through its triggers, conditions and matrix and through the reusable workflows, composite actions and scripts it calls; flag it as over-broad, under-selective, misconfigured or ok with file-and-line evidence; and propose the minimal fix as a diff suggestion in its output, routed to Claude Code for implementation (§ 26) and to the maintainer for anything that touches a setting or a secret. It must never edit a workflow, a script, a setting or a secret, and must never propose weakening a check to clear a failure it has not shown to be a non-issue.
+- FR124: Amr, and an agent whose GitHub user is that agent, must be able to react to a feed post or comment with GitHub's reactions, attributed to that user. An agent that shares another user's token must not add that user's reaction.
+- FR125: Amr and agents must be able to comment on a feed post and reply in that thread on the same GitHub Discussion, each comment naming its actor, so the post is a conversation.
+- FR126: An agent or Amr must be able to publish a post on the fleet feed as one GitHub Discussion, with that actor, a verb, an object, a repo when the post is about one repository, an event type, a timestamp, context links when the event type is not note, and prose of at least one sentence.
+- FR127: A reader on GitHub must be able to filter feed posts by actor, by repository and by event type using the Fleet feed discussion category, labels and discussion search, without a separate application.
+- FR128: A post that cites work must carry one or more context links to the pull request, issue, workflow run, transcript, report, amendment, release or board item, and the post must not replace that record.
+- FR129: The product must let an operator run any part of the harness, and any stage of any loop on the Harness Console's loops page, from a Claude Code session through slash commands that run the console's own allowlisted operations with the console's validation and confirm gate, never a second implementation; a stage that writes to GitHub or spends Claude budget must ask first.
+- FR130: The hub must, every weekend and without help, close the week (save all work that exists only on the maintainer's machine, return the workspace to main without removing anything unmerged or in use, and give every open pull request and issue one disposition), check that each activity scheduled for the coming week can run, and prepare the week's recap, plan and brief, with execution by Claude Code, direction by the Grok bots, and every external write held for the maintainer's confirmation.
+- FR131: The control plane must schedule, dispatch and maintain a weekly close-out of open project work (Friday), a draft of next week's plan (Saturday) and a week-ahead brief (Sunday) as console loops built to the fleet harness standard, each off until its kill switch is set, none able to merge, force-push or change settings.
+- FR132: The hub must run its local entry points (tools/dash loop, conflicts, weekly and refine) unchanged on an enrolled on-premise node, from the node's own git checkout, under the same kill switches, caps, AI ledger and sandbox as on the maintainer's workstation, scheduled by one timer per installer and registered in the agent inventory; the node's housekeeping acts only on its own checkouts, worktrees, clones, archives and session state, saves before it removes, reports idle or stuck Claude Code sessions without ending them, and never needs the node to be up for the fleet to work (constitution § 30; docs/ONPREM-COMPUTE.md).
+- FR133: The hub must be able to run a loop step, a JEV tier, a typed decision or an embedding job on a local model served from an enrolled on-premise node only when that model is pinned by exact tag and digest under a local provider in _data/fleet.yml ai_models.allowed and the step's eval set passes on it; the model is served on the node's loopback only, receives no secret, and runs with the step's own tool allowlist; each run is recorded in the AI ledger with cost source local ($0 metered API spend, with its energy estimate), never summed with API-equivalent or metered figures (constitution § 30; docs/ONPREM-COMPUTE.md).
+- FR134: The Harness Console must list every open pull request of the hub and the registry repos in one queue, each with its checks collapsed per check to the latest run on the head commit, its review-gate verdict and reason, the merge method its repo allows, and who moves it next, filterable by repo, kind, gate and who, with fan-out batches grouped by head branch.
+- FR135: The PR queue must let the maintainer select pull requests and apply one bulk action through a plan made from live GitHub and shown per pull request first; the plan is applied only after the maintainer confirms, only while it still matches GitHub, through the console's job API, with each result recorded; a merge or close runs only while its pr_queue switch is on.
+
+**Non-functional**
+
+- NFR1: CI on Python 3.12 / Ruby 3.3 (fleet toolchain in `_data/fleet.yml`)
+- NFR2: Dependency policy floats versions (no exact pins, no committed lockfiles)
+- NFR3: Scheduled AI lanes gated by arming variables (see `fleet.manifest.yml`)
+- NFR4 (proposed): fleet activity logging never blocks, stalls or fails bot work
+- NFR5 (proposed): bounded local event spool, at-least-once idempotent flush, losses counted
+- NFR6 (proposed): activity events contain no secrets
+- NFR7 (proposed): the pipeline map is read-only and never prints, logs or embeds a token
+- NFR8: the deep-dive routine and its refresh only open issues and PRs — never merge, force-push, or change settings or secrets — and the tracker holds no secret
+- NFR9: the MCP layer binds to loopback by default, requires a bearer token on HTTP (refusing to start without one), never prints or returns a token, marks every write tool destructive and refuses it without `confirm=true`, and adds no enforcement of its own beyond the console's allowlist and confirm gate
+- NFR10: the spend ledger never presents a measured figure as a complete one — every aggregate carries its estimated share, a model with no rate row is surfaced (`unpriced_models`) instead of being priced at zero, and locally published interactive spend is never folded into the CI totals or judged against the CI ceiling
+- NFR11: JEV never merges a pull request, never force-pushes or rebases, never uses `--admin` and never changes repository settings or secrets — it pushes merge commits only to same-repo pull-request branches whose authors are listed in `_data/fleet.yml` `jev.allowed_authors`, and comments; every model call is capped per attempt and the engine is capped at `budget.jev.monthly_usd` ($10) a month inside the fleet ceiling (`harnesses.budget.monthly_ai_usd`, $200), with scheduled runs stopping at `scheduled_stop_pct` of it, and every attempt is recorded in `_data/jev_resolutions.yml` with whether its cost was reported or estimated
+- NFR12: work tracking never depends on a token scope silently — every projects tool and collector reports `scope_missing: project` instead of an empty result, and project mutations run only from the sanctioned sync workflow or the MCP layer's confirm-gated write tools
+- NFR13: Activity capture and replay never block, slow or fail a fleet container, agent or loop: the collector is read-only (docker.sock read-only, no exec), bounded (rate, payload and retention caps from _data/fleet.yml), redacts before storage, counts every dropped event, binds to loopback, and never stores, prints or returns a secret.
+- NFR14: The harness core never depends on a single-vendor or pre-1.0 protocol: core tests pass with every adapter removed, a pinned spec drifting raises an attention item instead of a failure, and no adapter can bypass risk tiers, kill switches or budgets.
+- NFR15: The PM review must not write to GitHub: the Fleet project ops it plans are applied only through the § 11 write-back service after a person has read them, and its public outputs must not list a private repo's items.
+- NFR16: Activity capture and replay never block, slow or fail a fleet container, agent or loop: the collector is read-only (docker.sock read-only, no exec), bounded (rate, payload and retention caps from _data/fleet.yml), redacts before storage, counts every dropped event, binds to loopback, and never stores, prints or returns a secret.
+- NFR17: No typed decision ever skips work, lowers a gate or lets an agent act unless its confidence cleared the lockfile threshold; a model error, timeout or usage limit is the conservative branch.
+- NFR18: A scoped MCP write tool may add checks of its own: an allowlist, validation, a plan_id binding, caps, a wall clock and an audit line. It never widens what the console allows. It sends the console confirm=false, writes nothing to GitHub, reads or writes no secret, and records every call, whether it ran, was refused or failed, in an append-only, scrubbed audit. This refines NFR9's 'no enforcement of its own' for the scoped tools only.
+- NFR19: A new agent-efficacy check must run read-only in shadow for at least 14 days, reporting contract gaps as warnings, before any gap can fail a gate; enforcement is switched on only by a gated change to _data/fleet.yml harness.efficacy.enforce, and agents registered before then keep a grace period.
+- NFR20: Every capability a person has at the terminal or on a console page must be reachable by an agent over MCP or the API, or carry a recorded reason why not; the gap is reported by a command, not found by a review.
+- NFR21: CI and the docs site must both call the one resolver and must not reimplement selection, exclusion or override precedence. A test must show that the document the gate asserts is the document the page renders.
+- NFR22: The dashboard must link the Harness Console sessions, health, cost and job views, the Loops, schedules and workflows pages, the agent inventory, the pipeline map, the activity log, the activity replay, the fleet graph and the agent news feed. It must not replace those stores or become a social feed. Turning it off must leave those surfaces working.
+- NFR23: A dashboard row, history line or public snapshot must contain no token, secret, credential or private-repository body. A cost figure that is an estimate must be labelled API-equivalent (estimate). The public Pages build must show a redacted sample or aggregate counts, never a live session body.
+- NFR24: Stale, failed, idle and unknown must be visible states. Missing telemetry must be shown as missing, with the absent source named. The dashboard must not invent a status, a duration or a cost when the source has none. A source that is down must be announced without hiding rows that other sources can still supply.
+- NFR25: The decision queue must answer inside a declared time budget from a local index that is refreshed when older than its TTL; when GitHub cannot be read in time or at all it must return what it has, state whether the answer is fresh, partial, stale, expired or unavailable, name each failure, never present old data as current, never write to GitHub and never publish or return a token or a private repo's items.
+- NFR26: Every rotation must follow detection, containment, recovery and verification in that order: a leak contains the old credential (revoke or restrict) before anything else, any other trigger keeps it valid until the new one is proved in every consumer, values are written hub first, a malformed or under-scoped value is refused before any target is written, a leaked credential that was revoked is never restored, a consumer failing on a dead credential is paused only through the central switches map, and a step that fails leaves one tracking issue saying what is needed and never fails silently; the alert-started rotation runs unattended only while the maintainer has switched it on, and every other revocation or secret write outside the existing weekly propagation waits for the maintainer's confirm.
+- NFR27: Every rotation must be recorded in a committed, values-free ledger (credential name, scope, target, trigger and its evidence link, each step with its time and result, the actor, the outcome), and no secret value, fragment or hash of one may ever appear in a log, a ledger, an issue, a pull request, a commit, a command's arguments or a URL; a value travels only from an environment variable to a secret store's stdin, masked before first use.
+- NFR28: The red-main resolver and its CI review loop must be a dry run by default and apply only a plan that was shown and confirmed; every run must be bounded by a wall-clock budget, per-run action caps and a rate-limit floor below which it stops with a partial report; every action must write one append-only audit record with token values redacted; the loop must have a centrally managed kill switch and be off until switched on; and a failed, timed-out or ambiguous step must take the conservative branch, which writes nothing and is reported.
+- NFR29: The feed must be a conversation of posts, comments and reactions. A fleet event appears only when an actor attaches it as context on a post they publish. The linked pull request, issue, run or report remains the system of record for that work.
+- NFR30: The conversation must live on GitHub Discussions in this repository. The hub must not keep a second store of posts, comments or reactions. If Discussions cannot accept the post, publishing must fail closed and must not open an issue instead.
+- NFR31: A post, comment or draft must contain no token, secret, credential or private-repository body. A cost figure that is an estimate must be labelled API-equivalent (estimate). A failed publish must not fail the actor's underlying work.
+- NFR32: A self-hosted GitHub Actions runner on an on-premise node must never run a job from a fork's pull request: only schedule and workflow_dispatch workflows on the default branch target its labels and a drift check fails any workflow reachable from a fork-raisable event that does; the repository requires approval for fork pull-request workflows from all external contributors; the runner is ephemeral, runs as its own unprivileged user in a container or VM with no access to the maintainer's home, keys, Claude credentials or .env, has a kill switch, and stays off until the maintainer registers it (constitution § 30.5).
+
+## 6. Success metrics (proposed — not defined in sources)
+
+- Fleet repos passing the standard / drift checks
+- Harness scorecard trend
+- Time from kit change to fleet-wide adoption
+- Targets: TBD
+
+## 7. Roadmap / open questions
+
+- Formal SLOs for fleet automation: TBD
+- Which documents are the canonical roadmap (docs/ vs issues): TBD
+- Fleet activity log (Draft): open questions in [docs/prd/FLEET-ACTIVITY-LOG.md](docs/prd/FLEET-ACTIVITY-LOG.md)
+- Harness pipeline map (Draft): open questions in [docs/prd/HARNESS-PIPELINE-MAP.md](docs/prd/HARNESS-PIPELINE-MAP.md)
+
+## 8. Links
+
+- [docs/constitution.md](docs/constitution.md) · [docs/amendments/](docs/amendments/) · [features/features.yml](features/features.yml) · [docs/prd/](docs/prd/) (sub-PRDs)
+- [README.md](README.md) · [AGENTS.md](AGENTS.md) · [CLAUDE.md](CLAUDE.md) · [CATALOG.md](CATALOG.md) · [SCHEMA.md](SCHEMA.md) · [CHANGELOG.md](CHANGELOG.md) · [docs/DASH.md](docs/DASH.md)

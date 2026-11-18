@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/30003953368
 slice: system-engineer/1001
-source_file: 2026-07-23-system-engineer-1001.md
+source_file: pages/_quest-reports/2026-07-23-system-engineer-1001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-23-system-engineer-1001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-23-system-engineer-1001.md
 tags:
 - system-engineer
 - level-1001
@@ -26,13 +28,14 @@ tags:
 - kubernetes-orchestration
 theme: Kubernetes Orchestration
 tier: Warrior
-title: 2026 07 23 System Engineer 1001
+title: System Engineer · L1001 · 2026-07-23
 verdict: warn
 walk_date: '2026-07-23'
 ---
+
 > **Slice** `system-engineer/1001` · **Level** 1001 (Kubernetes Orchestration) · **Warrior tier** · **Engine verdict** ⚠️ warn (avg 79.8%) · **Walked** 2026-07-23
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30003953368) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-23-system-engineer-1001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-23-system-engineer-1001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/30003953368) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-23-system-engineer-1001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-23-system-engineer-1001.md)
 
 ---
 
@@ -49,7 +52,7 @@ Plan order (dependency-sorted window from `walk-plan.json`):
 1. ✅ **Vaults of Recollection: Memory & State** — `100` · exemplary; every runnable lab snippet reproduced its documented output byte-for-byte (drift-guard `exit=78`, `sha256sum` FAILED/WARNING lines and all).
 2. ⚠️ **Bind the Agent to the Realm: Dev Environment Integration** — `63` · technically sound core, but a script is `chmod`'d/run before it's ever saved, the devcontainer JSON fails strict parse, and the cold-start + `validate_quest.py` steps are dead ends.
 3. ✅ **The Shield of Retries: Safe Execution and Error Handling** — `80` · retry/backoff/escalation logic verified working for both retry-then-succeed and escalate-on-auth paths; weakened by a non-functional stub "test" and an undefined `run_agent_task.py` dependency.
-4. ⚠️ **Vaults of Recollection: Agent Memory Strategies** — `76` · snippets run once `${​{ }​}` substitution is accounted for, but the "cross-run" session-memory workflow never actually restores across runs, an unstated file path, and a validation check that passes on an empty dir.
+4. ⚠️ **Vaults of Recollection: Agent Memory Strategies** — `76` · snippets run once `${{ }}` substitution is accounted for, but the "cross-run" session-memory workflow never actually restores across runs, an unstated file path, and a validation check that passes on an empty dir.
 5. ❌ **Kubernetes Fundamentals: Container Orchestration Essentials** — `— (errored)` · **not evaluated**: sandbox denied `curl` to `dl.k8s.io` and the engine hit the 40-turn cap. Reasoned from source only; see §7.
 
 ## 🔬 Evidence
@@ -83,7 +86,7 @@ All `passed`/`failed` below come from commands the execute engine actually ran i
 - Per-dimension: commands_work 4, content_accuracy 4, completeness 3, clarity 4, structure 5, safety 5.
 
 ### 4. Vaults of Recollection: Agent Memory Strategies — `76` ⚠️ (ran 5 snippets, all passed; 2 reasoned)
-- `passed` — `agent-with-session-memory.yml` (8.1) parses once `${​{ }​}` substitution is accounted for.
+- `passed` — `agent-with-session-memory.yml` (8.1) parses once `${{ }}` substitution is accounted for.
 - `passed` — `mkdir -p docs/agent-memory && touch …` persistent-memory structure (8.2).
 - `passed` — `learned-patterns.md` example content and the Chapter 5 Memory Loading Protocol snippet.
 - `passed` — final Quest Validation script runs green end-to-end after following chapters in order — but its `test -d docs/agent-memory` check passes even for an **empty** directory (see §5).
@@ -112,7 +115,7 @@ Grouped by quest; every item cites what was witnessed (engine command result) or
 
 **Quest 4 — Agent Memory Strategies (`agentic-memory-strategies.md`)**
 - **high** · Chapters 2 & 5 · `copilot-instructions.md` is referenced repeatedly with no path; only the final validation line (287) reveals it must live at `.github/copilot-instructions.md`. *Fix:* state the path the first time it appears.
-- **medium** · Chapter 3 · The objective says implement memory that "persist[s] across runs," but the shown workflow uses `upload-artifact` with `name: …-${​{ github.run_id }​}` (line 203) and **no `download-artifact`**, so it never demonstrates cross-run restoration. *Fix:* add a download step with a deterministic key, or relabel the objective as same-run snapshot.
+- **medium** · Chapter 3 · The objective says implement memory that "persist[s] across runs," but the shown workflow uses `upload-artifact` with `name: …-${{ github.run_id }}` (line 203) and **no `download-artifact`**, so it never demonstrates cross-run restoration. *Fix:* add a download step with a deterministic key, or relabel the objective as same-run snapshot.
 - **low** · Validation · `test -d docs/agent-memory` (line 286) prints the ✅ "directory with .md files" message even when the dir is empty. *Fix:* also assert `ls docs/agent-memory/*.md`.
 - **low** · Metadata / theme · Filed under "Level 1001 (Kubernetes Orchestration)" with zero Kubernetes content — belongs to a GitHub-Copilot / agentic-workflows track (see §6).
 

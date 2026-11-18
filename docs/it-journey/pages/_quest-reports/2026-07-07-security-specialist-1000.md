@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29190829265
 slice: security-specialist/1000
-source_file: 2026-07-07-security-specialist-1000.md
+source_file: pages/_quest-reports/2026-07-07-security-specialist-1000.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-07-security-specialist-1000.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-07-security-specialist-1000.md
 tags:
 - security-specialist
 - level-1000
@@ -25,13 +27,14 @@ tags:
 - cloud-computing
 theme: Cloud Computing
 tier: Warrior
-title: 2026 07 07 Security Specialist 1000
+title: Security Specialist · L1000 · 2026-07-07
 verdict: fail
 walk_date: '2026-07-07'
 ---
+
 > **Slice** `security-specialist/1000` · **Level** 1000 (Cloud Computing) · **Warrior tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-07
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-07-security-specialist-1000.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-07-security-specialist-1000.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-07-security-specialist-1000.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-07-security-specialist-1000.md)
 
 ---
 
@@ -39,14 +42,14 @@ walk_date: '2026-07-07'
 
 Walking the **Security Specialist** path at **Level 1000 (Cloud Computing, Warrior 🔥)**, this session played the first window (5 of 9 quests) of the level in the planner's order. Four of the five quests belong to the **GH-600 "Agentic Codex"** sub-line (agent observability, tool permissions, the Domain-2 field guide, and MCP servers); the fifth, **Cloud Computing Fundamentals**, is a conceptual primer from a *different* quest series that happens to share the level.
 
-**Headline verdict: FAIL.** The sealed execute-engine evidence scored the slice at an average **56.2%** — 1 pass, 1 warn, 3 fail. The single conceptual quest (Cloud Fundamentals, 80%) is solid and technically accurate; the hands-on agentic quests are undermined by **verified, reproducible code defects**: a Jekyll `{​% raw %​}`-tag leak that breaks the flagship workflow in the very first quest, a factually-wrong "watch it exit=0" lab exercise that actually loops forever, a deprecated npm package plus a crashing SDK API in the MCP quest, and — most tellingly — **the same nonexistent `scripts/validate_quest.py` "validation" step at the end of three separate quests.** A learner following the agentic chain literally cannot complete the closing validation of any of those three quests, and would hit an immediate copy-paste failure on the first workflow they try. This slice needs a content-accuracy pass before it can be trusted; the concrete, evidenced fixes are in §Issues.
+**Headline verdict: FAIL.** The sealed execute-engine evidence scored the slice at an average **56.2%** — 1 pass, 1 warn, 3 fail. The single conceptual quest (Cloud Fundamentals, 80%) is solid and technically accurate; the hands-on agentic quests are undermined by **verified, reproducible code defects**: a Jekyll `{% raw %}`-tag leak that breaks the flagship workflow in the very first quest, a factually-wrong "watch it exit=0" lab exercise that actually loops forever, a deprecated npm package plus a crashing SDK API in the MCP quest, and — most tellingly — **the same nonexistent `scripts/validate_quest.py` "validation" step at the end of three separate quests.** A learner following the agentic chain literally cannot complete the closing validation of any of those three quests, and would hit an immediate copy-paste failure on the first workflow they try. This slice needs a content-accuracy pass before it can be trusted; the concrete, evidenced fixes are in §Issues.
 
 ## 🗺️ The Journey
 
 Plan order (window 1 of 2; `stats.total_quests` = 9):
 
 1. ❌ **The All-Seeing Eye: Observability for AI Agents** — 40% · The flagship
-tracing workflow is broken as written: `{​% raw %​}`/`{​% endraw %​}` tags leaked *inside* every `${​{ }​}` expression → immediate bash `bad substitution`.
+tracing workflow is broken as written: `{% raw %}`/`{% endraw %}` tags leaked *inside* every `${{ }}` expression → immediate bash `bad substitution`.
 2. ❌ **Forging the Agent's Arsenal: Tool Selection & Permissions** — 57% · Data
 artifacts are clean, but the only runnable command (validation script) doesn't exist, and it frames markdown prompts as real least-privilege *enforcement*.
 3. ✅ **Cloud Computing Fundamentals: IaaS, PaaS, SaaS** — 80% · Accurate, working verify commands across all three CLIs; two secondary objectives are never taught.
@@ -61,7 +64,7 @@ All results below are from the sealed `walk-evidence.json` (`--mode execute`, `e
 
 ### 1. The All-Seeing Eye — Observability (40%, fail) — ran 5/3 runnable snippets, 3 passed / 2 failed / 1 reasoned
 - **`.github/workflows/agent-with-tracing.yml` → FAILED.** The engine extracted the
-exact `run:` text and ran it: `run_id=${​% raw %​}{​{ github.run_id }​}{​% endraw %​}: bad substitution` (exit 1). Confirmed in source at lines 163–164, 170, 179–193, 203 — the Liquid `{​% raw %​}`/`{​% endraw %​}` tags leaked *inside* each expression (8 occurrences) instead of wrapping the block, so neither bash nor GitHub Actions would interpolate them.
+exact `run:` text and ran it: `run_id=${% raw %}{{ github.run_id }}{% endraw %}: bad substitution` (exit 1). Confirmed in source at lines 163–164, 170, 179–193, 203 — the Liquid `{% raw %}`/`{% endraw %}` tags leaked *inside* each expression (8 occurrences) instead of wrapping the block, so neither bash nor GitHub Actions would interpolate them.
 - **`gh api ... /environments/agent-production` → REASONED (not run against live GitHub).**
 `gh api --help` confirms `-f/--raw-field` always sends a *string*; the command uses it for `reviewers` (JSON array), `deployment_branch_policy` (JSON object), and `wait_timer` (integer), which the API would reject (422). Correct form is `--input -`.
 - **`stamp_artifact.py` → PASSED.** Ran, prepended the metadata header, printed success.
@@ -88,7 +91,7 @@ with `Unable to locate credentials` — syntax is correct AWS CLI v2, but no acc
 - **Hands-On Lab Steps 1, 3, 4 → PASSED.** The engine ran every command and outputs
 matched the documented "Expected" blocks **byte-for-byte** (two transient failures absorbed → success on attempt 3, exit=0; then permanent failure → escalation → exit=1). This is the strongest hands-on lab in the slice.
 - **All config snippets → PASSED** (`.vscode/mcp.json` valid JSON; allow-list JSONC
-valid; `permissions:` block + `agent-task.yml` valid GitHub Actions YAML). Note: this quest correctly wraps its YAML in `{​% raw %​}…{​% endraw %​}` blocks (lines 152–160, 273–299) — the exact pattern quest 1 got wrong.
+valid; `permissions:` block + `agent-task.yml` valid GitHub Actions YAML). Note: this quest correctly wraps its YAML in `{% raw %}…{% endraw %}` blocks (lines 152–160, 273–299) — the exact pattern quest 1 got wrong.
 - **Closing "break the wrapper — delete `exit 1`, watch exit=0" exercise → FAILED.**
 The engine removed only the `exit 1` line and re-ran: the `until` loop ran **forever**, re-escalating on every pass, force-killed after 60s (exit 143). The quest's claimed `exit=0` is factually wrong — and this is the chapter's central safety lesson.
 - Content-accuracy also flags the unverifiable **"GH-600"** certification identifier (exact "20–25%" domain weight, sub-skills 2.1–2.4) — reasoned, author should verify.
@@ -109,7 +112,7 @@ Parses as JSON but the settings key doesn't match current VS Code MCP format (`m
 **High severity**
 
 - **high · Observability (Q1) · Chapter 2, `agent-with-tracing.yml`, source lines
-163–203** — Leaked `{​% raw %​}`/`{​% endraw %​}` tags *inside* every `${​{ }​}` expression (8×) produce `${​% raw %​}{​{ github.run_id }​}{​% endraw %​}`. *Observed:* engine reproduced `bad substitution` (exit 1); the workflow can never interpolate. *Fix:* wrap the whole `run:`/YAML block in a single `{​% raw %​} … {​% endraw %​}` pair (the pattern codex-02 uses correctly) so the rendered page shows plain `${​{ github.run_id }​}`.
+163–203** — Leaked `{% raw %}`/`{% endraw %}` tags *inside* every `${{ }}` expression (8×) produce `${% raw %}{{ github.run_id }}{% endraw %}`. *Observed:* engine reproduced `bad substitution` (exit 1); the workflow can never interpolate. *Fix:* wrap the whole `run:`/YAML block in a single `{% raw %} … {% endraw %}` pair (the pattern codex-02 uses correctly) so the rendered page shows plain `${{ github.run_id }}`.
 
 - **high · Observability, Tool-Selection, MCP-Conclave · "Quest Validation" sections
 (Q1 line 306, Q2 line 202, Q5 line 304)** — All three end with `python3 scripts/validate_quest.py --quest qN`. *Observed:* every invocation fails with `No such file / FileNotFoundError`; the script exists nowhere in the quest content. *Fix:* ship/link the script alongside the quest scaffold, or replace the block with concrete manual `test -f …` checks the learner can actually run.

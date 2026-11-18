@@ -75,7 +75,9 @@ rewards:
   unlocks_features:
   - Asynchronous foundations for scaling the kingdom
 skill_focus: backend
-source_file: event-driven-design.md
+source_file: pages/_quests/1110/event-driven-design.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/event-driven-design.md
 sub_title: 'Level 1110 (14) Quest: Main Quest - Event-Driven Design'
 tags:
 - '1110'
@@ -85,7 +87,7 @@ tags:
 - cqrs
 - conceptual
 - gamified-learning
-title: Redpanda is a lightweight, Kafka-compatible broker for local use
+title: 'Event-Driven Design: Pub/Sub, Event Sourcing, and CQRS'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -133,7 +135,7 @@ You'll know you've truly mastered this quest when you can:
 
 ### 📋 Knowledge Requirements
 - [ ] Understand microservices and inter-service communication
-- [ ] Completed [Microservices Architecture](/quests/1110/microservices-architecture/) (required)
+- [ ] Completed [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]] (required)
 - [ ] Basic grasp of queues and append-only logs
 
 ### 🛠️ System Requirements
@@ -427,16 +429,16 @@ Choose a key that matches the entity whose order matters (a `user_id`, an `order
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Scaling Strategies](/quests/1110/scaling-strategies/) - Events let you scale consumers independently
+- 🎯 [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies]] - Events let you scale consumers independently
 
 **Explore Side Adventures**:
-- ⚔️ [API Gateway Patterns](/quests/1110/api-gateway-patterns/) - The synchronous front door to your async core
-- ⚔️ [Domain-Driven Design](/quests/1110/domain-driven-design/) - Domain events are where this began
+- ⚔️ [[it-journey/pages/_quests/1110/api-gateway-patterns|API Gateway Patterns]] - The synchronous front door to your async core
+- ⚔️ [[it-journey/pages/_quests/1110/domain-driven-design|Domain-Driven Design]] - Domain events are where this began
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Scaling Strategies](/quests/1110/scaling-strategies/)  
-**🏗️ System Engineer**: Revisit [Microservices Architecture](/quests/1110/microservices-architecture/) with events in mind  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies]]  
+**🏗️ System Engineer**: Revisit [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]] with events in mind  
 **📊 Data Scientist**: Note how an event log is a ready-made stream for analytics
 
 ## 📚 Resources
@@ -466,6 +468,6 @@ Choose a key that matches the entity whose order matters (a `user_id`, an `order
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Microservices Architecture: Decomposing the Monolith]] · [[Domain-Driven Design: Modeling the Business in Code]] **Unlocks:** [[Scaling Strategies: Horizontal Growth, Caching, and CAP]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture: Decomposing the Monolith]] · [[it-journey/pages/_quests/1110/domain-driven-design|Domain-Driven Design: Modeling the Business in Code]] **Unlocks:** [[it-journey/pages/_quests/1110/scaling-strategies|Scaling Strategies: Horizontal Growth, Caching, and CAP]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -26,8 +26,8 @@ This directory contains a comprehensive suite of automation scripts for document
 - [Overview](#overview)
 - [Architecture](#architecture)
 - [Script Inventory](#script-inventory)
-  - [Aggregation Scripts](#aggregation-scripts)
-  - [Processing Scripts](#processing-scripts)
+  - [Collect](#collect-context_enginecollectpy)
+  - [Vault and brain](#vault-and-brain-context_enginevaultpy-context_enginebrainpy)
   - [Quality Assurance Scripts](#quality-assurance-scripts)
   - [AI Harmonization System](#ai-harmonization-system)
   - [Orchestration Scripts](#orchestration-scripts)
@@ -54,8 +54,8 @@ The documentation processing pipeline automates the following tasks:
 
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
-│   Repository    │────▶│   Aggregation   │────▶│   Processing    │
-│   Sources       │     │   (aggregate.sh)│     │   (process.py)  │
+│   Repository    │────▶│   Collect       │────▶│   Vault         │
+│   Sources       │     │   (collect.py)  │     │   docs/         │
 └─────────────────┘     └─────────────────┘     └─────────────────┘
                                                         │
                         ┌───────────────────────────────┘
@@ -81,8 +81,6 @@ The documentation processing pipeline automates the following tasks:
 
 ```
 scripts/
-├── aggregate.sh            # Main aggregation orchestrator
-├── process.py              # Documentation processing pipeline
 ├── check_frontmatter.py    # YAML frontmatter validator
 ├── clean_frontmatter.py    # Frontmatter normalizer
 ├── fix_frontmatter_icons.py # Navigation gate: icon: frontmatter normalizer
@@ -104,6 +102,9 @@ scripts/
 ├── context_engine/         # Context engine package (stages 5-7, 10)
 │   ├── config.py           # Shared paths and constants
 │   ├── registry.py         # Fleet registry (_data/projects.yml), clone-target checks + repos.txt sync
+│   ├── collect.py          # Extract, transform, load: repositories -> docs/
+│   ├── vault.py            # Notes, link resolution, weaving, the graph
+│   ├── brain.py            # Generated notes under docs/brain/ + Obsidian settings
 │   ├── extractor.py        # Corpus -> structured facts (L2)
 │   ├── navigator.py        # Corpus + navigation contract -> context/nav/, nav.yml, docs/browse/
 │   ├── synthesizer.py      # Facts -> project cards (L1)
@@ -133,10 +134,10 @@ scripts/
 
 | Stage | Input | Output | Scripts |
 |-------|-------|--------|---------|
-| 1. Aggregation | `repos.txt` (generated from `_data/projects.yml`) | `raw_docs/` | `aggregate.sh` |
-| 2. Processing | `raw_docs/` | `docs/` (secret-screened; `docs/results/secret_screen.json` on a hit) | `process.py`, `context_engine/redact.py`, `../tools/unwrap-prose.py` |
+| 1-2. Collect | `_data/projects.yml` | `docs/{project}/` (secret-screened; `docs/results/secret_screen.json` on a hit), `context/vault/collect.json` | `context_engine/collect.py`, `context_engine/redact.py`, `../tools/unwrap-prose.py` |
 | 3. Validation | `docs/` | Reports/Fixes | All validation scripts |
 | 4. Indexing | `docs/` | `docs/docs_index.json` | `generate_docs_index.py` |
+| 4b. Brain | `docs/` + registry `brain:` + `../notes/` | `docs/brain/`, `docs/.obsidian/` | `context_engine/brain.py` |
 | 5. Navigation | `docs/` + registry `navigation:` | `context/nav/`, `nav.yml`, `docs/browse/` | `context_engine/navigator.py` |
 | 6. Distillation | `docs/` + registry + nav | `context/` pyramid, README AUTO span, `docs/index.md` | `context_engine` package |
 | 7. Serving | `context/` | CLI / MCP answers | `context_engine/cli.py`, `../mcp/server.py` |
@@ -177,30 +178,6 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 
 **Output**: Fixed markdown files, detailed compatibility report
 
-#### aggregate_mkdocs.py
-**Purpose**: Aggregate documentation from multiple repositories with MkDocs-optimized structure
-
-**Key Features:**
-- Organizes docs into MkDocs-friendly categories (setup, api, architecture, etc.)
-- Normalizes YAML frontmatter for MkDocs
-- Preserves source repository structure
-- Generates category index files
-- Creates metadata for navigation
-
-**Usage:**
-```bash
-# Aggregate with structure preservation
-./aggregate_mkdocs.py ../temp ../docs
-
-# Flatten structure
-./aggregate_mkdocs.py ../temp ../docs --flatten
-
-# Skip automatic index creation
-./aggregate_mkdocs.py ../temp ../docs --no-create-indexes
-```
-
-**Output**: Categorized documentation, index files, repos_metadata.yaml
-
 #### mkdocs_quality_report.py
 **Purpose**: Analyze documentation quality and MkDocs compatibility
 
@@ -227,95 +204,52 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 
 ---
 
-### Aggregation Scripts
+### Collect (`context_engine/collect.py`)
 
-#### `aggregate.sh`
+**Purpose**: The whole extract, transform and load path of the corpus, as one stage.
 
-**Purpose**: Main orchestration script for cloning/updating repositories and extracting documentation files.
+**Key features**:
 
-**Features**:
-- Reads `url[#branch]` lines from `repos.txt`, which `python3 -m scripts.context_engine sync` generates from `_data/projects.yml`; `sync` lets through only `https://github.com/<owner>/<repo>` URLs and branch names of letters, digits, `.`, `_`, `/` and `-` that don't start with `-`
-- Clones each repository into `temp/` with `git clone --branch=<branch> -- <url>`, so neither value can be read as a git option, or fast-forwards a clone an interrupted run left there (`git pull --ff-only`, never a merge). Each git call is capped at 300 seconds (`GIT_TIMEOUT_SECONDS`) where `timeout` exists (the Ubuntu runners; macOS has none) and never waits on a credential prompt
-- Copies the `*.md` and `README*` regular files into `raw_docs/<repo>/`, skipping `.git/` and symlinks, so a link cannot pull a file from outside the clone into the corpus
-- Keeps going when a repository cannot be fetched (missing, private, unknown branch, timed out): it copies nothing from that one, lists every failure at the end and exits 1 once the others are processed, so `aggregate-docs.yaml` stops before its commit step instead of publishing a stale or partial corpus
-- Sets up Python virtual environment with required dependencies
-- Invokes `process.py` for documentation processing
-- Unwraps soft-wrapped prose in the freshly written corpus (`../tools/unwrap-prose.py --write docs`, excluding `SCHEMA.md` and `CHANGELOG.md` exactly as the `markdown-oneline` workflow does) so the crawl and that gate stop rewriting each other's work
-- Exits with `process.py`'s status once the corpus is finished and `temp/` is cleaned up, so a secret-screen hit (or a processing failure) stops `aggregate-docs.yaml` before its commit step
-
-**Usage**:
-```bash
-./scripts/aggregate.sh
-```
-
-**Input**: `repos.txt`, generated from the registry: one clone URL per line with an optional `#branch` suffix; `#` comment lines and blank lines are skipped
-
-**Exit status**: 0 when every repository was fetched; 1 when any could not be (the rest are still copied and processed); any other failure, such as `process.py` crashing, stops the script there with a non-zero status
-
-**Output Directories**:
-- `temp/` - Temporary clone directory (cleaned up after processing)
-- `raw_docs/` - Extracted documentation files
-- `docs/` - Processed and organized documentation
-
-**Example `repos.txt`** (generated; never hand-edit it):
-```text
-# repos.txt - GENERATED from _data/projects.yml.
-https://github.com/owner/repo1
-https://github.com/owner/site#gh-pages
-# skipped (aggregate: false): https://github.com/owner/reference-docs
-```
-
----
-
-### Processing Scripts
-
-#### `process.py`
-
-**Purpose**: Core documentation processing pipeline that categorizes, enriches, and organizes documentation files.
-
-**Features**:
-- **Content Categorization**: Automatically categorizes docs into `api`, `setup`, `user-guides`, `development`, `architecture`, or `misc`
-- **YAML Frontmatter Generation**: Creates comprehensive metadata for each file
-- **AI-Enhanced Analysis** (optional): Uses AI API for enhanced content analysis
-- **Tag Generation**: Extracts technology and category tags from content
-- **Summary Extraction**: Generates summaries from first substantial paragraph
-
-**Categories**:
-
-| Category | Keywords Detected |
-|----------|-------------------|
-| `setup` | install, installation, setup, configuration, deployment |
-| `api` | api, endpoint, rest, graphql, swagger, openapi, reference |
-| `user-guides` | guide, tutorial, how-to, walkthrough, getting started |
-| `development` | development, contributing, build, testing, ci/cd, pipeline |
-| `architecture` | architecture, design, overview, concepts, principles |
-| `misc` | Default for uncategorized content |
-
-**Generated Frontmatter**:
-```yaml
----
-title: Extracted or generated title
-summary: First paragraph summary (max 200 chars)
-tags:
-  - detected-technology
-  - category-tag
-category: determined-category
-source_file: original-filename.md
-last_updated: null
----
-```
-
-**Secret screen**: every page is run through `context_engine/redact.py` before anything else reads it. A GitHub (`ghp_`/`gho_`/`ghu_`/`ghs_`/`ghr_`, `github_pat_`), Anthropic (`sk-ant-`), xAI (`xai-`), AWS (`AKIA`) or Slack (`xox[abprs]-`) token, or a PEM private key carrying real key material, is replaced with `[REDACTED:<kind>]`. Documentation placeholders pass: a value containing `your`, `example`, `xxxx`, `placeholder`, `redacted`, `changeme`, `dummy`, `fake` or `sample`, a prefix followed by one repeated character, or a key block with no key material in it. On a hit the run writes `docs/results/secret_screen.json` (project, path, line and kind of each credential, never its value), prints the same list, and exits 1; a clean run writes no report and removes a stale one.
+- Reads `_data/projects.yml`; a project's `collect:` rules, plus the fleet-wide ones, say what counts as official documentation
+- Takes only git-tracked Markdown, so ignored build output never enters the corpus
+- Drops hidden carriers (`hidden.py`: HTML comments in prose, zero-width and bidi controls), then screens every page for credentials (`redact.py`): a GitHub, Anthropic, xAI, AWS or Slack token, or a PEM private key, becomes `[REDACTED:<kind>]`; the run writes `docs/results/secret_screen.json` (project, path, line, kind, never the value), finishes the corpus, and exits 1 so the scheduled crawl stops before its commit. A clean run removes a stale report
+- Normalizes in memory: front matter, provenance (`source_repo`, `source_file`, `source_url`), icons, tags, one paragraph per line
+- Renames dot-directories with `collect.hidden_prefix`, since neither GitHub Pages nor Obsidian shows them
+- Stages every project first, then weaves links across the whole corpus, then writes only what changed and deletes what upstream dropped
+- Runs git without prompts or stdin, with `--branch=` and `--` before the URL and a 300-second cap per call; the registry only accepts `https://github.com/<owner>/<repo>` URLs and plain branch names, and a project name must be a plain directory name
+- Never lets an unreachable repository pass silently: every other project is still written, the unreachable one keeps its last pages (re-normalized, marked frozen in the hot note), and the run lists every failure and exits 1, so `aggregate-docs.yaml` stops before its commit
 
 **Usage**:
+
 ```bash
-python3 scripts/process.py    # exit 0 = clean, 1 = the secret screen redacted something
+python3 -m scripts.context_engine collect                        # every aggregated project
+python3 -m scripts.context_engine collect bashcrawl it-journey   # some of them
+python3 -m scripts.context_engine collect --workspace ~/github   # local checkouts where they exist
 ```
 
-**Hidden carriers** (`strip_hidden`): upstream docs are third-party input that agents read and the context engine pastes into AI prompts, so ingest drops what a reader never sees: HTML comments in prose, and zero-width or bidirectional formatting characters (U+200B, U+202A–U+202E, U+2060–U+206F, U+FEFF, Unicode tag characters, and a U+200C/U+200D joiner that does not sit between two non-ASCII characters). Fenced and inline code keep their comments (a comment in a code sample is content), an empty comment (`<!-- -->`, the usual way to split two lists) stays, emoji ZWJ sequences and subdivision flags stay, and front matter values lose only the formatting characters. A comment-only line between two paragraphs leaves a blank line, so the paragraphs stay apart. A comment that is all a line holds besides block syntax (`- <!-- note -->`, `=== <!-- note -->`) is emptied to `<!---->` instead of removed: a bare `-` or `===` would turn the line above into a heading. The pass is idempotent, and files are read as `utf-8-sig`, so a leading BOM no longer hides the front matter.
+**Outputs**: `docs/<project>/`, `context/vault/collect.json` (the commit each crawl read), `context/vault/log.jsonl` (one line per corpus change).
 
-**Environment Variables**:
-- `XAI_API_KEY`: Optional API key for AI-enhanced content analysis
+A second run over unchanged sources changes nothing.
+
+---
+
+**Hidden carriers** (`hidden.py`, run by `collect.py` on every page): upstream docs are third-party input that agents read and the context engine pastes into AI prompts, so ingest drops what a reader never sees: HTML comments in prose, and zero-width or bidirectional formatting characters (U+200B, U+202A–U+202E, U+2060–U+206F, U+FEFF, Unicode tag characters, and a U+200C/U+200D joiner that does not sit between two non-ASCII characters). Fenced and inline code keep their comments (a comment in a code sample is content), an empty comment (`<!-- -->`, the usual way to split two lists) stays, emoji ZWJ sequences and subdivision flags stay, and front matter values lose only the formatting characters. A comment-only line between two paragraphs leaves a blank line, so the paragraphs stay apart. A comment that is all a line holds besides block syntax (`- <!-- note -->`, `=== <!-- note -->`) is emptied to `<!---->` instead of removed: a bare `-` or `===` would turn the line above into a heading. The pass is idempotent, and a leading BOM is dropped so it no longer hides the front matter.
+
+### Vault and brain (`context_engine/vault.py`, `context_engine/brain.py`)
+
+**Purpose**: Read `docs/` as one Obsidian vault and write the notes that connect it.
+
+`vault.py` is the single definition of a note and of what a link points at. The crawl, the generator, the query layer and the MkDocs hook all resolve links through its `Resolver`, so Obsidian, the site and MCP clients agree. Its weave step rewrites Jekyll permalink links and title wikilinks into path-qualified wikilinks; what it cannot resolve stays as written and shows up in `lint`.
+
+`brain.py` regenerates `docs/brain/` on each build: concept notes (from shared tags and from links nothing answers), project notes, the hot cache, the change log, vault health, the tag index, `fleet.canvas`, `pages.base` and `docs/.obsidian/`. Tune it with the `brain:` block in the registry. Concept summaries are spent first from the build's AI budget, at most `brain.ai_budget` per build, and stop when the budget runs out. They are cached in `context/vault/synthesis.json`, so a build without a key reproduces the last one.
+
+```bash
+python3 -m scripts.context_engine hot                     # what changed, what connects
+python3 -m scripts.context_engine note "Docker"           # text, backlinks, links
+python3 -m scripts.context_engine neighbours "Docker" --depth 2
+python3 -m scripts.context_engine lint                    # unresolved links, orphans
+python3 -m scripts.context_engine save "Title" "Body"     # file a note under notes/
+```
 
 ---
 
@@ -645,9 +579,9 @@ python3 -m scripts.context_engine status           # freshness manifest
 python3 -m scripts.context_engine projects         # fleet roster
 ```
 
-**AI enrichment** (`ai.py`): provider-agnostic — `--ai auto` (default) uses Anthropic when a credential is present (`ANTHROPIC_API_KEY`, or **Claude Code OAuth** via `CLAUDE_CODE_OAUTH_TOKEN` from `claude setup-token` / `ANTHROPIC_AUTH_TOKEN`, sent as Bearer auth), else xAI when `XAI_API_KEY`/`GROK_API_KEY` is set, else pure heuristics; `--ai mock` exercises the AI path deterministically for tests. Enrichment failures fall back to heuristic text — a build never fails because of an API. Every provider failure surfaces as `AIError`: 429/500/502/503/504/529 are retried up to 3 attempts, a `Retry-After` header (delay-seconds or HTTP-date) is honoured but clamped to 1–30 s, and malformed responses are wrapped rather than raised. Each build has an AI budget: `CONTEXT_AI_MAX_CALLS` caps the number of provider calls (unset means unlimited) and `CONTEXT_AI_DEADLINE_S` (default `600`) stops new requests that many seconds after the first one, keeping the weekly `aggregate-docs.yaml` inside its 15-minute timeout; once either is spent, the remaining cards and the apex use heuristic text, and the build summary (`ai_skipped`) and log name the cards that fell back.
+**AI enrichment** (`ai.py`): provider-agnostic — `--ai auto` (default) uses Anthropic when a credential is present (`ANTHROPIC_API_KEY`, or **Claude Code OAuth** via `CLAUDE_CODE_OAUTH_TOKEN` from `claude setup-token` / `ANTHROPIC_AUTH_TOKEN`, sent as Bearer auth), else xAI when `XAI_API_KEY`/`GROK_API_KEY` is set, else pure heuristics; `--ai mock` exercises the AI path deterministically for tests. Enrichment failures fall back to heuristic text — a build never fails because of an API. Every provider failure surfaces as `AIError`: 429/500/502/503/504/529 are retried up to 3 attempts, a `Retry-After` header (delay-seconds or HTTP-date) is honoured but clamped to 1–30 s, and malformed responses are wrapped rather than raised. Each build has an AI budget: `CONTEXT_AI_MAX_CALLS` caps the number of provider calls (unset means unlimited) and `CONTEXT_AI_DEADLINE_S` (default `600`) stops new requests that many seconds after the first one, keeping the weekly `aggregate-docs.yaml` inside its 30-minute timeout; once either is spent, the remaining cards and the apex use heuristic text, and the build summary (`ai_skipped`) and log name the cards that fell back.
 
-**Secret screen** (`redact.py`): the stdlib matcher behind ingest's credential check. `redact(text)` returns the text with each credential replaced by `[REDACTED:<kind>]` and one `Hit(kind, line)` per credential, never the value. `process.py` runs it on every crawled page, `hooks.py` on hook output (a hook also gets an allowlisted environment, never the build's provider keys: see `../hooks.d/README.md`), and `AIError` on its message, which can quote a provider's response body. The survey's working-tree mode (`survey --local`, `--workspace`) never follows a tracked symlink, so a link out of a checkout cannot pull a local file into the review.
+**Secret screen** (`redact.py`): the stdlib matcher behind ingest's credential check. `redact(text)` returns the text with each credential replaced by `[REDACTED:<kind>]` and one `Hit(kind, line)` per credential, never the value. `context_engine/collect.py` runs it on every crawled page, `hooks.py` on hook output (a hook also gets an allowlisted environment, never the build's provider keys: see `../hooks.d/README.md`), and `AIError` on its message, which can quote a provider's response body. The survey's working-tree mode (`survey --local`, `--workspace`) never follows a tracked symlink, so a link out of a checkout cannot pull a local file into the review.
 
 **Outputs**: `context/facts/*.json`, `context/cards/*.md`, `context/nav/*.json`, `context/README.md`, `context/SCHEMA.md`, `context/index/{context_index,manifest}.json`, plus the regenerated `repos.txt`, `nav.yml`, `docs/browse/`, root README span, and `docs/index.md`. All generated — never hand-edit.
 
@@ -680,7 +614,7 @@ python3 scripts/fix_frontmatter_icons.py --apply            # rewrite in place
 python3 scripts/fix_frontmatter_icons.py --root docs/zer0-mistakes --apply
 ```
 
-Runs automatically in two places: `process.py` normalizes at ingest, and `run_doc_checks.sh` reports it in check mode and fixes it under `--apply`.
+Runs automatically in two places: `context_engine/collect.py` normalizes at ingest, and `run_doc_checks.sh` reports it in check mode and fixes it under `--apply`.
 
 ---
 
@@ -1004,16 +938,12 @@ client = GrokClient(config)
 
 ### Quick Start
 
-1. **Setup repositories list** (registry first: `repos.txt` is generated, never edited):
-   ```bash
-   # Add the repository to _data/projects.yml, then regenerate repos.txt;
-   # sync rejects a url that is not https://github.com/<owner>/<repo>
-   python3 -m scripts.context_engine sync
-   ```
+1. **Add a repository** to `_data/projects.yml`.
 
-2. **Run full aggregation pipeline**:
+2. **Collect the corpus and build**:
    ```bash
-   ./scripts/aggregate.sh
+   python3 -m scripts.context_engine collect
+   python3 -m scripts.context_engine build
    ```
 
 3. **Run quality checks**:
@@ -1029,9 +959,6 @@ client = GrokClient(config)
 ### Individual Script Usage
 
 ```bash
-# Process raw docs into organized structure
-python3 scripts/process.py
-
 # Validate frontmatter
 python3 scripts/check_frontmatter.py --fix
 
@@ -1050,14 +977,13 @@ python3 scripts/generate_docs_report.py
 
 | Variable | Description | Required |
 |----------|-------------|----------|
-| `XAI_API_KEY` | API key for AI-enhanced content analysis in `process.py` | No |
+| `XAI_API_KEY` | API key for AI enrichment in the context engine | No |
 
 ### File-Based Configuration
 
 | File | Purpose |
 |------|---------|
-| `_data/projects.yml` | The registry: which repositories to aggregate (`url`, optional `branch`) |
-| `repos.txt` | Generated from the registry by `sync`: the clone URLs `aggregate.sh` reads |
+| `repos.txt` | Generated list of aggregated repositories; nothing reads it to crawl |
 | `requirements.txt` | Python dependencies |
 
 ---
@@ -1083,7 +1009,7 @@ requests
 # Install Python dependencies
 pip install -r requirements.txt
 
-# Or use virtual environment (handled automatically by aggregate.sh)
+# Or use a virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
@@ -1154,12 +1080,9 @@ repos:
 | Issue | Solution |
 |-------|----------|
 | `No python interpreter found` | Install Python 3.7+ and ensure it's in PATH |
-| `Module yaml not found` | Run `pip install pyyaml` or let `aggregate.sh` create venv |
+| `Module yaml not found` | Run `pip install -r requirements.txt` |
 | `Permission denied` | Make scripts executable: `chmod +x scripts/*.sh` |
-| `Failed to fetch <url> (git timed out after 300s)` | Check the network connection; for a very large repository raise `GIT_TIMEOUT_SECONDS` in `aggregate.sh` |
-| `Failed to fetch <url> (git exited 128)` | git's own message just above it says why. A missing or private repository or an unknown branch (git never prompts for credentials): fix `url`/`branch` in `_data/projects.yml`, then run `python3 -m scripts.context_engine sync` |
-| `Not possible to fast-forward`, or `destination path 'temp/<repo>' already exists` | A clone an interrupted run left in `temp/` has diverged from upstream or is in the way: `rm -rf temp/` and run again |
-| `project '<name>': url ... is not https://github.com/<owner>/<repo>` (or `branch ...`) | `sync` rejected a registry entry: fix it in `_data/projects.yml` |
+| `Git clone timeout` | Check network connection; increase `CLONE_TIMEOUT` in `context_engine/collect.py` |
 
 ### Debug Mode
 
@@ -1167,7 +1090,7 @@ For verbose output, examine script execution:
 
 ```bash
 # Run with bash debug mode
-bash -x scripts/aggregate.sh
+python3 -m scripts.context_engine collect bashcrawl
 
 # Check Python script errors
 python3 scripts/lint_docs.py 2>&1 | tee lint_output.log

@@ -28,23 +28,26 @@ quickstart:
   step: 1
 sidebar:
   nav: quickstart
-source_file: machine-setup.md
+source_file: fr/quickstart/machine-setup.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/quickstart/machine-setup.md
 tags:
 - docker
 - git
 - setup
 - development
 - cross-platform
-title: Configuration de la machine
+title: 'Configuration de la machine : installer Docker, Git et les outils de développement'
 translated_from_sha: 75ac6f087cec
 translation_of: pages/_quickstart/machine-setup.md
 translation_source_url: /quickstart/machine-setup/
 ---
+
 # Configuration de la machine
 
 Installez les outils dont vous avez besoin avant de commencer le développement Jekyll. Ce guide couvre **macOS**, **Windows** et **Linux**.
 
-> **Vous préférez une configuration guidée ?** Le [Site Builder](/quickstart/site-builder/) exécute ces mêmes vérifications en direct sur votre machine, affiche la commande d'installation adaptée à votre système d'exploitation, puis vous accompagne dans la configuration et le lancement d'un site complet avec Claude à vos côtés. Cette page est la référence manuelle derrière son étape Prérequis.
+> **Vous préférez une configuration guidée ?** Le [[zer0-mistakes/pages/_quickstart/site-builder|Site Builder]] exécute ces mêmes vérifications en direct sur votre machine, affiche la commande d'installation adaptée à votre système d'exploitation, puis vous accompagne dans la configuration et le lancement d'un site complet avec Claude à vos côtés. Cette page est la référence manuelle derrière son étape Prérequis.
 
 ```mermaid
 flowchart LR
@@ -245,9 +248,9 @@ kill <PID>             # free the port
 
 ## Ressources connexes
 
-- [Site Builder](/quickstart/site-builder/) — le parcours guidé qui exécute pour vous ces vérifications de prérequis.
-- [Référence du Site Builder](/docs/features/site-builder/) — ce que l'assistant génère, les outils qu'il expose et ses limites de sécurité.
-- [Configuration de Jekyll](/quickstart/jekyll-setup/) — l'étape suivante une fois ces outils installés.
+- [[zer0-mistakes/pages/_quickstart/site-builder|Site Builder]] — le parcours guidé qui exécute pour vous ces vérifications de prérequis.
+- [[zer0-mistakes/pages/_docs/features/site-builder|Référence du Site Builder]] — ce que l'assistant génère, les outils qu'il expose et ses limites de sécurité.
+- [[zer0-mistakes/pages/_quickstart/jekyll-setup|Configuration de Jekyll]] — l'étape suivante une fois ces outils installés.
 
 ---
 

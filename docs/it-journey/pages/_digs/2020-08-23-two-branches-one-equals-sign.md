@@ -15,13 +15,15 @@ permalink: /digs/2020-08-23-two-branches-one-equals-sign/
 range_end: 2020-08-25
 range_start: 2020-08-23
 repository: bamr87/it-journey
-source_file: 2020-08-23-two-branches-one-equals-sign.md
+source_file: pages/_digs/2020-08-23-two-branches-one-equals-sign.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_digs/2020-08-23-two-branches-one-equals-sign.md
 start_sha: b6d3cf5958e6c639f13b60f47f62af715f3e788d
 tags:
 - git
 - history
 - javascript
-title: 2020 08 23 Two Branches One Equals Sign
+title: Two branches, one equals sign
 voice_profile: git-dig
 ---
 For a moment the repository has two memories of the same afternoon. One of them says hello to Windows. The other adds a JavaScript file whose condition does not ask whether a value is `"blah"`. It makes the value `"blah"`. Philosophy has spent centuries on the difference between naming a thing and changing it. This history spends two days, and then merges the argument.

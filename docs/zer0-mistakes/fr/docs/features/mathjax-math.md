@@ -15,7 +15,9 @@ permalink: /fr/docs/features/mathjax-math/
 preview: /images/previews/mathjax-math.png
 sidebar:
   nav: docs
-source_file: mathjax-math.md
+source_file: fr/docs/features/mathjax-math.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/mathjax-math.md
 tags:
 - mathjax
 - math
@@ -26,6 +28,7 @@ translated_from_sha: ad2447aad6d4
 translation_of: pages/_docs/features/mathjax-math.md
 translation_source_url: /docs/features/mathjax-math/
 ---
+
 # MathJax Math
 
 > Affichez des équations et formules mathématiques en utilisant une syntaxe de style LaTeX avec MathJax.
@@ -235,6 +238,6 @@ $$
 
 ## Voir aussi
 
-- [[Features]]
-- [[Mermaid Diagrams]]
-- [[Jupyter Notebook Integration]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/mermaid-diagrams|Mermaid Diagrams]]
+- [[zer0-mistakes/pages/_docs/features/jupyter-notebooks|Jupyter Notebook Integration]]

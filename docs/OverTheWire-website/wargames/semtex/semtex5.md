@@ -2,7 +2,9 @@
 gamename: semtex
 layout: default
 level: 5
-source_file: semtex5.md
+source_file: wargames/semtex/semtex5.md
+source_repo: OverTheWireOrg/OverTheWire-website
+source_url: https://github.com/OverTheWireOrg/OverTheWire-website/blob/gh-pages/wargames/semtex/semtex5.md
 title: Semtex5
 ---
 Random Networking

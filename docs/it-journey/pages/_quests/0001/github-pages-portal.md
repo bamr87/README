@@ -59,7 +59,9 @@ rewards:
 - Understanding of static site hosting
 - Foundation for Jekyll and other SSGs
 skill_focus: devops
-source_file: github-pages-portal.md
+source_file: pages/_quests/0001/github-pages-portal.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/github-pages-portal.md
 sub_title: 'Level 001 (1) Quest: Main - GitHub Pages'
 tags:
 - '1'
@@ -68,7 +70,7 @@ tags:
 - web-deployment
 - hands-on
 - gamified-learning
-title: Ensure Git is installed
+title: 'The GitHub Pages Portal: Forging Your Digital Realm'
 validation_criteria:
 - Successfully deployed a GitHub Pages site
 - Custom domain configuration (optional bonus)
@@ -746,7 +748,7 @@ GitHub Pages represents the evolution of web hosting from complex server managem
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 001 - Journeyman Challenges]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0001/README|Level 001 - Journeyman Challenges]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

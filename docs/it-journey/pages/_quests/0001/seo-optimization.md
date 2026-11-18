@@ -84,7 +84,9 @@ rewards:
   unlocks_features:
   - Access to the measurement quests of Level 0001 Web Fundamentals
 skill_focus: frontend
-source_file: seo-optimization.md
+source_file: pages/_quests/0001/seo-optimization.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/seo-optimization.md
 sub_title: 'Level 0001 (1) Quest: Main Quest - SEO'
 tags:
 - '0001'
@@ -94,7 +96,7 @@ tags:
 - frontend
 - hands-on
 - beginner
-title: In an existing Jekyll site, add the SEO and sitemap plugins
+title: 'SEO & AI-Citability: Meta Tags, Structured Data & E-E-A-T'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -145,7 +147,7 @@ You'll know you've truly mastered this quest when you can:
 ### 📋 Knowledge Requirements
 - [ ] Familiarity with HTML and YAML frontmatter
 - [ ] Basic command line navigation (`cd`, `ls`)
-- [ ] Recommended: completion of [Advanced Markdown](/quests/0001/advanced-markdown/)
+- [ ] Recommended: completion of [[it-journey/pages/_quests/0001/advanced-markdown|Advanced Markdown]]
 
 ### 🛠️ System Requirements
 - [ ] Modern operating system (Windows 10+, macOS 10.14+, or Linux)
@@ -662,17 +664,17 @@ These observations were checked against each repository and its live site on 202
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Analytics Integration](/quests/0001/analytics-integration/) - Measure the visitors SEO brings
+- 🎯 [[it-journey/pages/_quests/0001/analytics-integration|Analytics Integration]] - Measure the visitors SEO brings
 
 **Explore Side Adventures**:
-- ⚔️ [Jekyll Plugins](/quests/0001/jekyll-plugins/) - The plugins that power SEO automation
-- ⚔️ [Advanced Markdown](/quests/0001/advanced-markdown/) - Author the content you optimize
+- ⚔️ [[it-journey/pages/_quests/0001/jekyll-plugins|Jekyll Plugins]] - The plugins that power SEO automation
+- ⚔️ [[it-journey/pages/_quests/0001/advanced-markdown|Advanced Markdown]] - Author the content you optimize
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Jekyll Plugins](/quests/0001/jekyll-plugins/)  
-**🏗️ System Engineer**: Explore [Analytics Integration](/quests/0001/analytics-integration/)  
-**🎨 Frontend Specialist**: Advance to [Analytics Integration](/quests/0001/analytics-integration/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/0001/jekyll-plugins|Jekyll Plugins]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/0001/analytics-integration|Analytics Integration]]  
+**🎨 Frontend Specialist**: Advance to [[it-journey/pages/_quests/0001/analytics-integration|Analytics Integration]]  
 
 ## 📚 Resources
 
@@ -712,6 +714,6 @@ These observations were checked against each repository and its live site on 202
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Analytics Integration]] · [[Jekyll Plugins]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 0001 - Web Fundamentals]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[Analytics Integration]] · [[Jekyll Plugins]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

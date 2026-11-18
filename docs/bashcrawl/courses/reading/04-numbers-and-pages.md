@@ -14,11 +14,13 @@ objectives:
     all:
     - command: less
     - args_contains: ballad.txt
-source_file: 04-numbers-and-pages.md
+source_file: courses/reading/04-numbers-and-pages.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/reading/04-numbers-and-pages.md
 teaches:
 - nl
 - less
-title: 04 Numbers And Pages
+title: Numbered lines and paging
 xp: 25
 ---
 - `nl FILE` prints a file with **line numbers**, which helps when someone says "look at line 7".

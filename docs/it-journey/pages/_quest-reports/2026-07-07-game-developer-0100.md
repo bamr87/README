@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29190829265
 slice: game-developer/0100
-source_file: 2026-07-07-game-developer-0100.md
+source_file: pages/_quest-reports/2026-07-07-game-developer-0100.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-07-game-developer-0100.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-07-game-developer-0100.md
 tags:
 - game-developer
 - level-0100
@@ -26,13 +28,14 @@ tags:
 - frontend-containers
 theme: Frontend & Containers
 tier: Adventurer
-title: 2026 07 07 Game Developer 0100
+title: Game Developer · L0100 · 2026-07-07
 verdict: fail
 walk_date: '2026-07-07'
 ---
+
 > **Slice** `game-developer/0100` · **Level** 0100 (Frontend & Containers) · **Adventurer tier** · **Engine verdict** ❌ fail (avg 55.5%) · **Walked** 2026-07-07
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-07-game-developer-0100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-07-game-developer-0100.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29190829265) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-07-game-developer-0100.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-07-game-developer-0100.md)
 
 ---
 
@@ -48,7 +51,7 @@ I walked the **first window (5 of 8 quests)** of the **Game Developer → Level 
 |---|:--:|---|:--:|---|
 | 1 | ⚪ reasoned | Docker Container Fundamentals: Images to Registries | — (engine error) | Reads as a polished, well-sequenced main quest; **no machine score** — engine hit max_turns after curl was denied. |
 | 2 | ⚠️ warn | Docker Compose Orchestration: Multi-Container Apps | 65 | Chapters 1–2 executed flawlessly (real Redis counter + verified volume persistence); Chapter 3 "Full Stack" section has two confirmed runtime failures. |
-| 3 | ❌ fail | Dockering Jekyll with Bootstrap 5 | 30 | Breaks at almost every step: `docker-compose` v1 CLI absent, `jekyll new .` conflict, `cd my-jekyll-site` into a dir never created, `{​% raw %​}` artifact, BS4 code, `up` crashes. |
+| 3 | ❌ fail | Dockering Jekyll with Bootstrap 5 | 30 | Breaks at almost every step: `docker-compose` v1 CLI absent, `jekyll new .` conflict, `cd my-jekyll-site` into a dir never created, `{% raw %}` artifact, BS4 code, `up` crashes. |
 | 4 | ❌ fail | Frontend Forests: Building a Jekyll Site with Bootstrap | 55 | Concepts accurate, but Steps 3–4 edit `_includes/head.html` / `_layouts/default.html` that **don't exist** in a fresh `jekyll new` + minima site. |
 | 5 | ⚠️ warn | The Artisan's Forge: Refactoring Jekyll Theme Components | 72 | Core pattern is sound and builds end-to-end; first-pass `touch` fails (no `mkdir -p`), SCSS partial never wired to a compiled stylesheet, duplicated Resources block. |
 
@@ -81,7 +84,7 @@ Dimensions: commands_work 1 · content_accuracy 1 · completeness 1 · clarity 2
 - **failed** — `cd my-jekyll-site` → `No such file or directory` (that dir is never created).
 - **failed** — final `docker-compose up` → reproducible `Bundler::GemNotFound` (compose
 never runs `bundle install`); even patched, the server binds only `127.0.0.1` inside the container (confirmed via `/proc/net/tcp`), so `localhost:4000` on the host resets.
-- **failed** — Step 4 homepage renders literal `{​% raw %​}{​% include head.html %​}{​% endraw %​}` text (a stray `{​% raw %​}` wrapper) instead of pulling in Bootstrap — verified via a real `jekyll build`.
+- **failed** — Step 4 homepage renders literal `{% raw %}{% include head.html %}{% endraw %}` text (a stray `{% raw %}` wrapper) instead of pulling in Bootstrap — verified via a real `jekyll build`.
 - **passed** — only `git init && git add . && git commit …` (deploy scaffolding) ran clean.
 - **reasoned/content** — BS4 holdovers confirmed by read: `jquery-3.3.1.slim.min.js`,
 `data-toggle`/`data-target`, `.jumbotron`, `.sr-only`, and placeholder `integrity="sha384-xxx"` hashes that browsers will reject.
@@ -120,7 +123,7 @@ after creating Dockerfile/compose files gives `Conflict: … not empty`; and `cd
 - **frontend-docker · CLI syntax (all `docker-compose …`)** — the v1 hyphenated binary is absent on modern Docker and is EOL. *Fix:* replace with `docker compose …` (v2).
 - **frontend-docker · compose `command:` + host binding** — `docker-compose up` crashes
 with `Bundler::GemNotFound`, and even fixed the server binds loopback-only so `localhost:4000` never loads. *Fix:* `bash -c "bundle install && jekyll serve --watch --force_polling --host 0.0.0.0"`.
-- **frontend-docker · Step 4 HTML** — stray `{​% raw %​}…{​% endraw %​}` wrapper renders as
+- **frontend-docker · Step 4 HTML** — stray `{% raw %}…{% endraw %}` wrapper renders as
 literal text; no front-matter block, so Jekyll won't process the page. *Fix:* remove the wrapper, add a `---\n---` front matter block.
 - **frontend-docker · Bootstrap 5 accuracy** — jQuery, `data-toggle`/`data-target`,
 `.jumbotron`, `.sr-only`, and `sha384-xxx` placeholders are all BS4-era / invalid. *Fix:* drop jQuery, use `data-bs-*`, BS5 hero pattern, `.visually-hidden`, real SRI hashes.

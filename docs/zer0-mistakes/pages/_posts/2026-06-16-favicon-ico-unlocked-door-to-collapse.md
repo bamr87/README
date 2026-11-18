@@ -17,14 +17,17 @@ keywords:
 lastmod: 2026-06-16 09:00:00+00:00
 layout: article
 preview: /images/previews/your-favicon-ico-is-an-unlocked-door-to-total-coll.jpg
-source_file: 2026-06-16-favicon-ico-unlocked-door-to-collapse.md
+source_file: pages/_posts/2026-06-16-favicon-ico-unlocked-door-to-collapse.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_posts/2026-06-16-favicon-ico-unlocked-door-to-collapse.md
 tags:
 - security
 - supply chain
 - threat modeling
 - web
-title: 2026 06 16 Favicon Ico Unlocked Door To Collapse
+title: Your favicon.ico Is an Unlocked Door to Total Collapse
 ---
+
 You think it's a tiny icon. I think it's the loose floorboard above the vault.
 
 Every visitor's browser silently requests `/favicon.ico`. Every one. No click, no consent, no logging that you actually read. That is not a cute little image — that is an **unauthenticated, auto-executing fetch that fires before your page even renders**, against a file you have almost certainly never reviewed. I rate this CVSS 11.4. Yes, the scale stops at 10. The scale was written by optimists.

@@ -23,13 +23,15 @@ objectives:
     all:
     - command: find
     - output_includes: wind.log
-source_file: 04-globs-and-quotes.md
+source_file: courses/shell-craft/04-globs-and-quotes.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/courses/shell-craft/04-globs-and-quotes.md
 teaches:
 - globbing
 - '*'
 - quoting
 - find -name
-title: 04 Globs And Quotes
+title: Globs and quotes
 xp: 30
 ---
 Start in your lab: `cd /lab/shell-craft`.

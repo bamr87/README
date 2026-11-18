@@ -58,7 +58,9 @@ rewards:
   unlocks_features:
   - Continue The Self-Operating Website campaign
 skill_focus: fullstack
-source_file: self-operating-website-06-the-editors-eye.md
+source_file: pages/_quests/1100/self-operating-website-06-the-editors-eye.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/self-operating-website-06-the-editors-eye.md
 tags:
 - '1100'
 - github-actions
@@ -66,8 +68,9 @@ tags:
 - automation
 - ci-cd
 - gamified-learning
-title: scripts/ai/run.sh <role>   — drive one Claude Code agent non-interactively
+title: 'The Editor''s Eye: A Reviewer, and the Dragon It Becomes'
 ---
+
 *The Forge in the last chapter gave your realm a tireless smith — drafts now appear in the night, born of stardust and templates. But raw drafts are not yet treasure. They need an editor: a quiet figure with a sharp eye who reads each manuscript, smooths its prose, and presses it back into the same pull request, better than before. You summon that editor now.*
 
 *And here is the trap the old guild warns of in hushed tones: an editor who reviews, then edits, then is woken by its own edit — and reviews again, forever. The real-world skill you forge in this chapter is **event-safe automation**: writing CI jobs that act on pull requests without accidentally triggering themselves into an infinite loop. Master it, and your automation works for you. Fail, and a dragon made of your own commits will burn through your Actions minutes until dawn.*
@@ -95,7 +98,7 @@ In the old kingdoms, every scriptorium kept a reviewer who annotated the margins
 
 Before you summon the editor, gather your tools and make sure the forge is lit:
 
-- **Prior chapter:** [Chapter V — The Content Forge](/quests/1010/self-operating-website-05-the-content-forge/). The editor reviews the drafts the Forge produces; without a draft-producing pipeline, there is nothing to edit.
+- **Prior chapter:** [[it-journey/pages/_quests/1010/self-operating-website-05-the-content-forge|Chapter V — The Content Forge]]. The editor reviews the drafts the Forge produces; without a draft-producing pipeline, there is nothing to edit.
 - **Accounts:** A GitHub account and a repository you own (so the workflow has `contents: write` to push editorial commits — fork PRs cannot, which Chapter 1 handles).
 - **Secrets:** A `CLAUDE_CODE_OAUTH_TOKEN` stored as a repository secret, used by `scripts/ai/run.sh` to authenticate the Claude Code agent.
 - **Tools:** Git and a text editor/IDE locally; the `scripts/ai/run.sh` runner (introduced earlier in the campaign) and the `content-reviewer` agent role file in `.claude/agents/`.
@@ -365,9 +368,9 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- ➡️ **Next chapter:** [The Named Familiars](/quests/1101/self-operating-website-07-the-named-familiars/) — give each agent a name, a role file, and least-privilege scope.
-- 🏰 **Campaign hub:** [The Self-Operating Website](/quests/codex/self-operating-website/) — return to the epic's table of contents.
-- ⬅️ **Previous chapter:** [The Content Forge](/quests/1010/self-operating-website-05-the-content-forge/) — where the drafts your editor reviews are born.
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1101/self-operating-website-07-the-named-familiars|The Named Familiars]] — give each agent a name, a role file, and least-privilege scope.
+- 🏰 **Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|The Self-Operating Website]] — return to the epic's table of contents.
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/1010/self-operating-website-05-the-content-forge|The Content Forge]] — where the drafts your editor reviews are born.
 
 ## 📚 Resource Codex
 
@@ -378,6 +381,6 @@ graph LR
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Self-Operating Website]] **Previous:** [[The Content Forge]] **Next:** [[The Named Familiars]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Previous:** [[The Content Forge]] **Next:** [[The Named Familiars]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

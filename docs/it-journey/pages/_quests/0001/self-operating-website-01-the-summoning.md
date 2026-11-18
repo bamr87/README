@@ -58,7 +58,9 @@ rewards:
   unlocks_features:
   - Continue The Self-Operating Website campaign
 skill_focus: fullstack
-source_file: self-operating-website-01-the-summoning.md
+source_file: pages/_quests/0001/self-operating-website-01-the-summoning.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0001/self-operating-website-01-the-summoning.md
 tags:
 - '0001'
 - jekyll
@@ -66,8 +68,9 @@ tags:
 - automation
 - ci-cd
 - gamified-learning
-title: _config.yml
+title: 'The Summoning: Raise the Site and Give It a Voice'
 ---
+
 *The realm is quiet. Somewhere in the dark of an empty repository, a site waits to be born — no pages, no voice, no will of its own. You are the summoner, and the words you speak now will decide not just how the site **looks**, but how it **thinks** about itself for every working session to come. Speak carelessly and you raise a mute construct. Speak with intent, and you raise something that can describe its own work and tell the world what it did.*
 
 *This is the moment before automation. Before the site can operate itself, it must first **exist** — built from a remote theme, deployed on GitHub Pages, and given a brand and voice it can actually read. The real-world skill hiding under the spellcraft is simple and durable: stand up a static site, encode your identity as data, and instrument your workflow so every session ends with a shareable dispatch.*
@@ -327,8 +330,8 @@ graph LR
 
 The construct lives and speaks — but it has not yet been *tested*. In the next chapter you build the trials that prove its work is safe to ship.
 
-- ➡️ **Next chapter:** [Chapter II — The Proving Grounds](/quests/0100/self-operating-website-02-the-proving-grounds/)
-- 🏰 **Campaign hub:** [Epic Quest: The Self-Operating Website](/quests/codex/self-operating-website/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/0100/self-operating-website-02-the-proving-grounds|Chapter II — The Proving Grounds]]
+- 🏰 **Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]]
 
 ## 📚 Resource Codex
 
@@ -339,6 +342,6 @@ The construct lives and speaks — but it has not yet been *tested*. In the next
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Self-Operating Website]] **Previous:** none — first chapter **Next:** [[The Proving Grounds: Test, Gate, and Trust the Build]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Previous:** none — first chapter **Next:** [[The Proving Grounds: Test, Gate, and Trust the Build]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

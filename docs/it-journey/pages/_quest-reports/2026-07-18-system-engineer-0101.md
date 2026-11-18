@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29642483805
 slice: system-engineer/0101
-source_file: 2026-07-18-system-engineer-0101.md
+source_file: pages/_quest-reports/2026-07-18-system-engineer-0101.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-18-system-engineer-0101.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-18-system-engineer-0101.md
 tags:
 - system-engineer
 - level-0101
@@ -25,13 +27,14 @@ tags:
 - ci-cd-devops
 theme: CI/CD & DevOps
 tier: Adventurer
-title: 2026 07 18 System Engineer 0101
+title: System Engineer · L0101 · 2026-07-18
 verdict: fail
 walk_date: '2026-07-18'
 ---
+
 > **Slice** `system-engineer/0101` · **Level** 0101 (CI/CD & DevOps) · **Adventurer tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-18
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29642483805) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-18-system-engineer-0101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-18-system-engineer-0101.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29642483805) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-18-system-engineer-0101.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-18-system-engineer-0101.md)
 
 ---
 
@@ -47,7 +50,7 @@ Walked in planner order (dependency-sorted window):
 
 1. ⚠️ **CI/CD Fundamentals: The Build-Test-Deploy Pipeline** — **76** · Accurate, well-structured concepts and working npm scripts, but a verified `npm ci` failure and a silent `git commit -am` no-op would trip a literal follower.
 2. ❌ **Docker Containerization Mastery** — **48** · One working hello-world container; everything else is empty placeholder scaffolding and the promised Compose/security/cloud content is absent.
-3. ⚠️ **GitHub Actions Basics** — **68** · Solid, well-verified concepts, but leaked Jekyll `{​% raw %​}{​% raw %​}{​% endraw %​}`/`{​% raw %​}{​% endraw %​}{​% endraw %​}` tags produce broken copy-paste YAML in the raw source, including in a required Mastery Indicator.
+3. ⚠️ **GitHub Actions Basics** — **68** · Solid, well-verified concepts, but leaked Jekyll `{% raw %}{% raw %}{% endraw %}`/`{% raw %}{% endraw %}{% endraw %}` tags produce broken copy-paste YAML in the raw source, including in a required Mastery Indicator.
 4. ❓ **Forging the La(zy)TeX CV** — **— (errored)** · No engine verdict — the run hit the 40-turn cap after `sudo`/network installs were denied. Thematic outlier for a CI/CD level; static read only (see §7).
 5. ⚠️ **The Warden's Gate: Kill Switches and Stage Gates** — **77** · Technically accurate and well-structured; its one true hands-on block needs a pre-existing authenticated repo from an earlier campaign chapter, an inherent genre limit rather than a defect.
 
@@ -75,7 +78,7 @@ Dimensions: commands_work **2**, content_accuracy **3**, completeness **1**, cla
 Dimensions: commands_work **3**, content_accuracy **3**, completeness **4**, clarity **3**, structure **4**, safety **5**.
 
 - ✅ **Setup + concept snippets passed** — Windows (`winget … ; New-Item … .github\workflows`) and Linux (`apt … gh git; mkdir -p .github/workflows`) blocks ran; the "Hello Actions" workflow and the `on:` trigger block (push/paths, pull_request, cron, workflow_dispatch) parse correctly; the `needs: build` ordering block passed.
-- ❌ **Leaked Jekyll raw-tags FAILED (tested) on the secrets and matrix blocks.** The source literally contains `${​% raw %​}{​% raw %​}{​% endraw %​}{​{ secrets.DEPLOY_TOKEN }​}{​% raw %​}{​% endraw %​}{​% endraw %​}`, `${​% raw %​}{​% raw %​}{​% endraw %​}{​{ matrix.os }​}{​% raw %​}{​% endraw %​}{​% endraw %​}` and `${​% raw %​}{​% raw %​}{​% endraw %​}{​{ matrix.node }​}{​% raw %​}{​% endraw %​}{​% endraw %​}` (lines 291, 333, 346), plus the same artifact in the **Mastery Indicator** (line 116) and **Intermediate Challenge** (line 375). Any raw-markdown consumer (GitHub file view, `git clone`, IDE preview) sees broken Actions syntax if copied as-is — the exact channel this review encountered it through. This is *reproducible in the source*, whatever the rendered site does.
+- ❌ **Leaked Jekyll raw-tags FAILED (tested) on the secrets and matrix blocks.** The source literally contains `${% raw %}{% raw %}{% endraw %}{{ secrets.DEPLOY_TOKEN }}{% raw %}{% endraw %}{% endraw %}`, `${% raw %}{% raw %}{% endraw %}{{ matrix.os }}{% raw %}{% endraw %}{% endraw %}` and `${% raw %}{% raw %}{% endraw %}{{ matrix.node }}{% raw %}{% endraw %}{% endraw %}` (lines 291, 333, 346), plus the same artifact in the **Mastery Indicator** (line 116) and **Intermediate Challenge** (line 375). Any raw-markdown consumer (GitHub file view, `git clone`, IDE preview) sees broken Actions syntax if copied as-is — the exact channel this review encountered it through. This is *reproducible in the source*, whatever the rendered site does.
 - ❌ **Cloud block `gh run list` FAILED (tested).** It reads as universally runnable but errors outside an authenticated Codespace attached to a repo with existing runs.
 
 ### 4. Forging the La(zy)TeX CV — no verdict ❓ (engine errored, 0 snippets scored)
@@ -94,7 +97,7 @@ Dimensions (per summary): technically accurate, well-structured; safety fine.
 - **high · Docker Mastery · body (lines ~114-150 + objectives) · tested.** 5 of 6 runnable blocks are empty comment stubs and the promised Docker Compose / security-optimization / cloud-deploy content is never authored (completeness = 1). *Fix:* author real chapters/snippets (a two-service `docker-compose.yml`, a multi-stage Dockerfile with non-root `USER` + `HEALTHCHECK`, a concrete `docker push`/cloud-run deploy) or remove those claims from objectives, checklist, and rewards so the quest doesn't over-promise.
 - **high · Docker Mastery · platform path stubs (lines 114-150) · tested.** Replace the placeholder blocks and bracketed "[Detailed instructions …]" text with actual per-OS commands, or drop the section — it currently ships as unfinished template output.
 - **high · CI/CD Fundamentals · Chapter 2 workflow `run: npm ci` (line 297) · tested.** Verified EUSAGE failure — the setup never generates/commits `package-lock.json`. *Fix:* either add `npm install` to the setup (and commit the lockfile) before the workflow is introduced, or change the workflow to `npm install`.
-- **high · GitHub Actions Basics · secrets/matrix/Mastery-Indicator/Challenge (lines 116, 291, 333, 346, 375) · tested.** Leaked `{​% raw %​}{​% raw %​}{​% endraw %​}…{​% raw %​}{​% endraw %​}{​% endraw %​}` tags render broken `${​% raw %​}{​{ … }​}{​% endraw %​}` expressions in raw markdown. *Fix:* correct the escaping so raw consumers see clean `${​% raw %​}{​{ secrets.DEPLOY_TOKEN }​}{​% endraw %​}` / `${​% raw %​}{​{ matrix.os }​}{​% endraw %​}` / `${​% raw %​}{​{ matrix.node }​}{​% endraw %​}`; especially important since the secrets form is a *required Mastery Indicator*.
+- **high · GitHub Actions Basics · secrets/matrix/Mastery-Indicator/Challenge (lines 116, 291, 333, 346, 375) · tested.** Leaked `{% raw %}{% raw %}{% endraw %}…{% raw %}{% endraw %}{% endraw %}` tags render broken `${% raw %}{{ … }}{% endraw %}` expressions in raw markdown. *Fix:* correct the escaping so raw consumers see clean `${% raw %}{{ secrets.DEPLOY_TOKEN }}{% endraw %}` / `${% raw %}{{ matrix.os }}{% endraw %}` / `${% raw %}{{ matrix.node }}{% endraw %}`; especially important since the secrets form is a *required Mastery Indicator*.
 
 **Medium**
 - **medium · CI/CD Fundamentals · Chapter 3 `git commit -am` (lines 340-343) · tested.** Silently no-ops for a new file. *Fix:* replace `# … make a tiny change …` with a concrete step that either creates and `git add`s a file, or edits an existing tracked one.
@@ -113,7 +116,7 @@ Dimensions (per summary): technically accurate, well-structured; safety fine.
 
 Reading the five in plan order as one journey for a System Engineer at this level:
 
-- **The mainline CI/CD thread is genuinely well-linked.** *CI/CD Fundamentals* → *GitHub Actions Basics* is a real, declared prerequisite chain (`github-actions-basics` frontmatter lists `required_quests: /quests/0101/cicd-fundamentals/`). Fundamentals leaves the learner with exactly the mental model (build-test-deploy, triggers, secrets) that Actions Basics builds on — good continuity, and the `${​% raw %​}{​{ secrets.NAME }​}{​% endraw %​}` concept even recurs across both quests reinforcing it.
+- **The mainline CI/CD thread is genuinely well-linked.** *CI/CD Fundamentals* → *GitHub Actions Basics* is a real, declared prerequisite chain (`github-actions-basics` frontmatter lists `required_quests: /quests/0101/cicd-fundamentals/`). Fundamentals leaves the learner with exactly the mental model (build-test-deploy, triggers, secrets) that Actions Basics builds on — good continuity, and the `${% raw %}{{ secrets.NAME }}{% endraw %}` concept even recurs across both quests reinforcing it.
 - **…but the same lockfile assumption threads through both quests.** Fundamentals never creates a `package-lock.json`, yet *both* it (Ch2) and Actions Basics (`npm ci` in the `needs:` and matrix blocks) assume one exists. A learner carrying Fundamentals' scaffolded repo into Actions Basics hits the identical `npm ci` wall twice — a real cross-quest prerequisite gap, not just a per-quest bug.
 - **Docker Mastery does not belong in this learning line as written.** It shares the level code but has no dependency edge to the CI/CD thread, its stated prerequisites point at Command-Line/Git quests, and its body is unfinished. A beginner who reaches it after Fundamentals gets no CI/CD continuity and one working container — it breaks the journey's momentum rather than advancing it.
 - **The LaTeX CV quest is a thematic outlier.** It's a "Professional Identity Path" CV-forging quest sitting inside a **CI/CD & DevOps** level. For a System Engineer sweeping this level it reads as an unrelated detour; nothing before it sets it up and nothing after it depends on it. Its own Chapter 1 sensibly warns "Don't have `cv.tex` yet? Create it first from Chapter 2, then return here," so its internal ordering is fine — it's the *level placement* that breaks continuity.

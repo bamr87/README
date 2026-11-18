@@ -3,8 +3,8 @@ Secret screen: find and redact credential-shaped strings in text.
 
 Crawled upstream Markdown flows into the committed corpus (`docs/`), the
 published site, AI prompts and MCP answers, so a credential committed
-upstream by mistake has to stop at ingest: `scripts/process.py` runs every
-page through `redact()`, `hooks.py` screens hook output, and `AIError`
+upstream by mistake has to stop at ingest: `collect.py` runs every page
+through `redact()`, `hooks.py` screens hook output, and `AIError`
 screens the provider response bodies it quotes.
 
 Only shapes that are almost never anything but a credential are matched:
@@ -17,7 +17,7 @@ prefix followed by one repeated character, a `<...>` template (no pattern
 matches `<` or `>`), and a PEM block with no real key material in it.
 
 A hit records the kind and the 1-based line of a match, never its value.
-Stdlib only: process.py, the engine and the hook runner all import it.
+Stdlib only: the collect stage, the engine and the hook runner all import it.
 """
 
 import re

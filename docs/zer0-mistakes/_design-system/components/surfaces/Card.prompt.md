@@ -1,5 +1,7 @@
 ---
-source_file: Card.prompt.md
+source_file: _design-system/components/surfaces/Card.prompt.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_design-system/components/surfaces/Card.prompt.md
 title: Card.Prompt
 ---
 Generic content surface — wrap any grouped content (post previews, panels, stats).

@@ -6,12 +6,15 @@ date: 2026-04-21 04:03:45+00:00
 description: 'How installer deploy targets work: self-contained modules under scripts/lib/install/deploy
   backed by templates, all implementing one shared contract.'
 lastmod: 2026-04-21 04:03:45+00:00
-source_file: deploy-targets.md
+source_file: docs/installation/deploy-targets.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/installation/deploy-targets.md
 tags:
 - installation
 - setup
 title: Deploy Targets
 ---
+
 # Deploy Targets
 
 Each deploy target is a self-contained module under [`scripts/lib/install/deploy/`](../../scripts/lib/install/deploy/) backed by templates under [`templates/deploy/<target>/`](../../templates/deploy/). All modules implement the same contract:

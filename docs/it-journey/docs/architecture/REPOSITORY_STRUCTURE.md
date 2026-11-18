@@ -1,5 +1,7 @@
 ---
-source_file: REPOSITORY_STRUCTURE.md
+source_file: docs/architecture/REPOSITORY_STRUCTURE.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/architecture/REPOSITORY_STRUCTURE.md
 title: IT-Journey Repository Structure
 ---
 # IT-Journey Repository Structure

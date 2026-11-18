@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29248386306
 slice: system-engineer/1001
-source_file: 2026-07-13-system-engineer-1001.md
+source_file: pages/_quest-reports/2026-07-13-system-engineer-1001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-13-system-engineer-1001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-13-system-engineer-1001.md
 tags:
 - system-engineer
 - level-1001
@@ -25,13 +27,14 @@ tags:
 - kubernetes-orchestration
 theme: Kubernetes Orchestration
 tier: Warrior
-title: 2026 07 13 System Engineer 1001
+title: System Engineer · L1001 · 2026-07-13
 verdict: fail
 walk_date: '2026-07-13'
 ---
+
 > **Slice** `system-engineer/1001` · **Level** 1001 (Kubernetes Orchestration) · **Warrior tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-13
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29248386306) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-13-system-engineer-1001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-13-system-engineer-1001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29248386306) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-13-system-engineer-1001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-13-system-engineer-1001.md)
 
 ---
 
@@ -50,7 +53,7 @@ Lab ran and matched every "Expected:" block exactly; only real defect is the Cha
 2. ❌ **Bind the Agent to the Realm: Dev Environment Integration** — `50` · Sound
 concepts, but `check_agent_env.sh` guaranteed-crashes on its first check (`((PASS++))` under `set -e`), checks for a file the quest never creates, and the AGENTS.md block has broken nested code fences.
 3. ❌ **The Shield of Retries: Safe Execution and Error Handling** — `43` · The
-Exercise 7.1 workflow fails to execute (leaked `{​% raw %​}{​% raw %​}{​% endraw %​}{​% endraw %​}` tags inside expressions), and the Exercise 7.3 test script is a non-functional stub with a mis-placed shebang.
+Exercise 7.1 workflow fails to execute (leaked `{% raw %}{% raw %}{% endraw %}{% endraw %}` tags inside expressions), and the Exercise 7.3 test script is a non-functional stub with a mis-placed shebang.
 4. ❌ **Vaults of Recollection: Agent Memory Strategies** — `48` · The flagship
 Exercise 8.1 workflow breaks two independent ways (indented heredoc terminator + leaked raw tags), and the validation command points at a script that doesn't exist.
 5. ✅ **Kubernetes Fundamentals: Container Orchestration Essentials** — `97` · Every
@@ -78,8 +81,8 @@ evaluates to 0 on the first success and returns exit 1, killing the script after
 - Dimensions: commands_work 1, content_accuracy 3, completeness 2, clarity 3, structure 4, safety 5.
 
 ### 3. Safe Execution & Error Handling — 5 runnable snippets, 3 failed
-- ❌ `agent-with-retries.yml` (Exercise 7.1): inline `{​% raw %​}{​% raw %​}…{​% endraw %​}{​% endraw %​}` tags land
-*inside* the shell/JS expressions (e.g. `--issue "${…{​{ github.event.issue.number }​}…}"`), so the extracted bash step fails with "bad substitution" and the github-script step throws a SyntaxError.
+- ❌ `agent-with-retries.yml` (Exercise 7.1): inline `{% raw %}{% raw %}…{% endraw %}{% endraw %}` tags land
+*inside* the shell/JS expressions (e.g. `--issue "${…{{ github.event.issue.number }}…}"`), so the extracted bash step fails with "bad substitution" and the github-script step throws a SyntaxError.
 - ❌ `test_failure_scenarios.sh` (Exercise 7.3): `#!/usr/bin/env bash` is on line 2
 (after a path comment), and the body is comment-only stubs — the exercise's stated objective ("Test failure recovery") is never actually delivered.
 - ❌ `python3 scripts/validate_quest.py --quest q7`: missing script.
@@ -88,7 +91,7 @@ evaluates to 0 on the first success and returns exit 1, killing the script after
 
 ### 4. Agent Memory Strategies — 4 runnable snippets, 2 failed
 - ❌ `agent-with-session-memory.yml` (Exercise 8.1): the `cat > … << 'EOF'` and
-`python3 - << 'EOF'` heredocs have **indented** closing `EOF` delimiters, so plain `<<` (not `<<-`) throws a bash syntax error; and the same inline `{​% raw %​}{​% raw %​}{​% endraw %​}{​% endraw %​}` leak corrupts every Actions expression in the cache keys and artifact names.
+`python3 - << 'EOF'` heredocs have **indented** closing `EOF` delimiters, so plain `<<` (not `<<-`) throws a bash syntax error; and the same inline `{% raw %}{% raw %}{% endraw %}{% endraw %}` leak corrupts every Actions expression in the cache keys and artifact names.
 - ❌ `python3 scripts/validate_quest.py --quest q8`: missing script.
 - ✅ Exercise 8.2 (`mkdir docs/agent-memory` + `touch`) and the Chapter-4 `learned-patterns.md` example both ran / parsed fine.
 - Dimensions: commands_work 1, content_accuracy 2, completeness 3, clarity 3, structure 4, safety 5.
@@ -111,7 +114,7 @@ There **are** blocking issues. Grouped by the systemic pattern first, since the 
 as a runnable command with faked ✅ output. The script does not exist — every learner who runs it gets `No such file or directory`. *Fix:* ship/link the script, or clearly relabel these as platform-side CI checks / sample output, not local commands.
 
 - **high · Safe Exec (7.1) & Memory Strategies (8.1) · leaked Liquid tags inside code
-fences ·** `{​% raw %​}{​% raw %​}…{​% endraw %​}{​% endraw %​}` is placed *inline within* Actions expressions rather than wrapping the whole fenced block. The engine (which reads raw `.md`) extracted literal tags and the code failed to execute. *Nuance I reasoned about:* on the *rendered* site Jekyll strips these tags, so a learner copying from the published page likely sees correct `${​{ … }​}`; but any agent/tool reading the repo source (and, ironically, these are agent quests) hits the literal tags. The clean fix already exists in this very slice — **Memory & State** wraps `{​% raw %​}{​% raw %​}{​% endraw %​}{​% endraw %​}` *outside* the fence, so its extracted YAML is clean. *Fix:* wrap raw tags at the block level like the codex chapter does, and never split an expression across a raw/endraw boundary.
+fences ·** `{% raw %}{% raw %}…{% endraw %}{% endraw %}` is placed *inline within* Actions expressions rather than wrapping the whole fenced block. The engine (which reads raw `.md`) extracted literal tags and the code failed to execute. *Nuance I reasoned about:* on the *rendered* site Jekyll strips these tags, so a learner copying from the published page likely sees correct `${{ … }}`; but any agent/tool reading the repo source (and, ironically, these are agent quests) hits the literal tags. The clean fix already exists in this very slice — **Memory & State** wraps `{% raw %}{% raw %}{% endraw %}{% endraw %}` *outside* the fence, so its extracted YAML is clean. *Fix:* wrap raw tags at the block level like the codex chapter does, and never split an expression across a raw/endraw boundary.
 
 **Per-quest defects:**
 

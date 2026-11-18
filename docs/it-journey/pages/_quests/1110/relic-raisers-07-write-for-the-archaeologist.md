@@ -73,7 +73,9 @@ rewards:
   unlocks_features:
   - A portfolio repository: a legacy system revived, proven, gated, and documented
 skill_focus: devops
-source_file: relic-raisers-07-write-for-the-archaeologist.md
+source_file: pages/_quests/1110/relic-raisers-07-write-for-the-archaeologist.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/relic-raisers-07-write-for-the-archaeologist.md
 tags:
 - '1110'
 - documentation
@@ -84,7 +86,7 @@ tags:
 - architecture
 - project-based
 - gamified-learning
-title: Restart the gate with the relic answering. Nothing else changes.
+title: 'Write for the Archaeologist: Leave the Lore Where the Next One Digs'
 validation_criteria:
   completion_requirements:
   - README.md runbook with run, verify, and roll-back sections, every command taken
@@ -363,10 +365,10 @@ graph LR
 
 The relic is raised and the reasons are written down. Two campaigns continue the same discipline in other realms:
 
-- 🏺 **Campaign hub:** [Epic Quest: The Relic Raisers](/quests/codex/relic-raisers/) — claim the capstone badge
-- 🤖 [Epic Quest: The Agentic Codex](/quests/codex/agentic-codex/) — build and govern the familiars you commanded here
-- 🏰 [Epic Quest: The Self-Operating Website](/quests/codex/self-operating-website/) — verify-before-trust, applied to a site that runs itself
-- 🧩 [Domain-Driven Design](/quests/1110/domain-driven-design/) — the craft of naming what an old system knows
+- 🏺 **Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]] — claim the capstone badge
+- 🤖 [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] — build and govern the familiars you commanded here
+- 🏰 [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] — verify-before-trust, applied to a site that runs itself
+- 🧩 [[it-journey/pages/_quests/1110/domain-driven-design|Domain-Driven Design]] — the craft of naming what an old system knows
 
 ## 📚 Resource Codex
 
@@ -377,6 +379,6 @@ The relic is raised and the reasons are written down. Two campaigns continue the
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Relic Raisers]] **Level hub:** [[Level 1110 - Quality Assurance]] **Previous:** [[The Strangler Fig: Put a Modern Gate in Front of the Relic]] **Next:** none — the campaign ends here **Siblings:** [[Epic Quest: The Agentic Codex]] · [[Epic Quest: The Self-Operating Website]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/relic-raisers|Epic Quest: The Relic Raisers]] **Level hub:** [[it-journey/pages/_quests/1110/README|Level 1110 - Quality Assurance]] **Previous:** [[it-journey/pages/_quests/0111/relic-raisers-06-the-strangler-fig|The Strangler Fig: Put a Modern Gate in Front of the Relic]] **Next:** none — the campaign ends here **Siblings:** [[it-journey/pages/_quests/codex/agentic-codex|Epic Quest: The Agentic Codex]] · [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

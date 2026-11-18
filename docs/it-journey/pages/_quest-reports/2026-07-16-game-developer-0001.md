@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29494904212
 slice: game-developer/0001
-source_file: 2026-07-16-game-developer-0001.md
+source_file: pages/_quest-reports/2026-07-16-game-developer-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-16-game-developer-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-16-game-developer-0001.md
 tags:
 - game-developer
 - level-0001
@@ -25,13 +27,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 07 16 Game Developer 0001
+title: Game Developer · L0001 · 2026-07-16
 verdict: warn
 walk_date: '2026-07-16'
 ---
+
 > **Slice** `game-developer/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ⚠️ warn · **Walked** 2026-07-16
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29494904212) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-16-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-16-game-developer-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29494904212) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-16-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-16-game-developer-0001.md)
 
 ---
 
@@ -95,11 +98,11 @@ actually fast-forwarded in the sandbox (no divergent main commits) — diagram o
 
 ### 5 · Liquid Templating — ⚠️ 71 · ran 13/4 runnable (1 ✗), 1 reasoned, 1 skipped
 - **passed** — Chapters 1/3/4 snippets reproduced under Jekyll 4.4.1:
-  `{​{ greeting | upcase }​}`→`HI`, the capitalize/replace chain, `forloop.index`,
-`sort`+`reversed`, `_data/navigation.yml` loop, parameterized `{​% include card.html title=... %​}`, layout wrapping, `comment`, `raw`.
+  `{{ greeting | upcase }}`→`HI`, the capitalize/replace chain, `forloop.index`,
+`sort`+`reversed`, `_data/navigation.yml` loop, parameterized `{% include card.html title=... %}`, layout wrapping, `comment`, `raw`.
 - **passed** — all 6 external doc links returned HTTP 200.
 - **failed** — Chapter 2 flagship badge logic
-  `{​% elsif post.date > site.time | date: "%s" | minus: 604800 %​}` throws
+  `{% elsif post.date > site.time | date: "%s" | minus: 604800 %}` throws
 `Liquid syntax error: Expected end_of_string but found pipe` on every build; filters are not allowed inside `if`/`elsif` conditions, so the "New" badge date comparison never runs.
 - **reasoned** — the `forloop.first`/`unless` comma-suppression example is
 functionally correct but the inline comment implies a single clean line that a learner won't see without whitespace-control dashes.
@@ -114,8 +117,8 @@ Concrete, evidenced problems only. Every item cites a command result from the se
 - **high** · Jekyll Fundamentals · Chapter 4 "One Repo, Two Configs" · *observed:*
 merging `_config_dev.yml` (which sets `theme: "jekyll-theme-zer0"`) via `--config _config.yml,_config_dev.yml` throws a fatal `MissingDependencyException` because the theme gem is never installed. · *fix:* add the install/Gemfile step (`gem install jekyll-theme-zer0` + `jekyll-remote-theme`) before the example, or swap to an already-installed theme (e.g. `minima`) so the merged config runs.
 - **high** · Liquid Templating · Chapter 2 "Looping and Branching" ·
-  `{​% elsif post.date > site.time | date: "%s" | minus: 604800 %​}` · *observed:*
-invalid Liquid (filter inside condition) → syntax-error warning on every build, badge logic never evaluates. · *fix:* precompute with `{​% assign week_ago = ... %​}` before the loop and coerce both sides to the same numeric type, then compare `{​% elsif post_ts > week_ago %​}` (engine confirmed the corrected pattern builds clean).
+  `{% elsif post.date > site.time | date: "%s" | minus: 604800 %}` · *observed:*
+invalid Liquid (filter inside condition) → syntax-error warning on every build, badge logic never evaluates. · *fix:* precompute with `{% assign week_ago = ... %}` before the loop and coerce both sides to the same numeric type, then compare `{% elsif post_ts > week_ago %}` (engine confirmed the corrected pattern builds clean).
 - **high** · GitHub Pages Basics · Chapter 1 `gh api` Pages-enable (lines 146-147) ·
 `repos/:owner/my-castle/pages` · *observed:* `gh api` supports only `{owner}` placeholders; `:owner` is sent literally and the call fails. · *fix:* use `repos/{owner}/my-castle/pages` or tell readers to substitute their real username.
 
@@ -141,7 +144,7 @@ merge commit, omitting the common fast-forward case (which is what actually happ
 - **low** · GitHub Pages Basics · Pre-Launch Checklist "robots.txt and sitemap.xml
 generated" (line 309) — a bare `jekyll new` site generates neither without `jekyll-sitemap`. · *fix:* note the plugin requirement. Also mention optional IPv6 AAAA records alongside the four A records.
 - **low** · Liquid Templating · Intermediate Challenge requires an
-`{​% if item.url == page.url %​}active{​% endif %​}` current-page comparison never demonstrated in the lesson; `case`/`when` and `and`/`or`/`contains` are named in prose but never shown as code. · *fix:* add short worked examples.
+`{% if item.url == page.url %}active{% endif %}` current-page comparison never demonstrated in the lesson; `case`/`when` and `and`/`or`/`contains` are named in prose but never shown as code. · *fix:* add short worked examples.
 
 ## 🔗 Chain Continuity
 

@@ -74,7 +74,9 @@ rewards:
   unlocks_features:
   - Ability to harden real applications against common web attacks
 skill_focus: security
-source_file: secure-coding.md
+source_file: pages/_quests/1011/secure-coding.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1011/secure-coding.md
 sub_title: 'Level 1011 (11) Quest: Main Quest - Secure Coding'
 tags:
 - '1011'
@@ -84,7 +86,7 @@ tags:
 - input-validation
 - hands-on
 - gamified-learning
-title: Python toolchain plus a couple of security tools
+title: 'Secure Coding: Preventing the OWASP Top 10'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -132,7 +134,7 @@ You'll know you've truly mastered this quest when you can:
 ## 🗺️ Quest Prerequisites
 
 ### 📋 Knowledge Requirements
-- [ ] Completion of [Security Fundamentals](/quests/1011/security-fundamentals/) (recommended)
+- [ ] Completion of [[it-journey/pages/_quests/1011/security-fundamentals|Security Fundamentals]] (recommended)
 - [ ] Ability to read and write code in at least one language
 - [ ] Basic understanding of HTTP requests, databases, and HTML
 
@@ -453,17 +455,17 @@ bandit -r ./src --severity-level medium
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Threat Modeling](/quests/1011/threat-modeling/) - Design out whole classes of bugs
+- 🎯 [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling]] - Design out whole classes of bugs
 
 **Explore Side Adventures**:
-- ⚔️ [Penetration Testing](/quests/1011/penetration-testing/) - Attack your own work
-- ⚔️ [Compliance Standards](/quests/1011/compliance-standards/) - Prove your controls to auditors
+- ⚔️ [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing]] - Attack your own work
+- ⚔️ [[it-journey/pages/_quests/1011/compliance-standards|Compliance Standards]] - Prove your controls to auditors
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Threat Modeling](/quests/1011/threat-modeling/)  
-**🏗️ System Engineer**: Explore [Compliance Standards](/quests/1011/compliance-standards/)  
-**🛡️ Security Specialist**: Advance to [Penetration Testing](/quests/1011/penetration-testing/)
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1011/compliance-standards|Compliance Standards]]  
+**🛡️ Security Specialist**: Advance to [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing]]
 
 ## 📚 Resources
 
@@ -493,6 +495,6 @@ bandit -r ./src --severity-level medium
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1011 - Security & Compliance]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Security Fundamentals: CIA Triad and Defense in Depth Strategies]] **Unlocks:** [[Threat Modeling: STRIDE Framework and Attack Trees Analysis]] · [[Penetration Testing: Tools and Ethical Hacking Methodologies]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1011 - Security & Compliance]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Security Fundamentals: CIA Triad and Defense in Depth Strategies]] **Unlocks:** [[it-journey/pages/_quests/1011/threat-modeling|Threat Modeling: STRIDE Framework and Attack Trees Analysis]] · [[it-journey/pages/_quests/1011/penetration-testing|Penetration Testing: Tools and Ethical Hacking Methodologies]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

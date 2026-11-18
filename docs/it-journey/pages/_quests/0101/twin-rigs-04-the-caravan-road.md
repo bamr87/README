@@ -71,7 +71,9 @@ rewards:
   - 🐫 Safe rsync workflows with dry runs
   - 🛡️ Backups and scheduled integrity checks
 skill_focus: infrastructure
-source_file: twin-rigs-04-the-caravan-road.md
+source_file: pages/_quests/0101/twin-rigs-04-the-caravan-road.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0101/twin-rigs-04-the-caravan-road.md
 tags:
 - '0101'
 - raspberry-pi
@@ -81,7 +83,7 @@ tags:
 - main_quest
 - hands-on
 - gamified-learning
-title: rsync needs a Linux shell, so run this chapter's fortress steps inside WSL.
+title: 'The Caravan Road: Turn the Pi into a Console'
 validation_criteria:
   completion_requirements:
   - The Pi boots to ES-DE and plays with no keyboard
@@ -105,7 +107,7 @@ By the end of this chapter you will:
 
 ## 🗺️ Quest Prerequisites
 
-- **[Chapter III](/quests/0100/twin-rigs-03-waking-the-arcade/)** — Rewind Arcade running on the Pi
+- **[[it-journey/pages/_quests/0100/twin-rigs-03-waking-the-arcade|Chapter III]]** — Rewind Arcade running on the Pi
 - **`rsync` on your fortress** — it ships with macOS and most Linux systems
 - **A USB gamepad** — the one from your ledger
 
@@ -330,9 +332,9 @@ graph LR
 
 The first rig is complete. The second one will not fit in your hand.
 
-- ➡️ **Next chapter:** [Chapter V — The Great Forge](/quests/0110/twin-rigs-05-the-great-forge/)
-- ⬅️ **Previous chapter:** [Chapter III — Waking the Arcade](/quests/0100/twin-rigs-03-waking-the-arcade/)
-- 👑 **Campaign hub:** [Epic Quest: The Twin Rigs](/quests/codex/twin-rigs/)
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/0110/twin-rigs-05-the-great-forge|Chapter V — The Great Forge]]
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/0100/twin-rigs-03-waking-the-arcade|Chapter III — Waking the Arcade]]
+- 👑 **Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]]
 
 ## 📚 Resource Codex
 
@@ -342,6 +344,6 @@ The first rig is complete. The second one will not fit in your hand.
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Twin Rigs]] **Level hub:** [[Level 0101 - Advanced Docker & DevOps]] **Previous:** [[Waking the Arcade: Bring Rewind Arcade to Life on the Pi]] **Next:** [[The Great Forge: Assemble a Desktop from Bare Parts]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]] **Level hub:** [[it-journey/pages/_quests/0101/README|Level 0101 - Advanced Docker & DevOps]] **Previous:** [[it-journey/pages/_quests/0100/twin-rigs-03-waking-the-arcade|Waking the Arcade: Bring Rewind Arcade to Life on the Pi]] **Next:** [[it-journey/pages/_quests/0110/twin-rigs-05-the-great-forge|The Great Forge: Assemble a Desktop from Bare Parts]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

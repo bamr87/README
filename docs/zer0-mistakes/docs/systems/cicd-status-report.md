@@ -6,12 +6,15 @@ date: 2025-09-01 18:02:06+00:00
 description: 'Current status of the GitHub Actions CI/CD pipeline: test stages, platform
   matrix, markdown quality checks, and operational components.'
 lastmod: 2026-06-01 03:38:46+00:00
-source_file: cicd-status-report.md
+source_file: docs/systems/cicd-status-report.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/cicd-status-report.md
 tags:
 - systems
 - automation
 title: CI/CD Testing Framework - Status Report
 ---
+
 # CI/CD Testing Framework - Status Report
 
 ## Framework Components

@@ -11,7 +11,9 @@ permalink: /docs/deployment/
 preview: /images/previews/deployment.png
 sidebar:
   nav: docs
-source_file: index.md
+source_file: pages/_docs/deployment/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/deployment/index.md
 tags:
 - deployment
 - hosting
@@ -19,6 +21,7 @@ tags:
 - netlify
 title: Deployment
 ---
+
 # Deployment
 
 Deploy your Zer0-Mistakes Jekyll site to various hosting platforms.
@@ -79,7 +82,7 @@ In production, ensure:
 
 ## See also
 
-- [[Docker]]
-- [[Jekyll]]
+- [[zer0-mistakes/docker/README|Docker]]
+- [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
 - [[SEO]]
-- [[Analytics]]
+- [[zer0-mistakes/fr/docs/analytics/index|Analytics]]

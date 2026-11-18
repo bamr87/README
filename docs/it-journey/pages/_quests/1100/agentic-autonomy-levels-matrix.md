@@ -58,7 +58,9 @@ rewards:
   - 🎚️ Autonomy Calibration
   - 🗂️ Task Classification
 skill_focus: devops
-source_file: agentic-autonomy-levels-matrix.md
+source_file: pages/_quests/1100/agentic-autonomy-levels-matrix.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/agentic-autonomy-levels-matrix.md
 sub_title: 'Level 1100 Quest 2/4 — Domain 6: Responsible Agentic AI'
 tags:
 - '1100'
@@ -68,7 +70,7 @@ tags:
 - gh-600
 - main_quest
 - hands-on
-title: _data/autonomy-matrix.yml
+title: 'The Autonomy Scales: Mapping Agent Autonomy Levels'
 validation_criteria:
   completion_requirements:
   - Autonomy level matrix documented for at least 5 task types
@@ -275,11 +277,11 @@ python3 scripts/validate_quest.py --quest q18
 | ⚖️ Scale Master Badge | Earned on completion |
 | 🎚️ Autonomy Calibration | Skill unlocked |
 | 100 XP | Added to Level 1100 total |
-| Unlocks | [Q19: The Warden's Pact](/quests/1100/agentic-guardrails-and-human-in-the-loop/) |
+| Unlocks | [[it-journey/pages/_quests/1100/agentic-guardrails-and-human-in-the-loop\|Q19: The Warden's Pact]] |
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[GH-600 Agentic AI Quick-Reference Notes]] · [[Autonomy Levels Matrix]] **Prerequisites:** [[The Agent Pantheon: Multi-Agent Lifecycle Management]] **Unlocks:** [[The Warden's Pact: Guardrails and Human-in-the-Loop Patterns]] **Sequel quests:** [[The Warden's Pact: Guardrails and Human-in-the-Loop Patterns]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1100 - Data & Templates]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Study track:** [[The Agentic Codex: GH-600 Study Hub]] · [[it-journey/pages/_notes/gh-600/index|GH-600 Agentic AI Quick-Reference Notes]] · [[it-journey/pages/_notes/gh-600/autonomy-levels-matrix|Autonomy Levels Matrix]] **Prerequisites:** [[it-journey/pages/_quests/1100/agentic-multi-agent-lifecycle-management|The Agent Pantheon: Multi-Agent Lifecycle Management]] **Unlocks:** [[The Warden's Pact: Guardrails and Human-in-the-Loop Patterns]] **Sequel quests:** [[The Warden's Pact: Guardrails and Human-in-the-Loop Patterns]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

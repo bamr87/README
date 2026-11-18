@@ -25,12 +25,14 @@ redirect_from:
 sidebar:
   nav: auto
 sitemap: false
-source_file: graph.md
+source_file: pages/_notes/obsidian/graph.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/obsidian/graph.md
 tags:
 - obsidian
 - graph
 - navigation
-title: Obsidian Graph View
+title: Obsidian Graph View — Wiki Link Navigation
 toc_sticky: true
 ---
 <style>

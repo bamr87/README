@@ -77,7 +77,9 @@ rewards:
   unlocks_features:
   - Access to the Architecture & Design Patterns quest line
 skill_focus: fullstack
-source_file: design-patterns.md
+source_file: pages/_quests/1110/design-patterns.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1110/design-patterns.md
 sub_title: 'Level 1110 (14) Quest: Main Quest - Design Patterns'
 tags:
 - '1110'
@@ -87,7 +89,7 @@ tags:
 - solid
 - hands-on
 - gamified-learning
-title: Python ships with modern macOS, but a Homebrew install is cleaner
+title: 'Software Design Patterns: Gang of Four and Modern Patterns'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -470,16 +472,16 @@ The Strategy pattern from Chapter 2 is the Open/Closed Principle made concrete: 
 ## 🗺️ Next Steps in Your Journey
 
 **Continue the Main Story**:
-- 🎯 [Domain-Driven Design](/quests/1110/domain-driven-design/) - From objects to a shared model of the domain
+- 🎯 [[it-journey/pages/_quests/1110/domain-driven-design|Domain-Driven Design]] - From objects to a shared model of the domain
 
 **Explore Side Adventures**:
-- ⚔️ [Microservices Architecture](/quests/1110/microservices-architecture/) - Patterns at the system scale
-- ⚔️ [Event-Driven Design](/quests/1110/event-driven-design/) - Observer, grown up
+- ⚔️ [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]] - Patterns at the system scale
+- ⚔️ [[it-journey/pages/_quests/1110/event-driven-design|Event-Driven Design]] - Observer, grown up
 
 ### Character Class Recommendations
 
-**💻 Software Developer**: Continue to [Domain-Driven Design](/quests/1110/domain-driven-design/)  
-**🏗️ System Engineer**: Explore [Microservices Architecture](/quests/1110/microservices-architecture/)  
+**💻 Software Developer**: Continue to [[it-journey/pages/_quests/1110/domain-driven-design|Domain-Driven Design]]  
+**🏗️ System Engineer**: Explore [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture]]  
 **🛡️ Security Specialist**: Revisit how Dependency Inversion eases secure dependency swaps
 
 ## 📚 Resources
@@ -509,6 +511,6 @@ The Strategy pattern from Chapter 2 is the Open/Closed Principle made concrete: 
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Unlocks:** [[Domain-Driven Design: Modeling the Business in Code]] · [[Microservices Architecture: Decomposing the Monolith]] · [[Event-Driven Design: Pub/Sub, Event Sourcing, and CQRS]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[Level 1110 - Architecture & Design Patterns]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Unlocks:** [[it-journey/pages/_quests/1110/domain-driven-design|Domain-Driven Design: Modeling the Business in Code]] · [[it-journey/pages/_quests/1110/microservices-architecture|Microservices Architecture: Decomposing the Monolith]] · [[it-journey/pages/_quests/1110/event-driven-design|Event-Driven Design: Pub/Sub, Event Sourcing, and CQRS]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

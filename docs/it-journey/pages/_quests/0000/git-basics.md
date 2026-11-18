@@ -73,7 +73,9 @@ rewards:
   - Collaborative development workflows
   - Code review via pull requests
 skill_focus: devops
-source_file: git-basics.md
+source_file: pages/_quests/0000/git-basics.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/git-basics.md
 sub_title: 'Level 0000 (0) Quest: Main Quest - Git'
 tags:
 - '0000'
@@ -82,7 +84,7 @@ tags:
 - devops
 - hands-on
 - gamified-learning
-title: Git comes with Xcode CLI tools, or install via Homebrew
+title: 'Git Basics: Version Control Introduction'
 validation_criteria:
   completion_requirements:
   - All primary objectives completed
@@ -992,7 +994,7 @@ Before claiming your reward, you should be able to answer:
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Prerequisites:** [[Terminal Fundamentals: Command Line Navigation Quest]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Prerequisites:** [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals: Command Line Navigation Quest]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

@@ -7,9 +7,12 @@ permalink: /series/ulysses/07-aeolus/
 sidebar:
   nav: series
   title: Browse the series
-source_file: 07-aeolus.md
-title: 07 Aeolus
+source_file: examples/swerve-of-shore/pages/series/ulysses/07-aeolus.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/examples/swerve-of-shore/pages/series/ulysses/07-aeolus.md
+title: 07 · Aeolus
 ---
+
 {% include page-header.html %}
 
 Episode 7 of *Ulysses*. Noon, the newspaper offices.

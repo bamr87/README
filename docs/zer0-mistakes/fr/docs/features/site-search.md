@@ -15,7 +15,9 @@ permalink: /fr/docs/features/site-search/
 preview: /images/previews/site-search.png
 sidebar:
   nav: docs
-source_file: site-search.md
+source_file: fr/docs/features/site-search.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/features/site-search.md
 tags:
 - search
 - navigation
@@ -26,6 +28,7 @@ translated_from_sha: 6cec0dc08d9c
 translation_of: pages/_docs/features/site-search.md
 translation_source_url: /docs/features/site-search/
 ---
+
 # Recherche sur le site
 
 Fonctionnalité de recherche côté client avec une interface modale Bootstrap et une activation par raccourci clavier.
@@ -318,10 +321,10 @@ searchInput.addEventListener('input', () => {
 
 ## Voir aussi
 
-- [Navigation au clavier](/docs/features/keyboard-navigation/)
-- [Composants modaux](/docs/bootstrap/)
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Navigation au clavier]]
+- [[zer0-mistakes/pages/_docs/bootstrap/index|Composants modaux]]
 
 ## Voir aussi
 
-- [[Features]]
-- [[Keyboard Navigation]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]

@@ -18,7 +18,9 @@ prerequisites:
 preview: /images/previews/ci-cd-pipeline.png
 sidebar:
   nav: docs
-source_file: ci-cd.md
+source_file: fr/docs/development/ci-cd.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/fr/docs/development/ci-cd.md
 tags:
 - ci-cd
 - github-actions
@@ -29,6 +31,7 @@ translated_from_sha: 33cc91ba86fc
 translation_of: pages/_docs/development/ci-cd.md
 translation_source_url: /docs/development/ci-cd/
 ---
+
 # Pipeline CI/CD
 
 Le thème Zer0-Mistakes utilise GitHub Actions pour l'intégration et le déploiement continus, en automatisant les tests, la compilation et la publication.
@@ -308,13 +311,13 @@ permissions:
 
 ## Ressources associées
 
-- [Guide de test](/docs/development/testing/)
-- [Incrémentation de version](/docs/development/version-bump/)
-- [Gestion des versions](/docs/development/release-management/)
+- [[zer0-mistakes/pages/_docs/development/testing|Guide de test]]
+- [[zer0-mistakes/pages/_docs/development/version-bump|Incrémentation de version]]
+- [[zer0-mistakes/pages/_docs/development/release-management|Gestion des versions]]
 
 ## Voir aussi
 
-- [[Development]]
-- [[Testing]]
-- [[Release Management]]
-- [[Security Scanning]]
+- [[zer0-mistakes/pages/_docs/development/index|Development]]
+- [[zer0-mistakes/fr/docs/development/testing|Testing]]
+- [[zer0-mistakes/pages/_docs/development/release-management|Release Management]]
+- [[zer0-mistakes/pages/_docs/development/security|Security Scanning]]

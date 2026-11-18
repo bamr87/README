@@ -15,8 +15,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/33501251884
 slice: digital-artist/0001
-source_file: 2026-09-01-digital-artist-0001.md
+source_file: pages/_quest-reports/2026-09-01-digital-artist-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-09-01-digital-artist-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-09-01-digital-artist-0001.md
 tags:
 - digital-artist
 - level-0001
@@ -26,13 +28,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 09 01 Digital Artist 0001
+title: Digital Artist · L0001 · 2026-09-01
 verdict: warn
 walk_date: '2026-09-01'
 ---
+
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ⚠️ warn (avg 71.8%) · **Walked** 2026-09-01
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/33501251884) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-09-01-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-09-01-digital-artist-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/33501251884) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-09-01-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-09-01-digital-artist-0001.md)
 
 ---
 
@@ -63,7 +66,7 @@ All outcomes below are commands the execute engine actually ran in its own dispo
 - **Passed:** table snippet rendered with python-markdown's `tables` extension into a correctly left/center/right-aligned `<table>`; footnote snippet rendered a superscript backlink plus a footnote block, "exactly as described."
 - **Passed:** the 4-backtick-wrapping-3-backtick fenced-code trick extracted and ran the embedded `greet('World')` Python function, returning `Hello, World` as expected.
 - **Passed:** Kramdown attribute-list snippet (`{: .lead #intro }`) rendered via python-markdown's `attr_list` extension into `<p class="lead" id="intro">` exactly as claimed; definition-list and frontmatter-YAML snippets both parsed/rendered cleanly (PyYAML for the frontmatter block).
-- **Passed:** installed `python-liquid` and rendered the quest's own `{​% raw %​}...{​% endraw %​}` block — output was the literal, unexecuted Liquid tags, confirming the raw/endraw teaching point.
+- **Passed:** installed `python-liquid` and rendered the quest's own `{% raw %}...{% endraw %}` block — output was the literal, unexecuted Liquid tags, confirming the raw/endraw teaching point.
 - **Skipped/environmental:** `code guide.md` exits 127 in the headless sandbox (no VS Code installed) — noted by the engine as an environmental limitation, not a quest defect; the Windows PowerShell block was `skipped` (no Windows env available) but judged well-formed by inspection.
 
 ### 2. Barodybroject Stack Analysis — ⚠️ 69 (8 of 8 runnable blocks executed; 15 more judged `reasoned` as illustrative diagrams/trees/tables)

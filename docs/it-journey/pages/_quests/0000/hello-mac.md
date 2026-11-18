@@ -70,14 +70,16 @@ rewards:
   - Access to VS Code Mastery quest
   - Professional macOS development workflow
 skill_focus: fullstack
-source_file: hello-mac.md
+source_file: pages/_quests/0000/hello-mac.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0000/hello-mac.md
 tags:
 - macos
 - homebrew
 - iterm2
 - terminal
 - developer-tools
-title: Hello Mac
+title: 'Hello macOS: Setting Up the Apple Kingdom'
 validation_criteria:
   completion_requirements:
   - Install Xcode Command Line Tools
@@ -214,7 +216,7 @@ You should see valid versions for each command.
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Level hub:** [[Level 0000 - Foundation & Init World]] **Overworld:** [[🏰 Overworld - Master Quest Map]] **Recommended:** [[Hello n00b: Your First Steps into the IT Journey]] · [[OS Selection]] **Unlocks:** [[VS Code Mastery Quest: Forge Your Ultimate Development Weapon]] · [[Terminal Fundamentals: Command Line Navigation Quest]] **Sequel quests:** [[VS Code Mastery Quest: Forge Your Ultimate Development Weapon]] **Parallel quests:** [[Hello Windows: Mastering the Windows Development Environment]] · [[Linux Fundamentals]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Level hub:** [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] **Overworld:** [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] **Recommended:** [[it-journey/pages/_quests/0000/hello-noob|Hello n00b: Your First Steps into the IT Journey]] · [[OS Selection]] **Unlocks:** [[VS Code Mastery Quest: Forge Your Ultimate Development Weapon]] · [[it-journey/pages/_quests/0000/terminal-fundamentals|Terminal Fundamentals: Command Line Navigation Quest]] **Sequel quests:** [[VS Code Mastery Quest: Forge Your Ultimate Development Weapon]] **Parallel quests:** [[it-journey/pages/_quests/0000/hello-win|Hello Windows: Mastering the Windows Development Environment]] · [[Linux Fundamentals]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]
 

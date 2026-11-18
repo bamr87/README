@@ -1,8 +1,9 @@
 ---
-source_file: editorial-charter.md
+source_file: docs/amendments/proposed/editorial-charter.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/amendments/proposed/editorial-charter.md
 title: NEW — Editorial charter for quests
 ---
-<!-- kit: governance v0.1.0 -->
 # NEW — Editorial charter for quests
 
 - **Status:** proposed

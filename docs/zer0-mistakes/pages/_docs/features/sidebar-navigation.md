@@ -12,21 +12,24 @@ permalink: /docs/features/sidebar-navigation/
 preview: /images/previews/sidebar-navigation-system.png
 sidebar:
   nav: docs
-source_file: sidebar-navigation.md
+source_file: pages/_docs/features/sidebar-navigation.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_docs/features/sidebar-navigation.md
 tags:
 - sidebar
 - navigation
 - scroll-spy
 - accessibility
-title: Enhanced Sidebar Navigation System
+title: Sidebar Navigation System
 ---
+
 # Enhanced Sidebar Navigation System
 
 The Zer0-Mistakes theme includes a modern sidebar navigation system with performance-optimized scroll tracking and accessibility features.
 
 ![A documentation page showing the collapsible "Browse docs" sidebar on the left, the article in the center, and an "On this page" table of contents on the right](/assets/images/docs/features/docs-layout.png)
 
-The **Browse docs** sidebar on the left is the enhanced navigation system; the **On this page** panel on the right is the [table of contents](/docs/features/toc/).
+The **Browse docs** sidebar on the left is the enhanced navigation system; the **On this page** panel on the right is the [[zer0-mistakes/pages/_docs/features/toc|table of contents]].
 
 ## Overview
 
@@ -382,9 +385,9 @@ Using Bootstrap Icons throughout:
 
 ## Related
 
-- [Keyboard Navigation](/docs/features/keyboard-navigation/)
-- [Mobile TOC Button](/docs/features/mobile-toc/)
-- [Table of Contents](/docs/features/toc/)
+- [[zer0-mistakes/pages/_docs/features/keyboard-navigation|Keyboard Navigation]]
+- [[zer0-mistakes/pages/_docs/features/mobile-toc|Mobile TOC Button]]
+- [[zer0-mistakes/pages/_docs/features/toc|Table of Contents]]
 
 ## Technical Reference
 
@@ -395,6 +398,6 @@ For implementation details (scroll spy, swipe gestures, keyboard shortcuts, ARIA
 
 ## See also
 
-- [[Features]]
-- [[Breadcrumbs Navigation]]
-- [[Mobile TOC Floating Action Button]]
+- [[zer0-mistakes/features/README|Features]]
+- [[zer0-CMS/sites/zer0-pages/pages/_docs/features/breadcrumbs|Breadcrumbs Navigation]]
+- [[zer0-mistakes/pages/_docs/features/mobile-toc|Mobile TOC Floating Action Button]]

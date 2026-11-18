@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29412020762
 slice: digital-artist/0001
-source_file: 2026-07-15-digital-artist-0001.md
+source_file: pages/_quest-reports/2026-07-15-digital-artist-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-15-digital-artist-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-15-digital-artist-0001.md
 tags:
 - digital-artist
 - level-0001
@@ -25,13 +27,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 07 15 Digital Artist 0001
+title: Digital Artist · L0001 · 2026-07-15
 verdict: fail
 walk_date: '2026-07-15'
 ---
+
 > **Slice** `digital-artist/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-15
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29412020762) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-15-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-15-digital-artist-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29412020762) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-15-digital-artist-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-15-digital-artist-0001.md)
 
 ---
 
@@ -68,7 +71,7 @@ created; `code guide.md` reported `command not found` only because VS Code isn't
 - **Footnote `[^speed]`** → `passed`. Produced `<sup id="fnref:speed">` linked to a backlinked `<li id="fn:speed">`.
 - **Task list `- [x]` / fenced ```` ```python ````** → `passed` *with a caveat*:
 under plain kramdown both render as literal text; they only become checkboxes / highlighted code once `kramdown-parser-gfm` (GFM input mode) is loaded — Jekyll's default, but the quest states it unconditionally.
-- **Attribute list `{: .lead #intro }`, definition list, `{​% raw %​}` Liquid block,
+- **Attribute list `{: .lead #intro }`, definition list, `{% raw %}` Liquid block,
 YAML frontmatter** → all `passed` (kramdown / liquid gem / PyYAML), matching the quest's claims.
 - **Windows PowerShell block** → `skipped` (Linux/pwsh backslash-path artifact, not a quest defect). **Cloud Realms block** → `reasoned` (comment-only, nothing to run).
 

@@ -5,18 +5,18 @@
   "title": "Adr",
   "corpus": "docs/adr",
   "counts": {
-    "pages": 3,
+    "pages": 4,
     "sections": 0,
     "max_depth": 1,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "4a1e5aee1763e8ad",
+  "fingerprint": "5e760fee94927e8b",
   "tree": {
     "type": "section",
     "title": "Adr",
     "index": "adr/README.md",
-    "pages": 3,
+    "pages": 4,
     "children": [
       {
         "type": "page",
@@ -30,6 +30,12 @@
         "title": "ADR 0001 \u2014 Record architecture decisions",
         "path": "adr/0001-record-architecture-decisions.md",
         "rel": "0001-record-architecture-decisions.md"
+      },
+      {
+        "type": "page",
+        "title": "ADR 0002 \u2014 Treat docs/ as an Obsidian vault with one link resolver",
+        "path": "adr/0002-docs-as-an-obsidian-vault.md",
+        "rel": "0002-docs-as-an-obsidian-vault.md"
       },
       {
         "type": "page",

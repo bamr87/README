@@ -1,10 +1,12 @@
 ---
 source_file: AGENTS.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/AGENTS.md
 title: it-journey
 ---
-<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->
-
 # it-journey
+
+> IT-Journey's direction is to become the ultimate open home for all things IT learning: data, tools, resources and transparency, with gamified quests from zer0 to her0, practical tutorials, and AI-enhanced learning for everyone ([constitution](docs/constitution.md) §1).
 
 > How to work in it-journey, the GitHub Pages Jekyll site behind it-journey.dev: commands, layout, quest and frontmatter rules, and the Warden Pact every agent obeys.
 

@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: src/help/README.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/src/help/README.md
 title: Bashcrawl Help System
 ---
 # Bashcrawl Help System

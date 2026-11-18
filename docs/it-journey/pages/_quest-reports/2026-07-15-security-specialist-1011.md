@@ -14,8 +14,10 @@ quest_count: 5
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/29412020762
 slice: security-specialist/1011
-source_file: 2026-07-15-security-specialist-1011.md
+source_file: pages/_quest-reports/2026-07-15-security-specialist-1011.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-07-15-security-specialist-1011.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-07-15-security-specialist-1011.md
 tags:
 - security-specialist
 - level-1011
@@ -25,13 +27,14 @@ tags:
 - security-compliance
 theme: Security & Compliance
 tier: Warrior
-title: 2026 07 15 Security Specialist 1011
+title: Security Specialist · L1011 · 2026-07-15
 verdict: fail
 walk_date: '2026-07-15'
 ---
+
 > **Slice** `security-specialist/1011` · **Level** 1011 (Security & Compliance) · **Warrior tier** · **Engine verdict** ❌ fail · **Walked** 2026-07-15
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29412020762) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-15-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-15-security-specialist-1011.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/29412020762) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-07-15-security-specialist-1011.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-07-15-security-specialist-1011.md)
 
 ---
 
@@ -92,8 +95,8 @@ the `trace-*-$cid/` layout only exists after an unshown `actions/download-artifa
 `run_subtask.py`, `aggregate_results.py` — **none exist or are provided**; even on a real runner these fail identically.
 - **FAILED** — the Chapter 4 JSON block fed to `json.load()` raises
 `Expecting value: line 1 column 1` because of a leading `// work/gh-600/schemas/…` comment (JSON has no `//`). Stripped of it, the Draft-07 schema is valid and a sample instance validated with `jsonschema.validate`.
-- **FAILED (reasoned)** — every `${​{ }​}` expression in both workflows appears in raw source
-as `${​% raw %​}{​{ … }​}{​% endraw %​}`; the engine (reviewing raw markdown) judged this as broken GitHub Actions syntax. **See the render-pipeline nuance in §7 — I believe these strip to correct `${​{ }​}` on the rendered page.**
+- **FAILED (reasoned)** — every `${{ }}` expression in both workflows appears in raw source
+as `${% raw %}{{ … }}{% endraw %}`; the engine (reviewing raw markdown) judged this as broken GitHub Actions syntax. **See the render-pipeline nuance in §7 — I believe these strip to correct `${{ }}` on the rendered page.**
 
 ### 5. Observability in Multi-Agent Systems — 62 (warn) · ran 6/4 runnable (5 passed · 1 failed · 1 skipped · 2 reasoned)
 - **PASSED** — `trace_writer.py` produces correct JSONL with all fields; `aggregate_traces.py`
@@ -135,7 +138,7 @@ order and the glob assumes an unshown `download-artifact` step (both demonstrate
 - **MEDIUM · orchestration-patterns · missing event-driven example** — Objective 1 + the Chapter 1 table promise `workflow_run`/`repository_dispatch`, but only fan-out and chain are ever worked.
 - **HIGH · observability · Ch1↔Ch3 extension mismatch** — `.json` output vs `*.jsonl` glob → silent empty audit log (confirmed). *Fix:* align on `.jsonl` or glob both.
 - **MEDIUM (needs render verification) · orchestration-patterns (15 lines), observability (5) ·
-`{​% raw %​}` leakage** — engine flagged `${​% raw %​}{​{ … }​}{​% endraw %​}` as broken copy-paste in raw source. See §7: this likely renders to correct `${​{ … }​}` — verify against built HTML before treating as a real learner defect. Coordination uses the correct block form and was not flagged.
+`{% raw %}` leakage** — engine flagged `${% raw %}{{ … }}{% endraw %}` as broken copy-paste in raw source. See §7: this likely renders to correct `${{ … }}` — verify against built HTML before treating as a real learner defect. Coordination uses the correct block form and was not flagged.
 
 **Celebrated result:** *Security Fundamentals* has **no blocking issues** — its hands-on core (Docker Juice Shop + MySQL `GRANT` least-privilege demo) executed cleanly and matched the quest's claims exactly.
 
@@ -157,12 +160,12 @@ authored chapter-by-chapter without an end-to-end run: coordination's `sort_by(.
 ## 🧠 Reasoning & Method
 
 - **What ran vs. what I reasoned about.** All per-command `passed`/`failed` outcomes come from the
-**sealed execute-mode evidence** (`walk-evidence.json`, `executed: true` on all 5 quests, ~$9.83, MySQL 8.0.46 + real Docker pulls in a disposable sandbox). I consumed that evidence **as-is** — I did not re-run the engine (its child `claude` processes can't authenticate from my Bash tool). My own tool use was **read-only corroboration** of source-level facts the report leans on: confirming `scripts/validate_quest.py` is absent, counting `{​% raw %​}` lines (0/6/15/5 across the agentic quests), locating the undefined helper scripts, and reading each quest's frontmatter/dependency chain. Those are labeled where they inform an issue.
-- **The `{​% raw %​}` nuance (important, honest caveat).** The engine reviewed **raw markdown** and
-flagged `${​% raw %​}{​{ … }​}{​% endraw %​}` as broken Actions syntax. My reasoned read: `{​% raw %​}` is Jekyll's standard escape and is stripped at render, so `${​% raw %​}{​{ x }​}{​% endraw %​}` → `${​{ x }​}` on the published page — i.e. a **source-review artifact, not necessarily a learner-facing break** for someone copying from the rendered site. Coordination's use of the correct block form (and its clean YAML verdict) supports this. I did **not** render the pages (`make build-ci`) in this session, so I cannot certify it — I've marked the issue "needs render verification" rather than assert it either way. A content pass should confirm against built HTML.
+**sealed execute-mode evidence** (`walk-evidence.json`, `executed: true` on all 5 quests, ~$9.83, MySQL 8.0.46 + real Docker pulls in a disposable sandbox). I consumed that evidence **as-is** — I did not re-run the engine (its child `claude` processes can't authenticate from my Bash tool). My own tool use was **read-only corroboration** of source-level facts the report leans on: confirming `scripts/validate_quest.py` is absent, counting `{% raw %}` lines (0/6/15/5 across the agentic quests), locating the undefined helper scripts, and reading each quest's frontmatter/dependency chain. Those are labeled where they inform an issue.
+- **The `{% raw %}` nuance (important, honest caveat).** The engine reviewed **raw markdown** and
+flagged `${% raw %}{{ … }}{% endraw %}` as broken Actions syntax. My reasoned read: `{% raw %}` is Jekyll's standard escape and is stripped at render, so `${% raw %}{{ x }}{% endraw %}` → `${{ x }}` on the published page — i.e. a **source-review artifact, not necessarily a learner-facing break** for someone copying from the rendered site. Coordination's use of the correct block form (and its clean YAML verdict) supports this. I did **not** render the pages (`make build-ci`) in this session, so I cannot certify it — I've marked the issue "needs render verification" rather than assert it either way. A content pass should confirm against built HTML.
 - **Coverage/limits.** This is **window 0 of 3** — 5 of the level's 12 quests; the remaining 7
 await later runs (the perfection ledger accumulates coverage). `sudo` and outbound network were denied by sandbox policy, so the Linux `apt`/`systemctl` path and the Juice-Shop HTTP check were reasoned, not run (noted inline; not counted against the quests). OS-specific macOS/Windows blocks were statically reviewed only.
 - **Confidence.** High on the executed findings (missing scripts, `sha256sum` placeholder, the
-`.json`/`.jsonl` and `sort_by(.event)` bugs — all reproduced live). Medium on the cert-citation and OWASP-edition freshness items (network-blocked, `reasoned`). Medium on the `{​% raw %​}` severity pending a render check. The thematic-split observation is a curriculum judgment, offered for a maintainer decision, not a defect claim.
+`.json`/`.jsonl` and `sort_by(.event)` bugs — all reproduced live). Medium on the cert-citation and OWASP-edition freshness items (network-blocked, `reasoned`). Medium on the `{% raw %}` severity pending a render check. The thematic-split observation is a curriculum judgment, offered for a maintainer decision, not a defect claim.
 
 *One slice, one report. No quest content was modified; git is left to the workflow.*

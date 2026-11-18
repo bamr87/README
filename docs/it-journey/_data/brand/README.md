@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: _data/brand/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/_data/brand/README.md
 title: '`_data/brand/` — IT-Journey brand store'
 ---
 # `_data/brand/` — IT-Journey brand store

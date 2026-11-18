@@ -13,14 +13,16 @@ local_graph: false
 mermaid: true
 permalink: /quests/1100/
 preview: /images/previews/level-1100-data-templates.webp
-source_file: README.md
+source_file: pages/_quests/1100/README.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1100/README.md
 tags:
 - quests
 - '1100'
 - master
 - data
 - engineering
-title: 'Level 1100: Data & Templates'
+title: Level 1100 - Data Integration & Template Systems
 ---
 # Level 1100: Data & Templates
 
@@ -38,14 +40,14 @@ Level 1100 quests focus on:
 
 | Quest | Difficulty | Time | Type | Status |
 |-------|------------|------|------|--------|
-| [Apache Spark Mastery: Big Data Processing with PySpark & Scala](/quests/1100/apache-spark/) | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
-| [Quest to Conquer King EDGAR: The Epic Siege of the SEC Data Castle](/quests/1100/conquer-king-edgar/) | 🟡 Medium | 60-180 minutes | main_quest | ✅ Complete |
-| [Data Quality Engineering: Testing, Validation & Monitoring Frameworks](/quests/1100/data-quality/) | 🔴 Hard | 3-4 hours | main_quest | 🔮 Placeholder |
-| [Data Warehousing: Design Star Schema & Build Modern Analytics Architecture](/quests/1100/data-warehousing/) | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
-| [ETL Pipeline Design: Build Scalable Data Pipelines with Python](/quests/1100/etl-pipeline-design/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1100/apache-spark\|Apache Spark Mastery: Big Data Processing with PySpark & Scala]] | ⚔️ Epic | 6-8 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1100/edgar\|Quest to Conquer King EDGAR: The Epic Siege of the SEC Data Castle]] | 🟡 Medium | 60-180 minutes | main_quest | ✅ Complete |
+| [[it-journey/pages/_quests/1100/data-quality\|Data Quality Engineering: Testing, Validation & Monitoring Frameworks]] | 🔴 Hard | 3-4 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1100/data-warehousing\|Data Warehousing: Design Star Schema & Build Modern Analytics Architecture]] | 🔴 Hard | 5-6 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1100/etl-pipeline-design\|ETL Pipeline Design: Build Scalable Data Pipelines with Python]] | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
 | The Siege of King EDGAR: Storming the SEC Data Castle | 🟡 Medium | 90-150 minutes | main_quest | 🔮 Placeholder |
-| [Stream Processing: Real-Time Data with Apache Kafka & Flink](/quests/1100/stream-processing/) | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
-| [The Temple of Templates: Binary Abstractions and Reusable Realms](/quests/1100/temple-of-templates/) | 🟡 Medium | 60-90 minutes | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1100/stream-processing\|Stream Processing: Real-Time Data with Apache Kafka & Flink]] | 🔴 Hard | 4-5 hours | main_quest | 🔮 Placeholder |
+| [[it-journey/pages/_quests/1100/the-temple-of-templates\|The Temple of Templates: Binary Abstractions and Reusable Realms]] | 🟡 Medium | 60-90 minutes | main_quest | 🔮 Placeholder |
 
 
 ### 📊 Financial Data

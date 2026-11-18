@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: entrance/cellar/README.md
+source_repo: bamr87/bashcrawl
+source_url: https://github.com/bamr87/bashcrawl/blob/main/entrance/cellar/README.md
 title: 🌟 The Cellar of True Sight
 ---
 # 🌟 The Cellar of True Sight

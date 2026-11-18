@@ -17,7 +17,9 @@ preview: /images/previews/about.png
 sidebar:
   nav: auto
 slug: about
-source_file: index.md
+source_file: pages/_about/index.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/index.md
 tags:
 - about
 - site-info
@@ -25,8 +27,9 @@ tags:
 - bootstrap
 - docker
 - getting-started
-title: 1. AI-powered one-line install (creates a new site in ./my-site)
+title: About
 ---
+
 {{ site.description }}
 
 <p class="lead text-body-secondary mb-4">
@@ -166,12 +169,12 @@ For more, see the project [README](https://github.com/bamr87/zer0-mistakes#troub
 
 Now that you know what Zer0-Mistakes is, here's where to go next:
 
-- 🎨 [**Theme features**](/about/features/) — full list of components, layouts, and integrations
-- 🧩 [**Bootstrap component examples**](/about/theme/) — copy-pasteable UI snippets
-- 📊 [**Site statistics dashboard**](/about/stats/) — live content metrics
-- ⚙️ [**Configuration reference**](/about/config/) — every `_config.yml` option explained
-- 🤖 [**AI development guide**](/about/features/ai-development-guide/) — how to work on this theme with Copilot, Codex, Cursor, and friends
-- 🚀 [**Automated release system**](/about/features/comprehensive-gem-automation-system/) — how versions, changelogs, and gem pushes are produced
+- 🎨 [[zer0-mistakes/pages/_about/features/index|**Theme features**]] — full list of components, layouts, and integrations
+- 🧩 [[zer0-mistakes/pages/_about/theme|**Bootstrap component examples**]] — copy-pasteable UI snippets
+- 📊 [[zer0-mistakes/pages/_about/stats|**Site statistics dashboard**]] — live content metrics
+- ⚙️ [[zer0-mistakes/pages/_about/settings/config|**Configuration reference**]] — every `_config.yml` option explained
+- 🤖 [[zer0-mistakes/pages/_about/features/ai-development-guide|**AI development guide**]] — how to work on this theme with Copilot, Codex, Cursor, and friends
+- 🚀 [[zer0-mistakes/pages/_about/features/comprehensive-gem-automation-system|**Automated release system**]] — how versions, changelogs, and gem pushes are produced
 
 <div class="alert alert-primary d-flex flex-column flex-md-row align-items-md-center gap-3 mt-4">
   <div class="flex-grow-1">

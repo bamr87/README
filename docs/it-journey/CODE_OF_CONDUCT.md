@@ -2,7 +2,9 @@
 date: 2021-09-03 17:58:25+00:00
 lastmod: '2021-10-27T17:32:49.375Z'
 source_file: CODE_OF_CONDUCT.md
-title: Citizen Code of Conduct
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/CODE_OF_CONDUCT.md
+title: Code of Conduct
 ---
 # Citizen Code of Conduct
 

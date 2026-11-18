@@ -58,7 +58,9 @@ rewards:
   unlocks_features:
   - Continue The Self-Operating Website campaign
 skill_focus: devops
-source_file: self-operating-website-02-the-proving-grounds.md
+source_file: pages/_quests/0100/self-operating-website-02-the-proving-grounds.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/0100/self-operating-website-02-the-proving-grounds.md
 tags:
 - '0100'
 - github-actions
@@ -66,8 +68,9 @@ tags:
 - automation
 - ci-cd
 - gamified-learning
-title: scripts/ci/verify.py — the FROZEN findings contract (emitter half)
+title: 'The Proving Grounds: The Repo''s First CI Gate'
 ---
+
 *You summoned the agent in Chapter I, but a summoned spirit with no boundaries is a hazard, not a helper. Before you hand it the keys to your realm, you must build the **Proving Grounds** — a gate every change must pass through, where a tireless sentinel inspects each pull request and renders one verdict: pass, or fail. No vibes. No "looks fine to me." Just a deterministic check that says yes or no, the same way, every single time.*
 
 *The real-world skill you are forging here is **continuous integration as a contract**: a verification harness that emits machine-readable findings, lints your content, and surfaces a single required status check that gates every merge. This is the difference between a repository you hope is healthy and one you can prove is.*
@@ -95,7 +98,7 @@ In the old kingdoms, a fortress was only as strong as its gatehouse. Anyone coul
 
 Before you raise the gatehouse, make sure your camp is stocked. This chapter assumes you arrive with:
 
-- 🏰 **The Summoning, completed** — finish [Chapter I — The Summoning](/quests/0001/self-operating-website-01-the-summoning/) first. You need the agent you awakened there before the gate has anything to guard.
+- 🏰 **The Summoning, completed** — finish [[it-journey/pages/_quests/0001/self-operating-website-01-the-summoning|Chapter I — The Summoning]] first. You need the agent you awakened there before the gate has anything to guard.
 - 🐙 **A GitHub repository you own** — with admin rights, because promoting `verify` to a *required* check lives under branch protection settings only an owner/admin can edit.
 - 🔑 **A Claude Code OAuth token** — stored as a repository secret, to drive the agent steps in later chapters of the campaign.
 - 🧰 **Local toolchain** — Git, a text editor or IDE, and **Python 3.12+** with `pip` so you can run the harness locally before you ever push it.
@@ -360,9 +363,9 @@ graph LR
 
 ## 🔮 Next Adventures
 
-- ➡️ **Next chapter:** [The War Machine](/quests/1000/self-operating-website-03-the-war-machine/) — scale the single gate into a fleet of automated workflows.
-- 🏰 **Campaign hub:** [The Self-Operating Website](/quests/codex/self-operating-website/) — see the full campaign map.
-- ⬅️ **Previous chapter:** [The Summoning](/quests/0001/self-operating-website-01-the-summoning/) — where you first summoned the agent.
+- ➡️ **Next chapter:** [[it-journey/pages/_quests/1000/self-operating-website-03-the-war-machine|The War Machine]] — scale the single gate into a fleet of automated workflows.
+- 🏰 **Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|The Self-Operating Website]] — see the full campaign map.
+- ⬅️ **Previous chapter:** [[it-journey/pages/_quests/0001/self-operating-website-01-the-summoning|The Summoning]] — where you first summoned the agent.
 
 ## 📚 Resource Codex
 
@@ -373,6 +376,6 @@ graph LR
 
 ## 🕸️ Knowledge Graph
 
-*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [Obsidian Graph View](/notes/obsidian/graph/) to explore connections.*
+*Structured wiki-links connect this quest to the IT-Journey knowledge graph. Open the [[it-journey/pages/_notes/obsidian/graph|Obsidian Graph View]] to explore connections.*
 
-**Campaign hub:** [[Epic Quest: The Self-Operating Website]] **Previous:** [[The Summoning]] **Next:** [[The War Machine]] **Obsidian docs:** [[Obsidian Knowledge Graph and Wiki Links]]
+**Campaign hub:** [[it-journey/pages/_quests/codex/self-operating-website|Epic Quest: The Self-Operating Website]] **Previous:** [[The Summoning]] **Next:** [[The War Machine]] **Obsidian docs:** [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]]

@@ -17,15 +17,18 @@ lastmod: '2026-05-24T00:00:00.000Z'
 permalink: /notes/frontmatter-preview-solution/
 redirect_from:
 - /docs/frontmatter-preview-solution/
-source_file: frontmatter-preview-solution.md
+source_file: pages/_notes/frontmatter-preview-solution.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_notes/frontmatter-preview-solution.md
 tags:
 - frontmatter
 - jekyll
 - preview
 - cms
 - tooling
-title: Front Matter Preview Configuration
+title: Front Matter CMS Preview Configuration
 ---
+
 # Front Matter Preview Configuration
 
 This directory contains the implementation for simplified Front Matter CMS preview functionality in the IT-Journey repository.

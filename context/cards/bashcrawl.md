@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: e5511456ee7092ab
+source_fingerprint: c6367fa672d5a37d
 tags:
   - bash
   - education
@@ -24,7 +24,7 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashcrawl` - 105 docs |
+| Corpus | `docs/bashcrawl` - 80 docs |
 | External | no |
 
 ## Signals
@@ -32,16 +32,17 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~89,321 words across 105 indexed documents
-- code samples in: bash, plaintext, json, yaml, text, js, python, markdown
+- has a security policy
+- ~46,262 words across 80 indexed documents
+- code samples in: bash, plaintext, js, text, json, yaml
 
 ## Navigation
 
-95 published pages in 17 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
+80 published pages in 16 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
 
-- **Repository & tooling** (6 pages)
+- **Repository & tooling** (2 pages)
 - **Courses** (31 pages)
-- **Documentation** (47 pages)
+- **Documentation** (35 pages)
 - **🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here** (3 pages)
 
 ## Key documents
@@ -50,10 +51,10 @@ tags:
 - [`CLAUDE.md`](../../docs/bashcrawl/CLAUDE.md)
 - [`AGENTS.md`](../../docs/bashcrawl/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/bashcrawl/CHANGELOG.md)
-- [`docs/demo-walkthrough.md`](../../docs/bashcrawl/docs/demo-walkthrough.md)
-- [`.github/instructions/scrolls.instructions.md`](../../docs/bashcrawl/.github/instructions/scrolls.instructions.md)
-- [`docs/log-viewer-reference.md`](../../docs/bashcrawl/docs/log-viewer-reference.md)
-- [`docs/demo-critical-path.md`](../../docs/bashcrawl/docs/demo-critical-path.md)
+- [`SECURITY.md`](../../docs/bashcrawl/SECURITY.md)
+- [`docs/ARCHITECTURE.md`](../../docs/bashcrawl/docs/ARCHITECTURE.md)
+- [`docs/walkthrough.md`](../../docs/bashcrawl/docs/walkthrough.md)
+- [`docs/termforge/architecture.md`](../../docs/bashcrawl/docs/termforge/architecture.md)
 
 ## Query this context
 

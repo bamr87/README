@@ -15,8 +15,10 @@ quest_count: 1
 render_with_liquid: false
 run_url: https://github.com/bamr87/it-journey/actions/runs/32854817203
 slice: game-developer/0001
-source_file: 2026-08-25-game-developer-0001.md
+source_file: pages/_quest-reports/2026-08-25-game-developer-0001.md
+source_repo: bamr87/it-journey
 source_report: test/quest-validator/walkthroughs/2026-08-25-game-developer-0001.md
+source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quest-reports/2026-08-25-game-developer-0001.md
 tags:
 - game-developer
 - level-0001
@@ -26,13 +28,14 @@ tags:
 - web-fundamentals
 theme: Web Fundamentals
 tier: Apprentice
-title: 2026 08 25 Game Developer 0001
+title: Game Developer · L0001 · 2026-08-25
 verdict: fail
 walk_date: '2026-08-25'
 ---
+
 > **Slice** `game-developer/0001` · **Level** 0001 (Web Fundamentals) · **Apprentice tier** · **Engine verdict** ❌ fail (avg 52.0%) · **Walked** 2026-08-25
 >
-> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/32854817203) · 🏠 [Perfection dashboard](/quest-reports/) · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-25-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-25-game-developer-0001.md)
+> 🔗 [Perfection run](https://github.com/bamr87/it-journey/actions/runs/32854817203) · 🏠 [[it-journey/pages/_quest-reports/index|Perfection dashboard]] · 📄 [Raw report](https://github.com/bamr87/it-journey/blob/main/test/quest-validator/walkthroughs/2026-08-25-game-developer-0001.md) · 🕘 [Change history](https://github.com/bamr87/it-journey/commits/main/test/quest-validator/walkthroughs/2026-08-25-game-developer-0001.md)
 
 ---
 
@@ -40,7 +43,7 @@ walk_date: '2026-08-25'
 
 I walked the **last window (5 of 6)** of the **Game Developer → Level 0001 "Web Fundamentals" (Apprentice 🌱)** path, backed by the workflow's sealed execute-mode engine evidence. The level holds **26 quests**; the planner's dependency-sorted window for this slot resolves to exactly **one** quest — `stack-attack` — so this session is a single-quest walkthrough by design, not a curtailed multi-quest run.
 
-**Headline verdict: FAIL.** The quest scored **52.0%** (`commands_work 2 · content_accuracy 2 · completeness 3 · clarity 3 · structure 4 · safety 4`, out of 5 each). The engine actually ran the Chapter 4 Django bootstrap (venv → pip install → `startproject` → 7× `startapp` → `migrate`) and the Chapter 5 Vite/npm scaffold end-to-end successfully, and both Mermaid diagrams plus the `docker-compose.yml`/nginx config validated cleanly. But five of the quest's showcased "Sample Agent Output" code blocks — the parts a learner is most likely to copy-paste verbatim — are broken as written: a leaked Jekyll `{​% raw %​}{​% endraw %​}` template tag inside a TSX sample (6 real TypeScript compile errors), a missing `timedelta` import in the Django settings sample (`NameError` on use), and a Tailwind/shadcn setup sequence that no longer matches the currently published package versions (`tailwindcss init` was removed in v4; `shadcn init` now hangs on an undocumented interactive prompt). This is a hard/long quest (3–5 hrs, "🔴 Hard") whose scaffolding commands are genuinely solid, but whose "final answer" code samples need a real technical pass before they can be trusted for copy-paste use.
+**Headline verdict: FAIL.** The quest scored **52.0%** (`commands_work 2 · content_accuracy 2 · completeness 3 · clarity 3 · structure 4 · safety 4`, out of 5 each). The engine actually ran the Chapter 4 Django bootstrap (venv → pip install → `startproject` → 7× `startapp` → `migrate`) and the Chapter 5 Vite/npm scaffold end-to-end successfully, and both Mermaid diagrams plus the `docker-compose.yml`/nginx config validated cleanly. But five of the quest's showcased "Sample Agent Output" code blocks — the parts a learner is most likely to copy-paste verbatim — are broken as written: a leaked Jekyll `{% raw %}{% endraw %}` template tag inside a TSX sample (6 real TypeScript compile errors), a missing `timedelta` import in the Django settings sample (`NameError` on use), and a Tailwind/shadcn setup sequence that no longer matches the currently published package versions (`tailwindcss init` was removed in v4; `shadcn init` now hangs on an undocumented interactive prompt). This is a hard/long quest (3–5 hrs, "🔴 Hard") whose scaffolding commands are genuinely solid, but whose "final answer" code samples need a real technical pass before they can be trusted for copy-paste use.
 
 ## 🗺️ The Journey
 
@@ -58,7 +61,7 @@ All figures below are from the sealed `walk-evidence.json` (mode: `execute`, rea
 - ✅ **`passed`** — Chapter 5 frontend bootstrap: `npm create vite@latest erp-frontend -- --template react-ts` scaffolded correctly, and `npm install @tanstack/react-query @tanstack/react-router @tanstack/react-table zustand axios react-hook-form zod @hookform/resolvers recharts date-fns clsx tailwind-merge` added 115 packages with 0 vulnerabilities.
 - ✅ **`passed`** — Both Mermaid diagrams ("Quest Network Position", "Full ERP Stack Architecture") rendered cleanly via `mmdc`; `docker compose -f docker-compose.yml config` validated the 10-service compose file (only a benign `version: "3.9"` deprecation warning); the nginx `dev.conf` is syntactically valid (the only error seen — `host not found in upstream "django:8000"` — is expected outside the real Compose network, not a config bug).
 - ❌ **`failed`** — `config/settings/base.py` sample: AST inspection confirms `SIMPLE_JWT` uses `timedelta(minutes=15)` / `timedelta(days=7)` but the file never imports `timedelta` (only `Csv`, `config`, `Path` from `decouple`/`pathlib`) — raises `NameError` if copy-pasted as-is.
-- ❌ **`failed`** — `src/pages/sales/orders/index.tsx` sample (the flagship "ERP Sales Orders Page"): contains a literal leaked Jekyll/Liquid tag, `params={​% raw %​}{​{ id: row.original.customer.id }​}{​% endraw %​}>` (source line ~1296), which is not valid JSX. `tsc --noEmit` produced 6 real errors (`TS1109`, `TS1005` ×2, `TS1160` unterminated template literal).
+- ❌ **`failed`** — `src/pages/sales/orders/index.tsx` sample (the flagship "ERP Sales Orders Page"): contains a literal leaked Jekyll/Liquid tag, `params={% raw %}{{ id: row.original.customer.id }}{% endraw %}>` (source line ~1296), which is not valid JSX. `tsc --noEmit` produced 6 real errors (`TS1109`, `TS1005` ×2, `TS1160` unterminated template literal).
 - ❌ **`failed`** — `npm install -D tailwindcss postcss autoprefixer @types/node && npx tailwindcss init -p`: install succeeds but installs Tailwind **4.3.3** (current npm latest); v4 removed the `init` CLI subcommand entirely, so the command errors with `npm error could not determine executable to run`. The quest's documented flow is v3-only.
 - ❌ **`failed`** — `npx shadcn@latest init`: did not run non-interactively as implied — hung on a new "Select a component library" prompt (Base UI/React Aria/Radix UI) not mentioned anywhere in the quest, and had to be killed after a 60s timeout.
 - ❌ **`failed`** — Challenge 2 (`/health/`, `/api/schema/`, `/api/token/`): `migrate` succeeded, but none of these endpoints are ever wired into `urls.py` anywhere in the quest — only "sample settings" are shown, never the URL routing — so they would 404 on the project as actually built from the given commands.
@@ -69,7 +72,7 @@ All figures below are from the sealed `walk-evidence.json` (mode: `execute`, rea
 
 Every item cites what was actually observed by the engine in this run (`tested`) or read directly from the source (`reasoned`); severities as scored by the engine's own recommendations.
 
-- **HIGH · stack-attack · Chapter 5 / `SalesOrdersPage.tsx` sample · `tested`** — Leaked Jekyll `{​% raw %​}{​{ id: row.original.customer.id }​}{​% endraw %​}` template tags inside `<Link params={...}>` (source ~line 1296) make the flagship frontend code sample fail to compile (6 TypeScript errors via `tsc --noEmit`). *Fix:* replace with plain JSX `params={​{ id: row.original.customer.id }​}`.
+- **HIGH · stack-attack · Chapter 5 / `SalesOrdersPage.tsx` sample · `tested`** — Leaked Jekyll `{% raw %}{{ id: row.original.customer.id }}{% endraw %}` template tags inside `<Link params={...}>` (source ~line 1296) make the flagship frontend code sample fail to compile (6 TypeScript errors via `tsc --noEmit`). *Fix:* replace with plain JSX `params={{ id: row.original.customer.id }}`.
 - **HIGH · stack-attack · Chapter 4 / `settings/base.py` sample · `tested`** — `SIMPLE_JWT` uses `timedelta(...)` without importing it (source ~line 869 imports only `Csv`, `config`, `Path`). Raises `NameError` if copy-pasted. *Fix:* add `from datetime import timedelta`.
 - **HIGH · stack-attack · Chapter 5 / Tailwind CSS setup · `tested`** — `npx tailwindcss init -p` (source ~line 1131) no longer exists in Tailwind v4, which is what `npm install tailwindcss` currently resolves to. *Fix:* pin `tailwindcss@^3` explicitly if the v3 workflow is intended, or switch to the v4 flow (`@tailwindcss/vite` plugin, CSS-based config, no `init` command).
 - **MEDIUM · stack-attack · Chapter 5 / shadcn/ui init · `tested`** — `npx shadcn@latest init` (source ~line 1134) now prompts for a base component library (Base UI/React Aria/Radix) that the quest never mentions and isn't fully silenced by any flag shown; the engine's run hung and had to be killed. *Fix:* document the exact non-interactive flag/answer, or walk through the prompt explicitly.

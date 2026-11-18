@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: _includes/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/_includes/README.md
 title: \_includes Directory Organization
 ---
 # \_includes Directory Organization
@@ -90,7 +92,8 @@ Content-specific features and enhancements:
 
 - `seo.html` - SEO meta tags and structured data
 - `toc.html` - Table of contents generation
-- `giscus.html` - GitHub Discussions comment system
+- `comments.html` - Comment section (gate, heading, giscus widget) used by every layout that shows comments
+- `giscus.html` - GitHub Discussions comment widget; theme, mapping, input position and language come from `_config.yml` `giscus:`
 - `intro.html` - Page introduction section
 - `sitemap.html` - Sitemap generation
 

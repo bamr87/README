@@ -1,5 +1,7 @@
 ---
-source_file: README.md
+source_file: scripts/README.md
+source_repo: bamr87/zer0-mistakes
+source_url: https://github.com/bamr87/zer0-mistakes/blob/main/scripts/README.md
 title: Gem Automation Scripts
 ---
 # Gem Automation Scripts

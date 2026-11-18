@@ -1,5 +1,7 @@
 ---
-source_file: VIDEO_FRAMEWORK.md
+source_file: docs/quests/VIDEO_FRAMEWORK.md
+source_repo: bamr87/it-journey
+source_url: https://github.com/bamr87/it-journey/blob/main/docs/quests/VIDEO_FRAMEWORK.md
 title: Quest Walkthrough Video Framework
 ---
 # Quest Walkthrough Video Framework
