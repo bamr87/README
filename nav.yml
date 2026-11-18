@@ -1174,6 +1174,7 @@ nav:
                       - "Footer duplicate copyright (backlog T-054)": zer0-mistakes/test/visual/evidence/fix-includes-footer-duplicate-copyright/README.md
                       - "grokbot-fix-cookie-consent-analytics-default — visual evidence": zer0-mistakes/test/visual/evidence/grokbot-fix-cookie-consent-analytics-default/README.md
                       - "grokbot-fix-fab-layer-tokens — visual evidence": zer0-mistakes/test/visual/evidence/grokbot-fix-fab-layer-tokens/README.md
+                      - "grokbot-fix-sidebar-offcanvas-layout-gate — visual evidence": zer0-mistakes/test/visual/evidence/grokbot-fix-sidebar-offcanvas-layout-gate/README.md
                       - "Heading-level skips (#436)": zer0-mistakes/test/visual/evidence/heading-level-skips/README.md
                       - "Mobile navigation panel collapsed to a 60px sliver": zer0-mistakes/test/visual/evidence/mobile-nav-containing-block/README.md
                       - "Mobile responsive audit — evidence": zer0-mistakes/test/visual/evidence/mobile-responsive/README.md
@@ -2289,6 +2290,7 @@ nav:
           - "Amendments — bashcrawl":
               - "Amendments — bashcrawl": bashcrawl/docs/amendments/README.md
               - "0001 — Ratify the constitution": bashcrawl/docs/amendments/0001-ratify-constitution.md
+              - "NEW — Agent merge of mergeable PRs, and a review gate": bashcrawl/docs/amendments/proposed/agent-merge-review-gate.md
               - "NNNN — Title of the amendment": bashcrawl/docs/amendments/0000-template.md
           - "Architecture Decision Records":
               - "Architecture Decision Records": bashcrawl/docs/adr/README.md

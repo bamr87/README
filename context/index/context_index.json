@@ -2,7 +2,7 @@
   "metadata": {
     "generator": "scripts/context_engine",
     "engine_version": "1.0.0",
-    "enrichment": "heuristic",
+    "enrichment": "ai:anthropic",
     "project_count": 6,
     "corpus_index": "docs/docs_index.json",
     "nav_manifest": "context/nav/index.json"
@@ -38,34 +38,34 @@
       "repo": "bamr87/bashcrawl",
       "kind": "game",
       "status": "active",
-      "corpus_files": 104,
-      "fingerprint": "aa70530f9329a558",
+      "corpus_files": 105,
+      "fingerprint": "e5511456ee7092ab",
       "card": "context/cards/bashcrawl.md",
       "facts": "context/facts/bashcrawl.json",
       "nav": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
-      "nav_pages": 94,
+      "nav_pages": 95,
       "nav_sections": 17
     },
     "zer0-mistakes": {
       "repo": "bamr87/zer0-mistakes",
       "kind": "theme",
       "status": "active",
-      "corpus_files": 764,
-      "fingerprint": "171e3f6abca37339",
+      "corpus_files": 765,
+      "fingerprint": "b306e30599a78bd6",
       "card": "context/cards/zer0-mistakes.md",
       "facts": "context/facts/zer0-mistakes.json",
       "nav": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
-      "nav_pages": 683,
+      "nav_pages": 684,
       "nav_sections": 100
     },
     "it-journey": {
       "repo": "bamr87/it-journey",
       "kind": "site",
       "status": "active",
-      "corpus_files": 1337,
-      "fingerprint": "3bcf7f344a7b5d58",
+      "corpus_files": 1345,
+      "fingerprint": "b4a884c241073f8d",
       "card": "context/cards/it-journey.md",
       "facts": "context/facts/it-journey.json",
       "nav": "context/nav/it-journey.json",
@@ -134,7 +134,7 @@
       "path": "context/nav/zer0-mistakes.json",
       "title": "Zer0 Mistakes navigation",
       "project": "zer0-mistakes",
-      "summary": "683 pages in 100 sections",
+      "summary": "684 pages in 100 sections",
       "browse": "docs/browse/zer0-mistakes.md"
     },
     {
@@ -201,7 +201,7 @@
       "path": "context/nav/bashcrawl.json",
       "title": "Bash Crawl navigation",
       "project": "bashcrawl",
-      "summary": "94 pages in 17 sections",
+      "summary": "95 pages in 17 sections",
       "browse": "docs/browse/bashcrawl.md"
     },
     {
@@ -312,9 +312,6 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "009": {
-      "card:it-journey": 1
-    },
     "0100": {
       "card:it-journey": 1,
       "nav:it-journey": 1
@@ -331,8 +328,9 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "087": {
-      "card:it-journey": 1
+    "015": {
+      "card:it-journey": 1,
+      "card:zer0-mistakes": 1
     },
     "1.0": {
       "card:OverTheWire-website": 1,
@@ -371,7 +369,7 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "104": {
+    "105": {
       "apex": 2,
       "card:bashcrawl": 5
     },
@@ -403,14 +401,14 @@
     "128853": {
       "card:OverTheWire-website": 1
     },
-    "1337": {
+    "1345": {
       "apex": 2,
       "card:it-journey": 5
     },
     "152": {
       "card:it-journey": 1
     },
-    "15690561": {
+    "15737216": {
       "card:it-journey": 1
     },
     "162": {
@@ -425,10 +423,7 @@
     "170": {
       "card:zer0-mistakes": 3
     },
-    "171e3f6abca37339": {
-      "card:zer0-mistakes": 2
-    },
-    "2009087": {
+    "2015267": {
       "card:it-journey": 1
     },
     "2025": {
@@ -464,11 +459,12 @@
     "243162": {
       "card:barodybroject": 1
     },
-    "255": {
+    "263": {
+      "card:OverTheWire-website": 1,
       "card:it-journey": 1
     },
-    "263": {
-      "card:OverTheWire-website": 1
+    "267": {
+      "card:it-journey": 1
     },
     "269": {
       "apex": 1,
@@ -485,27 +481,25 @@
     },
     "321": {
       "apex": 2,
-      "card:barodybroject": 2
+      "card:barodybroject": 2,
+      "card:bashcrawl": 1
     },
     "322": {
       "card:barodybroject": 3
     },
-    "356": {
-      "card:zer0-mistakes": 1
+    "4c3b2e998a3f9aef": {
+      "card:bashcrawl": 1
     },
-    "3bcf7f344a7b5d58": {
-      "card:it-journey": 2
-    },
-    "5103181": {
+    "5107507": {
       "card:zer0-mistakes": 1
     },
     "529720b4afba9a54": {
       "card:scripts": 1
     },
-    "627": {
+    "628": {
       "card:zer0-mistakes": 1
     },
-    "627356": {
+    "628015": {
       "card:zer0-mistakes": 1
     },
     "663": {
@@ -514,32 +508,26 @@
     "664": {
       "card:it-journey": 1
     },
-    "683": {
+    "684": {
       "apex": 1,
       "card:zer0-mistakes": 2
     },
-    "744353": {
+    "747324": {
       "card:bashcrawl": 1
     },
     "761": {
       "card:scripts": 1
     },
-    "764": {
+    "765": {
       "apex": 2,
       "card:zer0-mistakes": 5
     },
-    "864": {
-      "card:bashcrawl": 1
-    },
-    "88864": {
+    "89321": {
       "card:bashcrawl": 1
     },
     "972": {
       "apex": 1,
       "card:it-journey": 2
-    },
-    "aa70530f9329a558": {
-      "card:bashcrawl": 2
     },
     "about": {
       "card:barodybroject": 1,
@@ -719,6 +707,12 @@
     "azure": {
       "apex": 1,
       "card:barodybroject": 4
+    },
+    "b306e30599a78bd6": {
+      "card:zer0-mistakes": 2
+    },
+    "b4a884c241073f8d": {
+      "card:it-journey": 2
     },
     "ba6ba8ee5ae0cefe": {
       "card:barodybroject": 1
@@ -1129,12 +1123,6 @@
       "card:zer0-mistakes": 1,
       "nav:zer0-mistakes": 1
     },
-    "d120f1791f78cae5": {
-      "card:zer0-mistakes": 1
-    },
-    "da85573772d01cb8": {
-      "card:bashcrawl": 1
-    },
     "dash": {
       "apex": 1
     },
@@ -1294,6 +1282,12 @@
     "dungeon": {
       "apex": 2,
       "card:bashcrawl": 4
+    },
+    "e20fbda967575408": {
+      "card:zer0-mistakes": 1
+    },
+    "e5511456ee7092ab": {
+      "card:bashcrawl": 2
     },
     "education": {
       "apex": 2,

@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Bash Crawl - content map
 
-Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **94 pages** across **17 sections** (max depth 3).
+Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **95 pages** across **17 sections** (max depth 3).
 
 - **Repository & tooling** <small>(6)</small>
   - [Bashcrawl Observatory — src/viewer/](../bashcrawl/src/viewer/README.md)
@@ -65,7 +65,7 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
     - [03 Remove](../bashcrawl/courses/workshop/03-remove.md)
     - [04 Permissions](../bashcrawl/courses/workshop/04-permissions.md)
     - [05 Write](../bashcrawl/courses/workshop/05-write.md)
-- **[Documentation](../bashcrawl/docs/index.md)** <small>(46)</small>
+- **[Documentation](../bashcrawl/docs/index.md)** <small>(47)</small>
   - [Bashcrawl Documentation](../bashcrawl/docs/index.md)
   - [Advanced Topics](../bashcrawl/docs/advanced.md)
   - [Agent Mode Protocol Specification](../bashcrawl/docs/agent-protocol.md)
@@ -87,9 +87,10 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
   - [Runtime Architecture](../bashcrawl/docs/architecture-runtime.md)
   - [The Bashcrawl Platform](../bashcrawl/docs/PLATFORM.md)
   - [Web Frontend API Design (Phase 2 Proposal)](../bashcrawl/docs/web-api-design.md)
-  - **[Amendments — bashcrawl](../bashcrawl/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — bashcrawl](../bashcrawl/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — bashcrawl](../bashcrawl/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../bashcrawl/docs/amendments/0001-ratify-constitution.md)
+    - [NEW — Agent merge of mergeable PRs, and a review gate](../bashcrawl/docs/amendments/proposed/agent-merge-review-gate.md)
     - [NNNN — Title of the amendment](../bashcrawl/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../bashcrawl/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../bashcrawl/docs/adr/README.md)
