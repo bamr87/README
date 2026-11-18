@@ -4,21 +4,26 @@ gate, and the MCP server dispatch. Everything runs offline against tempdir
 fixtures.
 """
 
+import contextlib
 import importlib.util
+import io
 import json
 import os
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 # Add the project root to the path
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from scripts.context_engine import (  # noqa: E402
-    assembler, extractor, indexer, navigator, query, screen, synthesizer,
+    ENGINE_VERSION, assembler, extractor, indexer, navigator, query, screen,
+    synthesizer,
 )
 from scripts.context_engine.ai import (  # noqa: E402
     SYSTEM_PROMPT, MockProvider, get_provider, wrap_facts,
@@ -1219,6 +1224,96 @@ class TestMCPServer(unittest.TestCase):
         projects = json.loads(response["result"]["content"][0]["text"])
         self.assertTrue(any(p["name"] == "bashcrawl" for p in projects))
 
+
+class TestMCPServerFlags(unittest.TestCase):
+    """`--version` / `--healthcheck`: answer and exit, never enter the loop."""
+
+    SERVER_PATH = PROJECT_ROOT / "mcp" / "server.py"
+
+    @classmethod
+    def setUpClass(cls):
+        cls.server = _load_mcp_server()
+
+    def _main(self, argv):
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            code = self.server.main(argv)
+        return code, out.getvalue()
+
+    def _healthcheck(self, manifest_text=None):
+        """Run --healthcheck against a temp manifest (None: no manifest)."""
+        tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, tmp, ignore_errors=True)
+        manifest_path = tmp / "context" / "index" / "manifest.json"
+        if manifest_text is not None:
+            manifest_path.parent.mkdir(parents=True)
+            manifest_path.write_text(manifest_text, encoding="utf-8")
+        with mock.patch.object(query, "MANIFEST_PATH", manifest_path):
+            code, out = self._main(["--healthcheck"])
+        self.assertEqual(len(out.splitlines()), 1, out)
+        return code, json.loads(out)
+
+    def test_version_prints_name_and_engine_version(self):
+        code, out = self._main(["--version"])
+        self.assertEqual(code, 0)
+        self.assertEqual(out, f"readme-context-engine {ENGINE_VERSION}\n")
+
+    def test_healthcheck_ok_when_this_engine_built_the_context(self):
+        code, report = self._healthcheck(json.dumps({
+            "engine_version": ENGINE_VERSION,
+            "generated_at": "2026-11-12T21:23:47+00:00"}))
+        self.assertEqual(code, 0)
+        self.assertEqual(report, {"status": "ok", "version": ENGINE_VERSION,
+                                  "generated_at": "2026-11-12T21:23:47+00:00"})
+
+    def test_healthcheck_stale_when_another_engine_built_the_context(self):
+        code, report = self._healthcheck(json.dumps({
+            "engine_version": ENGINE_VERSION + "-old",
+            "generated_at": "2026-01-01T00:00:00+00:00"}))
+        self.assertEqual(code, 0)
+        self.assertEqual(report["status"], "stale")
+        self.assertEqual(report["version"], ENGINE_VERSION)
+
+    def test_healthcheck_missing_without_a_manifest(self):
+        code, report = self._healthcheck(None)
+        self.assertEqual(code, 1)
+        self.assertEqual(report, {"status": "missing", "version": ENGINE_VERSION,
+                                  "generated_at": None})
+
+    def test_healthcheck_missing_when_the_manifest_is_not_json(self):
+        code, report = self._healthcheck("{not json")
+        self.assertEqual(code, 1)
+        self.assertEqual(report["status"], "missing")
+
+    @unittest.skipUnless(
+        (PROJECT_ROOT / "context" / "index" / "manifest.json").is_file(),
+        "context pyramid not built")
+    def test_healthcheck_over_built_context(self):
+        code, out = self._main(["--healthcheck"])
+        report = json.loads(out)
+        manifest = json.loads((PROJECT_ROOT / "context" / "index"
+                               / "manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(code, 0)
+        self.assertIn(report["status"], {"ok", "stale"})
+        self.assertEqual(report["generated_at"], manifest["generated_at"])
+
+    def test_cli_version_flag(self):
+        proc = subprocess.run(
+            [sys.executable, str(self.SERVER_PATH), "--version"],
+            stdin=subprocess.DEVNULL, capture_output=True, text=True, timeout=60)
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        self.assertEqual(proc.stdout, f"readme-context-engine {ENGINE_VERSION}\n")
+
+    def test_cli_without_flags_still_serves_stdio(self):
+        request = {"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {}}
+        proc = subprocess.run(
+            [sys.executable, str(self.SERVER_PATH)],
+            input=json.dumps(request) + "\n", capture_output=True, text=True,
+            timeout=60)
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        reply = json.loads(proc.stdout.splitlines()[0])
+        self.assertEqual(reply["result"]["serverInfo"],
+                         {"name": "readme-context-engine", "version": ENGINE_VERSION})
 
 
 CONTEXT_BUILT = (PROJECT_ROOT / "context" / "index" / "context_index.json").is_file() \
