@@ -5,7 +5,7 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 683,
+    "pages": 684,
     "sections": 100,
     "max_depth": 6,
     "skipped": 9
@@ -21,19 +21,19 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "d120f1791f78cae5",
+  "fingerprint": "e20fbda967575408",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 683,
+    "pages": 684,
     "children": [
       {
         "type": "group",
         "title": "Repository & tooling",
         "order": 0.0,
         "index": "zer0-mistakes/test/README.md",
-        "pages": 89,
+        "pages": 90,
         "children": [
           {
             "type": "page",
@@ -47,7 +47,7 @@
             "title": "Consolidated Testing Framework for zer0-mistakes Jekyll Theme",
             "rel": "test",
             "index": "zer0-mistakes/test/README.md",
-            "pages": 79,
+            "pages": 80,
             "children": [
               {
                 "type": "page",
@@ -73,14 +73,14 @@
                 "type": "section",
                 "title": "Visual",
                 "rel": "test/visual",
-                "pages": 76,
+                "pages": 77,
                 "children": [
                   {
                     "type": "section",
                     "title": "Navbar responsiveness \u2014 evidence (PR #215)",
                     "rel": "test/visual/evidence",
                     "index": "zer0-mistakes/test/visual/evidence/README.md",
-                    "pages": 76,
+                    "pages": 77,
                     "children": [
                       {
                         "type": "page",
@@ -543,6 +543,13 @@
                         "path": "zer0-mistakes/test/visual/evidence/grokbot-fix-fab-layer-tokens/README.md",
                         "rel": "test/visual/evidence/grokbot-fix-fab-layer-tokens/README.md",
                         "folder": "test/visual/evidence/grokbot-fix-fab-layer-tokens"
+                      },
+                      {
+                        "type": "page",
+                        "title": "grokbot-fix-sidebar-offcanvas-layout-gate \u2014 visual evidence",
+                        "path": "zer0-mistakes/test/visual/evidence/grokbot-fix-sidebar-offcanvas-layout-gate/README.md",
+                        "rel": "test/visual/evidence/grokbot-fix-sidebar-offcanvas-layout-gate/README.md",
+                        "folder": "test/visual/evidence/grokbot-fix-sidebar-offcanvas-layout-gate"
                       },
                       {
                         "type": "page",

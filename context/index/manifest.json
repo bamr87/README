@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-12T21:23:47+00:00",
+  "generated_at": "2026-11-16T03:08:41+00:00",
   "engine_version": "1.0.0",
-  "enrichment": "heuristic",
+  "enrichment": "ai:anthropic",
   "project_count": 6,
   "fingerprints": {
     "scripts": "2df02d508c89497e",
     "barodybroject": "2f309bd74896ca48",
-    "bashcrawl": "aa70530f9329a558",
-    "zer0-mistakes": "171e3f6abca37339",
-    "it-journey": "3bcf7f344a7b5d58",
+    "bashcrawl": "e5511456ee7092ab",
+    "zer0-mistakes": "b306e30599a78bd6",
+    "it-journey": "b4a884c241073f8d",
     "OverTheWire-website": "26d051159234c8fb"
   },
   "corpus_index_present": true,
-  "corpus_index_generated_at": "2026-11-12T14:23:45.783411",
+  "corpus_index_generated_at": "2026-11-16T03:08:38.298041",
   "navigation": {
-    "pages": 2288,
+    "pages": 2290,
     "corpora": 6,
     "fingerprints": {
       "it-journey": "f3bd0eadf6aaa70b",
-      "zer0-mistakes": "d120f1791f78cae5",
+      "zer0-mistakes": "e20fbda967575408",
       "barodybroject": "ba6ba8ee5ae0cefe",
-      "bashcrawl": "da85573772d01cb8",
+      "bashcrawl": "4c3b2e998a3f9aef",
       "scripts": "529720b4afba9a54",
       "OverTheWire-website": "ceab543eb82ca094"
     }

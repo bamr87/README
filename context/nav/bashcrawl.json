@@ -5,7 +5,7 @@
   "title": "Bash Crawl",
   "corpus": "docs/bashcrawl",
   "counts": {
-    "pages": 94,
+    "pages": 95,
     "sections": 17,
     "max_depth": 3,
     "skipped": 5
@@ -17,12 +17,12 @@
     "docs/README.md",
     "logs/README.md"
   ],
-  "fingerprint": "da85573772d01cb8",
+  "fingerprint": "4c3b2e998a3f9aef",
   "tree": {
     "type": "section",
     "title": "Bash Crawl",
     "index": "bashcrawl/README.md",
-    "pages": 94,
+    "pages": 95,
     "children": [
       {
         "type": "group",
@@ -388,7 +388,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "bashcrawl/docs/index.md",
-        "pages": 46,
+        "pages": 47,
         "children": [
           {
             "type": "page",
@@ -522,7 +522,7 @@
             "title": "Amendments \u2014 bashcrawl",
             "rel": "docs/amendments",
             "index": "bashcrawl/docs/amendments/README.md",
-            "pages": 3,
+            "pages": 4,
             "children": [
               {
                 "type": "page",
@@ -536,6 +536,13 @@
                 "title": "0001 \u2014 Ratify the constitution",
                 "path": "bashcrawl/docs/amendments/0001-ratify-constitution.md",
                 "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "NEW \u2014 Agent merge of mergeable PRs, and a review gate",
+                "path": "bashcrawl/docs/amendments/proposed/agent-merge-review-gate.md",
+                "rel": "docs/amendments/proposed/agent-merge-review-gate.md",
+                "folder": "docs/amendments/proposed"
               },
               {
                 "type": "page",

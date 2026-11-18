@@ -15,7 +15,10 @@
 | Document | What it covers |
 | --- | --- |
 | [`AGENTS.md`](../AGENTS.md) | The bamr87 context engine: it crawls the fleet's Markdown, distills it into a context pyramid, serves it over MCP, and reviews every repository's documentation against the fleet framework. |
+| [`CONTRIBUTING.md`](../CONTRIBUTING.md) | How to contribute: branches, commits, local gates and pull requests. |
 | [`CHANGELOG.md`](../CHANGELOG.md) | Release history: the notable changes in each version, newest first. |
+| [`SECURITY.md`](../SECURITY.md) | Supported versions and how to report a vulnerability privately. |
+| [`CODE_OF_CONDUCT.md`](../CODE_OF_CONDUCT.md) | The standards of behaviour for everyone taking part. |
 | [`SCHEMA.md`](../SCHEMA.md) | Consolidated-context submodule of the `bamr87/bamr87` monorepo: crawlers, distillers, and an MCP server that turn the fleet's repositories into a queryable, continuously regenerated README pyramid. |
 | [`PRD.md`](../PRD.md) | v2 repurposes this repository from a generic documentation aggregator (the v1 MVP, preserved in git history) into the **consolidated README of the bamr87/bamr87 monorepo**: a dedicated, continuously evolving context engine — MCP- and… |
 | [`MKDOCS.md`](../MKDOCS.md) | How the published site at bamr87.github.io/README is built from the aggregated corpus: the config files, the generated navigation, and the build and deploy commands. |
