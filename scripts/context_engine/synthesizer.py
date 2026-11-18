@@ -5,13 +5,17 @@ Turns a project's fact sheet into a human-readable card. The baseline is
 fully heuristic; when an AI provider is supplied, a single enrichment call
 distills the facts into an "essence" paragraph (failures fall back to the
 heuristic text so builds never depend on an API).
+
+The facts are untrusted upstream text, so the injection screen (screen.py)
+sits on both sides of that call: facts that trip it never reach a prompt,
+and a completion that trips it, or breaks the output contract, is dropped.
 """
 
 import json
 from typing import Dict, List, Optional
 
-from . import ENGINE_VERSION
-from .ai import AIError, BaseProvider
+from . import ENGINE_VERSION, screen
+from .ai import AIError, BaseProvider, wrap_facts
 
 
 def _heuristic_essence(facts: Dict) -> str:
@@ -30,14 +34,20 @@ def _ai_essence(facts: Dict, ai: BaseProvider) -> str:
     prompt = (
         "Write a 2-3 sentence essence paragraph for this project's card in the "
         "fleet's consolidated README. State what the project is, what it "
-        "contains, and why someone would open it.\n\nFACTS:\n"
-        + json.dumps(facts, indent=2, sort_keys=True)[:6000]
+        "contains, and why someone would open it.\n\n"
+        + wrap_facts(json.dumps(facts, indent=2, sort_keys=True)[:6000])
     )
     return ai.complete(prompt, max_tokens=400).strip()
 
 
-def build_card(facts: Dict, ai: Optional[BaseProvider] = None) -> str:
-    """Render one project card as markdown with a frontmatter contract."""
+def build_card(facts: Dict, ai: Optional[BaseProvider] = None,
+               findings: Optional[List[Dict]] = None) -> str:
+    """
+    Render one project card as markdown with a frontmatter contract.
+
+    `findings`, when given, collects the injection screen's hits for the
+    build (subject, field, label).
+    """
     project = facts["project"]
     identity = facts.get("identity") or {}
     corpus = facts.get("corpus") or {}
@@ -47,13 +57,27 @@ def build_card(facts: Dict, ai: Optional[BaseProvider] = None) -> str:
 
     enrichment = "heuristic"
     essence = _heuristic_essence(facts)
-    if ai is not None:
+    hits = screen.screen_facts(facts)
+    if hits:
+        enrichment = "quarantined"      # the facts never reach a prompt
+    elif ai is not None:
         try:
-            essence = _ai_essence(facts, ai)
-            enrichment = f"ai:{ai.name}"
+            completion = _ai_essence(facts, ai)
         except AIError as exc:
             print(f"[synthesizer] AI enrichment failed for {name}, "
                   f"using heuristic essence: {exc}")
+        else:
+            hits = [("ai essence", label) for label in screen.screen_text(completion)]
+            problem = screen.completion_problem(completion, screen.source_text(facts))
+            if hits:
+                enrichment = "quarantined"
+            elif problem:
+                print(f"[screen] {name}: AI essence rejected ({problem}), "
+                      "using heuristic essence")
+            else:
+                essence = screen.one_paragraph(completion)
+                enrichment = f"ai:{ai.name}"
+    screen.report(name, hits, findings)
 
     tags = sorted(set(project.get("topics") or []) | set(rollups.get("top_tags") or []))[:12]
     title = identity.get("title") or name

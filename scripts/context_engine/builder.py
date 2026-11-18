@@ -21,6 +21,7 @@ from .indexer import build_index, write_index
 from .navigator import navigate
 from .registry import Registry, load_registry, sync_repos_txt
 from .synthesizer import build_card
+from . import screen
 
 
 def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
@@ -61,7 +62,8 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
           + ("" if update_nav else "; nav.yml/browse skipped"))
     hooks("post_navigate")
 
-    cards = {name: build_card(facts, ai=provider)
+    findings = []   # injection screen hits, filled by build_card and build_apex
+    cards = {name: build_card(facts, ai=provider, findings=findings)
              for name, facts in facts_by_name.items()}
     print(f"[synthesize] {len(cards)} cards ({enrichment})")
     # Cards that asked for AI but fell back to the heuristic essence (budget
@@ -73,7 +75,10 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
               + ", ".join(ai_skipped))
     hooks("post_synthesize")
 
-    apex_md = build_apex(registry, facts_by_name, ai=provider)
+    apex_md = build_apex(registry, facts_by_name, ai=provider, findings=findings)
+    quarantined = screen.quarantined(findings)
+    if quarantined:
+        print(f"[screen] quarantined: {', '.join(quarantined)}")
     write_context_tree(apex_md, cards, facts_by_name)
     if update_readme:
         span_changed = inject_auto_span(fleet_table(registry, facts_by_name))
@@ -85,7 +90,7 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
 
     index = build_index(registry, facts_by_name, cards, apex_md, enrichment,
                         fleet_nav=fleet_nav)
-    write_index(index, docs_index, fleet_nav=fleet_nav)
+    write_index(index, docs_index, fleet_nav=fleet_nav, quarantined=quarantined)
     print(f"[index] {len(index['terms'])} terms across {len(index['documents'])} documents")
     hooks("post_index")
 
@@ -93,6 +98,7 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
     return {
         "projects": len(facts_by_name),
         "enrichment": enrichment,
+        "quarantined": quarantined,
         "terms": len(index["terms"]),
         "nav_pages": fleet_nav["counts"]["pages"],
         "ai_skipped": ai_skipped,
