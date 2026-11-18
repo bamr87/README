@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+
+{# Custom 404: GitHub Pages serves site/404.html for any missing path. #}
+
+{% block content %}
+  <a id="main-content" tabindex="-1"></a>
+  <h1>Page not found</h1>
+  <p>That page is not part of the published docs. It may have moved when the fleet's documentation was last rebuilt.</p>
+  <p><a href="{{ config.site_url | default('/', true) }}">Go to the home page</a>, or search the site for what you were looking for.</p>
+  <p>
+    <button type="button" class="md-button md-button--primary" data-md-toggle="search" onclick="document.querySelector('[data-md-toggle=search]').checked = true; document.querySelector('[data-md-component=search-query]').focus();">Search the docs</button>
+  </p>
+{% endblock %}
