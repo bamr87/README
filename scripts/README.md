@@ -81,7 +81,6 @@ The documentation processing pipeline automates the following tasks:
 
 ```
 scripts/
-├── aggregate.py            # Repository operations module
 ├── aggregate.sh            # Main aggregation orchestrator
 ├── process.py              # Documentation processing pipeline
 ├── check_frontmatter.py    # YAML frontmatter validator
@@ -104,7 +103,7 @@ scripts/
 ├── wiki-manage.sh          # Wiki.js stack wrapper (see ../WIKIJS-QUICKSTART.md)
 ├── context_engine/         # Context engine package (stages 5-7, 10)
 │   ├── config.py           # Shared paths and constants
-│   ├── registry.py         # Fleet registry (_data/projects.yml) + repos.txt sync
+│   ├── registry.py         # Fleet registry (_data/projects.yml), clone-target checks + repos.txt sync
 │   ├── extractor.py        # Corpus -> structured facts (L2)
 │   ├── navigator.py        # Corpus + navigation contract -> context/nav/, nav.yml, docs/browse/
 │   ├── synthesizer.py      # Facts -> project cards (L1)
@@ -134,7 +133,7 @@ scripts/
 
 | Stage | Input | Output | Scripts |
 |-------|-------|--------|---------|
-| 1. Aggregation | `repos.txt` (generated from `_data/projects.yml`) | `raw_docs/` | `aggregate.sh`, `aggregate.py` |
+| 1. Aggregation | `repos.txt` (generated from `_data/projects.yml`) | `raw_docs/` | `aggregate.sh` |
 | 2. Processing | `raw_docs/` | `docs/` (secret-screened; `docs/results/secret_screen.json` on a hit) | `process.py`, `context_engine/redact.py`, `../tools/unwrap-prose.py` |
 | 3. Validation | `docs/` | Reports/Fixes | All validation scripts |
 | 4. Indexing | `docs/` | `docs/docs_index.json` | `generate_docs_index.py` |
@@ -235,9 +234,10 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 **Purpose**: Main orchestration script for cloning/updating repositories and extracting documentation files.
 
 **Features**:
-- Reads repository URLs from `repos.txt`
-- Clones new repositories or pulls updates for existing ones
-- Extracts markdown files while skipping `.git` directories
+- Reads `url[#branch]` lines from `repos.txt`, which `python3 -m scripts.context_engine sync` generates from `_data/projects.yml`; `sync` lets through only `https://github.com/<owner>/<repo>` URLs and branch names of letters, digits, `.`, `_`, `/` and `-` that don't start with `-`
+- Clones each repository into `temp/` with `git clone --branch=<branch> -- <url>`, so neither value can be read as a git option, or fast-forwards a clone an interrupted run left there (`git pull --ff-only`, never a merge). Each git call is capped at 300 seconds (`GIT_TIMEOUT_SECONDS`) where `timeout` exists (the Ubuntu runners; macOS has none) and never waits on a credential prompt
+- Copies the `*.md` and `README*` regular files into `raw_docs/<repo>/`, skipping `.git/` and symlinks, so a link cannot pull a file from outside the clone into the corpus
+- Keeps going when a repository cannot be fetched (missing, private, unknown branch, timed out): it copies nothing from that one, lists every failure at the end and exits 1 once the others are processed, so `aggregate-docs.yaml` stops before its commit step instead of publishing a stale or partial corpus
 - Sets up Python virtual environment with required dependencies
 - Invokes `process.py` for documentation processing
 - Unwraps soft-wrapped prose in the freshly written corpus (`../tools/unwrap-prose.py --write docs`, excluding `SCHEMA.md` and `CHANGELOG.md` exactly as the `markdown-oneline` workflow does) so the crawl and that gate stop rewriting each other's work
@@ -248,46 +248,22 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 ./scripts/aggregate.sh
 ```
 
-**Input**: `repos.txt` (one repository URL per line, supports comments with `#`)
+**Input**: `repos.txt`, generated from the registry: one clone URL per line with an optional `#branch` suffix; `#` comment lines and blank lines are skipped
+
+**Exit status**: 0 when every repository was fetched; 1 when any could not be (the rest are still copied and processed); any other failure, such as `process.py` crashing, stops the script there with a non-zero status
 
 **Output Directories**:
 - `temp/` - Temporary clone directory (cleaned up after processing)
 - `raw_docs/` - Extracted documentation files
 - `docs/` - Processed and organized documentation
 
-**Example `repos.txt`**:
+**Example `repos.txt`** (generated; never hand-edit it):
 ```text
-# Main documentation repositories
+# repos.txt - GENERATED from _data/projects.yml.
 https://github.com/owner/repo1
-https://github.com/owner/repo2.git
-
-# Skipped (commented out)
-# https://github.com/owner/archived-repo
+https://github.com/owner/site#gh-pages
+# skipped (aggregate: false): https://github.com/owner/reference-docs
 ```
-
----
-
-#### `aggregate.py`
-
-**Purpose**: Python module providing core repository operations for the aggregation pipeline.
-
-**Functions**:
-
-| Function | Description |
-|----------|-------------|
-| `extract_repo_name(repo_url)` | Extract repository name from URL (handles `.git` suffix) |
-| `is_valid_repo_url(repo_url)` | Validate GitHub/GitLab repository URLs |
-| `git_clone_repo(repo_url, dest_dir)` | Clone a repository with timeout handling |
-| `git_pull_repo(repo_dir)` | Pull latest changes from existing repository |
-| `find_documentation_files(repo_dir)` | Find `.md`, `README`, `.rst`, `.txt` files |
-| `copy_documentation_files(source_dir, dest_dir)` | Copy documentation preserving structure |
-| `process_repository(repo_url, temp_dir, raw_docs_dir)` | Process a single repository end-to-end |
-
-**Supported URL Patterns**:
-- `https://github.com/owner/repo`
-- `https://github.com/owner/repo.git`
-- `git@github.com:owner/repo.git`
-- `https://gitlab.com/owner/repo`
 
 ---
 
@@ -1028,10 +1004,11 @@ client = GrokClient(config)
 
 ### Quick Start
 
-1. **Setup repositories list**:
+1. **Setup repositories list** (registry first: `repos.txt` is generated, never edited):
    ```bash
-   cp repos.txt.example repos.txt
-   # Edit repos.txt with your repository URLs
+   # Add the repository to _data/projects.yml, then regenerate repos.txt;
+   # sync rejects a url that is not https://github.com/<owner>/<repo>
+   python3 -m scripts.context_engine sync
    ```
 
 2. **Run full aggregation pipeline**:
@@ -1079,7 +1056,8 @@ python3 scripts/generate_docs_report.py
 
 | File | Purpose |
 |------|---------|
-| `repos.txt` | List of repository URLs to aggregate |
+| `_data/projects.yml` | The registry: which repositories to aggregate (`url`, optional `branch`) |
+| `repos.txt` | Generated from the registry by `sync`: the clone URLs `aggregate.sh` reads |
 | `requirements.txt` | Python dependencies |
 
 ---
@@ -1178,7 +1156,10 @@ repos:
 | `No python interpreter found` | Install Python 3.7+ and ensure it's in PATH |
 | `Module yaml not found` | Run `pip install pyyaml` or let `aggregate.sh` create venv |
 | `Permission denied` | Make scripts executable: `chmod +x scripts/*.sh` |
-| `Git clone timeout` | Check network connection; increase timeout in `aggregate.py` |
+| `Failed to fetch <url> (git timed out after 300s)` | Check the network connection; for a very large repository raise `GIT_TIMEOUT_SECONDS` in `aggregate.sh` |
+| `Failed to fetch <url> (git exited 128)` | git's own message just above it says why. A missing or private repository or an unknown branch (git never prompts for credentials): fix `url`/`branch` in `_data/projects.yml`, then run `python3 -m scripts.context_engine sync` |
+| `Not possible to fast-forward`, or `destination path 'temp/<repo>' already exists` | A clone an interrupted run left in `temp/` has diverged from upstream or is in the way: `rm -rf temp/` and run again |
+| `project '<name>': url ... is not https://github.com/<owner>/<repo>` (or `branch ...`) | `sync` rejected a registry entry: fix it in `_data/projects.yml` |
 
 ### Debug Mode
 
