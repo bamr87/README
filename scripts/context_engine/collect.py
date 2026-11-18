@@ -25,6 +25,7 @@ stops before its commit. A clean run removes a stale report.
 """
 
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -47,7 +48,12 @@ from .vault import weave_pages
 sys.path.insert(0, str(ROOT / "scripts"))
 from fix_frontmatter_icons import normalize_frontmatter  # noqa: E402
 
-CLONE_TIMEOUT = 600
+# Every git call is capped, never prompts for credentials and reads no stdin,
+# so an unreachable or private repository fails fast instead of hanging.
+CLONE_TIMEOUT = 300
+GIT_ENV = {**os.environ, "GIT_TERMINAL_PROMPT": "0", "GCM_INTERACTIVE": "never"}
+# A project name becomes docs/<name>/ and a cache directory.
+SAFE_NAME = re.compile(r"[A-Za-z0-9._-]+")
 SECRET_SCREEN_NAME = "results/secret_screen.json"
 
 
@@ -69,9 +75,13 @@ class Source:
     branch: str
 
 
+def _run_git(*args: str) -> "subprocess.CompletedProcess[str]":
+    return subprocess.run(["git", *args], capture_output=True, text=True,
+                          stdin=subprocess.DEVNULL, env=GIT_ENV, timeout=CLONE_TIMEOUT)
+
+
 def _git(cwd: Path, *args: str) -> str:
-    done = subprocess.run(["git", "-C", str(cwd), *args], capture_output=True,
-                          text=True, timeout=CLONE_TIMEOUT)
+    done = _run_git("-C", str(cwd), *args)
     if done.returncode != 0:
         raise RuntimeError(f"git {' '.join(args)}: {done.stderr.strip()[:300]}")
     return done.stdout.strip()
@@ -98,19 +108,22 @@ def fetch(project: Project, cache_dir: Path = CACHE_DIR,
         local = workspace / project.name
         if (local / ".git").exists():
             return _describe(local, project)
+    if not SAFE_NAME.fullmatch(project.name) or not project.name.strip("."):
+        raise RuntimeError(f"project name {project.name!r} is not a plain directory name")
     target = cache_dir / project.name
     if (target / ".git").exists():
+        # The cache is this stage's own mirror, never anyone's work, so it is
+        # reset to upstream rather than merged: nothing local can leak in.
         branch = project.branch or _default_branch(target)
-        _git(target, "fetch", "--depth", "1", "origin", branch)
+        _git(target, "fetch", "--depth", "1", "origin", f"refs/heads/{branch}")
         _git(target, "reset", "--hard", "FETCH_HEAD")
     else:
         shutil.rmtree(target, ignore_errors=True)
         target.parent.mkdir(parents=True, exist_ok=True)
-        command = ["git", "clone", "--depth", "1"]
+        command = ["clone", "--depth", "1"]
         if project.branch:
-            command += ["--branch", project.branch]
-        done = subprocess.run(command + [project.url, str(target)], text=True,
-                              capture_output=True, timeout=CLONE_TIMEOUT)
+            command.append(f"--branch={project.branch}")
+        done = _run_git(*command, "--", project.url, str(target))
         if done.returncode != 0:
             raise RuntimeError(f"clone {project.url}: {done.stderr.strip()[:300]}")
     return _describe(target, project)
@@ -376,8 +389,8 @@ def collect(registry: Registry, names: Optional[List[str]] = None,
                 project, registry, cache_dir=cache_dir, workspace=workspace)
         except (RuntimeError, OSError, subprocess.TimeoutExpired) as exc:
             # One unreachable repository must not empty the corpus or stop the
-            # refresh of the others. The manifest marks its pages as frozen,
-            # and the hot note shows that to whoever reads the brain next.
+            # refresh of the others. Its pages are kept and marked frozen, and
+            # the run fails once everything else is written.
             reason = str(exc).strip().splitlines()[-1][:160]
             failures.append(f"{project.name}: {reason}")
             print(f"[collect] {project.name}: unreachable, freezing its pages ({reason})")
@@ -424,9 +437,17 @@ def collect(registry: Registry, names: Optional[List[str]] = None,
     secrets = [hit for result in results.values() for hit in result.get("secrets", [])]
     write_secret_screen(secrets, sum(len(r["pages"]) for r in results.values()),
                         docs_dir / SECRET_SCREEN_NAME)
-    live = sum(1 for entry in entries.values() if entry["status"] == "live")
-    if projects and not live:
-        raise RuntimeError("collect reached no repository: " + "; ".join(failures))
+    if failures:
+        # The reachable projects are written; an unreachable one keeps its last
+        # pages. Either way the run fails, so the scheduled crawl never commits
+        # a corpus that is silently stale for one repository.
+        print("[collect] could not fetch:", file=sys.stderr)
+        for failure in failures:
+            print(f"  - {failure}", file=sys.stderr)
+        raise RuntimeError(f"collect could not fetch {len(failures)} repositor"
+                           f"{'y' if len(failures) == 1 else 'ies'}: " + "; ".join(failures)
+                           + (f"; the secret screen also redacted {len(secrets)} credential(s)"
+                              if secrets else ""))
     if secrets:
         for hit in secrets:
             print(f"[collect] secret screen: {hit['project']}/{hit['path']}:{hit['line']} "

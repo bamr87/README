@@ -1,7 +1,7 @@
 # A reader moves through the second brain: graph, concept note, backlinks.
 schema: scenario/v1
 id: second-brain
-feature: README-016
+feature: README-017
 title: "The vault's views work on the published site"
 viewports: [desktop]
 steps:

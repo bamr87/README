@@ -101,7 +101,7 @@ scripts/
 ├── wiki-manage.sh          # Wiki.js stack wrapper (see ../WIKIJS-QUICKSTART.md)
 ├── context_engine/         # Context engine package (stages 5-7, 10)
 │   ├── config.py           # Shared paths and constants
-│   ├── registry.py         # Fleet registry (_data/projects.yml) + repos.txt sync
+│   ├── registry.py         # Fleet registry (_data/projects.yml), clone-target checks + repos.txt sync
 │   ├── collect.py          # Extract, transform, load: repositories -> docs/
 │   ├── vault.py            # Notes, link resolution, weaving, the graph
 │   ├── brain.py            # Generated notes under docs/brain/ + Obsidian settings
@@ -216,7 +216,8 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 - Normalizes in memory: front matter, provenance (`source_repo`, `source_file`, `source_url`), icons, tags, one paragraph per line
 - Renames dot-directories with `collect.hidden_prefix`, since neither GitHub Pages nor Obsidian shows them
 - Stages every project first, then weaves links across the whole corpus, then writes only what changed and deletes what upstream dropped
-- Freezes a project it cannot reach: its pages stay, re-normalized, and the hot note says so. The run fails only when no repository is reachable
+- Runs git without prompts or stdin, with `--branch=` and `--` before the URL and a 300-second cap per call; the registry only accepts `https://github.com/<owner>/<repo>` URLs and plain branch names, and a project name must be a plain directory name
+- Never lets an unreachable repository pass silently: every other project is still written, the unreachable one keeps its last pages (re-normalized, marked frozen in the hot note), and the run lists every failure and exits 1, so `aggregate-docs.yaml` stops before its commit
 
 **Usage**:
 

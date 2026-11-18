@@ -6,11 +6,17 @@
 > Agents read this before [AGENTS.md](../AGENTS.md) conventions, the [PRD](../PRD.md), or the
 > [feature catalog](../features/features.yml). Ratified by merged PR; amended only per § 8.
 
-## 1. Mission
+## 1. Missions
 
-The bamr87 monorepo manages a fleet of independent project repos. Knowledge about the fleet is scattered across dozens of READMEs and doc trees that drift, duplicate, and go stale. Humans can't hold the whole picture; AI agents working on any one repo lack cheap, current context about the others. Hand-maintaining a master README does not scale past a handful of projects.
+README's direction is to become the ultimate open home for all things fleet knowledge and project context — data, tools, resources and transparency, gathered in one place that anyone can inspect and reuse.
 
-_Source: [PRD.md](../PRD.md)._
+1. **Provide data, tools, resources and transparency for all stakeholders, maintainers, documentation practitioners, agent builders and the general public.** Humans who cannot hold the whole fleet in their head, AI agents working in any one repo, and the general public are first-class audiences. The aim is a shared, open commons: the same sources, the same tools, and the same trail of evidence for everyone.
+2. **Make knowledge about every project in the fleet cheap, current and queryable, so humans and AI agents can look it up instead of relying on stale or scattered READMEs.** Crawlers and distillers build that context; an MCP interface is one way to serve it. Hand-maintaining a master README does not scale past a handful of projects — the engine exists so it does not have to.
+3. **Put that context in every human's and agent's hands, and make reviewing a repository's documentation against the fleet framework effortless and repeatable.** Serve it as a context pyramid and a review path for every repository — an open toolkit for working with all things fleet knowledge and project context.
+
+These missions set the course; they do not claim the work is finished. They serve the existing constitution and PRD problem statement: fleet knowledge is scattered and goes stale; agents lack cheap, current context. The earlier §1 paragraph is absorbed into these three. Every feature must trace to them.
+
+_Source: [../PRD.md](../PRD.md) §1.1._
 
 ## 2. Invariants (non-negotiable)
 

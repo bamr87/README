@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-18T18:56:18+00:00",
+  "generated_at": "2026-11-18T19:01:40+00:00",
   "engine_version": "1.0.0",
   "enrichment": "heuristic",
   "project_count": 23,
   "fingerprints": {
     "scripts": "f56fcec418d34434",
-    "bashcrawl": "7069df8053a84eae",
+    "bashcrawl": "c6367fa672d5a37d",
     "zer0-mistakes": "45a04cbeea3f4f3d",
     "it-journey": "2136ab5913a9bfb5",
     "OverTheWire-website": "880c692317be6f62",
@@ -29,9 +29,9 @@
     "zpl-viewer": "517c59a43aa02862"
   },
   "corpus_index_present": true,
-  "corpus_index_generated_at": "2026-11-18T11:56:01.292792",
+  "corpus_index_generated_at": "2026-11-18T12:01:23.147865",
   "navigation": {
-    "pages": 4347,
+    "pages": 4348,
     "corpora": 23,
     "fingerprints": {
       "it-journey": "a237764155ae7cf9",

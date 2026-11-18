@@ -1,6 +1,6 @@
 # README — the bamr87 context engine
 
-> Context engine for the bamr87 fleet: crawlers and distillers that build queryable docs for every project, incl. MCP.
+> README's direction is to become the ultimate open home for all things fleet knowledge and project context: data, tools, resources and transparency, with crawlers, distillers and MCP so every project's docs stay queryable, for everyone ([constitution](docs/constitution.md) §1).
 
 [![CI](https://github.com/bamr87/README/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/README/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/README)](LICENSE) [![Live site](https://img.shields.io/badge/live-bamr87.github.io%2FREADME-2ea44f)](https://bamr87.github.io/README/)
 

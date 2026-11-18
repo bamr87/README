@@ -16,7 +16,7 @@ title: Bash Crawl
 > [!info] game: `bamr87/bashcrawl`
 > Interactive shell-scripting tutorial — learn Bash by exploring a dungeon.
 
-**80** pages collected from commit `80cccd9cc0d6` (2026-11-18).
+**80** pages collected from commit `a644fbbcead2` (2026-11-18).
 
 ## Most connected pages
 

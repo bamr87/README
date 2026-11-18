@@ -2,7 +2,7 @@
 
 # README
 
-> The bamr87 context engine: it collects the fleet's official documentation into one Obsidian vault, generates linked notes on top of it, publishes both with MkDocs, serves them over MCP, and reviews every repository's documentation against the fleet framework.
+> README's direction is to become the ultimate open home for all things fleet knowledge and project context: data, tools, resources and transparency, with crawlers, distillers and MCP so every project's docs stay queryable, for everyone ([constitution](docs/constitution.md) §1).
 
 ## What this repo is
 
@@ -39,7 +39,7 @@ See [`SCHEMA.md`](SCHEMA.md) and each directory's own `SCHEMA.md`. The pipeline,
 
 | Stage | Input | Output | Entry point |
 | --- | --- | --- | --- |
-| Collect | registry `collect:` rules | `docs/{project}/`, `context/vault/collect.json`, `log.jsonl` | `collect.py` |
+| Collect | registry `collect:` rules | `docs/{project}/`, `context/vault/collect.json`, `log.jsonl` | `collect.py` (a repo it cannot fetch fails the run) |
 | Validate | `docs/` | reports, in-place fixes | `scripts/run_doc_checks.sh` |
 | Index corpus | `docs/` | `docs/docs_index.json`, `docs/results/*.json` | `generate_docs_index.py`, `generate_docs_report.py` |
 | Brain | `docs/` + registry `brain:` + `notes/` | `docs/brain/`, `docs/.obsidian/`, `context/vault/synthesis.json` | `brain.py` |
@@ -66,7 +66,7 @@ Engine modules (`scripts/context_engine/`): `registry` (registry, collection, na
 - **The MCP server is read-only**; never add write tools. It reads through `query.py`.
 - **Front matter is the corpus contract** (`title`, `tags`, `category`, dates): processing scripts stay front-matter-aware and idempotent, because the `--apply` fixers run repeatedly in CI. Card and fact contracts change in `synthesizer.py`/`extractor.py`, never in their outputs.
 - **Hooks** (`hooks.d/<stage>/` executables, one directory per stage in `config.HOOK_STAGES`) are non-fatal unless `CONTEXT_HOOKS_STRICT=1`. They run with an allowlisted environment that never carries the build's provider keys (extra variables are named in `CONTEXT_HOOK_ENV`), and their output is secret-screened before it is logged ([hooks.d/README.md](hooks.d/README.md)).
-- **The corpus is untrusted input.** `process.py` drops hidden carriers at ingest; `screen.py` screens facts and AI output at build (`enrichment: quarantined`, fatal under `CONTEXT_INJECTION_STRICT=1`). Upstream text goes into a prompt only through `ai.wrap_facts`.
+- **The corpus is untrusted input.** `collect.py` drops hidden carriers at ingest (`hidden.py`); `screen.py` screens facts and AI output at build (`enrichment: quarantined`, fatal under `CONTEXT_INJECTION_STRICT=1`). Upstream text goes into a prompt only through `ai.wrap_facts`.
 - **Tests:** unit tests in `tests/unit/test_cases/` (unittest discovery); `test_context_engine.py` covers the engine, schema lint and MCP dispatch and `test_fleet_survey.py` the survey and the docs framework checks — extend them with the code. Integration tests (`--type integration`) clone real repos and need the network.
 - **One paragraph per line** (`tools/unwrap-prose.py`, vendored — never edit it here). The crawl unwraps the corpus at ingest, because a push to `main` can only fail the prose gate.
 - **SCHEMA protocol:** a structural change updates the governing `SCHEMA.md` in the same commit; `scripts/`, `_data/` and `mcp/` are `coverage: full`. New scripts fit a pipeline stage and get a row in `scripts/SCHEMA.md` and a section in `scripts/README.md`.

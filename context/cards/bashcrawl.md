@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 7069df8053a84eae
+source_fingerprint: c6367fa672d5a37d
 tags:
   - bash
   - education
@@ -33,7 +33,7 @@ tags:
 - has AGENTS.md operating manual
 - keeps a changelog
 - has a security policy
-- ~46,202 words across 80 indexed documents
+- ~46,262 words across 80 indexed documents
 - code samples in: bash, plaintext, js, text, json, yaml
 
 ## Navigation

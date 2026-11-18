@@ -26,6 +26,8 @@ features:
     surface: cli
     link: "scripts"
     docs: "PRD.md"
+    tests:
+      - tests/unit/test_cases/test_repo_crawl.py
   - id: README-002
     title: "Extract"
     description: "Derive per-project facts offline: identity, governance signals, structure, rollups, key documents, corpus fingerprint."
@@ -147,6 +149,14 @@ features:
     scenarios: []
     evidence: []
   - id: README-013
+    title: "Missions in constitution §1"
+    description: "Three product missions under one direction statement, ratified through amendment 0002."
+    implemented: false
+    status: planned
+    prd: ["§1.1"]
+    surface: docs
+    docs: "docs/constitution.md"
+  - id: README-014
     title: "Collect"
     description: "One stage replaces the crawl scripts: select official documentation with the registry's collect rules, normalize, weave links, write docs/, and remove what upstream dropped."
     implemented: true
@@ -158,7 +168,7 @@ features:
     tests:
       - tests/unit/test_cases/test_second_brain.py
       - tests/integration/test_integration.py
-  - id: README-014
+  - id: README-015
     title: "Obsidian vault"
     description: "docs/ opens as an Obsidian vault with one link resolver shared by the crawl, the site and MCP, plus graph colour groups, a canvas and a Bases view."
     implemented: true
@@ -169,7 +179,7 @@ features:
     docs: "README.md"
     tests:
       - tests/unit/test_cases/test_second_brain.py
-  - id: README-015
+  - id: README-016
     title: "Second brain notes"
     description: "Each build regenerates concept and project notes, a hot cache, a change log and vault health in docs/brain/, and publishes hand-written notes from notes/."
     implemented: true
@@ -180,7 +190,7 @@ features:
     docs: "README.md"
     tests:
       - tests/unit/test_cases/test_second_brain.py
-  - id: README-016
+  - id: README-017
     title: "Obsidian views on the site"
     description: "The published site shows wikilinks, callouts, backlinks, a global and a local graph, hover previews, a quick switcher, a canvas and a table of every note."
     implemented: true
@@ -195,7 +205,7 @@ features:
     scenarios:
       - verify/scenarios/second-brain.yml
     evidence: []
-  - id: README-017
+  - id: README-018
     title: "Vault reads for agents"
     description: "CLI commands and read-only MCP tools for a note, its neighbours, the hot cache and vault health, plus a Claude Code skill and a save command for durable notes."
     implemented: true

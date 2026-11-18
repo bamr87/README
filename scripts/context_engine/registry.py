@@ -10,8 +10,14 @@ carries fleet-wide defaults (depth cap, exclusions, section titles) and each
 project may carry a `nav:` block overriding them. `navigator.py` is the only
 consumer - it turns those rules plus the corpus folder hierarchy into the
 published navigation tree.
+
+Each project's `url` and `branch` end up on a `git clone` command line in
+scripts/aggregate.sh, so loading the registry checks them: only
+https://github.com/<owner>/<repo> URLs and plain branch names pass, and
+anything else fails with the project's name before `sync` writes repos.txt.
 """
 
+import re
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -24,6 +30,30 @@ from .config import REGISTRY_PATH, REPOS_TXT_PATH
 class RegistryError(ValueError):
     """Raised when the registry file is missing or malformed."""
 
+
+# --- Clone targets -----------------------------------------------------------
+#
+# repos.txt carries `url#branch` lines to the crawler. A URL is a GitHub HTTPS
+# repository URL and nothing else; a branch is letters, digits, `.`, `_`, `/`
+# and `-`, never starting with `-`, so neither can reach git as an option.
+
+GITHUB_REPO_URL = re.compile(r"https://github\.com/([A-Za-z0-9._-]+)/([A-Za-z0-9._-]+)")
+BRANCH_NAME = re.compile(r"[A-Za-z0-9._/-]+")
+
+
+def _check_clone_target(name: str, url: str, branch: Optional[str]) -> None:
+    match = GITHUB_REPO_URL.fullmatch(url)
+    # An owner or repo made of dots alone (`..`, or `...git` once the crawler
+    # drops `.git`) would point temp/<repo> and raw_docs/<repo> outside them.
+    if not match or any(not part.removesuffix(".git").strip(".")
+                        for part in match.groups()):
+        raise RegistryError(
+            f"project {name!r}: url {url!r} is not https://github.com/<owner>/<repo>")
+    if branch is not None and (branch.startswith("-")
+                               or not BRANCH_NAME.fullmatch(branch)):
+        raise RegistryError(
+            f"project {name!r}: branch {branch!r} must use only letters, digits, "
+            "'.', '_', '/' and '-', and must not start with '-'")
 
 
 # --- Navigation contract -----------------------------------------------------
@@ -315,11 +345,14 @@ def load_registry(path: Path = REGISTRY_PATH) -> Registry:
         if merged["name"] in seen:
             raise RegistryError(f"duplicate project name: {merged['name']}")
         seen.add(merged["name"])
+        url = str(merged["url"]).rstrip("/")
+        branch = str(merged["branch"]) if merged.get("branch") else None
+        _check_clone_target(str(merged["name"]), url, branch)
         projects.append(Project(
             name=str(merged["name"]),
             repo=str(merged["repo"]),
-            url=str(merged["url"]).rstrip("/"),
-            branch=merged.get("branch"),
+            url=url,
+            branch=branch,
             status=str(merged.get("status", "active")),
             kind=str(merged.get("kind", "project")),
             description=" ".join(str(merged.get("description", "")).split()),

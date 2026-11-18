@@ -26,7 +26,7 @@
       "kind": "game",
       "status": "active",
       "corpus_files": 80,
-      "fingerprint": "7069df8053a84eae",
+      "fingerprint": "c6367fa672d5a37d",
       "card": "context/cards/bashcrawl.md",
       "facts": "context/facts/bashcrawl.json",
       "nav": "context/nav/bashcrawl.json",
@@ -1512,9 +1512,6 @@
       "card:zer0-CMS": 1,
       "nav:zer0-CMS": 1
     },
-    "202": {
-      "card:bashcrawl": 1
-    },
     "2026-09-03-the-copy-you-forgot-you-made.md": {
       "card:SCHEMA": 3
     },
@@ -1551,6 +1548,9 @@
     },
     "261713": {
       "card:ocrmd": 1
+    },
+    "262": {
+      "card:bashcrawl": 1
     },
     "263": {
       "card:OverTheWire-website": 1
@@ -1591,7 +1591,7 @@
     "34de0367b060090d": {
       "card:gitorio": 2
     },
-    "355737": {
+    "356027": {
       "card:bashcrawl": 1
     },
     "358635": {
@@ -1640,7 +1640,7 @@
     "45a04cbeea3f4f3d": {
       "card:zer0-mistakes": 2
     },
-    "46202": {
+    "46262": {
       "card:bashcrawl": 1
     },
     "468": {
@@ -1717,9 +1717,6 @@
     },
     "70196": {
       "card:bashos": 1
-    },
-    "7069df8053a84eae": {
-      "card:bashcrawl": 2
     },
     "726": {
       "card:zer0-CMS": 2
@@ -2614,6 +2611,9 @@
     },
     "byte": {
       "card:lifehacker.dev": 2
+    },
+    "c6367fa672d5a37d": {
+      "card:bashcrawl": 2
     },
     "c93bf0fe864f66a2": {
       "card:fredgar-ai": 2

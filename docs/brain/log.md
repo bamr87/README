@@ -15,6 +15,7 @@ Every crawl that changed a corpus, newest first. Dates are the upstream commit d
 
 | Date | Project | Commit | Added | Changed | Removed |
 |---|---|---|---:|---:|---:|
+| 2026-11-18 | [[brain/projects/bashcrawl\|Bash Crawl]] | `a644fbbcead2` | 0 | 2 | 0 |
 | 2026-11-18 | [[brain/projects/zpl-viewer\|ZPL Viewer]] | `debbd5656507` | 0 | 13 | 0 |
 | 2026-11-18 | [[brain/projects/zer0-CMS\|Zer0 CMS]] | `d0c3a6cc3eae` | 2 | 281 | 0 |
 | 2026-11-18 | [[brain/projects/vs-sonic-pi\|VS Sonic Pi]] | `b105cda8fbe2` | 1 | 13 | 0 |

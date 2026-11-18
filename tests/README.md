@@ -19,9 +19,8 @@ tests/
 ├── unit/                          # Unit tests
 │   ├── test_cases/                # unittest modules (discovered by the runner)
 │   │   ├── test_context_engine.py # registry, extractor, navigator, synthesizer, index/query, AI provider, secret screen, hooks, schema lint, MCP
-│   │   ├── test_file_processing.py
 │   │   ├── test_fleet_survey.py   # fleet survey checks + health report
-│   │   ├── test_repo_operations.py
+│   │   ├── test_second_brain.py   # collect (crawl, screens, prose), vault, brain notes, site hook
 │   │   └── test_tracked_surfaces.py
 │   ├── test_docs_tools.py         # pytest-style; NOT run by the harness (see below)
 │   └── test_runner.py             # Unit test runner (--module/--class/--method)
@@ -76,8 +75,7 @@ Unit tests verify individual components in isolation. The runner discovers every
 - **Context engine** (`test_context_engine.py`): registry, extractor, navigator, icon normalizer, secret screen (`redact.py`), hook environment and output screening, synthesizer/assembler, index and query, AI provider selection, schema lint, MCP dispatch — all against fixtures
 - **Fleet survey** (`test_fleet_survey.py`): link resolver, governance/structure/quality/metadata checks, health scoring, report rendering, fleet inventory, working-tree reads that never follow a symlink out of the checkout
 - **Tracked surfaces** (`test_tracked_surfaces.py`): `scripts/check_tracked_surfaces.py` against clean and broken fixture repos
-- **File processing** (`test_file_processing.py`): title extraction, front matter generation, the ingest secret screen (and `aggregate.sh` failing with `process.py`), ingest prose normalization
-- **Repository operations** (`test_repo_operations.py`): git operations and file discovery
+- **Collect and the vault** (`test_second_brain.py`): the collect stage against local git repositories, offline (a repository it cannot fetch fails the run while the others still reach `docs/`, symlinks and non-Markdown files are never collected, the cache follows upstream), selection rules, the secret screen and hidden-carrier stripping at ingest, prose normalization, link weaving and resolution, the graph, generated notes and their AI screen, and the MkDocs hook
 
 `tests/unit/test_docs_tools.py` sits outside `test_cases/` and uses bare pytest functions, so the custom harness does not run it; run it with `python -m pytest tests/unit/test_docs_tools.py`.
 
@@ -85,7 +83,7 @@ Unit tests verify individual components in isolation. The runner discovers every
 
 Integration tests verify the complete workflow:
 
-- **Full Workflow Tests**: Test the entire aggregation process
+- **Full Workflow Tests**: Run the collect stage against a local git repository (`test_integration.py`) and against GitHub (`test_repo_runner.py`), each into a scratch corpus
 - **File Organization Tests**: Verify files are organized correctly
 - **Front Matter Generation Tests**: Test YAML front matter creation
 

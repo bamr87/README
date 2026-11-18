@@ -37,7 +37,7 @@
   },
   "bashcrawl": {
     "branch": "main",
-    "commit": "80cccd9cc0d64bb7c261f0ab7e465718fbdff4e0",
+    "commit": "a644fbbcead2ef1c16c0ce42e0dac5fb442d38e8",
     "commit_date": "2026-11-18",
     "pages": 80,
     "repo": "bamr87/bashcrawl",

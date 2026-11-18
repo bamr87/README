@@ -2,6 +2,7 @@
 
 import importlib.util
 import json
+import os
 import sys
 import tempfile
 import unittest
@@ -482,6 +483,112 @@ class TestHiddenCarriers(unittest.TestCase):
         self.assertTrue(out.startswith("---\n"))
         self.assertIn("author: Someone", out)
         self.assertNotIn("\ufeff", out)
+
+
+# Keep the developer's own git configuration (hooks, signing, URL rewrites)
+# out of the fixture repositories.
+GIT_ENV = {
+    "GIT_CONFIG_GLOBAL": os.devnull, "GIT_CONFIG_NOSYSTEM": "1",
+    "GIT_AUTHOR_NAME": "test", "GIT_AUTHOR_EMAIL": "test@example.com",
+    "GIT_COMMITTER_NAME": "test", "GIT_COMMITTER_EMAIL": "test@example.com",
+}
+
+
+def _bare(root, name, files, symlinks=None):
+    """A bare repository holding `files` on branch main; returns its path."""
+    import subprocess
+    run = lambda *args, cwd=None: subprocess.run(  # noqa: E731
+        ["git", *args], cwd=cwd, env={**os.environ, **GIT_ENV},
+        check=True, capture_output=True, text=True)
+    source = root / f"{name}-source"
+    source.mkdir()
+    run("init", "-q", "-b", "main", cwd=source)
+    for rel, target in (symlinks or {}).items():
+        (source / rel).symlink_to(target)
+    for rel, text in files.items():
+        (source / rel).parent.mkdir(parents=True, exist_ok=True)
+        (source / rel).write_text(text)
+    run("add", "-A", cwd=source)
+    run("commit", "-qm", "fixture", cwd=source)
+    remote = root / f"{name}.git"
+    run("clone", "-q", "--bare", str(source), str(remote))
+    return remote, source, run
+
+
+class TestCollectCrawl(unittest.TestCase):
+    """The collect stage end to end against local repositories, offline (#55)."""
+
+    def setUp(self):
+        import shutil
+        self.root = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.root, ignore_errors=True)
+        self.good, self.good_source, self.git = _bare(self.root, "good", {
+            "README.md": "# Good\n\nThe good repository.\n",
+            "guides/install.md": "# Install\n\nRun it.\n",
+            "notes.txt": "Not documentation.\n",
+        }, symlinks={"linked.md": "README.md"})
+        self.docs = self.root / "docs"
+
+    def _collect(self, *projects):
+        import contextlib
+        import io
+        from scripts.context_engine.collect import collect
+        registry = Registry(hub={}, projects=list(projects), collect=CollectRules())
+        err = io.StringIO()
+        with contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(err):
+            try:
+                collect(registry, docs_dir=self.docs, cache_dir=self.root / "cache" / "collect",
+                        manifest_path=self.root / "m.json", log_path=self.root / "l.jsonl")
+            except RuntimeError as exc:
+                return exc, err.getvalue()
+        return None, err.getvalue()
+
+    def _pages(self, name):
+        corpus = self.docs / name
+        return sorted(p.relative_to(corpus).as_posix() for p in corpus.rglob("*") if p.is_file())
+
+    @staticmethod
+    def _project(name, url, branch="main"):
+        return Project(name=name, repo=f"o/{name}", url=str(url), branch=branch)
+
+    def test_clean_crawl_takes_tracked_markdown_only(self):
+        error, _ = self._collect(self._project("good", self.good))
+        self.assertIsNone(error)
+        # Markdown only; the symlinked linked.md is never followed.
+        self.assertEqual(self._pages("good"), ["README.md", "guides/install.md"])
+        self.assertIn("source_file: README.md", (self.docs / "good" / "README.md").read_text())
+
+    def test_a_repository_that_cannot_be_fetched_fails_the_run_not_the_others(self):
+        other, _, _ = _bare(self.root, "other", {"README.md": "# Other\n"})
+        failing = [self._project("missing", self.root / "missing.git"),
+                   self._project("other", other, branch="no-such-branch"),
+                   self._project("..", self.good)]
+        error, stderr = self._collect(self._project("good", self.good), *failing)
+        self.assertIsInstance(error, RuntimeError)
+        self.assertIn("could not fetch 3 repositories", str(error))
+        self.assertEqual(self._pages("good"), ["README.md", "guides/install.md"])
+        for name in ("missing", "other"):
+            self.assertFalse((self.docs / name).exists(), name)
+            self.assertIn(f"  - {name}:", stderr)
+        self.assertIn("  - ..:", stderr)
+        self.assertNotIn("  - good:", stderr)
+
+    def test_the_cache_follows_upstream(self):
+        project = self._project("good", self.good)
+        self.assertIsNone(self._collect(project)[0])
+        (self.good_source / "guides" / "new.md").write_text("# New\n\nAdded upstream.\n")
+        self.git("add", "-A", cwd=self.good_source)
+        self.git("commit", "-qm", "new", cwd=self.good_source)
+        self.git("push", "-q", str(self.good), "main", cwd=self.good_source)
+        # A local commit in the cache is the stage's own mirror going stale,
+        # never content: it is reset away, not merged.
+        cache = self.root / "cache" / "collect" / "good"
+        (cache / "local.md").write_text("# Local only\n")
+        self.git("add", "-A", cwd=cache)
+        self.git("commit", "-qm", "local", cwd=cache)
+        self.assertIsNone(self._collect(project)[0])
+        self.assertIn("guides/new.md", self._pages("good"))
+        self.assertNotIn("local.md", self._pages("good"))
 
 
 class TestSecretScreen(unittest.TestCase):

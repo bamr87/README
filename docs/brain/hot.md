@@ -15,6 +15,9 @@ Read this first. It holds what moved lately and what everything else connects th
 
 ## Recent changes
 
+- 2026-11-18 [[brain/projects/bashcrawl|Bash Crawl]]: +0 ~2 -0
+    - [[bashcrawl/docs/generated/motion|Motion Clips and Art]]
+    - [[bashcrawl/docs/walkthrough|Bashcrawl: Complete Walkthrough]]
 - 2026-11-18 [[brain/projects/zpl-viewer|ZPL Viewer]]: +0 ~13 -0
     - [[zpl-viewer/AGENTS|zpl-viewer]]
     - [[zpl-viewer/CLAUDE|zpl-viewer]]
@@ -51,10 +54,6 @@ Read this first. It holds what moved lately and what everything else connects th
     - [[law-ai/docs/amendments/0003-mission-statement|0003 — Missions]]
     - [[law-ai/AGENTS|Law AI — Agent Coding Instructions]]
     - [[law-ai/BACKLOG|Law AI — Backlog]]
-- 2026-11-18 [[brain/projects/godotgo|GodotGo]]: +1 ~15 -0
-    - [[godotgo/docs/amendments/0002-mission-statement|0002 — Missions]]
-    - [[godotgo/AGENTS|godotgo]]
-    - [[godotgo/CLAUDE|godotgo]]
 
 ## Most linked pages
 
