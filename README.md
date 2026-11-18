@@ -133,7 +133,7 @@ Agents get the same reads over MCP (`get_hot`, `get_note`, `get_neighbours`, `va
 
 ## The fleet documentation review
 
-The survey also consolidates the fleet's documentation for review. `python3 -m scripts.context_engine survey --workspace <dir>` reads every checkout under `<dir>` — each on whatever branch it is on, so a set of open documentation PRs can be reviewed together; a symlink to a folder inside another checkout (a monorepo package such as zer0-CMS's `packages/zer0-mistakes/`) is reviewed in place on that checkout's branch — and writes [`context/reports/docs_review.md`](context/reports/docs_review.md): every repository's documents with their one-line summaries and sizes, the words in the files every agent session loads, and each repository's standing against the hub's [documentation framework](https://github.com/bamr87/bamr87/blob/main/specs/DOCS.md) (UPS-DOC). The weekly `survey` writes the same review from the default branches beside `fleet_health`. The checks reuse the hub's generator, vendored here as `tools/docs_index.py`, so the review and each repository's own `--check` agree.
+The survey also consolidates the fleet's documentation for review. `python3 -m scripts.context_engine survey --workspace <dir>` reads every checkout under `<dir>` — each on whatever branch it is on, so a set of open documentation PRs can be reviewed together; a symlink to a folder inside another checkout (a monorepo package such as zer0-CMS's `packages/zer0-mistakes/`) is reviewed in place on that checkout's branch — and writes [`context/reports/docs_review.md`](context/reports/docs_review.md): every repository's documents with their one-line summaries and sizes, the words in the files every agent session loads, and each repository's standing against the hub's [documentation framework](https://github.com/bamr87/bamr87/blob/main/specs/DOCS.md) (UPS-DOC). The weekly `survey` writes the same review from the default branches beside `fleet_health`. `survey --local <path>` checks one working tree and writes nothing. Both `--local` and `--workspace` match a checkout to its `_data/fleet.yml` entry by its origin remote as well as by its directory name, so a clone in a directory of any name keeps its entry's kind and `link_exclude`; a monorepo package folder is matched by its directory name alone, because its origin is the containing repository's. For `--local`, `--name` picks the entry by name and `--kind` overrides the entry's kind. The checks reuse the hub's generator, vendored here as `tools/docs_index.py`, so the review and each repository's own `--check` agree.
 
 ## Growing the fleet
 
@@ -185,7 +185,7 @@ If `navcheck` fails, run `python3 -m scripts.context_engine build` and commit th
 
 ## Contributing
 
-Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). AI agents and contributors start with [AGENTS.md](AGENTS.md).
+Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. [CONTRIBUTING.md](CONTRIBUTING.md) describes the workflow, and the pull-request template carries the Definition of Done: the fleet's boxes plus this repository's gates. Report a vulnerability privately, as [SECURITY.md](SECURITY.md) describes. AI agents and contributors start with [AGENTS.md](AGENTS.md).
 
 ## Changelog
 

@@ -61,10 +61,12 @@ python tests/test_runner.py --type integration --repos https://github.com/octoca
 ## Test Results
 
 ### Result Storage
-Test results are automatically stored in JSON format in `tests/results/`:
+Test results are automatically stored in JSON format in `tests/results/`, which the runner creates per run:
 - `unit_test_results_YYYYMMDD_HHMMSS.json` - Unit test results
 - `integration_repo_results_YYYYMMDD_HHMMSS.json` - Integration test results
 - `combined_test_results_YYYYMMDD_HHMMSS.json` - Combined results
+
+The directory is gitignored: results stay local and are never committed. Use `--output DIR` to write them elsewhere.
 
 ### Result Format
 ```json

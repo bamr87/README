@@ -14,6 +14,11 @@ output/recommendations/*.json
 !output/analysis/.gitkeep
 !output/recommendations/.gitkeep
 
+# Test runner output: tests/test_runner.py writes timestamped JSON here on
+# every run (the DoD gate included). Nothing reads it back, so it stays local;
+# pass `--output DIR` to write it somewhere else.
+/tests/results/
+
 # Python
 # These are ANCHORED to the repository root on purpose. Un-anchored, a bare
 # `lib/` or `.vscode/` matches at any depth, which silently swallowed
