@@ -69,7 +69,7 @@ Engine modules (`scripts/context_engine/`): `registry` (registry + navigation co
 
 ## CI and the site
 
-- `aggregate-docs.yaml` (weekly + manual): sync → crawl → corpus index → build (AI enrichment when keys exist) → schema lint → commit. `docs/` and `context/` churn on their own; treat them as build artifacts.
+- `aggregate-docs.yaml` (weekly + manual; kill switch for the cron: repository variable `AGGREGATE_DOCS_ENABLED=false`): sync → crawl → corpus index → build (AI enrichment when keys exist) → schema lint → commit. `docs/` and `context/` churn on their own; treat them as build artifacts.
 - `docs-quality-check.yaml` (PRs, `quality/*`): schema lint, `navcheck`, `check_tracked_surfaces.py`, then doc lint and front matter checks.
 - `deploy-pages.yaml`: builds MkDocs Material (not `--strict`; aggregated pages carry expected broken cross-references) and publishes `docs/` to Pages. `ci.yml` calls the hub's `standard-ci.yml`.
 - `docker-compose.yml` runs Wiki.js + Postgres (`scripts/wiki-manage.sh`, [`WIKIJS-QUICKSTART.md`](WIKIJS-QUICKSTART.md)); copy `.env.example` to `.env` first.
