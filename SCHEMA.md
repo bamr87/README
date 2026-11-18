@@ -55,6 +55,7 @@ coverage: listed
 | `.env.example` | file | Environment template: AI provider keys, Wiki.js settings | |
 | `.gitignore` | file | Ignore rules for temp/, site/, .cache/, venvs | |
 | `.mcp.json` | file | MCP server registration for Claude Code and other clients | required |
+| `.pre-commit-config.yaml` | file | Local hooks mirroring CI (whitespace, yaml/json, private keys); skips generated and vendored surfaces | |
 | `.release-please-manifest.json` | file | release-please version manifest (release kit) | |
 | `AGENTS.md` | file | Canonical agent guidance, including the SCHEMA protocol | required |
 | `CLAUDE.md` | file | Pointer that imports `AGENTS.md` for Claude Code | required |
@@ -72,6 +73,7 @@ coverage: listed
 | `docker-compose.yml` | file | Wiki.js + Postgres stack (mounts docs/ read-only) | |
 | `mkdocs.yml` | file | MkDocs Material config — pulls the generated nav in with `INHERIT` | required |
 | `nav.yml` | file | Published navigation: MkDocs `nav` + `exclude_docs`, rendered by the engine's navigator | generated |
+| `pyproject.toml` | file | Tool config only (no package): ruff lint rules and the pytest config | |
 | `release-please-config.json` | file | release-please configuration (release kit) | |
 | `repos.txt` | file | Readable list of aggregated repositories, regenerated from _data/projects.yml | generated |
 | `requirements-docs.txt` | file | Python deps for the MkDocs build | |

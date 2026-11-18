@@ -1,0 +1,19 @@
+# Local checks that mirror CI. Install: pip install pre-commit && pre-commit install
+# Run manually: pre-commit run --all-files
+# Generated and vendored surfaces keep their bytes (see SCHEMA.md "Forbidden").
+exclude: ^(docs/|context/|site/|tools/|nav\.yml$|repos\.txt$|\.claude/skills/)
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: check-yaml
+        args: [--unsafe]
+      - id: check-json
+      - id: check-added-large-files
+        args: ['--maxkb=1000']
+      - id: check-merge-conflict
+      - id: detect-private-key
