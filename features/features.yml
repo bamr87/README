@@ -148,3 +148,11 @@ features:
       - tests/unit/test_cases/test_fleet_survey.py
     scenarios: []
     evidence: []
+  - id: README-013
+    title: "Missions in constitution §1"
+    description: "Three product missions under one direction statement, ratified through amendment 0002."
+    implemented: false
+    status: planned
+    prd: ["§1.1"]
+    surface: docs
+    docs: "docs/constitution.md"

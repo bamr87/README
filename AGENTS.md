@@ -2,7 +2,7 @@
 
 # README
 
-> The bamr87 context engine: it crawls the fleet's Markdown, distills it into a context pyramid, serves it over MCP, and reviews every repository's documentation against the fleet framework.
+> README's direction is to become the ultimate open home for all things fleet knowledge and project context: data, tools, resources and transparency, with crawlers, distillers and MCP so every project's docs stay queryable, for everyone ([constitution](docs/constitution.md) §1).
 
 ## What this repo is
 
