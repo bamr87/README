@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.0](https://github.com/bamr87/README/compare/v0.3.0...v0.4.0) (2026-11-18)
+
+
+### Added
+
+* **site:** add MkDocs theme overrides for skip link, SEO meta, 404 and tokens ([0cdc074](https://github.com/bamr87/README/commit/0cdc074a214b9800bc64d7d57fb96689e191e3e6))
+* **site:** add MkDocs theme overrides for skip link, SEO meta, 404 and tokens ([5eda3ff](https://github.com/bamr87/README/commit/5eda3ffadb2f1519ff5aa2d7efce6cfa924a0572))
+
 ## [0.3.0](https://github.com/bamr87/README/compare/v0.2.2...v0.3.0) (2026-11-18)
 
 
