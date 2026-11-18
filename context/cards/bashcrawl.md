@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: aa70530f9329a558
+source_fingerprint: e5511456ee7092ab
 tags:
   - bash
   - education
@@ -24,7 +24,7 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashcrawl` - 104 docs |
+| Corpus | `docs/bashcrawl` - 105 docs |
 | External | no |
 
 ## Signals
@@ -32,16 +32,16 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~88,864 words across 104 indexed documents
+- ~89,321 words across 105 indexed documents
 - code samples in: bash, plaintext, json, yaml, text, js, python, markdown
 
 ## Navigation
 
-94 published pages in 17 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
+95 published pages in 17 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
 
 - **Repository & tooling** (6 pages)
 - **Courses** (31 pages)
-- **Documentation** (46 pages)
+- **Documentation** (47 pages)
 - **🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here** (3 pages)
 
 ## Key documents

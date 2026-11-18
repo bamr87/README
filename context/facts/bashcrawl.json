@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 104,
-    "fingerprint": "aa70530f9329a558",
+    "file_count": 105,
+    "fingerprint": "e5511456ee7092ab",
     "path": "docs/bashcrawl",
     "present": true,
-    "total_bytes": 744353
+    "total_bytes": 747324
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/bashcrawl.md",
-    "fingerprint": "da85573772d01cb8",
+    "fingerprint": "4c3b2e998a3f9aef",
     "index": "bashcrawl/README.md",
     "max_depth": 3,
-    "pages": 94,
+    "pages": 95,
     "present": true,
     "sections": 17,
     "skipped": 5,
@@ -61,7 +61,7 @@
       },
       {
         "index": "bashcrawl/docs/index.md",
-        "pages": 46,
+        "pages": 47,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -93,7 +93,7 @@
   },
   "rollups": {
     "categories": {
-      "bashcrawl": 104
+      "bashcrawl": 105
     },
     "code_languages": [
       "bash",
@@ -105,9 +105,9 @@
       "python",
       "markdown"
     ],
-    "indexed_documents": 104,
+    "indexed_documents": 105,
     "top_tags": [],
-    "total_words": 88864
+    "total_words": 89321
   },
   "schema_version": "1.0",
   "signals": {
@@ -128,7 +128,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 47,
+        "doc_count": 48,
         "name": "docs"
       },
       {

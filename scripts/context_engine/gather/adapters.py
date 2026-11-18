@@ -73,15 +73,33 @@ class RepoSource:
         if path not in self.tree_set:
             return None
         if self.working_tree:
-            try:
-                text = (self.clone_dir / path).read_text(encoding="utf-8", errors="replace")
-            except OSError:
-                text = None
+            text = self._read_working_file(path)
         else:
             text = _git_show(self.clone_dir, path)
         if text is not None:
             self.bodies[path] = text
         return text
+
+    def _read_working_file(self, path: str) -> Optional[str]:
+        """
+        A tracked file read from disk, only when it really lives in the tree.
+
+        A tracked symlink, or a path that resolves through one, can point
+        anywhere on the machine (another project's `.env`, `~/.ssh/config`)
+        and its target would land in the review's excerpts. Clone mode never
+        follows links (`git show` returns the link text), so neither does this.
+        """
+        target = self.clone_dir / path
+        try:
+            if target.is_symlink():
+                return None
+            root = self.clone_dir.resolve()
+            resolved = target.resolve()
+            if resolved != root and root not in resolved.parents:
+                return None
+            return target.read_text(encoding="utf-8", errors="replace")
+        except (OSError, RuntimeError):
+            return None
 
     def docs(self) -> List[str]:
         return [p for p in self.tree if p.lower().endswith(DOC_SUFFIXES)

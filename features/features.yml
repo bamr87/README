@@ -22,7 +22,7 @@ features:
     description: "Aggregate markdown from every active registry project (clone/pull, branch pins, external repos)."
     implemented: true
     status: shipped
-    prd: ["§4"]
+    prd: ["FR1"]
     surface: cli
     link: "scripts"
     docs: "PRD.md"
@@ -31,7 +31,7 @@ features:
     description: "Derive per-project facts offline: identity, governance signals, structure, rollups, key documents, corpus fingerprint."
     implemented: true
     status: shipped
-    prd: ["§4"]
+    prd: ["FR2"]
     surface: cli
     link: "context"
     docs: "PRD.md"
@@ -40,7 +40,7 @@ features:
     description: "Turn each corpus's folder hierarchy into one canonical navigation tree."
     implemented: true
     status: shipped
-    prd: ["§4"]
+    prd: ["FR3"]
     surface: cli
     link: "context"
     docs: "PRD.md"
@@ -49,7 +49,7 @@ features:
     description: "Render facts into per-project cards with a frontmatter contract; optional AI essence."
     implemented: true
     status: shipped
-    prd: ["§4"]
+    prd: ["FR4"]
     surface: cli
     link: "context"
     docs: "PRD.md"
@@ -58,7 +58,7 @@ features:
     description: "Build the apex README, inject the fleet table into the root README AUTO:projects span, mirror to docs/index.md."
     implemented: true
     status: shipped
-    prd: ["§4"]
+    prd: ["FR5"]
     surface: cli
     link: "context"
     docs: "PRD.md"
@@ -67,7 +67,7 @@ features:
     description: "Build a term index + manifest so queries need no rescan."
     implemented: true
     status: shipped
-    prd: ["§4"]
+    prd: ["FR6"]
     surface: cli
     link: "context"
     docs: "PRD.md"
@@ -76,7 +76,7 @@ features:
     description: "Answer queries via CLI (query/card/facts/nav/apex/status/projects) and MCP tools/resources."
     implemented: true
     status: shipped
-    prd: ["§4"]
+    prd: ["FR7"]
     surface: api
     link: "mcp"
     docs: "PRD.md"
@@ -87,7 +87,7 @@ features:
     description: "Scheduled CI re-crawls, rebuilds, schema-lints and commits; hooks let agents extend builds."
     implemented: true
     status: shipped
-    prd: ["§4"]
+    prd: ["FR8"]
     surface: infra
     link: "hooks.d"
     docs: "PRD.md"
@@ -96,7 +96,7 @@ features:
     description: "Browse the aggregated fleet corpus on bamr87.github.io/README: the generated fleet overview is the home page and the sidebar is derived from each project's folder hierarchy."
     implemented: true
     status: shipped
-    prd: [TBD]
+    prd: ["FR3", "FR5"]
     surface: ui
     link: /
     docs: MKDOCS.md
@@ -111,7 +111,7 @@ features:
     description: "Read one indexed corpus page by path over MCP, confined to docs/ and size-capped, so search_context/get_nav pointers resolve without leaving MCP. Issue #59."
     implemented: true
     status: shipped
-    prd: ["§4"]
+    prd: ["FR9"]
     surface: api
     link: mcp/server.py
     docs: mcp/README.md
@@ -125,11 +125,25 @@ features:
     description: "Every MCP answer carries source, upstream repo, commit, path, enrichment mode and an untrusted-third-party marker; upstream text is fenced as data. Issue #60."
     implemented: false
     status: planned
-    prd: ["§4"]
+    prd: ["FR10"]
     surface: api
     link: mcp/server.py
     docs: mcp/README.md
     tags: [mcp, security, provenance]
     tests: []
+    scenarios: []
+    evidence: []
+  - id: README-012
+    title: "Fleet survey and docs review"
+    description: "Survey every repository in _data/fleet.yml on its default branch and write the scored fleet_health report and the docs_review (every repository's documents checked against the hub's documentation framework); --workspace reviews local checkouts and writes only the docs review, --local checks one working tree and writes nothing."
+    implemented: true
+    status: shipped
+    prd: ["FR11"]
+    surface: cli
+    link: scripts/context_engine/survey.py
+    docs: README.md
+    tags: [survey, docs-review]
+    tests:
+      - tests/unit/test_cases/test_fleet_survey.py
     scenarios: []
     evidence: []

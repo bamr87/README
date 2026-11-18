@@ -11,7 +11,7 @@
   ],
   "counts": {
     "projects": 6,
-    "pages": 2288
+    "pages": 2290
   },
   "projects": {
     "it-journey": {
@@ -32,11 +32,11 @@
       "tree": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
       "registered": true,
-      "pages": 683,
+      "pages": 684,
       "sections": 100,
       "max_depth": 6,
       "skipped": 9,
-      "fingerprint": "d120f1791f78cae5"
+      "fingerprint": "e20fbda967575408"
     },
     "barodybroject": {
       "title": "Barody Project",
@@ -56,11 +56,11 @@
       "tree": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
       "registered": true,
-      "pages": 94,
+      "pages": 95,
       "sections": 17,
       "max_depth": 3,
       "skipped": 5,
-      "fingerprint": "da85573772d01cb8"
+      "fingerprint": "4c3b2e998a3f9aef"
     },
     "scripts": {
       "title": "Scripts",

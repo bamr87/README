@@ -508,6 +508,108 @@ class TestIconNormalizer(unittest.TestCase):
         self.assertEqual(path.read_text(encoding="utf-8"), original)
 
 
+class TestSecretRedaction(unittest.TestCase):
+    """The secret screen: credentials are replaced and reported, never echoed."""
+
+    def setUp(self):
+        from scripts.context_engine.redact import KINDS, Hit, redact
+        from tests.fixtures.fake_secrets import PLACEHOLDERS, fake_secrets
+        self.redact, self.Hit = redact, Hit
+        self.fakes, self.placeholders = fake_secrets(), PLACEHOLDERS
+        self.assertEqual(sorted(self.fakes), sorted(KINDS))
+
+    def test_every_kind_is_redacted_and_reported_without_its_value(self):
+        for kind, value in self.fakes.items():
+            with self.subTest(kind=kind):
+                text = f"# Setup\n\nexport TOKEN={value}\nmore prose\n"
+                out, hits = self.redact(text)
+                self.assertEqual(out, f"# Setup\n\nexport TOKEN=[REDACTED:{kind}]\nmore prose\n")
+                self.assertEqual(hits, [self.Hit(kind, 3)])
+                self.assertNotIn(value, repr(hits))
+
+    def test_placeholders_and_lookalikes_survive(self):
+        lookalikes = ("keys start with sk-ant-oat01-...", "xoxb-not-a-real-token-at-all",
+                      "header only: -----BEGIN OPENSSH PRIV" + "ATE KEY-----", "xai-org/grok")
+        for text in self.placeholders + lookalikes:
+            with self.subTest(text=text[:24]):
+                out, hits = self.redact(f"use `{text}` here")
+                self.assertEqual(out, f"use `{text}` here")
+                self.assertEqual(hits, [])
+
+    def test_lines_refer_to_the_original_text(self):
+        # The eight-line key block starts on line 2, so the tokens are on line 11.
+        text = ("intro\n" + self.fakes["private-key"] + "\nprose\n"
+                + self.fakes["github-token"] + " and " + self.fakes["slack-token"] + "\n")
+        out, hits = self.redact(text)
+        self.assertEqual(out, "intro\n[REDACTED:private-key]\nprose\n"
+                              "[REDACTED:github-token] and [REDACTED:slack-token]\n")
+        self.assertEqual(hits, [self.Hit("private-key", 2), self.Hit("github-token", 11),
+                                self.Hit("slack-token", 11)])
+
+    def test_ai_errors_never_carry_a_credential(self):
+        from scripts.context_engine.ai import AIError
+        value = self.fakes["anthropic-key"]
+        error = AIError(f"HTTP 401: invalid x-api-key {value}")
+        self.assertEqual(str(error), "HTTP 401: invalid x-api-key [REDACTED:anthropic-key]")
+
+
+class TestHookEnvironment(unittest.TestCase):
+    """Hooks get an allowlisted environment and screened output (README #53)."""
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.tmp, ignore_errors=True)
+        (self.tmp / "post_build").mkdir()
+
+    def _hook(self, name, body):
+        path = self.tmp / "post_build" / name
+        path.write_text("#!/bin/sh\n" + body, encoding="utf-8")
+        path.chmod(0o755)
+
+    def _run(self, **environ):
+        import contextlib
+        import io
+        from unittest.mock import patch
+        from scripts.context_engine.hooks import run_hooks
+        log = io.StringIO()
+        with patch.dict("os.environ", environ), contextlib.redirect_stdout(log):
+            results = run_hooks("post_build", hooks_dir=self.tmp)
+        return results, log.getvalue()
+
+    def test_provider_keys_stay_out_unless_named(self):
+        self._hook("10-env", 'echo "anthropic=${ANTHROPIC_API_KEY:-absent}"\n'
+                             'echo "xai=${XAI_API_KEY:-absent}"\n'
+                             'echo "context_token=${CONTEXT_API_TOKEN:-absent}"\n'
+                             'echo "opted=${HOOK_TEST_VAR:-absent}"\n'
+                             'echo "stage=$CONTEXT_STAGE path=${PATH:+set}"\n')
+        results, _ = self._run(ANTHROPIC_API_KEY="dummy-anthropic", XAI_API_KEY="dummy-xai",
+                               CONTEXT_API_TOKEN="dummy-context", HOOK_TEST_VAR="visible",
+                               CONTEXT_HOOK_ENV="HOOK_TEST_VAR")
+        self.assertTrue(results[0]["ok"], results)
+        self.assertEqual(results[0]["output"].splitlines(), [
+            "anthropic=absent", "xai=absent", "context_token=absent", "opted=visible",
+            "stage=post_build path=set"])
+
+    def test_opt_in_list_takes_commas_and_spaces(self):
+        from scripts.context_engine.hooks import hook_environment
+        env = hook_environment({
+            "PATH": "/bin", "LC_ALL": "C", "PYTHONPATH": "/lib", "CONTEXT_STAGE": "x",
+            "ANTHROPIC_API_KEY": "k", "CONTEXT_API_KEY": "k", "SSH_AUTH_SOCK": "/s",
+            "GITHUB_STEP_SUMMARY": "/sum", "XAI_API_KEY": "k",
+            "CONTEXT_HOOK_ENV": "GITHUB_STEP_SUMMARY, XAI_API_KEY",
+        })
+        self.assertEqual(sorted(env), ["CONTEXT_HOOK_ENV", "CONTEXT_STAGE", "GITHUB_STEP_SUMMARY",
+                                       "LC_ALL", "PATH", "PYTHONPATH", "XAI_API_KEY"])
+
+    def test_hook_output_is_screened_before_it_is_logged(self):
+        from tests.fixtures.fake_secrets import fake_secrets
+        value = fake_secrets()["github-token"]
+        self._hook("20-leak", f'echo "token: {value}"\n')
+        results, log = self._run()
+        self.assertEqual(results[0]["output"], "token: [REDACTED:github-token]")
+        self.assertIn("[REDACTED:github-token]", log)
+        self.assertNotIn(value, log)
+
 
 class TestSynthesizerAndAssembler(ContextEngineFixture):
     def _facts(self):
@@ -636,6 +738,123 @@ class TestAIProviderSelection(unittest.TestCase):
         with self.assertRaises(AIError):
             AnthropicProvider()
 
+
+
+class TestAIRetryAndBudget(ContextEngineFixture):
+    """_post_with_retry: Retry-After parsing, clamping, retry set, budget."""
+
+    HTTP_DATE = "Wed, 21 Oct 2026 07:28:00 GMT"
+
+    def setUp(self):
+        super().setUp()
+        from unittest.mock import patch
+        from scripts.context_engine import ai
+        self.ai = ai
+        ai.reset_budget()
+        self.addCleanup(ai.reset_budget)
+        env = patch.dict("os.environ", {"CONTEXT_AI_MAX_CALLS": "",
+                                        "CONTEXT_AI_DEADLINE_S": ""})
+        env.start()
+        self.addCleanup(env.stop)
+        self.sleep = patch.object(ai.time, "sleep").start()
+        self.addCleanup(patch.stopall)
+
+    def _response(self, status, retry_after=None, body=None):
+        from unittest.mock import Mock
+        headers = {"Retry-After": retry_after} if retry_after is not None else {}
+        response = Mock(status_code=status, text="err", headers=headers)
+        response.json.return_value = body if body is not None else {}
+        return response
+
+    def _patch_post(self, *responses):
+        from unittest.mock import patch
+        post = patch.object(self.ai.requests, "post",
+                            side_effect=list(responses)).start()
+        return post
+
+    def test_http_date_retry_after_raises_aierror(self):
+        self._patch_post(*[self._response(429, self.HTTP_DATE)] * 3)
+        with self.assertRaises(self.ai.AIError):
+            self.ai._post_with_retry("https://example.invalid", {}, {})
+
+    def test_build_card_falls_back_on_http_date_retry_after(self):
+        self._clean_auth()
+        self._patch_post(*[self._response(429, self.HTTP_DATE)] * 3)
+        facts = extractor.extract_facts(self.registry.get("alpha"),
+                                        docs_dir=self.docs_dir)
+        card = build_card(facts, ai=self.ai.AnthropicProvider(api_key="dummy"))
+        self.assertIn("\nenrichment: heuristic\n", card)
+
+    def test_large_retry_after_is_clamped(self):
+        self._patch_post(*[self._response(429, "3600")] * 3)
+        with self.assertRaises(self.ai.AIError):
+            self.ai._post_with_retry("https://example.invalid", {}, {})
+        self.assertTrue(self.sleep.call_args_list)
+        for call in self.sleep.call_args_list:
+            self.assertLessEqual(call.args[0], 30)
+
+    def test_retry_after_parser(self):
+        parse = self.ai._retry_after_seconds
+        self.assertEqual(parse("5", 2), 5)
+        self.assertEqual(parse("0", 2), 1)
+        self.assertEqual(parse("garbage", 4), 4)
+        self.assertEqual(parse(None, 4), 4)
+        self.assertEqual(parse("Wed, 21 Oct 2015 07:28:00 GMT", 4), 1)  # past
+        self.assertEqual(parse("Wed, 21 Oct 2099 07:28:00 GMT", 4), 30)
+
+    def test_gateway_errors_are_retried(self):
+        for status in (502, 503, 504):
+            with self.subTest(status=status):
+                post = self._patch_post(*[self._response(status)] * 3)
+                with self.assertRaises(self.ai.AIError):
+                    self.ai._post_with_retry("https://example.invalid", {}, {})
+                self.assertGreater(post.call_count, 1)
+
+    def test_success_after_retry(self):
+        self._patch_post(self._response(503),
+                         self._response(200, body={"ok": True}))
+        self.assertEqual(
+            self.ai._post_with_retry("https://example.invalid", {}, {}),
+            {"ok": True})
+
+    def test_malformed_json_becomes_aierror(self):
+        response = self._response(200)
+        response.json.side_effect = ValueError("not json")
+        self._patch_post(response)
+        with self.assertRaises(self.ai.AIError):
+            self.ai._post_with_retry("https://example.invalid", {}, {})
+
+    def test_max_calls_budget(self):
+        from unittest.mock import patch
+        self._clean_auth()
+        body = {"content": [{"type": "text", "text": "hello"}]}
+        post = self._patch_post(self._response(200, body=body),
+                                self._response(200, body=body))
+        provider = self.ai.AnthropicProvider(api_key="dummy")
+        with patch.dict("os.environ", {"CONTEXT_AI_MAX_CALLS": "1"}):
+            self.assertEqual(provider.complete("one"), "hello")
+            with self.assertRaises(self.ai.AIError):
+                provider.complete("two")
+        self.assertEqual(post.call_count, 1)
+
+    def test_deadline_budget(self):
+        from unittest.mock import patch
+        body = {"ok": True}
+        post = self._patch_post(self._response(200, body=body),
+                                self._response(200, body=body))
+        clock = patch.object(self.ai.time, "monotonic", return_value=100.0).start()
+        with patch.dict("os.environ", {"CONTEXT_AI_DEADLINE_S": "10"}):
+            self.ai._post_with_retry("https://example.invalid", {}, {})
+            clock.return_value = 111.0
+            with self.assertRaises(self.ai.AIError):
+                self.ai._post_with_retry("https://example.invalid", {}, {})
+        self.assertEqual(post.call_count, 1)
+
+    def _clean_auth(self):
+        from unittest.mock import patch
+        env = patch.dict("os.environ", {key: "" for key in AUTH_ENV_KEYS})
+        env.start()
+        self.addCleanup(env.stop)
 
 class TestSchemaLint(unittest.TestCase):
     def setUp(self):
