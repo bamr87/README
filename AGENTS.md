@@ -58,9 +58,10 @@ Engine modules (`scripts/context_engine/`): `registry` (registry + navigation co
 - **Builds succeed with no key** (heuristic mode) and are diff-stable: outputs carry corpus fingerprints, not timestamps. Keep it that way.
 - **The corpus layout is the navigation contract.** `process.py` keeps each upstream's directory structure under `docs/{repo}/`; don't flatten it. Published ≠ navigable: `navigation.publish_hidden`/`navigate_hidden` and `nav.yml` `not_in_nav` declare the gap.
 - **Every page must be safe in the nav:** `scripts/fix_frontmatter_icons.py` normalizes upstream `icon:` values at ingest and in `run_doc_checks.sh --apply`.
+- **No credential reaches the corpus:** `process.py` runs every page through the secret screen (`scripts/context_engine/redact.py`). A GitHub, Anthropic, xAI, AWS or Slack token or a PEM private key is replaced with `[REDACTED:<kind>]`, listed in `docs/results/secret_screen.json` without its value, and the crawl fails before it commits. Revoke the credential and remove it upstream; the placeholder allowlist (`your…`, `example`, `xxxx`, …) is for documentation examples, never a way to let a real value through.
 - **The MCP server is read-only**; never add write tools. It reads through `query.py`.
 - **Front matter is the corpus contract** (`title`, `tags`, `category`, dates): processing scripts stay front-matter-aware and idempotent, because the `--apply` fixers run repeatedly in CI. Card and fact contracts change in `synthesizer.py`/`extractor.py`, never in their outputs.
-- **Hooks** (`hooks.d/<stage>/` executables, one directory per stage in `config.HOOK_STAGES`) are non-fatal unless `CONTEXT_HOOKS_STRICT=1`.
+- **Hooks** (`hooks.d/<stage>/` executables, one directory per stage in `config.HOOK_STAGES`) are non-fatal unless `CONTEXT_HOOKS_STRICT=1`. They run with an allowlisted environment that never carries the build's provider keys (extra variables are named in `CONTEXT_HOOK_ENV`), and their output is secret-screened before it is logged ([hooks.d/README.md](hooks.d/README.md)).
 - **Tests:** unit tests in `tests/unit/test_cases/` (unittest discovery); `test_context_engine.py` covers the engine, schema lint and MCP dispatch and `test_fleet_survey.py` the survey and the docs framework checks — extend them with the code. Integration tests (`--type integration`) clone real repos and need the network.
 - **One paragraph per line** (`tools/unwrap-prose.py`, vendored — never edit it here). The crawl unwraps the corpus at ingest, because a push to `main` can only fail the prose gate.
 - **SCHEMA protocol:** a structural change updates the governing `SCHEMA.md` in the same commit; `scripts/`, `_data/` and `mcp/` are `coverage: full`. New scripts fit a pipeline stage and get a row in `scripts/SCHEMA.md` and a section in `scripts/README.md`.
@@ -69,7 +70,7 @@ Engine modules (`scripts/context_engine/`): `registry` (registry + navigation co
 
 ## CI and the site
 
-- `aggregate-docs.yaml` (weekly + manual): sync → crawl → corpus index → build (AI enrichment when keys exist) → schema lint → commit. `docs/` and `context/` churn on their own; treat them as build artifacts.
+- `aggregate-docs.yaml` (weekly + manual; kill switch for the cron: repository variable `AGGREGATE_DOCS_ENABLED=false`): sync → crawl → corpus index → build (AI enrichment when keys exist) → schema lint → commit. `docs/` and `context/` churn on their own; treat them as build artifacts.
 - `docs-quality-check.yaml` (PRs, `quality/*`): schema lint, `navcheck`, `check_tracked_surfaces.py`, then doc lint and front matter checks.
 - `deploy-pages.yaml`: builds MkDocs Material (not `--strict`; aggregated pages carry expected broken cross-references) and publishes `docs/` to Pages. `ci.yml` calls the hub's `standard-ci.yml`.
 - `docker-compose.yml` runs Wiki.js + Postgres (`scripts/wiki-manage.sh`, [`WIKIJS-QUICKSTART.md`](WIKIJS-QUICKSTART.md)); copy `.env.example` to `.env` first.

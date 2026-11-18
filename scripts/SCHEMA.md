@@ -33,7 +33,7 @@ coverage: full
 | `lint_docs.py` | file | Markdown linter | required |
 | `mkdocs_quality_report.py` | file | MkDocs compatibility/quality analyzer | |
 | `normalize_tags.py` | file | Tag normalizer | |
-| `process.py` | file | Stage 2: raw_docs/ → docs/{repo}/ with frontmatter | required |
+| `process.py` | file | Stage 2: raw_docs/ → docs/{repo}/ with frontmatter, secret-screened (`context_engine/redact.py`; exit 1 on a hit) | required |
 | `run_doc_checks.sh` | file | Stage 3 orchestrator: lint + fixers (+ --apply) | required |
 | `schema_lint.py` | file | SCHEMA.md pyramid drift gate (`check .`) | required |
 | `wiki-manage.sh` | file | Wiki.js stack management wrapper | |

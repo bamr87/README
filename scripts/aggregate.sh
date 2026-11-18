@@ -153,7 +153,11 @@ if [ -f ".venv/bin/activate" ]; then
   . .venv/bin/activate
 fi
 # Use $PYTHON_CMD chosen earlier (or python if within venv)
-${PYTHON_CMD:-python} scripts/process.py
+# A non-zero exit - the secret screen redacted a credential, or processing
+# broke - fails this script once the corpus is finished below, so the
+# scheduled workflow stops before its commit step.
+process_status=0
+${PYTHON_CMD:-python} scripts/process.py || process_status=$?
 
 # Upstream repos hard-wrap their prose; this repo's markdown-oneline gate does
 # not allow it. Normalizing at ingest - with the same exclusions the gate uses -
@@ -173,6 +177,11 @@ if [ "${#failed[@]}" -gt 0 ]; then
   printf '  - %s\n' "${failed[@]}" >&2
   echo "Their pages in docs/ were left as they were; this crawl must not be published." >&2
   exit 1
+fi
+
+if [ "$process_status" -ne 0 ]; then
+  echo "process.py exited $process_status: not publishing this crawl (secret screen: docs/results/secret_screen.json)" >&2
+  exit "$process_status"
 fi
 
 echo "Documentation aggregation completed!"

@@ -18,7 +18,7 @@ The testing framework provides:
 tests/
 ├── unit/                          # Unit tests
 │   ├── test_cases/                # unittest modules (discovered by the runner)
-│   │   ├── test_context_engine.py # registry, extractor, navigator, synthesizer, index/query, AI provider, schema lint, MCP
+│   │   ├── test_context_engine.py # registry, extractor, navigator, synthesizer, index/query, AI provider, secret screen, hooks, schema lint, MCP
 │   │   ├── test_file_processing.py
 │   │   ├── test_fleet_survey.py   # fleet survey checks + health report
 │   │   ├── test_repo_crawl.py     # scripts/aggregate.sh end to end against local bare repos
@@ -29,9 +29,10 @@ tests/
 │   ├── test_integration.py        # Integration test cases
 │   └── test_repo_runner.py        # Repository test runner
 ├── fixtures/                      # Test fixtures and sample data
+│   ├── fake_secrets.py            # Credential-shaped fakes for the secret screen, built at runtime
 │   └── sample_docs.py             # Sample documentation files
 ├── test-docs/                     # Sample markdown fixtures
-├── results/                       # Test results storage (generated)
+├── results/                       # Runner output (generated per run, gitignored)
 ├── config.py                      # Test configuration
 ├── crawl.py                       # Runs scripts/aggregate.sh in a scratch working directory
 ├── test_runner.py                 # Main test runner
@@ -73,10 +74,10 @@ python tests/test_runner.py --type integration --repos https://github.com/octoca
 
 Unit tests verify individual components in isolation. The runner discovers every `tests/unit/test_cases/test_*.py` module:
 
-- **Context engine** (`test_context_engine.py`): registry, extractor, navigator, icon normalizer, synthesizer/assembler, index and query, AI provider selection, schema lint, MCP dispatch — all against fixtures
-- **Fleet survey** (`test_fleet_survey.py`): link resolver, governance/structure/quality/metadata checks, health scoring, report rendering, fleet inventory
+- **Context engine** (`test_context_engine.py`): registry, extractor, navigator, icon normalizer, secret screen (`redact.py`), hook environment and output screening, synthesizer/assembler, index and query, AI provider selection, schema lint, MCP dispatch — all against fixtures
+- **Fleet survey** (`test_fleet_survey.py`): link resolver, governance/structure/quality/metadata checks, health scoring, report rendering, fleet inventory, working-tree reads that never follow a symlink out of the checkout
 - **Tracked surfaces** (`test_tracked_surfaces.py`): `scripts/check_tracked_surfaces.py` against clean and broken fixture repos
-- **File processing** (`test_file_processing.py`): title extraction, front matter generation, ingest prose normalization
+- **File processing** (`test_file_processing.py`): title extraction, front matter generation, the ingest secret screen (and `aggregate.sh` failing with `process.py`), ingest prose normalization
 - **Repository crawl** (`test_repo_crawl.py`): `scripts/aggregate.sh` end to end against local bare repositories, offline: a repository it cannot fetch (missing, unknown branch, no directory name) fails the run while the others still reach `docs/`, a leftover clone is fast-forwarded or reported, symlinks are never copied
 
 `tests/unit/test_docs_tools.py` sits outside `test_cases/` and uses bare pytest functions, so the custom harness does not run it; run it with `python -m pytest tests/unit/test_docs_tools.py`.
@@ -142,11 +143,13 @@ Add repositories to test in `tests/config.py`:
 
 ### Result Storage
 
-Test results are stored in JSON format in the `tests/results/` directory:
+Each run writes its results as JSON into `tests/results/`, which the runner creates when it is missing:
 
 - `unit_test_results_YYYYMMDD_HHMMSS.json` - Unit test results
 - `integration_repo_results_YYYYMMDD_HHMMSS.json` - Integration test results
 - `combined_test_results_YYYYMMDD_HHMMSS.json` - Combined results
+
+These files stay local and are never committed: `.gitignore` covers `tests/results/`, so running the Definition of Done gate (`--type quick`) leaves the working tree clean. Pass `--output DIR` to write them somewhere else, for example a temporary directory or a CI artifact path.
 
 ### Result Format
 
