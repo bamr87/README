@@ -8,22 +8,34 @@ The preserved directory structure is the navigation contract: the context
 engine's navigator turns docs/{repo_name}/** straight into the published
 sidebar, so this stage must keep the upstream hierarchy intact and leave
 every page safe to place in a navigation entry.
+
+Every page also passes the secret screen (scripts/context_engine/redact.py):
+a credential committed upstream by mistake is replaced with
+[REDACTED:<kind>] before the page is written, listed in
+docs/results/secret_screen.json by project, path, line and kind (never by
+value), and the run exits 1 so the scheduled crawl stops before its commit.
+A clean run writes no report.
 """
 
+import json
 import os
 import re
 import sys
 from pathlib import Path
-from typing import Dict, Optional
+from typing import Dict, List, Optional, Tuple
 
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from fix_frontmatter_icons import normalize_frontmatter  # noqa: E402
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from scripts.context_engine.redact import redact  # noqa: E402
+
 # Configuration
 RAW_DIR = 'raw_docs'
 ORGANIZED_DIR = 'docs'
+SECRET_SCREEN_PATH = Path(ORGANIZED_DIR) / 'results' / 'secret_screen.json'
 
 
 def extract_title_from_content(content: str) -> Optional[str]:
@@ -67,13 +79,29 @@ def generate_front_matter(content: str, filename: str) -> Dict:
     return front_matter
 
 
-def process_markdown_file(src_path: Path, dest_base: Path) -> None:
+def source_location(src_path: Path) -> Tuple[str, Path]:
+    """The repo name and in-repo path of a raw_docs/{repo_name}/... file."""
+    path_parts = src_path.parts
+    raw_docs_index = path_parts.index(RAW_DIR) if RAW_DIR in path_parts else 0
+    if raw_docs_index + 1 < len(path_parts):
+        return path_parts[raw_docs_index + 1], Path(*path_parts[raw_docs_index + 2:])
+    return "unknown", Path(src_path.name)
+
+
+def process_markdown_file(src_path: Path, dest_base: Path) -> List[Dict]:
     """
     Process a single markdown file. Output goes to docs/{repo_name}/{relative_path}.
+
+    Returns the page's secret-screen hits, one {project, path, line, kind}
+    per credential that was redacted; an empty list means a clean page.
     """
+    repo_name, relative_path = source_location(src_path)
+    hits = []
     try:
         with open(src_path, 'r', encoding='utf-8') as f:
-            content = f.read()
+            # Screen before anything else reads the page, so no credential
+            # reaches the corpus, the site, AI prompts or MCP answers.
+            content, hits = redact(f.read())
 
         # Extract existing front matter if any
         if content.startswith('---'):
@@ -117,16 +145,6 @@ def process_markdown_file(src_path: Path, dest_base: Path) -> None:
                         flat.append(str(item))
                 updated_fm['tags'] = flat
 
-        # Extract repo name and relative path from raw_docs/{repo_name}/...
-        path_parts = src_path.parts
-        raw_docs_index = path_parts.index(RAW_DIR) if RAW_DIR in path_parts else 0
-        if raw_docs_index + 1 < len(path_parts):
-            repo_name = path_parts[raw_docs_index + 1]
-            relative_path = Path(*path_parts[raw_docs_index + 2:])
-        else:
-            repo_name = "unknown"
-            relative_path = Path(src_path.name)
-
         # Output: docs/{repo_name}/{original_relative_path}
         dest_dir = dest_base / repo_name / relative_path.parent
         dest_dir.mkdir(parents=True, exist_ok=True)
@@ -144,10 +162,36 @@ def process_markdown_file(src_path: Path, dest_base: Path) -> None:
     except Exception as e:
         print(f"Error processing {src_path}: {e}")
 
+    return [{"project": repo_name, "path": relative_path.as_posix(),
+             "line": hit.line, "kind": hit.kind} for hit in hits]
 
-def main():
+
+def write_secret_screen(hits: List[Dict], pages: int,
+                        path: Path = SECRET_SCREEN_PATH) -> None:
     """
-    Main processing function.
+    Record what the screen found - where, never the value. The report exists
+    only after a crawl that redacted something (a run that fails, so it is
+    never committed); a clean crawl removes a stale one.
+    """
+    if not hits:
+        if path.exists():
+            path.unlink()
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    report = {
+        "description": ("Secret screen of the crawled corpus (scripts/process.py): "
+                        "each credential found upstream, redacted to "
+                        "[REDACTED:<kind>] in docs/. Values are never recorded."),
+        "pages_screened": pages,
+        "hits": sorted(hits, key=lambda h: (h["project"], h["path"], h["line"], h["kind"])),
+    }
+    path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+
+
+def main() -> int:
+    """
+    Main processing function. Returns 1 when the secret screen redacted
+    anything, so the crawl that called it stops before committing.
     """
     print("Starting documentation processing...")
 
@@ -156,14 +200,16 @@ def main():
 
     # Process all markdown files
     processed_count = 0
+    secret_hits: List[Dict] = []
     for root, dirs, files in os.walk(RAW_DIR):
         for file in files:
             if file.endswith('.md') or file.upper().startswith('README'):
                 src_path = Path(root) / file
-                process_markdown_file(src_path, Path(ORGANIZED_DIR))
+                secret_hits += process_markdown_file(src_path, Path(ORGANIZED_DIR))
                 processed_count += 1
 
     print(f"Processed {processed_count} documentation files")
+    write_secret_screen(secret_hits, processed_count)
 
     # Clean up raw_docs after processing
     print("Cleaning up raw documentation files...")
@@ -176,9 +222,18 @@ def main():
     if os.path.exists(RAW_DIR):
         os.rmdir(RAW_DIR)
 
+    if secret_hits:
+        print(f"SECRET SCREEN: redacted {len(secret_hits)} credential(s) found upstream "
+              f"(listed in {SECRET_SCREEN_PATH}). Revoke each one and remove it from "
+              "its source repository, then crawl again:")
+        for hit in secret_hits:
+            print(f"  {hit['project']}/{hit['path']}:{hit['line']}  {hit['kind']}")
+        return 1
+
     print("Documentation processing completed!")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
 
