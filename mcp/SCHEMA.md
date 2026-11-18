@@ -15,7 +15,7 @@ coverage: full
 |---|---|---|---|
 | `README.md` | file | Server usage, tool reference, client registration | required |
 | `SCHEMA.md` | file | This file | required |
-| `server.py` | file | Stdio JSON-RPC MCP server (stdlib-only, read-only) | required |
+| `server.py` | file | Stdio JSON-RPC MCP server (stdlib-only, read-only); `--version` and `--healthcheck` answer and exit without the stdio loop | required |
 
 ## Placement
 

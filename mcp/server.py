@@ -11,6 +11,11 @@ Run directly (registered for Claude Code in .mcp.json):
 
     python3 mcp/server.py
 
+Operator flags (answer and exit without entering the stdio loop):
+
+    python3 mcp/server.py --version      # readme-context-engine <version>
+    python3 mcp/server.py --healthcheck  # one JSON line; exit 0 ok/stale, 1 missing
+
 Tools:    list_projects, get_project, search_context, get_readme,
           get_nav, get_schema, context_status
 Resources: context://apex, context://index, context://manifest,
@@ -18,11 +23,12 @@ Resources: context://apex, context://index, context://manifest,
            context://nav, context://nav/<name>
 """
 
+import argparse
 import json
 import sys
 import traceback
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Tuple
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -356,8 +362,58 @@ def handle_request(request: Dict) -> Optional[Dict]:
     return error(-32601, f"method not found: {method}")
 
 
-def main() -> int:
-    """Newline-delimited JSON-RPC loop over stdio."""
+def healthcheck() -> Tuple[Dict[str, Any], int]:
+    """
+    Context health for `--healthcheck`, as (report, exit code).
+
+    Reads the freshness manifest through the same `query.get_manifest()` the
+    `context_status` tool uses:
+
+    - ok      - the manifest loads and this engine version built it (exit 0)
+    - stale   - it loads, but another engine version built it; rebuild (exit 0)
+    - missing - no manifest, or one that is not a readable JSON object (exit 1)
+    """
+    report: Dict[str, Any] = {"status": "missing", "version": ENGINE_VERSION,
+                              "generated_at": None}
+    try:
+        manifest = get_manifest()
+    except (ContextMissing, OSError, ValueError):
+        # ValueError covers invalid JSON (json.JSONDecodeError) and bad bytes.
+        return report, 1
+    if not isinstance(manifest, dict):
+        return report, 1
+    report["generated_at"] = manifest.get("generated_at")
+    report["status"] = ("ok" if manifest.get("engine_version") == ENGINE_VERSION
+                        else "stale")
+    return report, 0
+
+
+def _parse_args(argv: Optional[List[str]]) -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Read-only MCP server for the README context engine. "
+                    "With no flags it serves newline-delimited JSON-RPC 2.0 "
+                    "on stdin/stdout.")
+    flags = parser.add_mutually_exclusive_group()
+    flags.add_argument("--version", action="store_true",
+                       help="print the server name and engine version, then exit")
+    flags.add_argument("--healthcheck", action="store_true",
+                       help="print one JSON line {status, version, generated_at} "
+                            "for the committed context, then exit 0 (ok, stale) "
+                            "or 1 (missing)")
+    return parser.parse_args(argv)
+
+
+def main(argv: Optional[List[str]] = None) -> int:
+    """Answer --version/--healthcheck, or run the JSON-RPC loop over stdio."""
+    args = _parse_args(argv)
+    if args.version:
+        print(f"{SERVER_INFO['name']} {SERVER_INFO['version']}")
+        return 0
+    if args.healthcheck:
+        report, code = healthcheck()
+        print(json.dumps(report))
+        return code
+
     print(f"readme-context-engine MCP server v{ENGINE_VERSION} ready",
           file=sys.stderr, flush=True)
     for line in sys.stdin:

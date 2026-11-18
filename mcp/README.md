@@ -45,6 +45,25 @@ printf '%s\n%s\n%s\n' \
   | python3 mcp/server.py
 ```
 
+## Operator flags
+
+Two flags answer without the MCP handshake and exit before the stdio loop starts, so an operator, a CI step or a container probe can ask which engine build this is and whether its context loads. They are the stdio server's equivalent of the fleet standard's `/version` (UPS-BE-11) and `/healthz` (UPS-BE-10) routes. With no flags the server behaves exactly as before.
+
+```console
+$ python3 mcp/server.py --version
+readme-context-engine 1.0.0
+$ python3 mcp/server.py --healthcheck
+{"status": "ok", "version": "1.0.0", "generated_at": "2026-11-16T03:08:41+00:00"}
+```
+
+`--healthcheck` reads the freshness manifest (`context/index/manifest.json`) through the same `query.get_manifest()` that `context_status` uses and prints one JSON line. `version` is this engine's version and `generated_at` is the manifest's build time (`null` when there is no readable manifest).
+
+| `status` | Meaning | Exit |
+|---|---|---|
+| `ok` | The manifest loads and this engine version built it | 0 |
+| `stale` | The manifest loads, but another engine version built it: rebuild with `python3 -m scripts.context_engine build` | 0 |
+| `missing` | No manifest, or one that is not a readable JSON object | 1 |
+
 ## Design notes
 
 - The server reads `context/index/context_index.json` and the card/fact/nav
