@@ -47,8 +47,6 @@ The following instructions are also included on the livecd:
 [HES]: http://hackitoergosum.org/
 [DownloadMonxla]: http://images.overthewire.org/Monxla%20-%20OverTheWire%20Wargame.iso
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -82,5 +80,3 @@ Boot the ISO in a virtual machine (or from a burned disc). The upstream page say
 A live-CD game suits players who like self-contained puzzles that can be reset with a reboot, after finishing several of the main OverTheWire games.
 
 </section>
-
-<!-- study-guide:end -->

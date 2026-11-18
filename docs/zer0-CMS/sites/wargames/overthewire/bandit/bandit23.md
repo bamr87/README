@@ -47,8 +47,6 @@ Commands you may need to solve this level
 -----------------------------------------
 cron, crontab, crontab(5) (use "man 5 crontab" to access this)
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -81,5 +79,3 @@ Reading shell scripts critically, including who a script runs as.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit22/">Level 22</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit24/">Level 24</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

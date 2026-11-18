@@ -50,8 +50,6 @@ Reading Material
 [CRC and How to Reverse It]: http://www.woodmann.com/fravia/crctut1.htm
 [CRC and How to Reverse It (mirror)]: http://taz.newffr.com/TAZ/Reverse_Engineering/CRC.html
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -84,5 +82,3 @@ CRCs detect accidental errors, not tampering. Never use them for integrity again
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex6/">Level 6</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex8/">Level 8</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

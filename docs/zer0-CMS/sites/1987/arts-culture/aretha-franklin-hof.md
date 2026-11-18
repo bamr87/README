@@ -31,11 +31,9 @@ The milestone also drew sustained attention to structural gender disparities in 
 - [Aretha Franklin — Rock & Roll Hall of Fame](https://rockhall.com/inductees/aretha-franklin/)
 - [Rock and Roll Hall of Fame inducts first woman — HISTORY.com](https://www.history.com/this-day-in-history/january-3/rock-and-roll-hall-of-fame-inducts-first-woman)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Sign 'O' the Times (Prince, March 31, 1987)](sign-o-the-times.md) — another Arts & Culture landmark of 1987, Prince's acclaimed double album released the same year.
 - [Full Metal Jacket (June 26, 1987)](full-metal-jacket.md) — Stanley Kubrick's Vietnam War film, another major cultural event of 1987.
 - [Black Monday (October 19, 1987)](../society-economics/black-monday.md) — the defining economic event of 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

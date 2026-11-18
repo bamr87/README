@@ -868,6 +868,10 @@ nav:
               - "0001 Ratify the Constitution": zer0-mistakes/docs/amendments/0001-ratify-constitution.md
               - "Amendment Record Template": zer0-mistakes/docs/amendments/0000-template.md
               - "Proposed: Agent merge of mergeable PRs, and a review gate": zer0-mistakes/docs/amendments/proposed/agent-merge-review-gate.md
+          - "Architecture Decision Records":
+              - "Architecture Decision Records": zer0-mistakes/docs/adr/README.md
+              - "ADR 0001: Record architecture decisions": zer0-mistakes/docs/adr/0001-record-architecture-decisions.md
+              - "ADR template": zer0-mistakes/docs/adr/0000-template.md
           - "Architecture Documentation":
               - "Architecture Documentation": zer0-mistakes/docs/architecture/README.md
               - "Build System": zer0-mistakes/docs/architecture/build-system.md
@@ -1574,6 +1578,7 @@ nav:
           - "Amendments — scripts":
               - "Amendments — scripts": scripts/docs/amendments/README.md
               - "0001 — Ratify the constitution": scripts/docs/amendments/0001-ratify-constitution.md
+              - "0002 — Missions": scripts/docs/amendments/0002-mission-statement.md
               - "NNNN — Title of the amendment": scripts/docs/amendments/0000-template.md
           - "Architecture Decision Records":
               - "Architecture Decision Records": scripts/docs/adr/README.md
@@ -1851,6 +1856,11 @@ nav:
           - "SCHEMA — bamr87 dash": bamr87/SCHEMA.md
           - "changelog.d/ — pending changelog entries":
               - "changelog.d/ — pending changelog entries": bamr87/changelog.d/README.md
+              - "Claude Run Transient Retry": bamr87/changelog.d/claude-run-transient-retry.md
+              - "Claude Run Version Line": bamr87/changelog.d/claude-run-version-line.md
+              - "Merge Readiness": bamr87/changelog.d/merge-readiness.md
+              - "Mission And About Section": bamr87/changelog.d/mission-and-about-section.md
+              - "Pr Queue Maintainer Actions": bamr87/changelog.d/pr-queue-maintainer-actions.md
               - "Pr Review Findings": bamr87/changelog.d/pr-review-findings.md
               - "Pr Review Kit Concurrency": bamr87/changelog.d/pr-review-kit-concurrency.md
               - "SCHEMA — changelog.d": bamr87/changelog.d/SCHEMA.md
@@ -1867,6 +1877,9 @@ nav:
               - "data/roadmap.d/ — pending roadmap entries":
                   - "data/roadmap.d/ — pending roadmap entries": bamr87/_data/roadmap.d/README.md
                   - "SCHEMA — data/roadmap.d": bamr87/_data/roadmap.d/SCHEMA.md
+              - "data/sprints/ — the live expedite-sprint records":
+                  - "data/sprints/ — the live expedite-sprint records": bamr87/_data/sprints/README.md
+                  - "SCHEMA — data/sprints": bamr87/_data/sprints/SCHEMA.md
           - "diagrams/":
               - "diagrams/": bamr87/diagrams/README.md
               - "SCHEMA — diagrams": bamr87/diagrams/SCHEMA.md
@@ -1875,6 +1888,7 @@ nav:
                   - "SCHEMA — diagrams/pipeline-map": bamr87/diagrams/pipeline-map/SCHEMA.md
           - "Documentation":
               - "bamr87 documentation": bamr87/docs/README.md
+              - "About section — the repository site map": bamr87/docs/ABOUT-SECTION.md
               - "Agent Verification — proving features work the way a user experiences…": bamr87/docs/VERIFICATION.md
               - "AI Integration — surfaces, auth, and the loops": bamr87/docs/AI-INTEGRATION.md
               - "Architecture Research Harness — R&D loop for fleet architecture": bamr87/docs/ARCH-RESEARCH-HARNESS.md
@@ -1894,6 +1908,7 @@ nav:
               - "Engagement estimation & cost tracking": bamr87/docs/ESTIMATION.md
               - "Evals": bamr87/docs/EVALS.md
               - "Expedite sprints — accelerated, monitored pilots run by agentic loops": bamr87/docs/EXPEDITE-SPRINTS.md
+              - "Fleet": bamr87/docs/FLEET.md
               - "Fleet consolidation — fewer repos, one place per concern": bamr87/docs/CONSOLIDATION.md
               - "Fleet design harmonization — roadmap and plan": bamr87/docs/DESIGN-HARMONIZATION.md
               - "Fleet frontend platform — layers, tiers and fan-out": bamr87/docs/FRONTEND-PLATFORM.md
@@ -2006,6 +2021,8 @@ nav:
                   - "SCHEMA — docs/amendments": bamr87/docs/amendments/SCHEMA.md
                   - "docs/amendments/proposed/ — unnumbered amendment records":
                       - "docs/amendments/proposed/ — unnumbered amendment records": bamr87/docs/amendments/proposed/README.md
+                      - "NEW — A merge or close the maintainer confirms in the console PR queue…": bamr87/docs/amendments/proposed/pr-queue-maintainer-actions.md
+                      - "NEW — Fleet mission statements and the repository about section": bamr87/docs/amendments/proposed/mission-and-about-section.md
                       - "SCHEMA — docs/amendments/proposed": bamr87/docs/amendments/proposed/SCHEMA.md
               - "Architecture Decision Records":
                   - "Architecture Decision Records": bamr87/docs/adr/README.md
@@ -2020,12 +2037,14 @@ nav:
                   - "ADR 0009 — The agentic efficacy model: one agent inventory, five KPIs…": bamr87/docs/adr/0009-agentic-efficacy-model.md
                   - "ADR 0010 — The fleet graph and outcome learning: one model of what the…": bamr87/docs/adr/0010-fleet-graph-and-outcome-learning.md
                   - "ADR 0011 — One framework, many instances: the stack installs for any…": bamr87/docs/adr/0011-one-framework-many-instances.md
+                  - "ADR 0012 — Merge readiness: every pull request is checked, reviewed and…": bamr87/docs/adr/0012-merge-readiness.md
                   - "ADR NNNN — Title in sentence case": bamr87/docs/adr/0000-template.md
                   - "SCHEMA — docs/adr": bamr87/docs/adr/SCHEMA.md
               - "Assets":
                   - "SCHEMA — docs/assets": bamr87/docs/assets/SCHEMA.md
                   - "SCHEMA — docs/assets/guides": bamr87/docs/assets/guides/SCHEMA.md
               - "PRD":
+                  - "Decisions — Fleet activity replay, P0: contracts frozen": bamr87/docs/prd/FLEET-ACTIVITY-REPLAY-DECISIONS.md
                   - "Plan — Fleet activity replay: implementation plan and epic": bamr87/docs/prd/FLEET-ACTIVITY-REPLAY-PLAN.md
                   - "Plan — GitHub Actions as the agentic SDLC platform: typed decisions…": bamr87/docs/prd/AGENTIC-SDLC.md
                   - "PRD — Agent news feed": bamr87/docs/prd/AGENT-NEWS-FEED.md
@@ -2072,6 +2091,9 @@ nav:
           - "projects/ — submodule container":
               - "projects/ — submodule container": bamr87/projects/README.md
               - "SCHEMA — projects": bamr87/projects/SCHEMA.md
+          - "schemas":
+              - "schemas": bamr87/schemas/README.md
+              - "SCHEMA — schemas": bamr87/schemas/SCHEMA.md
           - "tools/":
               - "tools/": bamr87/tools/README.md
               - "SCHEMA — fleet": bamr87/tools/fleet/SCHEMA.md
@@ -2080,6 +2102,7 @@ nav:
               - "Harness Console":
                   - "Harness Console": bamr87/tools/console/README.md
                   - "SCHEMA — tools/console": bamr87/tools/console/SCHEMA.md
+                  - "SCHEMA — tools/console/backend": bamr87/tools/console/backend/SCHEMA.md
                   - "SCHEMA — tools/console/mcplayer": bamr87/tools/console/mcp_layer/SCHEMA.md
                   - "@bamr87/harness-console-ui":
                       - "@bamr87/harness-console-ui": bamr87/tools/console/design-system/README.md
@@ -2403,6 +2426,7 @@ nav:
               - "Amendments — djangoerp":
                   - "Amendments — djangoerp": djangoerp/docs/amendments/README.md
                   - "0001 — Ratify the constitution": djangoerp/docs/amendments/0001-ratify-constitution.md
+                  - "0002 — Missions": djangoerp/docs/amendments/0002-mission-statement.md
                   - "NNNN — Title of the amendment": djangoerp/docs/amendments/0000-template.md
               - "Architecture Decision Records":
                   - "Architecture Decision Records": djangoerp/docs/adr/README.md
@@ -2460,6 +2484,7 @@ nav:
           - "githubai (CLAUDE)": githubai/CLAUDE.md
           - "githubai tools": githubai/tools/README.md
           - "Repo-type profiles": githubai/profiles/README.md
+          - "Security Policy": githubai/SECURITY.md
           - "Documentation":
               - "githubai documentation": githubai/docs/README.md
               - "Architecture": githubai/docs/architecture.md
@@ -2473,10 +2498,15 @@ nav:
               - "Amendments — githubai":
                   - "Amendments — githubai": githubai/docs/amendments/README.md
                   - "0001 — Ratify the constitution": githubai/docs/amendments/0001-ratify-constitution.md
+                  - "0002 — Missions": githubai/docs/amendments/0002-mission-statement.md
                   - "NNNN — Title of the amendment": githubai/docs/amendments/0000-template.md
               - "Architecture Decision Records":
                   - "Architecture Decision Records": githubai/docs/adr/README.md
                   - "ADR 0001 — Record architecture decisions": githubai/docs/adr/0001-record-architecture-decisions.md
+                  - "ADR 0002 — Routing parity between Actions mode and app mode": githubai/docs/adr/0002-relay-routing-parity.md
+                  - "ADR 0003 — Org policy is subtractive and keeps the last document that…": githubai/docs/adr/0003-subtractive-org-policy.md
+                  - "ADR 0004 — A zero-dependency relay with its own YAML subset parser": githubai/docs/adr/0004-zero-dependency-relay.md
+                  - "ADR 0005 — Layered config: base, then profile, then repository": githubai/docs/adr/0005-layered-config-merge.md
                   - "ADR NNNN — Title in sentence case": githubai/docs/adr/0000-template.md
               - "Reference":
                   - "Label taxonomy": githubai/docs/reference/labels.md
@@ -2546,6 +2576,7 @@ nav:
                   - "Amendments — gitorio": gitorio/docs/amendments/README.md
                   - "0001 — Ratify the constitution": gitorio/docs/amendments/0001-ratify-constitution.md
                   - "0002 — Harness Studio mission: observe, design and manage fleet loops…": gitorio/docs/amendments/0002-harness-studio-mission.md
+                  - "0003 — Missions": gitorio/docs/amendments/0003-mission-statement.md
                   - "NEW — Agent merge of mergeable PRs, and a review gate": gitorio/docs/amendments/proposed/agent-merge-review-gate.md
                   - "NNNN — Title of the amendment": gitorio/docs/amendments/0000-template.md
               - "Architecture Decision Records":
@@ -2716,6 +2747,7 @@ nav:
               - "Amendments — godotgo":
                   - "Amendments — godotgo": godotgo/docs/amendments/README.md
                   - "0001 — Ratify the constitution": godotgo/docs/amendments/0001-ratify-constitution.md
+                  - "0002 — Missions": godotgo/docs/amendments/0002-mission-statement.md
                   - "NNNN — Title of the amendment": godotgo/docs/amendments/0000-template.md
               - "Architecture Decision Records":
                   - "Architecture Decision Records": godotgo/docs/adr/README.md
@@ -2774,6 +2806,7 @@ nav:
               - "Amendments — law-ai":
                   - "Amendments — law-ai": law-ai/docs/amendments/README.md
                   - "0001 — Ratify the constitution": law-ai/docs/amendments/0001-ratify-constitution.md
+                  - "0003 — Missions": law-ai/docs/amendments/0003-mission-statement.md
                   - "NEW — Agent merge of mergeable PRs, and a review gate": law-ai/docs/amendments/proposed/agent-merge-review-gate.md
                   - "NNNN — Title of the amendment": law-ai/docs/amendments/0000-template.md
               - "Architecture Decision Records":
@@ -3263,6 +3296,7 @@ nav:
           - "ocrmd (AGENTS)": ocrmd/AGENTS.md
           - "ocrmd (CLAUDE)": ocrmd/CLAUDE.md
           - "PRD — ocrmd": ocrmd/PRD.md
+          - "Security Policy": ocrmd/SECURITY.md
           - "Documentation":
               - "ocrmd documentation": ocrmd/docs/README.md
               - "Destinations and the library API": ocrmd/docs/integrations.md
@@ -3294,6 +3328,7 @@ nav:
           - "outbox (CLAUDE)": outbox/CLAUDE.md
           - "PRD — outbox": outbox/PRD.md
           - "SCHEMA — bamr87/outbox": outbox/SCHEMA.md
+          - "Security Policy": outbox/SECURITY.md
           - "Agents":
               - "Claimant-A": outbox/agents/claimant_a.md
               - "Claimant-B": outbox/agents/claimant_b.md
@@ -3475,6 +3510,7 @@ nav:
               - "Amendments — vs-sonic-pi":
                   - "Amendments — vs-sonic-pi": vs-sonic-pi/docs/amendments/README.md
                   - "0001 — Ratify the constitution": vs-sonic-pi/docs/amendments/0001-ratify-constitution.md
+                  - "0002 — Missions": vs-sonic-pi/docs/amendments/0002-mission-statement.md
                   - "NNNN — Title of the amendment": vs-sonic-pi/docs/amendments/0000-template.md
               - "Architecture Decision Records":
                   - "Architecture Decision Records": vs-sonic-pi/docs/adr/README.md
@@ -3959,6 +3995,7 @@ nav:
                   - "Amendments — zer0-CMS": zer0-CMS/docs/amendments/README.md
                   - "0001 — Ratify the constitution": zer0-CMS/docs/amendments/0001-ratify-constitution.md
                   - "0002 — Retire the Rails invariants": zer0-CMS/docs/amendments/0002-retire-the-rails-invariants.md
+                  - "0003 — Missions": zer0-CMS/docs/amendments/0003-mission-statement.md
                   - "NNNN — Title of the amendment": zer0-CMS/docs/amendments/0000-template.md
               - "Architecture decision records":
                   - "Architecture decision records": zer0-CMS/docs/adr/README.md
@@ -3974,6 +4011,7 @@ nav:
                   - "ADR 0010 — Voice: one scoped, versioned voice per site, resolved for…": zer0-CMS/docs/adr/0010-voice.md
               - "Plan":
                   - "Agent-Native Headless CMS: Rails + Django/Wagtail": zer0-CMS/docs/plan/agent-native-design.md
+                  - "Newsroom and journalism platform — discovery": zer0-CMS/docs/plan/newsroom-journalism-discovery.md
                   - "PLAN: zer0-CMS → one Python platform with a React frontend (ADR 0006)": zer0-CMS/docs/plan/PLAN.md
                   - "TARGET — what zer0-CMS is being rebuilt into": zer0-CMS/docs/plan/TARGET.md
                   - "The Rails CMS: what the platform still owes": zer0-CMS/docs/plan/rails-cms-spec.md

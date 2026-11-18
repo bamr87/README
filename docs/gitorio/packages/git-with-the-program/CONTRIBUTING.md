@@ -6,9 +6,6 @@ title: Contributing to Git with the Program
 ---
 # Contributing to Git with the Program
 
-<!-- Implements: seeds/SEED-01-scaffold.md deliverable 5 — "how to propose an amendment
-     (ratification PR flow), how to run validation locally". -->
-
 This repository builds a governance framework, so it governs itself first. Two consequences you will hit within your first PR:
 
 1. **`.program/` is not code.** It is this repo's constitution, and it changes only through a human-ratified PR. CI fails any commit where a machine actor touched that path (INV-001).

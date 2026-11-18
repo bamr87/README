@@ -14,8 +14,6 @@ title: 'ADR 0009 — The agentic efficacy model: one agent inventory, five KPIs 
 - **Related**: constitution § 29 (the contract this ADR's model serves), § 10.7 (honest cost), § 10.8 (prior art first), § 10.9 (local first), § 12.3 (gated changes), § 13 (eval baseline and risk tiers), § 17 (loop switches); [ADR 0002](0002-agent-step-specs-and-local-runner.md) (step specs and the local runner), [ADR 0004](0004-recursive-harness-refinement.md) (Harness² and the reflector), [ADR 0008](0008-typed-decisions-as-pipeline-gates.md) (telemetry scores efficiency); [docs/AGENT-EFFICACY.md](../AGENT-EFFICACY.md), [docs/HARNESS.md](../HARNESS.md), [docs/HARNESS-OPS.md](../HARNESS-OPS.md), [docs/JEV.md](../JEV.md)
 - **Tracking**: #773
 
-<!-- Accepted in and Completed are added by the post-merge ratify job when the maintainer merges this ADR's PR and when the maintainer closes the Tracking issue as completed (docs/adr/README.md#lifecycle). Never write them by hand. A PR that adds or changes an ADR is gated (constitution § 12.3). -->
-
 ## Context
 
 ### Needs assessment

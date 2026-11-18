@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 138,
-    "fingerprint": "7a05b21d4b2fcb21",
+    "fingerprint": "f6bbfee6027e0701",
     "path": "docs/lifehacker.dev",
     "present": true,
-    "total_bytes": 1269183
+    "total_bytes": 1268491
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -106,7 +106,7 @@
       "news",
       "ai"
     ],
-    "total_words": 192462
+    "total_words": 192441
   },
   "schema_version": "1.0",
   "signals": {

@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 3e5cfb0bc89bb299
+source_fingerprint: e19001884a5a20c7
 tags:
   - ai
   - concept
@@ -25,7 +25,7 @@ tags:
 
 # zer0-CMS
 
-> Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown sites. An agent-native CMS for markdown sites: one Python platform (Django, with Wagtail as a headless library), a React studio and site renderer, and a VS Code extension with the studio's capabilities — publishing only through a gate a human has to walk through.
+> Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown sites. zer0-CMS's direction is to become the ultimate open home for all things markdown site operations: data, tools, resources and transparency, with a governed studio, a human publish gate, and agent-declared effects, for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -33,7 +33,7 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/zer0-CMS` - 1205 docs |
+| Corpus | `docs/zer0-CMS` - 1207 docs |
 | External | no |
 
 ## Signals
@@ -44,16 +44,16 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~856,731 words across 1205 indexed documents
+- ~860,195 words across 1207 indexed documents
 - code samples in: bash, yaml, python, plaintext, html, text, javascript, liquid
 
 ## Navigation
 
-1199 published pages in 181 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-CMS.md) · [tree as JSON](../nav/zer0-CMS.json)
+1201 published pages in 181 sections (max depth 6) — [browse the full map](../../docs/browse/zer0-CMS.md) · [tree as JSON](../nav/zer0-CMS.json)
 
 - **Apps** (252 pages)
 - **content/ — the platform** (58 pages)
-- **Documentation** (29 pages)
+- **Documentation** (31 pages)
 - **media/ — the design system** (3 pages)
 - **Packages** (92 pages)
 - **Sites** (726 pages)

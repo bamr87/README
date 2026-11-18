@@ -4,8 +4,6 @@ source_repo: bamr87/fredgar-ai
 source_url: https://github.com/bamr87/fredgar-ai/blob/main/AGENTS.md
 title: fredgar-ai
 ---
-<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->
-
 # fredgar-ai
 
 > Fredgar AI's direction is to become the ultimate open home for all things financial: data, tools, resources and transparency, with queryable and auditable SEC EDGAR and FRED data, cited AI, and API-first access for everyone ([constitution](docs/constitution.md) §1).

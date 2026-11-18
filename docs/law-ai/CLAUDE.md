@@ -4,7 +4,6 @@ source_repo: bamr87/law-ai
 source_url: https://github.com/bamr87/law-ai/blob/main/CLAUDE.md
 title: Law AI
 ---
-<!-- kit: sdlc v0.1.0 · pointer only (decision D4, UPS-AGENT-08). The rules live in AGENTS.md. -->
 # Law AI
 
 The canonical agent instructions for this repo are in [AGENTS.md](AGENTS.md). Claude Code loads them through the import below; add nothing else here.

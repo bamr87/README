@@ -42,8 +42,6 @@ How big is your shellcode? This level has a non-executable stack. You must login
 
 [vortex.labs.overthewire.org]: ssh://vortex.labs.overthewire.org:2228
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -76,5 +74,3 @@ Real exploits often have only a few bytes to work with, which is why shellcode t
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex12/">Level 12</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex14/">Level 14</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas27
     URL:      http://natas27.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Enforce uniqueness in the database with a unique constraint, normalise input bef
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas26/">Level 26</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas28/">Level 28</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

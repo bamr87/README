@@ -28,7 +28,6 @@ The FDA approval of Prozac in 1987 transformed the treatment of depression and r
 1. Wikipedia — "Fluoxetine": https://en.wikipedia.org/wiki/Fluoxetine
 2. Shorter, Edward. "The History of Lithium Therapy" and fluoxetine context in *A History of Psychiatry* (1997); Shorter's account corroborated by Eli Lilly corporate history and Wong, D.T. et al., "Fluoxetine: A selective inhibitor of serotonin uptake," *Life Sciences* 15 (1974): 471–479.
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [FDA Approves AZT (March 20, 1987)](../science-technology/azt-fda-approval.md) — the other landmark FDA drug approval of 1987, the first antiretroviral for HIV/AIDS.
@@ -37,4 +36,3 @@ The FDA approval of Prozac in 1987 transformed the treatment of depression and r
 - [1987 World Series (October 17–25, 1987)](world-series-1987.md) — another Society & Economics entry from October 1987.
 - [Sign 'O' the Times (Prince, March 31, 1987)](../arts-culture/sign-o-the-times.md) — Prince's album whose title track directly addressed the AIDS epidemic in the same year.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

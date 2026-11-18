@@ -52,8 +52,6 @@ The following instructions are also included on the diskimage:
 [DownloadAbraxas]: http://images.overthewire.org/Abraxas%20-%20OverTheWire%20Wargame.ova
 [backstory]: http://agent7a69.blogspot.com
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -87,5 +85,3 @@ Games such as Bandit and Narnia run on OverTheWire servers. Abraxas runs on your
 Conference wargames suit people who have already completed several of the main games, such as Bandit, Natas and Narnia, and want story-driven, multi-step challenges.
 
 </section>
-
-<!-- study-guide:end -->

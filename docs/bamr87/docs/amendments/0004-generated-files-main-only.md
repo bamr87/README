@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0004-generated-files-main-only.md
 title: 0004 — Generated files are written on main only
 ---
-<!-- kit: governance v0.1.0 -->
 # 0004 — Generated files are written on main only
 
 - **Status:** ratified

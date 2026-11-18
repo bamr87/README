@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas12
     URL:      http://natas12.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Store uploads outside the web root, generate the filename yourself, validate the
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas11/">Level 11</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas13/">Level 13</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

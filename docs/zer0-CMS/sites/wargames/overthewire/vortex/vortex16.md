@@ -42,8 +42,6 @@ This level requires finding 100 bits out of a 128 bit randomly generated hashed 
 
 [vortex.labs.overthewire.org]: ssh://vortex.labs.overthewire.org:2228
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -75,5 +73,3 @@ It illustrates truncated hashes and why a short checksum gives only weak assuran
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex15/">Level 15</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex17/">Level 17</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

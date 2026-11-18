@@ -51,8 +51,6 @@ Helpful Reading Material
 
 [Piping and Redirection]: https://ryanstutorials.net/linuxtutorial/piping.php
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -84,5 +82,3 @@ Chaining small tools with pipes, and a classic gotcha: `uniq` only compares neig
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit8/">Level 8</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit10/">Level 10</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

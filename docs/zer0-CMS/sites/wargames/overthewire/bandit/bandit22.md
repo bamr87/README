@@ -45,8 +45,6 @@ Commands you may need to solve this level
 -----------------------------------------
 cron, crontab, crontab(5) (use "man 5 crontab" to access this)
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -79,5 +77,3 @@ Cron is a favourite place for misconfigurations that expose data or allow privil
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit21/">Level 21</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit23/">Level 23</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

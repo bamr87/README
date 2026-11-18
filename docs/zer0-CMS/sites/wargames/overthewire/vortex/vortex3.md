@@ -53,8 +53,6 @@ Reading Material
 [Smashing the Stack for Fun and Profit]: http://phrack.org/issues/49/14.html#article
 [Bypassing StackGuard and StackShield]: http://www.phrack.org/issues.html?issue=56&id=5#article
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -87,5 +85,3 @@ Privilege handling in shells and the evolution of mitigations like RELRO explain
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex2/">Level 2</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex4/">Level 4</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

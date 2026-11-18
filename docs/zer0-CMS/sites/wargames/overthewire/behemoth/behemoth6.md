@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Real attacks are multi-stage, and breaking them into verified steps is the key t
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../behemoth5/">Level 5</a><a class="sg-index" href="../">Behemoth overview</a><a class="sg-next" href="../behemoth7/">Level 7</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

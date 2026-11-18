@@ -47,8 +47,6 @@ Tip :
 -   Pass uses geteuid() to get its information.
 -   Read man ptrace
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -81,5 +79,3 @@ This is how debuggers, sandboxes and many anti-debugging tricks work.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex3/">Level 3</a><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex5/">Level 5</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

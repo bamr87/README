@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas15
     URL:      http://natas15.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Parameterised queries again, plus rate limiting and monitoring for bursts of nea
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas14/">Level 14</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas16/">Level 16</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

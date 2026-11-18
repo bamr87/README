@@ -36,7 +36,6 @@ Internationally, the trial reinforced the principle that there is no statute of 
 - [Klaus Barbie — Encyclopædia Britannica](https://www.britannica.com/biography/Klaus-Barbie)
 - [Nikolaus "Klaus" Barbie: The Butcher of Lyon — United States Holocaust Memorial Museum](https://encyclopedia.ushmm.org/content/en/article/nikolaus-klaus-barbie-the-butcher-of-lyon)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Gary Hart — Withdrawal from the 1988 Presidential Race (May 8, 1987)](gary-hart.md) — another 1987 People entry involving political accountability and public scrutiny.
@@ -44,4 +43,3 @@ Internationally, the trial reinforced the principle that there is no statute of 
 - [Mathias Rust (flight to Red Square, May 28, 1987)](mathias-rust.md) — another major 1987 People entry involving Cold War-era confrontation.
 - [First Intifada (December 9, 1987)](../history-politics/first-intifada.md) — another 1987 event reshaping international understandings of justice and occupation.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

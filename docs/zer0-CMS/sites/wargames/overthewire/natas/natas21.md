@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas21
     URL:      http://natas21.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Separate session stores for separate trust levels, and never copy arbitrary requ
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas20/">Level 20</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas22/">Level 22</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

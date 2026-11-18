@@ -53,8 +53,6 @@ Helpful Reading Material
 
 [Port scanner on Wikipedia]: https://en.wikipedia.org/wiki/Port_scanner
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -87,5 +85,3 @@ Mapping a target's attack surface is step one of every penetration test. The eth
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit16/">Level 16</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit18/">Level 18</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

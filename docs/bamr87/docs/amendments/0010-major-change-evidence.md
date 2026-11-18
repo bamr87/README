@@ -5,7 +5,6 @@ source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0010-majo
 title: 0010 — Test evidence for major changes, visual evidence for frontend PRs, and
   a skilled-reviewer completeness pass
 ---
-<!-- kit: governance v0.1.0 -->
 # 0010 — Test evidence for major changes, visual evidence for frontend PRs, and a skilled-reviewer completeness pass
 
 - **Status:** ratified

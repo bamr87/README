@@ -38,8 +38,6 @@ toc_sticky: true
 
 If you're not a pro at this stuff yet, here's some additional practice. Beware of the nonexec stack. Go go power reverser.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Practice with non-executable memory is practice with the modern default.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter9/">Level 9</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter11/">Level 11</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

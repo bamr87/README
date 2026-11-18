@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0006-projects-write-back.md
 title: 0006 — Guarded harness write-back to GitHub Projects, issues and pull requests
 ---
-<!-- kit: governance v0.1.0 -->
 # 0006 — Guarded harness write-back to GitHub Projects, issues and pull requests
 
 - **Status:** ratified

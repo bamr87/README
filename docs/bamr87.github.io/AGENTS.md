@@ -4,8 +4,6 @@ source_repo: bamr87/bamr87.github.io
 source_url: https://github.com/bamr87/bamr87.github.io/blob/main/AGENTS.md
 title: bamr87.github.io
 ---
-<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->
-
 # bamr87.github.io
 
 > Amr Abdel-Motaleb's GitHub Pages site — profile, résumé and project portfolio plus blog, docs and notes collections — and the rules for changing it.
@@ -37,11 +35,11 @@ python3 tools/unwrap-prose.py --check                           # markdown one-p
 | `zer0.json` | The zer0-CMS console config: content folders and types. zer0-CMS registers this checkout and publishes to X and LinkedIn through channels each account connects in its studio. Check it with zer0-CMS's `python -m sites.doctor .` |
 | `index.html` | The homepage dashboard (`permalink: /`), built from `site.data.portfolio` |
 | `README.md` | The GitHub profile/CV, published at `/profile/` |
-| `assets/` | Site images, scripts and SVGs (the theme ships the CSS) |
+| `assets/` | Site images, scripts and SVGs (the theme ships the CSS). Keep each image under about 200 KB: photos as JPEG, screenshots and art as palette PNG (`pngquant`), animations as MP4 rather than GIF. `.github/site-quality.yml` warns when a scanned page loads more than 600 KiB of images |
 | `scripts/` | Generators and their tests — see [scripts/README.md](scripts/README.md) |
 | `tools/` | Vendored fleet tools: `unwrap-prose.py`, `docs_index.py` (never edit) |
 | `docs/` | Repo documentation: [the docs index](docs/README.md), ADRs, generated reference |
-| `features/`, `verify/` | Feature index (`features/v1`) and the user-scenario verify kit |
+| `features/`, `verify/`, `test/evidence/` | Feature index (`features/v1`), the user-scenario verify kit, and the evidence bundles (screenshots, `report.json`) its runner writes; `test/` is excluded from the build |
 | `.claude/` | The `profile-portfolio` and `verify-feature` skills and the `verifier` agent |
 
 ## Conventions

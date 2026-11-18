@@ -47,8 +47,6 @@ Commands you may need to solve this level
 -----------------------------------------
 ssh, nc, cat, bash, screen, tmux, Unix 'job control' (bg, fg, jobs, &, CTRL-Z, ...)
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -81,5 +79,3 @@ Reverse connections, callbacks and test servers are everyday techniques for debu
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit20/">Level 20</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit22/">Level 22</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

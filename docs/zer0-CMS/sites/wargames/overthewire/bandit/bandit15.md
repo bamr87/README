@@ -62,8 +62,6 @@ accurate, but good enough for beginners)
 [Ports]: https://computer.howstuffworks.com/web-server8.htm
 [Port (computer networking) on Wikipedia]: https://en.wikipedia.org/wiki/Port_(computer_networking)
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -96,5 +94,3 @@ Every protocol you know (HTTP, SMTP, Redis) is text over a port, and netcat is t
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit14/">Level 14</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit16/">Level 16</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

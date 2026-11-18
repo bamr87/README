@@ -89,7 +89,7 @@ Dimension scores: commands_work 1 · content_accuracy 1 · completeness 1 · cla
 found` (v1 CLI absent); retried as `docker compose run …` → `Conflict: /srv/jekyll exists and is not empty` (Dockerfile/compose already occupy the mounted dir).
 - **failed** — `cd my-jekyll-site`: `bash: cd: my-jekyll-site: No such file or directory` — that directory is never created by any prior step.
 - **failed** — `index.html` homepage: after `jekyll build`, the file lacks front
-matter so `{​% include %​}` tags are **not** processed — verified literal `{​% include head.html %​}` / `{​% include footer.html %​}` text left in built `_site/index.html`; also references a never-created `_includes/footer.html`.
+matter so `{% include %}` tags are **not** processed — verified literal `{% include head.html %}` / `{% include footer.html %}` text left in built `_site/index.html`; also references a never-created `_includes/footer.html`.
 - **failed** — `docker compose up`: container crashes with
 `Bundler::GemNotFound: Could not find base64-0.3.0, csv-3.3.5, … in locally installed gems` — the advertised "visit localhost:4000" end state is **unreachable as written**.
 - **reasoned/observed content** — Bootstrap "5" block uses jQuery + Bootstrap 4
@@ -120,7 +120,7 @@ Dimension scores: commands_work 3 · content_accuracy 4 · completeness 3 · cla
 - **high · frontend-docker.md · Step 2.3 / Step 3 (`docker-compose run jekyll new .`
 then `cd my-jekyll-site`)** — Observed: `jekyll new .` conflicts with the Dockerfile/compose already in the dir, and the very next `cd my-jekyll-site` targets a directory that is never created (`No such file or directory`). *Fix:* scaffold into a fresh empty subdir (or `jekyll new . --force`) and make every later `cd` match where the site actually lands.
 - **high · frontend-docker.md · Step 4 (`index.html` Liquid includes)** — Observed:
-built `_site/index.html` still contains literal `{​% include head.html %​}` / `{​% include footer.html %​}` because the file has no front matter; `_includes/footer.html` is never created. *Fix:* add the `---\n---` front-matter fence and create/remove the footer include.
+built `_site/index.html` still contains literal `{% include head.html %}` / `{% include footer.html %}` because the file has no front matter; `_includes/footer.html` is never created. *Fix:* add the `---\n---` front-matter fence and create/remove the footer include.
 - **high · frontend-docker.md · Step 5 (`docker compose up`)** — Observed:
 `Bundler::GemNotFound` crash; localhost:4000 never comes up. *Fix:* persist the bundle (named volume for `/usr/local/bundle` or `BUNDLE_PATH` + volume) or run `bash -c "bundle install && jekyll serve --watch --force_polling"`.
 - **high · frontend-docker.md · Step 3 (Bootstrap "5" snippet)** — Observed: uses jQuery,

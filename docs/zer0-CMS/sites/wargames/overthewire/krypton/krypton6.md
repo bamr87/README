@@ -80,8 +80,6 @@ Good Luck!
 
 [cryptool.]: http://www.cryptool.com/
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -116,5 +114,3 @@ Real stream ciphers fail catastrophically when a keystream repeats or is predict
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../krypton5/">Level 5</a><a class="sg-index" href="../">Krypton overview</a><span></span></nav>
 
 </section>
-
-<!-- study-guide:end -->

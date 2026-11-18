@@ -49,8 +49,6 @@ up your quest...\
 
 [http://gmplib.org/]: http://gmplib.org/
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -82,5 +80,3 @@ Number-theoretic schemes are only as strong as the hardness of the underlying pr
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex6/">Level 6</a><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex8/">Level 8</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

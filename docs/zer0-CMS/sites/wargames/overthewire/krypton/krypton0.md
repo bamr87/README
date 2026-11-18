@@ -44,8 +44,6 @@ Welcome to Krypton! The first level is easy. The following string encodes the pa
 
 Use this password to log in to krypton.labs.overthewire.org with username krypton1 using SSH on port 2231. You can find the files for other levels in /krypton/
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -78,5 +76,3 @@ Tokens and credentials in Base64 are often mistaken for encrypted data. Treat th
 <nav class="sg-nav" aria-label="Level navigation"><span></span><a class="sg-index" href="../">Krypton overview</a><a class="sg-next" href="../krypton1/">Level 1</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

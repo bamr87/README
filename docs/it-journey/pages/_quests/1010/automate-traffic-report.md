@@ -36,17 +36,6 @@ keywords:
   - analytics-data-api
 lastmod: '2026-06-14T18:00:00.000Z'
 layout: quest
-learning_paths:
-  character_classes:
-  - 🛠️ DevOps Engineer
-  - 💻 Software Developer
-  - 📊 Data Analyst
-  primary_paths:
-  - DevOps Automation
-  - Web Analytics
-  skill_trees:
-  - Automation & Scheduling
-  - Web Analytics
 learning_style: hands-on
 level: '1010'
 permalink: /quests/1010/automate-traffic-report/
@@ -72,16 +61,6 @@ quest_dependencies:
   - /quests/1010/analytics-mcp-setup/
   unlocks_quests: []
 quest_line: The Observability Path
-quest_mapping:
-  biome: Terminal
-  coordinates: '[10, 3]'
-  realm: Observability
-  region: Warrior
-quest_relationships:
-  child_quests: []
-  parallel_quests: []
-  parent_quest: null
-  sequel_quests: []
 quest_series: Measure & Master Your Site
 quest_type: main_quest
 rewards:
@@ -96,7 +75,6 @@ rewards:
   unlocks_features:
   - Hands-off weekly reporting
 skill_focus: devops
-snippet: A report you have to remember to run is a report you never run.
 source_file: pages/_quests/1010/automate-traffic-report.md
 source_repo: bamr87/it-journey
 source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/automate-traffic-report.md

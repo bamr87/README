@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 7a05b21d4b2fcb21
+source_fingerprint: f6bbfee6027e0701
 tags:
   - ai
   - news
@@ -31,7 +31,7 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~192,462 words across 138 indexed documents
+- ~192,441 words across 138 indexed documents
 - code samples in: console, plaintext, ruby, bash, yaml, text, json, mermaid
 
 ## Navigation

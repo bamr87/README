@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 25
+pages: 26
 repo: bamr87/ocrmd
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: OCRmd
 > [!info] tooling: `bamr87/ocrmd`
 > Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search.
 
-**25** pages collected from commit `b6a2e8b0ce47` (2026-11-11).
+**26** pages collected from commit `bd2aeb826081` (2026-11-18).
 
 ## Most connected pages
 
@@ -25,8 +25,8 @@ title: OCRmd
 - [[ocrmd/docs/constitution|ocrmd — Constitution]]
 - [[ocrmd/AGENTS|ocrmd]]
 - [[ocrmd/PRD|PRD — ocrmd]]
-- [[ocrmd/docs/amendments/README|Amendments — ocrmd]]
 - [[ocrmd/docs/ARCHITECTURE|ocrmd — Architecture]]
+- [[ocrmd/docs/amendments/README|Amendments — ocrmd]]
 - [[ocrmd/docs/scanning|Scanning with a webcam]]
 - [[ocrmd/docs/setup|Setup]]
 - [[ocrmd/CLAUDE|ocrmd]]

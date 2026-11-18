@@ -4,7 +4,6 @@ source_repo: bamr87/vs-sonic-pi
 source_url: https://github.com/bamr87/vs-sonic-pi/blob/main/docs/amendments/README.md
 title: Amendments — vs-sonic-pi
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — vs-sonic-pi
 
 > The append-only log of numbered amendments to the constitution, each ratified by the maintainer merging its PR.
@@ -18,3 +17,4 @@ The append-only log of changes to [the constitution](../constitution.md). Proces
 | # | Title | Status | Affects |
 | --- | --- | --- | --- |
 | [0001](0001-ratify-constitution.md) | Ratify the constitution | ratified on merge | whole constitution |
+| [0002](0002-mission-statement.md) | Missions | proposed | constitution §1; PRD §1.1; feature SONICPI-023 |

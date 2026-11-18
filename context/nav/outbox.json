@@ -5,18 +5,18 @@
   "title": "Outbox",
   "corpus": "docs/outbox",
   "counts": {
-    "pages": 21,
+    "pages": 22,
     "sections": 4,
     "max_depth": 3,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "459191c53e4947ec",
+  "fingerprint": "4502267585c36300",
   "tree": {
     "type": "section",
     "title": "Outbox",
     "index": "outbox/README.md",
-    "pages": 21,
+    "pages": 22,
     "children": [
       {
         "type": "page",
@@ -61,6 +61,12 @@
         "title": "SCHEMA \u2014 bamr87/outbox",
         "path": "outbox/SCHEMA.md",
         "rel": "SCHEMA.md"
+      },
+      {
+        "type": "page",
+        "title": "Security Policy",
+        "path": "outbox/SECURITY.md",
+        "rel": "SECURITY.md"
       },
       {
         "type": "section",

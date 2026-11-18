@@ -6,17 +6,11 @@ title: CLAUDE.md
 ---
 # CLAUDE.md
 
-<!-- seed-kernel v__SEED_KERNEL_VERSION__ · planted from __SEED_PLANTED_FROM__ -->
-
 Guidance for AI coding agents (Claude Code, Copilot, Cursor) working in **__SEED_NAME__**.
 
 This repository is grown by the [AI-Seed](https://github.com/bamr87/ai-seed) framework: its intent lives in [CONCEPT.md](CONCEPT.md), its policy and constitution in [.seed/seed.yml](dot-seed/seed.yml), and its growth history in CONCEPT.md §8 plus `.seed/telemetry/evolution.jsonl`. Read CONCEPT.md before writing anything.
 
-<!-- TODO (first germination): one paragraph — what this project is, who it serves, and what "done" looks like here. -->
-
 ## Stack & commands
-
-<!-- TODO (first germination): fill in the real commands; delete rows that don't apply. -->
 
 ```bash
 # install dependencies:

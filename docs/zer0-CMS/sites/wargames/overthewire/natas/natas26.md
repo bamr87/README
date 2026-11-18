@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas26
     URL:      http://natas26.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Never unserialise untrusted data. Use a data-only format such as JSON and valida
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas25/">Level 25</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas27/">Level 27</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

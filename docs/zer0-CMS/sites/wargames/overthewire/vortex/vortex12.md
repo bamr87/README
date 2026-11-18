@@ -42,8 +42,6 @@ Exploit this level knowing that the stack is not executable. You must login to [
 
 [vortex.labs.overthewire.org]: ssh://vortex.labs.overthewire.org:2228
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -76,5 +74,3 @@ Non-executable memory is standard today, so ret2libc and ROP are the baseline te
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex11/">Level 11</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex13/">Level 13</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

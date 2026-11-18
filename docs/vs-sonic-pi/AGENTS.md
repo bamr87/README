@@ -4,11 +4,9 @@ source_repo: bamr87/vs-sonic-pi
 source_url: https://github.com/bamr87/vs-sonic-pi/blob/main/AGENTS.md
 title: vs-sonic-pi
 ---
-<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->
-
 # vs-sonic-pi
 
-> Sonic Pi for VS Code, an extension to write and perform Sonic Pi music live over OSC — the commands, layout, conventions and module rules for working on it.
+> VS Sonic Pi's direction is to become the ultimate open home for all things Sonic Pi in the editor: data, tools, resources and transparency, with live-coding in VS Code, OSC control of the Sonic Pi server, and open teaching tools for everyone ([constitution](docs/constitution.md) §1).
 
 ## What this repo is
 

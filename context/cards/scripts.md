@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 67431c0fe95b69aa
+source_fingerprint: f56fcec418d34434
 tags:
   - automation
   - bash
@@ -16,7 +16,7 @@ tags:
 
 # 🛠️ scripts
 
-> Automation scripts for forking, linting, stashing, and project management across the fleet. Standalone Bash utilities for project scaffolding, GitHub repository management and multi-repo maintenance.
+> Automation scripts for forking, linting, stashing, and project management across the fleet. scripts' direction is to become the ultimate open home for all things project and repository automation: data, tools, resources and transparency, with standalone Bash utilities for scaffolding, GitHub management and multi-repo maintenance, for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -24,7 +24,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/scripts` - 24 docs |
+| Corpus | `docs/scripts` - 25 docs |
 | External | no |
 
 ## Signals
@@ -33,14 +33,14 @@ tags:
 - has AGENTS.md operating manual
 - keeps a changelog
 - has a security policy
-- ~14,659 words across 24 indexed documents
+- ~15,689 words across 25 indexed documents
 - code samples in: bash, plaintext, yaml
 
 ## Navigation
 
-24 published pages in 5 sections (max depth 3) — [browse the full map](../../docs/browse/scripts.md) · [tree as JSON](../nav/scripts.json)
+25 published pages in 5 sections (max depth 3) — [browse the full map](../../docs/browse/scripts.md) · [tree as JSON](../nav/scripts.json)
 
-- **Documentation** (9 pages)
+- **Documentation** (10 pages)
 - **🍴 ForkMe - Advanced GitHub Repository Forking Utility** (4 pages)
 - **💾 StashMe - Multi-Repository Cloud Stash Utility** (4 pages)
 

@@ -4,19 +4,23 @@ source_repo: bamr87/zer0-CMS
 source_url: https://github.com/bamr87/zer0-CMS/blob/main/docs/constitution.md
 title: zer0-CMS — Constitution
 ---
-<!-- kit: governance v0.1.0 · seeded from bamr87/bamr87 templates/governance/. Owned by this repo after seeding;
-     change it ONLY through an amendment record in docs/amendments/ (see § 8). Validate: python3 <hub>/tools/governance_lint.py check . -->
 # zer0-CMS — Constitution
 
 > The rules every change to this repo must satisfy, whoever makes it — a human or an AI agent.
 > Agents read this before [AGENTS.md](../AGENTS.md) conventions, the [PRD](../PRD.md), or the
 > [feature catalog](../features/features.yml). Ratified by merged PR; amended only per § 8.
 
-## 1. Mission
+## 1. Missions
 
-zer0-CMS turns a repository of markdown into something you can actually operate:
+zer0-CMS's direction is to become the ultimate open home for all things markdown site operations — data, tools, resources and transparency, gathered in one place that anyone can inspect and reuse.
 
-_Source: README.md._
+1. **Provide data, tools, resources and transparency for all stakeholders, content operators, CMS practitioners and the general public.** Editors, reviewers, site operators, agent authors, and the general public are first-class audiences. The aim is a shared, open commons: the same sources, the same tools, and the same trail of evidence for everyone.
+2. **Turn a repository of markdown into something you can actually operate: a governed CMS with a studio, a site renderer and a VS Code extension, where publishing goes through a gate a human has to walk through.** Agents declare their effect and permissions; page content and user input are treated as untrusted. The path is one Python platform (Django, with Wagtail as a headless library), a React studio, and a VS Code extension with the studio's capabilities.
+3. **Put that platform in every editor's, agent's and builder's hands.** Serve it so zer0-themed markdown sites can be drafted, reviewed and published in the open — an open toolkit for working with all things markdown site operations.
+
+These missions set the course; they do not claim the work is finished. They serve the README and PRD: an agent-native CMS for markdown sites, with a human publish gate. The earlier incomplete §1 sentence — "zer0-CMS turns a repository of markdown into something you can actually operate" — is absorbed into mission 2. Invariants in §2 (headless frontends, declared effects, suggest-by-default, no live LLMs in tests, and the rest) are unchanged. Every feature must trace to them.
+
+_Source: [../PRD.md](../PRD.md) §1.1._
 
 ## 2. Invariants (non-negotiable)
 

@@ -38,8 +38,6 @@ toc_sticky: true
 
 Phrack Search Daemon is running on the server. Good luck finding bugs without the GPLv2 source! Some custom shellcoding may be required.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ This is close to genuine vulnerability research on a real codebase.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter7/">Level 7</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter9/">Level 9</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

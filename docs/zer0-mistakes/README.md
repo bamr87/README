@@ -800,8 +800,6 @@ When you fork the theme as a starter, the workflows come with you. To make them 
 
 The diagram and table below are auto-generated from [`_data/roadmap.yml`](_data/roadmap.yml) by [`scripts/generate-roadmap.sh`](scripts/generate-roadmap.sh). See the full [Roadmap page](https://zer0-mistakes.com/roadmap/) for per-version detail and the [PRD](docs/architecture/prd-requirements.md) for product context.
 
-<!-- ROADMAP_MERMAID:START -->
-
 ```mermaid
 gantt
     title zer0-mistakes Roadmap
@@ -841,10 +839,6 @@ gantt
     v3.0 Stable LTS              :milestone, 2027-02, 1d
 ```
 
-<!-- ROADMAP_MERMAID:END -->
-
-<!-- ROADMAP_TABLE:START -->
-
 | Version | Status | Target | Highlights |
 |---------|--------|--------|------------|
 | **v0.17** | ✅ Completed | Dec 2025 | ES6 modular navigation with auto-hide navbar, hover dropdowns, keyboard navigation, and touch gestures. |
@@ -877,8 +871,6 @@ gantt
 | **v2.1** | 🗓 Planned | Q4 2026 | Multi-language content support with locale-aware routing. |
 | **v2.2** | 🗓 Planned | Q4 2026 | Visual theme customizer, A/B testing, and conversion funnels. |
 | **v3.0** | 🎯 Milestone | Q1 2027 | Stable public API, 90%+ test coverage, and long-term support commitment. |
-
-<!-- ROADMAP_TABLE:END -->
 
 ---
 
@@ -983,5 +975,4 @@ Released under the [MIT License](LICENSE).
 
 ---
 
-<!-- bamr87-portfolio-footer -->
 Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

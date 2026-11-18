@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas6
     URL:      http://natas6.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Store secrets outside the web root or in environment variables, and give server-
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas5/">Level 5</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas7/">Level 7</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

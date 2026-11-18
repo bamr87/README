@@ -4,9 +4,9 @@ source_repo: bamr87/zer0-CMS
 source_url: https://github.com/bamr87/zer0-CMS/blob/main/AGENTS.md
 title: zer0-CMS
 ---
-<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->
-
 # zer0-CMS
+
+> zer0-CMS's direction is to become the ultimate open home for all things markdown site operations: data, tools, resources and transparency, with a governed studio, a human publish gate, and agent-declared effects, for everyone ([constitution](docs/constitution.md) §1).
 
 > How to work in zer0-CMS while it becomes one Python platform with a React frontend (ADR 0006): the target and what an agent must not do, the commands, the layout, the conventions, the platform boundary and the invariants today's build enforces.
 

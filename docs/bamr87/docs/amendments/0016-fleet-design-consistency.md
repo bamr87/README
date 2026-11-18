@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0016-fleet-design-consistency.md
 title: 0016 — One front-end shell, layout and design language across the fleet
 ---
-<!-- kit: governance v0.1.0 -->
 # 0016 — One front-end shell, layout and design language across the fleet
 
 - **Status:** ratified

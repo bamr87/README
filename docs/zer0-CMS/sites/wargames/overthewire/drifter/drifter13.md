@@ -38,8 +38,6 @@ toc_sticky: true
 
 Challenge your pre-conceptions of what's possible
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Attackers succeed by finding the assumption the developer did not know they were
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter12/">Level 12</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter14/">Level 14</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

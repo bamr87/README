@@ -5,7 +5,6 @@ source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0005-proj
 title: 0005 — DevOps methodology for GitHub Projects across all submodules, binding
   on AI agents
 ---
-<!-- kit: governance v0.1.0 -->
 # 0005 — DevOps methodology for GitHub Projects across all submodules, binding on AI agents
 
 - **Status:** ratified

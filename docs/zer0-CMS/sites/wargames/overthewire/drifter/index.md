@@ -39,8 +39,6 @@ Drifter
 
 Drifter is a wargame along the lines of Vortex.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -84,5 +82,3 @@ Finish Bandit, Narnia and Behemoth, and ideally the early Vortex levels. The Dri
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="drifter0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

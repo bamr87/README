@@ -4,7 +4,6 @@ source_repo: bamr87/it-journey
 source_url: https://github.com/bamr87/it-journey/blob/main/docs/amendments/README.md
 title: Amendments — it-journey
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — it-journey
 
 > The append-only log of changes to [the constitution](../constitution.md). Process: constitution § 8.

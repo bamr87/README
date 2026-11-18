@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 1205,
-    "fingerprint": "3e5cfb0bc89bb299",
+    "file_count": 1207,
+    "fingerprint": "e19001884a5a20c7",
     "path": "docs/zer0-CMS",
     "present": true,
-    "total_bytes": 6759339
+    "total_bytes": 6776682
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -21,7 +21,7 @@
       "The optional AI agent"
     ],
     "readme": "README.md",
-    "summary": "An agent-native CMS for markdown sites: one Python platform (Django, with Wagtail as a headless library), a React studio and site renderer, and a VS Code extension with the studio's capabilities \u2014 publishing only through a gate a human has to walk through.",
+    "summary": "zer0-CMS's direction is to become the ultimate open home for all things markdown site operations: data, tools, resources and transparency, with a governed studio, a human publish gate, and agent-declared effects, for everyone (constitution \u00a71).",
     "title": "zer0-CMS"
   },
   "key_docs": [
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/zer0-CMS.md",
-    "fingerprint": "b84b722ee69c886d",
+    "fingerprint": "59103111812aba85",
     "index": "zer0-CMS/README.md",
     "max_depth": 6,
-    "pages": 1199,
+    "pages": 1201,
     "present": true,
     "sections": 181,
     "skipped": 6,
@@ -61,7 +61,7 @@
       },
       {
         "index": "zer0-CMS/docs/README.md",
-        "pages": 29,
+        "pages": 31,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -124,7 +124,7 @@
   },
   "rollups": {
     "categories": {
-      "zer0-CMS": 1205
+      "zer0-CMS": 1207
     },
     "code_languages": [
       "bash",
@@ -136,7 +136,7 @@
       "javascript",
       "liquid"
     ],
-    "indexed_documents": 1205,
+    "indexed_documents": 1207,
     "top_tags": [
       "security",
       "wargames",
@@ -154,7 +154,7 @@
       "europe",
       "documentation"
     ],
-    "total_words": 856731
+    "total_words": 860195
   },
   "schema_version": "1.0",
   "signals": {
@@ -195,7 +195,7 @@
         "name": "content"
       },
       {
-        "doc_count": 29,
+        "doc_count": 31,
         "name": "docs"
       },
       {

@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Real vulnerability hunting is exactly this: reading code and choosing the right 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../narnia7/">Level 7</a><a class="sg-index" href="../">Narnia overview</a><a class="sg-next" href="../narnia9/">Level 9</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

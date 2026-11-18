@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0008-harness-prior-art-research.md
 title: 0008 — Prior-art research before any new harness or loop design
 ---
-<!-- kit: governance v0.1.0 -->
 # 0008 — Prior-art research before any new harness or loop design
 
 - **Status:** ratified

@@ -46,8 +46,6 @@ The protocol and the server, that is used by the ICMP tunnel is described in you
 
 You will have to use /rdx/rawwrapper. 
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -80,5 +78,3 @@ ICMP and DNS tunnelling are well-known exfiltration techniques, and network moni
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex8/">Level 8</a><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex10/">Level 10</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

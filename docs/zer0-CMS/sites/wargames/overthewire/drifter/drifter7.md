@@ -47,8 +47,6 @@ Gentleman, start your disassemblers
   [IDA Pro Freeware]: http://www.hex-rays.com/idapro/idadownfreeware.htm
   [IDA Pro Demo]: http://www.hex-rays.com/idapro/idadowndemo.htm
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -80,5 +78,3 @@ Reverse-engineering fluency is the skill that unlocks the rest of the game.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter6/">Level 6</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter8/">Level 8</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

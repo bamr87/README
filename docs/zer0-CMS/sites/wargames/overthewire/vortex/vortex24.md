@@ -40,8 +40,6 @@ Guess the seed
 --------------
 You might want to analyze "random\_r.c" from the GLIBC source code.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ How `rand`/`random` work internally and how to predict them.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex23/">Level 23</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex25/">Level 25</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

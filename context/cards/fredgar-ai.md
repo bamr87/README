@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 2e3ddb33eb463bce
+source_fingerprint: c93bf0fe864f66a2
 tags:
   - calibration
   - company-registry
@@ -43,7 +43,7 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~37,373 words across 38 indexed documents
+- ~37,143 words across 38 indexed documents
 - code samples in: bash, plaintext, python, json, mermaid, sql
 
 ## Navigation

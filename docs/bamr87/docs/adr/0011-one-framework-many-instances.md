@@ -12,8 +12,6 @@ title: 'ADR 0011 — One framework, many instances: the stack installs for any o
 - **Deciders**: proposed by an agent at the maintainer's request (2026-11-16: a stack across these repos that can be applied to any other set of repos for development and governance, installed first for the `bash-365` organization, and general enough that others adopt it instead of rebuilding it)
 - **Related**: constitution § 10.8 (prior art first), § 12.3 (gated changes), § 22 (repository cap); PRD FR111 (the agentic loops dashboard as the application Bash 365 is based on); [WORKFLOW-VERSIONING.md](../WORKFLOW-VERSIONING.md); bamr87/bamr87#458 (callers off `@main`); pull requests #911 (framework sources mounted) and #912 (v2.2.0)
 
-<!-- Accepted in and Completed are added by the post-merge ratify job when the maintainer merges this ADR's PR and when the maintainer closes the Tracking issue as completed (docs/adr/README.md#lifecycle). -->
-
 ## Context
 
 ### Needs assessment

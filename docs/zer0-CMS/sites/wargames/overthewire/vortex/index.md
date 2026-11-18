@@ -41,8 +41,6 @@ The Vortex wargame is currently composed of 27 levels. Most files you need are i
 
 Many thanks to those who have made sure all levels can be played
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -91,5 +89,3 @@ The page for Level N describes the challenge that gives you credentials for the 
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="vortex0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

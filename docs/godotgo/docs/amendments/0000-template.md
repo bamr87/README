@@ -4,7 +4,6 @@ source_repo: bamr87/godotgo
 source_url: https://github.com/bamr87/godotgo/blob/main/docs/amendments/0000-template.md
 title: NNNN — Title of the amendment
 ---
-<!-- kit: governance v0.1.0 · copy to NNNN-kebab-slug.md (next free number) -->
 # NNNN — Title of the amendment
 
 - **Status:** proposed

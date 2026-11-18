@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Putting the whole Narnia toolbox together without a hint about which technique t
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../narnia8/">Level 8</a><a class="sg-index" href="../">Narnia overview</a><span></span></nav>
 
 </section>
-
-<!-- study-guide:end -->

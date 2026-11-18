@@ -42,8 +42,6 @@ Level 3 is a remote heap corruption issue. Source code can be found in /drifter/
 
   [Once upon a free()...]: http://phrack.org/archives/issues/57/9.txt
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -76,5 +74,3 @@ Modern allocators add many checks because of exactly this class of attack.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter2/">Level 2</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter4/">Level 4</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

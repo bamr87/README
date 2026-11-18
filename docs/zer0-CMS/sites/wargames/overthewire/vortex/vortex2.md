@@ -48,8 +48,6 @@ Helpful Reading Material
 
 [GNU tar manual]: http://linux.die.net/man/1/tar
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -81,5 +79,3 @@ Archive handling flaws (path traversal, symlinks, overwrite) are common real vul
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex1/">Level 1</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex3/">Level 3</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

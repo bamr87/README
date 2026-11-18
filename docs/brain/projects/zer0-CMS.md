@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 1205
+pages: 1207
 repo: bamr87/zer0-CMS
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: Zer0 CMS
 > [!info] app: `bamr87/zer0-CMS`
 > Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown sites.
 
-**1205** pages collected from commit `3abeb8cf05e8` (2026-11-11).
+**1207** pages collected from commit `d0c3a6cc3eae` (2026-11-18).
 
 ## Most connected pages
 

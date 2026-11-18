@@ -46,8 +46,6 @@ If you need some hints, consider how you can divide and conquer the problem. For
 
 [vortex.labs.overthewire.org]: ssh://vortex.labs.overthewire.org:2228
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -80,5 +78,3 @@ Home-made protocols and weak ciphers are still found in devices and legacy softw
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex13/">Level 13</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex15/">Level 15</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

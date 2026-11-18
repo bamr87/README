@@ -4,7 +4,6 @@ source_repo: bamr87/godotgo
 source_url: https://github.com/bamr87/godotgo/blob/main/docs/adr/README.md
 title: Architecture Decision Records
 ---
-<!-- kit: sdlc v0.1.0 · ADR index (UPS-WORK-04, decision D2: law-ai format) -->
 # Architecture Decision Records
 
 > The index and format of godotgo's architecture decisions — the choices that are hard to reverse, recorded in the PR that makes them.

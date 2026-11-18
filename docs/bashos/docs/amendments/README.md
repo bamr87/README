@@ -4,7 +4,6 @@ source_repo: bamr87/bashos
 source_url: https://github.com/bamr87/bashos/blob/main/docs/amendments/README.md
 title: Amendments — bashos
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — bashos
 
 The append-only log of changes to [the constitution](../constitution.md). Process: constitution § 8.

@@ -38,8 +38,6 @@ toc_sticky: true
 
 Simple stack overflow, but with a side effect that affects debugging, and executing problems. Keep in mind that a straight execve() will not work, due to kernel issuing a breakpoint.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Real targets have quirks that break textbook exploits, and diagnosing them is ha
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter1/">Level 1</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter3/">Level 3</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

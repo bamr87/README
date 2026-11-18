@@ -48,8 +48,6 @@ One last hint: In order to correctly overflow the objects / pointers, the alloca
 
   [SMASHING C++ VPTRS]: http://www.phrack.org/issues.html?issue=56&id=8
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -83,5 +81,3 @@ Virtual-call hijacking is behind many browser and application exploits.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter0/">Level 0</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter2/">Level 2</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

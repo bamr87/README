@@ -70,8 +70,6 @@ To login to the first level use:
 
 Data for the levels can be found in **/maze/**.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -114,5 +112,3 @@ Everything here is for the wargame servers. Do not attack other systems, and do 
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="maze0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -5,18 +5,18 @@
   "title": "Scripts",
   "corpus": "docs/scripts",
   "counts": {
-    "pages": 24,
+    "pages": 25,
     "sections": 5,
     "max_depth": 3,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "1312b35ba279a08d",
+  "fingerprint": "e3d3face0a2e07dd",
   "tree": {
     "type": "section",
     "title": "Scripts",
     "index": "scripts/README.md",
-    "pages": 24,
+    "pages": 25,
     "children": [
       {
         "type": "page",
@@ -67,7 +67,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "scripts/docs/README.md",
-        "pages": 9,
+        "pages": 10,
         "children": [
           {
             "type": "page",
@@ -93,7 +93,7 @@
             "title": "Amendments \u2014 scripts",
             "rel": "docs/amendments",
             "index": "scripts/docs/amendments/README.md",
-            "pages": 3,
+            "pages": 4,
             "children": [
               {
                 "type": "page",
@@ -107,6 +107,12 @@
                 "title": "0001 \u2014 Ratify the constitution",
                 "path": "scripts/docs/amendments/0001-ratify-constitution.md",
                 "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "0002 \u2014 Missions",
+                "path": "scripts/docs/amendments/0002-mission-statement.md",
+                "rel": "docs/amendments/0002-mission-statement.md"
               },
               {
                 "type": "page",

@@ -51,8 +51,6 @@ Once getting access to a shell, read /etc/motd for more information
 
 Alternatively, there is a debug version on port 78 if you need help understanding what you're seeing
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -86,5 +84,3 @@ Info leaks plus a write primitive are the building blocks of nearly every modern
 <nav class="sg-nav" aria-label="Level navigation"><span></span><a class="sg-index" href="../">Blacksun overview</a><a class="sg-next" href="../blacksun1/">Level 1</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

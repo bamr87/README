@@ -64,7 +64,7 @@ All command outcomes below come from the sealed `walk-evidence.json` execute pas
 ### 1. Advanced Markdown — ✅ 92 · ran 12/13 recorded (12 passed, 1 skipped) · 4 runnable snippets
 - `passed` · 3-column aligned table → correct left/center/right in **both** python-markdown and the real `kramdown` gem (`<th style="text-align: …">`).
 - `passed` · Footnote `[^speed]` → superscript link + bottom `<div class="footnotes">` with back-link, matching the prose.
-- `passed` · Full frontmatter file + Liquid `{​% for post in site.posts %​}` verified against the real liquid gem.
+- `passed` · Full frontmatter file + Liquid `{% for post in site.posts %}` verified against the real liquid gem.
 - `passed` · macOS / Windows / Linux setup blocks (`mkdir`/`touch`) all ran cleanly.
 - Dimensions: commands_work 5, content_accuracy 4, completeness 5, clarity 4, structure 5, safety 5.
 

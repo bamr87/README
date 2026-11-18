@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Time-of-check to time-of-use bugs are a major real-world class, which is why sec
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../behemoth3/">Level 3</a><a class="sg-index" href="../">Behemoth overview</a><a class="sg-next" href="../behemoth5/">Level 5</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

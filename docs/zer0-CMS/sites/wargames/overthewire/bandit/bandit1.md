@@ -51,8 +51,6 @@ Passwords for levels are *not* saved automatically. If you do not save them your
 
 Passwords also occasionally change. It is recommended to take notes on how to solve each challenge. As levels get more challenging, detailed notes are useful to return to where you left off, reference for later problems, or help others after you've completed the challenge.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -85,5 +83,3 @@ Orientation in a Unix filesystem and your first real data-gathering commands. A 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit0/">Level 0</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit2/">Level 2</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

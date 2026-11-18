@@ -14,8 +14,6 @@ title: 'ADR 0007 — The Workflow Studio: the atlas grown to the fleet, one read
 - **Related**: constitution § 10.8 (prior art first), § 11 (write-back), § 12.3 (gated changes), § 13.6 (irreversible actions), § 20 (the editor is a front door), [ADR 0005](0005-console-as-fleet-portal.md), [ADR 0006](0006-django-management-backend.md), [docs/WORKFLOW-ATLAS.md](../WORKFLOW-ATLAS.md), [docs/WORKFLOW-OPTIMIZATION.md](../WORKFLOW-OPTIMIZATION.md), #698, #699
 - **Tracking**: #719
 
-<!-- Accepted in and Completed are added by the post-merge ratify job when the maintainer merges this ADR's PR and when the maintainer closes the Tracking issue as completed (docs/adr/README.md#lifecycle). Never write them by hand. A PR that adds or changes an ADR is gated (constitution § 12.3). -->
-
 ## Context
 
 ### Needs assessment

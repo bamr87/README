@@ -65,8 +65,6 @@ You're ready to start! Begin with [Level 0][], linked at the left of this page. 
   [Google]: https://www.google.com
   [join us via chat]: https://overthewire.org/information/chat.html
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -118,5 +116,3 @@ The suggested order on the [games index](../) is Bandit first, then any of Natas
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="bandit0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

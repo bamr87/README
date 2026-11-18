@@ -4,7 +4,6 @@ source_repo: bamr87/djangoerp
 source_url: https://github.com/bamr87/djangoerp/blob/main/docs/amendments/0001-ratify-constitution.md
 title: 0001 — Ratify the constitution
 ---
-<!-- kit: governance v0.1.0 -->
 # 0001 — Ratify the constitution
 
 - **Status:** ratified

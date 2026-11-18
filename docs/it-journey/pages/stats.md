@@ -51,9 +51,8 @@ title: IT-Journey Statistics Portal
 
   {% if site.data.content_statistics %}
   
-  <!-- Overview Cards -->
   <div class="row g-4 mb-5">
-    <!-- Total Posts Card -->
+
     <div class="col-md-3">
       <div class="card h-100 border-primary">
         <div class="card-body text-center">
@@ -66,7 +65,6 @@ title: IT-Journey Statistics Portal
       </div>
     </div>
 
-    <!-- Total Categories Card -->
     <div class="col-md-3">
       <div class="card h-100 border-success">
         <div class="card-body text-center">
@@ -79,7 +77,6 @@ title: IT-Journey Statistics Portal
       </div>
     </div>
 
-    <!-- Total Tags Card -->
     <div class="col-md-3">
       <div class="card h-100 border-info">
         <div class="card-body text-center">
@@ -92,7 +89,6 @@ title: IT-Journey Statistics Portal
       </div>
     </div>
 
-    <!-- Data Freshness Card -->
     <div class="col-md-3">
       <div class="card h-100 border-warning">
         <div class="card-body text-center">
@@ -104,7 +100,6 @@ title: IT-Journey Statistics Portal
     </div>
   </div>
 
-  <!-- Categories Section -->
   <div class="row mb-5">
     <div class="col-lg-6">
       <div class="card">
@@ -126,7 +121,6 @@ title: IT-Journey Statistics Portal
       </div>
     </div>
 
-    <!-- Tags Section -->
     <div class="col-lg-6">
       <div class="card">
         <div class="card-header bg-success text-white">
@@ -148,7 +142,6 @@ title: IT-Journey Statistics Portal
     </div>
   </div>
 
-  <!-- Additional Metrics -->
   <div class="row mb-5">
     <div class="col-lg-12">
       <div class="card">

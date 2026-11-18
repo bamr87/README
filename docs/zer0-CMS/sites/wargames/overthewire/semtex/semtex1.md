@@ -40,8 +40,6 @@ Simple encryption
 -----------------
 A password has been crypted using the /semtex/semtex1 tool. The crypted password is HRXDZNWEAWWCP. You have to reverse engineer the algorithm and decrypt the password. You might try the -v switch for encrypt.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -74,5 +72,3 @@ It is the same method used to break many home-made ciphers.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex0/">Level 0</a><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex2/">Level 2</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

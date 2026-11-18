@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -70,5 +68,3 @@ Backups, old exports and leftovers regularly leak data in real incidents.
 <nav class="sg-nav" aria-label="Level navigation"><span></span><a class="sg-index" href="../">Leviathan overview</a><a class="sg-next" href="../leviathan1/">Level 1</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -40,8 +40,6 @@ Reverse Me
 ----------
 This level is a slightly more difficult reverse me (which might require understanding the encryptor for it).
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Understanding custom crypto from binaries is a staple of malware analysis.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex20/">Level 20</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex22/">Level 22</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

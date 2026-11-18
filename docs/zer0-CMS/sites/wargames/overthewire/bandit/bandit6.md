@@ -48,8 +48,6 @@ Commands you may need to solve this level
 -----------------------------------------
 [ls](https://manpages.ubuntu.com/manpages/noble/man1/ls.1.html) , [cd](https://manpages.ubuntu.com/manpages/noble/man1/cd.1posix.html) , [cat](https://manpages.ubuntu.com/manpages/noble/man1/cat.1.html) , [file](https://manpages.ubuntu.com/manpages/noble/man1/file.1.html) , [du](https://manpages.ubuntu.com/manpages/noble/man1/du.1.html) , [find](https://manpages.ubuntu.com/manpages/noble/man1/find.1.html)
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -81,5 +79,3 @@ Locating files by size, owner or modification time is core incident-response wor
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit5/">Level 5</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit7/">Level 7</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

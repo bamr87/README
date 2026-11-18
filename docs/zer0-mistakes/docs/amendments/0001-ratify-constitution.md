@@ -14,7 +14,6 @@ tags:
 title: 0001 Ratify the Constitution
 ---
 
-<!-- kit: governance v0.1.0 -->
 # 0001 — Ratify the constitution
 
 - **Status:** ratified

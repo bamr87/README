@@ -4,7 +4,6 @@ source_repo: bamr87/zer0-CMS
 source_url: https://github.com/bamr87/zer0-CMS/blob/main/docs/amendments/0002-retire-the-rails-invariants.md
 title: 0002 — Retire the Rails invariants
 ---
-<!-- kit: governance v0.1.0 -->
 # 0002 — Retire the Rails invariants
 
 - **Status:** proposed

@@ -16,7 +16,7 @@ title: Personal Site
 > [!info] site: `bamr87/bamr87.github.io`
 > Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages.
 
-**94** pages collected from commit `550d0b2c1a1d` (2026-11-18).
+**94** pages collected from commit `5416a6551627` (2026-11-18).
 
 ## Most connected pages
 

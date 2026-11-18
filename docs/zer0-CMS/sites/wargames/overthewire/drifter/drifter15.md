@@ -38,8 +38,6 @@ toc_sticky: true
 
 Explosive decompression :-)
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Decompression bugs have affected image libraries, archive tools and network prot
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter14/">Level 14</a><a class="sg-index" href="../">Drifter overview</a><span></span></nav>
 
 </section>
-
-<!-- study-guide:end -->

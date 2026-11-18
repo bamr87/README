@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Gitorio - content map
 
-Every published page in [`docs/gitorio/`](../gitorio/) as it appears in the sidebar: **144 pages** across **37 sections** (max depth 5).
+Every published page in [`docs/gitorio/`](../gitorio/) as it appears in the sidebar: **145 pages** across **37 sections** (max depth 5).
 
 - [⚙ GitFactory](../gitorio/README.md)
 - [App](../gitorio/app/public/maps/README.md)
@@ -29,7 +29,7 @@ Every published page in [`docs/gitorio/`](../gitorio/) as it appears in the side
   - [Power and Security](../gitorio/_docs/power-and-security.md)
   - [The Docs Gardener](../gitorio/_docs/the-docs-gardener.md)
   - [The Harness](../gitorio/_docs/the-harness.md)
-- **[Documentation](../gitorio/docs/README.md)** <small>(18)</small>
+- **[Documentation](../gitorio/docs/README.md)** <small>(19)</small>
   - [gitorio documentation](../gitorio/docs/README.md)
   - [AO-SDLC — the spec-driven development loop](../gitorio/docs/AO-SDLC.md)
   - [Decisions (ADR-lite)](../gitorio/docs/DECISIONS.md)
@@ -40,10 +40,11 @@ Every published page in [`docs/gitorio/`](../gitorio/) as it appears in the side
   - [Machine reference](../gitorio/docs/reference/machines.md)
   - [Proposal — Gitorio as Harness Studio: the fleet's home for loop and…](../gitorio/docs/proposals/redesign-harness-studio.md)
   - [Roadmap](../gitorio/docs/ROADMAP.md)
-  - **[Amendments — gitorio](../gitorio/docs/amendments/README.md)** <small>(5)</small>
+  - **[Amendments — gitorio](../gitorio/docs/amendments/README.md)** <small>(6)</small>
     - [Amendments — gitorio](../gitorio/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../gitorio/docs/amendments/0001-ratify-constitution.md)
     - [0002 — Harness Studio mission: observe, design and manage fleet loops…](../gitorio/docs/amendments/0002-harness-studio-mission.md)
+    - [0003 — Missions](../gitorio/docs/amendments/0003-mission-statement.md)
     - [NEW — Agent merge of mergeable PRs, and a review gate](../gitorio/docs/amendments/proposed/agent-merge-review-gate.md)
     - [NNNN — Title of the amendment](../gitorio/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../gitorio/docs/adr/README.md)** <small>(3)</small>

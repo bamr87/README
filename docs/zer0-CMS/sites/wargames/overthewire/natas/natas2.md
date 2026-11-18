@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas2
     URL:      http://natas2.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Disable directory listings, keep sensitive files out of the web root, and treat 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas1/">Level 1</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas3/">Level 3</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

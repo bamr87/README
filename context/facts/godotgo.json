@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 30,
-    "fingerprint": "eabd1736bd67db3e",
+    "file_count": 31,
+    "fingerprint": "2d6d3056428aa8b1",
     "path": "docs/godotgo",
     "present": true,
-    "total_bytes": 137657
+    "total_bytes": 149749
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -21,7 +21,7 @@
       "Development"
     ],
     "readme": "README.md",
-    "summary": "Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same.",
+    "summary": "GodotGo's direction is to become the ultimate open home for all things Godot game-making: data, tools, resources and transparency, with one reusable framework, identical tooling for every game, and an agent-ready build-and-test loop for everyone (constitution \u00a71).",
     "title": "GodotGo"
   },
   "key_docs": [
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/godotgo.md",
-    "fingerprint": "94e54f2131ce9e81",
+    "fingerprint": "1e16c4ff34423103",
     "index": "godotgo/README.md",
     "max_depth": 4,
-    "pages": 30,
+    "pages": 31,
     "present": true,
     "sections": 6,
     "skipped": 0,
@@ -47,7 +47,7 @@
     "top_sections": [
       {
         "index": "godotgo/docs/README.md",
-        "pages": 14,
+        "pages": 15,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -75,7 +75,7 @@
   },
   "rollups": {
     "categories": {
-      "godotgo": 30
+      "godotgo": 31
     },
     "code_languages": [
       "bash",
@@ -85,9 +85,9 @@
       "json",
       "python"
     ],
-    "indexed_documents": 30,
+    "indexed_documents": 31,
     "top_tags": [],
-    "total_words": 19467
+    "total_words": 21407
   },
   "schema_version": "1.0",
   "signals": {
@@ -109,7 +109,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 14,
+        "doc_count": 15,
         "name": "docs"
       },
       {

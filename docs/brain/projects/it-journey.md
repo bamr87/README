@@ -16,7 +16,7 @@ title: IT Journey
 > [!info] site: `bamr87/it-journey`
 > Educational IT platform with quests, blog posts, and technical documentation.
 
-**557** pages collected from commit `5e93a84c71ea` (2026-11-18).
+**557** pages collected from commit `683ac7759a44` (2026-11-18).
 
 ## Most connected pages
 

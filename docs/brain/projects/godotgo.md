@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 30
+pages: 31
 repo: bamr87/godotgo
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: GodotGo
 > [!info] game: `bamr87/godotgo`
 > Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same.
 
-**30** pages collected from commit `3ca6c8aef386` (2026-11-11).
+**31** pages collected from commit `1249b008f062` (2026-11-18).
 
 ## Most connected pages
 
@@ -31,4 +31,4 @@ title: GodotGo
 - [[godotgo/CLAUDE|godotgo]]
 - [[godotgo/docs/adr/README|Architecture Decision Records]]
 - [[godotgo/docs/amendments/0001-ratify-constitution|0001 — Ratify the constitution]]
-- [[godotgo/docs/framework|The GodotGo framework]]
+- [[godotgo/docs/amendments/0002-mission-statement|0002 — Missions]]

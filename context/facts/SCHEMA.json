@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 36,
-    "fingerprint": "a730b9464b43dd5f",
+    "fingerprint": "79e4c2bf12f67b7f",
     "path": "docs/SCHEMA",
     "present": true,
-    "total_bytes": 99421
+    "total_bytes": 97995
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -112,7 +112,7 @@
       "repo-structure",
       "lint"
     ],
-    "total_words": 13870
+    "total_words": 13661
   },
   "schema_version": "1.0",
   "signals": {

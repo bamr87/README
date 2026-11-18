@@ -42,8 +42,6 @@ The source code for the exploitable application can be found in "/home/vortex20"
 
 [vortex.labs.overthewire.org]: ssh://vortex.labs.overthewire.org:2228
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -75,5 +73,3 @@ Integer errors lead to buffer overflows in many real programs and are easy to ov
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex19/">Level 19</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex21/">Level 21</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

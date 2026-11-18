@@ -50,8 +50,6 @@ Helpful Reading Material
   [C Programming Introduction]: http://beej.us/guide/bgc/
   [Network Programming Tutorial]: http://beej.us/guide/bgnet/
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -83,5 +81,3 @@ Binary protocols and integer width mistakes are the foundation of countless expl
 <nav class="sg-nav" aria-label="Level navigation"><span></span><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex1/">Level 1</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

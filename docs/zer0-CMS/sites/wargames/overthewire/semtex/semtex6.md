@@ -52,8 +52,6 @@ Reading Material
 [ICMP Request For Comment]: http://www.faqs.org/rfcs/rfc792.html
 [Mixter's raw socket tutorial]: http://mixter.void.ru/rawip.html
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -86,5 +84,3 @@ Spoofing is the basis of reflection attacks, and source address validation is th
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex5/">Level 5</a><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex7/">Level 7</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

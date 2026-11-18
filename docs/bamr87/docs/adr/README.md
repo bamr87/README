@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/adr/README.md
 title: Architecture Decision Records
 ---
-<!-- kit: sdlc v0.1.0 · ADR index (UPS-WORK-04, decision D2: law-ai format) -->
 # Architecture Decision Records
 
 > Decisions for bamr87 that are hard to reverse — the stack, data model, security model, public interfaces, and any relaxation of a gate — one file each.
@@ -41,3 +40,4 @@ Add an ADR in the same PR as the change it justifies.
 | 0009 | [The agentic efficacy model: one agent inventory, five KPIs per kind of agent, and checks that run in shadow before they gate](0009-agentic-efficacy-model.md) | accepted |
 | 0010 | [The fleet graph and outcome learning: one model of what the control plane manages, and a shadow estimate of where each loop's work lands](0010-fleet-graph-and-outcome-learning.md) | accepted |
 | 0011 | [One framework, many instances: the stack installs for any owner](0011-one-framework-many-instances.md) | accepted |
+| 0012 | [Merge readiness: every pull request is checked, reviewed and adjusted before it merges, and says so in one place](0012-merge-readiness.md) | proposed |

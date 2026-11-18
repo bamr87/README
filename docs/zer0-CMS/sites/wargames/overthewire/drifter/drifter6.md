@@ -52,8 +52,6 @@ As usual when I grab random code and look over it, someone might want to tell th
   [Format String Technique]: http://julianor.tripod.com/bc/NN-formats.txt
   [Exploiting Format String Vulnerabilities]: http://doc.bughunter.net/format-string/exploit-fs.html
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -86,5 +84,3 @@ It repeats the lesson that unvalidated formatting is dangerous, this time in a n
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter5/">Level 5</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter7/">Level 7</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

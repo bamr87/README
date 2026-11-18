@@ -51,8 +51,6 @@ They were produced from the same key (\*\*\* even better!)
 
 Enjoy.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -85,5 +83,3 @@ Fixed substitution preserves the statistics of the language. Good modern ciphers
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../krypton2/">Level 2</a><a class="sg-index" href="../">Krypton overview</a><a class="sg-next" href="../krypton4/">Level 4</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

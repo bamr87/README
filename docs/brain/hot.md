@@ -15,39 +15,46 @@ Read this first. It holds what moved lately and what everything else connects th
 
 ## Recent changes
 
-- 2026-11-18 [[brain/projects/bamr87|Fleet Hub]]: +0 ~7 -0
-    - [[bamr87/_data/SCHEMA|SCHEMA — _data]]
-    - [[bamr87/docs/MCP-SERVERS|MCP server lifecycle]]
-    - [[bamr87/docs/mcp-servers-inventory|MCP servers inventory — consolidation checklist]]
-- 2026-11-18 [[brain/projects/it-journey|IT Journey]]: +1 ~6 -0
-    - [[it-journey/docs/amendments/0004-mission-statement|0004 — Missions]]
-    - [[it-journey/AGENTS|it-journey]]
-    - [[it-journey/PRD|PRD: IT-Journey – Open-Source IT Education Platform]]
-- 2026-11-18 [[brain/projects/bashos|BashOS]]: +0 ~3 -0
-    - [[bashos/docs/DESKTOP-TOUR|The bashOS Desktop — a tour]]
-    - [[bashos/docs/OPENCODE|The engine: OpenCode at the core of bashOS]]
-    - [[bashos/docs/OS|bashOS, the operating system]]
-- 2026-11-18 [[brain/projects/law-ai|Law AI]]: +0 ~1 -0
-    - [[law-ai/BACKLOG|Law AI — Backlog]]
-- 2026-11-18 [[brain/projects/fredgar-ai|Fredgar AI]]: +1 ~6 -0
-    - [[fredgar-ai/docs/amendments/0002-mission-statement|0002 — Missions]]
-    - [[fredgar-ai/AGENTS|fredgar-ai]]
-    - [[fredgar-ai/PRD|Product Requirements Document (PRD): Fredgar AI]]
-- 2026-11-16 [[brain/projects/SCHEMA|SCHEMA Protocol]]: +1 ~6 -0
-    - [[SCHEMA/docs/amendments/0003-mission-statement|0003 — Missions]]
-    - [[SCHEMA/AGENTS|SCHEMA]]
-    - [[SCHEMA/PRD|PRD — Pyramid Schema (SCHEMA)]]
-- 2026-11-18 [[brain/projects/bamr87.github.io|Personal Site]]: +0 ~1 -0
-    - [[bamr87.github.io/pages/_about/features/index|Features Index (Consolidated)]]
-- 2026-11-18 [[brain/projects/zer0-mistakes|Zer0 Mistakes]]: +0 ~1 -0
-    - [[zer0-mistakes/docs/architecture/prd-requirements|Product Requirements Document]]
-- 2026-11-18 [[brain/projects/bashcrawl|Bash Crawl]]: +1 ~1 -0
-    - [[bashcrawl/SECURITY|Security Policy]]
-    - [[bashcrawl/docs/README|Bashcrawl documentation]]
-- 2026-11-11 [[brain/projects/zpl-viewer|ZPL Viewer]]: +19 ~0 -0
+- 2026-11-18 [[brain/projects/zpl-viewer|ZPL Viewer]]: +0 ~13 -0
     - [[zpl-viewer/AGENTS|zpl-viewer]]
-    - [[zpl-viewer/CHANGELOG|Change Log]]
     - [[zpl-viewer/CLAUDE|zpl-viewer]]
+    - [[zpl-viewer/PRD|PRD — Label Studio (zpl-viewer)]]
+- 2026-11-18 [[brain/projects/zer0-CMS|Zer0 CMS]]: +2 ~281 -0
+    - [[zer0-CMS/docs/amendments/0003-mission-statement|0003 — Missions]]
+    - [[zer0-CMS/docs/plan/newsroom-journalism-discovery|Newsroom and journalism platform — discovery]]
+    - [[zer0-CMS/AGENTS|zer0-CMS]]
+- 2026-11-18 [[brain/projects/vs-sonic-pi|VS Sonic Pi]]: +1 ~13 -0
+    - [[vs-sonic-pi/docs/amendments/0002-mission-statement|0002 — Missions]]
+    - [[vs-sonic-pi/AGENTS|vs-sonic-pi]]
+    - [[vs-sonic-pi/CLAUDE|vs-sonic-pi]]
+- 2026-11-18 [[brain/projects/SCHEMA|SCHEMA Protocol]]: +0 ~12 -0
+    - [[SCHEMA/AGENTS|SCHEMA]]
+    - [[SCHEMA/CLAUDE|SCHEMA]]
+    - [[SCHEMA/PRD|PRD — Pyramid Schema (SCHEMA)]]
+- 2026-11-18 [[brain/projects/rewind-arcade|Rewind Arcade]]: +0 ~19 -0
+    - [[rewind-arcade/AGENTS|rewind-arcade]]
+    - [[rewind-arcade/CLAUDE|rewind-arcade]]
+    - [[rewind-arcade/PRD|PRD — Rewind Arcade]]
+- 2026-11-18 [[brain/projects/outbox|Outbox]]: +1 ~12 -0
+    - [[outbox/SECURITY|Security Policy]]
+    - [[outbox/AGENTS|outbox]]
+    - [[outbox/CLAUDE|outbox]]
+- 2026-11-18 [[brain/projects/ocrmd|OCRmd]]: +1 ~16 -0
+    - [[ocrmd/SECURITY|Security Policy]]
+    - [[ocrmd/AGENTS|ocrmd]]
+    - [[ocrmd/CLAUDE|ocrmd]]
+- 2026-11-18 [[brain/projects/lifehacker.dev|Lifehacker]]: +0 ~16 -0
+    - [[lifehacker.dev/AGENTS|lifehacker.dev]]
+    - [[lifehacker.dev/AI_USAGE|AI Usage & Cost]]
+    - [[lifehacker.dev/CLAUDE|lifehacker.dev]]
+- 2026-11-18 [[brain/projects/law-ai|Law AI]]: +1 ~33 -0
+    - [[law-ai/docs/amendments/0003-mission-statement|0003 — Missions]]
+    - [[law-ai/AGENTS|Law AI — Agent Coding Instructions]]
+    - [[law-ai/BACKLOG|Law AI — Backlog]]
+- 2026-11-18 [[brain/projects/godotgo|GodotGo]]: +1 ~15 -0
+    - [[godotgo/docs/amendments/0002-mission-statement|0002 — Missions]]
+    - [[godotgo/AGENTS|godotgo]]
+    - [[godotgo/CLAUDE|godotgo]]
 
 ## Most linked pages
 
@@ -83,4 +90,4 @@ Read this first. It holds what moved lately and what everything else connects th
 - [[brain/concepts/bash|Bash]] (4 projects)
 - [[brain/concepts/git|GIT]] (4 projects)
 - [[brain/concepts/github-actions|Github Actions]] (4 projects)
-- [[brain/concepts/search|Search]] (4 projects)
+- [[brain/concepts/architecture|Architecture]] (4 projects)

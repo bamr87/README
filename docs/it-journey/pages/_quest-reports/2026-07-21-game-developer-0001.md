@@ -62,7 +62,7 @@ All figures below are from the sealed execute-engine run (commands actually run 
 ### 1. Advanced Markdown — 94% ✅ (ran 10/4 runnable; 10 passed, 0 failed, 1 skipped, 2 reasoned)
 - Table / footnote / definition-list / callout / IAL blocks rendered via `Kramdown::Document.new(...).to_html` → alignment cells, superscript footnotes, `<dl>` pairs, `<blockquote>` all produced **exactly as described** (`passed`).
 - Task lists + triple-backtick fences: bare kramdown rendered them as literal text, but installing `kramdown-parser-gfm` + `input: 'GFM'` (Jekyll's real default) produced real `<input type=checkbox>` and Rouge-highlighted code (`passed`).
-- YAML frontmatter parsed with PyYAML; `{​{ page.title }​}` + `{​% raw %​}` for-loop verified with the Liquid gem (`passed`).
+- YAML frontmatter parsed with PyYAML; `{{ page.title }}` + `{% raw %}` for-loop verified with the Liquid gem (`passed`).
 - macOS / Windows setup snippets `reasoned` (no macOS; pwsh confirmed `New-Item` works); `code guide.md` GUI launch and the Cloud comment block `skipped`.
 
 ### 2. Barodybroject Stack Analysis — 33% ❌ (ran 12/12 runnable; 5 passed, 7 failed, 9 skipped, 2 reasoned)

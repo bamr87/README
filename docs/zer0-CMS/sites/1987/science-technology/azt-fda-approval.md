@@ -41,7 +41,6 @@ Scientifically, AZT validated the NRTI class of antiretrovirals and established 
 - [AZT — Encyclopædia Britannica](https://www.britannica.com/science/AZT)
 - [AZT Treats People with AIDS — EBSCO Research Starters](https://www.ebsco.com/research-starters/social-sciences-and-humanities/azt-treats-people-aids)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Supernova 1987A (February 23, 1987)](supernova-1987a.md) — another Science & Technology landmark of 1987.
@@ -50,4 +49,3 @@ Scientifically, AZT validated the NRTI class of antiretrovirals and established 
 - [ACT UP Founded (March 12, 1987)](../society-economics/act-up-founding.md) — AIDS activist organization founded eight days before AZT approval.
 - [FDA Approves Prozac (December 29, 1987)](../society-economics/prozac-fda-approval.md) — the other landmark FDA drug approval of 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

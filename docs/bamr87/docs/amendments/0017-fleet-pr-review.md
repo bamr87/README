@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0017-fleet-pr-review.md
 title: 0017 — Fleet PR review runs through one reusable workflow with one sticky summary
 ---
-<!-- kit: governance v0.1.0 -->
 # 0017 — Fleet PR review runs through one reusable workflow with one sticky summary
 
 - **Status:** ratified

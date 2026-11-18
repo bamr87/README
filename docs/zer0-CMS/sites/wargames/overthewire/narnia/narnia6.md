@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Return-to-libc leads directly to return-oriented programming (ROP), the standard
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../narnia5/">Level 5</a><a class="sg-index" href="../">Narnia overview</a><a class="sg-next" href="../narnia7/">Level 7</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

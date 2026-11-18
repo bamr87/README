@@ -4,9 +4,6 @@ source_repo: bamr87/bashcrawl
 source_url: https://github.com/bamr87/bashcrawl/blob/main/SECURITY.md
 title: Security Policy
 ---
-<!-- kit: community v0.1.0 · the fleet default SECURITY policy (UPS-REPO-14). Inherited from the owner's
-     .github repo by every repo without its own copy. -->
-
 # Security Policy
 
 ## Supported versions

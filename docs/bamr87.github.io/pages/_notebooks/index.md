@@ -1,4 +1,5 @@
 ---
+date: 2026-10-27 08:08:39+00:00
 description: Jupyter notebooks published on this site.
 layout: collection
 permalink: /notebooks/

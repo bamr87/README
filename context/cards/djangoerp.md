@@ -7,13 +7,13 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 226e4b5bb0231db9
+source_fingerprint: ccdec8237bb56238
 tags:
 ---
 
 # DjangoERP
 
-> Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning.
+> Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning. Django ERP's direction is to become the ultimate open home for all things enterprise resource planning: data, tools, resources and transparency, with a double-entry core, modular order-to-cash, procure-to-pay and make-to-stock flows, and an inspectable API for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -21,7 +21,7 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/djangoerp` - 17 docs |
+| Corpus | `docs/djangoerp` - 18 docs |
 | External | no |
 
 ## Signals
@@ -29,14 +29,14 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~11,188 words across 17 indexed documents
+- ~13,295 words across 18 indexed documents
 - code samples in: bash, mermaid, plaintext
 
 ## Navigation
 
-17 published pages in 3 sections (max depth 3) — [browse the full map](../../docs/browse/djangoerp.md) · [tree as JSON](../nav/djangoerp.json)
+18 published pages in 3 sections (max depth 3) — [browse the full map](../../docs/browse/djangoerp.md) · [tree as JSON](../nav/djangoerp.json)
 
-- **Documentation** (11 pages)
+- **Documentation** (12 pages)
 
 ## Key documents
 

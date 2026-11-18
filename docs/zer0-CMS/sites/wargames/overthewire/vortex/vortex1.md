@@ -50,8 +50,6 @@ Reading Material
 [Smashing the Stack for Fun and Profit]: http://www.phrack.com/issues/49/14.html#article
 [Smashing The Modern Stack For Fun And Profit]: https://www.exploit-db.com/papers/13162/
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -84,5 +82,3 @@ It trains you to control memory byte by byte, and to debug the delivery mechanis
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex0/">Level 0</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex2/">Level 2</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

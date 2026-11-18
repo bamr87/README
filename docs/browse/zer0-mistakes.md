@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Zer0 Mistakes - content map
 
-Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **555 pages** across **94 sections** (max depth 6).
+Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **558 pages** across **95 sections** (max depth 6).
 
 - **[Repository & tooling](../zer0-mistakes/scripts/README.md)** <small>(10)</small>
   - [Docker Configuration](../zer0-mistakes/docker/README.md)
@@ -58,7 +58,7 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
       - [Card.Prompt](../zer0-mistakes/_design-system/components/surfaces/Card.prompt.md)
       - [Featurecard.Prompt](../zer0-mistakes/_design-system/components/surfaces/FeatureCard.prompt.md)
       - [Postcard.Prompt](../zer0-mistakes/_design-system/components/surfaces/PostCard.prompt.md)
-- **[Documentation](../zer0-mistakes/docs/README.md)** <small>(80)</small>
+- **[Documentation](../zer0-mistakes/docs/README.md)** <small>(83)</small>
   - [Developer Documentation](../zer0-mistakes/docs/README.md)
   - [zer0-mistakes Constitution](../zer0-mistakes/docs/constitution.md)
   - **[Amendments — zer0-mistakes](../zer0-mistakes/docs/amendments/README.md)** <small>(4)</small>
@@ -66,6 +66,10 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
     - [0001 Ratify the Constitution](../zer0-mistakes/docs/amendments/0001-ratify-constitution.md)
     - [Amendment Record Template](../zer0-mistakes/docs/amendments/0000-template.md)
     - [Proposed: Agent merge of mergeable PRs, and a review gate](../zer0-mistakes/docs/amendments/proposed/agent-merge-review-gate.md)
+  - **[Architecture Decision Records](../zer0-mistakes/docs/adr/README.md)** <small>(3)</small>
+    - [Architecture Decision Records](../zer0-mistakes/docs/adr/README.md)
+    - [ADR 0001: Record architecture decisions](../zer0-mistakes/docs/adr/0001-record-architecture-decisions.md)
+    - [ADR template](../zer0-mistakes/docs/adr/0000-template.md)
   - **[Architecture Documentation](../zer0-mistakes/docs/architecture/README.md)** <small>(7)</small>
     - [Architecture Documentation](../zer0-mistakes/docs/architecture/README.md)
     - [Build System](../zer0-mistakes/docs/architecture/build-system.md)

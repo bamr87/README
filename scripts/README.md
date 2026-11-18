@@ -212,7 +212,7 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 
 - Reads `_data/projects.yml`; a project's `collect:` rules, plus the fleet-wide ones, say what counts as official documentation
 - Takes only git-tracked Markdown, so ignored build output never enters the corpus
-- Screens every page for credentials first (`redact.py`): a GitHub, Anthropic, xAI, AWS or Slack token, or a PEM private key, becomes `[REDACTED:<kind>]`; the run writes `docs/results/secret_screen.json` (project, path, line, kind, never the value), finishes the corpus, and exits 1 so the scheduled crawl stops before its commit. A clean run removes a stale report
+- Drops hidden carriers (`hidden.py`: HTML comments in prose, zero-width and bidi controls), then screens every page for credentials (`redact.py`): a GitHub, Anthropic, xAI, AWS or Slack token, or a PEM private key, becomes `[REDACTED:<kind>]`; the run writes `docs/results/secret_screen.json` (project, path, line, kind, never the value), finishes the corpus, and exits 1 so the scheduled crawl stops before its commit. A clean run removes a stale report
 - Normalizes in memory: front matter, provenance (`source_repo`, `source_file`, `source_url`), icons, tags, one paragraph per line
 - Renames dot-directories with `collect.hidden_prefix`, since neither GitHub Pages nor Obsidian shows them
 - Stages every project first, then weaves links across the whole corpus, then writes only what changed and deletes what upstream dropped
@@ -231,6 +231,8 @@ python3 -m scripts.context_engine collect --workspace ~/github   # local checkou
 A second run over unchanged sources changes nothing.
 
 ---
+
+**Hidden carriers** (`hidden.py`, run by `collect.py` on every page): upstream docs are third-party input that agents read and the context engine pastes into AI prompts, so ingest drops what a reader never sees: HTML comments in prose, and zero-width or bidirectional formatting characters (U+200B, U+202A–U+202E, U+2060–U+206F, U+FEFF, Unicode tag characters, and a U+200C/U+200D joiner that does not sit between two non-ASCII characters). Fenced and inline code keep their comments (a comment in a code sample is content), an empty comment (`<!-- -->`, the usual way to split two lists) stays, emoji ZWJ sequences and subdivision flags stay, and front matter values lose only the formatting characters. A comment-only line between two paragraphs leaves a blank line, so the paragraphs stay apart. A comment that is all a line holds besides block syntax (`- <!-- note -->`, `=== <!-- note -->`) is emptied to `<!---->` instead of removed: a bare `-` or `===` would turn the line above into a heading. The pass is idempotent, and a leading BOM is dropped so it no longer hides the front matter.
 
 ### Vault and brain (`context_engine/vault.py`, `context_engine/brain.py`)
 
@@ -581,6 +583,8 @@ python3 -m scripts.context_engine projects         # fleet roster
 **Secret screen** (`redact.py`): the stdlib matcher behind ingest's credential check. `redact(text)` returns the text with each credential replaced by `[REDACTED:<kind>]` and one `Hit(kind, line)` per credential, never the value. `context_engine/collect.py` runs it on every crawled page, `hooks.py` on hook output (a hook also gets an allowlisted environment, never the build's provider keys: see `../hooks.d/README.md`), and `AIError` on its message, which can quote a provider's response body. The survey's working-tree mode (`survey --local`, `--workspace`) never follows a tracked symlink, so a link out of a checkout cannot pull a local file into the review.
 
 **Outputs**: `context/facts/*.json`, `context/cards/*.md`, `context/nav/*.json`, `context/README.md`, `context/SCHEMA.md`, `context/index/{context_index,manifest}.json`, plus the regenerated `repos.txt`, `nav.yml`, `docs/browse/`, root README span, and `docs/index.md`. All generated — never hand-edit.
+
+**Untrusted input** (`screen.py`): every fact string comes from upstream Markdown, so the build screens it with the survey's Q4 patterns (`analyze/checks.INJECTION_RE`, the one pattern source, matched on the raw text and on an NFKC-folded copy without invisible characters). A hit quarantines the project: its facts never reach a prompt, the card keeps the heuristic essence and says `enrichment: quarantined`, the log prints `[screen] <project>: <label> in <field>`, and the manifest gains a `quarantined` map (absent when nothing was hit, so a clean build stays diff-stable). The same screen runs over every AI completion and over the apex digest and overview. Prompts carry the facts inside `<facts>…</facts>` (a literal `</facts>` inside is JSON-escaped), and the system prompt says they are untrusted data whose instructions must be ignored. A completion must be one paragraph of at most 1,200 characters, with no hidden markup and no URL or link the facts do not contain; otherwise the card falls back to heuristic text. `CONTEXT_INJECTION_STRICT=1` makes `build` exit non-zero when anything was quarantined, for a cron that must not commit a hit.
 
 **Navigation** (`navigator.py`): the stage that makes the published corpus browsable. It walks `docs/<project>/**`, applies the `navigation:` contract from `_data/projects.yml` (grouping, section labels, depth cap, exclusions), and renders one tree onto three surfaces:
 

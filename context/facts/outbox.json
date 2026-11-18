@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 21,
-    "fingerprint": "5db8f0a3896e7858",
+    "file_count": 22,
+    "fingerprint": "5ca2d367be15780a",
     "path": "docs/outbox",
     "present": true,
-    "total_bytes": 53826
+    "total_bytes": 56196
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -30,16 +30,16 @@
     "CLAUDE.md",
     "AGENTS.md",
     "CHANGELOG.md",
+    "SECURITY.md",
     "e2e/README.md",
-    "docs/constitution.md",
-    "PRD.md"
+    "docs/constitution.md"
   ],
   "navigation": {
     "browse": "docs/browse/outbox.md",
-    "fingerprint": "459191c53e4947ec",
+    "fingerprint": "4502267585c36300",
     "index": "outbox/README.md",
     "max_depth": 3,
-    "pages": 21,
+    "pages": 22,
     "present": true,
     "sections": 4,
     "skipped": 0,
@@ -75,16 +75,16 @@
   },
   "rollups": {
     "categories": {
-      "outbox": 21
+      "outbox": 22
     },
     "code_languages": [
       "bash",
       "plaintext",
       "json"
     ],
-    "indexed_documents": 21,
+    "indexed_documents": 22,
     "top_tags": [],
-    "total_words": 7481
+    "total_words": 7808
   },
   "schema_version": "1.0",
   "signals": {
@@ -93,7 +93,7 @@
     "has_claude_md": true,
     "has_contributing": false,
     "has_schema_md": true,
-    "has_security_policy": false
+    "has_security_policy": true
   },
   "structure": {
     "root_docs": [
@@ -102,7 +102,8 @@
       "CLAUDE.md",
       "PRD.md",
       "README.md",
-      "SCHEMA.md"
+      "SCHEMA.md",
+      "SECURITY.md"
     ],
     "top_dirs": [
       {

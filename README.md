@@ -39,27 +39,27 @@ Every governed directory carries a `SCHEMA.md` (structure table + rules), mirror
 | Project | Kind | Status | Docs | Sections | What it is |
 |---|---|---|---|---|---|
 | [it-journey](context/cards/it-journey.md) | site | active | 557 | 54 | Educational IT platform with quests, blog posts, and technical documentation. |
-| [zer0-mistakes](context/cards/zer0-mistakes.md) | theme | active | 557 | 94 | Jekyll theme and software architecture patterns for GitHub Pages. |
+| [zer0-mistakes](context/cards/zer0-mistakes.md) | theme | active | 560 | 95 | Jekyll theme and software architecture patterns for GitHub Pages. |
 | [bashcrawl](context/cards/bashcrawl.md) | game | active | 80 | 16 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
-| [scripts](context/cards/scripts.md) | tooling | active | 24 | 5 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
+| [scripts](context/cards/scripts.md) | tooling | active | 25 | 5 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
 | [OverTheWire-website](context/cards/OverTheWire-website.md) | site | active | 232 | 17 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
-| [bamr87](context/cards/bamr87.md) | hub | active | 259 | 38 | Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashb… |
+| [bamr87](context/cards/bamr87.md) | hub | active | 275 | 40 | Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashb… |
 | [bamr87.github.io](context/cards/bamr87.github.io.md) | site | active | 94 | 19 | Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages. |
 | [bashos](context/cards/bashos.md) | tooling | active | 80 | 15 | Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engi… |
 | [cv-pro](context/cards/cv-pro.md) | app | active | 32 | 6 | CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract and renders) and app/ (the R… |
-| [djangoerp](context/cards/djangoerp.md) | app | active | 17 | 3 | Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP plannin… |
+| [djangoerp](context/cards/djangoerp.md) | app | active | 18 | 3 | Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP plannin… |
 | [fredgar-ai](context/cards/fredgar-ai.md) | app | active | 38 | 6 | Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries. |
-| [githubai](context/cards/githubai.md) | tooling | active | 48 | 10 | Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut re… |
-| [gitorio](context/cards/gitorio.md) | app | active | 144 | 37 | Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude … |
-| [godotgo](context/cards/godotgo.md) | game | active | 30 | 6 | Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the s… |
-| [law-ai](context/cards/law-ai.md) | app | active | 300 | 74 | Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first vi… |
+| [githubai](context/cards/githubai.md) | tooling | active | 54 | 10 | Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut re… |
+| [gitorio](context/cards/gitorio.md) | app | active | 145 | 37 | Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude … |
+| [godotgo](context/cards/godotgo.md) | game | active | 31 | 6 | Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the s… |
+| [law-ai](context/cards/law-ai.md) | app | active | 301 | 74 | Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first vi… |
 | [lifehacker.dev](context/cards/lifehacker.dev.md) | site | active | 138 | 12 | Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude C… |
-| [ocrmd](context/cards/ocrmd.md) | tooling | active | 25 | 4 | Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-te… |
-| [outbox](context/cards/outbox.md) | tooling | active | 21 | 4 | Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay… |
+| [ocrmd](context/cards/ocrmd.md) | tooling | active | 26 | 4 | Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-te… |
+| [outbox](context/cards/outbox.md) | tooling | active | 22 | 4 | Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay… |
 | [rewind-arcade](context/cards/rewind-arcade.md) | game | active | 76 | 11 | Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog. |
 | [SCHEMA](context/cards/SCHEMA.md) | tooling | active | 36 | 10 | Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessi… |
-| [vs-sonic-pi](context/cards/vs-sonic-pi.md) | tooling | active | 117 | 6 | VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC … |
-| [zer0-CMS](context/cards/zer0-CMS.md) | app | active | 1205 | 181 | Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown site… |
+| [vs-sonic-pi](context/cards/vs-sonic-pi.md) | tooling | active | 118 | 6 | VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC … |
+| [zer0-CMS](context/cards/zer0-CMS.md) | app | active | 1207 | 181 | Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown site… |
 | [zpl-viewer](context/cards/zpl-viewer.md) | tooling | active | 19 | 4 | Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal la… |
 <!-- AUTO:projects:end -->
 

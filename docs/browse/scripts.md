@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Scripts - content map
 
-Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **24 pages** across **5 sections** (max depth 3).
+Every published page in [`docs/scripts/`](../scripts/) as it appears in the sidebar: **25 pages** across **5 sections** (max depth 3).
 
 - [🛠️ scripts](../scripts/README.md)
 - [Changelog](../scripts/CHANGELOG.md)
@@ -18,13 +18,14 @@ Every published page in [`docs/scripts/`](../scripts/) as it appears in the side
 - [scripts (CLAUDE)](../scripts/CLAUDE.md)
 - [scripts tools](../scripts/tools/README.md)
 - [Security Policy](../scripts/SECURITY.md)
-- **[Documentation](../scripts/docs/README.md)** <small>(9)</small>
+- **[Documentation](../scripts/docs/README.md)** <small>(10)</small>
   - [scripts documentation](../scripts/docs/README.md)
   - [Rename Directory Utility - Quick Reference](../scripts/docs/rename-directory-quick-reference.md)
   - [scripts — Constitution](../scripts/docs/constitution.md)
-  - **[Amendments — scripts](../scripts/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — scripts](../scripts/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — scripts](../scripts/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../scripts/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../scripts/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../scripts/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../scripts/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../scripts/docs/adr/README.md)

@@ -70,7 +70,7 @@ repo exits 0 with empty `findings.jsonl`; a file missing `author`/`description` 
 - **Discovered robustness bug (edge-case test beyond the quest's own walkthrough):** a
 front-matter block with a missing closing `---`, or an unterminated quote (`title: "test`), crashes the whole harness with an unhandled `yaml.scanner.ScannerError` traceback instead of a clean finding. Reproduced twice.
 - `.github/workflows/verify.yml` → **reasoned** — valid YAML, current action versions
-(`checkout@v4`, `setup-python@v5`, `upload-artifact@v4`), correct `if: ${​{ always() }​}` semantics; not executable on real GitHub Actions from the sandbox.
+(`checkout@v4`, `setup-python@v5`, `upload-artifact@v4`), correct `if: ${{ always() }}` semantics; not executable on real GitHub Actions from the sandbox.
 - Mermaid quest-network diagram → **reasoned** — valid syntax; CLI render blocked only by missing container browser sandbox.
 - Content-accuracy note: all six Resource Codex / Reproduce-It links returned **HTTP 200** when fetched.
 
@@ -89,7 +89,7 @@ documented expected failure** — died with `fatal: could not read Username for 
 ### Quest 3 — Profile Themes (78, warn · ran 5/2 recorded runnable snippets)
 
 - Step 3 CSS template (placeholders filled with cyberpunk values) → **passed** — brace-balanced, valid custom properties + `prefers-color-scheme` media query.
-- Step 5 YAML `profile:\n  theme: YOUR_THEME` → **passed** — parses to `{'profile': {'theme': 'cyberpunk'}​}`.
+- Step 5 YAML `profile:\n  theme: YOUR_THEME` → **passed** — parses to `{'profile': {'theme': 'cyberpunk'}}`.
 - Step 5 Liquid (raw/endraw stripped) → **passed** — rendered `<div class="contributor-sheet contributor-theme--cyberpunk">`.
 - Step 6 Liquid `<link>` chain → **passed** — rendered `<link rel="stylesheet" href="/assets/css/themes/contributor-theme-cyberpunk.css">`.
 - Step 8 `git checkout -b … && git add … && git commit` → **passed** in a scratch repo with a real theme file; `git push origin` not exercised (no remote) — standard fork/PR.

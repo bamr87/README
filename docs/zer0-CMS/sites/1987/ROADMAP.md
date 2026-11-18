@@ -4,11 +4,6 @@ source_repo: bamr87/zer0-CMS
 source_url: https://github.com/bamr87/zer0-CMS/blob/main/sites/1987/ROADMAP.md
 title: Roadmap
 ---
-<!--
-  ROADMAP.md — the forward plan (what to grow next). Maintained by the `plan-roadmap` skill on every
-  `/grow` tick. Items are tagged: content | structure | meta. The architect picks from **Now** /
-**Backlog**; completed items move to **Done**; newly discovered work lands in **Ideas**. Hand-edits are allowed but will be reconciled on the next tick. -->
-
 # Roadmap
 
 Forward plan for growing this knowledge base. Concept and current state live in [seed.md](seed.md).

@@ -5,7 +5,6 @@ source_url: https://github.com/bamr87/lifehacker.dev/blob/main/docs/amendments/0
 title: 0002 — Reflow the constitution to one paragraph per line (editorial, no rule
   change)
 ---
-<!-- kit: governance v0.1.0 -->
 # 0002 — Reflow the constitution to one paragraph per line (editorial, no rule change)
 
 - **Status:** proposed

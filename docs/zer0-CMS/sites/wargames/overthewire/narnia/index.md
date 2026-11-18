@@ -75,8 +75,6 @@ Tools you may find useful to solve this wargame
 
 objdump, ghidra, pwntools, gcc, gdb
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -119,5 +117,3 @@ Exploit development against your own lab machines and wargames is legal and educ
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="narnia0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

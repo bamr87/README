@@ -43,8 +43,6 @@ A password is required for the next level. vortex5.c and md5.h. a-z,A-Z,0-9 is t
     Collision(s) tested : 489265082 in 217 second(s), 361 millisec, 101 microsec.
     Average of 2250932.1 hashes/sec.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -77,5 +75,3 @@ It explains why password length and slow hashes (bcrypt, scrypt, Argon2) matter,
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex4/">Level 4</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex6/">Level 6</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

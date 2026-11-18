@@ -47,8 +47,6 @@ Helpful Reading Material
 
 [setuid on Wikipedia]: https://en.wikipedia.org/wiki/Setuid
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -81,5 +79,3 @@ Hunting for setuid binaries (`find / -perm -4000`) is a standard step in Linux p
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit19/">Level 19</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit21/">Level 21</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

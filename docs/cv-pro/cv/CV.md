@@ -4,9 +4,6 @@ source_repo: bamr87/cv-pro
 source_url: https://github.com/bamr87/cv-pro/blob/main/cv/CV.md
 title: Amr Abdel-Motaleb
 ---
-<!-- GENERATED FILE — do not edit by hand.
-     Source of truth: data/cv.json. Regenerate with: npm run build -->
-
 # Amr Abdel-Motaleb
 
 📧 amr.abdel@gmail.com | 📱 +1 (720) 352-4641 | 📍 Denver, CO 80206 | 🌐 [Website](https://bashconsultants.com) | 💼 [LinkedIn](https://linkedin.com/in/amrabdel) | 💻 [GitHub](https://github.com/bamr87)

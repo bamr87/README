@@ -82,7 +82,7 @@ Dimensions: commands_work 4 · content_accuracy 3 · completeness 4 · clarity 4
 
 - **`passed`** — every genuinely runnable snippet ran clean: directory/file setup on macOS/Linux (`mkdir -p .github/prompts && touch …`), the Windows `New-Item` equivalent, the Cloud `echo > .github/copilot-instructions.md`, both Mermaid diagrams (graph TB + flowchart TD), and all three `.prompt.md` YAML frontmatter blocks (`code-review`, `debug-assistant`, `test-generator`) parse.
 - **`skipped`** — `code --install-extension` / `--list-extensions` blocks (no `code` CLI in sandbox), platform-specific.
-- **`reasoned` (defect)** — the reusable `.github/prompts/*.prompt.md` templates use an **invented** `inputs:` frontmatter + `{​{ inputs.x }​}` Liquid-style substitution (confirmed in source at lines 785–794). VS Code Copilot's real prompt-file syntax is `${input:variableName}` with `mode`/`model`/`tools`/`description` frontmatter — templates pasted as-is won't interpolate.
+- **`reasoned` (defect)** — the reusable `.github/prompts/*.prompt.md` templates use an **invented** `inputs:` frontmatter + `{{ inputs.x }}` Liquid-style substitution (confirmed in source at lines 785–794). VS Code Copilot's real prompt-file syntax is `${input:variableName}` with `mode`/`model`/`tools`/`description` frontmatter — templates pasted as-is won't interpolate.
 
 ## 🐞 Issues Found
 
@@ -90,7 +90,7 @@ Every item below is backed by a command result or a quoted source line. Fixes ar
 
 - **HIGH · Hidden Gem · opening (source line 105)** — a raw authoring placeholder ships to learners: `*[Opening paragraph that sets the fantasy context using RPG metaphors…]*`, sitting directly above the real opening paragraph. **Fix:** delete the placeholder line.
 - **HIGH · Hidden Gem · Chapter 2 macOS & Linux setup (lines 139, 154)** — `code --install-extension ms-vscode.vscode-github-pull-requests-and-issues` is a non-existent extension ID; a learner running it verbatim gets "extension not found." **Fix:** use `GitHub.vscode-pull-request-github`.
-- **HIGH · Prompt Crystal · Chapter 4 templates (lines 785–794)** — the `.prompt.md` `inputs:`/`{​{ inputs.x }​}` mechanic is not VS Code Copilot's real syntax; templates are non-functional if used as taught. **Fix:** switch to `${input:variableName}` and real frontmatter fields (`mode`, `model`, `tools`, `description`).
+- **HIGH · Prompt Crystal · Chapter 4 templates (lines 785–794)** — the `.prompt.md` `inputs:`/`{{ inputs.x }}` mechanic is not VS Code Copilot's real syntax; templates are non-functional if used as taught. **Fix:** switch to `${input:variableName}` and real frontmatter fields (`mode`, `model`, `tools`, `description`).
 - **MEDIUM · Hidden Gem · Chapter 3 Step 3 (`bundle install`)** — verified in sandbox: `bundle install` verbatim fails with `Bundler::PermissionError` on stock Linux/system-Ruby; only succeeds after `bundle config set --local path vendor/bundle`. **Fix:** document the failure mode + the local-path/rbenv workaround.
 - **MEDIUM · Hidden Gem · objectives (lines 100–103 vs 113–129)** — a generic auto-seeded objectives checklist *plus* an explicit self-flagging note (`objectives auto-seeded during framework alignment — authors should refine…`) sits above the detailed Primary/Secondary/Mastery block. Redundant and signals an unfinished edit. **Fix:** keep only the detailed block.
 - **MEDIUM · Prompt Crystal · prerequisites** — the quest assumes GitHub Copilot access without stating an active Copilot subscription/trial is required. **Fix:** state it near platform setup.

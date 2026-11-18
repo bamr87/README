@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas5
     URL:      http://natas5.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Keep authorisation state on the server and give the client only an unguessable s
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas4/">Level 4</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas6/">Level 6</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -4,7 +4,6 @@ source_repo: bamr87/godotgo
 source_url: https://github.com/bamr87/godotgo/blob/main/docs/amendments/README.md
 title: Amendments — godotgo
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — godotgo
 
 > The append-only log of numbered amendments to godotgo's constitution, with each record's status and what it affects.
@@ -18,3 +17,4 @@ The append-only log of changes to [the constitution](../constitution.md). Proces
 | # | Title | Status | Affects |
 | --- | --- | --- | --- |
 | [0001](0001-ratify-constitution.md) | Ratify the constitution | ratified on merge | whole constitution |
+| [0002](0002-mission-statement.md) | Missions | proposed | constitution §1; PRD §1.1; GODOTGO-008 |

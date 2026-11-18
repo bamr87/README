@@ -137,8 +137,6 @@ If you have some relevant papers that would be suitable for this site, please dr
   [Seccomp announcement]: http://kerneltrap.org/node/4005
   [me]: mailto:andrewg@felinemenace.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -168,5 +166,3 @@ The list ends with an invitation to email the maintainer with other good papers.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../">Blacksun overview</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

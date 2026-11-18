@@ -79,8 +79,6 @@ The following sourcecode is located in /drifter/drifter0_src/ :
   [http://lxr.linux.no]: http://lxr.linux.no
   [such as:]: http://lxr.linux.no/linux/include/asm-i386/unistd.h#L11
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -115,5 +113,3 @@ Understanding syscalls demystifies shellcode, sandboxes and tools like `strace`.
 <nav class="sg-nav" aria-label="Level navigation"><span></span><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter1/">Level 1</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

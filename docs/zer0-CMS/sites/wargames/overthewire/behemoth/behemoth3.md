@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ It repeats a technique you learned earlier in a more realistic setting.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../behemoth2/">Level 2</a><a class="sg-index" href="../">Behemoth overview</a><a class="sg-next" href="../behemoth4/">Level 4</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -67,8 +67,6 @@ For this exercise, the key length is 6. The password to level five is in the usu
 
 Have fun!
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -101,5 +99,3 @@ Vigenère was considered unbreakable for centuries. Once you know how it is atta
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../krypton3/">Level 3</a><a class="sg-index" href="../">Krypton overview</a><a class="sg-next" href="../krypton5/">Level 5</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

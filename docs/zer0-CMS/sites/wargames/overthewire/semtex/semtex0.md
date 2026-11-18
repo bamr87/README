@@ -60,8 +60,6 @@ Reading Material
 [semtex1@semtex.labs.overthewire.org]: ssh://semtex1@semtex.labs.overthewire.org:2229
 [Beej's guide to network programming]: http://beej.us/guide/bgnet/
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -95,5 +93,3 @@ Receiving untrusted executables is risky; analyse them in a virtual machine.
 <nav class="sg-nav" aria-label="Level navigation"><span></span><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex1/">Level 1</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

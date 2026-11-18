@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Hard-coded credentials in binaries are found constantly in real firmware and app
 <nav class="sg-nav" aria-label="Level navigation"><span></span><a class="sg-index" href="../">Behemoth overview</a><a class="sg-next" href="../behemoth1/">Level 1</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

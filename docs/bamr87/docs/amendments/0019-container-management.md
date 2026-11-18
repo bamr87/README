@@ -5,7 +5,6 @@ source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0019-cont
 title: 0019 — Container images are built once, from pinned bases, and promoted by
   digest
 ---
-<!-- kit: governance v0.1.0 -->
 # 0019 — Container images are built once, from pinned bases, and promoted by digest
 
 - **Status:** ratified

@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -61,5 +59,3 @@ You have reached the end of the levels this mirror documents. If the server offe
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../behemoth7/">Level 7</a><a class="sg-index" href="../">Behemoth overview</a><span></span></nav>
 
 </section>
-
-<!-- study-guide:end -->

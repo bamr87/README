@@ -72,8 +72,6 @@ Here is an example:
     krypton2@melinda:/tmp/tmp.Wf2OnCpCDQ$ ls
     ciphertext  keyfile.dat
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -106,5 +104,3 @@ Any system that lets attackers encrypt, decrypt or sign arbitrary data is an ora
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../krypton1/">Level 1</a><a class="sg-index" href="../">Krypton overview</a><a class="sg-next" href="../krypton3/">Level 3</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

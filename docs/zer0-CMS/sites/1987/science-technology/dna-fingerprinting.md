@@ -30,7 +30,6 @@ In the decades after 1987, DNA profiling became the gold standard of forensic id
 - [DNA profiling — Wikipedia](https://en.wikipedia.org/wiki/DNA_profiling)
 - [First use of DNA profiling in a criminal conviction — Guinness World Records](https://www.guinnessworldrecords.com/world-records/first-use-of-dna-profiling-in-a-criminal-conviction)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Supernova 1987A](supernova-1987a.md) — another Science & Technology landmark of 1987.
@@ -39,4 +38,3 @@ In the decades after 1987, DNA profiling became the gold standard of forensic id
 - [Black Monday (October 19, 1987)](../society-economics/black-monday.md) — the defining economic event of the same year.
 - [INF Treaty (December 8, 1987)](../history-politics/inf-treaty.md) — the landmark arms-control agreement of 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

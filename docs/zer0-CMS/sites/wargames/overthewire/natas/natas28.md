@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas28
     URL:      http://natas28.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Use authenticated encryption such as AES-GCM, and do not construct SQL from decr
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas27/">Level 27</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas29/">Level 29</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

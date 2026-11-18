@@ -26,27 +26,27 @@ Hub: [bamr87/bamr87](https://github.com/bamr87/bamr87) · This page is the apex 
 | Project | Kind | Status | Docs | Sections | What it is |
 |---|---|---|---|---|---|
 | [it-journey](cards/it-journey.md) | site | active | 557 | 54 | Educational IT platform with quests, blog posts, and technical documentation. |
-| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 557 | 94 | Jekyll theme and software architecture patterns for GitHub Pages. |
+| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 560 | 95 | Jekyll theme and software architecture patterns for GitHub Pages. |
 | [bashcrawl](cards/bashcrawl.md) | game | active | 80 | 16 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
-| [scripts](cards/scripts.md) | tooling | active | 24 | 5 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
+| [scripts](cards/scripts.md) | tooling | active | 25 | 5 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
 | [OverTheWire-website](cards/OverTheWire-website.md) | site | active | 232 | 17 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
-| [bamr87](cards/bamr87.md) | hub | active | 259 | 38 | Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashb… |
+| [bamr87](cards/bamr87.md) | hub | active | 275 | 40 | Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashb… |
 | [bamr87.github.io](cards/bamr87.github.io.md) | site | active | 94 | 19 | Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages. |
 | [bashos](cards/bashos.md) | tooling | active | 80 | 15 | Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engi… |
 | [cv-pro](cards/cv-pro.md) | app | active | 32 | 6 | CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract and renders) and app/ (the R… |
-| [djangoerp](cards/djangoerp.md) | app | active | 17 | 3 | Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP plannin… |
+| [djangoerp](cards/djangoerp.md) | app | active | 18 | 3 | Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP plannin… |
 | [fredgar-ai](cards/fredgar-ai.md) | app | active | 38 | 6 | Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries. |
-| [githubai](cards/githubai.md) | tooling | active | 48 | 10 | Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut re… |
-| [gitorio](cards/gitorio.md) | app | active | 144 | 37 | Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude … |
-| [godotgo](cards/godotgo.md) | game | active | 30 | 6 | Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the s… |
-| [law-ai](cards/law-ai.md) | app | active | 300 | 74 | Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first vi… |
+| [githubai](cards/githubai.md) | tooling | active | 54 | 10 | Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut re… |
+| [gitorio](cards/gitorio.md) | app | active | 145 | 37 | Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude … |
+| [godotgo](cards/godotgo.md) | game | active | 31 | 6 | Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the s… |
+| [law-ai](cards/law-ai.md) | app | active | 301 | 74 | Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first vi… |
 | [lifehacker.dev](cards/lifehacker.dev.md) | site | active | 138 | 12 | Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude C… |
-| [ocrmd](cards/ocrmd.md) | tooling | active | 25 | 4 | Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-te… |
-| [outbox](cards/outbox.md) | tooling | active | 21 | 4 | Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay… |
+| [ocrmd](cards/ocrmd.md) | tooling | active | 26 | 4 | Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-te… |
+| [outbox](cards/outbox.md) | tooling | active | 22 | 4 | Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay… |
 | [rewind-arcade](cards/rewind-arcade.md) | game | active | 76 | 11 | Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog. |
 | [SCHEMA](cards/SCHEMA.md) | tooling | active | 36 | 10 | Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessi… |
-| [vs-sonic-pi](cards/vs-sonic-pi.md) | tooling | active | 117 | 6 | VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC … |
-| [zer0-CMS](cards/zer0-CMS.md) | app | active | 1205 | 181 | Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown site… |
+| [vs-sonic-pi](cards/vs-sonic-pi.md) | tooling | active | 118 | 6 | VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC … |
+| [zer0-CMS](cards/zer0-CMS.md) | app | active | 1207 | 181 | Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown site… |
 | [zpl-viewer](cards/zpl-viewer.md) | tooling | active | 19 | 4 | Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal la… |
 
 ### README - it-journey
@@ -65,8 +65,8 @@ Jekyll theme and software architecture patterns for GitHub Pages.
 
 - Repository: [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes)
 - Card: [context/cards/zer0-mistakes.md](cards/zer0-mistakes.md) · Facts: [context/facts/zer0-mistakes.json](facts/zer0-mistakes.json)
-- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (557 documents)
-- Navigation: [tree](nav/zer0-mistakes.json) · [content map](../docs/browse/zer0-mistakes.md) — 555 pages in 94 sections
+- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (560 documents)
+- Navigation: [tree](nav/zer0-mistakes.json) · [content map](../docs/browse/zer0-mistakes.md) — 558 pages in 95 sections
 - Topics: jekyll, theme, github-pages
 
 ### Bashcrawl
@@ -85,8 +85,8 @@ Automation scripts for forking, linting, stashing, and project management across
 
 - Repository: [bamr87/scripts](https://github.com/bamr87/scripts)
 - Card: [context/cards/scripts.md](cards/scripts.md) · Facts: [context/facts/scripts.json](facts/scripts.json)
-- Corpus: [`docs/scripts/`](../docs/scripts/) (24 documents)
-- Navigation: [tree](nav/scripts.json) · [content map](../docs/browse/scripts.md) — 24 pages in 5 sections
+- Corpus: [`docs/scripts/`](../docs/scripts/) (25 documents)
+- Navigation: [tree](nav/scripts.json) · [content map](../docs/browse/scripts.md) — 25 pages in 5 sections
 - Topics: automation, bash, python
 
 ### Wargames
@@ -105,8 +105,8 @@ Amr's profile README and fleet control-plane monorepo: ~40 project submodules, s
 
 - Repository: [bamr87/bamr87](https://github.com/bamr87/bamr87)
 - Card: [context/cards/bamr87.md](cards/bamr87.md) · Facts: [context/facts/bamr87.json](facts/bamr87.json)
-- Corpus: [`docs/bamr87/`](../docs/bamr87/) (259 documents)
-- Navigation: [tree](nav/bamr87.json) · [content map](../docs/browse/bamr87.md) — 259 pages in 38 sections
+- Corpus: [`docs/bamr87/`](../docs/bamr87/) (275 documents)
+- Navigation: [tree](nav/bamr87.json) · [content map](../docs/browse/bamr87.md) — 275 pages in 40 sections
 
 ### Profile & Résumé
 
@@ -141,8 +141,8 @@ Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, 
 
 - Repository: [bamr87/djangoerp](https://github.com/bamr87/djangoerp)
 - Card: [context/cards/djangoerp.md](cards/djangoerp.md) · Facts: [context/facts/djangoerp.json](facts/djangoerp.json)
-- Corpus: [`docs/djangoerp/`](../docs/djangoerp/) (17 documents)
-- Navigation: [tree](nav/djangoerp.json) · [content map](../docs/browse/djangoerp.md) — 17 pages in 3 sections
+- Corpus: [`docs/djangoerp/`](../docs/djangoerp/) (18 documents)
+- Navigation: [tree](nav/djangoerp.json) · [content map](../docs/browse/djangoerp.md) — 18 pages in 3 sections
 
 ### Fredgar AI
 
@@ -159,8 +159,8 @@ Claude Code SDLC framework: reusable GitHub Actions that triage issues, implemen
 
 - Repository: [bamr87/githubai](https://github.com/bamr87/githubai)
 - Card: [context/cards/githubai.md](cards/githubai.md) · Facts: [context/facts/githubai.json](facts/githubai.json)
-- Corpus: [`docs/githubai/`](../docs/githubai/) (48 documents)
-- Navigation: [tree](nav/githubai.json) · [content map](../docs/browse/githubai.md) — 48 pages in 10 sections
+- Corpus: [`docs/githubai/`](../docs/githubai/) (54 documents)
+- Navigation: [tree](nav/githubai.json) · [content map](../docs/browse/githubai.md) — 54 pages in 10 sections
 
 ### ⚙ GitFactory
 
@@ -168,8 +168,8 @@ Factorio-style factory builder for GitHub automation: blueprints compile to Acti
 
 - Repository: [bamr87/gitorio](https://github.com/bamr87/gitorio)
 - Card: [context/cards/gitorio.md](cards/gitorio.md) · Facts: [context/facts/gitorio.json](facts/gitorio.json)
-- Corpus: [`docs/gitorio/`](../docs/gitorio/) (144 documents)
-- Navigation: [tree](nav/gitorio.json) · [content map](../docs/browse/gitorio.md) — 144 pages in 37 sections
+- Corpus: [`docs/gitorio/`](../docs/gitorio/) (145 documents)
+- Navigation: [tree](nav/gitorio.json) · [content map](../docs/browse/gitorio.md) — 145 pages in 37 sections
 
 ### GodotGo
 
@@ -177,8 +177,8 @@ Godot 4 game workspace: one reusable framework, five sample games and tooling th
 
 - Repository: [bamr87/godotgo](https://github.com/bamr87/godotgo)
 - Card: [context/cards/godotgo.md](cards/godotgo.md) · Facts: [context/facts/godotgo.json](facts/godotgo.json)
-- Corpus: [`docs/godotgo/`](../docs/godotgo/) (30 documents)
-- Navigation: [tree](nav/godotgo.json) · [content map](../docs/browse/godotgo.md) — 30 pages in 6 sections
+- Corpus: [`docs/godotgo/`](../docs/godotgo/) (31 documents)
+- Navigation: [tree](nav/godotgo.json) · [content map](../docs/browse/godotgo.md) — 31 pages in 6 sections
 
 ### Law AI
 
@@ -186,8 +186,8 @@ Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j kn
 
 - Repository: [bamr87/law-ai](https://github.com/bamr87/law-ai)
 - Card: [context/cards/law-ai.md](cards/law-ai.md) · Facts: [context/facts/law-ai.json](facts/law-ai.json)
-- Corpus: [`docs/law-ai/`](../docs/law-ai/) (300 documents)
-- Navigation: [tree](nav/law-ai.json) · [content map](../docs/browse/law-ai.md) — 300 pages in 74 sections
+- Corpus: [`docs/law-ai/`](../docs/law-ai/) (301 documents)
+- Navigation: [tree](nav/law-ai.json) · [content map](../docs/browse/law-ai.md) — 301 pages in 74 sections
 
 ### lifehacker.dev
 
@@ -204,8 +204,8 @@ Scan books and pages into cross-checked Markdown: local OCR diffed against a Cla
 
 - Repository: [bamr87/ocrmd](https://github.com/bamr87/ocrmd)
 - Card: [context/cards/ocrmd.md](cards/ocrmd.md) · Facts: [context/facts/ocrmd.json](facts/ocrmd.json)
-- Corpus: [`docs/ocrmd/`](../docs/ocrmd/) (25 documents)
-- Navigation: [tree](nav/ocrmd.json) · [content map](../docs/browse/ocrmd.md) — 25 pages in 4 sections
+- Corpus: [`docs/ocrmd/`](../docs/ocrmd/) (26 documents)
+- Navigation: [tree](nav/ocrmd.json) · [content map](../docs/browse/ocrmd.md) — 26 pages in 4 sections
 
 ### outbox
 
@@ -213,8 +213,8 @@ Async competitive outbox harness for three agents: mailbox protocol, injected la
 
 - Repository: [bamr87/outbox](https://github.com/bamr87/outbox)
 - Card: [context/cards/outbox.md](cards/outbox.md) · Facts: [context/facts/outbox.json](facts/outbox.json)
-- Corpus: [`docs/outbox/`](../docs/outbox/) (21 documents)
-- Navigation: [tree](nav/outbox.json) · [content map](../docs/browse/outbox.md) — 21 pages in 4 sections
+- Corpus: [`docs/outbox/`](../docs/outbox/) (22 documents)
+- Navigation: [tree](nav/outbox.json) · [content map](../docs/browse/outbox.md) — 22 pages in 4 sections
 
 ### Rewind Arcade
 
@@ -240,8 +240,8 @@ VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover 
 
 - Repository: [bamr87/vs-sonic-pi](https://github.com/bamr87/vs-sonic-pi)
 - Card: [context/cards/vs-sonic-pi.md](cards/vs-sonic-pi.md) · Facts: [context/facts/vs-sonic-pi.json](facts/vs-sonic-pi.json)
-- Corpus: [`docs/vs-sonic-pi/`](../docs/vs-sonic-pi/) (117 documents)
-- Navigation: [tree](nav/vs-sonic-pi.json) · [content map](../docs/browse/vs-sonic-pi.md) — 117 pages in 6 sections
+- Corpus: [`docs/vs-sonic-pi/`](../docs/vs-sonic-pi/) (118 documents)
+- Navigation: [tree](nav/vs-sonic-pi.json) · [content map](../docs/browse/vs-sonic-pi.md) — 118 pages in 6 sections
 
 ### zer0-CMS
 
@@ -249,8 +249,8 @@ Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS 
 
 - Repository: [bamr87/zer0-CMS](https://github.com/bamr87/zer0-CMS)
 - Card: [context/cards/zer0-CMS.md](cards/zer0-CMS.md) · Facts: [context/facts/zer0-CMS.json](facts/zer0-CMS.json)
-- Corpus: [`docs/zer0-CMS/`](../docs/zer0-CMS/) (1205 documents)
-- Navigation: [tree](nav/zer0-CMS.json) · [content map](../docs/browse/zer0-CMS.md) — 1199 pages in 181 sections
+- Corpus: [`docs/zer0-CMS/`](../docs/zer0-CMS/) (1207 documents)
+- Navigation: [tree](nav/zer0-CMS.json) · [content map](../docs/browse/zer0-CMS.md) — 1201 pages in 181 sections
 
 ### Label Studio
 

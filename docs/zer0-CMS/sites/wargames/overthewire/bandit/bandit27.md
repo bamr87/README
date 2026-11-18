@@ -45,8 +45,6 @@ Commands you may need to solve this level
 -----------------------------------------
 ls
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -78,5 +76,3 @@ Mature administrators know "how do I run one command as another user" by heart: 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit26/">Level 26</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit28/">Level 28</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

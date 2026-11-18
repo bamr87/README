@@ -96,7 +96,7 @@ Per-dimension: commands_work **4**, content_accuracy **3**, completeness **4**, 
 - Step 5 & Step 6 Liquid (raw/endraw stripped) → **passed** — rendered via
 liquidjs to the exact expected `<div class="contributor-sheet contributor-theme--cyberpunk">` and the `<link … relative_url>` output.
 - Step 5/6 with raw/endraw **left in** → **passed (warning verified accurate)** —
-confirmed the literal `{​% if %​}`/`{​{ theme_class }​}` tags leak into output, exactly as the quest's two ⚠️ warnings promise. The warnings are load-bearing and correct.
+confirmed the literal `{% if %}`/`{{ theme_class }}` tags leak into output, exactly as the quest's two ⚠️ warnings promise. The warnings are load-bearing and correct.
 - Step 5 YAML (`profile: { theme: … }`) → **passed** (PyYAML).
 - Mermaid architecture diagram → **passed** — rendered to a valid 17.7 KB SVG.
 - Step 8 `git checkout -b / add / commit` → **passed** in a fresh `git init` sandbox.

@@ -45,8 +45,6 @@ Commands you may need to solve this level
 -----------------------------------------
 ssh, ls, cat
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -77,5 +75,3 @@ Automation tools such as Ansible, deployment scripts and Git over SSH all run co
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit18/">Level 18</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit20/">Level 20</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

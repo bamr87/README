@@ -40,8 +40,6 @@ Object Analysis
 ---------------
 This is another keygen level. You might want to check "/vortex/vortex22\_\*.o" for some object files.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Intermediate build artefacts can leak much more than a stripped final binary.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex21/">Level 21</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex23/">Level 23</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

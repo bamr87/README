@@ -4,9 +4,6 @@ source_repo: bamr87/cv-pro
 source_url: https://github.com/bamr87/cv-pro/blob/main/AGENTS.md
 title: cv-pro
 ---
-<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08).
-     Keep these six `##` headings (UPS-AGENT-07 checks they exist, in any order; add your own headings as needed). CLAUDE.md is a pointer to this file and carries no rules of its own. -->
-
 # cv-pro
 
 > Amr's CV as code (cv/) and the CV Builder Pro app that edits it (app/), in one repository that shares one CVData contract.

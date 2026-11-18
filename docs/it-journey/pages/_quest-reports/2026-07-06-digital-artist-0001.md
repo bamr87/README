@@ -75,7 +75,7 @@ undefined method 'iso8601' for Time` — the script (line 271, `Time.now.iso8601
 - ✅ `update_statistics.sh` — **passed** once the Ruby script was fixed.
 - ✅ `pages/stats.md` Liquid/Bootstrap template — **passed** (built with Jekyll
 4.4.1 against generated data): categories/tags loops, tag-cloud sizing, `first` on a Hash, and the freshness-badge epoch math all rendered correctly.
-- `reasoned`: `{​{ ... | number_with_delimiter }​}` (line 539) is **not** a real
+- `reasoned`: `{{ ... | number_with_delimiter }}` (line 539) is **not** a real
 Jekyll/Liquid filter — verified against jekyll-4.4.1's filters.rb; Liquid silently no-ops it, so "Total Words" renders unformatted.
 
 ### 2. Terminal Mastery — `pages/_quests/0001/terminal-mastery.md` — ran 18/21 runnable (9✔ 9✗), 1 reasoned

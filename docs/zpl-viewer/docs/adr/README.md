@@ -4,7 +4,6 @@ source_repo: bamr87/zpl-viewer
 source_url: https://github.com/bamr87/zpl-viewer/blob/main/docs/adr/README.md
 title: Architecture Decision Records
 ---
-<!-- kit: sdlc v0.1.0 · ADR index (UPS-WORK-04, decision D2: law-ai format) -->
 # Architecture Decision Records
 
 > The decisions about zpl-viewer that are hard to reverse, one numbered record each, with the format every new ADR follows.

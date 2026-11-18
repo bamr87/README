@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 557,
-    "fingerprint": "5881c785703c9b8d",
+    "fingerprint": "2136ab5913a9bfb5",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 8317282
+    "total_bytes": 8307469
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -123,7 +123,7 @@
       "automation",
       "game-developer"
     ],
-    "total_words": 1035533
+    "total_words": 1035107
   },
   "schema_version": "1.0",
   "signals": {

@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas14
     URL:      http://natas14.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Use parameterised queries (prepared statements) so input is always data, never S
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas13/">Level 13</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas15/">Level 15</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

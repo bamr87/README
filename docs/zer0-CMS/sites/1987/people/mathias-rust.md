@@ -36,7 +36,6 @@ Rust's flight also captured the popular imagination in both East and West: an un
 - [Mathias Rust — Wikipedia](https://en.wikipedia.org/wiki/Mathias_Rust)
 - [The Notorious Flight of Mathias Rust — Smithsonian Air & Space Magazine](https://www.smithsonianmag.com/air-space-magazine/the-notorious-flight-of-mathias-rust-7101888/)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Gary Hart — Withdrawal from the 1988 Presidential Race (May 8, 1987)](gary-hart.md) — another May 1987 People entry in which a private act upended a major public institution.
@@ -45,4 +44,3 @@ Rust's flight also captured the popular imagination in both East and West: an un
 - ["Tear Down This Wall" speech (June 12, 1987)](../history-politics/reagan-berlin-speech.md) — another 1987 event at the Berlin frontier linking Reagan and Gorbachev.
 - [Rudolf Hess (death, August 17, 1987)](rudolf-hess.md) — another notable 1987 People entry.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

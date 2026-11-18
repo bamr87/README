@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 300
+pages: 301
 repo: bamr87/law-ai
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: Law AI
 > [!info] app: `bamr87/law-ai`
 > Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama.
 
-**300** pages collected from commit `511add3c55e2` (2026-11-18).
+**301** pages collected from commit `0716f1486ef2` (2026-11-18).
 
 ## Most connected pages
 

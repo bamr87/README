@@ -4,7 +4,6 @@ source_repo: bamr87/SCHEMA
 source_url: https://github.com/bamr87/SCHEMA/blob/main/docs/amendments/0003-mission-statement.md
 title: 0003 — Missions
 ---
-<!-- kit: governance v0.1.0 -->
 # 0003 — Missions
 
 - **Status:** proposed

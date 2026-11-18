@@ -43,8 +43,6 @@ FA can break a known key length as well. Lets try one last polyalphabetic cipher
 
 Enjoy.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -77,5 +75,3 @@ Key-length discovery generalises to many attacks on reused keys, including repea
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../krypton4/">Level 4</a><a class="sg-index" href="../">Krypton overview</a><a class="sg-next" href="../krypton6/">Level 6</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

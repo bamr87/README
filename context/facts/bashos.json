@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 80,
-    "fingerprint": "c20b1fc971afef9e",
+    "fingerprint": "fd132b1a44c3413f",
     "path": "docs/bashos",
     "present": true,
-    "total_bytes": 499175
+    "total_bytes": 497578
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -113,7 +113,7 @@
       "open-source",
       "system-design"
     ],
-    "total_words": 70441
+    "total_words": 70196
   },
   "schema_version": "1.0",
   "signals": {

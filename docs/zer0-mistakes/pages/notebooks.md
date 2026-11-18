@@ -19,7 +19,6 @@ title: Notebooks
 
   {% if site.notebooks and site.notebooks.size > 0 %}
   
-  <!-- Difficulty Filter -->
   <div class="row mb-4">
     <div class="col">
       <div class="d-flex flex-wrap gap-2 align-items-center">
@@ -38,7 +37,6 @@ title: Notebooks
     </div>
   </div>
 
-  <!-- Notebooks Grid -->
   <div class="row row-cols-1 row-cols-md-2 g-4" id="notebooks-grid">
     {% assign sorted_notebooks = site.notebooks | sort: "date" | reverse %}
     {% for nb in sorted_notebooks %}

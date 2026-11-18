@@ -4,11 +4,9 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/AGENTS.md
 title: bamr87
 ---
-<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->
-
 # bamr87
 
-> The fleet's control plane: about forty projects mounted as Git submodules and managed, monitored and standardized from one hub, which is also the GitHub profile and the public Harness Console site.
+> The bamr87 hub's direction is to become the ultimate open home for the fleet: the control plane, the shared standards, and a public window onto every project. See [constitution § 1](docs/constitution.md#1-mission).
 
 ## What this repo is
 
@@ -176,5 +174,7 @@ Details: [`docs/constitution.md`](docs/constitution.md) § 26; [`docs/amendments
 - No orphan changes. Only Amr ratifies, by merging.
 
 ## Governance
+
+The public-facing about section in a repo README is the site map of its fundamental pages ([docs/ABOUT-SECTION.md](docs/ABOUT-SECTION.md), constitution § 31).
 
 Read [`docs/constitution.md`](docs/constitution.md) before changing anything: it is the highest-precedence rule set here and wins over this file when they disagree. It changes only through a numbered record in [`docs/amendments/`](docs/amendments/), ratified by the maintainer merging the PR; agents propose, never merge. Every user-facing feature has a stable id in [`features/features.yml`](features/features.yml) with `status`, location and the PRD requirement ids it serves; the PRD's "Feature catalog" block is generated from it (`python3 <bamr87/bamr87>/tools/governance_lint.py prd-sync . --write`; check with `… check .`). Never hand-edit that block or `CHANGELOG.md`.

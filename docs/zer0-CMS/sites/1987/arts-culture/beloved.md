@@ -36,7 +36,6 @@ The novel's publication in 1987 arrived at a moment of renewed national reckonin
 - [Beloved (novel) — Wikipedia](https://en.wikipedia.org/wiki/Beloved_(novel))
 - [Beloved — Encyclopædia Britannica](https://www.britannica.com/topic/Beloved-novel-by-Morrison)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Aretha Franklin: First Woman in the Rock and Roll Hall of Fame (January 21, 1987)](aretha-franklin-hof.md) — another major Arts & Culture milestone of 1987.
@@ -45,4 +44,3 @@ The novel's publication in 1987 arrived at a moment of renewed national reckonin
 - [Michael Jackson's *Bad* (August 31, 1987)](michael-jackson-bad.md) — another major cultural release of 1987.
 - [*Full Metal Jacket* (June 26, 1987)](full-metal-jacket.md) — another defining Arts & Culture release of 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

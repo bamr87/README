@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: a730b9464b43dd5f
+source_fingerprint: 79e4c2bf12f67b7f
 tags:
   - agents
   - claude-code
@@ -35,7 +35,7 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~13,870 words across 36 indexed documents
+- ~13,661 words across 36 indexed documents
 - code samples in: plaintext, bash, markdown, python
 
 ## Navigation

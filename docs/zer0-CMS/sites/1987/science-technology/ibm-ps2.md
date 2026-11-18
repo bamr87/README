@@ -42,11 +42,9 @@ The enduring legacy of the PS/2 lies in its successful standards: VGA remained t
 - [IBM Personal System/2 — Wikipedia](https://en.wikipedia.org/wiki/IBM_Personal_System/2)
 - [IBM Introduces the PS/2 Family of Personal Computers in 1987 — CEDMagic](https://www.cedmagic.com/history/ibm-ps2-1987.html)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Microsoft Windows 2.0 (December 9, 1987)](windows-2.md) — released the same year, Microsoft's GUI push ran alongside IBM's hardware push.
 - [DNA Fingerprinting in Criminal Court (November 1987)](dna-fingerprinting.md) — another landmark Science & Technology milestone of 1987.
 - [Black Monday (October 19, 1987)](../society-economics/black-monday.md) — the financial shock that shook markets the same year IBM launched the PS/2.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

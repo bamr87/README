@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0003-github-projects-work-tracking.md
 title: 0003 — GitHub Projects as the fleet's system of record for work
 ---
-<!-- kit: governance v0.1.0 -->
 # 0003 — GitHub Projects as the fleet's system of record for work
 
 - **Status:** ratified

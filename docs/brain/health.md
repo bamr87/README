@@ -11,7 +11,7 @@ title: Vault health
 
 # Vault health
 
-**228** unresolved link targets, **1778** orphan pages, **316** titles shared by more than one page. Fix these upstream: `docs/` is regenerated.
+**228** unresolved link targets, **1786** orphan pages, **318** titles shared by more than one page. Fix these upstream: `docs/` is regenerated.
 
 ## Unresolved links
 
@@ -83,12 +83,12 @@ title: Vault health
 | Project | Orphan pages |
 |---|---:|
 | zer0-CMS | 680 |
-| zer0-mistakes | 240 |
+| zer0-mistakes | 241 |
 | OverTheWire-website | 230 |
 | law-ai | 90 |
 | vs-sonic-pi | 90 |
 | it-journey | 87 |
-| bamr87 | 78 |
+| bamr87 | 84 |
 | bamr87.github.io | 69 |
 | gitorio | 55 |
 | bashcrawl | 41 |
@@ -101,9 +101,9 @@ title: Vault health
 | outbox | 6 |
 | bashos | 5 |
 | godotgo | 5 |
+| ocrmd | 3 |
 | scripts | 3 |
 | djangoerp | 2 |
-| ocrmd | 2 |
 | zpl-viewer | 2 |
 | README.md | 1 |
 | adr | 1 |
@@ -117,16 +117,17 @@ title: Vault health
 | Changelog | 36 |
 | 0001 — Ratify the constitution | 22 |
 | CLAUDE.md | 22 |
+| Architecture Decision Records | 21 |
 | NNNN — Title of the amendment | 21 |
-| Architecture Decision Records | 20 |
-| ADR 0001 — Record architecture decisions | 18 |
+| ADR 0001 — Record architecture decisions | 19 |
 | ADR NNNN — Title in sentence case | 18 |
-| Security Policy | 13 |
+| Security Policy | 16 |
 | Documentation | 10 |
 | Getting Started | 9 |
 | Architecture | 8 |
 | About | 7 |
 | scripts | 7 |
+| 0002 — Missions | 6 |
 | contributing | 6 |
 | AGENTS.md | 5 |
 | bamr87 | 5 |
@@ -137,6 +138,7 @@ title: Vault health
 | {{title}} | 5 |
 | <% tp.file.title %> | 5 |
 | Troubleshooting | 5 |
+| 0003 — Missions | 4 |
 | Amr Abdel-Motaleb | 4 |
 | Categories | 4 |
 | Customization | 4 |
@@ -172,5 +174,3 @@ title: Vault health
 | Google Analytics | 3 |
 | Google Tag Manager | 3 |
 | Installation | 3 |
-| Liquid | 3 |
-| MathJax Math | 3 |

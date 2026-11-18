@@ -56,8 +56,6 @@ Helpful Reading Material
 [Installing Git]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 [Git from the Bottom Up]: https://jwiegley.github.io/git-from-the-bottom-up/
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -89,5 +87,3 @@ Secrets can hide in the less obvious corners of a repository, which is why secre
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit30/">Level 30</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit32/">Level 32</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

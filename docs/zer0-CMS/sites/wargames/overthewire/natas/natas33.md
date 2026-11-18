@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas33
     URL:      http://natas33.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Disallow `phar://` for user-controlled paths, update PHP, and avoid dangerous cl
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas32/">Level 32</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas34/">Level 34</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

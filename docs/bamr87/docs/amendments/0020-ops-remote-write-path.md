@@ -5,7 +5,6 @@ source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0020-ops-
 title: '0020 — The OPS remote-write path: how the console and the local loop runner
   write to GitHub'
 ---
-<!-- kit: governance v0.1.0 -->
 # 0020 — The OPS remote-write path: how the console and the local loop runner write to GitHub
 
 - **Status:** ratified

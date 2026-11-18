@@ -57,8 +57,6 @@ The document root is in /levels/level4/htdocs, you'll need to put your php code 
 |--------------------------------------------:+:----------------|
 | Location:                                   | 127.0.0.1:55555 |
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -91,5 +89,3 @@ Modern attacks often target interpreters and runtimes, and heap grooming is the 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../blacksun3/">Level 3</a><a class="sg-index" href="../">Blacksun overview</a><span></span></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -40,9 +40,9 @@ walk_date: '2026-07-18'
 
 ## 🎯 Session Summary
 
-I walked the first window (5 of 15 quests) of the **Data Scientist → Level 1100 "Data Engineering" (Master ⚡)** slice as a learner, driving the agentic execute engine over each quest in a disposable sandbox and then reasoning about the linked journey by reading each quest's source. **Headline verdict: `warn`** — average **68.8%**, with **1 pass, 3 warn, 1 fail**. Every quest's *conceptual* content is sound and everything ran **safely** (safety scored 5/5 across all five), but **four of the five quests contain at least one concrete, reproducible defect that stops a learner cold if they copy-paste literally** — a Jinja `{​% raw %​}` escaping leak, a broken watermark SQL column, BSD-only `sed`/default-branch assumptions, a mismatched "Expected" output line, and missing setup steps.
+I walked the first window (5 of 15 quests) of the **Data Scientist → Level 1100 "Data Engineering" (Master ⚡)** slice as a learner, driving the agentic execute engine over each quest in a disposable sandbox and then reasoning about the linked journey by reading each quest's source. **Headline verdict: `warn`** — average **68.8%**, with **1 pass, 3 warn, 1 fail**. Every quest's *conceptual* content is sound and everything ran **safely** (safety scored 5/5 across all five), but **four of the five quests contain at least one concrete, reproducible defect that stops a learner cold if they copy-paste literally** — a Jinja `{% raw %}` escaping leak, a broken watermark SQL column, BSD-only `sed`/default-branch assumptions, a mismatched "Expected" output line, and missing setup steps.
 
-The most actionable takeaways for a maintainer: fix **The Temple of Templates** (the `fail`, 56%) where literal `{​% raw %​}/{​% endraw %​}` artifacts break *every* Jinja snippet, and fix the two `high`-severity accuracy bugs in **ETL Pipeline Design** (broken `updated_at` watermark) and **Mastering Version Control** (BSD `sed -i ''` + `git init` defaulting to `master`). Note also that this "slice" is a **level band, not a dependency chain** — the five quests come from five different quest series, so continuity is thematic, not prerequisite-linked (see §6).
+The most actionable takeaways for a maintainer: fix **The Temple of Templates** (the `fail`, 56%) where literal `{% raw %}/{% endraw %}` artifacts break *every* Jinja snippet, and fix the two `high`-severity accuracy bugs in **ETL Pipeline Design** (broken `updated_at` watermark) and **Mastering Version Control** (BSD `sed -i ''` + `git init` defaulting to `master`). Note also that this "slice" is a **level band, not a dependency chain** — the five quests come from five different quest series, so continuity is thematic, not prerequisite-linked (see §6).
 
 ## 🗺️ The Journey
 
@@ -51,7 +51,7 @@ The most actionable takeaways for a maintainer: fix **The Temple of Templates** 
 | 1 | ⚠️ warn | The Warden Pact: Guardrails & Accountability | 78 | Lab mostly runs; one "Expected" line wrong (check-ordering bug) + audit heredoc isn't real JSONL. |
 | 2 | ⚠️ warn | Mastering Version Control Workflows: The Grand Merge Ritual | 62 | Strong concepts, but BSD `sed`, `master`/`main` default, and a fake `bash` block break the hands-on steps. |
 | 3 | ✅ pass | Conquer King EDGAR: Siege of the SEC Data Castle | 80 | All 5 Python snippets hit the live SEC API and returned real data; objectives under-exemplified. |
-| 4 | ❌ fail | The Temple of Templates: Reusable Abstractions | 56 | Literal `{​% raw %​}` artifacts silently break every Jinja snippet; C++ concepts needs unstated `-std=c++20`. |
+| 4 | ❌ fail | The Temple of Templates: Reusable Abstractions | 56 | Literal `{% raw %}` artifacts silently break every Jinja snippet; C++ concepts needs unstated `-std=c++20`. |
 | 5 | ⚠️ warn | ETL Pipeline Design: Scalable Python Data Pipelines | 68 | ETL core is genuinely idempotent; watermark SQL references a non-existent `updated_at` column. |
 
 ## 🔬 Evidence
@@ -63,7 +63,7 @@ All evidence below is from commands **actually run** by the execute engine in a 
 - **`./warden.sh implement-feature src/routes/signup.ts`** → `passed`: `⏸️ WAITING… (exit 78)`; **`APPROVED=yes …`** → `✅ ALLOWED (gated)…` (exit 0). Both match docs.
 - **`./warden.sh edit-database-migration database/migrations/001.sql`** → **`failed`**: actual output `🚫 REFUSED: database/migrations/001.sql is inside forbidden path database/migrations/` (exit 1), **not** the quest's documented `🚫 REFUSED: edit-database-migration is L0 — never the agent's call`. Exit code matches; the message a learner diffs does not.
 - **`agent-audit-trail.yml` heredoc extracted and run** → **`failed`**: audit entry is written across **7 physical lines**, not the single-line-per-entry **JSONL** the prose explicitly claims and justifies ("one JSON object per line you can grep").
-- Attack calls (`format-and-lint .github/workflows/deploy.yml`, `casually-drop-the-database prod.sql`) → both `passed`, refused as documented. All 4 YAML config blocks parse after stripping Liquid `{​% raw %​}` tags.
+- Attack calls (`format-and-lint .github/workflows/deploy.yml`, `casually-drop-the-database prod.sql`) → both `passed`, refused as documented. All 4 YAML config blocks parse after stripping Liquid `{% raw %}` tags.
 
 ### 2. Mastering Version Control — 62% (warn) · ran 5 / passed 1 / failed 4 / skipped 3 / reasoned 16
 - **Chapter 1 "```bash" block containing `fix(validator): skip required field checks…`** → **`failed`**: `syntax error near unexpected token 'validator'` — a commit *message* mislabeled as runnable shell.
@@ -79,8 +79,8 @@ All evidence below is from commands **actually run** by the execute engine in a 
 - macOS/Windows setup blocks → `reasoned` (no such env in sandbox).
 
 ### 4. The Temple of Templates — 56% (fail) · ran 10 / passed 5 / failed 5 / skipped 2 / reasoned 3
-- **`templates/base.html`, `page.html`, `partials/button.html`, extended `page.html`** as literally shown → **`failed`**: every block is wrapped in literal `{​% raw %​}…{​% endraw %​}` text (Jekyll/Liquid escaping that leaked into the published Markdown). Copy-pasted verbatim into `render.py`, they output literal `{​% block title %​}` text instead of the documented `<h1>Hello Acolyte!</h1>`. **No exception is thrown → silent, confusing failure.**
-- After manually stripping the raw tags, **`render.py`** and the `{​% include … with context %​}` composition → `passed` (`<button class="btn secondary">Click me</button>`).
+- **`templates/base.html`, `page.html`, `partials/button.html`, extended `page.html`** as literally shown → **`failed`**: every block is wrapped in literal `{% raw %}…{% endraw %}` text (Jekyll/Liquid escaping that leaked into the published Markdown). Copy-pasted verbatim into `render.py`, they output literal `{% block title %}` text instead of the documented `<h1>Hello Acolyte!</h1>`. **No exception is thrown → silent, confusing failure.**
+- After manually stripping the raw tags, **`render.py`** and the `{% include … with context %}` composition → `passed` (`<button class="btn secondary">Click me</button>`).
 - **C++20 concepts snippet** `g++ maxof.cpp -o maxof` → **`failed`**: `'requires' does not name a type … only available with '-std=c++20'`. Default GCC 13 mode is C++17; the quest never states the flag. Compiles/runs (`7 2.5`) only with `-std=c++20`.
 - **Card.jsx / Layout.jsx** verified in a real Vite + Vitest project → `passed` (2/2 tests). The "Snapshot Test" block is commented-out pseudocode requiring unstated vitest/jsdom config.
 
@@ -95,7 +95,7 @@ All evidence below is from commands **actually run** by the execute engine in a 
 Every issue below cites a command result or quoted line witnessed in this session. Grouped by severity.
 
 **HIGH**
-1. **high · Temple of Templates · every Jinja code block (Ch.1–2)** — Blocks contain literal `{​% raw %​}…{​% endraw %​}` escaping artifacts; copy-pasted verbatim they render literal template syntax instead of the documented output, *with no error thrown*. **Fix:** strip the `{​% raw %​}` wrappers from the published Markdown (this is a rendering-pipeline leak). *(observed: `render.py` printed `{​% extends 'base.html' %​}` as text; passed only after stripping.)*
+1. **high · Temple of Templates · every Jinja code block (Ch.1–2)** — Blocks contain literal `{% raw %}…{% endraw %}` escaping artifacts; copy-pasted verbatim they render literal template syntax instead of the documented output, *with no error thrown*. **Fix:** strip the `{% raw %}` wrappers from the published Markdown (this is a rendering-pipeline leak). *(observed: `render.py` printed `{% extends 'base.html' %}` as text; passed only after stripping.)*
 2. **high · ETL Pipeline Design · Ch.3 watermark SQL** — `SELECT … MAX(updated_at) … FROM users` throws `no such column: updated_at` against the quest's own `warehouse.db`. **Fix:** use `ingested_at`, or add/populate an `updated_at` column in the `CREATE TABLE`.
 3. **high · Mastering Version Control · Challenges 2 & 3** — `sed -i '' …` is BSD/macOS-only (fails on GNU/Linux); `git init` + `git switch main` fails where `init.defaultBranch` isn't `main` (default `master`, verified git 2.54). **Fix:** use `perl -pi -e` or portable sed, and `git init -b main` (or set `init.defaultBranch` up front).
 4. **high · Mastering Version Control · Ch.4 standard-version block** — `npx standard-version --dry-run` fails `Invalid version. Must be a string.` — no `git init`/`version` field setup. **Fix:** add the `git init` + versioned `package.json` preamble.

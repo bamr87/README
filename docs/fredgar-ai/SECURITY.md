@@ -4,8 +4,6 @@ source_repo: bamr87/fredgar-ai
 source_url: https://github.com/bamr87/fredgar-ai/blob/main/SECURITY.md
 title: Security Policy
 ---
-<!-- kit: community · from the fleet default SECURITY policy (UPS-REPO-14), with fredgar-ai's scope added. -->
-
 # Security Policy
 
 > Which versions of fredgar-ai get security fixes, how to report a vulnerability privately, how fast you will hear back, and what is in scope.

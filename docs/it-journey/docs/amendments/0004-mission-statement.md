@@ -4,7 +4,6 @@ source_repo: bamr87/it-journey
 source_url: https://github.com/bamr87/it-journey/blob/main/docs/amendments/0004-mission-statement.md
 title: 0004 — Missions
 ---
-<!-- kit: governance v0.1.0 -->
 # 0004 — Missions
 
 - **Status:** proposed

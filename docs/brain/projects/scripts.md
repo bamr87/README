@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 24
+pages: 25
 repo: bamr87/scripts
 tags:
 - brain/project
@@ -16,19 +16,19 @@ title: Scripts
 > [!info] tooling: `bamr87/scripts`
 > Automation scripts for forking, linting, stashing, and project management across the fleet.
 
-**24** pages collected from commit `2ca540bd844d` (2026-11-11).
+**25** pages collected from commit `4aacaf5915f6` (2026-11-18).
 
 ## Most connected pages
 
 - [[scripts/README|🛠️ scripts]]
 - [[scripts/docs/constitution|scripts — Constitution]]
 - [[scripts/PRD|PRD — scripts]]
+- [[scripts/docs/amendments/README|Amendments — scripts]]
 - [[scripts/FORKME/README|🍴 ForkMe - Advanced GitHub Repository Forking Utility]]
 - [[scripts/STASHME/README|💾 StashMe - Multi-Repository Cloud Stash Utility]]
 - [[scripts/docs/README|scripts documentation]]
-- [[scripts/docs/amendments/README|Amendments — scripts]]
+- [[scripts/AGENTS|scripts]]
 - [[scripts/FORKME/FORKME|ForkMe - Advanced GitHub Repository Forking Utility]]
 - [[scripts/STASHME/STASHME-EXAMPLES|📚 StashMe - Real-World Examples]]
 - [[scripts/STASHME/STASHME-QUICK-REFERENCE|📋 StashMe Quick Reference Card]]
-- [[scripts/AGENTS|scripts]]
 - [[scripts/CLAUDE|scripts]]

@@ -37,12 +37,10 @@ translation_source_url: /about/settings/navigation/
 
 <div class="tab-content pt-4" id="navTabContent">
 
-  <!-- ═══════ Overview Tab ═══════ -->
   <div class="tab-pane fade show active" id="pane-overview" role="tabpanel">
     {% include components/nav-editor.html %}
   </div>
 
-  <!-- ═══════ Editor Tab ═══════ -->
   <div class="tab-pane fade" id="pane-editor" role="tabpanel">
 
     <p class="text-body-secondary mb-3">Sélectionnez un fichier de navigation à modifier. Les changements sont répercutés dans l'onglet Exporter le YAML.</p>
@@ -69,7 +67,6 @@ translation_source_url: /about/settings/navigation/
 
   </div>
 
-  <!-- ═══════ Export YAML Tab ═══════ -->
   <div class="tab-pane fade" id="pane-export" role="tabpanel">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h5 class="mb-0"><i class="bi bi-filetype-yml me-1"></i> YAML de navigation</h5>

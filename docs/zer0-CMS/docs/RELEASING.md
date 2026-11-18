@@ -4,8 +4,6 @@ source_repo: bamr87/zer0-CMS
 source_url: https://github.com/bamr87/zer0-CMS/blob/main/docs/RELEASING.md
 title: Releasing zer0-CMS
 ---
-<!-- docs/RELEASING.md — how a zer0-CMS release actually happens, for a person. What release-please owns, what this repository owns, which secrets have to exist before a registry publish can work, and the operator steps that are still outstanding. -->
-
 # Releasing zer0-CMS
 
 > What release-please owns, the repo-owned marketplace job and the secrets it needs, and the operator steps still outstanding.

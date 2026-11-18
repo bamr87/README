@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0011-eval-baseline-risk-tiers.md
 title: 0011 — Eval baseline and risk tiers for every agent, harness and loop
 ---
-<!-- kit: governance v0.1.0 -->
 # 0011 — Eval baseline and risk tiers for every agent, harness and loop
 
 - **Status:** ratified

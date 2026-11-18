@@ -6,7 +6,7 @@ title: Sonic Pi for VS Code
 ---
 # Sonic Pi for VS Code
 
-> VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control.
+> VS Sonic Pi's direction is to become the ultimate open home for all things Sonic Pi in the editor: data, tools, resources and transparency, with live-coding in VS Code, OSC control of the Sonic Pi server, and open teaching tools for everyone ([constitution](docs/constitution.md) §1).
 
 [![CI](https://github.com/bamr87/vs-sonic-pi/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/vs-sonic-pi/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/vs-sonic-pi)](LICENSE)
 
@@ -198,5 +198,4 @@ Tutorial content is derived from the [Sonic Pi](https://sonic-pi.net) project by
 
 ---
 
-<!-- bamr87-portfolio-footer -->
 Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

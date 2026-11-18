@@ -5,7 +5,6 @@ source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0033-onpr
 title: '0033 — On-premise compute: an enrolled node runs local sessions and local
   models, and a self-hosted runner only behind fences'
 ---
-<!-- kit: governance v0.1.0 -->
 # 0033 — On-premise compute: an enrolled node runs local sessions and local models, and a self-hosted runner only behind fences
 
 - **Status:** ratified

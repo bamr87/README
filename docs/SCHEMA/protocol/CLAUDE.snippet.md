@@ -4,8 +4,6 @@ source_repo: bamr87/SCHEMA
 source_url: https://github.com/bamr87/SCHEMA/blob/main/protocol/CLAUDE.snippet.md
 title: Claude.Snippet
 ---
-<!-- Drop this section into your repository's CLAUDE.md verbatim. -->
-
 ## SCHEMA.md protocol (Pyramid Schema)
 
 This repository is structured by `SCHEMA.md` files — one per directory, each a lintable contract describing its own contents, one level deep. They are your primary source of structural truth. Prefer reading the schema chain over running `ls -R` / `find` to understand layout.

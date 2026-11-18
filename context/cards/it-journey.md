@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 5881c785703c9b8d
+source_fingerprint: 2136ab5913a9bfb5
 tags:
   - agentic-ai
   - automation
@@ -43,7 +43,7 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~1,035,533 words across 557 indexed documents
+- ~1,035,107 words across 557 indexed documents
 - code samples in: bash, plaintext, yaml, text, markdown, mermaid, powershell, python
 
 ## Navigation

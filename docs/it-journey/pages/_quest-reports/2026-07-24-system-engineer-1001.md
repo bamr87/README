@@ -56,7 +56,7 @@ The headline for a maintainer: the individual quests are technically strong — 
 
 ## 🔬 Evidence
 
-All statuses below come from the sealed `walk-evidence.json` (engine ran the snippets in a disposable kind cluster). "reasoned" = judged statically (no runner available for that step); "skipped" = could not be safely/​feasibly run in the sandbox.
+All statuses below come from the sealed `walk-evidence.json` (engine ran the snippets in a disposable kind cluster). "reasoned" = judged statically (no runner available for that step); "skipped" = could not be safely/feasibly run in the sandbox.
 
 ### 1 · Pods and Workloads — 86 (pass) · ran 17/19 recorded snippets (16 passed · 1 failed · 2 reasoned)
 Dimensions: commands_work **5**, content_accuracy 4, completeness 4, clarity 4, structure 4, safety 4.
@@ -89,7 +89,7 @@ Dimensions: commands_work 4, content_accuracy **5**, completeness **5**, clarity
 ### 4 · The Sigils of Trust — 77 (warn) · ran 0/6 recorded (0 passed · 2 skipped · 4 reasoned)
 Dimensions: commands_work 3, content_accuracy 4, completeness 4, clarity 4, structure **5**, safety **5**.
 
-- 🧠 All three workflow YAML excerpts (`content-factory.yml`, kill-switch, checkout token) parsed as valid YAML via `yaml.safe_load` after stripping the Jekyll `{​% raw %​}` tags.
+- 🧠 All three workflow YAML excerpts (`content-factory.yml`, kill-switch, checkout token) parsed as valid YAML via `yaml.safe_load` after stripping the Jekyll `{% raw %}` tags.
 - ⏭️ `gh secret set BOT_PAT --repo "$OWNER/$REPO"` and `gh variable set CONTENT_FACTORY_ENABLED …` could not be run — `gh` reported "not logged into any GitHub hosts" and each needs a real owned repo. Flag existence/usage was confirmed via `gh … --help`; `read -rs` silent capture was verified directly.
 - 🧠 mermaid quest-network diagram — `mermaid-cli` failed on a sandboxed-Chromium launch error (environment limit, not a syntax issue); `graph LR` syntax is well-formed.
 - This quest earns its **warn** honestly: it is almost entirely non-executable in this sandbox (2 runnable snippets, both requiring live GitHub auth), so the score leans on reasoning, and the one real usability defect (unset `$OWNER/$REPO`) is a `commands_work` deduction.
@@ -107,7 +107,7 @@ Dimensions: commands_work 3, content_accuracy 4, completeness 4, clarity 4, stru
 - **MEDIUM · Services and Networking · Secondary objective "Troubleshooting" (line 108)** — "Diagnose a Service returning no endpoints" is listed as an objective and mastery indicator but has **no worked exercise**. **Fix:** add a deliberately-mismatched-selector example showing empty `kubectl get endpoints` and the fix.
 - **LOW · Sigils of Trust · Prerequisites (line 101)** — "Generate the OAuth token from your Claude Code setup" is vague; give a concrete CLI command / doc link.
 - **LOW · Pods and Workloads · YAML→filename mapping** — manifest filenames (`web-rs.yaml`, etc.) appear only inside later `kubectl apply -f …` lines, never labeled above the code fence; a first-timer must infer them.
-- **LOW · Services and Networking · deprecation/​annotation nits** — `kubectl get endpoints` now emits a v1 Endpoints deprecation warning (mention `EndpointSlice`); the `rewrite-target: /` annotation on the root-Prefix Ingress is an inert no-op worth a one-line note.
+- **LOW · Services and Networking · deprecation/annotation nits** — `kubectl get endpoints` now emits a v1 Endpoints deprecation warning (mention `EndpointSlice`); the `rewrite-target: /` annotation on the root-Prefix Ingress is an inert no-op worth a one-line note.
 - **LOW · Pods and Workloads · `rollout history` CHANGE-CAUSE** — shows `<none>` unless a `kubernetes.io/change-cause` annotation is added; worth a note so learners aren't confused by the sparse table.
 
 ## 🔗 Chain Continuity

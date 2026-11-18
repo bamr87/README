@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas13
     URL:      http://natas13.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Re-encode images with an image library (which discards extra content), store the
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas12/">Level 12</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas14/">Level 14</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

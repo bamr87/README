@@ -65,7 +65,7 @@ The fleet's documentation as one linked knowledge base. Open `docs/` as a vault 
 - [[brain/concepts/ai-ethics-and-responsible-ai-bias-detection-fairness-governance|AI Ethics and Responsible AI: Bias Detection, Fairness & Governance]] (4)
 - [[brain/concepts/alerting-systems-alertmanager-routing-and-on-call|Alerting Systems: Alertmanager, Routing, and On-Call]] (4)
 - [[brain/concepts/analytics|Analytics]] (21)
-- [[brain/concepts/architecture|Architecture]] (15)
+- [[brain/concepts/architecture|Architecture]] (17)
 - [[brain/concepts/article-answer-choice-elimination|article:answer-choice-elimination]] (5)
 - [[brain/concepts/article-blind-review-method|article:blind-review-method]] (5)
 - [[brain/concepts/article-conditional-logic-foundations|article:conditional-logic-foundations]] (6)

@@ -7,13 +7,13 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: a06ecea87af29928
+source_fingerprint: a99be7120c07c1ad
 tags:
 ---
 
 # GitHubAI — the Claude Code SDLC framework
 
-> Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases.
+> Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases. GitHubAI's direction is to become the ultimate open home for all things AI-assisted software delivery: data, tools, resources and transparency, with an installable Claude Code SDLC loop, reviewable workflows and maintainer-held authorization for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -21,7 +21,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/githubai` - 48 docs |
+| Corpus | `docs/githubai` - 54 docs |
 | External | no |
 
 ## Signals
@@ -30,14 +30,15 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~40,806 words across 48 indexed documents
+- has a security policy
+- ~44,275 words across 54 indexed documents
 - code samples in: bash, json, yaml, plaintext, text, javascript, mermaid, python
 
 ## Navigation
 
-48 published pages in 10 sections (max depth 4) — [browse the full map](../../docs/browse/githubai.md) · [tree as JSON](../nav/githubai.json)
+54 published pages in 10 sections (max depth 4) — [browse the full map](../../docs/browse/githubai.md) · [tree as JSON](../nav/githubai.json)
 
-- **Documentation** (17 pages)
+- **Documentation** (22 pages)
 - **GitHubAI as a GitHub App** (4 pages)
 - **Template files installed into consumer repos** (2 pages)
 - **🌱 AI-Seed — the autonomous AI orchestration framework** (19 pages)
@@ -48,10 +49,10 @@ tags:
 - [`CLAUDE.md`](../../docs/githubai/CLAUDE.md)
 - [`AGENTS.md`](../../docs/githubai/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/githubai/CHANGELOG.md)
+- [`SECURITY.md`](../../docs/githubai/SECURITY.md)
 - [`ai-seed/docs/ARCHITECTURE.md`](../../docs/githubai/ai-seed/docs/ARCHITECTURE.md)
 - [`ai-seed/docs/PATTERNS.md`](../../docs/githubai/ai-seed/docs/PATTERNS.md)
 - [`ai-seed/README.md`](../../docs/githubai/ai-seed/README.md)
-- [`ai-seed/CONCEPT.md`](../../docs/githubai/ai-seed/CONCEPT.md)
 
 ## Query this context
 

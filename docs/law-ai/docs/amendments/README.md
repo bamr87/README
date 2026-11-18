@@ -4,7 +4,6 @@ source_repo: bamr87/law-ai
 source_url: https://github.com/bamr87/law-ai/blob/main/docs/amendments/README.md
 title: Amendments — law-ai
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — law-ai
 
 > The append-only log of numbered amendments to the law-ai constitution, with their status.
@@ -18,3 +17,4 @@ The append-only log of changes to [the constitution](../constitution.md). Proces
 | # | Title | Status | Affects |
 | --- | --- | --- | --- |
 | [0001](0001-ratify-constitution.md) | Ratify the constitution | ratified on merge | whole constitution |
+| [0003](0003-mission-statement.md) | Missions | proposed | constitution §1; PRD §1.1, §4 |

@@ -4,7 +4,6 @@ source_repo: bamr87/ocrmd
 source_url: https://github.com/bamr87/ocrmd/blob/main/docs/adr/README.md
 title: Architecture Decision Records
 ---
-<!-- kit: sdlc v0.1.0 · ADR index (UPS-WORK-04, decision D2: law-ai format) -->
 # Architecture Decision Records
 
 > Every hard-to-reverse decision made for ocrmd, one record each, and the format a new record follows.

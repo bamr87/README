@@ -49,8 +49,6 @@ Helpful Reading Material
 
 [Base64 on Wikipedia]: https://en.wikipedia.org/wiki/Base64
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -82,5 +80,3 @@ Base64 appears in HTTP headers, tokens, certificates and email. Mistaking it for
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit10/">Level 10</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit12/">Level 12</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -35,7 +35,6 @@ weekly-epic routine repoints that file at each new weekly epic; a human can repo
 {%- assign main_featured = rest | first -%}
 {%- assign secondary = rest | where_exp: "i", "i.url != main_featured.url" -%}
 
-<!-- ============================= NEWS HEADER ============================= -->
 <div class="container-fluid bg-dark text-white py-3 mb-4 rounded-4">
   <div class="container">
     <div class="row align-items-center g-2">
@@ -60,7 +59,6 @@ weekly-epic routine repoints that file at each new weekly epic; a human can repo
   </div>
 </div>
 
-<!-- ============================= HERO / TOP STORY ============================= -->
 {% if hero %}
 <section class="mb-5">
   <div class="row g-0 rounded-4 overflow-hidden shadow-lg zer0-bg-hero position-relative">
@@ -93,7 +91,6 @@ weekly-epic routine repoints that file at each new weekly epic; a human can repo
 </section>
 {% endif %}
 
-<!-- ============================= SECTION NAVIGATION ============================= -->
 <section class="mb-5">
   <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
     {%- assign nav_sections = "hacks,tools,notes,wire,docs,about" | split: "," -%}
@@ -119,14 +116,13 @@ weekly-epic routine repoints that file at each new weekly epic; a human can repo
   </div>
 </section>
 
-<!-- ============================= FEATURED STORIES ============================= -->
 {% if main_featured %}
 <section class="mb-5">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h2 class="h3 mb-0"><i class="bi bi-star-fill text-warning me-2"></i>Featured</h2>
   </div>
   <div class="row g-4">
-    <!-- Main featured -->
+
     <div class="col-lg-6">
       <div class="card h-100 border-0 shadow hover-lift overflow-hidden">
         {% include home/cover.html collection=main_featured.collection height='300px' preview=main_featured.preview alt=main_featured.title %}
@@ -142,7 +138,7 @@ weekly-epic routine repoints that file at each new weekly epic; a human can repo
         </div>
       </div>
     </div>
-    <!-- Secondary featured -->
+
     <div class="col-lg-6">
       <div class="row row-cols-1 row-cols-md-2 g-4">
         {% for fp in secondary limit: 4 %}
@@ -154,7 +150,6 @@ weekly-epic routine repoints that file at each new weekly epic; a human can repo
 </section>
 {% endif %}
 
-<!-- ============================= POSTS BY SECTION ============================= -->
 {%- assign feed_sections = "hacks,tools,notes,wire" | split: "," -%}
 {% for coll in feed_sections %}
   {%- case coll -%}
@@ -178,7 +173,6 @@ weekly-epic routine repoints that file at each new weekly epic; a human can repo
   {% endif %}
 {% endfor %}
 
-<!-- ============================= LATEST ============================= -->
 <section class="mb-5">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h2 class="h4 mb-0"><i class="bi bi-clock-history text-secondary me-2"></i>Latest</h2>
@@ -213,7 +207,6 @@ weekly-epic routine repoints that file at each new weekly epic; a human can repo
   </div>
 </section>
 
-<!-- ============================= TAGS & ARCHIVES ============================= -->
 <section class="mb-5">
   <div class="row g-4">
     <div class="col-md-6">
@@ -261,7 +254,6 @@ weekly-epic routine repoints that file at each new weekly epic; a human can repo
   </div>
 </section>
 
-<!-- ============================= SUBSCRIBE CTA ============================= -->
 <section class="mb-4">
   <div class="card border-0 bg-primary bg-gradient text-white">
     <div class="card-body p-4 p-lg-5 text-center">

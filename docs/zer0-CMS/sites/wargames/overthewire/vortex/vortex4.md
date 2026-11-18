@@ -52,8 +52,6 @@ Reading Material
 [Exploiting Format String Vulnerabilities]: http://julianor.tripod.com/bc/formatstring-1.2.pdf
 [Bypassing StackGuard and StackShield]: http://www.phrack.org/issues.html?issue=56&id=5#article
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -86,5 +84,3 @@ Understanding how the kernel and loader hand a program its arguments helps in ma
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex3/">Level 3</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex5/">Level 5</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

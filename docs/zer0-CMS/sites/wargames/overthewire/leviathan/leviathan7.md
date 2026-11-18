@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -61,5 +59,3 @@ You have completed Leviathan. The level confirms your progress and nudges you to
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../leviathan6/">Level 6</a><a class="sg-index" href="../">Leviathan overview</a><span></span></nav>
 
 </section>
-
-<!-- study-guide:end -->

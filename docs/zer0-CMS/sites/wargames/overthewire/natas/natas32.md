@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas32
     URL:      http://natas32.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ As in the previous level, along with running web applications as users that cann
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas31/">Level 31</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas33/">Level 33</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

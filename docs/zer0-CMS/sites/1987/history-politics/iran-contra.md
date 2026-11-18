@@ -32,11 +32,9 @@ Internationally, the affair undermined US credibility on counterterrorism policy
 - [Iran–Contra affair — Wikipedia](https://en.wikipedia.org/wiki/Iran%E2%80%93Contra_affair)
 - [Iran-Contra Affair — Encyclopædia Britannica](https://www.britannica.com/event/Iran-Contra-Affair)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [INF Treaty (December 8, 1987)](inf-treaty.md) — Reagan and Gorbachev's landmark arms-control agreement, signed the same year the Iran-Contra scandal unfolded.
 - [Reagan's "Tear Down This Wall" Speech (June 12, 1987)](reagan-berlin-speech.md) — Reagan's Cold War challenge to Gorbachev, delivered months after the Tower Commission report.
 - [First Intifada (December 1987)](first-intifada.md) — another major geopolitical crisis of 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

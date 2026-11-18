@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas9
     URL:      http://natas9.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Avoid shelling out. If you must, pass arguments as separate parameters without a
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas8/">Level 8</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas10/">Level 10</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

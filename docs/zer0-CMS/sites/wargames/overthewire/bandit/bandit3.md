@@ -51,8 +51,6 @@ Helpful Reading Material
 
 [Google Search for "spaces in filename"]: https://www.google.com/search?q=spaces+in+filename
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -84,5 +82,3 @@ Spaces and special characters in filenames cause the classic scripting bugs. Alw
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit2/">Level 2</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit4/">Level 4</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

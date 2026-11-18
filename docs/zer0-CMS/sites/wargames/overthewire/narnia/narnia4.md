@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Practice in adapting to constraints is the core skill of exploit development.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../narnia3/">Level 3</a><a class="sg-index" href="../">Narnia overview</a><a class="sg-next" href="../narnia5/">Level 5</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

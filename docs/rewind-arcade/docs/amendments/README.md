@@ -4,7 +4,6 @@ source_repo: bamr87/rewind-arcade
 source_url: https://github.com/bamr87/rewind-arcade/blob/main/docs/amendments/README.md
 title: Amendments — rewind-arcade
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — rewind-arcade
 
 > The append-only log of numbered amendments to rewind-arcade's constitution, with each record's status and what it affects.

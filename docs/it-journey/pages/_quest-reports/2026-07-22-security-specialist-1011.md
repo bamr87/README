@@ -48,7 +48,7 @@ I walked the **Security Specialist · Level 1011 (Security & Compliance, Warrior
 
 Plan order (as selected by `walk-plan.json`):
 
-1. ❌ **When Familiars Fall: Multi-Agent Failure Recovery** · **51** — Python coordinator works, but leaked `{​% raw %​}{​% raw %​}/{​% endraw %​}{​% endraw %​}` tags corrupt every GitHub Actions expression and the quest's own validation grep expects 5 and returns 4.
+1. ❌ **When Familiars Fall: Multi-Agent Failure Recovery** · **51** — Python coordinator works, but leaked `{% raw %}{% raw %}/{% endraw %}{% endraw %}` tags corrupt every GitHub Actions expression and the quest's own validation grep expects 5 and returns 4.
 2. ❌ **AI Feature Pipeline Architect: DevSecOps Mastery Quest** · **42** — Chapter 1 runs (real 401 from Anthropic API confirmed), but a `pip install` line inside a `python` fence raises `SyntaxError`, and Chapters 2–5 reference agent classes that are never defined, so the central 5-stage pipeline is unbuildable from the quest.
 3. ✅ **The Sealed Evidence: Slaying the Self-Grading Golem** · **94** — Conceptual security/AI-safety boss chapter; every technical claim verified in the sandbox, including the OAuth-scrub against this very session's env.
 4. ⚠️ **Secure Coding: Preventing the OWASP Top 10** · **79** — Almost everything runs and behaves as documented; the one real gap is `detect-secrets scan` silently scanning nothing without a `git init`.
@@ -64,7 +64,7 @@ All outcomes below come from the sealed `walk-evidence.json` (`executed: true` o
 Dimensions: commands_work **2**, content_accuracy **2**, completeness **2**, clarity 3, structure 4, safety 5. Snippets: **ran 7, passed 5, failed 2, reasoned 1** (available_runnable 2).
 - `passed` · `python3 recovery_coordinator.py … --agent1-status failure --agent2-status success` → correctly produced `retry_from_checkpoint` in `recovery-plan.json`, as documented. Also verified the `redelegate` fallback and the `$GITHUB_OUTPUT` write of `needs_redelegation=true`.
 - `failed` · `grep -c -iE "retry|fallback|escalat|compensat|checkpoint" recovery_coordinator.py` → **returns 4, not the 5 the quest's own comment claims**. Engine confirmed `fallback`, `escalat`, `compensat` have **0 occurrences** in the reference code; only `retry` (1) and `checkpoint` (3) match.
-- `failed` · YAML workflow extracted and parsed with PyYAML (valid YAML) but semantically broken: **6 literal `${​% raw %​}{​% raw %​}{​{ … }​}{​% endraw %​}{​% endraw %​}`** occurrences instead of `${​% raw %​}{​{ … }​}{​% endraw %​}`; copied verbatim, no GitHub Actions expression would interpolate.
+- `failed` · YAML workflow extracted and parsed with PyYAML (valid YAML) but semantically broken: **6 literal `${% raw %}{% raw %}{{ … }}{% endraw %}{% endraw %}`** occurrences instead of `${% raw %}{{ … }}{% endraw %}`; copied verbatim, no GitHub Actions expression would interpolate.
 - Engine also noted (`content_accuracy`): the re-delegate step reads `steps.assess.outputs.failed_tasks`, which `recovery_coordinator.py` **never writes** (only `needs_redelegation`), and `sub-agent-2` has no upload-artifact step, so its `checkpoint_available` branch is unreachable.
 
 ### 2. AI Feature Pipeline Architect — `ai-feature-pipeline-architect.md` · 42 · FAIL
@@ -97,7 +97,7 @@ Dimensions: commands_work 4, content_accuracy **5**, completeness 4, clarity **5
 ## 🐞 Issues Found
 
 **High**
-- **Fallen Familiars** · Chapter 2 YAML block · The 6 GitHub Actions expressions render as literal `${​% raw %​}{​% raw %​}{​{ … }​}{​% endraw %​}{​% endraw %​}` (unrendered Jekyll `raw` tags leaking into the reader-facing code). *Observed:* engine extracted the block and confirmed the literal tags; PyYAML parses it but the expressions are semantically dead. *Fix:* correct the markdown/Jekyll fencing so the `raw` guard is stripped before publish, leaving `${​% raw %​}{​{ … }​}{​% endraw %​}`.
+- **Fallen Familiars** · Chapter 2 YAML block · The 6 GitHub Actions expressions render as literal `${% raw %}{% raw %}{{ … }}{% endraw %}{% endraw %}` (unrendered Jekyll `raw` tags leaking into the reader-facing code). *Observed:* engine extracted the block and confirmed the literal tags; PyYAML parses it but the expressions are semantically dead. *Fix:* correct the markdown/Jekyll fencing so the `raw` guard is stripped before publish, leaving `${% raw %}{{ … }}{% endraw %}`.
 - **Fallen Familiars** · Quest Validation grep · Comment says "expect a count of 5"; the reference `recovery_coordinator.py` yields **4** (`fallback`/`escalat`/`compensat` never appear). *Fix:* either implement/document those strategies in the code, or correct the expected count and the "All 5 compensation strategy types are documented" checklist item.
 - **Fallen Familiars** · re-delegation objective · The workflow reads `steps.assess.outputs.failed_tasks`, which the coordinator never writes, and `redelegate_tasks.py` is referenced but not provided. *Fix:* emit `failed_tasks` to `$GITHUB_OUTPUT` (or supply the script) so the stated "Implement re-delegation" objective is actually reachable.
 - **AI Feature Pipeline Architect** · Chapter 1 Step 1 fence · `pip install langchain anthropic openai mcp` inside a `python` fence → `SyntaxError` when copied verbatim. *Fix:* split the install into its own `bash` fence.

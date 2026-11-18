@@ -4,7 +4,6 @@ source_repo: bamr87/zpl-viewer
 source_url: https://github.com/bamr87/zpl-viewer/blob/main/docs/amendments/README.md
 title: Amendments — zpl-viewer
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — zpl-viewer
 
 The append-only log of changes to [the constitution](../constitution.md). Process: constitution § 8.

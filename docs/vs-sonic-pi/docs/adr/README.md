@@ -4,7 +4,6 @@ source_repo: bamr87/vs-sonic-pi
 source_url: https://github.com/bamr87/vs-sonic-pi/blob/main/docs/adr/README.md
 title: Architecture Decision Records
 ---
-<!-- kit: sdlc v0.1.0 · ADR index (UPS-WORK-04, decision D2: law-ai format) -->
 # Architecture Decision Records
 
 > The index of architecture decision records: the decisions for vs-sonic-pi that are hard to reverse, one numbered file each.

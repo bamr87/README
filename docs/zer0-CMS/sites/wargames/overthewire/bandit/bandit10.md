@@ -45,8 +45,6 @@ Commands you may need to solve this level
 -----------------------------------------
 grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -77,5 +75,3 @@ Finding human-readable fragments inside data that is mostly binary.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit9/">Level 9</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit11/">Level 11</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

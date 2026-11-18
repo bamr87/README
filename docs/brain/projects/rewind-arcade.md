@@ -16,7 +16,7 @@ title: Rewind Arcade
 > [!info] game: `bamr87/rewind-arcade`
 > Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog.
 
-**76** pages collected from commit `4e42a0d1cf5e` (2026-11-04).
+**76** pages collected from commit `bddc9710432b` (2026-11-18).
 
 ## Most connected pages
 

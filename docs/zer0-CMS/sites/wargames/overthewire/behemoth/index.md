@@ -68,8 +68,6 @@ To login to the first level use:
 
 Data for the levels can be found in **/behemoth/**.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -112,5 +110,3 @@ The recommended order is Bandit, one of Natas, Krypton or Leviathan, Narnia, the
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="behemoth0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

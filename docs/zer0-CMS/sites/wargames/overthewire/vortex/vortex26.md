@@ -44,8 +44,6 @@ This description is kept for historical reasons, but should not be followed. We 
 
 Due to the overwhelming flood of new levels, vortex26 shall be to make a level, along with exploit, and email it to andrewg.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -67,5 +65,3 @@ The maintainers stopped adding levels to Vortex. The last "level" invited player
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex25/">Level 25</a><a class="sg-index" href="../">Vortex overview</a><span></span></nav>
 
 </section>
-
-<!-- study-guide:end -->

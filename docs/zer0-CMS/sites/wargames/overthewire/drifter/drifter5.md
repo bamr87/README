@@ -40,8 +40,6 @@ Level 5 is a series of relatively simple logic/math games.
 
 The game 3 is always solvable - if you are stuck on it you may wish to reverse engineer the applicable part of the binary ;) Granted, the coding for that was horrible, but it'd give you a way to solve it.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Reading poor-quality code is routine in security work.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter4/">Level 4</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter6/">Level 6</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -75,8 +75,6 @@ Tools you may find useful to solve this wargame
 
 strings, hexdump, objdump, ghidra
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -122,5 +120,3 @@ Leviathan is rated 1 out of 10 by its authors. The suggested path is Bandit, the
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="leviathan0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

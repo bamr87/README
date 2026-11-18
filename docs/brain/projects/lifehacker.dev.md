@@ -16,7 +16,7 @@ title: Lifehacker
 > [!info] site: `bamr87/lifehacker.dev`
 > Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude Code.
 
-**138** pages collected from commit `83813e2c00ee` (2026-11-16).
+**138** pages collected from commit `4b8b503f0916` (2026-11-18).
 
 ## Most connected pages
 
@@ -29,9 +29,9 @@ title: Lifehacker
 - [[lifehacker.dev/pages/_docs/the-fingerprint-that-throws-away-the-line-number|The Fingerprint That Throws Away the Line Number]]
 - [[lifehacker.dev/pages/_docs/the-one-script-that-gets-to-say-the-build-is-broken|The One Script That Gets to Say the Build Is Broken]]
 - [[lifehacker.dev/pages/_docs/the-router-that-can-only-round-up|The Router That Can Only Round Up]]
+- [[lifehacker.dev/docs/README|lifehacker.dev documentation]]
 - [[lifehacker.dev/docs/constitution|lifehacker.dev — Constitution]]
 - [[lifehacker.dev/pages/_docs/the-dashboard-with-a-stale-twin|The Dashboard With a Stale Twin in the Repo]]
-- [[lifehacker.dev/PRD|PRD — lifehacker.dev]]
 
 ## Concepts
 

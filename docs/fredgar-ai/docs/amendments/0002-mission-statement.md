@@ -4,7 +4,6 @@ source_repo: bamr87/fredgar-ai
 source_url: https://github.com/bamr87/fredgar-ai/blob/main/docs/amendments/0002-mission-statement.md
 title: 0002 — Missions
 ---
-<!-- kit: governance v0.1.0 -->
 # 0002 — Missions
 
 - **Status:** proposed

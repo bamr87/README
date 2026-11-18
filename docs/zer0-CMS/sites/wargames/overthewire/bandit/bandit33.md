@@ -45,8 +45,6 @@ Commands you may need to solve this level
 -----------------------------------------
 sh, man
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -79,5 +77,3 @@ Input filters and blocklists are routinely bypassed by features of the interpret
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit32/">Level 32</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit34/">Level 34</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

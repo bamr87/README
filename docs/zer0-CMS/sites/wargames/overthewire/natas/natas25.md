@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas25
     URL:      http://natas25.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Resolve and validate paths against an allow-list, never include files by user-su
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas24/">Level 24</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas26/">Level 26</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

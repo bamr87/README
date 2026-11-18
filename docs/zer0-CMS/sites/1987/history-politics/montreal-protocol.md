@@ -30,11 +30,9 @@ Implementation produced a clear scientific success: the depletion of stratospher
 - [Montreal Protocol — Wikipedia](https://en.wikipedia.org/wiki/Montreal_Protocol)
 - [Montreal Protocol — Encyclopaedia Britannica](https://www.britannica.com/event/Montreal-Protocol)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [INF Treaty (December 8, 1987)](inf-treaty.md) — the other landmark 1987 multilateral agreement, in arms control rather than the environment.
 - [Reagan's "Tear Down This Wall" Speech (June 12, 1987)](reagan-berlin-speech.md) — Reagan's public challenge to the Soviet bloc, part of the same year's wave of diplomatic pressure.
 - [Supernova 1987A](../science-technology/supernova-1987a.md) — a 1987 scientific milestone in the natural sciences.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

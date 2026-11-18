@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas29
     URL:      http://natas29.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Use the three-argument form of `open` with an explicit mode, validate filenames,
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas28/">Level 28</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas30/">Level 30</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

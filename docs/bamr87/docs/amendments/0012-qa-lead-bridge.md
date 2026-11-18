@@ -5,7 +5,6 @@ source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0012-qa-l
 title: '0012 — QA Lead first: a short warn-only bridge for the § 15 completeness review,
   and § 15 numbering made final'
 ---
-<!-- kit: governance v0.1.0 -->
 # 0012 — QA Lead first: a short warn-only bridge for the § 15 completeness review, and § 15 numbering made final
 
 - **Status:** ratified

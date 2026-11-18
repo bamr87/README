@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 24,
-    "fingerprint": "67431c0fe95b69aa",
+    "file_count": 25,
+    "fingerprint": "f56fcec418d34434",
     "path": "docs/scripts",
     "present": true,
-    "total_bytes": 116053
+    "total_bytes": 123028
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -21,7 +21,7 @@
       "Contributing"
     ],
     "readme": "README.md",
-    "summary": "Standalone Bash utilities for project scaffolding, GitHub repository management and multi-repo maintenance.",
+    "summary": "scripts' direction is to become the ultimate open home for all things project and repository automation: data, tools, resources and transparency, with standalone Bash utilities for scaffolding, GitHub management and multi-repo maintenance, for everyone (constitution \u00a71).",
     "title": "\ud83d\udee0\ufe0f scripts"
   },
   "key_docs": [
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/scripts.md",
-    "fingerprint": "1312b35ba279a08d",
+    "fingerprint": "e3d3face0a2e07dd",
     "index": "scripts/README.md",
     "max_depth": 3,
-    "pages": 24,
+    "pages": 25,
     "present": true,
     "sections": 5,
     "skipped": 0,
@@ -47,7 +47,7 @@
     "top_sections": [
       {
         "index": "scripts/docs/README.md",
-        "pages": 9,
+        "pages": 10,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -86,16 +86,16 @@
   },
   "rollups": {
     "categories": {
-      "scripts": 24
+      "scripts": 25
     },
     "code_languages": [
       "bash",
       "plaintext",
       "yaml"
     ],
-    "indexed_documents": 24,
+    "indexed_documents": 25,
     "top_tags": [],
-    "total_words": 14659
+    "total_words": 15689
   },
   "schema_version": "1.0",
   "signals": {
@@ -117,7 +117,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 9,
+        "doc_count": 10,
         "name": "docs"
       },
       {

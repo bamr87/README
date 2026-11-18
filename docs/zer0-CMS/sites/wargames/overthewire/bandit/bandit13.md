@@ -51,8 +51,6 @@ grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd, mkdir, cp, mv, fil
 
 [Hex dump on Wikipedia]: https://en.wikipedia.org/wiki/Hex_dump
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -85,5 +83,3 @@ Malware droppers, CTF challenges and forensic images are frequently layered. A c
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit12/">Level 12</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit14/">Level 14</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

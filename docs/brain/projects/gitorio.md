@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 144
+pages: 145
 repo: bamr87/gitorio
 tags:
 - brain/project
@@ -16,17 +16,17 @@ title: Gitorio
 > [!info] app: `bamr87/gitorio`
 > Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude Code.
 
-**144** pages collected from commit `4ff8d136ad6d` (2026-11-16).
+**145** pages collected from commit `c324d78d8e38` (2026-11-18).
 
 ## Most connected pages
 
 - [[gitorio/packages/git-with-the-program/CLAUDE|CLAUDE.md]]
 - [[gitorio/packages/git-with-the-program/README|Git with the Program]]
+- [[gitorio/README|⚙ GitFactory]]
 - [[gitorio/docs/constitution|gitorio — Constitution]]
 - [[gitorio/PRD|PRD — gitorio (GitFactory)]]
-- [[gitorio/README|⚙ GitFactory]]
-- [[gitorio/packages/git-with-the-program/CONTRIBUTING|Contributing to Git with the Program]]
 - [[gitorio/docs/amendments/README|Amendments — gitorio]]
+- [[gitorio/packages/git-with-the-program/CONTRIBUTING|Contributing to Git with the Program]]
 - [[gitorio/docs/README|gitorio documentation]]
 - [[gitorio/packages/gitnexus/README|Nexus Forge (gitnexus)]]
 - [[gitorio/packages/wtd/README|🚀 WTD – What To Do]]

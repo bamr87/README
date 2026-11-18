@@ -40,7 +40,6 @@ The theme's `home` layout is bare — `<div class="home">{{ content }}</div>` wi
 {%- endcomment -%}
 <div class="container py-4">
 
-<!-- ============================= MASTHEAD ============================= -->
 <div class="bg-dark text-white py-3 px-4 mb-4 rounded-4">
   <div>
     <div class="row align-items-center g-2">
@@ -65,7 +64,6 @@ The theme's `home` layout is bare — `<div class="home">{{ content }}</div>` wi
   </div>
 </div>
 
-<!-- ============================= TOP STORY ============================= -->
 {% if hero %}
 <section class="mb-5">
   <div class="row g-0 rounded-4 overflow-hidden shadow-lg position-relative" style="background:#1b1b1f;">
@@ -94,7 +92,6 @@ The theme's `home` layout is bare — `<div class="home">{{ content }}</div>` wi
 </section>
 {% endif %}
 
-<!-- ============================= WHAT COUNTS ============================= -->
 <section class="mb-5">
   <div class="row g-4 align-items-center">
     <div class="col-lg-7">
@@ -132,7 +129,6 @@ reversal: &gt;
   </div>
 </section>
 
-<!-- ============================= THE BRANCHES ============================= -->
 <section class="mb-5">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h2 class="h4 mb-0"><i class="bi bi-signpost-split text-secondary me-2"></i>The branches</h2>
@@ -157,7 +153,6 @@ reversal: &gt;
   </div>
 </section>
 
-<!-- ============================= EDITOR'S PICKS ============================= -->
 {% if pick_main %}
 <section class="mb-5">
   <div class="d-flex justify-content-between align-items-center mb-4">
@@ -188,7 +183,6 @@ reversal: &gt;
 </section>
 {% endif %}
 
-<!-- ============================= BY BRANCH ============================= -->
 {%- assign feeds = "instances|paradoxes|works|mirrors" | split: "|" -%}
 {% for key in feeds %}
   {%- assign m = site.data.sections[key] -%}
@@ -211,7 +205,6 @@ reversal: &gt;
   {% endif %}
 {% endfor %}
 
-<!-- ============================= LATEST ============================= -->
 <section class="mb-5">
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h2 class="h4 mb-0"><i class="bi bi-clock-history text-secondary me-2"></i>Recently planted</h2>
@@ -239,7 +232,6 @@ reversal: &gt;
   </div>
 </section>
 
-<!-- ============================= THE PIPELINE ============================= -->
 <section class="mb-5">
   <div class="row g-4">
     <div class="col-md-6">
@@ -289,7 +281,6 @@ reversal: &gt;
   </div>
 </section>
 
-<!-- ============================= COLOPHON ============================= -->
 <section class="mb-4">
   <div class="p-4 rounded-4 border">
     <div class="row align-items-center g-3">
@@ -310,5 +301,5 @@ reversal: &gt;
   </div>
 </section>
 
-</div><!-- /.container -->
+</div>
 

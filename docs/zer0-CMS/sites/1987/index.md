@@ -8,7 +8,6 @@ title: Index — 1987
 
 Master index of all content in this knowledge base, grouped by category. See also the [timeline](TIMELINE.md) and the [README knowledge table](README.md#notable-events-of-1987).
 
-<!-- BEGIN GENERATED: master-index — maintained by build-structure; do not edit by hand -->
 ## History & Politics
 _Category index: [history-politics/index.md](history-politics/index.md)_
 
@@ -54,4 +53,3 @@ _Category index: [people/index.md](people/index.md)_
 - [Margaret Thatcher's Third General Election Victory (June 11, 1987)](people/margaret-thatcher.md)
 - [Klaus Barbie — Convicted of Crimes Against Humanity (July 4, 1987)](people/klaus-barbie.md)
 - [Rudolf Hess (death, August 17, 1987)](people/rudolf-hess.md)
-<!-- END GENERATED: master-index -->

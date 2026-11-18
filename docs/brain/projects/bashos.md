@@ -16,7 +16,7 @@ title: BashOS
 > [!info] tooling: `bamr87/bashos`
 > Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine.
 
-**80** pages collected from commit `94417f6f537b` (2026-11-18).
+**80** pages collected from commit `8b220e1762ae` (2026-11-18).
 
 ## Most connected pages
 

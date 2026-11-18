@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas20
     URL:      http://natas20.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Use your framework's well-tested session handlers, and encode data (for example 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas19/">Level 19</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas21/">Level 21</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

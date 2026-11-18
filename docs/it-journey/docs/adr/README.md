@@ -4,7 +4,6 @@ source_repo: bamr87/it-journey
 source_url: https://github.com/bamr87/it-journey/blob/main/docs/adr/README.md
 title: Architecture Decision Records
 ---
-<!-- kit: sdlc v0.1.0 · ADR index (UPS-WORK-04, decision D2: law-ai format) -->
 # Architecture Decision Records
 
 > How this repository records hard-to-reverse decisions as numbered ADRs — the format, required sections and status values — and the index of every ADR.

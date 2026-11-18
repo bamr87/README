@@ -16,7 +16,7 @@ title: CV Pro
 > [!info] app: `bamr87/cv-pro`
 > CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract and renders) and app/ (the React builder).
 
-**32** pages collected from commit `b3938e1ce761` (2026-11-11).
+**32** pages collected from commit `261e6aeda21b` (2026-11-18).
 
 ## Most connected pages
 
@@ -27,8 +27,8 @@ title: CV Pro
 - [[cv-pro/docs/amendments/README|Amendments — cv-pro]]
 - [[cv-pro/app/AGENTS|CV Builder Pro (app/)]]
 - [[cv-pro/cv/AGENTS|cv]]
+- [[cv-pro/docs/README|cv-pro documentation]]
 - [[cv-pro/CLAUDE|cv-pro]]
 - [[cv-pro/app/CLAUDE|CV Builder Pro (app/)]]
 - [[cv-pro/cv/CLAUDE|cv]]
 - [[cv-pro/docs/adr/README|Architecture Decision Records]]
-- [[cv-pro/docs/amendments/0001-ratify-constitution|0001 — Ratify the constitution]]

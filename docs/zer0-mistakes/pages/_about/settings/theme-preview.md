@@ -4,11 +4,14 @@ admin_actions:
   label: Theme Customizer
   style: btn-outline-primary
   url: /about/settings/theme/
+- icon: bi-grid-3x3-gap
+  label: Component Showcase
+  url: /about/settings/components/
 admin_section: Theme Preview
 excerpt: Live style guide — preview skins, color modes, and component coverage in
   one place.
 icon: material/presentation
-lastmod: 2026-05-24 00:00:00+00:00
+lastmod: 2026-11-15 00:00:00+00:00
 layout: admin
 permalink: /about/settings/theme-preview/
 preview: /images/previews/theme-preview.png

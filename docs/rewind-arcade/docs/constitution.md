@@ -4,8 +4,6 @@ source_repo: bamr87/rewind-arcade
 source_url: https://github.com/bamr87/rewind-arcade/blob/main/docs/constitution.md
 title: rewind-arcade — Constitution
 ---
-<!-- kit: governance v0.1.0 · seeded from bamr87/bamr87 templates/governance/. Owned by this repo after seeding;
-     change it ONLY through an amendment record in docs/amendments/ (see § 8). Validate: python3 <hub>/tools/governance_lint.py check . -->
 # rewind-arcade — Constitution
 
 > The rules every change to this repo must satisfy, whoever makes it — a human or an AI agent.

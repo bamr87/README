@@ -6,8 +6,6 @@ title: CONCEPT — ai-seed
 ---
 # CONCEPT — ai-seed
 
-<!-- seed-kernel v0.1.0 · planted 2026-08-19 from bamr87/ai-seed -->
-
 This file is the repo's genome: the machine-readable statement of what this repository is and how it grows. Every grow pass reads it top to bottom before writing anything; §8 is the tick clock that makes growth auditable and resumable. ai-seed is planted with its own kernel — this is the self-hosting concept.
 
 ## §1 Vision

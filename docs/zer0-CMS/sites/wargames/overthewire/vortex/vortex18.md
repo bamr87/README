@@ -40,8 +40,6 @@ urandom seeds
 -------------
 Take advantage of the application's urandom dependency.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Seeding mistakes are a recurring cause of weak keys and tokens.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex17/">Level 17</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex19/">Level 19</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

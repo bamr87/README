@@ -25,7 +25,6 @@ Shared sanitized config render (T-009/T-018). Both the visible Raw-YAML tab and 
 {% endfor %}{% endcapture %}
 
 
-<!-- Quick-reference cards -->
 <div class="row g-3 mb-4">
   <div class="col-6 col-lg-3">
     <div class="card text-center h-100 border-primary">
@@ -65,7 +64,6 @@ Shared sanitized config render (T-009/T-018). Both the visible Raw-YAML tab and 
   </div>
 </div>
 
-<!-- Main tabbed interface -->
 <ul class="nav nav-tabs" id="configTabs" role="tablist">
   <li class="nav-item" role="presentation">
     <button class="nav-link active" id="tab-view" data-bs-toggle="tab" data-bs-target="#pane-view" type="button" role="tab" aria-selected="true">
@@ -91,17 +89,14 @@ Shared sanitized config render (T-009/T-018). Both the visible Raw-YAML tab and 
 
 <div class="tab-content pt-4" id="configTabContent">
 
-  <!-- ═══════ View Tab ═══════ -->
   <div class="tab-pane fade show active" id="pane-view" role="tabpanel">
     {% include components/config-viewer.html %}
   </div>
 
-  <!-- ═══════ Edit Tab ═══════ -->
   <div class="tab-pane fade" id="pane-edit" role="tabpanel">
     {% include components/config-editor.html %}
   </div>
 
-  <!-- ═══════ Raw YAML Tab ═══════ -->
   <div class="tab-pane fade" id="pane-raw" role="tabpanel">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h5 class="mb-0"><i class="bi bi-filetype-yml me-1"></i> _config.yml</h5>
@@ -112,11 +107,10 @@ Shared sanitized config render (T-009/T-018). Both the visible Raw-YAML tab and 
     <pre class="bg-dark text-light p-3 rounded" style="max-height:600px;overflow:auto;font-size:.8rem"><code id="cfg-raw-yaml">{{ cfg_sanitized }}</code></pre>
   </div>
 
-  <!-- ═══════ Quick Actions Tab ═══════ -->
   <div class="tab-pane fade" id="pane-actions" role="tabpanel">
 
     <div class="row g-4">
-      <!-- Regenerate commands -->
+
       <div class="col-lg-6">
         <div class="card h-100">
           <div class="card-header"><i class="bi bi-arrow-repeat me-1"></i> Regenerate Config</div>
@@ -146,7 +140,6 @@ Set-Content -Encoding UTF8 {{ page.config-dir }}/{{ page.config-file }} `
         </div>
       </div>
 
-      <!-- Useful shortcuts -->
       <div class="col-lg-6">
         <div class="card h-100">
           <div class="card-header"><i class="bi bi-lightning-charge me-1"></i> Shortcuts</div>
@@ -189,7 +182,6 @@ Set-Content -Encoding UTF8 {{ page.config-dir }}/{{ page.config-file }} `
         </div>
       </div>
 
-      <!-- Environment info -->
       <div class="col-12">
         <div class="card">
           <div class="card-header"><i class="bi bi-hdd-network me-1"></i> Environment</div>
@@ -238,13 +230,10 @@ Set-Content -Encoding UTF8 {{ page.config-dir }}/{{ page.config-file }} `
   </div>
 </div>
 
-<!-- Hidden full YAML used by the viewer's "Copy Full Config" button.
-     Same sanitized render as the Raw-YAML tab (see capture at page top). -->
 <pre id="cfg-full-yaml" class="d-none">{{ cfg_sanitized }}</pre>
 
-<!-- Config Utility JS (must load after DOM) -->
 <script src="{{ '/assets/js/config-utility.js' | relative_url }}" defer></script>
-<!-- Copy for Raw tab -->
+
 <script>
 document.addEventListener('DOMContentLoaded', function() { var rawCopyBtn = document.getElementById('cfg-copy-raw'); if (rawCopyBtn) {
     rawCopyBtn.addEventListener('click', function() {

@@ -4,7 +4,6 @@ source_repo: bamr87/bashcrawl
 source_url: https://github.com/bamr87/bashcrawl/blob/main/docs/amendments/README.md
 title: Amendments — bashcrawl
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — bashcrawl
 
 > The append-only log of numbered amendments to the bashcrawl constitution, and how one is proposed and ratified.

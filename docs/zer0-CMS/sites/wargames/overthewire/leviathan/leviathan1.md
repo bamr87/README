@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Tracing is a fast first step in malware analysis and debugging when you lack sou
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../leviathan0/">Level 0</a><a class="sg-index" href="../">Leviathan overview</a><a class="sg-next" href="../leviathan2/">Level 2</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

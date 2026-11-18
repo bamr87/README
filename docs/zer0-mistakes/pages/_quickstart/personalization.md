@@ -390,7 +390,7 @@ Set up privacy-friendly analytics to understand your audience.
   <div class="card-body">
     <form id="analytics-form">
       <div class="row g-3">
-        <!-- Google Analytics -->
+
         <div class="col-12">
           <h6 class="border-bottom pb-2"><i class="bi bi-google"></i> Google Analytics</h6>
         </div>
@@ -400,7 +400,6 @@ Set up privacy-friendly analytics to understand your audience.
           <div class="form-text">Google Analytics 4 measurement ID</div>
         </div>
         
-        <!-- PostHog Analytics -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-speedometer"></i> PostHog Analytics (Privacy-Friendly)</h6>
         </div>
@@ -446,7 +445,6 @@ Set up privacy-friendly analytics to understand your audience.
           </div>
         </div>
 
-        <!-- Site Verification -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-shield-check"></i> Site Verification</h6>
         </div>
@@ -478,7 +476,7 @@ Configure advanced features like comments, plugins, and build settings.
   <div class="card-body">
     <form id="advanced-form">
       <div class="row g-3">
-        <!-- Comments -->
+
         <div class="col-12">
           <h6 class="border-bottom pb-2"><i class="bi bi-chat-dots"></i> Comments (Giscus)</h6>
         </div>
@@ -500,7 +498,6 @@ Configure advanced features like comments, plugins, and build settings.
           <input type="text" class="form-control" id="cfg-giscus-category-id" placeholder="DIC_xxxxxxxxxxxx">
         </div>
 
-        <!-- Jekyll Settings -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-file-earmark-code"></i> Jekyll Build Settings</h6>
         </div>
@@ -522,7 +519,6 @@ Configure advanced features like comments, plugins, and build settings.
           </select>
         </div>
 
-        <!-- Features Toggle -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-toggles"></i> Feature Toggles</h6>
         </div>
@@ -545,7 +541,6 @@ Configure advanced features like comments, plugins, and build settings.
           </div>
         </div>
 
-        <!-- Copyright -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-c-circle"></i> Copyright</h6>
         </div>

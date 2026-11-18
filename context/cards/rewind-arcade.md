@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: dd6d28b07f6ba7c6
+source_fingerprint: 91557fe857342ad7
 tags:
 ---
 
@@ -31,7 +31,7 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~50,667 words across 76 indexed documents
+- ~51,272 words across 76 indexed documents
 - code samples in: sh, plaintext, yaml, bash, python, text, toml
 
 ## Navigation
@@ -53,7 +53,7 @@ tags:
 - [`SECURITY.md`](../../docs/rewind-arcade/SECURITY.md)
 - [`arcade/README.md`](../../docs/rewind-arcade/arcade/README.md)
 - [`emulate/docs/ml-integration-plan.md`](../../docs/rewind-arcade/emulate/docs/ml-integration-plan.md)
-- [`retro-pi/ML integration plan.md`](../../docs/rewind-arcade/retro-pi/ML integration plan.md)
+- [`arcade/AGENTS.md`](../../docs/rewind-arcade/arcade/AGENTS.md)
 
 ## Query this context
 

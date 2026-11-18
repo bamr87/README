@@ -40,8 +40,6 @@ Level 4 is a binary requiring some simple analysis / reverse engineering.
 
 Hint: Keep in mind about resource limits
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Limits and environment variables are an under-appreciated part of the attack sur
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter3/">Level 3</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter5/">Level 5</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

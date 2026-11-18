@@ -10,7 +10,6 @@ A chronological index of notable events from the year 1987. Each entry links to 
 
 ---
 
-<!-- BEGIN GENERATED: timeline — maintained by build-structure; do not edit by hand -->
 | Date | Category | Event |
 |------|----------|-------|
 | Jan 21 | Arts & Culture | [**Aretha Franklin**](arts-culture/aretha-franklin-hof.md) becomes the first woman inducted into the Rock and Roll Hall of Fame, at the ceremony at the Waldorf-Astoria Hotel in New York City. |
@@ -39,7 +38,6 @@ A chronological index of notable events from the year 1987. Each entry links to 
 | Dec 9 | History & Politics | [**First Intifada begins**](history-politics/first-intifada.md) — a Palestinian uprising against Israeli occupation erupts in Gaza and the West Bank following a fatal crash at Erez checkpoint, launching a six-year struggle that leads to the Oslo Accords. |
 | Dec 9 | Science & Technology | [**Microsoft Windows 2.0 released**](science-technology/windows-2.md) — Microsoft launches Windows 2.0 with overlapping windows, desktop icons, and a Windows/386 protected-mode variant, triggering the landmark Apple v. Microsoft "look and feel" lawsuit. |
 | Dec 29 | Society & Economics | [**FDA approves Prozac**](society-economics/prozac-fda-approval.md) — fluoxetine becomes the first SSRI approved in the United States, transforming treatment of depression and launching the SSRI era in psychiatry. |
-<!-- END GENERATED: timeline -->
 
 ---
 

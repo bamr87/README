@@ -45,8 +45,6 @@ Commands you may need to solve this level
 -----------------------------------------
 [ls](https://manpages.ubuntu.com/manpages/noble/man1/ls.1.html) , [cd](https://manpages.ubuntu.com/manpages/noble/man1/cd.1posix.html) , [cat](https://manpages.ubuntu.com/manpages/noble/man1/cat.1.html) , [file](https://manpages.ubuntu.com/manpages/noble/man1/file.1.html) , [du](https://manpages.ubuntu.com/manpages/noble/man1/du.1.html) , [find](https://manpages.ubuntu.com/manpages/noble/man1/find.1.html)
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -77,5 +75,3 @@ Forensics, malware triage and upload filters all rely on content-based identific
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit4/">Level 4</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit6/">Level 6</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

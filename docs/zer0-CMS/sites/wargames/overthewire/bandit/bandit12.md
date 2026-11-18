@@ -49,8 +49,6 @@ Helpful Reading Material
 
 [Rot13 on Wikipedia]: https://en.wikipedia.org/wiki/ROT13
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -82,5 +80,3 @@ This is the first step of Krypton, where simple ciphers like this are attacked s
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit11/">Level 11</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit13/">Level 13</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas17
     URL:      http://natas17.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Use parameterised queries, impose database query time limits, and alert on unusu
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas16/">Level 16</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas18/">Level 18</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

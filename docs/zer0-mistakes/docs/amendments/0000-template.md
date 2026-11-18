@@ -15,7 +15,6 @@ tags:
 title: Amendment Record Template
 ---
 
-<!-- kit: governance v0.1.0 · copy to NNNN-kebab-slug.md (next free number) -->
 # NNNN — Title of the amendment
 
 - **Status:** proposed

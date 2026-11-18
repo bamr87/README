@@ -67,7 +67,7 @@ scenarios**: (1) sub-agent-1 failed + checkpoint present → `retry_from_checkpo
 - ❌ `python3 scripts/validate_quest.py --quest q16` — **failed**: *"can't open file …
 scripts/validate_quest.py: [Errno 2] No such file or directory"*. The validator the quest tells the learner to run is never provided anywhere in the content.
 - 🧠 (reasoned) The `orchestrator-with-recovery.yml` block only parses as valid YAML
-**after** stripping literal `{​% raw %​}…{​% endraw %​}` tags wrapped around every `${​{ }​}`; the engine flagged that `recover-and-report` reads `needs.sub-agent-1.result` while that job sets job-level `continue-on-error: true` — a documented GHA gotcha where the result reports `success` downstream, which would silently disable failure detection.
+**after** stripping literal `{% raw %}…{% endraw %}` tags wrapped around every `${{ }}`; the engine flagged that `recover-and-report` reads `needs.sub-agent-1.result` while that job sets job-level `continue-on-error: true` — a documented GHA gotcha where the result reports `success` downstream, which would silently disable failure detection.
 
 ### 2. AI Feature Pipeline Architect — ❌ 59
 Dimensions: commands 3 · accuracy 3 · completeness 2 · clarity 3 · structure 3 · safety 4. Coverage: 14 blocks — **7 executed (6 passed, 1 failed), 3 skipped (other-OS installers), 4 reasoned.**
@@ -109,7 +109,7 @@ that job uses job-level `continue-on-error: true`; the known GHA behavior report
 - **high** · Missing scripts — `subtask.py`, `save_checkpoint.py`, `redelegate_tasks.py`
 are referenced for the "retry/backoff" and "re-delegation" objectives but never shown. *Fix:* provide them or scope the quest to assessment/compensation only. *(reasoned)*
 - **medium** · Quest Validation — `scripts/validate_quest.py` does not exist; the final step **fails outright** (tested). *Fix:* ship the script or use a manual checklist.
-- **medium** · YAML block leaks literal `{​% raw %​}`/`{​% endraw %​}` into the fenced code —
+- **medium** · YAML block leaks literal `{% raw %}`/`{% endraw %}` into the fenced code —
 a learner copying from the raw `.md` gets invalid YAML (tested: only parses after stripping). *Fix:* pre-render or escape differently.
 - **low** · Add a "before you begin" note stating the assumed `work/gh-600/scripts/` scaffold state from the prior quest. *(reasoned)*
 

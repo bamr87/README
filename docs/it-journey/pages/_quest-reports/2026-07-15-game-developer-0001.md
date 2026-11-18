@@ -61,7 +61,7 @@ All statuses below come from the sealed `walk-evidence.json` (execute mode, `moc
 ### 1. Advanced Markdown — ✅ 86 (ran 11/4 runnable; 9 passed, 2 failed, 1 skipped, 1 reasoned)
 - `passed` — Table alignment (`| :--- | :--: | ---: |`) rendered through the real `kramdown` gem: produced correct left/center/right `text-align` on `<th>/<td>`.
 - `passed` — Footnote (`[^speed]`) rendered a superscript ref + `<div class="footnotes">` block at the bottom, as described.
-- `passed` — Attribute list `{: .lead #intro }` → `<p class="lead" id="intro">`; definition list → proper `<dl><dt>/<dd>`; frontmatter parsed cleanly (PyYAML); Liquid `raw/endraw` printed literally vs. substituted `{​{ page.title }​}` correctly.
+- `passed` — Attribute list `{: .lead #intro }` → `<p class="lead" id="intro">`; definition list → proper `<dl><dt>/<dd>`; frontmatter parsed cleanly (PyYAML); Liquid `raw/endraw` printed literally vs. substituted `{{ page.title }}` correctly.
 - `failed` — Task list (`- [x]`) under kramdown's **default** input mode rendered literal `<li>[x] Learn tables</li>`, not a checkbox.
 - `failed` — Triple-backtick ```` ```python ```` fence under default kramdown parsed as an **inline code span in a `<p>`**, not a block. Both work under GFM input mode (Jekyll's default) but the quest never states that dependency.
 - `passed`/`reasoned` — Setup blocks: Linux/macOS `mkdir -p ~/md-quest && touch guide.md` ran; `code guide.md` "command not found" in headless sandbox (editor convenience, nano/vim offered). Windows PowerShell block judged by reasoning (backslash paths aren't runnable on Linux pwsh).

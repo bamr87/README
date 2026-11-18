@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas30
     URL:      http://natas30.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Use placeholders in prepared statements instead of escaping manually, and treat 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas29/">Level 29</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas31/">Level 31</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

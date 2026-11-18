@@ -311,6 +311,26 @@
    "toNode": "p-zer0-mistakes"
   },
   {
+   "fromNode": "c-architecture",
+   "id": "e-architecture-bashos",
+   "toNode": "p-bashos"
+  },
+  {
+   "fromNode": "c-architecture",
+   "id": "e-architecture-it-journey",
+   "toNode": "p-it-journey"
+  },
+  {
+   "fromNode": "c-architecture",
+   "id": "e-architecture-zer0-cms",
+   "toNode": "p-zer0-cms"
+  },
+  {
+   "fromNode": "c-architecture",
+   "id": "e-architecture-zer0-mistakes",
+   "toNode": "p-zer0-mistakes"
+  },
+  {
    "fromNode": "c-search",
    "id": "e-search-bamr87-github-io",
    "toNode": "p-bamr87-github-io"
@@ -368,26 +388,6 @@
   {
    "fromNode": "c-markdown",
    "id": "e-markdown-zer0-mistakes",
-   "toNode": "p-zer0-mistakes"
-  },
-  {
-   "fromNode": "c-architecture",
-   "id": "e-architecture-bashos",
-   "toNode": "p-bashos"
-  },
-  {
-   "fromNode": "c-architecture",
-   "id": "e-architecture-it-journey",
-   "toNode": "p-it-journey"
-  },
-  {
-   "fromNode": "c-architecture",
-   "id": "e-architecture-zer0-cms",
-   "toNode": "p-zer0-cms"
-  },
-  {
-   "fromNode": "c-architecture",
-   "id": "e-architecture-zer0-mistakes",
    "toNode": "p-zer0-mistakes"
   },
   {
@@ -884,13 +884,23 @@
   },
   {
    "color": "4",
+   "file": "brain/concepts/architecture.md",
+   "height": 60,
+   "id": "c-architecture",
+   "type": "file",
+   "width": 220,
+   "x": -768,
+   "y": -315
+  },
+  {
+   "color": "4",
    "file": "brain/concepts/search.md",
    "height": 60,
    "id": "c-search",
    "type": "file",
    "width": 220,
-   "x": -768,
-   "y": -315
+   "x": -407,
+   "y": -253
   },
   {
    "color": "4",
@@ -899,24 +909,14 @@
    "id": "c-github",
    "type": "file",
    "width": 220,
-   "x": -407,
-   "y": -253
+   "x": -490,
+   "y": -524
   },
   {
    "color": "4",
    "file": "brain/concepts/markdown.md",
    "height": 60,
    "id": "c-markdown",
-   "type": "file",
-   "width": 220,
-   "x": -490,
-   "y": -524
-  },
-  {
-   "color": "4",
-   "file": "brain/concepts/architecture.md",
-   "height": 60,
-   "id": "c-architecture",
    "type": "file",
    "width": 220,
    "x": -219,

@@ -42,8 +42,6 @@ You have found an encrypted file, decrypt it (some reversing, crypt and general 
 
 [vortex.labs.overthewire.org]: ssh://vortex.labs.overthewire.org:2228
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -75,5 +73,3 @@ Many proprietary file protections are weak. Knowing how to analyse them shows wh
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex14/">Level 14</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex16/">Level 16</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

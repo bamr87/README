@@ -33,13 +33,11 @@ Magicien informatique, architecte logiciel et passionné de technologie basé à
 
 ## Activité GitHub
 
-<!-- GitHub contribution calendar (bundled under assets/vendor/) -->
 <script src="{{ '/assets/vendor/github-calendar/github-calendar.min.js' | relative_url }}"></script>
 <link rel="stylesheet" href="{{ '/assets/vendor/github-calendar/github-calendar-responsive.css' | relative_url }}" />
 
-<!-- Prepare a container for your calendar. -->
 <div class="calendar" aria-label="GitHub contribution calendar for bamr87">
-    <!-- Loading stuff -->
+
     Chargement des données rien que pour vous.
 </div>
 

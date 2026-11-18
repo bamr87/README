@@ -33,6 +33,7 @@ from typing import Dict, List, Optional, Tuple
 
 import yaml
 
+from . import screen
 from .ai import AIError, BaseProvider
 from .config import (
     BRAIN_DIR, CHANGE_LOG_PATH, COLLECT_MANIFEST_PATH, DOCS_DIR, GENERATED_NOTICE,
@@ -195,9 +196,21 @@ def summarize_concepts(concepts: List[Concept], notes: Dict[str, Note],
             ranked = sorted(concept.members, key=lambda m: (-len(notes[m].links), m))[:20]
             pages = "\n".join(f"- {notes[m].title} ({titles.get(notes[m].project, notes[m].project)})"
                               f": {notes[m].summary}" for m in ranked)
+            # The pages are untrusted upstream text: screen what goes into the
+            # prompt and what comes back, as cards and the apex do (screen.py).
+            blocked = screen.screen_text(pages)
+            if blocked:
+                print(f"[screen] concept {concept.slug}: {', '.join(blocked)} in its pages, "
+                      "keeping heuristic text")
+                concept.summary = _heuristic_summary(concept, notes, titles)
+                continue
             try:
                 text = ai.complete(CONCEPT_PROMPT.format(title=concept.title, pages=pages),
                                    max_tokens=400)
+                problem = (", ".join(screen.screen_text(text))
+                           or screen.completion_problem(text, pages))
+                if problem:
+                    raise AIError(f"completion rejected by the screen: {problem}")
             except AIError as exc:
                 print(f"[brain] AI summary skipped for {concept.slug}: {exc}")
                 if "budget exhausted" in str(exc):
@@ -205,7 +218,8 @@ def summarize_concepts(concepts: List[Concept], notes: Dict[str, Note],
                     # apex, which run after this: stop asking.
                     budget = spent
             else:
-                entry = cache[concept.slug] = {"members": print_key, "text": text.strip(),
+                entry = cache[concept.slug] = {"members": print_key,
+                                               "text": screen.one_paragraph(text),
                                                "model": ai.model}
                 spent += 1
         concept.summary = entry["text"] if entry else _heuristic_summary(concept, notes, titles)

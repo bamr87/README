@@ -9,7 +9,7 @@ nav_exclude: true
 
 # GitHub AI - content map
 
-Every published page in [`docs/githubai/`](../githubai/) as it appears in the sidebar: **48 pages** across **10 sections** (max depth 4).
+Every published page in [`docs/githubai/`](../githubai/) as it appears in the sidebar: **54 pages** across **10 sections** (max depth 4).
 
 - [GitHubAI — the Claude Code SDLC framework](../githubai/README.md)
 - [Changelog](../githubai/CHANGELOG.md)
@@ -17,7 +17,8 @@ Every published page in [`docs/githubai/`](../githubai/) as it appears in the si
 - [githubai (CLAUDE)](../githubai/CLAUDE.md)
 - [githubai tools](../githubai/tools/README.md)
 - [Repo-type profiles](../githubai/profiles/README.md)
-- **[Documentation](../githubai/docs/README.md)** <small>(17)</small>
+- [Security Policy](../githubai/SECURITY.md)
+- **[Documentation](../githubai/docs/README.md)** <small>(22)</small>
   - [githubai documentation](../githubai/docs/README.md)
   - [Architecture](../githubai/docs/architecture.md)
   - [Configuration reference](../githubai/docs/configuration.md)
@@ -27,13 +28,18 @@ Every published page in [`docs/githubai/`](../githubai/) as it appears in the si
   - [Migrating from GitHubAI v0.x](../githubai/docs/migration-v0.md)
   - [Security model](../githubai/docs/security.md)
   - [Workflow reference](../githubai/docs/workflows.md)
-  - **[Amendments — githubai](../githubai/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — githubai](../githubai/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — githubai](../githubai/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../githubai/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../githubai/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../githubai/docs/amendments/0000-template.md)
-  - **[Architecture Decision Records](../githubai/docs/adr/README.md)** <small>(3)</small>
+  - **[Architecture Decision Records](../githubai/docs/adr/README.md)** <small>(7)</small>
     - [Architecture Decision Records](../githubai/docs/adr/README.md)
     - [ADR 0001 — Record architecture decisions](../githubai/docs/adr/0001-record-architecture-decisions.md)
+    - [ADR 0002 — Routing parity between Actions mode and app mode](../githubai/docs/adr/0002-relay-routing-parity.md)
+    - [ADR 0003 — Org policy is subtractive and keeps the last document that…](../githubai/docs/adr/0003-subtractive-org-policy.md)
+    - [ADR 0004 — A zero-dependency relay with its own YAML subset parser](../githubai/docs/adr/0004-zero-dependency-relay.md)
+    - [ADR 0005 — Layered config: base, then profile, then repository](../githubai/docs/adr/0005-layered-config-merge.md)
     - [ADR NNNN — Title in sentence case](../githubai/docs/adr/0000-template.md)
   - **Reference** <small>(2)</small>
     - [Label taxonomy](../githubai/docs/reference/labels.md)

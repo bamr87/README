@@ -46,8 +46,6 @@ Data for the levels can be found in **/formulaone/**.
 
 *The source code for the first level can be accessed by logging in to a wargame hosted on the same server. Your first task is figuring out which wargame that is.*
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -94,5 +92,3 @@ Everything here is for the wargame servers. Do not attack other systems, and do 
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="formulaone0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

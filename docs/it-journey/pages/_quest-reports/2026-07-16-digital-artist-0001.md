@@ -65,7 +65,7 @@ All command outcomes below come verbatim from the sealed `walk-evidence.json` (e
 ### 1. GitHub Pages Basics — 82 / pass · ran 9/7 runnable snippets (9 passed, 0 failed, 1 skipped, 3 reasoned)
 - `git init && git add . && git commit -m "Initial site"` on a real `jekyll new` scaffold → **passed** (7 files committed, exit 0).
 - `_config.yml` `url`/`baseurl` + `bundle exec jekyll build --baseurl "/my-castle"` → **passed**: every href in `_site/index.html` correctly prefixed `/my-castle/…`, confirming `relative_url`/baseurl mechanics.
-- `JEKYLL_ENV=production bundle exec jekyll build` with `{​% if jekyll.environment == "production" %​}{​% include analytics.html %​}{​% endif %​}` → **passed**: include absent from dev build, present in production build (verified end-to-end with a real `_includes/analytics.html`).
+- `JEKYLL_ENV=production bundle exec jekyll build` with `{% if jekyll.environment == "production" %}{% include analytics.html %}{% endif %}` → **passed**: include absent from dev build, present in production build (verified end-to-end with a real `_includes/analytics.html`).
 - `gh api -X POST repos/:owner/my-castle/pages …` → **passed**: `:owner` placeholder verified to resolve to the repo owner (401 on fake token, i.e. syntactically/semantically correct).
 - `gh repo create --public --source=. --push` flags all validated against `--help`.
 - **skipped**: Windows PowerShell block (no PowerShell on Linux sandbox). **reasoned**: macOS `brew install gh`, the DNS A/CNAME tables. `gh auth login` / actual publish → untested (needs real GitHub credentials — inherent, not a defect).
@@ -116,7 +116,7 @@ Every item below is either engine-observed (cites a recorded command result) or,
 
 **Reasoned-only (no execute evidence — quests the engine could not score)**
 - **[YAML Configuration] · uncovered** — no engine evidence (max_turns). Static read: the quest is well-structured (syntax → front matter/`_config.yml` → data files/pitfalls → production config) and its Chapter 4 plugin list **does** include `jekyll-remote-theme` (line 415) — which is exactly the plugin whose absence made Jekyll Fundamentals' `remote_theme` no-op. Its commands (`yamllint`, `--config` layering, `strict_front_matter: true`) look runnable but were **not verified this session**. Needs a re-run with a higher turn budget.
-- **[Liquid Templating] · uncovered** — no engine evidence (max_turns + a serve-binding permission denial). Static read: Chapter 2's "New" badge snippet uses `{​% elsif post.date > site.time | date: "%s" | minus: 604800 %​}` — a date-vs-string comparison whose correctness I **could not** verify without running it; a real learner could plausibly hit a type mismatch here. Flag for a targeted re-run.
+- **[Liquid Templating] · uncovered** — no engine evidence (max_turns + a serve-binding permission denial). Static read: Chapter 2's "New" badge snippet uses `{% elsif post.date > site.time | date: "%s" | minus: 604800 %}` — a date-vs-string comparison whose correctness I **could not** verify without running it; a real learner could plausibly hit a type mismatch here. Flag for a targeted re-run.
 
 ## 🔗 Chain Continuity
 

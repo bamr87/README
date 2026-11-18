@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Unsafe use of `system()` and relative commands in setuid programs is a long-stan
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../behemoth1/">Level 1</a><a class="sg-index" href="../">Behemoth overview</a><a class="sg-next" href="../behemoth3/">Level 3</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

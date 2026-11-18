@@ -46,8 +46,6 @@ There are two challenges for this level. One is to work out the password for the
 
 [vortex.labs.overthewire.org]: ssh://vortex.labs.overthewire.org:2228
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -69,5 +67,3 @@ The page keeps its description for historical reasons. It describes two challeng
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex24/">Level 24</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex26/">Level 26</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

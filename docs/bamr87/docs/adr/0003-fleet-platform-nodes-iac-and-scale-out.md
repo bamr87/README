@@ -14,8 +14,6 @@ title: 'ADR 0003 — The fleet platform: workloads placed across nodes, OpenTofu
 - **Related**: [docs/PLATFORM.md](../PLATFORM.md), [docs/FORGE-HOST.md](../FORGE-HOST.md), [docs/CONTAINERS.md](../CONTAINERS.md), [docs/OBSERVABILITY.md](../OBSERVABILITY.md), roadmap `FF-0035`, the proposed amendment `container-management` (#591, backlog #590), #512 (declarative repo settings), [ADR 0002](0002-agent-step-specs-and-local-runner.md) (the local loop runner), #593 (the console's git-status saturation)
 - **Tracking**: #594
 
-<!-- Accepted in and Completed are added by the post-merge ratify job when the maintainer merges this ADR's PR and when the maintainer closes the Tracking issue as completed (docs/adr/README.md#lifecycle). Never write them by hand. A PR that adds or changes an ADR is gated (constitution § 12.3). -->
-
 ## Context
 
 ### Needs assessment

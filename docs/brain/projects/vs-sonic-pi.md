@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 117
+pages: 118
 repo: bamr87/vs-sonic-pi
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: VS Sonic Pi
 > [!info] tooling: `bamr87/vs-sonic-pi`
 > VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control.
 
-**117** pages collected from commit `ebd621fd894f` (2026-10-27).
+**118** pages collected from commit `b105cda8fbe2` (2026-11-18).
 
 ## Most connected pages
 

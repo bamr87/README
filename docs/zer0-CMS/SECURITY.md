@@ -4,8 +4,6 @@ source_repo: bamr87/zer0-CMS
 source_url: https://github.com/bamr87/zer0-CMS/blob/main/SECURITY.md
 title: Security Policy
 ---
-<!-- kit: community v0.1.0 · the fleet default SECURITY policy (UPS-REPO-14), with this repository's scope added. -->
-
 # Security Policy
 
 ## Supported versions

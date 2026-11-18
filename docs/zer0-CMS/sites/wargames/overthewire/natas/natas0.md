@@ -40,8 +40,6 @@ toc_sticky: true
     Password: natas0
     URL:      http://natas0.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Never put secrets, credentials or internal notes in HTML, comments or JavaScript
 <nav class="sg-nav" aria-label="Level navigation"><span></span><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas1/">Level 1</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

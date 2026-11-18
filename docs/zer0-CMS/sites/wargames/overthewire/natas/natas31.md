@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas31
     URL:      http://natas31.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Use the safe double-diamond form, avoid reading from user-supplied names, and te
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas30/">Level 30</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas32/">Level 32</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

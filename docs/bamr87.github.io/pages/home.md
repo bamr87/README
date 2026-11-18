@@ -39,8 +39,6 @@ From zero to hero collection of docs, tools, scripts, walk-through, and informat
 
 ### Zer0 to Her0 Quest
 
-<!-- TODO: Need story line  -->
-
 1. Prologue - Init Hello World
    1. Who are you and what do you want?
    2. Are you willing to put in the time and effort to become a full-stack developer?

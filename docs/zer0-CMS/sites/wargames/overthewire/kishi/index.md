@@ -58,8 +58,6 @@ To start the game, visit Kishi's web server on port 80 (or port 6680 of the host
 [Vagrant]: https://www.vagrantup.com/
 [vagrantcloud]: https://atlas.hashicorp.com/StevenVanAcker/boxes/kishi
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -102,5 +100,3 @@ Kishi runs several LXC containers internally, which you can inspect from the hos
 Kishi suits players comfortable with Linux administration, networking and web security who want a scenario with several hosts.
 
 </section>
-
-<!-- study-guide:end -->

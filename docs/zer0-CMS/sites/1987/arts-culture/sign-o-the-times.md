@@ -32,7 +32,6 @@ The album's title track directly addressed the AIDS epidemic, gang violence, and
 - [Sign 'O' the Times — Wikipedia](https://en.wikipedia.org/wiki/Sign_o'_the_Times)
 - [Celebrating 30 Years of Prince's *Sign 'O' the Times* — Albumism](https://albumism.com/features/tribute-celebrating-30-years-of-prince-sign-o-the-times)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [U2's *The Joshua Tree* (March 9, 1987)](the-joshua-tree.md) — released three weeks before *Sign 'O' the Times*; *The Joshua Tree* beat Prince's album for the 1988 Grammy Album of the Year.
@@ -41,4 +40,3 @@ The album's title track directly addressed the AIDS epidemic, gang violence, and
 - [*Full Metal Jacket* (1987)](full-metal-jacket.md) — Stanley Kubrick's Vietnam War film, another major cultural release of the same year.
 - [Black Monday (October 19, 1987)](../society-economics/black-monday.md) — the defining economic shock of 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

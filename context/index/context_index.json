@@ -12,13 +12,13 @@
       "repo": "bamr87/scripts",
       "kind": "tooling",
       "status": "active",
-      "corpus_files": 24,
-      "fingerprint": "67431c0fe95b69aa",
+      "corpus_files": 25,
+      "fingerprint": "f56fcec418d34434",
       "card": "context/cards/scripts.md",
       "facts": "context/facts/scripts.json",
       "nav": "context/nav/scripts.json",
       "browse": "docs/browse/scripts.md",
-      "nav_pages": 24,
+      "nav_pages": 25,
       "nav_sections": 5
     },
     "bashcrawl": {
@@ -26,7 +26,7 @@
       "kind": "game",
       "status": "active",
       "corpus_files": 80,
-      "fingerprint": "239df1ff2a84c7e0",
+      "fingerprint": "7069df8053a84eae",
       "card": "context/cards/bashcrawl.md",
       "facts": "context/facts/bashcrawl.json",
       "nav": "context/nav/bashcrawl.json",
@@ -38,21 +38,21 @@
       "repo": "bamr87/zer0-mistakes",
       "kind": "theme",
       "status": "active",
-      "corpus_files": 557,
-      "fingerprint": "d4f5934d7a2a1dc3",
+      "corpus_files": 560,
+      "fingerprint": "45a04cbeea3f4f3d",
       "card": "context/cards/zer0-mistakes.md",
       "facts": "context/facts/zer0-mistakes.json",
       "nav": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
-      "nav_pages": 555,
-      "nav_sections": 94
+      "nav_pages": 558,
+      "nav_sections": 95
     },
     "it-journey": {
       "repo": "bamr87/it-journey",
       "kind": "site",
       "status": "active",
       "corpus_files": 557,
-      "fingerprint": "5881c785703c9b8d",
+      "fingerprint": "2136ab5913a9bfb5",
       "card": "context/cards/it-journey.md",
       "facts": "context/facts/it-journey.json",
       "nav": "context/nav/it-journey.json",
@@ -77,21 +77,21 @@
       "repo": "bamr87/bamr87",
       "kind": "hub",
       "status": "active",
-      "corpus_files": 259,
-      "fingerprint": "cc681bf3a9e4e2a4",
+      "corpus_files": 275,
+      "fingerprint": "cd8a0f015977f041",
       "card": "context/cards/bamr87.md",
       "facts": "context/facts/bamr87.json",
       "nav": "context/nav/bamr87.json",
       "browse": "docs/browse/bamr87.md",
-      "nav_pages": 259,
-      "nav_sections": 38
+      "nav_pages": 275,
+      "nav_sections": 40
     },
     "bamr87.github.io": {
       "repo": "bamr87/bamr87.github.io",
       "kind": "site",
       "status": "active",
       "corpus_files": 94,
-      "fingerprint": "73aa80ba8cdc6a5e",
+      "fingerprint": "8137a02af1b58038",
       "card": "context/cards/bamr87.github.io.md",
       "facts": "context/facts/bamr87.github.io.json",
       "nav": "context/nav/bamr87.github.io.json",
@@ -104,7 +104,7 @@
       "kind": "tooling",
       "status": "active",
       "corpus_files": 80,
-      "fingerprint": "c20b1fc971afef9e",
+      "fingerprint": "fd132b1a44c3413f",
       "card": "context/cards/bashos.md",
       "facts": "context/facts/bashos.json",
       "nav": "context/nav/bashos.json",
@@ -117,7 +117,7 @@
       "kind": "app",
       "status": "active",
       "corpus_files": 32,
-      "fingerprint": "710e6dd71da23388",
+      "fingerprint": "f42103c83059fd65",
       "card": "context/cards/cv-pro.md",
       "facts": "context/facts/cv-pro.json",
       "nav": "context/nav/cv-pro.json",
@@ -129,13 +129,13 @@
       "repo": "bamr87/djangoerp",
       "kind": "app",
       "status": "active",
-      "corpus_files": 17,
-      "fingerprint": "226e4b5bb0231db9",
+      "corpus_files": 18,
+      "fingerprint": "ccdec8237bb56238",
       "card": "context/cards/djangoerp.md",
       "facts": "context/facts/djangoerp.json",
       "nav": "context/nav/djangoerp.json",
       "browse": "docs/browse/djangoerp.md",
-      "nav_pages": 17,
+      "nav_pages": 18,
       "nav_sections": 3
     },
     "fredgar-ai": {
@@ -143,7 +143,7 @@
       "kind": "app",
       "status": "active",
       "corpus_files": 38,
-      "fingerprint": "2e3ddb33eb463bce",
+      "fingerprint": "c93bf0fe864f66a2",
       "card": "context/cards/fredgar-ai.md",
       "facts": "context/facts/fredgar-ai.json",
       "nav": "context/nav/fredgar-ai.json",
@@ -155,52 +155,52 @@
       "repo": "bamr87/githubai",
       "kind": "tooling",
       "status": "active",
-      "corpus_files": 48,
-      "fingerprint": "a06ecea87af29928",
+      "corpus_files": 54,
+      "fingerprint": "a99be7120c07c1ad",
       "card": "context/cards/githubai.md",
       "facts": "context/facts/githubai.json",
       "nav": "context/nav/githubai.json",
       "browse": "docs/browse/githubai.md",
-      "nav_pages": 48,
+      "nav_pages": 54,
       "nav_sections": 10
     },
     "gitorio": {
       "repo": "bamr87/gitorio",
       "kind": "app",
       "status": "active",
-      "corpus_files": 144,
-      "fingerprint": "48a34571452a3edb",
+      "corpus_files": 145,
+      "fingerprint": "34de0367b060090d",
       "card": "context/cards/gitorio.md",
       "facts": "context/facts/gitorio.json",
       "nav": "context/nav/gitorio.json",
       "browse": "docs/browse/gitorio.md",
-      "nav_pages": 144,
+      "nav_pages": 145,
       "nav_sections": 37
     },
     "godotgo": {
       "repo": "bamr87/godotgo",
       "kind": "game",
       "status": "active",
-      "corpus_files": 30,
-      "fingerprint": "eabd1736bd67db3e",
+      "corpus_files": 31,
+      "fingerprint": "2d6d3056428aa8b1",
       "card": "context/cards/godotgo.md",
       "facts": "context/facts/godotgo.json",
       "nav": "context/nav/godotgo.json",
       "browse": "docs/browse/godotgo.md",
-      "nav_pages": 30,
+      "nav_pages": 31,
       "nav_sections": 6
     },
     "law-ai": {
       "repo": "bamr87/law-ai",
       "kind": "app",
       "status": "active",
-      "corpus_files": 300,
-      "fingerprint": "7e3c333701a10cc0",
+      "corpus_files": 301,
+      "fingerprint": "4d59a9bc401ffa12",
       "card": "context/cards/law-ai.md",
       "facts": "context/facts/law-ai.json",
       "nav": "context/nav/law-ai.json",
       "browse": "docs/browse/law-ai.md",
-      "nav_pages": 300,
+      "nav_pages": 301,
       "nav_sections": 74
     },
     "lifehacker.dev": {
@@ -208,7 +208,7 @@
       "kind": "site",
       "status": "active",
       "corpus_files": 138,
-      "fingerprint": "7a05b21d4b2fcb21",
+      "fingerprint": "f6bbfee6027e0701",
       "card": "context/cards/lifehacker.dev.md",
       "facts": "context/facts/lifehacker.dev.json",
       "nav": "context/nav/lifehacker.dev.json",
@@ -220,26 +220,26 @@
       "repo": "bamr87/ocrmd",
       "kind": "tooling",
       "status": "active",
-      "corpus_files": 25,
-      "fingerprint": "7b6a0069fd8d54c3",
+      "corpus_files": 26,
+      "fingerprint": "80e60cd0271c44ff",
       "card": "context/cards/ocrmd.md",
       "facts": "context/facts/ocrmd.json",
       "nav": "context/nav/ocrmd.json",
       "browse": "docs/browse/ocrmd.md",
-      "nav_pages": 25,
+      "nav_pages": 26,
       "nav_sections": 4
     },
     "outbox": {
       "repo": "bamr87/outbox",
       "kind": "tooling",
       "status": "active",
-      "corpus_files": 21,
-      "fingerprint": "5db8f0a3896e7858",
+      "corpus_files": 22,
+      "fingerprint": "5ca2d367be15780a",
       "card": "context/cards/outbox.md",
       "facts": "context/facts/outbox.json",
       "nav": "context/nav/outbox.json",
       "browse": "docs/browse/outbox.md",
-      "nav_pages": 21,
+      "nav_pages": 22,
       "nav_sections": 4
     },
     "rewind-arcade": {
@@ -247,7 +247,7 @@
       "kind": "game",
       "status": "active",
       "corpus_files": 76,
-      "fingerprint": "dd6d28b07f6ba7c6",
+      "fingerprint": "91557fe857342ad7",
       "card": "context/cards/rewind-arcade.md",
       "facts": "context/facts/rewind-arcade.json",
       "nav": "context/nav/rewind-arcade.json",
@@ -260,7 +260,7 @@
       "kind": "tooling",
       "status": "active",
       "corpus_files": 36,
-      "fingerprint": "a730b9464b43dd5f",
+      "fingerprint": "79e4c2bf12f67b7f",
       "card": "context/cards/SCHEMA.md",
       "facts": "context/facts/SCHEMA.json",
       "nav": "context/nav/SCHEMA.json",
@@ -272,26 +272,26 @@
       "repo": "bamr87/vs-sonic-pi",
       "kind": "tooling",
       "status": "active",
-      "corpus_files": 117,
-      "fingerprint": "0c8eb2e3394510f0",
+      "corpus_files": 118,
+      "fingerprint": "e68e32b938d92812",
       "card": "context/cards/vs-sonic-pi.md",
       "facts": "context/facts/vs-sonic-pi.json",
       "nav": "context/nav/vs-sonic-pi.json",
       "browse": "docs/browse/vs-sonic-pi.md",
-      "nav_pages": 117,
+      "nav_pages": 118,
       "nav_sections": 6
     },
     "zer0-CMS": {
       "repo": "bamr87/zer0-CMS",
       "kind": "app",
       "status": "active",
-      "corpus_files": 1205,
-      "fingerprint": "3e5cfb0bc89bb299",
+      "corpus_files": 1207,
+      "fingerprint": "e19001884a5a20c7",
       "card": "context/cards/zer0-CMS.md",
       "facts": "context/facts/zer0-CMS.json",
       "nav": "context/nav/zer0-CMS.json",
       "browse": "docs/browse/zer0-CMS.md",
-      "nav_pages": 1199,
+      "nav_pages": 1201,
       "nav_sections": 181
     },
     "zpl-viewer": {
@@ -299,7 +299,7 @@
       "kind": "tooling",
       "status": "active",
       "corpus_files": 19,
-      "fingerprint": "d74b2c8feff6377b",
+      "fingerprint": "517c59a43aa02862",
       "card": "context/cards/zpl-viewer.md",
       "facts": "context/facts/zpl-viewer.json",
       "nav": "context/nav/zpl-viewer.json",
@@ -355,7 +355,7 @@
       "path": "context/nav/zer0-mistakes.json",
       "title": "Zer0 Mistakes navigation",
       "project": "zer0-mistakes",
-      "summary": "555 pages in 94 sections",
+      "summary": "558 pages in 95 sections",
       "browse": "docs/browse/zer0-mistakes.md"
     },
     {
@@ -421,7 +421,7 @@
       "path": "context/nav/scripts.json",
       "title": "Scripts navigation",
       "project": "scripts",
-      "summary": "24 pages in 5 sections",
+      "summary": "25 pages in 5 sections",
       "browse": "docs/browse/scripts.md"
     },
     {
@@ -430,7 +430,7 @@
       "path": "context/cards/scripts.md",
       "title": "\ud83d\udee0\ufe0f scripts",
       "project": "scripts",
-      "summary": "Standalone Bash utilities for project scaffolding, GitHub repository management and multi-repo maintenance.",
+      "summary": "scripts' direction is to become the ultimate open home for all things project and repository automation: data, tools, resources and transparency, with standalone Bash utilities for scaffolding, GitHub management and multi-repo maintenance, for everyone (constitution \u00a71).",
       "kind": "tooling",
       "topics": [
         "automation",
@@ -487,7 +487,7 @@
       "path": "context/nav/bamr87.json",
       "title": "Fleet Hub navigation",
       "project": "bamr87",
-      "summary": "259 pages in 38 sections",
+      "summary": "275 pages in 40 sections",
       "browse": "docs/browse/bamr87.md"
     },
     {
@@ -603,7 +603,7 @@
       "path": "context/nav/djangoerp.json",
       "title": "Django ERP navigation",
       "project": "djangoerp",
-      "summary": "17 pages in 3 sections",
+      "summary": "18 pages in 3 sections",
       "browse": "docs/browse/djangoerp.md"
     },
     {
@@ -612,7 +612,7 @@
       "path": "context/cards/djangoerp.md",
       "title": "DjangoERP",
       "project": "djangoerp",
-      "summary": "Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning.",
+      "summary": "Django ERP's direction is to become the ultimate open home for all things enterprise resource planning: data, tools, resources and transparency, with a double-entry core, modular order-to-cash, procure-to-pay and make-to-stock flows, and an inspectable API for everyone (constitution \u00a71).",
       "kind": "app",
       "topics": [],
       "key_docs": [
@@ -661,7 +661,7 @@
       "path": "context/nav/githubai.json",
       "title": "GitHub AI navigation",
       "project": "githubai",
-      "summary": "48 pages in 10 sections",
+      "summary": "54 pages in 10 sections",
       "browse": "docs/browse/githubai.md"
     },
     {
@@ -670,7 +670,7 @@
       "path": "context/cards/githubai.md",
       "title": "GitHubAI \u2014 the Claude Code SDLC framework",
       "project": "githubai",
-      "summary": "Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases.",
+      "summary": "GitHubAI's direction is to become the ultimate open home for all things AI-assisted software delivery: data, tools, resources and transparency, with an installable Claude Code SDLC loop, reviewable workflows and maintainer-held authorization for everyone (constitution \u00a71).",
       "kind": "tooling",
       "topics": [],
       "key_docs": [
@@ -678,10 +678,10 @@
         "docs/githubai/CLAUDE.md",
         "docs/githubai/AGENTS.md",
         "docs/githubai/CHANGELOG.md",
+        "docs/githubai/SECURITY.md",
         "docs/githubai/ai-seed/docs/ARCHITECTURE.md",
         "docs/githubai/ai-seed/docs/PATTERNS.md",
-        "docs/githubai/ai-seed/README.md",
-        "docs/githubai/ai-seed/CONCEPT.md"
+        "docs/githubai/ai-seed/README.md"
       ]
     },
     {
@@ -690,7 +690,7 @@
       "path": "context/nav/gitorio.json",
       "title": "Gitorio navigation",
       "project": "gitorio",
-      "summary": "144 pages in 37 sections",
+      "summary": "145 pages in 37 sections",
       "browse": "docs/browse/gitorio.md"
     },
     {
@@ -699,7 +699,7 @@
       "path": "context/cards/gitorio.md",
       "title": "\u2699 GitFactory",
       "project": "gitorio",
-      "summary": "Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude Code.",
+      "summary": "GitFactory's direction is to become the ultimate open home for all things GitHub automation: data, tools, resources and transparency, with visual blueprints that compile to auditable Actions workflows, a confirm-gated Harness Studio, and inspectable source for everyone (constitution \u00a71).",
       "kind": "app",
       "topics": [],
       "key_docs": [
@@ -719,7 +719,7 @@
       "path": "context/nav/godotgo.json",
       "title": "GodotGo navigation",
       "project": "godotgo",
-      "summary": "30 pages in 6 sections",
+      "summary": "31 pages in 6 sections",
       "browse": "docs/browse/godotgo.md"
     },
     {
@@ -728,7 +728,7 @@
       "path": "context/cards/godotgo.md",
       "title": "GodotGo",
       "project": "godotgo",
-      "summary": "Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same.",
+      "summary": "GodotGo's direction is to become the ultimate open home for all things Godot game-making: data, tools, resources and transparency, with one reusable framework, identical tooling for every game, and an agent-ready build-and-test loop for everyone (constitution \u00a71).",
       "kind": "game",
       "topics": [],
       "key_docs": [
@@ -748,7 +748,7 @@
       "path": "context/nav/law-ai.json",
       "title": "Law AI navigation",
       "project": "law-ai",
-      "summary": "300 pages in 74 sections",
+      "summary": "301 pages in 74 sections",
       "browse": "docs/browse/law-ai.md"
     },
     {
@@ -757,7 +757,7 @@
       "path": "context/cards/law-ai.md",
       "title": "Law AI",
       "project": "law-ai",
-      "summary": "An open legal-intelligence platform for prospective law students, current law students and practicing lawyers: LSAT preparation, guided legal study, and legal analysis grounded in a citation knowledge graph \u2014 with provenance on every answer and a human in the loop where it matters.",
+      "summary": "Law AI's direction is to become the ultimate open home for all things legal: data, tools, resources and transparency, with queryable and auditable case law and statutes, a citation knowledge graph, cited AI, LSAT and legal study, and API-first access for everyone (constitution \u00a71).",
       "kind": "app",
       "topics": [],
       "key_docs": [
@@ -768,7 +768,7 @@
         "docs/law-ai/SECURITY.md",
         "docs/law-ai/BACKLOG.md",
         "docs/law-ai/specs/052-backlog-zero/tasks.md",
-        "docs/law-ai/docs/data-model.md"
+        "docs/law-ai/docs/prd.md"
       ]
     },
     {
@@ -806,7 +806,7 @@
       "path": "context/nav/ocrmd.json",
       "title": "OCRmd navigation",
       "project": "ocrmd",
-      "summary": "25 pages in 4 sections",
+      "summary": "26 pages in 4 sections",
       "browse": "docs/browse/ocrmd.md"
     },
     {
@@ -823,10 +823,10 @@
         "docs/ocrmd/CLAUDE.md",
         "docs/ocrmd/AGENTS.md",
         "docs/ocrmd/CHANGELOG.md",
+        "docs/ocrmd/SECURITY.md",
         "docs/ocrmd/docs/ARCHITECTURE.md",
         "docs/ocrmd/docs/reference/cli.md",
-        "docs/ocrmd/docs/scanning.md",
-        "docs/ocrmd/docs/reference/settings.md"
+        "docs/ocrmd/docs/scanning.md"
       ]
     },
     {
@@ -835,7 +835,7 @@
       "path": "context/nav/outbox.json",
       "title": "Outbox navigation",
       "project": "outbox",
-      "summary": "21 pages in 4 sections",
+      "summary": "22 pages in 4 sections",
       "browse": "docs/browse/outbox.md"
     },
     {
@@ -853,9 +853,9 @@
         "docs/outbox/CLAUDE.md",
         "docs/outbox/AGENTS.md",
         "docs/outbox/CHANGELOG.md",
+        "docs/outbox/SECURITY.md",
         "docs/outbox/e2e/README.md",
-        "docs/outbox/docs/constitution.md",
-        "docs/outbox/PRD.md"
+        "docs/outbox/docs/constitution.md"
       ]
     },
     {
@@ -884,7 +884,7 @@
         "docs/rewind-arcade/SECURITY.md",
         "docs/rewind-arcade/arcade/README.md",
         "docs/rewind-arcade/emulate/docs/ml-integration-plan.md",
-        "docs/rewind-arcade/retro-pi/ML integration plan.md"
+        "docs/rewind-arcade/arcade/AGENTS.md"
       ]
     },
     {
@@ -922,7 +922,7 @@
       "path": "context/nav/vs-sonic-pi.json",
       "title": "VS Sonic Pi navigation",
       "project": "vs-sonic-pi",
-      "summary": "117 pages in 6 sections",
+      "summary": "118 pages in 6 sections",
       "browse": "docs/browse/vs-sonic-pi.md"
     },
     {
@@ -931,7 +931,7 @@
       "path": "context/cards/vs-sonic-pi.md",
       "title": "Sonic Pi for VS Code",
       "project": "vs-sonic-pi",
-      "summary": "VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control.",
+      "summary": "VS Sonic Pi's direction is to become the ultimate open home for all things Sonic Pi in the editor: data, tools, resources and transparency, with live-coding in VS Code, OSC control of the Sonic Pi server, and open teaching tools for everyone (constitution \u00a71).",
       "kind": "tooling",
       "topics": [],
       "key_docs": [
@@ -951,7 +951,7 @@
       "path": "context/nav/zer0-CMS.json",
       "title": "Zer0 CMS navigation",
       "project": "zer0-CMS",
-      "summary": "1199 pages in 181 sections",
+      "summary": "1201 pages in 181 sections",
       "browse": "docs/browse/zer0-CMS.md"
     },
     {
@@ -960,7 +960,7 @@
       "path": "context/cards/zer0-CMS.md",
       "title": "zer0-CMS",
       "project": "zer0-CMS",
-      "summary": "An agent-native CMS for markdown sites: one Python platform (Django, with Wagtail as a headless library), a React studio and site renderer, and a VS Code extension with the studio's capabilities \u2014 publishing only through a gate a human has to walk through.",
+      "summary": "zer0-CMS's direction is to become the ultimate open home for all things markdown site operations: data, tools, resources and transparency, with a governed studio, a human publish gate, and agent-declared effects, for everyone (constitution \u00a71).",
       "kind": "app",
       "topics": [],
       "key_docs": [
@@ -1300,15 +1300,6 @@
       "card:law-ai": 1,
       "nav:law-ai": 1
     },
-    "059": {
-      "card:ocrmd": 1
-    },
-    "087": {
-      "card:zpl-viewer": 1
-    },
-    "0c8eb2e3394510f0": {
-      "card:vs-sonic-pi": 2
-    },
     "1.0": {
       "card:OverTheWire-website": 1,
       "card:SCHEMA": 1,
@@ -1368,6 +1359,9 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
+    "100926": {
+      "card:djangoerp": 1
+    },
     "1010": {
       "card:it-journey": 1,
       "nav:it-journey": 1
@@ -1376,14 +1370,20 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "1035533": {
+    "1035107": {
       "card:it-journey": 1
     },
-    "1038322": {
+    "1037099": {
       "card:bamr87.github.io": 1
     },
-    "1051245": {
+    "1061977": {
       "card:gitorio": 1
+    },
+    "107": {
+      "card:it-journey": 1
+    },
+    "10819": {
+      "card:zpl-viewer": 1
     },
     "1100": {
       "card:it-journey": 1,
@@ -1393,9 +1393,6 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "11087": {
-      "card:zpl-viewer": 1
-    },
     "1110": {
       "card:it-journey": 1,
       "nav:it-journey": 1
@@ -1404,79 +1401,79 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "11188": {
-      "card:djangoerp": 1
-    },
-    "116053": {
-      "card:scripts": 1
-    },
-    "117": {
+    "118": {
       "apex": 3,
       "card:vs-sonic-pi": 7
     },
-    "1199": {
+    "1201": {
       "apex": 1,
       "card:zer0-CMS": 2
     },
-    "1205": {
+    "1207": {
       "apex": 2,
       "card:zer0-CMS": 5
     },
-    "1269183": {
+    "123028": {
+      "card:scripts": 1
+    },
+    "1268491": {
       "card:lifehacker.dev": 1
     },
-    "127090": {
+    "127247": {
       "card:cv-pro": 1
     },
-    "1312b35ba279a08d": {
-      "card:scripts": 1
+    "13295": {
+      "card:djangoerp": 1
+    },
+    "13661": {
+      "card:SCHEMA": 1
     },
     "137": {
       "apex": 1,
       "card:lifehacker.dev": 2
     },
-    "137657": {
-      "card:godotgo": 1
-    },
     "138": {
       "apex": 2,
       "card:lifehacker.dev": 5
     },
-    "13870": {
-      "card:SCHEMA": 1
-    },
     "142": {
       "card:bamr87.github.io": 1
     },
-    "142866": {
+    "142670": {
       "card:bamr87.github.io": 1
     },
-    "144": {
+    "143": {
+      "card:fredgar-ai": 1
+    },
+    "145": {
       "apex": 3,
       "card:gitorio": 7
     },
-    "14659": {
+    "149749": {
+      "card:godotgo": 1
+    },
+    "153": {
+      "card:gitorio": 1
+    },
+    "153372": {
+      "card:gitorio": 1
+    },
+    "15689": {
       "card:scripts": 1
-    },
-    "151": {
-      "card:gitorio": 1
-    },
-    "151737": {
-      "card:gitorio": 1
     },
     "1587a747f10b0283": {
       "card:lifehacker.dev": 1
     },
-    "162": {
-      "card:bamr87": 3
-    },
     "16263": {
       "card:OverTheWire-website": 1
+    },
+    "168": {
+      "card:bamr87": 3
     },
     "168697": {
       "card:OverTheWire-website": 1
     },
-    "16933": {
+    "16956": {
       "card:cv-pro": 1
     },
     "170": {
@@ -1489,28 +1486,34 @@
       "apex": 2,
       "card:zer0-CMS": 2
     },
-    "188": {
-      "card:djangoerp": 1
-    },
     "18b990201059e6d1": {
       "card:cv-pro": 1
     },
     "192": {
       "card:lifehacker.dev": 1
     },
-    "192462": {
+    "192441": {
       "card:lifehacker.dev": 1
     },
-    "19467": {
-      "card:godotgo": 1
+    "195": {
+      "card:zer0-CMS": 1
+    },
+    "196": {
+      "card:bashos": 1
     },
     "1987": {
       "card:zer0-CMS": 6,
       "nav:zer0-CMS": 6
     },
+    "1e16c4ff34423103": {
+      "card:godotgo": 1
+    },
     "2005": {
       "card:zer0-CMS": 1,
       "nav:zer0-CMS": 1
+    },
+    "202": {
+      "card:bashcrawl": 1
     },
     "2026-09-03-the-copy-you-forgot-you-made.md": {
       "card:SCHEMA": 3
@@ -1521,24 +1524,24 @@
     "205": {
       "card:zer0-mistakes": 1
     },
+    "20ddf64fe1501ab3": {
+      "card:djangoerp": 1
+    },
+    "2136ab5913a9bfb5": {
+      "card:it-journey": 2
+    },
+    "21407": {
+      "card:godotgo": 1
+    },
     "219": {
       "card:OverTheWire-website": 3
     },
-    "226e4b5bb0231db9": {
-      "card:djangoerp": 2
+    "221ca68765577dac": {
+      "card:law-ai": 1
     },
     "232": {
       "apex": 3,
       "card:OverTheWire-website": 7
-    },
-    "239df1ff2a84c7e0": {
-      "card:bashcrawl": 2
-    },
-    "245": {
-      "card:bamr87": 1
-    },
-    "250800": {
-      "card:ocrmd": 1
     },
     "252": {
       "card:zer0-CMS": 2
@@ -1546,248 +1549,246 @@
     "253": {
       "card:zer0-CMS": 1
     },
-    "259": {
-      "apex": 3,
-      "card:bamr87": 7
+    "261713": {
+      "card:ocrmd": 1
     },
     "263": {
       "card:OverTheWire-website": 1
     },
-    "278430": {
+    "272": {
+      "card:rewind-arcade": 1
+    },
+    "275": {
+      "apex": 3,
+      "card:bamr87": 7,
+      "card:githubai": 1
+    },
+    "276912": {
       "card:fredgar-ai": 1
     },
-    "2834492": {
+    "2777982": {
       "card:law-ai": 1
     },
-    "2905165": {
-      "card:bamr87": 1
+    "295": {
+      "card:djangoerp": 1
     },
-    "2e3ddb33eb463bce": {
-      "card:fredgar-ai": 2
+    "2d6d3056428aa8b1": {
+      "card:godotgo": 2
     },
-    "300": {
+    "301": {
       "apex": 3,
       "card:law-ai": 7
     },
-    "300802": {
+    "3076857": {
+      "card:bamr87": 1
+    },
+    "3199ee0d55b1adce": {
       "card:githubai": 1
     },
-    "355200": {
-      "card:rewind-arcade": 1
+    "324666": {
+      "card:githubai": 1
     },
-    "358047": {
+    "34de0367b060090d": {
+      "card:gitorio": 2
+    },
+    "355737": {
       "card:bashcrawl": 1
     },
-    "373": {
+    "358635": {
+      "card:rewind-arcade": 1
+    },
+    "37143": {
       "card:fredgar-ai": 1
     },
-    "37373": {
-      "card:fredgar-ai": 1
+    "372": {
+      "card:gitorio": 1
     },
-    "38059": {
+    "386": {
+      "card:law-ai": 1
+    },
+    "386459": {
+      "card:law-ai": 1
+    },
+    "39851": {
       "card:ocrmd": 1
-    },
-    "394": {
-      "card:law-ai": 1
-    },
-    "394581": {
-      "card:law-ai": 1
     },
     "3af5a8ad7a54eefa": {
       "card:SCHEMA": 1
     },
-    "3e5cfb0bc89bb299": {
-      "card:zer0-CMS": 2
+    "3b6f3f4d049a2c4d": {
+      "card:vs-sonic-pi": 1
     },
-    "4042514": {
+    "4061011": {
       "card:zer0-mistakes": 1
     },
-    "40806": {
-      "card:githubai": 1
-    },
-    "441": {
-      "card:bashos": 1,
-      "card:it-journey": 3
-    },
-    "442": {
-      "card:bamr87": 1
-    },
-    "442245": {
-      "card:bamr87": 1
-    },
-    "4486b94c6b0fe3cf": {
-      "card:zer0-mistakes": 1
-    },
-    "459191c53e4947ec": {
-      "card:outbox": 1
-    },
-    "462": {
-      "card:lifehacker.dev": 1
-    },
-    "46532": {
-      "card:bashcrawl": 1
-    },
-    "467": {
+    "407": {
       "card:godotgo": 1
     },
-    "481": {
+    "441": {
+      "card:it-journey": 3,
+      "card:lifehacker.dev": 1
+    },
+    "44275": {
+      "card:githubai": 1
+    },
+    "4502267585c36300": {
       "card:outbox": 1
     },
-    "487": {
-      "card:zer0-mistakes": 1
+    "459": {
+      "card:law-ai": 1
     },
-    "487545": {
-      "card:zer0-mistakes": 1
+    "45a04cbeea3f4f3d": {
+      "card:zer0-mistakes": 2
     },
-    "48a34571452a3edb": {
-      "card:gitorio": 2
-    },
-    "499175": {
-      "card:bashos": 1
-    },
-    "50667": {
-      "card:rewind-arcade": 1
-    },
-    "532": {
+    "46202": {
       "card:bashcrawl": 1
     },
-    "533": {
-      "card:it-journey": 1
+    "468": {
+      "card:bamr87": 1
     },
-    "53826": {
-      "card:outbox": 1
+    "468940": {
+      "card:bamr87": 1
     },
-    "545": {
+    "490": {
       "card:zer0-mistakes": 1
     },
-    "555": {
+    "490767": {
+      "card:zer0-mistakes": 1
+    },
+    "497578": {
+      "card:bashos": 1
+    },
+    "4d59a9bc401ffa12": {
+      "card:law-ai": 2
+    },
+    "4f7fa88f3a3ddcd7": {
+      "card:ocrmd": 1
+    },
+    "51272": {
+      "card:rewind-arcade": 1
+    },
+    "517c59a43aa02862": {
+      "card:zpl-viewer": 2
+    },
+    "557": {
+      "apex": 3,
+      "card:it-journey": 7
+    },
+    "558": {
       "apex": 1,
       "card:zer0-mistakes": 2
     },
-    "557": {
-      "apex": 5,
-      "card:it-journey": 7,
+    "560": {
+      "apex": 2,
       "card:zer0-mistakes": 5
     },
-    "568705": {
+    "56196": {
+      "card:outbox": 1
+    },
+    "573882": {
       "card:vs-sonic-pi": 1
     },
-    "581": {
-      "card:law-ai": 1
+    "59103111812aba85": {
+      "card:zer0-CMS": 1
     },
-    "5881c785703c9b8d": {
-      "card:it-journey": 2
-    },
-    "5d9a629df7696a9b": {
-      "card:djangoerp": 1
-    },
-    "5db8f0a3896e7858": {
+    "5ca2d367be15780a": {
       "card:outbox": 2
     },
-    "659": {
-      "card:scripts": 1
+    "651": {
+      "card:vs-sonic-pi": 1
     },
-    "667": {
-      "card:rewind-arcade": 1
+    "657a249fb83ef242": {
+      "card:bamr87": 1
     },
-    "67431c0fe95b69aa": {
-      "card:scripts": 2
+    "661": {
+      "card:SCHEMA": 1
     },
-    "6759339": {
+    "670": {
+      "card:bamr87.github.io": 1
+    },
+    "6776682": {
       "card:zer0-CMS": 1
+    },
+    "689": {
+      "card:scripts": 1
     },
     "6acbd5f9b5a9273f": {
       "card:fredgar-ai": 1
     },
-    "70441": {
+    "70196": {
       "card:bashos": 1
     },
-    "710e6dd71da23388": {
-      "card:cv-pro": 2
+    "7069df8053a84eae": {
+      "card:bashcrawl": 2
     },
     "726": {
       "card:zer0-CMS": 2
     },
     "731": {
-      "card:zer0-CMS": 2
-    },
-    "737": {
-      "card:gitorio": 1
+      "card:zer0-CMS": 1
     },
     "739dd7de909b9687": {
       "card:rewind-arcade": 1
     },
-    "73aa80ba8cdc6a5e": {
-      "card:bamr87.github.io": 2
+    "767": {
+      "card:zer0-mistakes": 1
     },
-    "7481": {
+    "7808": {
       "card:outbox": 1
     },
-    "7a05b21d4b2fcb21": {
-      "card:lifehacker.dev": 2
+    "79e4c2bf12f67b7f": {
+      "card:SCHEMA": 2
     },
-    "7b6a0069fd8d54c3": {
-      "card:ocrmd": 2
-    },
-    "7e3c333701a10cc0": {
-      "card:law-ai": 2
-    },
-    "806": {
-      "card:githubai": 1
-    },
-    "81ea7ff93228b57e": {
-      "card:law-ai": 1
-    },
-    "82127": {
+    "80409": {
       "card:zpl-viewer": 1
     },
-    "82830": {
-      "card:vs-sonic-pi": 1
+    "808": {
+      "card:outbox": 1
     },
-    "830": {
-      "card:vs-sonic-pi": 1
+    "80e60cd0271c44ff": {
+      "card:ocrmd": 2
     },
-    "8317282": {
+    "8137a02af1b58038": {
+      "card:bamr87.github.io": 2
+    },
+    "819": {
+      "card:zpl-viewer": 1
+    },
+    "8307469": {
       "card:it-journey": 1
     },
-    "856": {
+    "83651": {
+      "card:vs-sonic-pi": 1
+    },
+    "851": {
+      "card:ocrmd": 1
+    },
+    "860": {
       "card:zer0-CMS": 1
     },
-    "856731": {
+    "860195": {
       "card:zer0-CMS": 1
-    },
-    "866": {
-      "card:bamr87.github.io": 1
-    },
-    "86990": {
-      "card:djangoerp": 1
-    },
-    "870": {
-      "card:SCHEMA": 1
     },
     "880c692317be6f62": {
       "card:OverTheWire-website": 2
     },
-    "8ede29eb6add6ecb": {
+    "91557fe857342ad7": {
+      "card:rewind-arcade": 2
+    },
+    "93265378ad22b394": {
+      "card:gitorio": 1
+    },
+    "940": {
       "card:bamr87": 1
     },
-    "933": {
+    "956": {
       "card:cv-pro": 1
     },
-    "94e54f2131ce9e81": {
-      "card:godotgo": 1
-    },
-    "9891325ca0bbb5c3": {
-      "card:vs-sonic-pi": 1
-    },
-    "99421": {
+    "97995": {
       "card:SCHEMA": 1
     },
     "9dbe4519b0f1f8cd": {
       "card:bamr87.github.io": 1
-    },
-    "a06ecea87af29928": {
-      "card:githubai": 2
     },
     "a11y": {
       "card:law-ai": 1,
@@ -1796,8 +1797,8 @@
     "a237764155ae7cf9": {
       "card:it-journey": 1
     },
-    "a730b9464b43dd5f": {
-      "card:SCHEMA": 2
+    "a99be7120c07c1ad": {
+      "card:githubai": 2
     },
     "abdel-motaleb": {
       "apex": 3,
@@ -1819,14 +1820,15 @@
       "card:bamr87.github.io": 3
     },
     "access": {
-      "card:fredgar-ai": 2
+      "card:fredgar-ai": 2,
+      "card:law-ai": 2
     },
     "accessibility": {
       "card:zer0-mistakes": 2
     },
     "accounting": {
       "apex": 2,
-      "card:djangoerp": 3
+      "card:djangoerp": 2
     },
     "acknowledgments": {
       "card:vs-sonic-pi": 1
@@ -1863,8 +1865,8 @@
     },
     "actions": {
       "apex": 4,
-      "card:githubai": 3,
-      "card:gitorio": 4,
+      "card:githubai": 2,
+      "card:gitorio": 5,
       "nav:gitorio": 1
     },
     "active": {
@@ -1949,8 +1951,11 @@
       "nav:it-journey": 1,
       "nav:law-ai": 4
     },
-    "agent-native": {
+    "agent-declared": {
       "card:zer0-CMS": 2
+    },
+    "agent-ready": {
+      "card:godotgo": 2
     },
     "agentic": {
       "card:bamr87": 1,
@@ -1989,7 +1994,7 @@
       "card:lifehacker.dev": 5,
       "card:ocrmd": 5,
       "card:outbox": 5,
-      "card:rewind-arcade": 5,
+      "card:rewind-arcade": 8,
       "card:scripts": 5,
       "card:vs-sonic-pi": 5,
       "card:zer0-CMS": 5,
@@ -2005,6 +2010,7 @@
     "ai-assisted": {
       "apex": 2,
       "card:fredgar-ai": 2,
+      "card:githubai": 2,
       "card:godotgo": 1
     },
     "ai-development.md": {
@@ -2017,7 +2023,7 @@
       "card:zer0-mistakes": 3
     },
     "ai-seed": {
-      "card:githubai": 18,
+      "card:githubai": 15,
       "nav:githubai": 1
     },
     "ai_usage.md": {
@@ -2094,7 +2100,7 @@
       "card:cv-pro": 2
     },
     "analysis": {
-      "card:law-ai": 3,
+      "card:law-ai": 1,
       "card:zpl-viewer": 1,
       "nav:law-ai": 1
     },
@@ -2104,21 +2110,19 @@
       "nav:zer0-CMS": 1,
       "nav:zer0-mistakes": 2
     },
-    "answer": {
-      "card:law-ai": 2
-    },
     "apex": {
       "apex": 3
     },
     "api": {
-      "card:djangoerp": 1,
+      "card:djangoerp": 3,
       "card:it-journey": 1,
       "card:law-ai": 2,
       "nav:it-journey": 1,
       "nav:law-ai": 2
     },
     "api-first": {
-      "card:fredgar-ai": 2
+      "card:fredgar-ai": 2,
+      "card:law-ai": 2
     },
     "api-routes.md": {
       "card:djangoerp": 3
@@ -2141,7 +2145,7 @@
     },
     "arcade": {
       "apex": 3,
-      "card:rewind-arcade": 16,
+      "card:rewind-arcade": 19,
       "nav:rewind-arcade": 1
     },
     "archaeology": {
@@ -2176,7 +2180,7 @@
       "card:scripts": 1,
       "card:vs-sonic-pi": 1,
       "card:zer0-CMS": 1,
-      "card:zer0-mistakes": 7,
+      "card:zer0-mistakes": 8,
       "card:zpl-viewer": 1,
       "nav:bamr87": 1,
       "nav:bamr87.github.io": 1,
@@ -2197,7 +2201,7 @@
       "nav:scripts": 1,
       "nav:vs-sonic-pi": 1,
       "nav:zer0-CMS": 1,
-      "nav:zer0-mistakes": 1,
+      "nav:zer0-mistakes": 2,
       "nav:zpl-viewer": 1
     },
     "architecture.md": {
@@ -2245,7 +2249,9 @@
       "card:zer0-CMS": 1
     },
     "auditable": {
-      "card:fredgar-ai": 2
+      "card:fredgar-ai": 2,
+      "card:gitorio": 2,
+      "card:law-ai": 2
     },
     "auteurs": {
       "card:zer0-mistakes": 1,
@@ -2261,6 +2267,9 @@
       "card:zer0-CMS": 1,
       "nav:zer0-CMS": 1
     },
+    "authorization": {
+      "card:githubai": 2
+    },
     "authors": {
       "card:lifehacker.dev": 1,
       "card:zer0-mistakes": 1,
@@ -2273,9 +2282,9 @@
     },
     "automation": {
       "apex": 5,
-      "card:gitorio": 5,
+      "card:gitorio": 6,
       "card:it-journey": 3,
-      "card:scripts": 4,
+      "card:scripts": 6,
       "card:zer0-mistakes": 3,
       "nav:it-journey": 1,
       "nav:zer0-mistakes": 1
@@ -2288,12 +2297,6 @@
     },
     "autopilot": {
       "card:lifehacker.dev": 1
-    },
-    "b175f4a8c3b103e5": {
-      "card:ocrmd": 1
-    },
-    "b84b722ee69c886d": {
-      "card:zer0-CMS": 1
     },
     "backend": {
       "card:law-ai": 7,
@@ -2447,8 +2450,16 @@
     },
     "become": {
       "card:SCHEMA": 2,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 2,
-      "card:it-journey": 2
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
+      "card:it-journey": 2,
+      "card:law-ai": 2,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 2,
+      "card:zer0-CMS": 2
     },
     "begins": {
       "card:bashcrawl": 3,
@@ -2473,7 +2484,7 @@
     },
     "blueprints": {
       "apex": 2,
-      "card:gitorio": 3
+      "card:gitorio": 4
     },
     "boards": {
       "card:zer0-CMS": 1,
@@ -2576,10 +2587,13 @@
       "nav:cv-pro": 1,
       "nav:gitorio": 1
     },
+    "build-and-test": {
+      "card:godotgo": 2
+    },
     "builder": {
       "apex": 6,
       "card:cv-pro": 14,
-      "card:gitorio": 3,
+      "card:gitorio": 2,
       "nav:cv-pro": 1
     },
     "built": {
@@ -2590,7 +2604,7 @@
     },
     "built-in": {
       "apex": 2,
-      "card:vs-sonic-pi": 3
+      "card:vs-sonic-pi": 2
     },
     "business": {
       "card:zer0-CMS": 1,
@@ -2601,11 +2615,8 @@
     "byte": {
       "card:lifehacker.dev": 2
     },
-    "c20b1fc971afef9e": {
-      "card:bashos": 2
-    },
-    "c3f4144edf0db6e0": {
-      "card:githubai": 1
+    "c93bf0fe864f66a2": {
+      "card:fredgar-ai": 2
     },
     "cache": {
       "card:zer0-CMS": 1,
@@ -2619,9 +2630,6 @@
     },
     "canonical": {
       "card:cv-pro": 2
-    },
-    "capabilities": {
-      "card:zer0-CMS": 2
     },
     "card": {
       "apex": 26
@@ -2639,6 +2647,9 @@
     "cartridge-index": {
       "card:rewind-arcade": 3,
       "nav:rewind-arcade": 1
+    },
+    "case": {
+      "card:law-ai": 2
     },
     "cases": {
       "card:law-ai": 1,
@@ -2703,7 +2714,10 @@
       "card:zer0-mistakes": 1,
       "card:zpl-viewer": 1
     },
-    "cc681bf3a9e4e2a4": {
+    "ccdec8237bb56238": {
+      "card:djangoerp": 2
+    },
+    "cd8a0f015977f041": {
       "card:bamr87": 2
     },
     "cellar": {
@@ -2798,7 +2812,8 @@
       "nav:law-ai": 1
     },
     "cited": {
-      "card:fredgar-ai": 2
+      "card:fredgar-ai": 2,
+      "card:law-ai": 2
     },
     "class": {
       "card:law-ai": 1,
@@ -2807,8 +2822,8 @@
     "claude": {
       "apex": 11,
       "card:bashos": 4,
-      "card:githubai": 7,
-      "card:gitorio": 3,
+      "card:githubai": 8,
+      "card:gitorio": 2,
       "card:law-ai": 1,
       "card:lifehacker.dev": 2,
       "card:ocrmd": 3,
@@ -2868,7 +2883,7 @@
     "cms": {
       "apex": 4,
       "card:it-journey": 1,
-      "card:zer0-CMS": 8,
+      "card:zer0-CMS": 6,
       "nav:it-journey": 1
     },
     "code": {
@@ -2882,8 +2897,8 @@
       "card:cv-pro": 5,
       "card:djangoerp": 1,
       "card:fredgar-ai": 1,
-      "card:githubai": 8,
-      "card:gitorio": 4,
+      "card:githubai": 9,
+      "card:gitorio": 3,
       "card:godotgo": 1,
       "card:it-journey": 1,
       "card:law-ai": 1,
@@ -2892,8 +2907,8 @@
       "card:outbox": 1,
       "card:rewind-arcade": 1,
       "card:scripts": 1,
-      "card:vs-sonic-pi": 7,
-      "card:zer0-CMS": 5,
+      "card:vs-sonic-pi": 8,
+      "card:zer0-CMS": 3,
       "card:zer0-mistakes": 1,
       "card:zpl-viewer": 4
     },
@@ -2988,7 +3003,7 @@
     },
     "compile": {
       "apex": 2,
-      "card:gitorio": 3
+      "card:gitorio": 4
     },
     "compiler": {
       "card:gitorio": 3,
@@ -3022,9 +3037,6 @@
     "concept": {
       "card:zer0-CMS": 2
     },
-    "concept.md": {
-      "card:githubai": 3
-    },
     "concepts": {
       "card:OverTheWire-website": 2,
       "card:zer0-CMS": 1,
@@ -3044,6 +3056,9 @@
       "card:ocrmd": 1,
       "card:zer0-CMS": 2,
       "nav:zer0-CMS": 1
+    },
+    "confirm-gated": {
+      "card:gitorio": 2
     },
     "connect": {
       "apex": 1
@@ -3071,8 +3086,16 @@
     },
     "constitution": {
       "card:SCHEMA": 2,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 2,
-      "card:it-journey": 2
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
+      "card:it-journey": 2,
+      "card:law-ai": 2,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 2,
+      "card:zer0-CMS": 2
     },
     "constitution.md": {
       "card:SCHEMA": 3,
@@ -3217,7 +3240,7 @@
     },
     "control": {
       "apex": 2,
-      "card:vs-sonic-pi": 3
+      "card:vs-sonic-pi": 4
     },
     "control-plane": {
       "apex": 2,
@@ -3228,6 +3251,7 @@
     },
     "core": {
       "card:bamr87": 1,
+      "card:djangoerp": 2,
       "card:law-ai": 1,
       "card:zer0-CMS": 1,
       "card:zer0-mistakes": 1,
@@ -3314,8 +3338,7 @@
       "nav:zer0-CMS": 2
     },
     "current": {
-      "card:SCHEMA": 1,
-      "card:law-ai": 2
+      "card:SCHEMA": 1
     },
     "curriculum": {
       "card:law-ai": 1,
@@ -3329,7 +3352,7 @@
     },
     "cut": {
       "apex": 2,
-      "card:githubai": 3
+      "card:githubai": 2
     },
     "cv-pro": {
       "apex": 6,
@@ -3359,12 +3382,6 @@
     "d13ab0297f60cc87": {
       "card:OverTheWire-website": 1
     },
-    "d4f5934d7a2a1dc3": {
-      "card:zer0-mistakes": 2
-    },
-    "d74b2c8feff6377b": {
-      "card:zpl-viewer": 2
-    },
     "d97d9acc627e6fd1": {
       "card:bashos": 1
     },
@@ -3388,31 +3405,31 @@
     "data": {
       "apex": 4,
       "card:SCHEMA": 2,
-      "card:bamr87": 7,
+      "card:bamr87": 8,
       "card:bamr87.github.io": 1,
       "card:cv-pro": 4,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 7,
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
       "card:it-journey": 10,
-      "card:law-ai": 1,
+      "card:law-ai": 3,
       "card:lifehacker.dev": 1,
-      "card:zer0-CMS": 5,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 2,
+      "card:zer0-CMS": 7,
       "card:zer0-mistakes": 6,
       "card:zpl-viewer": 1,
-      "nav:bamr87": 3,
+      "nav:bamr87": 4,
       "nav:it-journey": 3,
       "nav:law-ai": 1,
       "nav:zer0-CMS": 5,
       "nav:zer0-mistakes": 1
     },
-    "data-model.md": {
-      "card:law-ai": 3
-    },
     "database": {
       "card:it-journey": 1,
       "nav:it-journey": 1
-    },
-    "dd6d28b07f6ba7c6": {
-      "card:rewind-arcade": 2
     },
     "decision": {
       "card:bamr87": 1,
@@ -3434,6 +3451,7 @@
       "card:scripts": 1,
       "card:vs-sonic-pi": 1,
       "card:zer0-CMS": 1,
+      "card:zer0-mistakes": 1,
       "card:zpl-viewer": 1,
       "nav:bamr87": 1,
       "nav:bamr87.github.io": 1,
@@ -3454,6 +3472,7 @@
       "nav:scripts": 1,
       "nav:vs-sonic-pi": 1,
       "nav:zer0-CMS": 1,
+      "nav:zer0-mistakes": 1,
       "nav:zpl-viewer": 1
     },
     "decisions.md": {
@@ -3490,6 +3509,9 @@
     "deliverable": {
       "card:law-ai": 1,
       "nav:law-ai": 1
+    },
+    "delivery": {
+      "card:githubai": 2
     },
     "demo": {
       "card:gitorio": 1,
@@ -3635,8 +3657,16 @@
     },
     "direction": {
       "card:SCHEMA": 2,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 2,
-      "card:it-journey": 2
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
+      "card:it-journey": 2,
+      "card:law-ai": 2,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 2,
+      "card:zer0-CMS": 2
     },
     "directory": {
       "card:it-journey": 1,
@@ -3667,10 +3697,10 @@
     },
     "django": {
       "apex": 6,
-      "card:djangoerp": 4,
+      "card:djangoerp": 5,
       "card:fredgar-ai": 2,
       "card:law-ai": 3,
-      "card:zer0-CMS": 3,
+      "card:zer0-CMS": 1,
       "nav:law-ai": 1,
       "nav:zer0-CMS": 1
     },
@@ -3771,7 +3801,7 @@
     },
     "double-entry": {
       "apex": 2,
-      "card:djangoerp": 3
+      "card:djangoerp": 4
     },
     "drafting": {
       "card:zer0-CMS": 2,
@@ -3794,14 +3824,20 @@
       "apex": 2,
       "card:bashcrawl": 4
     },
+    "e19001884a5a20c7": {
+      "card:zer0-CMS": 2
+    },
     "e2e": {
       "card:outbox": 4
     },
-    "e615504e06eb491d": {
-      "card:gitorio": 1
+    "e3d3face0a2e07dd": {
+      "card:scripts": 1
     },
-    "eabd1736bd67db3e": {
-      "card:godotgo": 2
+    "e46a70d6f67dbdb1": {
+      "card:zer0-mistakes": 1
+    },
+    "e68e32b938d92812": {
+      "card:vs-sonic-pi": 2
     },
     "economics": {
       "card:zer0-CMS": 2,
@@ -3810,6 +3846,9 @@
     "edgar": {
       "apex": 2,
       "card:fredgar-ai": 4
+    },
+    "editor": {
+      "card:vs-sonic-pi": 2
     },
     "edits": {
       "card:cv-pro": 2
@@ -3823,6 +3862,9 @@
     "educational": {
       "apex": 2,
       "card:it-journey": 2
+    },
+    "effects": {
+      "card:zer0-CMS": 2
     },
     "emulate": {
       "card:rewind-arcade": 9,
@@ -3910,7 +3952,8 @@
       "card:zpl-viewer": 1
     },
     "enterprise": {
-      "card:bamr87.github.io": 1
+      "card:bamr87.github.io": 1,
+      "card:djangoerp": 2
     },
     "entities": {
       "card:zer0-CMS": 1,
@@ -3949,7 +3992,7 @@
     "erp": {
       "apex": 2,
       "card:bamr87": 2,
-      "card:djangoerp": 4
+      "card:djangoerp": 5
     },
     "es-de": {
       "apex": 2,
@@ -3972,13 +4015,20 @@
     "every": {
       "apex": 2,
       "card:cv-pro": 2,
-      "card:godotgo": 3,
-      "card:law-ai": 2
+      "card:godotgo": 4
     },
     "everyone": {
       "card:SCHEMA": 2,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 2,
-      "card:it-journey": 2
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
+      "card:it-journey": 2,
+      "card:law-ai": 2,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 2,
+      "card:zer0-CMS": 2
     },
     "evidence": {
       "card:gitorio": 1,
@@ -4003,6 +4053,10 @@
       "nav:zer0-CMS": 1,
       "nav:zer0-mistakes": 1
     },
+    "expedite-sprint": {
+      "card:bamr87": 1,
+      "nav:bamr87": 1
+    },
     "experience": {
       "card:bamr87": 2,
       "card:bamr87.github.io": 1,
@@ -4023,8 +4077,7 @@
     "extension": {
       "apex": 4,
       "card:law-ai": 1,
-      "card:vs-sonic-pi": 3,
-      "card:zer0-CMS": 2,
+      "card:vs-sonic-pi": 2,
       "card:zpl-viewer": 3,
       "nav:law-ai": 1
     },
@@ -4058,13 +4111,22 @@
       "card:law-ai": 1,
       "nav:law-ai": 1
     },
+    "f42103c83059fd65": {
+      "card:cv-pro": 2
+    },
+    "f56fcec418d34434": {
+      "card:scripts": 2
+    },
+    "f6bbfee6027e0701": {
+      "card:lifehacker.dev": 2
+    },
     "factorio-style": {
       "apex": 2,
-      "card:gitorio": 3
+      "card:gitorio": 2
     },
     "factory": {
       "apex": 2,
-      "card:gitorio": 5,
+      "card:gitorio": 4,
       "card:law-ai": 1,
       "nav:gitorio": 2,
       "nav:law-ai": 1
@@ -4111,14 +4173,14 @@
       "card:cv-pro": 3,
       "card:djangoerp": 4,
       "card:fredgar-ai": 2,
-      "card:githubai": 3,
+      "card:githubai": 2,
       "card:gitorio": 2,
       "card:godotgo": 3,
       "card:it-journey": 2,
       "card:law-ai": 3,
       "card:lifehacker.dev": 4,
-      "card:ocrmd": 4,
-      "card:outbox": 3,
+      "card:ocrmd": 3,
+      "card:outbox": 2,
       "card:rewind-arcade": 2,
       "card:scripts": 3,
       "card:vs-sonic-pi": 2,
@@ -4137,6 +4199,9 @@
     },
     "favorite": {
       "card:bamr87.github.io": 1
+    },
+    "fd132b1a44c3413f": {
+      "card:bashos": 2
     },
     "fe25737df1f1b2a5": {
       "card:bashcrawl": 1
@@ -4272,7 +4337,7 @@
     },
     "five": {
       "apex": 2,
-      "card:godotgo": 3
+      "card:godotgo": 2
     },
     "fix": {
       "card:law-ai": 2,
@@ -4297,6 +4362,9 @@
     "fleetcore": {
       "card:bamr87": 1,
       "nav:bamr87": 1
+    },
+    "flows": {
+      "card:djangoerp": 2
     },
     "fold": {
       "card:law-ai": 1,
@@ -4354,8 +4422,8 @@
     },
     "framework": {
       "apex": 5,
-      "card:githubai": 9,
-      "card:godotgo": 5,
+      "card:githubai": 8,
+      "card:godotgo": 6,
       "card:law-ai": 2,
       "nav:githubai": 1,
       "nav:law-ai": 2
@@ -4454,16 +4522,19 @@
     "game": {
       "apex": 8,
       "card:bashcrawl": 5,
-      "card:godotgo": 6,
+      "card:godotgo": 7,
       "card:rewind-arcade": 6
     },
     "game-developer": {
       "card:it-journey": 2
     },
+    "game-making": {
+      "card:godotgo": 2
+    },
     "games": {
       "apex": 2,
       "card:OverTheWire-website": 2,
-      "card:godotgo": 9,
+      "card:godotgo": 8,
       "nav:godotgo": 1
     },
     "gamified": {
@@ -4584,7 +4655,7 @@
     },
     "gitfactory": {
       "apex": 1,
-      "card:gitorio": 6,
+      "card:gitorio": 8,
       "card:law-ai": 1,
       "nav:gitorio": 1,
       "nav:law-ai": 1
@@ -4593,8 +4664,8 @@
       "apex": 8,
       "card:bamr87": 1,
       "card:bamr87.github.io": 3,
-      "card:githubai": 7,
-      "card:gitorio": 5,
+      "card:githubai": 6,
+      "card:gitorio": 6,
       "card:scripts": 5,
       "card:vs-sonic-pi": 1,
       "card:zer0-mistakes": 4,
@@ -4643,7 +4714,7 @@
     },
     "githubai": {
       "apex": 6,
-      "card:githubai": 34,
+      "card:githubai": 36,
       "nav:githubai": 2
     },
     "githubai.json": {
@@ -4676,11 +4747,11 @@
     },
     "godot": {
       "apex": 2,
-      "card:godotgo": 3
+      "card:godotgo": 4
     },
     "godotgo": {
       "apex": 6,
-      "card:godotgo": 28,
+      "card:godotgo": 30,
       "nav:godotgo": 1
     },
     "godotgo.json": {
@@ -4698,7 +4769,7 @@
     },
     "governed": {
       "apex": 2,
-      "card:zer0-CMS": 2
+      "card:zer0-CMS": 4
     },
     "grant": {
       "card:gitorio": 1,
@@ -4718,9 +4789,6 @@
     "gration": {
       "card:zer0-mistakes": 1,
       "nav:zer0-mistakes": 1
-    },
-    "grounded": {
-      "card:law-ai": 2
     },
     "group": {
       "card:bashcrawl": 1,
@@ -4778,9 +4846,6 @@
       "nav:bashos": 3,
       "nav:zer0-mistakes": 3
     },
-    "guided": {
-      "card:law-ai": 2
-    },
     "guides": {
       "apex": 2,
       "card:OverTheWire-website": 2,
@@ -4809,7 +4874,7 @@
     "harness": {
       "apex": 2,
       "card:bamr87": 3,
-      "card:gitorio": 2,
+      "card:gitorio": 4,
       "card:law-ai": 1,
       "card:outbox": 3,
       "nav:bamr87": 3,
@@ -4999,9 +5064,6 @@
       "card:zer0-mistakes": 1,
       "card:zpl-viewer": 1
     },
-    "headless": {
-      "card:zer0-CMS": 2
-    },
     "help": {
       "card:OverTheWire-website": 2,
       "card:bashcrawl": 1,
@@ -5063,9 +5125,16 @@
     "home": {
       "card:SCHEMA": 2,
       "card:bamr87.github.io": 3,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 2,
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
       "card:it-journey": 5,
-      "card:zer0-CMS": 2,
+      "card:law-ai": 2,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 2,
+      "card:zer0-CMS": 4,
       "nav:bamr87.github.io": 1,
       "nav:it-journey": 1,
       "nav:zer0-CMS": 2
@@ -5076,7 +5145,7 @@
     },
     "hover": {
       "apex": 2,
-      "card:vs-sonic-pi": 3
+      "card:vs-sonic-pi": 2
     },
     "how": {
       "card:githubai": 1,
@@ -5123,13 +5192,15 @@
       "nav:bamr87": 1
     },
     "human": {
-      "card:law-ai": 2,
       "card:lifehacker.dev": 2,
       "card:zer0-CMS": 2
     },
     "ideas": {
       "card:zer0-CMS": 2,
       "nav:zer0-CMS": 2
+    },
+    "identical": {
+      "card:godotgo": 2
     },
     "identity": {
       "card:OverTheWire-website": 1,
@@ -5170,7 +5241,7 @@
     },
     "implement": {
       "apex": 2,
-      "card:githubai": 3
+      "card:githubai": 2
     },
     "implementation": {
       "card:zer0-mistakes": 1,
@@ -5314,9 +5385,16 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
+    "inspectable": {
+      "card:djangoerp": 2,
+      "card:gitorio": 2
+    },
     "install": {
       "card:zer0-mistakes": 3,
       "nav:zer0-mistakes": 2
+    },
+    "installable": {
+      "card:githubai": 2
     },
     "installation": {
       "card:scripts": 1,
@@ -5348,7 +5426,6 @@
     "integration": {
       "card:it-journey": 2,
       "card:law-ai": 2,
-      "card:rewind-arcade": 3,
       "card:zer0-CMS": 2,
       "card:zer0-mistakes": 1,
       "card:zpl-viewer": 1,
@@ -5365,7 +5442,7 @@
     },
     "intellisense": {
       "apex": 2,
-      "card:vs-sonic-pi": 3
+      "card:vs-sonic-pi": 2
     },
     "interactive": {
       "apex": 2,
@@ -5381,7 +5458,7 @@
     },
     "inventory": {
       "apex": 2,
-      "card:djangoerp": 3
+      "card:djangoerp": 2
     },
     "irony": {
       "card:zer0-CMS": 1,
@@ -5399,7 +5476,7 @@
     },
     "issues": {
       "apex": 2,
-      "card:githubai": 3
+      "card:githubai": 2
     },
     "it-journey": {
       "apex": 6,
@@ -5691,9 +5768,6 @@
       "card:law-ai": 4,
       "nav:law-ai": 2
     },
-    "lawyers": {
-      "card:law-ai": 2
-    },
     "layer": {
       "apex": 1,
       "card:zer0-CMS": 2,
@@ -5724,9 +5798,6 @@
       "apex": 2,
       "card:law-ai": 9,
       "nav:law-ai": 3
-    },
-    "legal-intelligence": {
-      "card:law-ai": 2
     },
     "legalbench": {
       "card:law-ai": 2,
@@ -5763,7 +5834,7 @@
     "library": {
       "card:bamr87": 1,
       "card:law-ai": 1,
-      "card:zer0-CMS": 6,
+      "card:zer0-CMS": 4,
       "card:zer0-mistakes": 1,
       "nav:bamr87": 1,
       "nav:law-ai": 1,
@@ -5842,7 +5913,12 @@
     },
     "live": {
       "apex": 2,
-      "card:vs-sonic-pi": 3
+      "card:bamr87": 1,
+      "card:vs-sonic-pi": 2,
+      "nav:bamr87": 1
+    },
+    "live-coding": {
+      "card:vs-sonic-pi": 2
     },
     "llm-judges": {
       "card:gitorio": 2
@@ -5866,7 +5942,9 @@
     },
     "loop": {
       "card:bamr87": 2,
-      "card:law-ai": 3,
+      "card:githubai": 2,
+      "card:godotgo": 2,
+      "card:law-ai": 1,
       "card:zer0-CMS": 1,
       "nav:bamr87": 2,
       "nav:law-ai": 1,
@@ -5908,8 +5986,14 @@
       "card:cv-pro": 3,
       "nav:cv-pro": 1
     },
+    "maintainer-held": {
+      "card:githubai": 2
+    },
     "maintenance": {
       "card:scripts": 2
+    },
+    "make-to-stock": {
+      "card:djangoerp": 2
     },
     "management": {
       "apex": 2,
@@ -5952,7 +6036,7 @@
     },
     "manufacturing": {
       "apex": 2,
-      "card:djangoerp": 3
+      "card:djangoerp": 2
     },
     "map": {
       "apex": 23,
@@ -6019,9 +6103,6 @@
     "matter": {
       "apex": 2,
       "card:zer0-CMS": 2
-    },
-    "matters": {
-      "card:law-ai": 2
     },
     "max": {
       "card:OverTheWire-website": 1,
@@ -6220,7 +6301,7 @@
     },
     "modular": {
       "apex": 2,
-      "card:djangoerp": 3,
+      "card:djangoerp": 4,
       "card:zer0-mistakes": 1,
       "nav:zer0-mistakes": 1
     },
@@ -6243,7 +6324,7 @@
     },
     "mrp": {
       "apex": 2,
-      "card:djangoerp": 3
+      "card:djangoerp": 2
     },
     "multi-repo": {
       "card:scripts": 2
@@ -6254,7 +6335,7 @@
     },
     "music": {
       "apex": 2,
-      "card:vs-sonic-pi": 3
+      "card:vs-sonic-pi": 2
     },
     "music.md": {
       "card:bamr87.github.io": 3
@@ -6481,9 +6562,6 @@
       "card:bashos": 9,
       "nav:bashos": 1
     },
-    "only": {
-      "card:zer0-CMS": 2
-    },
     "onto": {
       "apex": 2,
       "card:bashos": 3
@@ -6491,9 +6569,16 @@
     "open": {
       "apex": 2,
       "card:SCHEMA": 2,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 2,
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
       "card:it-journey": 2,
-      "card:law-ai": 4
+      "card:law-ai": 4,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 4,
+      "card:zer0-CMS": 2
     },
     "open-source": {
       "card:bashos": 2
@@ -6536,6 +6621,9 @@
     "operating-systems": {
       "card:bashos": 2
     },
+    "operations": {
+      "card:zer0-CMS": 2
+    },
     "operator": {
       "card:bashos": 1,
       "nav:bashos": 1
@@ -6567,12 +6655,15 @@
       "nav:it-journey": 1,
       "nav:law-ai": 1
     },
+    "order-to-cash": {
+      "card:djangoerp": 2
+    },
     "org-scale": {
       "card:githubai": 1
     },
     "osc": {
       "apex": 2,
-      "card:vs-sonic-pi": 3
+      "card:vs-sonic-pi": 4
     },
     "outbox": {
       "apex": 8,
@@ -6758,7 +6849,7 @@
     },
     "perform": {
       "apex": 2,
-      "card:vs-sonic-pi": 3
+      "card:vs-sonic-pi": 2
     },
     "personal": {
       "apex": 2,
@@ -6829,7 +6920,6 @@
     },
     "plan.md": {
       "card:bashos": 3,
-      "card:rewind-arcade": 3,
       "card:zer0-CMS": 3
     },
     "plane": {
@@ -6840,7 +6930,7 @@
     },
     "planning": {
       "apex": 1,
-      "card:djangoerp": 3
+      "card:djangoerp": 4
     },
     "plantable": {
       "card:githubai": 1,
@@ -6849,8 +6939,8 @@
     "platform": {
       "apex": 4,
       "card:it-journey": 2,
-      "card:law-ai": 5,
-      "card:zer0-CMS": 7,
+      "card:law-ai": 3,
+      "card:zer0-CMS": 5,
       "nav:law-ai": 1,
       "nav:zer0-CMS": 3
     },
@@ -6874,10 +6964,13 @@
       "card:bashos": 1,
       "card:cv-pro": 1,
       "card:fredgar-ai": 1,
+      "card:githubai": 1,
       "card:gitorio": 1,
       "card:godotgo": 1,
       "card:it-journey": 1,
       "card:law-ai": 1,
+      "card:ocrmd": 1,
+      "card:outbox": 1,
       "card:rewind-arcade": 1,
       "card:scripts": 1,
       "card:vs-sonic-pi": 1,
@@ -6930,9 +7023,6 @@
     "practice": {
       "card:OverTheWire-website": 2
     },
-    "practicing": {
-      "card:law-ai": 2
-    },
     "prd": {
       "card:bamr87": 1,
       "nav:bamr87": 1
@@ -6947,9 +7037,10 @@
       "card:gitorio": 1,
       "card:godotgo": 1,
       "card:it-journey": 1,
+      "card:law-ai": 3,
       "card:lifehacker.dev": 1,
       "card:ocrmd": 1,
-      "card:outbox": 4,
+      "card:outbox": 1,
       "card:rewind-arcade": 1,
       "card:scripts": 1,
       "card:vs-sonic-pi": 3,
@@ -6959,9 +7050,6 @@
     "preferences": {
       "card:law-ai": 1,
       "nav:law-ai": 1
-    },
-    "preparation": {
-      "card:law-ai": 2
     },
     "prerequisites": {
       "card:scripts": 1
@@ -7016,6 +7104,9 @@
       "card:cv-pro": 8,
       "nav:cv-pro": 1
     },
+    "procure-to-pay": {
+      "card:djangoerp": 2
+    },
     "professional": {
       "card:bamr87.github.io": 1
     },
@@ -7037,7 +7128,7 @@
       "apex": 13,
       "card:OverTheWire-website": 1,
       "card:SCHEMA": 2,
-      "card:bamr87": 6,
+      "card:bamr87": 4,
       "card:bamr87.github.io": 3,
       "card:bashcrawl": 2,
       "card:bashos": 1,
@@ -7046,7 +7137,7 @@
       "card:fredgar-ai": 2,
       "card:githubai": 2,
       "card:gitorio": 3,
-      "card:godotgo": 5,
+      "card:godotgo": 4,
       "card:it-journey": 2,
       "card:law-ai": 3,
       "card:lifehacker.dev": 2,
@@ -7124,9 +7215,6 @@
       "nav:bamr87": 1,
       "nav:it-journey": 1
     },
-    "prospective": {
-      "card:law-ai": 2
-    },
     "protocol": {
       "apex": 4,
       "card:SCHEMA": 10,
@@ -7137,19 +7225,17 @@
       "apex": 2,
       "card:law-ai": 2
     },
-    "provenance": {
-      "card:law-ai": 2
-    },
     "provider": {
       "card:law-ai": 1,
       "nav:law-ai": 1
     },
     "prs": {
       "apex": 2,
-      "card:githubai": 3
+      "card:githubai": 2
     },
     "publish": {
       "card:cv-pro": 3,
+      "card:zer0-CMS": 2,
       "nav:cv-pro": 1
     },
     "published": {
@@ -7178,11 +7264,11 @@
       "card:zpl-viewer": 1
     },
     "publishing": {
-      "card:zer0-CMS": 3
+      "card:zer0-CMS": 1
     },
     "purchasing": {
       "apex": 2,
-      "card:djangoerp": 3
+      "card:djangoerp": 2
     },
     "pure": {
       "card:zer0-CMS": 1,
@@ -7215,7 +7301,7 @@
       "card:ocrmd": 2,
       "card:rewind-arcade": 2,
       "card:scripts": 2,
-      "card:zer0-CMS": 4
+      "card:zer0-CMS": 2
     },
     "python3": {
       "apex": 6,
@@ -7278,7 +7364,8 @@
       "card:zpl-viewer": 2
     },
     "queryable": {
-      "card:fredgar-ai": 2
+      "card:fredgar-ai": 2,
+      "card:law-ai": 2
     },
     "quest": {
       "card:bamr87.github.io": 2,
@@ -7356,7 +7443,7 @@
       "apex": 3,
       "card:cv-pro": 4,
       "card:fredgar-ai": 2,
-      "card:zer0-CMS": 5,
+      "card:zer0-CMS": 3,
       "nav:zer0-CMS": 1
     },
     "read": {
@@ -7438,7 +7525,7 @@
       "nav:zer0-CMS": 1
     },
     "records": {
-      "card:bamr87": 2,
+      "card:bamr87": 3,
       "card:bamr87.github.io": 1,
       "card:bashcrawl": 1,
       "card:bashos": 1,
@@ -7457,8 +7544,9 @@
       "card:scripts": 1,
       "card:vs-sonic-pi": 1,
       "card:zer0-CMS": 1,
+      "card:zer0-mistakes": 1,
       "card:zpl-viewer": 1,
-      "nav:bamr87": 2,
+      "nav:bamr87": 3,
       "nav:bamr87.github.io": 1,
       "nav:bashcrawl": 1,
       "nav:bashos": 1,
@@ -7477,6 +7565,7 @@
       "nav:scripts": 1,
       "nav:vs-sonic-pi": 1,
       "nav:zer0-CMS": 1,
+      "nav:zer0-mistakes": 1,
       "nav:zpl-viewer": 1
     },
     "recreations": {
@@ -7503,7 +7592,7 @@
       "card:godotgo": 3,
       "card:it-journey": 2,
       "card:law-ai": 1,
-      "card:ocrmd": 7,
+      "card:ocrmd": 4,
       "card:vs-sonic-pi": 1,
       "card:zpl-viewer": 7,
       "nav:bashcrawl": 1,
@@ -7590,15 +7679,12 @@
     },
     "releases": {
       "apex": 1,
-      "card:githubai": 3,
+      "card:githubai": 2,
       "card:zer0-CMS": 1,
       "nav:zer0-CMS": 1
     },
     "render": {
       "card:cv-pro": 2
-    },
-    "renderer": {
-      "card:zer0-CMS": 2
     },
     "renders": {
       "apex": 2,
@@ -7690,14 +7776,25 @@
       "card:law-ai": 1,
       "nav:law-ai": 1
     },
+    "resource": {
+      "card:djangoerp": 2
+    },
     "resources": {
       "card:SCHEMA": 2,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 2,
-      "card:it-journey": 2
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
+      "card:it-journey": 2,
+      "card:law-ai": 2,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 2,
+      "card:zer0-CMS": 2
     },
     "rest": {
       "apex": 2,
-      "card:djangoerp": 3
+      "card:djangoerp": 2
     },
     "retrieval": {
       "card:law-ai": 1,
@@ -7708,18 +7805,21 @@
       "card:rewind-arcade": 3
     },
     "retro-pi": {
-      "card:rewind-arcade": 13,
+      "card:rewind-arcade": 10,
       "nav:rewind-arcade": 2
     },
     "reusable": {
       "apex": 4,
-      "card:githubai": 3,
-      "card:godotgo": 3
+      "card:githubai": 2,
+      "card:godotgo": 4
     },
     "review": {
       "apex": 2,
-      "card:githubai": 3,
+      "card:githubai": 2,
       "card:law-ai": 2
+    },
+    "reviewable": {
+      "card:githubai": 2
     },
     "reviewed": {
       "card:lifehacker.dev": 2
@@ -7842,7 +7942,7 @@
     },
     "running": {
       "apex": 2,
-      "card:gitorio": 3,
+      "card:gitorio": 2,
       "card:law-ai": 1
     },
     "runtime": {
@@ -7857,16 +7957,16 @@
     },
     "sales": {
       "apex": 2,
-      "card:djangoerp": 3
+      "card:djangoerp": 2
     },
     "same": {
       "apex": 1,
       "card:bashcrawl": 2,
-      "card:godotgo": 3
+      "card:godotgo": 2
     },
     "sample": {
       "apex": 2,
-      "card:godotgo": 4
+      "card:godotgo": 3
     },
     "samples": {
       "card:OverTheWire-website": 1,
@@ -7958,8 +8058,10 @@
       "card:zpl-viewer": 1
     },
     "schemas": {
+      "card:bamr87": 5,
       "card:bashcrawl": 1,
       "card:zer0-CMS": 1,
+      "nav:bamr87": 1,
       "nav:bashcrawl": 1
     },
     "science": {
@@ -7985,7 +8087,7 @@
       "card:bamr87.github.io": 1,
       "card:it-journey": 4,
       "card:lifehacker.dev": 5,
-      "card:scripts": 32,
+      "card:scripts": 34,
       "card:zer0-mistakes": 5,
       "nav:it-journey": 3,
       "nav:lifehacker.dev": 1,
@@ -8032,7 +8134,7 @@
     },
     "sdlc": {
       "apex": 3,
-      "card:githubai": 6,
+      "card:githubai": 7,
       "card:law-ai": 1,
       "nav:law-ai": 1
     },
@@ -8115,10 +8217,13 @@
       "card:bashos": 3,
       "card:cv-pro": 1,
       "card:fredgar-ai": 1,
+      "card:githubai": 1,
       "card:gitorio": 1,
       "card:godotgo": 1,
       "card:it-journey": 1,
       "card:law-ai": 1,
+      "card:ocrmd": 1,
+      "card:outbox": 1,
       "card:rewind-arcade": 1,
       "card:scripts": 1,
       "card:vs-sonic-pi": 1,
@@ -8134,10 +8239,13 @@
       "card:bashcrawl": 4,
       "card:bashos": 4,
       "card:fredgar-ai": 4,
+      "card:githubai": 4,
       "card:gitorio": 4,
       "card:godotgo": 4,
       "card:it-journey": 4,
       "card:law-ai": 4,
+      "card:ocrmd": 4,
+      "card:outbox": 4,
       "card:rewind-arcade": 4,
       "card:scripts": 4,
       "card:vs-sonic-pi": 4,
@@ -8203,7 +8311,7 @@
       "card:outbox": 1,
       "card:rewind-arcade": 1,
       "card:scripts": 1,
-      "card:vs-sonic-pi": 1,
+      "card:vs-sonic-pi": 3,
       "card:zer0-CMS": 2,
       "card:zer0-mistakes": 1,
       "card:zpl-viewer": 1
@@ -8247,7 +8355,6 @@
       "nav:zer0-mistakes": 2
     },
     "settings.md": {
-      "card:ocrmd": 3,
       "card:zpl-viewer": 3
     },
     "setup": {
@@ -8349,7 +8456,7 @@
     },
     "sites": {
       "apex": 1,
-      "card:zer0-CMS": 9,
+      "card:zer0-CMS": 7,
       "card:zer0-mistakes": 2,
       "nav:zer0-CMS": 1
     },
@@ -8393,6 +8500,7 @@
     },
     "software": {
       "apex": 2,
+      "card:githubai": 2,
       "card:zer0-mistakes": 2
     },
     "solutions": {
@@ -8404,10 +8512,11 @@
     },
     "sonic": {
       "apex": 3,
-      "card:vs-sonic-pi": 7
+      "card:vs-sonic-pi": 12
     },
     "source": {
       "card:SCHEMA": 1,
+      "card:gitorio": 2,
       "card:zer0-CMS": 4,
       "nav:SCHEMA": 1,
       "nav:zer0-CMS": 2
@@ -8457,12 +8566,16 @@
       "card:bamr87": 2
     },
     "specs": {
-      "card:bamr87": 4,
+      "card:bamr87": 2,
       "card:gitorio": 6,
       "card:law-ai": 9,
       "nav:bamr87": 1,
       "nav:gitorio": 1,
       "nav:law-ai": 1
+    },
+    "sprints": {
+      "card:bamr87": 1,
+      "nav:bamr87": 1
     },
     "sql": {
       "card:fredgar-ai": 2,
@@ -8497,7 +8610,7 @@
       "card:scripts": 2
     },
     "standard": {
-      "card:bamr87": 3,
+      "card:bamr87": 1,
       "nav:bamr87": 1
     },
     "standards": {
@@ -8592,7 +8705,7 @@
       "card:zpl-viewer": 3
     },
     "statutes": {
-      "card:law-ai": 1,
+      "card:law-ai": 3,
       "nav:law-ai": 1
     },
     "staying": {
@@ -8656,14 +8769,11 @@
     "structured": {
       "apex": 1
     },
-    "students": {
-      "card:law-ai": 4
-    },
     "studio": {
       "apex": 3,
-      "card:gitorio": 1,
+      "card:gitorio": 3,
       "card:law-ai": 1,
-      "card:zer0-CMS": 4,
+      "card:zer0-CMS": 2,
       "card:zer0-mistakes": 6,
       "card:zpl-viewer": 6,
       "nav:gitorio": 1,
@@ -8835,6 +8945,9 @@
     "tasks.md": {
       "card:law-ai": 3
     },
+    "teaching": {
+      "card:vs-sonic-pi": 2
+    },
     "tech": {
       "apex": 2,
       "card:lifehacker.dev": 2
@@ -8942,8 +9055,16 @@
     },
     "things": {
       "card:SCHEMA": 2,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 2,
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
       "card:it-journey": 2,
+      "card:law-ai": 2,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 2,
+      "card:zer0-CMS": 2,
       "card:zpl-viewer": 1
     },
     "three": {
@@ -8954,8 +9075,7 @@
     },
     "through": {
       "apex": 3,
-      "card:bashos": 3,
-      "card:zer0-CMS": 4
+      "card:bashos": 3
     },
     "time": {
       "card:lifehacker.dev": 2
@@ -9004,7 +9124,7 @@
       "card:bashcrawl": 3,
       "card:bashos": 3,
       "card:githubai": 3,
-      "card:godotgo": 3,
+      "card:godotgo": 4,
       "card:it-journey": 3,
       "card:ocrmd": 3,
       "card:outbox": 3,
@@ -9022,17 +9142,17 @@
       "card:bamr87": 13,
       "card:bashcrawl": 1,
       "card:bashos": 1,
-      "card:djangoerp": 1,
+      "card:djangoerp": 3,
       "card:fredgar-ai": 3,
-      "card:githubai": 1,
-      "card:gitorio": 1,
-      "card:godotgo": 1,
+      "card:githubai": 3,
+      "card:gitorio": 3,
+      "card:godotgo": 3,
       "card:it-journey": 7,
-      "card:law-ai": 1,
+      "card:law-ai": 3,
       "card:lifehacker.dev": 5,
-      "card:scripts": 1,
-      "card:vs-sonic-pi": 1,
-      "card:zer0-CMS": 9,
+      "card:scripts": 3,
+      "card:vs-sonic-pi": 5,
+      "card:zer0-CMS": 11,
       "card:zpl-viewer": 1,
       "nav:bamr87": 8,
       "nav:it-journey": 4,
@@ -9197,12 +9317,20 @@
     },
     "transparency": {
       "card:SCHEMA": 2,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 2,
-      "card:it-journey": 2
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
+      "card:it-journey": 2,
+      "card:law-ai": 2,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 2,
+      "card:zer0-CMS": 2
     },
     "treats": {
       "apex": 2,
-      "card:godotgo": 3
+      "card:godotgo": 2
     },
     "tree": {
       "apex": 24,
@@ -9232,7 +9360,7 @@
     },
     "triage": {
       "apex": 2,
-      "card:githubai": 3
+      "card:githubai": 2
     },
     "true": {
       "apex": 1,
@@ -9245,14 +9373,14 @@
       "card:cv-pro": 7,
       "card:djangoerp": 6,
       "card:fredgar-ai": 8,
-      "card:githubai": 7,
+      "card:githubai": 8,
       "card:gitorio": 8,
       "card:godotgo": 7,
       "card:it-journey": 8,
       "card:law-ai": 7,
       "card:lifehacker.dev": 6,
-      "card:ocrmd": 6,
-      "card:outbox": 7,
+      "card:ocrmd": 7,
+      "card:outbox": 8,
       "card:rewind-arcade": 8,
       "card:scripts": 7,
       "card:vs-sonic-pi": 8,
@@ -9276,7 +9404,7 @@
     "tutorial": {
       "apex": 4,
       "card:bashcrawl": 2,
-      "card:vs-sonic-pi": 5,
+      "card:vs-sonic-pi": 4,
       "card:zer0-CMS": 1,
       "card:zer0-mistakes": 2,
       "nav:vs-sonic-pi": 1,
@@ -9319,8 +9447,16 @@
     },
     "u00a71": {
       "card:SCHEMA": 1,
+      "card:djangoerp": 1,
       "card:fredgar-ai": 1,
-      "card:it-journey": 1
+      "card:githubai": 1,
+      "card:gitorio": 1,
+      "card:godotgo": 1,
+      "card:it-journey": 1,
+      "card:law-ai": 1,
+      "card:scripts": 1,
+      "card:vs-sonic-pi": 1,
+      "card:zer0-CMS": 1
     },
     "u00e7ais": {
       "card:zer0-mistakes": 1
@@ -9340,10 +9476,10 @@
       "card:githubai": 3,
       "card:gitorio": 3,
       "card:it-journey": 1,
-      "card:law-ai": 3,
+      "card:law-ai": 2,
       "card:lifehacker.dev": 1,
       "card:rewind-arcade": 3,
-      "card:zer0-CMS": 4
+      "card:zer0-CMS": 3
     },
     "u2699": {
       "card:gitorio": 2
@@ -9453,8 +9589,16 @@
     },
     "ultimate": {
       "card:SCHEMA": 2,
+      "card:djangoerp": 2,
       "card:fredgar-ai": 2,
-      "card:it-journey": 2
+      "card:githubai": 2,
+      "card:gitorio": 2,
+      "card:godotgo": 2,
+      "card:it-journey": 2,
+      "card:law-ai": 2,
+      "card:scripts": 2,
+      "card:vs-sonic-pi": 2,
+      "card:zer0-CMS": 2
     },
     "ulysses": {
       "card:zer0-mistakes": 2,
@@ -9464,7 +9608,7 @@
       "card:zer0-CMS": 1
     },
     "universal": {
-      "card:bamr87": 3,
+      "card:bamr87": 1,
       "nav:bamr87": 1
     },
     "unnumbered": {
@@ -9474,7 +9618,7 @@
       "nav:it-journey": 1
     },
     "ups": {
-      "card:bamr87": 3,
+      "card:bamr87": 1,
       "nav:bamr87": 1
     },
     "url": {
@@ -9581,6 +9725,9 @@
       "apex": 2,
       "card:ocrmd": 3
     },
+    "visual": {
+      "card:gitorio": 2
+    },
     "vortex": {
       "card:OverTheWire-website": 1,
       "card:zer0-CMS": 1,
@@ -9604,15 +9751,9 @@
       "card:law-ai": 1,
       "nav:law-ai": 1
     },
-    "wagtail": {
-      "card:zer0-CMS": 2
-    },
     "wake": {
       "card:zer0-mistakes": 2,
       "nav:zer0-mistakes": 2
-    },
-    "walk": {
-      "card:zer0-CMS": 2
     },
     "walkthrough": {
       "card:it-journey": 1
@@ -9675,7 +9816,6 @@
       "nav:lifehacker.dev": 1
     },
     "where": {
-      "card:law-ai": 2,
       "card:zpl-viewer": 1
     },
     "who": {
@@ -9734,7 +9874,7 @@
     },
     "work": {
       "apex": 2,
-      "card:githubai": 3
+      "card:githubai": 2
     },
     "workbench": {
       "card:it-journey": 1,
@@ -9751,7 +9891,8 @@
     },
     "workflows": {
       "apex": 2,
-      "card:gitorio": 3,
+      "card:githubai": 2,
+      "card:gitorio": 4,
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
@@ -9771,7 +9912,7 @@
     },
     "workspace": {
       "apex": 4,
-      "card:godotgo": 3,
+      "card:godotgo": 2,
       "card:rewind-arcade": 3
     },
     "world": {
@@ -9785,7 +9926,7 @@
     "write": {
       "apex": 2,
       "card:it-journey": 1,
-      "card:vs-sonic-pi": 3,
+      "card:vs-sonic-pi": 2,
       "nav:it-journey": 1
     },
     "written": {
@@ -9830,7 +9971,7 @@
     },
     "zer0-cms": {
       "apex": 8,
-      "card:zer0-CMS": 33,
+      "card:zer0-CMS": 35,
       "nav:zer0-CMS": 1
     },
     "zer0-cms.json": {

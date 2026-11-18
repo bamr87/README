@@ -10,19 +10,17 @@ Installed by GitHubAI (github.com/bamr87/githubai). This file is the context Cla
 
 ## What this repository is
 
-<!-- One paragraph: what this repo does, who uses it, what "working" means. -->
-
 ## How it is developed
 
-- Build: <!-- command -->
-- Test: <!-- command; keep in sync with standards.test_command in .github/githubai.yml -->
-- Lint: <!-- command -->
+- Build:
+- Test:
+- Lint:
 
 ## Conventions that matter here
 
 - Commits follow Conventional Commits (`feat:`, `fix:`, `docs:`, `chore:`...).
 - Every change goes through a PR; CI must be green before merge.
-- <!-- Add the two or three rules reviewers actually enforce in this repo. -->
+- <!---->
 
 ## GitHubAI automation in this repo
 

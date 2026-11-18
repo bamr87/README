@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas10
     URL:      http://natas10.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Do not construct shell commands from input. Use library functions that search te
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas9/">Level 9</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas11/">Level 11</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

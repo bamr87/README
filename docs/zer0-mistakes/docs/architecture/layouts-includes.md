@@ -5,7 +5,7 @@ categories:
 date: 2026-01-25 03:38:33+00:00
 description: How Jekyll layouts inherit from each other (root → default → article/collection/landing)
   and how the _includes/ component system is organized.
-lastmod: 2026-06-01 03:38:46+00:00
+lastmod: 2026-11-15 00:00:00+00:00
 source_file: docs/architecture/layouts-includes.md
 source_repo: bamr87/zer0-mistakes
 source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/architecture/layouts-includes.md
@@ -119,7 +119,8 @@ Content enhancement components:
 | File | Purpose |
 |------|---------|
 | `toc.html` | Table of contents (auto-generated) |
-| `giscus.html` | GitHub Discussions comments |
+| `comments.html` | Comment section: the gate, heading, and giscus widget |
+| `giscus.html` | GitHub Discussions comments widget (attributes from `_config.yml` `giscus:`) |
 | `seo.html` | SEO meta tags and Open Graph |
 | `breadcrumbs.html` | Breadcrumb navigation |
 | `reading-time.html` | Estimated reading time |
@@ -169,9 +170,8 @@ Components are loaded conditionally based on:
   {% include components/mathjax.html %}
 {% endif %}
 
-{% if page.comments != false and site.giscus.enabled %}
-  {% include content/giscus.html %}
-{% endif %}
+{% comment %} Gates itself on page.comments and site.giscus.enabled {% endcomment %}
+{% include content/comments.html %}
 ```
 
 ### Site Configuration

@@ -49,8 +49,6 @@ Commands you may need to solve this level
 -----------------------------------------
 chmod, cron, crontab, crontab(5) (use "man 5 crontab" to access this)
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -83,5 +81,3 @@ This is a textbook privilege-escalation pattern: a root-run cron or service that
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit23/">Level 23</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit25/">Level 25</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

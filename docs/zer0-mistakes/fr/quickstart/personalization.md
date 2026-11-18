@@ -396,7 +396,7 @@ Mettez en place une analytique respectueuse de la vie privée pour comprendre vo
   <div class="card-body">
     <form id="analytics-form">
       <div class="row g-3">
-        <!-- Google Analytics -->
+
         <div class="col-12">
           <h6 class="border-bottom pb-2"><i class="bi bi-google"></i> Google Analytics</h6>
         </div>
@@ -406,7 +406,6 @@ Mettez en place une analytique respectueuse de la vie privée pour comprendre vo
           <div class="form-text">Identifiant de mesure Google Analytics 4</div>
         </div>
         
-        <!-- PostHog Analytics -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-speedometer"></i> PostHog Analytics (respectueux de la vie privée)</h6>
         </div>
@@ -452,7 +451,6 @@ Mettez en place une analytique respectueuse de la vie privée pour comprendre vo
           </div>
         </div>
 
-        <!-- Site Verification -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-shield-check"></i> Vérification du site</h6>
         </div>
@@ -484,7 +482,7 @@ Configurez des fonctionnalités avancées comme les commentaires, les plugins et
   <div class="card-body">
     <form id="advanced-form">
       <div class="row g-3">
-        <!-- Comments -->
+
         <div class="col-12">
           <h6 class="border-bottom pb-2"><i class="bi bi-chat-dots"></i> Commentaires (Giscus)</h6>
         </div>
@@ -506,7 +504,6 @@ Configurez des fonctionnalités avancées comme les commentaires, les plugins et
           <input type="text" class="form-control" id="cfg-giscus-category-id" placeholder="DIC_xxxxxxxxxxxx">
         </div>
 
-        <!-- Jekyll Settings -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-file-earmark-code"></i> Paramètres de build Jekyll</h6>
         </div>
@@ -528,7 +525,6 @@ Configurez des fonctionnalités avancées comme les commentaires, les plugins et
           </select>
         </div>
 
-        <!-- Features Toggle -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-toggles"></i> Activation des fonctionnalités</h6>
         </div>
@@ -551,7 +547,6 @@ Configurez des fonctionnalités avancées comme les commentaires, les plugins et
           </div>
         </div>
 
-        <!-- Copyright -->
         <div class="col-12 mt-4">
           <h6 class="border-bottom pb-2"><i class="bi bi-c-circle"></i> Droits d'auteur</h6>
         </div>

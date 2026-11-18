@@ -12,7 +12,7 @@ title: The public site is the console
 
 | Build | Served by | Data comes from | Base |
 | --- | --- | --- | --- |
-| **Console** | `tools/dash console` (FastAPI, 127.0.0.1:4001) | the console's live `/api` | `/` |
+| **Console** | `tools/dash console` (FastAPI, with the Django backend beside it on `/admin/` and `/api/v1/`; 127.0.0.1:4001) | the console's live `/api` | `/` |
 | **Public** | GitHub Pages (`build-dash.yml`) | a snapshot of the same `/api` documents, written at build time | `/bamr87/` |
 
 The two builds show the same pages: the profile (Home, About, Experience, Portfolio, Writing, Services, Contact) and every console section (Overview, Fleet, Harnesses, Spend, Observe, Content, Operate, Settings).
@@ -73,7 +73,7 @@ Beside the documents it writes:
 | --- | --- |
 | Identity (name, title, links, avatar), the Home description and the link-card image (`site.description`, `site.image`) | `_data/profile.yml`; images under `tools/console/web/public/` |
 | Long-form pages | `pages/profile/<slug>.md`, routed at `/<slug>`; the four in `nav.ts` `PROFILE_PAGES` |
-| Posts | `pages/posts/YYYY-MM-DD-<slug>.md`, at `/blog/<slug>`; `draft: true` shows only on a console |
+| Posts | `pages/posts/YYYY-MM-DD-<slug>.md`, at `/blog/<slug>`; a series entry (`site_docs.SERIES`: the daily chronicle, the weekly retro) and a slug two files share are at `/blog/YYYY-MM-DD-<slug>`; the excerpt is `excerpt`, else `description`, else the first paragraph; `draft: true` shows only on a console (layout: `pages/SCHEMA.md`) |
 | Registries the pages read | `site_docs.PUBLIC_DATA` — the only `_data` files served at `/api/data/<name>` |
 
 Markdown is rendered in the browser with `marked` and sanitized with DOMPurify. The public build also carries a Content-Security-Policy `<meta>`, because Pages cannot send headers: no inline script, network access only to itself, `api.github.com` and a console.

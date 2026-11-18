@@ -60,8 +60,6 @@ Information about how to connect to each game using SSH, is provided in the top 
 
 [contactus]: https://overthewire.org/information/chat.html
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -130,5 +128,3 @@ The point is not the password. It is the skill you build in finding it: reading 
 Every page in this collection has the original upstream text first, then a **Study guide** section added by this site. The guide explains the concepts, suggests an approach without giving away the answer, and says why the skill matters in real work. The first line of most guides is a **Level map** that tells you which account you are logged in as and which password you are looking for, because the numbering differs between games.
 
 </section>
-
-<!-- study-guide:end -->

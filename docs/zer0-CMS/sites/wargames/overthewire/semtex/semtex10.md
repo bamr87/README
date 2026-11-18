@@ -52,8 +52,6 @@ This level implements a weakness in the authentication scheme used by M$ win95 a
 
 There is a TCP daemon on brebera port 24019. It authenticates your password. Once you send the correct password, it echoes it back. Well, let the source speak for itself. As far as brute force may take you, a little brain is never bad :P Perhaps you have heard of pqwak?
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -86,5 +84,3 @@ Comparison functions that reveal how much of a guess was right are a real weakne
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex9/">Level 9</a><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex11/">Level 11</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

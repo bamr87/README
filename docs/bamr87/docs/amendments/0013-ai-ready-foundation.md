@@ -5,7 +5,6 @@ source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0013-ai-r
 title: '0013 — AI-ready foundation: every repo exposes an API layer, MCP, agent docs
   and machine-readable metadata, validated by AIEO'
 ---
-<!-- kit: governance v0.1.0 -->
 # 0013 — AI-ready foundation: every repo exposes an API layer, MCP, agent docs and machine-readable metadata, validated by AIEO
 
 - **Status:** ratified

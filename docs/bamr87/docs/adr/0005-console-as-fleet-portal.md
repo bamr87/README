@@ -13,8 +13,6 @@ title: 'ADR 0005 — The Harness Console is the fleet''s portal: one launcher fr
 - **Deciders**: proposed by an agent at the maintainer's request (2026-11-04, including the two-mode rule in decision 6); the maintainer accepts or rejects it by merging the PR that adds it
 - **Related**: constitution § 18 (fleet design consistency) and § 10.8 (prior art first), [docs/FRONTEND-PLATFORM.md](../FRONTEND-PLATFORM.md) (the six layers this ADR settles layer 3 of), [docs/DESIGN-HARMONIZATION.md](../DESIGN-HARMONIZATION.md), roadmap FF-0032, bamr87/bamr87#583 (enterprise AppShell), #585 (bashOS as the operating layer), #623 (the first federated plugin), [docs/VERIFICATION.md](../VERIFICATION.md), [docs/FLEET-COMPOSE.md](../FLEET-COMPOSE.md)
 
-<!-- Accepted in and Completed are added by the post-merge ratify job when the maintainer merges this ADR's PR and when the maintainer closes the Tracking issue as completed (docs/adr/README.md#lifecycle). Never write them by hand. A PR that adds or changes an ADR is gated (constitution § 12.3). -->
-
 ## Context
 
 ### Needs assessment

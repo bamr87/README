@@ -9,7 +9,7 @@ nav_exclude: true
 
 # GodotGo - content map
 
-Every published page in [`docs/godotgo/`](../godotgo/) as it appears in the sidebar: **30 pages** across **6 sections** (max depth 4).
+Every published page in [`docs/godotgo/`](../godotgo/) as it appears in the sidebar: **31 pages** across **6 sections** (max depth 4).
 
 - [GodotGo (README)](../godotgo/README.md)
 - [Changelog](../godotgo/CHANGELOG.md)
@@ -20,7 +20,7 @@ Every published page in [`docs/godotgo/`](../godotgo/) as it appears in the side
 - [PRD — GodotGo](../godotgo/PRD.md)
 - [Security Policy](../godotgo/SECURITY.md)
 - [Templates](../godotgo/templates/blank/README.md)
-- **[Documentation](../godotgo/docs/README.md)** <small>(14)</small>
+- **[Documentation](../godotgo/docs/README.md)** <small>(15)</small>
   - [godotgo documentation](../godotgo/docs/README.md)
   - [AI-assisted development](../godotgo/docs/ai-development.md)
   - [Authoring a game](../godotgo/docs/authoring-games.md)
@@ -29,9 +29,10 @@ Every published page in [`docs/godotgo/`](../godotgo/) as it appears in the side
   - [Material Maker workflow](../godotgo/docs/material-maker.md)
   - [The GodotGo framework](../godotgo/docs/framework.md)
   - [Verification: what proves the framework works](../godotgo/docs/verification.md)
-  - **[Amendments — godotgo](../godotgo/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — godotgo](../godotgo/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — godotgo](../godotgo/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../godotgo/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../godotgo/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../godotgo/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../godotgo/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../godotgo/docs/adr/README.md)

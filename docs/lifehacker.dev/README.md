@@ -97,5 +97,4 @@ Notable changes are recorded in [CHANGELOG.md](CHANGELOG.md); the full record is
 
 ---
 
-<!-- bamr87-portfolio-footer -->
 Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

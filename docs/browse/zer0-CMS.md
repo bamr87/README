@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Zer0 CMS - content map
 
-Every published page in [`docs/zer0-CMS/`](../zer0-CMS/) as it appears in the sidebar: **1,199 pages** across **181 sections** (max depth 6).
+Every published page in [`docs/zer0-CMS/`](../zer0-CMS/) as it appears in the sidebar: **1,201 pages** across **181 sections** (max depth 6).
 
 - [zer0-CMS (README)](../zer0-CMS/README.md)
 - [Attribution](../zer0-CMS/ATTRIBUTION.md)
@@ -383,7 +383,7 @@ Every published page in [`docs/zer0-CMS/`](../zer0-CMS/) as it appears in the si
       - [Fact Checker](../zer0-CMS/content/research/data/fact_checker.md)
       - [Research Brief](../zer0-CMS/content/research/data/research_brief.md)
       - [Summarizer](../zer0-CMS/content/research/data/summarizer.md)
-- **[Documentation](../zer0-CMS/docs/README.md)** <small>(29)</small>
+- **[Documentation](../zer0-CMS/docs/README.md)** <small>(31)</small>
   - [zer0-CMS documentation](../zer0-CMS/docs/README.md)
   - [Architecture](../zer0-CMS/docs/ARCHITECTURE.md)
   - [Configuration](../zer0-CMS/docs/CONFIG.md)
@@ -394,10 +394,11 @@ Every published page in [`docs/zer0-CMS/`](../zer0-CMS/) as it appears in the si
   - [The zer0 monorepo](../zer0-CMS/docs/MONOREPO.md)
   - [The zer0 stack](../zer0-CMS/docs/ZER0-STACK.md)
   - [zer0-CMS — Constitution](../zer0-CMS/docs/constitution.md)
-  - **[Amendments — zer0-CMS](../zer0-CMS/docs/amendments/README.md)** <small>(4)</small>
+  - **[Amendments — zer0-CMS](../zer0-CMS/docs/amendments/README.md)** <small>(5)</small>
     - [Amendments — zer0-CMS](../zer0-CMS/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../zer0-CMS/docs/amendments/0001-ratify-constitution.md)
     - [0002 — Retire the Rails invariants](../zer0-CMS/docs/amendments/0002-retire-the-rails-invariants.md)
+    - [0003 — Missions](../zer0-CMS/docs/amendments/0003-mission-statement.md)
     - [NNNN — Title of the amendment](../zer0-CMS/docs/amendments/0000-template.md)
   - **[Architecture decision records](../zer0-CMS/docs/adr/README.md)** <small>(11)</small>
     - [Architecture decision records](../zer0-CMS/docs/adr/README.md)
@@ -411,8 +412,9 @@ Every published page in [`docs/zer0-CMS/`](../zer0-CMS/) as it appears in the si
     - [ADR 0008 — Retire the Rails fleet CMS now: merge G4 and G5, delete…](../zer0-CMS/docs/adr/0008-retire-the-rails-cms.md)
     - [ADR 0009 — Public ids: UUIDs on every surface, integer keys internal…](../zer0-CMS/docs/adr/0009-public-ids.md)
     - [ADR 0010 — Voice: one scoped, versioned voice per site, resolved for…](../zer0-CMS/docs/adr/0010-voice.md)
-  - **Plan** <small>(4)</small>
+  - **Plan** <small>(5)</small>
     - [Agent-Native Headless CMS: Rails + Django/Wagtail](../zer0-CMS/docs/plan/agent-native-design.md)
+    - [Newsroom and journalism platform — discovery](../zer0-CMS/docs/plan/newsroom-journalism-discovery.md)
     - [PLAN: zer0-CMS → one Python platform with a React frontend (ADR 0006)](../zer0-CMS/docs/plan/PLAN.md)
     - [TARGET — what zer0-CMS is being rebuilt into](../zer0-CMS/docs/plan/TARGET.md)
     - [The Rails CMS: what the platform still owes](../zer0-CMS/docs/plan/rails-cms-spec.md)

@@ -46,8 +46,6 @@ Reading Material
 
 [Reverse Engineering]: https://web.archive.org/web/20160315083251/http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -79,5 +77,3 @@ Small reversing tasks build the pattern recognition used for every larger binary
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex7/">Level 7</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex9/">Level 9</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

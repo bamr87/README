@@ -39,8 +39,6 @@ toc_sticky: true
 
 **At this moment, level 34 does not exist yet.**
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -62,5 +60,3 @@ Bandit currently ends at `bandit33`. The OverTheWire maintainers occasionally ad
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit33/">Level 33</a><a class="sg-index" href="../">Bandit overview</a><span></span></nav>
 
 </section>
-
-<!-- study-guide:end -->

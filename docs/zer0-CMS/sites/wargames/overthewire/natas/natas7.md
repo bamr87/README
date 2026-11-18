@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas7
     URL:      http://natas7.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Never build file paths from user input. Map user choices to a fixed allow-list o
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas6/">Level 6</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas8/">Level 8</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -19,7 +19,6 @@ title: Notes
 
   {% if site.notes and site.notes.size > 0 %}
   
-  <!-- Tag Filter -->
   <div class="row mb-4">
     <div class="col">
       <div class="d-flex flex-wrap gap-2 align-items-center">
@@ -41,7 +40,6 @@ title: Notes
     </div>
   </div>
 
-  <!-- Notes Grid -->
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="notes-grid">
     {% assign sorted_notes = site.notes | sort: "date" | reverse %}
     {% for note in sorted_notes %}

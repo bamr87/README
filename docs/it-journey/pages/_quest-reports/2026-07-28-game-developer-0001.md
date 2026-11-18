@@ -63,9 +63,9 @@ All command outcomes below come from the sealed `walk-evidence.json` (execute mo
 Dimensions: commands_work 4 · content_accuracy 4 · completeness 3 · clarity 5 · structure 5 · safety 5. Snippet coverage: **ran 8, passed 7, failed 1, skipped 3, reasoned 6** (available_runnable 7/13).
 - `passed` — `git init && git add . && git commit` against a real `jekyll new my-castle` site (after setting local git user.name/email).
 - `passed` — `_config.yml` `url`/`baseurl` edit: "Jekyll parsed and built successfully with this config."
-- `passed` — `relative_url` filter: `{​{ '/assets/css/style.css' | relative_url }​}` rendered `/my-castle/assets/css/style.css` with `baseurl: "/my-castle"`; hard-coded path did not.
+- `passed` — `relative_url` filter: `{{ '/assets/css/style.css' | relative_url }}` rendered `/my-castle/assets/css/style.css` with `baseurl: "/my-castle"`; hard-coded path did not.
 - `passed` — `bundle exec jekyll serve --baseurl "/my-castle"`: log showed `Server address: http://127.0.0.1:4001/my-castle/`, matching documented behavior.
-- `passed` — `JEKYLL_ENV=production bundle exec jekyll build` produced a full `_site/`; the `{​% if jekyll.environment == "production" %​}` guard verified (dev build omitted content, prod build included it).
+- `passed` — `JEKYLL_ENV=production bundle exec jekyll build` produced a full `_site/`; the `{% if jekyll.environment == "production" %}` guard verified (dev build omitted content, prod build included it).
 - `failed` — `gh api -X POST repos/:owner/my-castle/pages ...`: failed with *"set the GH_TOKEN environment variable"* — **expected**, no auth in sandbox (shared-state/auth op, correctly not a content bug).
 - `skipped`/`reasoned` — `brew install gh` + `gh auth login`, `gh repo create`, `winget` path, `aws s3 sync`, DNS A/CNAME tables: not safely runnable; syntax verified correct.
 

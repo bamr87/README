@@ -56,8 +56,6 @@ Helpful Reading Material
 [How to use SSH with a non-standard port on It's FOSS]: https://itsfoss.com/ssh-to-port/
 [How to use SSH with ssh-keys on wikiHow]: https://www.wikihow.com/Use-SSH
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -90,5 +88,3 @@ SSH is how engineers administer servers, deploy code and tunnel traffic. Underst
 <nav class="sg-nav" aria-label="Level navigation"><span></span><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit1/">Level 1</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

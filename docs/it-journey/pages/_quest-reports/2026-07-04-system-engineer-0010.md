@@ -69,7 +69,7 @@ Statuses below are **real outcomes** from commands I ran (`passed`/`failed`/`ski
 ### 1 · Action Triggers — ran 1/1 runnable snippet
 - **`python3 yaml.safe_load(<workflow>)`** → **passed**. The CI/CD workflow parses cleanly: `jobs = ['test','release']`, triggers `['pull_request','push']`.
 - Action refs `actions/checkout@v4`, `actions/setup-python@v5`, `release-drafter/release-drafter@v6` → **reasoned**: all current, valid tags.
-- `{​% raw %​}{​{ secrets.GITHUB_TOKEN }​}{​% endraw %​}` renders to `${​{ secrets.GITHUB_TOKEN }​}` → **reasoned**: the Liquid `raw` guard is correct; the leading `$` is intended (not a bug).
+- `{% raw %}{{ secrets.GITHUB_TOKEN }}{% endraw %}` renders to `${{ secrets.GITHUB_TOKEN }}` → **reasoned**: the Liquid `raw` guard is correct; the leading `$` is intended (not a bug).
 - `## 🎯 Quest Objectives` present? → **failed** (grep): section absent.
 
 ### 2 · Branches & Pull Requests — 0 runnable commands

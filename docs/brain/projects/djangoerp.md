@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 17
+pages: 18
 repo: bamr87/djangoerp
 tags:
 - brain/project
@@ -16,19 +16,19 @@ title: Django ERP
 > [!info] app: `bamr87/djangoerp`
 > Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning.
 
-**17** pages collected from commit `c504342a4d10` (2026-11-08).
+**18** pages collected from commit `ca47145def5d` (2026-11-18).
 
 ## Most connected pages
 
 - [[djangoerp/README|DjangoERP]]
 - [[djangoerp/PRD|PRD — djangoerp]]
 - [[djangoerp/docs/constitution|djangoerp — Constitution]]
-- [[djangoerp/docs/README|djangoerp documentation]]
 - [[djangoerp/AGENTS|djangoerp]]
+- [[djangoerp/docs/README|djangoerp documentation]]
 - [[djangoerp/docs/amendments/README|Amendments — djangoerp]]
 - [[djangoerp/CLAUDE|djangoerp]]
 - [[djangoerp/docs/adr/README|Architecture Decision Records]]
 - [[djangoerp/docs/amendments/0001-ratify-constitution|0001 — Ratify the constitution]]
+- [[djangoerp/docs/amendments/0002-mission-statement|0002 — Missions]]
 - [[djangoerp/CHANGELOG|Changelog]]
 - [[djangoerp/docs/ARCHITECTURE|DjangoERP architecture]]
-- [[djangoerp/docs/DOCKER|Docker and debugging]]

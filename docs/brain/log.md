@@ -15,6 +15,28 @@ Every crawl that changed a corpus, newest first. Dates are the upstream commit d
 
 | Date | Project | Commit | Added | Changed | Removed |
 |---|---|---|---:|---:|---:|
+| 2026-11-18 | [[brain/projects/zpl-viewer\|ZPL Viewer]] | `debbd5656507` | 0 | 13 | 0 |
+| 2026-11-18 | [[brain/projects/zer0-CMS\|Zer0 CMS]] | `d0c3a6cc3eae` | 2 | 281 | 0 |
+| 2026-11-18 | [[brain/projects/vs-sonic-pi\|VS Sonic Pi]] | `b105cda8fbe2` | 1 | 13 | 0 |
+| 2026-11-18 | [[brain/projects/SCHEMA\|SCHEMA Protocol]] | `5270ed58f6fb` | 0 | 12 | 0 |
+| 2026-11-18 | [[brain/projects/rewind-arcade\|Rewind Arcade]] | `bddc9710432b` | 0 | 19 | 0 |
+| 2026-11-18 | [[brain/projects/outbox\|Outbox]] | `0e39cfb52f3b` | 1 | 12 | 0 |
+| 2026-11-18 | [[brain/projects/ocrmd\|OCRmd]] | `bd2aeb826081` | 1 | 16 | 0 |
+| 2026-11-18 | [[brain/projects/lifehacker.dev\|Lifehacker]] | `4b8b503f0916` | 0 | 16 | 0 |
+| 2026-11-18 | [[brain/projects/law-ai\|Law AI]] | `0716f1486ef2` | 1 | 33 | 0 |
+| 2026-11-18 | [[brain/projects/godotgo\|GodotGo]] | `1249b008f062` | 1 | 15 | 0 |
+| 2026-11-18 | [[brain/projects/gitorio\|Gitorio]] | `c324d78d8e38` | 1 | 22 | 0 |
+| 2026-11-18 | [[brain/projects/githubai\|GitHub AI]] | `2065d55dc123` | 6 | 23 | 0 |
+| 2026-11-18 | [[brain/projects/fredgar-ai\|Fredgar AI]] | `61113efdb3c2` | 0 | 14 | 0 |
+| 2026-11-18 | [[brain/projects/djangoerp\|Django ERP]] | `ca47145def5d` | 1 | 13 | 0 |
+| 2026-11-18 | [[brain/projects/cv-pro\|CV Pro]] | `261e6aeda21b` | 0 | 15 | 0 |
+| 2026-11-18 | [[brain/projects/bashos\|BashOS]] | `8b220e1762ae` | 0 | 10 | 0 |
+| 2026-11-18 | [[brain/projects/bamr87.github.io\|Personal Site]] | `5416a6551627` | 0 | 18 | 0 |
+| 2026-11-18 | [[brain/projects/bamr87\|Fleet Hub]] | `93483869321b` | 16 | 80 | 0 |
+| 2026-11-18 | [[brain/projects/it-journey\|IT Journey]] | `683ac7759a44` | 0 | 114 | 0 |
+| 2026-11-18 | [[brain/projects/zer0-mistakes\|Zer0 Mistakes]] | `e6105005bb04` | 3 | 37 | 0 |
+| 2026-11-18 | [[brain/projects/bashcrawl\|Bash Crawl]] | `80cccd9cc0d6` | 0 | 19 | 0 |
+| 2026-11-18 | [[brain/projects/scripts\|Scripts]] | `4aacaf5915f6` | 1 | 12 | 0 |
 | 2026-11-18 | [[brain/projects/bamr87\|Fleet Hub]] | `80f42680f51a` | 0 | 7 | 0 |
 | 2026-11-18 | [[brain/projects/it-journey\|IT Journey]] | `5e93a84c71ea` | 1 | 6 | 0 |
 | 2026-11-18 | [[brain/projects/bashos\|BashOS]] | `94417f6f537b` | 0 | 3 | 0 |

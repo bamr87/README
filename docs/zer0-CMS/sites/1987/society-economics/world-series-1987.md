@@ -34,11 +34,9 @@ For Minnesota, the championship carried deep civic resonance. The Twins had spen
 - [1987 World Series — Wikipedia](https://en.wikipedia.org/wiki/1987_World_Series)
 - [1987 World Series — Baseball Almanac](https://www.baseball-almanac.com/ws/yr1987ws.shtml)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Black Monday (October 19, 1987)](black-monday.md) — stock market crash that occurred just two days after the World Series began, dominating U.S. economic news in October 1987.
 - [ACT UP Founded (March 12, 1987)](act-up-founding.md) — another major Society & Economics landmark of 1987.
 - [FDA Approves Prozac (December 29, 1987)](prozac-fda-approval.md) — third Society & Economics milestone of 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

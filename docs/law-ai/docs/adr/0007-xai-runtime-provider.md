@@ -9,7 +9,7 @@ title: ADR 0007 — xAI as a sanctioned runtime provider
 - **Status**: accepted
 - **Date**: 2026-09-04
 - **Spec**: [specs/050-xai-oauth-provider](../../specs/050-xai-oauth-provider/spec.md) — implemented the same day; the OAuth-flow block below was resolved rather than waived
-- **Constitution clauses amended**: [§1 Mission Alignment — product-runtime LLM policy](../constitution.md#1-mission-alignment), [§2 Tech Stack](../constitution.md#2-tech-stack-locked)
+- **Constitution clauses amended**: [§1 Missions — product-runtime LLM policy](../constitution.md#1-missions), [§2 Tech Stack](../constitution.md#2-tech-stack-locked)
 
 ## Context
 

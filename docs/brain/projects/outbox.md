@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 21
+pages: 22
 repo: bamr87/outbox
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: Outbox
 > [!info] tooling: `bamr87/outbox`
 > Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer.
 
-**21** pages collected from commit `fcbc4c6032c0` (2026-10-29).
+**22** pages collected from commit `0e39cfb52f3b` (2026-11-18).
 
 ## Most connected pages
 
@@ -31,4 +31,4 @@ title: Outbox
 - [[outbox/docs/amendments/0001-ratify-constitution|0001 — Ratify the constitution]]
 - [[outbox/CHANGELOG|Changelog]]
 - [[outbox/SCHEMA|SCHEMA — bamr87/outbox]]
-- [[outbox/agents/claimant_a|Claimant-A]]
+- [[outbox/SECURITY|Security Policy]]

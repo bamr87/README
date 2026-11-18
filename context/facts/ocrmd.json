@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 25,
-    "fingerprint": "7b6a0069fd8d54c3",
+    "file_count": 26,
+    "fingerprint": "80e60cd0271c44ff",
     "path": "docs/ocrmd",
     "present": true,
-    "total_bytes": 250800
+    "total_bytes": 261713
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -29,17 +29,17 @@
     "CLAUDE.md",
     "AGENTS.md",
     "CHANGELOG.md",
+    "SECURITY.md",
     "docs/ARCHITECTURE.md",
     "docs/reference/cli.md",
-    "docs/scanning.md",
-    "docs/reference/settings.md"
+    "docs/scanning.md"
   ],
   "navigation": {
     "browse": "docs/browse/ocrmd.md",
-    "fingerprint": "b175f4a8c3b103e5",
+    "fingerprint": "4f7fa88f3a3ddcd7",
     "index": "ocrmd/README.md",
     "max_depth": 3,
-    "pages": 25,
+    "pages": 26,
     "present": true,
     "sections": 4,
     "skipped": 0,
@@ -68,20 +68,20 @@
   },
   "rollups": {
     "categories": {
-      "ocrmd": 25
+      "ocrmd": 26
     },
     "code_languages": [
       "text",
       "plaintext",
       "sh",
       "python",
+      "toml",
       "bash",
-      "markdown",
-      "toml"
+      "markdown"
     ],
-    "indexed_documents": 25,
+    "indexed_documents": 26,
     "top_tags": [],
-    "total_words": 38059
+    "total_words": 39851
   },
   "schema_version": "1.0",
   "signals": {
@@ -90,7 +90,7 @@
     "has_claude_md": true,
     "has_contributing": false,
     "has_schema_md": false,
-    "has_security_policy": false
+    "has_security_policy": true
   },
   "structure": {
     "root_docs": [
@@ -98,7 +98,8 @@
       "CHANGELOG.md",
       "CLAUDE.md",
       "PRD.md",
-      "README.md"
+      "README.md",
+      "SECURITY.md"
     ],
     "top_dirs": [
       {

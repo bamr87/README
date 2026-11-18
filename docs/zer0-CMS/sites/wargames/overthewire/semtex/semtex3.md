@@ -42,8 +42,6 @@ You are almost on Semtex 3, there is just one big door before you. It is locked 
 
 Tip : **If you are not good at math, you should consider brute force. Rewrite the program and try all possible combinations of the locks. It wont take more than a few seconds ;)**
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -75,5 +73,3 @@ Knowing when exhaustive search is cheap is a core security instinct.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex2/">Level 2</a><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex4/">Level 4</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -42,8 +42,6 @@ The library code can be found in /drifter/drifter14_src/
 
 If you're feeling kind hearted, you may wish to tell the developer of the bugs you found in the library code :-)
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -76,5 +74,3 @@ Vulnerable dependencies are one of the most common real-world risks.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter13/">Level 13</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter15/">Level 15</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

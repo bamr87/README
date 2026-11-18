@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87.github.io
 source_url: https://github.com/bamr87/bamr87.github.io/blob/main/docs/amendments/README.md
 title: Amendments — bamr87.github.io
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — bamr87.github.io
 
 The append-only log of changes to [the constitution](../constitution.md). Process: constitution § 8.

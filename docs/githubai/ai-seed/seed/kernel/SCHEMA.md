@@ -6,9 +6,6 @@ title: SCHEMA — __SEED_NAME__
 ---
 # SCHEMA — __SEED_NAME__
 
-<!-- seed-kernel v__SEED_KERNEL_VERSION__ · planted __SEED_PLANTED__ from __SEED_PLANTED_FROM__ -->
-<!-- Seeded by the AI-Seed planter (plant --schema); kernel-managed — `plant . --update` re-renders it. Edit the kernel template upstream, not this installed copy. -->
-
 This is the Pyramid Schema for **__SEED_NAME__** (`__SEED_REPO__`).
 A Pyramid Schema is a machine-readable directory contract: one entry per significant path, stating what lives there, who owns it, and how it fits the whole.
 Lint with `schema_lint.py` from [bamr87/SCHEMA](https://github.com/bamr87/SCHEMA).

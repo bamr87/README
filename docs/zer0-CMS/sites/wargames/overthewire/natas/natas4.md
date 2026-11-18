@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas4
     URL:      http://natas4.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Never use a client-supplied header as proof of identity or origin. Use real auth
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas3/">Level 3</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas5/">Level 5</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -46,8 +46,6 @@ Suggested reading
 -----------------
 manpages: popen, dup2
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -79,5 +77,3 @@ Variants of the same idea appear constantly, and a systematic comparison is the 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex10/">Level 10</a><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex12/">Level 12</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

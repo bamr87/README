@@ -4,7 +4,6 @@ source_repo: bamr87/zer0-mistakes
 source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/amendments/README.md
 title: Amendments — zer0-mistakes
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — zer0-mistakes
 
 The append-only log of changes to [the constitution](../constitution.md). Process: constitution § 8.

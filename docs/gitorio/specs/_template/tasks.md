@@ -57,4 +57,4 @@ title: 'Tasks: {Feature Name}'
 
 > Append-only. Mirror each item into [BACKLOG.md](../../BACKLOG.md) with a `BL-YYYYMMDD-NN` id (`python3 tools/next_backlog_id.py`). CI ([tools/spec_validator.py](../../tools/spec_validator.py)) checks this section exists. CI ([tools/backlog_lint.py](../../tools/backlog_lint.py)) checks the BACKLOG mirror.
 
-- _none_  <!-- replace with bullets like: "BL-YYYYMMDD-NN — feature, med — short description." -->
+- _none_

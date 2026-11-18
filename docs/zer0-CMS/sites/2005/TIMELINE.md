@@ -8,7 +8,6 @@ source_url: https://github.com/bamr87/zer0-CMS/blob/main/sites/2005/TIMELINE.md
 title: Timeline of 2005
 ---
 
-<!-- BEGIN GENERATED: timeline — maintained by build-structure; do not edit by hand -->
 # Timeline of 2005
 
 A chronological record of notable events of the year 2005, sourced from the knowledge table in [README.md](README.md) and dedicated topic files.
@@ -92,4 +91,3 @@ A chronological record of notable events of the year 2005, sourced from the know
 | 2005 (year) | iTunes digital music sales triple | Society & Economics | [file]({{ '/news/society-economics/digital-music-revolution/' | relative_url }}) |
 
 > Generated from 75 knowledge-table rows. Year-spanning entries without a discrete date are listed at the end. Links update when dedicated topic files are created.
-<!-- END GENERATED: timeline -->

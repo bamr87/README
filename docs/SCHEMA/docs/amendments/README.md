@@ -4,7 +4,6 @@ source_repo: bamr87/SCHEMA
 source_url: https://github.com/bamr87/SCHEMA/blob/main/docs/amendments/README.md
 title: Amendments — SCHEMA
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — SCHEMA
 
 The append-only log of changes to [the constitution](../constitution.md). Process: constitution § 8.

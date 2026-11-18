@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas18
     URL:      http://natas18.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Use long cryptographically random session IDs from your framework, rotate them a
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas17/">Level 17</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas19/">Level 19</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

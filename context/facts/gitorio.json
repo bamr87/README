@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 144,
-    "fingerprint": "48a34571452a3edb",
+    "file_count": 145,
+    "fingerprint": "34de0367b060090d",
     "path": "docs/gitorio",
     "present": true,
-    "total_bytes": 1051245
+    "total_bytes": 1061977
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -21,7 +21,7 @@
       "Development"
     ],
     "readme": "README.md",
-    "summary": "Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude Code.",
+    "summary": "GitFactory's direction is to become the ultimate open home for all things GitHub automation: data, tools, resources and transparency, with visual blueprints that compile to auditable Actions workflows, a confirm-gated Harness Studio, and inspectable source for everyone (constitution \u00a71).",
     "title": "\u2699 GitFactory"
   },
   "key_docs": [
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/gitorio.md",
-    "fingerprint": "e615504e06eb491d",
+    "fingerprint": "93265378ad22b394",
     "index": "gitorio/README.md",
     "max_depth": 5,
-    "pages": 144,
+    "pages": 145,
     "present": true,
     "sections": 37,
     "skipped": 0,
@@ -54,7 +54,7 @@
       },
       {
         "index": "gitorio/docs/README.md",
-        "pages": 18,
+        "pages": 19,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -103,7 +103,7 @@
   },
   "rollups": {
     "categories": {
-      "gitorio": 144
+      "gitorio": 145
     },
     "code_languages": [
       "bash",
@@ -115,7 +115,7 @@
       "text",
       "json"
     ],
-    "indexed_documents": 144,
+    "indexed_documents": 145,
     "top_tags": [
       "ai-agents",
       "git",
@@ -131,7 +131,7 @@
       "release-engineering",
       "prompt-injection"
     ],
-    "total_words": 151737
+    "total_words": 153372
   },
   "schema_version": "1.0",
   "signals": {
@@ -163,7 +163,7 @@
         "name": "specs"
       },
       {
-        "doc_count": 18,
+        "doc_count": 19,
         "name": "docs"
       },
       {

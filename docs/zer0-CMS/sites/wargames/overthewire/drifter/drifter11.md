@@ -38,8 +38,6 @@ toc_sticky: true
 
 This level randomizes the executable base and stack -- can you beat the randomisation to get code execution?
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ ASLR is one of the main defences in use, and bypasses are routine in real exploi
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter10/">Level 10</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter12/">Level 12</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -1,4 +1,5 @@
 ---
+date: 2026-10-27 08:08:39+00:00
 description: The people who build and maintain this site.
 permalink: /contributors/
 sidebar:

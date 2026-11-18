@@ -43,8 +43,6 @@ Commands you may need to solve this level
 -----------------------------------------
 [man](https://manpages.ubuntu.com/manpages/noble/man1/man.1.html), grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -75,5 +73,3 @@ Log analysis, code search and threat hunting all begin with grep. Learning it ea
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit7/">Level 7</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit9/">Level 9</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -4,8 +4,6 @@ source_repo: bamr87/bashos
 source_url: https://github.com/bamr87/bashos/blob/main/AGENTS.md
 title: bashos
 ---
-<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->
-
 # bashos
 
 > How to work in bashOS: the exact commands, the layout, the hard rules and the generated files, canonical for every coding agent and contributor.

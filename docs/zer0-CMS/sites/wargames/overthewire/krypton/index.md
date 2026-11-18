@@ -41,8 +41,6 @@ Krypton
 
 The Krypton wargame.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -92,5 +90,3 @@ Krypton is one of the three games suggested after Bandit. Its ideas return in Na
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="krypton0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

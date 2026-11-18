@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 300,
-    "fingerprint": "7e3c333701a10cc0",
+    "file_count": 301,
+    "fingerprint": "4d59a9bc401ffa12",
     "path": "docs/law-ai",
     "present": true,
-    "total_bytes": 2834492
+    "total_bytes": 2777982
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -18,7 +18,7 @@
       "License"
     ],
     "readme": "README.md",
-    "summary": "An open legal-intelligence platform for prospective law students, current law students and practicing lawyers: LSAT preparation, guided legal study, and legal analysis grounded in a citation knowledge graph \u2014 with provenance on every answer and a human in the loop where it matters.",
+    "summary": "Law AI's direction is to become the ultimate open home for all things legal: data, tools, resources and transparency, with queryable and auditable case law and statutes, a citation knowledge graph, cited AI, LSAT and legal study, and API-first access for everyone (constitution \u00a71).",
     "title": "Law AI"
   },
   "key_docs": [
@@ -29,14 +29,14 @@
     "SECURITY.md",
     "BACKLOG.md",
     "specs/052-backlog-zero/tasks.md",
-    "docs/data-model.md"
+    "docs/prd.md"
   ],
   "navigation": {
     "browse": "docs/browse/law-ai.md",
-    "fingerprint": "81ea7ff93228b57e",
+    "fingerprint": "221ca68765577dac",
     "index": "law-ai/README.md",
     "max_depth": 6,
-    "pages": 300,
+    "pages": 301,
     "present": true,
     "sections": 74,
     "skipped": 0,
@@ -44,7 +44,7 @@
     "top_sections": [
       {
         "index": "law-ai/docs/README.md",
-        "pages": 46,
+        "pages": 47,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -86,7 +86,7 @@
   },
   "rollups": {
     "categories": {
-      "law-ai": 300
+      "law-ai": 301
     },
     "code_languages": [
       "bash",
@@ -98,7 +98,7 @@
       "sql",
       "cypher"
     ],
-    "indexed_documents": 300,
+    "indexed_documents": 301,
     "top_tags": [
       "structure",
       "foundations",
@@ -116,7 +116,7 @@
       "flaw",
       "fallacy"
     ],
-    "total_words": 394581
+    "total_words": 386459
   },
   "schema_version": "1.0",
   "signals": {
@@ -146,7 +146,7 @@
         "name": "backend"
       },
       {
-        "doc_count": 46,
+        "doc_count": 47,
         "name": "docs"
       },
       {

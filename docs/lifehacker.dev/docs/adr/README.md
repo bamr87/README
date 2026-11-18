@@ -4,7 +4,6 @@ source_repo: bamr87/lifehacker.dev
 source_url: https://github.com/bamr87/lifehacker.dev/blob/main/docs/adr/README.md
 title: Architecture Decision Records
 ---
-<!-- kit: sdlc v0.1.0 · ADR index (UPS-WORK-04, decision D2: law-ai format) -->
 # Architecture Decision Records
 
 > Where the hard-to-reverse decisions for lifehacker.dev are recorded, the ADR format, and the index of every record.

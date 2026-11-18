@@ -23,7 +23,7 @@ Educational IT platform with quests, blog posts, and technical documentation. *(
 
 ### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(557 documents, 94 sections)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(560 documents, 95 sections)*
 
 [Content map](browse/zer0-mistakes.md)
 
@@ -35,7 +35,7 @@ Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(80
 
 ### [🛠️ scripts](scripts/README.md)
 
-Automation scripts for forking, linting, stashing, and project management across the fleet. *(24 documents, 5 sections)*
+Automation scripts for forking, linting, stashing, and project management across the fleet. *(25 documents, 5 sections)*
 
 [Content map](browse/scripts.md)
 
@@ -47,7 +47,7 @@ OverTheWire wargame guides and security-challenge documentation (external refere
 
 ### [👋 Hi, I'm Amr Abdel-Motaleb](bamr87/README.md)
 
-Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashboards. *(259 documents, 38 sections)*
+Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashboards. *(275 documents, 40 sections)*
 
 [Content map](browse/bamr87.md)
 
@@ -71,7 +71,7 @@ CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract
 
 ### [DjangoERP](djangoerp/README.md)
 
-Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning. *(17 documents, 3 sections)*
+Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning. *(18 documents, 3 sections)*
 
 [Content map](browse/djangoerp.md)
 
@@ -83,25 +83,25 @@ Django + React app for exploring SEC EDGAR company data and FRED macro series, w
 
 ### [GitHubAI — the Claude Code SDLC framework](githubai/README.md)
 
-Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases. *(48 documents, 10 sections)*
+Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases. *(54 documents, 10 sections)*
 
 [Content map](browse/githubai.md)
 
 ### [⚙ GitFactory](gitorio/README.md)
 
-Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude Code. *(144 documents, 37 sections)*
+Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude Code. *(145 documents, 37 sections)*
 
 [Content map](browse/gitorio.md)
 
 ### [GodotGo](godotgo/README.md)
 
-Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same. *(30 documents, 6 sections)*
+Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same. *(31 documents, 6 sections)*
 
 [Content map](browse/godotgo.md)
 
 ### [Law AI](law-ai/README.md)
 
-Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama. *(300 documents, 74 sections)*
+Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama. *(301 documents, 74 sections)*
 
 [Content map](browse/law-ai.md)
 
@@ -113,13 +113,13 @@ Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mi
 
 ### [ocrmd](ocrmd/README.md)
 
-Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search. *(25 documents, 4 sections)*
+Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search. *(26 documents, 4 sections)*
 
 [Content map](browse/ocrmd.md)
 
 ### [outbox](outbox/README.md)
 
-Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer. *(21 documents, 4 sections)*
+Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer. *(22 documents, 4 sections)*
 
 [Content map](browse/outbox.md)
 
@@ -137,13 +137,13 @@ Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up rep
 
 ### [Sonic Pi for VS Code](vs-sonic-pi/README.md)
 
-VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control. *(117 documents, 6 sections)*
+VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control. *(118 documents, 6 sections)*
 
 [Content map](browse/vs-sonic-pi.md)
 
 ### [zer0-CMS](zer0-CMS/README.md)
 
-Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown sites. *(1205 documents, 181 sections)*
+Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown sites. *(1207 documents, 181 sections)*
 
 [Content map](browse/zer0-CMS.md)
 

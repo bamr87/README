@@ -52,8 +52,6 @@ The following instructions are also included on the diskimage:
 [HES]: http://hackitoergosum.org/
 [DownloadHES2010]: http://images.overthewire.org/HES2010 - OverTheWire Wargame.ova
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -87,5 +85,3 @@ The game has its own local website on the virtual machine. Once the VM is runnin
 A good follow-up once you are comfortable with web and Linux basics from Bandit and Natas, and want a themed, multi-stage scenario.
 
 </section>
-
-<!-- study-guide:end -->

@@ -4,9 +4,6 @@ source_repo: bamr87/law-ai
 source_url: https://github.com/bamr87/law-ai/blob/main/SECURITY.md
 title: Security Policy
 ---
-<!-- kit: community v0.1.0 · the fleet default SECURITY policy (UPS-REPO-14). Inherited from the owner's
-     .github repo by every repo without its own copy. -->
-
 # Security Policy
 
 ## Supported versions
@@ -27,8 +24,6 @@ Please include the affected repository and version or commit, what an attacker c
 ## Response window
 
 You will get an acknowledgement **within 7 days**. We then agree a fix timeline with you, and credit you in the advisory unless you ask us not to.
-
-<!-- Law AI additions. Everything above is the community kit's text, verbatim (bamr87/bamr87 templates/community/SECURITY.md); the section below is this repository's own. -->
 
 ## Law AI specifics
 

@@ -55,8 +55,6 @@ Helpful Reading Material
 [Secure Socket Layer/Transport Layer Security on Wikipedia]: https://en.wikipedia.org/wiki/Transport_Layer_Security
 [OpenSSL Cookbook - Testing with OpenSSL]: https://www.feistyduck.com/library/openssl-cookbook/online/testing-with-openssl/index.html
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -89,5 +87,3 @@ Debugging HTTPS, mail or API connections often means using `openssl s_client` to
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit15/">Level 15</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit17/">Level 17</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

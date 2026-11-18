@@ -13,7 +13,6 @@ source_url: https://github.com/bamr87/zer0-mistakes/blob/main/pages/_about/setti
 title: Theme Customizer
 ---
 
-<!-- chroma.js — color manipulation library (BSD-3, 36 KB min) -->
 <script src="https://cdn.jsdelivr.net/npm/chroma-js@2.4.2/chroma.min.js"></script>
 
 {% include components/theme-controls-bar.html %}
@@ -64,19 +63,16 @@ title: Theme Customizer
 
 <div class="tab-content pt-4" id="themeTabContent">
 
-  <!-- ═══════ Skin Preview Tab ═══════ -->
   <div class="tab-pane fade show active" id="pane-skins" role="tabpanel">
     {% include components/theme-customizer.html %}
   </div>
 
-  <!-- ═══════ Skin Editor Tab ═══════ -->
   <div class="tab-pane fade" id="pane-skin-editor" role="tabpanel">
 
     <p class="text-body-secondary mb-3">
       Edit any built-in skin or create your own. Adjust gradient colors, preview palettes, tune the SVG filter, then apply live.
     </p>
 
-    <!-- Toolbar -->
     <div class="d-flex flex-wrap gap-2 mb-4 align-items-end">
       <div>
         <label class="form-label small fw-semibold mb-1" for="skin-editor-select">Skin</label>
@@ -96,24 +92,19 @@ title: Theme Customizer
       </button>
     </div>
 
-    <!-- Gradient stop color pickers -->
     <h6 class="fw-semibold"><i class="bi bi-palette me-1"></i>Gradient Colors</h6>
     <div class="row g-3 mb-4" id="skin-editor-stops"></div>
 
-    <!-- Live gradient preview -->
     <h6 class="fw-semibold"><i class="bi bi-image me-1"></i>Gradient Preview</h6>
     <div id="skin-editor-preview" class="rounded-3 overflow-hidden mb-4" style="height:120px;border:1px solid rgba(128,128,128,.15)"></div>
 
-    <!-- Auto-generated palettes (colorffy-style) -->
     <div id="skin-editor-palettes" class="mb-4"></div>
 
-    <!-- Advanced SVG filter controls -->
     <details class="mb-4">
       <summary class="fw-semibold"><i class="bi bi-sliders2 me-1"></i>Advanced: SVG Filter Controls</summary>
       <div id="skin-editor-filters" class="mt-3"></div>
     </details>
 
-    <!-- Action buttons -->
     <div class="d-flex flex-wrap gap-2">
       <button class="btn btn-primary" id="skin-editor-apply">
         <i class="bi bi-play-circle me-1"></i>Apply Live
@@ -134,7 +125,6 @@ title: Theme Customizer
 
   </div>
 
-  <!-- ═══════ Palette Generator Tab ═══════ -->
   <div class="tab-pane fade" id="pane-palette" role="tabpanel">
 
     <p class="text-body-secondary mb-3">Generate harmonious color palettes from a base color using color theory algorithms.</p>
@@ -172,7 +162,6 @@ title: Theme Customizer
 
   </div>
 
-  <!-- ═══════ Live Preview Tab ═══════ -->
   <div class="tab-pane fade" id="pane-live" role="tabpanel">
 
     <div class="d-flex justify-content-between align-items-center mb-3">
@@ -191,7 +180,6 @@ title: Theme Customizer
 
   </div>
 
-  <!-- ═══════ Color Editor Tab ═══════ -->
   <div class="tab-pane fade" id="pane-colors" role="tabpanel">
 
     <p class="text-body-secondary mb-3">Edit theme color values below. Changes are reflected in the Export tab.</p>
@@ -210,7 +198,6 @@ title: Theme Customizer
 
   </div>
 
-  <!-- ═══════ Export YAML Tab ═══════ -->
   <div class="tab-pane fade" id="pane-export" role="tabpanel">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h5 class="mb-0"><i class="bi bi-filetype-yml me-1"></i> Theme Configuration YAML</h5>

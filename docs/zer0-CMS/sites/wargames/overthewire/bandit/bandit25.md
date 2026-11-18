@@ -45,8 +45,6 @@ There is no way to retrieve the pincode except by going through all of the 10000
 combinations, called brute-forcing.  
 You do not need to create new connections each time
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -79,5 +77,3 @@ Understanding the arithmetic of brute force explains why short PINs, weak passwo
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit24/">Level 24</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit26/">Level 26</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

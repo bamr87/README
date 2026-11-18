@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas22
     URL:      http://natas22.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Always stop execution after sending a redirect, and perform the authorisation ch
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas21/">Level 21</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas23/">Level 23</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

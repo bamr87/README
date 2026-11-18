@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0014-central-loop-switches.md
 title: 0014 — Every scheduled or AI workflow has a centrally managed kill switch
 ---
-<!-- kit: governance v0.1.0 -->
 # 0014 — Every scheduled or AI workflow has a centrally managed kill switch
 
 - **Status:** ratified

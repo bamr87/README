@@ -4,24 +4,6 @@ source_repo: bamr87/it-journey
 source_url: https://github.com/bamr87/it-journey/blob/main/scripts/core/README.md
 title: Core Utility Scripts
 ---
-<!--
-@file scripts/core/README.md @description Documentation for core utility scripts @author IT-Journey Team <team@it-journey.org> @created 2025-07-07 @lastModified 2025-07-07 @version 1.0.0
-
-@relatedIssues 
-  - Script consolidation: Document core utilities
-
-@relatedEvolutions
-  - v1.0.0: Initial documentation for core scripts
-
-@dependencies
-  - ../version-manager.sh: Unified version management
-  - ../environment-setup.sh: Environment configuration
-
-@changelog
-  - 2025-07-07: Initial creation - ITJ
-
-@usage Reference documentation for core scripts @notes Core utilities that provide foundational functionality -->
-
 # Core Utility Scripts
 
 Essential scripts that provide foundational functionality across all IT-Journey projects.

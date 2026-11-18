@@ -60,8 +60,6 @@ A webbrowser, curl, ZAP proxy
 developed in association with<br/> the <a href="http://www.nessos-project.eu/">NESSoS FP7 project</a>
 </div>
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -112,5 +110,3 @@ Everything here is meant to be attacked, but only the Natas servers. Never apply
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="natas0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

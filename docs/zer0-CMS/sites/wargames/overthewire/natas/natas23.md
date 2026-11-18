@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas23
     URL:      http://natas23.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Use strict comparison (`===`), validate types explicitly and keep password logic
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas22/">Level 22</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas24/">Level 24</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Fleet Hub - content map
 
-Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sidebar: **259 pages** across **38 sections** (max depth 4).
+Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sidebar: **275 pages** across **40 sections** (max depth 4).
 
 - [👋 Hi, I'm Amr Abdel-Motaleb](../bamr87/README.md)
 - [bamr87 (AGENTS)](../bamr87/AGENTS.md)
@@ -19,8 +19,13 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
 - [Index — the bamr87 hub as the fleet's central repository](../bamr87/CATALOG.md)
 - [PRD — bamr87 (dash)](../bamr87/PRD.md)
 - [SCHEMA — bamr87 dash](../bamr87/SCHEMA.md)
-- **[changelog.d/ — pending changelog entries](../bamr87/changelog.d/README.md)** <small>(4)</small>
+- **[changelog.d/ — pending changelog entries](../bamr87/changelog.d/README.md)** <small>(9)</small>
   - [changelog.d/ — pending changelog entries](../bamr87/changelog.d/README.md)
+  - [Claude Run Transient Retry](../bamr87/changelog.d/claude-run-transient-retry.md)
+  - [Claude Run Version Line](../bamr87/changelog.d/claude-run-version-line.md)
+  - [Merge Readiness](../bamr87/changelog.d/merge-readiness.md)
+  - [Mission And About Section](../bamr87/changelog.d/mission-and-about-section.md)
+  - [Pr Queue Maintainer Actions](../bamr87/changelog.d/pr-queue-maintainer-actions.md)
   - [Pr Review Findings](../bamr87/changelog.d/pr-review-findings.md)
   - [Pr Review Kit Concurrency](../bamr87/changelog.d/pr-review-kit-concurrency.md)
   - [SCHEMA — changelog.d](../bamr87/changelog.d/SCHEMA.md)
@@ -28,7 +33,7 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
   - [compose/ — the hub's half of the fleet dev stack](../bamr87/compose/README.md)
   - [SCHEMA — compose](../bamr87/compose/SCHEMA.md)
   - [SCHEMA — compose/initdb](../bamr87/compose/initdb/SCHEMA.md)
-- **Data** <small>(6)</small>
+- **Data** <small>(8)</small>
   - [SCHEMA — data](../bamr87/_data/SCHEMA.md)
   - [SCHEMA — data/voices](../bamr87/_data/voices/SCHEMA.md)
   - **[data/harnesslibrary/ — the harness experience library](../bamr87/_data/harness_library/README.md)** <small>(2)</small>
@@ -37,14 +42,18 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
   - **[data/roadmap.d/ — pending roadmap entries](../bamr87/_data/roadmap.d/README.md)** <small>(2)</small>
     - [data/roadmap.d/ — pending roadmap entries](../bamr87/_data/roadmap.d/README.md)
     - [SCHEMA — data/roadmap.d](../bamr87/_data/roadmap.d/SCHEMA.md)
+  - **[data/sprints/ — the live expedite-sprint records](../bamr87/_data/sprints/README.md)** <small>(2)</small>
+    - [data/sprints/ — the live expedite-sprint records](../bamr87/_data/sprints/README.md)
+    - [SCHEMA — data/sprints](../bamr87/_data/sprints/SCHEMA.md)
 - **[diagrams/](../bamr87/diagrams/README.md)** <small>(4)</small>
   - [diagrams/](../bamr87/diagrams/README.md)
   - [SCHEMA — diagrams](../bamr87/diagrams/SCHEMA.md)
   - **[diagrams/pipeline-map/](../bamr87/diagrams/pipeline-map/README.md)** <small>(2)</small>
     - [diagrams/pipeline-map/](../bamr87/diagrams/pipeline-map/README.md)
     - [SCHEMA — diagrams/pipeline-map](../bamr87/diagrams/pipeline-map/SCHEMA.md)
-- **[Documentation](../bamr87/docs/README.md)** <small>(162)</small>
+- **[Documentation](../bamr87/docs/README.md)** <small>(168)</small>
   - [bamr87 documentation](../bamr87/docs/README.md)
+  - [About section — the repository site map](../bamr87/docs/ABOUT-SECTION.md)
   - [Agent Verification — proving features work the way a user experiences…](../bamr87/docs/VERIFICATION.md)
   - [AI Integration — surfaces, auth, and the loops](../bamr87/docs/AI-INTEGRATION.md)
   - [Architecture Research Harness — R&D loop for fleet architecture](../bamr87/docs/ARCH-RESEARCH-HARNESS.md)
@@ -64,6 +73,7 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
   - [Engagement estimation & cost tracking](../bamr87/docs/ESTIMATION.md)
   - [Evals](../bamr87/docs/EVALS.md)
   - [Expedite sprints — accelerated, monitored pilots run by agentic loops](../bamr87/docs/EXPEDITE-SPRINTS.md)
+  - [Fleet](../bamr87/docs/FLEET.md)
   - [Fleet consolidation — fewer repos, one place per concern](../bamr87/docs/CONSOLIDATION.md)
   - [Fleet design harmonization — roadmap and plan](../bamr87/docs/DESIGN-HARMONIZATION.md)
   - [Fleet frontend platform — layers, tiers and fan-out](../bamr87/docs/FRONTEND-PLATFORM.md)
@@ -137,7 +147,7 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
       - [Routing](../bamr87/docs/agentic-patterns/patterns/02-routing.md)
       - [SCHEMA — docs/agentic-patterns/patterns](../bamr87/docs/agentic-patterns/patterns/SCHEMA.md)
       - [Tool Use (Function Calling)](../bamr87/docs/agentic-patterns/patterns/05-tool-use.md)
-  - **[Amendments — bamr87](../bamr87/docs/amendments/README.md)** <small>(38)</small>
+  - **[Amendments — bamr87](../bamr87/docs/amendments/README.md)** <small>(40)</small>
     - [Amendments — bamr87](../bamr87/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../bamr87/docs/amendments/0001-ratify-constitution.md)
     - [0002 — Assign sequential ids at merge, not in a pull request](../bamr87/docs/amendments/0002-conflict-free-numbering.md)
@@ -174,10 +184,12 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
     - [0033 — On-premise compute: an enrolled node runs local sessions and…](../bamr87/docs/amendments/0033-onprem-compute.md)
     - [NNNN — Title of the amendment](../bamr87/docs/amendments/0000-template.md)
     - [SCHEMA — docs/amendments](../bamr87/docs/amendments/SCHEMA.md)
-    - **[docs/amendments/proposed/ — unnumbered amendment records](../bamr87/docs/amendments/proposed/README.md)** <small>(2)</small>
+    - **[docs/amendments/proposed/ — unnumbered amendment records](../bamr87/docs/amendments/proposed/README.md)** <small>(4)</small>
       - [docs/amendments/proposed/ — unnumbered amendment records](../bamr87/docs/amendments/proposed/README.md)
+      - [NEW — A merge or close the maintainer confirms in the console PR queue…](../bamr87/docs/amendments/proposed/pr-queue-maintainer-actions.md)
+      - [NEW — Fleet mission statements and the repository about section](../bamr87/docs/amendments/proposed/mission-and-about-section.md)
       - [SCHEMA — docs/amendments/proposed](../bamr87/docs/amendments/proposed/SCHEMA.md)
-  - **[Architecture Decision Records](../bamr87/docs/adr/README.md)** <small>(14)</small>
+  - **[Architecture Decision Records](../bamr87/docs/adr/README.md)** <small>(15)</small>
     - [Architecture Decision Records](../bamr87/docs/adr/README.md)
     - [ADR 0001 — Record architecture decisions](../bamr87/docs/adr/0001-record-architecture-decisions.md)
     - [ADR 0002 — Agent step specs and the local loop runner](../bamr87/docs/adr/0002-agent-step-specs-and-local-runner.md)
@@ -190,12 +202,14 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
     - [ADR 0009 — The agentic efficacy model: one agent inventory, five KPIs…](../bamr87/docs/adr/0009-agentic-efficacy-model.md)
     - [ADR 0010 — The fleet graph and outcome learning: one model of what the…](../bamr87/docs/adr/0010-fleet-graph-and-outcome-learning.md)
     - [ADR 0011 — One framework, many instances: the stack installs for any…](../bamr87/docs/adr/0011-one-framework-many-instances.md)
+    - [ADR 0012 — Merge readiness: every pull request is checked, reviewed and…](../bamr87/docs/adr/0012-merge-readiness.md)
     - [ADR NNNN — Title in sentence case](../bamr87/docs/adr/0000-template.md)
     - [SCHEMA — docs/adr](../bamr87/docs/adr/SCHEMA.md)
   - **Assets** <small>(2)</small>
     - [SCHEMA — docs/assets](../bamr87/docs/assets/SCHEMA.md)
     - [SCHEMA — docs/assets/guides](../bamr87/docs/assets/guides/SCHEMA.md)
-  - **PRD** <small>(17)</small>
+  - **PRD** <small>(18)</small>
+    - [Decisions — Fleet activity replay, P0: contracts frozen](../bamr87/docs/prd/FLEET-ACTIVITY-REPLAY-DECISIONS.md)
     - [Plan — Fleet activity replay: implementation plan and epic](../bamr87/docs/prd/FLEET-ACTIVITY-REPLAY-PLAN.md)
     - [Plan — GitHub Actions as the agentic SDLC platform: typed decisions…](../bamr87/docs/prd/AGENTIC-SDLC.md)
     - [PRD — Agent news feed](../bamr87/docs/prd/AGENT-NEWS-FEED.md)
@@ -242,14 +256,18 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
 - **[projects/ — submodule container](../bamr87/projects/README.md)** <small>(2)</small>
   - [projects/ — submodule container](../bamr87/projects/README.md)
   - [SCHEMA — projects](../bamr87/projects/SCHEMA.md)
-- **[tools/](../bamr87/tools/README.md)** <small>(36)</small>
+- **[schemas](../bamr87/schemas/README.md)** <small>(2)</small>
+  - [schemas](../bamr87/schemas/README.md)
+  - [SCHEMA — schemas](../bamr87/schemas/SCHEMA.md)
+- **[tools/](../bamr87/tools/README.md)** <small>(37)</small>
   - [tools/](../bamr87/tools/README.md)
   - [SCHEMA — fleet](../bamr87/tools/fleet/SCHEMA.md)
   - [SCHEMA — observability](../bamr87/tools/observability/SCHEMA.md)
   - [SCHEMA — tools](../bamr87/tools/SCHEMA.md)
-  - **[Harness Console](../bamr87/tools/console/README.md)** <small>(10)</small>
+  - **[Harness Console](../bamr87/tools/console/README.md)** <small>(11)</small>
     - [Harness Console](../bamr87/tools/console/README.md)
     - [SCHEMA — tools/console](../bamr87/tools/console/SCHEMA.md)
+    - [SCHEMA — tools/console/backend](../bamr87/tools/console/backend/SCHEMA.md)
     - [SCHEMA — tools/console/mcplayer](../bamr87/tools/console/mcp_layer/SCHEMA.md)
     - **[@bamr87/harness-console-ui](../bamr87/tools/console/design-system/README.md)** <small>(2)</small>
       - [@bamr87/harness-console-ui](../bamr87/tools/console/design-system/README.md)

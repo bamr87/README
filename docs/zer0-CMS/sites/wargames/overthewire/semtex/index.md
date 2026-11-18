@@ -60,8 +60,6 @@ This wargame is from the community for the community. If you want to contribute,
 [contact us via chat]: https://overthewire.org/information/chat.html
 [aton at packetdropped dot org]: mailto:aton@packetdropped.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -101,5 +99,3 @@ Several levels teach ideas that are very relevant today: covert channels, ICMP t
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="semtex0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

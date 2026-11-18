@@ -5,7 +5,7 @@
   "title": "Zer0 CMS",
   "corpus": "docs/zer0-CMS",
   "counts": {
-    "pages": 1199,
+    "pages": 1201,
     "sections": 181,
     "max_depth": 6,
     "skipped": 6
@@ -18,12 +18,12 @@
     "sites/zer0-demo-cookbook/README.md",
     "sites/zer0-demo-garden/README.md"
   ],
-  "fingerprint": "b84b722ee69c886d",
+  "fingerprint": "59103111812aba85",
   "tree": {
     "type": "section",
     "title": "Zer0 CMS",
     "index": "zer0-CMS/README.md",
-    "pages": 1199,
+    "pages": 1201,
     "children": [
       {
         "type": "page",
@@ -2516,7 +2516,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "zer0-CMS/docs/README.md",
-        "pages": 29,
+        "pages": 31,
         "children": [
           {
             "type": "page",
@@ -2584,7 +2584,7 @@
             "title": "Amendments \u2014 zer0-CMS",
             "rel": "docs/amendments",
             "index": "zer0-CMS/docs/amendments/README.md",
-            "pages": 4,
+            "pages": 5,
             "children": [
               {
                 "type": "page",
@@ -2604,6 +2604,12 @@
                 "title": "0002 \u2014 Retire the Rails invariants",
                 "path": "zer0-CMS/docs/amendments/0002-retire-the-rails-invariants.md",
                 "rel": "docs/amendments/0002-retire-the-rails-invariants.md"
+              },
+              {
+                "type": "page",
+                "title": "0003 \u2014 Missions",
+                "path": "zer0-CMS/docs/amendments/0003-mission-statement.md",
+                "rel": "docs/amendments/0003-mission-statement.md"
               },
               {
                 "type": "page",
@@ -2693,13 +2699,19 @@
             "type": "section",
             "title": "Plan",
             "rel": "docs/plan",
-            "pages": 4,
+            "pages": 5,
             "children": [
               {
                 "type": "page",
                 "title": "Agent-Native Headless CMS: Rails + Django/Wagtail",
                 "path": "zer0-CMS/docs/plan/agent-native-design.md",
                 "rel": "docs/plan/agent-native-design.md"
+              },
+              {
+                "type": "page",
+                "title": "Newsroom and journalism platform \u2014 discovery",
+                "path": "zer0-CMS/docs/plan/newsroom-journalism-discovery.md",
+                "rel": "docs/plan/newsroom-journalism-discovery.md"
               },
               {
                 "type": "page",

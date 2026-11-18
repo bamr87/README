@@ -5,7 +5,6 @@ source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0018-edit
 title: '0018 — The editor is a front door: every harness surface from VS Code, through
   the same entry points'
 ---
-<!-- kit: governance v0.1.0 -->
 # 0018 — The editor is a front door: every harness surface from VS Code, through the same entry points
 
 - **Status:** ratified

@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Overwriting an adjacent flag, length or permission field is a real-world pattern
 <nav class="sg-nav" aria-label="Level navigation"><span></span><a class="sg-index" href="../">Narnia overview</a><a class="sg-next" href="../narnia1/">Level 1</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

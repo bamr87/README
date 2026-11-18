@@ -44,8 +44,6 @@ After authentication you connect to the remote file system reader on port 24013.
 
 Thanks to bk for this level!
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -78,5 +76,3 @@ Race conditions between check and use are a persistent class of real vulnerabili
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex11/">Level 11</a><a class="sg-index" href="../">Semtex overview</a><span></span></nav>
 
 </section>
-
-<!-- study-guide:end -->

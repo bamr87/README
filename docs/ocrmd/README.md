@@ -43,6 +43,7 @@ macOS is the primary platform (Apple Vision and the camera controls are macOS-on
 
 ```sh
 python3 -m venv .venv && .venv/bin/pip install -e '.[dev,rapidocr]'   # add ,pdf for PDF ingest; ,tesseract as a last resort
+cp .env.example .env                              # then uncomment the credential you have (optional: without one it runs OCR-only)
 .venv/bin/ocrmd doctor --costs                    # engines, cameras, credentials, database health, token spend
 .venv/bin/ruff check ocrmd tests                  # lint (the CI gate)
 .venv/bin/python -m pytest                        # the full suite; tests that need a local OCR engine skip without one
@@ -50,7 +51,7 @@ python3 -m venv .venv && .venv/bin/pip install -e '.[dev,rapidocr]'   # add ,pdf
 .venv/bin/ocrmd serve                             # the web UI at http://127.0.0.1:8765
 ```
 
-Put `ANTHROPIC_API_KEY` (or a Claude Code `CLAUDE_CODE_OAUTH_TOKEN`, which only reaches `claude-haiku-5-5`) in `.env`, and on macOS allow your terminal to use the camera. [docs/setup.md](docs/setup.md) has the details: the credentials and the models each reaches, camera permission, and the local OCR engines.
+Put `ANTHROPIC_API_KEY` (or a Claude Code `CLAUDE_CODE_OAUTH_TOKEN`, which only reaches `claude-haiku-5-5`) in `.env` ([`.env.example`](dot-env.example) is the commented template), and on macOS allow your terminal to use the camera. [docs/setup.md](docs/setup.md) has the details: the credentials and the models each reaches, camera permission, and the local OCR engines.
 
 ## Usage
 
@@ -140,5 +141,4 @@ Released under the [MIT License](LICENSE).
 
 ---
 
-<!-- bamr87-portfolio-footer -->
 Part of the [bamr87 portfolio](https://github.com/bamr87) — browse every project on [Amr's GitHub profile](https://github.com/bamr87).

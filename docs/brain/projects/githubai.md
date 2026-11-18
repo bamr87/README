@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 48
+pages: 54
 repo: bamr87/githubai
 tags:
 - brain/project
@@ -16,19 +16,19 @@ title: GitHub AI
 > [!info] tooling: `bamr87/githubai`
 > Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases.
 
-**48** pages collected from commit `f0e204815ba8` (2026-11-13).
+**54** pages collected from commit `2065d55dc123` (2026-11-18).
 
 ## Most connected pages
 
 - [[githubai/README|GitHubAI — the Claude Code SDLC framework]]
 - [[githubai/AGENTS|githubai]]
 - [[githubai/docs/README|githubai documentation]]
+- [[githubai/docs/adr/README|Architecture Decision Records]]
+- [[githubai/docs/architecture|Architecture]]
 - [[githubai/docs/constitution|githubai — Constitution]]
 - [[githubai/ai-seed/README|🌱 AI-Seed — the autonomous AI orchestration framework]]
-- [[githubai/ai-seed/CLAUDE|CLAUDE.md]]
 - [[githubai/docs/amendments/README|Amendments — githubai]]
+- [[githubai/ai-seed/CLAUDE|CLAUDE.md]]
+- [[githubai/docs/adr/0005-layered-config-merge|ADR 0005 — Layered config: base, then profile, then repository]]
 - [[githubai/docs/migration-v0|Migrating from GitHubAI v0.x]]
-- [[githubai/ai-seed/CONCEPT|CONCEPT — ai-seed]]
-- [[githubai/ai-seed/docs/ARCHITECTURE|AI-Seed Architecture — the autonomous orchestration framework]]
-- [[githubai/ai-seed/docs/index|AI-Seed]]
-- [[githubai/ai-seed/seed/README|seed/ — the plantable kernel]]
+- [[githubai/docs/security|Security model]]

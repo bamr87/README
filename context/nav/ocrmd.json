@@ -5,18 +5,18 @@
   "title": "OCRmd",
   "corpus": "docs/ocrmd",
   "counts": {
-    "pages": 25,
+    "pages": 26,
     "sections": 4,
     "max_depth": 3,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "b175f4a8c3b103e5",
+  "fingerprint": "4f7fa88f3a3ddcd7",
   "tree": {
     "type": "section",
     "title": "OCRmd",
     "index": "ocrmd/README.md",
-    "pages": 25,
+    "pages": 26,
     "children": [
       {
         "type": "page",
@@ -55,6 +55,12 @@
         "title": "PRD \u2014 ocrmd",
         "path": "ocrmd/PRD.md",
         "rel": "PRD.md"
+      },
+      {
+        "type": "page",
+        "title": "Security Policy",
+        "path": "ocrmd/SECURITY.md",
+        "rel": "SECURITY.md"
       },
       {
         "type": "section",

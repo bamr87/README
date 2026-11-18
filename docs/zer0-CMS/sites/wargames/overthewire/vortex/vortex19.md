@@ -40,8 +40,6 @@ Key Generation
 --------------
 This level requires you to "keygen" the level, with a minor obstacle of a weak form of binary encryption in place.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Packers and obfuscators appear in malware and licence schemes, and unpacking is 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex18/">Level 18</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex20/">Level 20</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

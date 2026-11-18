@@ -16,7 +16,7 @@ title: SCHEMA Protocol
 > [!info] tooling: `bamr87/SCHEMA`
 > Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it.
 
-**36** pages collected from commit `b67e198f0e47` (2026-11-16).
+**36** pages collected from commit `5270ed58f6fb` (2026-11-18).
 
 ## Most connected pages
 

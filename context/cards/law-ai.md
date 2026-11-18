@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 7e3c333701a10cc0
+source_fingerprint: 4d59a9bc401ffa12
 tags:
   - conditional
   - diagnosis
@@ -25,7 +25,7 @@ tags:
 
 # Law AI
 
-> Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama. An open legal-intelligence platform for prospective law students, current law students and practicing lawyers: LSAT preparation, guided legal study, and legal analysis grounded in a citation knowledge graph — with provenance on every answer and a human in the loop where it matters.
+> Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama. Law AI's direction is to become the ultimate open home for all things legal: data, tools, resources and transparency, with queryable and auditable case law and statutes, a citation knowledge graph, cited AI, LSAT and legal study, and API-first access for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -33,7 +33,7 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/law-ai` - 300 docs |
+| Corpus | `docs/law-ai` - 301 docs |
 | External | no |
 
 ## Signals
@@ -42,14 +42,14 @@ tags:
 - has AGENTS.md operating manual
 - keeps a changelog
 - has a security policy
-- ~394,581 words across 300 indexed documents
+- ~386,459 words across 301 indexed documents
 - code samples in: bash, plaintext, json, mermaid, python, yaml, sql, cypher
 
 ## Navigation
 
-300 published pages in 74 sections (max depth 6) — [browse the full map](../../docs/browse/law-ai.md) · [tree as JSON](../nav/law-ai.json)
+301 published pages in 74 sections (max depth 6) — [browse the full map](../../docs/browse/law-ai.md) · [tree as JSON](../nav/law-ai.json)
 
-- **Documentation** (46 pages)
+- **Documentation** (47 pages)
 - **Law AI — Backend** (60 pages)
 - **LawMode.ai** (10 pages)
 - **Specs — Spec-Driven Development for Law AI** (175 pages)
@@ -63,7 +63,7 @@ tags:
 - [`SECURITY.md`](../../docs/law-ai/SECURITY.md)
 - [`BACKLOG.md`](../../docs/law-ai/BACKLOG.md)
 - [`specs/052-backlog-zero/tasks.md`](../../docs/law-ai/specs/052-backlog-zero/tasks.md)
-- [`docs/data-model.md`](../../docs/law-ai/docs/data-model.md)
+- [`docs/prd.md`](../../docs/law-ai/docs/prd.md)
 
 ## Query this context
 

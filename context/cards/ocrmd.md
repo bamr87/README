@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 7b6a0069fd8d54c3
+source_fingerprint: 80e60cd0271c44ff
 tags:
 ---
 
@@ -21,7 +21,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/ocrmd` - 25 docs |
+| Corpus | `docs/ocrmd` - 26 docs |
 | External | no |
 
 ## Signals
@@ -29,12 +29,13 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~38,059 words across 25 indexed documents
-- code samples in: text, plaintext, sh, python, bash, markdown, toml
+- has a security policy
+- ~39,851 words across 26 indexed documents
+- code samples in: text, plaintext, sh, python, toml, bash, markdown
 
 ## Navigation
 
-25 published pages in 4 sections (max depth 3) — [browse the full map](../../docs/browse/ocrmd.md) · [tree as JSON](../nav/ocrmd.json)
+26 published pages in 4 sections (max depth 3) — [browse the full map](../../docs/browse/ocrmd.md) · [tree as JSON](../nav/ocrmd.json)
 
 - **Documentation** (19 pages)
 
@@ -44,10 +45,10 @@ tags:
 - [`CLAUDE.md`](../../docs/ocrmd/CLAUDE.md)
 - [`AGENTS.md`](../../docs/ocrmd/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/ocrmd/CHANGELOG.md)
+- [`SECURITY.md`](../../docs/ocrmd/SECURITY.md)
 - [`docs/ARCHITECTURE.md`](../../docs/ocrmd/docs/ARCHITECTURE.md)
 - [`docs/reference/cli.md`](../../docs/ocrmd/docs/reference/cli.md)
 - [`docs/scanning.md`](../../docs/ocrmd/docs/scanning.md)
-- [`docs/reference/settings.md`](../../docs/ocrmd/docs/reference/settings.md)
 
 ## Query this context
 

@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 32,
-    "fingerprint": "710e6dd71da23388",
+    "fingerprint": "f42103c83059fd65",
     "path": "docs/cv-pro",
     "present": true,
-    "total_bytes": 127090
+    "total_bytes": 127247
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -93,7 +93,7 @@
     ],
     "indexed_documents": 32,
     "top_tags": [],
-    "total_words": 16933
+    "total_words": 16956
   },
   "schema_version": "1.0",
   "signals": {

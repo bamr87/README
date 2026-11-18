@@ -37,8 +37,6 @@ toc_sticky: true
 
 Remote Procedure Call style reverse engineering fun :-)
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -70,5 +68,3 @@ Custom binary protocols are a common attack surface for embedded and industrial 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter11/">Level 11</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter13/">Level 13</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

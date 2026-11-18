@@ -30,7 +30,6 @@ The treaty signaled a fundamental shift in US-Soviet relations and contributed d
 - [Intermediate-Range Nuclear Forces Treaty — Wikipedia](https://en.wikipedia.org/wiki/Intermediate-Range_Nuclear_Forces_Treaty)
 - [INF Treaty — U.S. Department of State](https://2009-2017.state.gov/t/avc/trty/102360.htm)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Reagan's "Tear Down This Wall" Speech (June 12, 1987)](reagan-berlin-speech.md) — Reagan's Brandenburg Gate address preceded the INF Treaty signing by six months, building the diplomatic groundwork.
@@ -38,4 +37,3 @@ The treaty signaled a fundamental shift in US-Soviet relations and contributed d
 - [First Intifada (December 9, 1987)](first-intifada.md) — the other major December 1987 geopolitical event, as Palestinian uprising reshaped Middle East politics.
 - [Black Monday (October 19, 1987)](../society-economics/black-monday.md) — the other defining global event of late 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

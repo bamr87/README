@@ -50,8 +50,6 @@ Reading Material
 
 [Link]: http://www.google.com/search?q=linux+function+interception
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -84,5 +82,3 @@ Interposition is used by profilers and debuggers as well as by malware.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex1/">Level 1</a><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex3/">Level 3</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

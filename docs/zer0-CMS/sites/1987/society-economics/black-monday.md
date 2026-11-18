@@ -30,7 +30,6 @@ The crash also effectively ended the Louvre Accord and shifted perceptions about
 - [Black Monday (1987) — Wikipedia](https://en.wikipedia.org/wiki/Black_Monday_(1987))
 - [Black Monday: The Stock Market Crash of 1987 — Federal Reserve History](https://www.federalreservehistory.org/essays/stock_market_crash_of_1987)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [ACT UP Founded (March 12, 1987)](act-up-founding.md) — another Society & Economics landmark of 1987, the founding of the AIDS direct-action movement.
@@ -38,4 +37,3 @@ The crash also effectively ended the Louvre Accord and shifted perceptions about
 - [FDA Approves Prozac (December 29, 1987)](prozac-fda-approval.md) — another major Society & Economics event of 1987, reshaping healthcare rather than financial markets.
 - [INF Treaty (December 8, 1987)](../history-politics/inf-treaty.md) — the other defining global event of late 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

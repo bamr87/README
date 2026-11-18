@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Django ERP - content map
 
-Every published page in [`docs/djangoerp/`](../djangoerp/) as it appears in the sidebar: **17 pages** across **3 sections** (max depth 3).
+Every published page in [`docs/djangoerp/`](../djangoerp/) as it appears in the sidebar: **18 pages** across **3 sections** (max depth 3).
 
 - [DjangoERP (README)](../djangoerp/README.md)
 - [Changelog](../djangoerp/CHANGELOG.md)
@@ -17,15 +17,16 @@ Every published page in [`docs/djangoerp/`](../djangoerp/) as it appears in the 
 - [djangoerp (CLAUDE)](../djangoerp/CLAUDE.md)
 - [djangoerp tools](../djangoerp/tools/README.md)
 - [PRD — djangoerp](../djangoerp/PRD.md)
-- **[Documentation](../djangoerp/docs/README.md)** <small>(11)</small>
+- **[Documentation](../djangoerp/docs/README.md)** <small>(12)</small>
   - [djangoerp documentation](../djangoerp/docs/README.md)
   - [API routes](../djangoerp/docs/reference/api-routes.md)
   - [DjangoERP architecture](../djangoerp/docs/ARCHITECTURE.md)
   - [djangoerp — Constitution](../djangoerp/docs/constitution.md)
   - [Docker and debugging](../djangoerp/docs/DOCKER.md)
-  - **[Amendments — djangoerp](../djangoerp/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — djangoerp](../djangoerp/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — djangoerp](../djangoerp/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../djangoerp/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../djangoerp/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../djangoerp/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../djangoerp/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../djangoerp/docs/adr/README.md)

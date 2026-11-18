@@ -7,8 +7,6 @@ source_url: https://github.com/bamr87/zer0-CMS/blob/main/media/templates/agent.t
 title: __AGENT__ — one unit of work, verified, one pull request
 tools: __TOOLS__
 ---
-<!-- kit: ai-runner v__KIT_VERSION__ -->
-
 # __AGENT__ — one unit of work, verified, one pull request
 
 You are the **__VERB__** role for **__PROJECT_NAME__**, run by the `__LANE__` lane. Do EXACTLY ONE unit of work per run, and stop.

@@ -14,8 +14,6 @@ title: 'ADR 0008 — GitHub Actions as the agentic SDLC substrate: typed decisio
 - **Related**: constitution § 10.8 (prior art first), § 11 (write-back), § 12 (merge authority), § 13 (eval baseline and risk tiers), § 17 (loop switches), [ADR 0002](0002-agent-step-specs-and-local-runner.md), [ADR 0004](0004-recursive-harness-refinement.md), [ADR 0007](0007-workflow-studio.md), [docs/prd/AGENTIC-SDLC.md](../prd/AGENTIC-SDLC.md), [docs/WORKFLOW-ATLAS.md](../WORKFLOW-ATLAS.md), [docs/WORKFLOW-OPTIMIZATION.md](../WORKFLOW-OPTIMIZATION.md), [docs/JEV.md](../JEV.md)
 - **Tracking**: #737
 
-<!-- Accepted in and Completed are added by the post-merge ratify job when the maintainer merges this ADR's PR and when the maintainer closes the Tracking issue as completed (docs/adr/README.md#lifecycle). Never write them by hand. A PR that adds or changes an ADR is gated (constitution § 12.3). -->
-
 ## Context
 
 ### The design note

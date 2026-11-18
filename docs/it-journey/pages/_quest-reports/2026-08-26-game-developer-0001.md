@@ -66,7 +66,7 @@ All outcomes below are from commands the execute engine actually ran in its disp
 ### 1. Advanced Markdown — ✅ 97 (13 snippets recorded, 11 ran / 11 passed / 2 reasoned)
 - Dimensions: commands_work 5, content_accuracy 5, completeness 5, clarity 4, structure 5, safety 5.
 - Rendered with the **real Ruby `kramdown` 2.5.2 gem** (in Jekyll's default GFM-input mode) and the **real `liquid` 5.13 gem**: the pipe-table alignment (`:---`/`:--:`/`---:` → `text-align: left/center/right`), the `[^speed]` footnote (superscript + bottom `<div class="footnotes">`), the checkbox task list, the language-fenced Python code block (Rouge-highlighted), the `> **Note:**`/`⚠️ **Warning:**` blockquote callouts, the `{: .lead #intro }` Kramdown attribute list (→ exact `class="lead" id="intro"` HTML), and the definition list all produced precisely the HTML the quest claims.
-- The `{​% raw %​}...{​% endraw %​}` Liquid example rendered as literal unexecuted tag text, confirming the quest's own explanation of why it's needed inside a Jekyll-built page.
+- The `{% raw %}...{% endraw %}` Liquid example rendered as literal unexecuted tag text, confirming the quest's own explanation of why it's needed inside a Jekyll-built page.
 - Setup snippets (`mkdir -p ~/md-quest && cd ~/md-quest && touch guide.md`) ran cleanly on macOS/Linux paths; `code guide.md` couldn't launch (no VS Code binary in the headless sandbox — an environment gap, not a quest defect, and the Linux section already offers a nano/vim fallback).
 - Only nit: after creating `guide.md` in setup, the quest never explicitly tells the reader to paste the following examples into that file.
 

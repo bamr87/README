@@ -4,8 +4,6 @@ source_repo: bamr87/zpl-viewer
 source_url: https://github.com/bamr87/zpl-viewer/blob/main/AGENTS.md
 title: zpl-viewer
 ---
-<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->
-
 # zpl-viewer
 
 > Label Studio (`zpl-viewer`), an offline VS Code extension for ZPL II and EPL2 thermal labels — the commands, layout, conventions and layering rules for working on it.

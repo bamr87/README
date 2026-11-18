@@ -38,8 +38,6 @@ toc_sticky: true
 
 Get ready to escalate those privileges. You'll have to work out a secret file format and attack some security oversights.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Most real privilege escalations come from trust mistakes rather than exotic bugs
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../drifter8/">Level 8</a><a class="sg-index" href="../">Drifter overview</a><a class="sg-next" href="../drifter10/">Level 10</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

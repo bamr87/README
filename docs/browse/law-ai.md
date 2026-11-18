@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Law AI - content map
 
-Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sidebar: **300 pages** across **74 sections** (max depth 6).
+Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sidebar: **301 pages** across **74 sections** (max depth 6).
 
 - [Law AI (README)](../law-ai/README.md)
 - [Changelog](../law-ai/CHANGELOG.md)
@@ -20,7 +20,7 @@ Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sideba
 - [law-ai tools](../law-ai/tools/README.md)
 - [LSAT Practice — static site (lsat-static)](../law-ai/lsat-static/README.md)
 - [Security Policy](../law-ai/SECURITY.md)
-- **[Documentation](../law-ai/docs/README.md)** <small>(46)</small>
+- **[Documentation](../law-ai/docs/README.md)** <small>(47)</small>
   - [law-ai documentation](../law-ai/docs/README.md)
   - [Browser end-to-end testing](../law-ai/docs/e2e-testing.md)
   - [Core Schema](../law-ai/docs/core-schema.md)
@@ -50,9 +50,10 @@ Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sideba
   - [The LSAT static site (lsat-static/)](../law-ai/docs/lsat-static.md)
   - [The spec-driven loop in Law AI](../law-ai/docs/spec-driven.md)
   - [The UI/UX review loop](../law-ai/docs/ui-ux-review.md)
-  - **[Amendments — law-ai](../law-ai/docs/amendments/README.md)** <small>(4)</small>
+  - **[Amendments — law-ai](../law-ai/docs/amendments/README.md)** <small>(5)</small>
     - [Amendments — law-ai](../law-ai/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../law-ai/docs/amendments/0001-ratify-constitution.md)
+    - [0003 — Missions](../law-ai/docs/amendments/0003-mission-statement.md)
     - [NEW — Agent merge of mergeable PRs, and a review gate](../law-ai/docs/amendments/proposed/agent-merge-review-gate.md)
     - [NNNN — Title of the amendment](../law-ai/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../law-ai/docs/adr/README.md)** <small>(9)</small>

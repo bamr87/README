@@ -9,7 +9,7 @@ nav_exclude: true
 
 # OCRmd - content map
 
-Every published page in [`docs/ocrmd/`](../ocrmd/) as it appears in the sidebar: **25 pages** across **4 sections** (max depth 3).
+Every published page in [`docs/ocrmd/`](../ocrmd/) as it appears in the sidebar: **26 pages** across **4 sections** (max depth 3).
 
 - [ocrmd (README)](../ocrmd/README.md)
 - [Changelog](../ocrmd/CHANGELOG.md)
@@ -17,6 +17,7 @@ Every published page in [`docs/ocrmd/`](../ocrmd/) as it appears in the sidebar:
 - [ocrmd (AGENTS)](../ocrmd/AGENTS.md)
 - [ocrmd (CLAUDE)](../ocrmd/CLAUDE.md)
 - [PRD — ocrmd](../ocrmd/PRD.md)
+- [Security Policy](../ocrmd/SECURITY.md)
 - **[Documentation](../ocrmd/docs/README.md)** <small>(19)</small>
   - [ocrmd documentation](../ocrmd/docs/README.md)
   - [Destinations and the library API](../ocrmd/docs/integrations.md)

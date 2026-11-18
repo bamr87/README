@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 73aa80ba8cdc6a5e
+source_fingerprint: 8137a02af1b58038
 tags:
   - about
   - bash
@@ -41,7 +41,7 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~142,866 words across 94 indexed documents
+- ~142,670 words across 94 indexed documents
 - code samples in: plaintext, powershell, html, python, raw, bash, shell, yaml
 
 ## Navigation

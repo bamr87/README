@@ -6,7 +6,7 @@ date: 2026-07-29 00:00:00+00:00
 description: How a zer0-mistakes release reaches the downstream sites built on it
   — the consumer registry, the release fan-out, and the manifest contract underneath
   both.
-lastmod: 2026-09-03 00:00:00+00:00
+lastmod: 2026-11-15 00:00:00+00:00
 source_file: docs/systems/theme-propagation.md
 source_repo: bamr87/zer0-mistakes
 source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/systems/theme-propagation.md
@@ -35,7 +35,7 @@ Bumping meant editing five repositories from memory, up to four files in one of 
 
 | Piece | Where | Role |
 |---|---|---|
-| `_data/theme-manifest.yml` | this repo | Version + per-file SHA-256 of every themable file. The contract consumers audit against. |
+| `_data/theme-manifest.yml` | this repo | Version + per-file SHA-256 of every themable file and vendored data file (`vendored_data_paths`). The contract consumers audit against. |
 | `_data/consumers.yml` | this repo | Registry: every consumer, how it consumes the theme, and which files hold its pin. |
 | `scripts/propagate.rb` | this repo | Reads the registry; reports pin drift or dispatches `theme-release`. |
 | `.github/workflows/propagate-theme.yml` | this repo | Dispatches on release; weekly drift report. |
@@ -104,12 +104,32 @@ ruby scripts/propagate.rb --dispatch --dry-run
 ./scripts/bin/manifest                     # regenerate the manifest
 ./scripts/bin/manifest --check             # is it current?
 
-./scripts/bin/audit-consumer --consumer-path /path/to/site           # what have they forked?
-./scripts/bin/audit-consumer --consumer-path /path/to/site --fix     # delete IDENTICAL copies
+./scripts/bin/audit-consumer --consumer-path /path/to/site           # what have they forked? is their _data stale?
+./scripts/bin/audit-consumer --consumer-path /path/to/site --fix     # delete IDENTICAL copies, refresh STALE vendored _data
 ./scripts/bin/sync-plugins   --consumer-path /path/to/site           # vendor required plugins
 ```
 
 `--dispatch` needs `LIFECYCLE_PAT` (the existing fleet secret): `GITHUB_TOKEN` is scoped to this repository and cannot dispatch to another.
+
+## Vendored data does not float
+
+A bump moves a consumer's layouts, includes and assets; it never moves its `_data/`. Jekyll 3.10 (GitHub Pages, and the theme's own `Gemfile`) does not load a theme's `_data/` in either mode, so every consumer commits its own copy of the data the theme reads (#203), and that copy freezes on the day it was made. A floating `remote_theme` makes this worse, not better: the layouts move every day and the data they read never does. When it was filed, #556 found `lifehacker.dev` (floating on `main`) with a `theme_backgrounds.yml` that predated the `dark` and `contrast` entries #240 added, and a `ui-text.yml` missing 40 keys the theme now reads. Each include papers over a missing key with a literal `| default:`, so nothing failed and nothing reported it.
+
+`audit-consumer` now checks two kinds of data after the plugin pass, in both modes:
+
+| Manifest key | Files | Compared | Statuses |
+|---|---|---|---|
+| `vendored_data_paths` | `_data/theme_skins.yml`, `_data/theme_backgrounds.yml` (theme-owned registries a consumer copies verbatim) | bytes | `IDENTICAL` (current; keep it), `STALE` (differs, not declared in `.theme-overrides.yml`), `DIFFERS_JUSTIFIED` (declared), `MISSING` |
+| `theme_data_paths` | the YAML files only, today `_data/ui-text.yml` (the consumer rewords it) | keys of the `en:` block, never values | `MISSING_KEYS` with the list, `OK`, `MISSING` |
+
+- `STALE` counts toward the exit code and `--strict`, like `DIFFERS_UNJUSTIFIED`. `--fix` replaces the copy with the theme's.
+- `MISSING` vendored data is informational, because the includes fall back to built-in defaults (`_skin_fallback`, grey swatches). `--fix` copies the theme's file.
+- `MISSING_KEYS` is warn-only and never fails `--strict`: the consumer owns its wording and adds keys at its own pace. `--fix` never writes a file in `theme_data_paths`.
+- `--format json` reports these in a separate `vendored_data` array, never in `results`. For data, `IDENTICAL` means "current, keep it", while in `results` it means "safe to delete".
+
+The list of vendored registries lives once, in `scripts/lib/audit.sh`. `scripts/bin/manifest` publishes it as `vendored_data_paths` with a checksum per file, and the audit falls back to it when it reads a manifest cut before that key existed (1.31.x and older). The manifest stays a release snapshot: the key reaches `_data/theme-manifest.yml` when `manifest-sync.yml` regenerates it on the next release PR.
+
+Re-run the audit against every consumer after each theme release.
 
 ## Migrating already-seeded navigation data
 

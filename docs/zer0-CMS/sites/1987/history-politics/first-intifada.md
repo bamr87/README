@@ -39,10 +39,8 @@ For the broader Middle East, the intifada confirmed that the Palestinian questio
 - [Intifada — Encyclopædia Britannica](https://www.britannica.com/topic/intifada)
 - [Intifada begins on Gaza Strip — HISTORY](https://www.history.com/this-day-in-history/december-9/intifada-begins-on-gaza-strip)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [INF Treaty (December 8, 1987)](inf-treaty.md) — the other landmark December 1987 event, Reagan and Gorbachev's arms-control breakthrough.
 - [Montreal Protocol (September 16, 1987)](montreal-protocol.md) — another 1987 multilateral landmark.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

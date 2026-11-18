@@ -4,7 +4,6 @@ source_repo: bamr87/fredgar-ai
 source_url: https://github.com/bamr87/fredgar-ai/blob/main/docs/amendments/README.md
 title: Amendments — fredgar-ai
 ---
-<!-- kit: governance v0.1.1 -->
 # Amendments — fredgar-ai
 
 > The append-only log of changes to [the constitution](../constitution.md), one numbered record per amendment.

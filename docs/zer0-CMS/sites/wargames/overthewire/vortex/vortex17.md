@@ -42,8 +42,6 @@ This level requires you to work backwards to find out what's happening then expl
 
 [vortex.labs.overthewire.org]: ssh://vortex.labs.overthewire.org:2228
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -75,5 +73,3 @@ Debugging and exploit work are both inference problems.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex16/">Level 16</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex18/">Level 18</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

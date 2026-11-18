@@ -16,7 +16,7 @@ title: ZPL Viewer
 > [!info] tooling: `bamr87/zpl-viewer`
 > Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal labels.
 
-**19** pages collected from commit `2ecbd4ef4a6d` (2026-11-11).
+**19** pages collected from commit `debbd5656507` (2026-11-18).
 
 ## Most connected pages
 

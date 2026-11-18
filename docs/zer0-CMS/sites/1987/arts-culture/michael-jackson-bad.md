@@ -36,7 +36,6 @@ The album also marks the peak of the three-album creative partnership between Ja
 - [Bad (album) — Wikipedia](https://en.wikipedia.org/wiki/Bad_(album))
 - [Michael Jackson's 'Bad': How It Became the First Album With Five Hot 100 No. 1s — Billboard](https://www.billboard.com/pro/michael-jackson-bad-hot-100-five-number-one-hits/)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [U2's *The Joshua Tree* (March 9, 1987)](the-joshua-tree.md) — *The Joshua Tree* won the 1988 Grammy Album of the Year, the award *Bad* was widely expected to contest.
@@ -45,4 +44,3 @@ The album also marks the peak of the three-album creative partnership between Ja
 - [Aretha Franklin: First Woman in the Rock and Roll Hall of Fame (January 21, 1987)](aretha-franklin-hof.md) — another major Arts & Culture milestone of 1987.
 - [*Full Metal Jacket* (June 26, 1987)](full-metal-jacket.md) — another defining cultural release of 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

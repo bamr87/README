@@ -4,8 +4,6 @@ source_repo: bamr87/rewind-arcade
 source_url: https://github.com/bamr87/rewind-arcade/blob/main/AGENTS.md
 title: rewind-arcade
 ---
-<!-- kit: sdlc v0.1.0 · AGENTS.md is the CANONICAL agent instructions file (decision D4, UPS-AGENT-07/08). -->
-
 # rewind-arcade
 
 > A three-pillar retro gaming monorepo: play browser recreations (`arcade/`), emulate consoles with ES-DE and RetroArch (`emulate/`), and catalog the physical collection (`catalog/`), all on one set of system ids.

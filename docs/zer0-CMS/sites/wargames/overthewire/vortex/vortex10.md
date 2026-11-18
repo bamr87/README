@@ -42,8 +42,6 @@ Read in 20 integers and write the seed used to generate those numbers in unsigne
 
 [vortex.labs.overthewire.org]: ssh://vortex.labs.overthewire.org:2228
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -76,5 +74,3 @@ Predictable seeds have broken real systems, from session tokens to game servers 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex9/">Level 9</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex11/">Level 11</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

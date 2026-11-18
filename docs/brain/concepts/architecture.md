@@ -4,7 +4,7 @@ aliases:
 category: brain
 generated: true
 kind: concept
-pages: 15
+pages: 17
 projects: 4
 tags:
 - brain/concept
@@ -16,11 +16,11 @@ title: Architecture
 # Architecture
 
 > [!abstract] Summary
-> 15 pages across 4 projects (Zer0 Mistakes, IT Journey, Zer0 CMS, BashOS) cover this subject.
+> 17 pages across 4 projects (Zer0 Mistakes, IT Journey, Zer0 CMS, BashOS) cover this subject.
 
 ## Across the fleet
 
-### [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (8)
+### [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (10)
 
 - [[zer0-mistakes/docs/architecture/prd-roadmap|PRD: Roadmap, Metrics, and Compliance]]
 - [[zer0-mistakes/fr/docs/development/documentation|Documentation]]
@@ -28,6 +28,8 @@ title: Architecture
 - [[zer0-mistakes/docs/architecture/build-system|Build System]]
 - [[zer0-mistakes/docs/architecture/layouts-includes|Layouts and Includes Architecture]]
 - [[zer0-mistakes/docs/architecture/project-structure|Project Structure]]
+- [[zer0-mistakes/docs/adr/0000-template|ADR template]]
+- [[zer0-mistakes/docs/adr/0001-record-architecture-decisions|ADR 0001: Record architecture decisions]]
 - [[zer0-mistakes/docs/architecture/prd-requirements|Product Requirements Document]]
 - [[zer0-mistakes/docs/architecture/ui-components|UI/UX Component Spec]]
 

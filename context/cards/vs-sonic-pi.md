@@ -7,13 +7,13 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 0c8eb2e3394510f0
+source_fingerprint: e68e32b938d92812
 tags:
 ---
 
 # Sonic Pi for VS Code
 
-> VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control.
+> VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC control. VS Sonic Pi's direction is to become the ultimate open home for all things Sonic Pi in the editor: data, tools, resources and transparency, with live-coding in VS Code, OSC control of the Sonic Pi server, and open teaching tools for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -21,7 +21,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/vs-sonic-pi` - 117 docs |
+| Corpus | `docs/vs-sonic-pi` - 118 docs |
 | External | no |
 
 ## Signals
@@ -31,14 +31,14 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~82,830 words across 117 indexed documents
+- ~83,651 words across 118 indexed documents
 - code samples in: plaintext, typescript, ruby, bash, jsonc, markdown, json, cpp
 
 ## Navigation
 
-117 published pages in 6 sections (max depth 3) — [browse the full map](../../docs/browse/vs-sonic-pi.md) · [tree as JSON](../nav/vs-sonic-pi.json)
+118 published pages in 6 sections (max depth 3) — [browse the full map](../../docs/browse/vs-sonic-pi.md) · [tree as JSON](../nav/vs-sonic-pi.json)
 
-- **Documentation** (24 pages)
+- **Documentation** (25 pages)
 - **Media** (85 pages)
 
 ## Key documents

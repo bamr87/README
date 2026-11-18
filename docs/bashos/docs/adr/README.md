@@ -4,7 +4,6 @@ source_repo: bamr87/bashos
 source_url: https://github.com/bamr87/bashos/blob/main/docs/adr/README.md
 title: Architecture Decision Records
 ---
-<!-- kit: sdlc v0.2.0 · ADR index (UPS-WORK-04, decision D2: law-ai format) -->
 # Architecture Decision Records
 
 > Decisions for bashos that are hard to reverse — the stack, data model, security model, public interfaces, and any relaxation of a gate — one file each.

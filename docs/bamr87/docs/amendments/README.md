@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/README.md
 title: Amendments — bamr87
 ---
-<!-- kit: governance v0.1.0 -->
 # Amendments — bamr87
 
 > The append-only log of numbered changes to the constitution, ratified only when the maintainer merges the PR.

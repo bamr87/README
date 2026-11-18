@@ -47,8 +47,6 @@ Level1 is a trivial stack buffer overflow. Note that you'll probably find it eas
 |--------------------------------------------:+:----------------|
 | Location: 				      | /levels/level1  |
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -81,5 +79,3 @@ Understanding what each mitigation does and does not randomise is the heart of e
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../blacksun0/">Level 0</a><a class="sg-index" href="../">Blacksun overview</a><a class="sg-next" href="../blacksun2/">Level 2</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

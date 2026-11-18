@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Programs that phone home or log over the network are everywhere, and knowing how
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../behemoth4/">Level 4</a><a class="sg-index" href="../">Behemoth overview</a><a class="sg-next" href="../behemoth6/">Level 6</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

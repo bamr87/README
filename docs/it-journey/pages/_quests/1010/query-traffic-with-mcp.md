@@ -28,17 +28,6 @@ keywords:
   - traffic-analysis
 lastmod: '2026-06-14T18:00:00.000Z'
 layout: quest
-learning_paths:
-  character_classes:
-  - 📊 Data Analyst
-  - 💻 Software Developer
-  - 🛠️ DevOps Engineer
-  primary_paths:
-  - Web Analytics
-  - DevOps Automation
-  skill_trees:
-  - Web Analytics
-  - MCP & AI Tooling
 learning_style: hands-on
 level: '1010'
 permalink: /quests/1010/query-traffic-with-mcp/
@@ -62,17 +51,6 @@ quest_dependencies:
   unlocks_quests:
   - /quests/1010/automate-traffic-report/
 quest_line: The Observability Path
-quest_mapping:
-  biome: Terminal
-  coordinates: '[10, 1]'
-  realm: Observability
-  region: Warrior
-quest_relationships:
-  child_quests: []
-  parallel_quests: []
-  parent_quest: null
-  sequel_quests:
-  - /quests/1010/automate-traffic-report/
 quest_series: Measure & Master Your Site
 quest_type: main_quest
 rewards:
@@ -87,7 +65,6 @@ rewards:
   unlocks_features:
   - On-demand traffic answers from your agent
 skill_focus: data
-snippet: Stop staring at dashboards. Ask questions.
 source_file: pages/_quests/1010/query-traffic-with-mcp.md
 source_repo: bamr87/it-journey
 source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/query-traffic-with-mcp.md

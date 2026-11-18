@@ -9,7 +9,7 @@ nav_exclude: true
 
 # VS Sonic Pi - content map
 
-Every published page in [`docs/vs-sonic-pi/`](../vs-sonic-pi/) as it appears in the sidebar: **117 pages** across **6 sections** (max depth 3).
+Every published page in [`docs/vs-sonic-pi/`](../vs-sonic-pi/) as it appears in the sidebar: **118 pages** across **6 sections** (max depth 3).
 
 - [Sonic Pi for VS Code](../vs-sonic-pi/README.md)
 - [Changelog](../vs-sonic-pi/CHANGELOG.md)
@@ -19,7 +19,7 @@ Every published page in [`docs/vs-sonic-pi/`](../vs-sonic-pi/) as it appears in 
 - [vs-sonic-pi (AGENTS)](../vs-sonic-pi/AGENTS.md)
 - [vs-sonic-pi (CLAUDE)](../vs-sonic-pi/CLAUDE.md)
 - [vs-sonic-pi tools](../vs-sonic-pi/tools/README.md)
-- **[Documentation](../vs-sonic-pi/docs/README.md)** <small>(24)</small>
+- **[Documentation](../vs-sonic-pi/docs/README.md)** <small>(25)</small>
   - [vs-sonic-pi documentation](../vs-sonic-pi/docs/README.md)
   - [10. Codespaces Support and Remote Audio Streaming](../vs-sonic-pi/docs/10-codespaces-support.md)
   - [Command Handler](../vs-sonic-pi/docs/03-command-handler.md)
@@ -35,9 +35,10 @@ Every published page in [`docs/vs-sonic-pi/`](../vs-sonic-pi/) as it appears in 
   - [Sonic Pi VS Code Extension — Architecture Overview](../vs-sonic-pi/docs/00-architecture.md)
   - [Status Bar Manager](../vs-sonic-pi/docs/06-status-bar.md)
   - [vs-sonic-pi — Constitution](../vs-sonic-pi/docs/constitution.md)
-  - **[Amendments — vs-sonic-pi](../vs-sonic-pi/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — vs-sonic-pi](../vs-sonic-pi/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — vs-sonic-pi](../vs-sonic-pi/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../vs-sonic-pi/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../vs-sonic-pi/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../vs-sonic-pi/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../vs-sonic-pi/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../vs-sonic-pi/docs/adr/README.md)

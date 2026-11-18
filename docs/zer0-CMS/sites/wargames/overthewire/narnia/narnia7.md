@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Writing a pointer is the usual first step to controlling a program, even in mode
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../narnia6/">Level 6</a><a class="sg-index" href="../">Narnia overview</a><a class="sg-next" href="../narnia8/">Level 8</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

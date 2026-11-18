@@ -30,7 +30,6 @@ Over a sustained campaign, ACT UP also forced a change to the Centers for Diseas
 - [ACT UP — Wikipedia](https://en.wikipedia.org/wiki/ACT_UP)
 - [ACT UP — Encyclopædia Britannica](https://www.britannica.com/topic/ACT-UP)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [FDA Approves AZT (March 20, 1987)](../science-technology/azt-fda-approval.md) — the FDA approved the first AIDS drug eight days after ACT UP was founded; activists immediately targeted its $10,000/year price.
@@ -40,4 +39,3 @@ Over a sustained campaign, ACT UP also forced a change to the Centers for Diseas
 - [1987 World Series (October 17–25, 1987)](world-series-1987.md) — another Society & Economics landmark of October 1987.
 - [Sign 'O' the Times (Prince, 1987)](../arts-culture/sign-o-the-times.md) — Prince's album that addressed the AIDS crisis directly in its title track.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

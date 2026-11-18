@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas8
     URL:      http://natas8.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -72,5 +70,3 @@ Use proper hashing for passwords (a slow, salted hash) so that nothing needs to 
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas7/">Level 7</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas9/">Level 9</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

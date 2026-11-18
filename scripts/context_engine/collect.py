@@ -15,7 +15,9 @@ Provenance sits in front matter as a repo, a path and a branch-based URL, never
 a commit: a commit there would rewrite every page on every upstream change.
 The commit a crawl read is recorded once per project in context/vault/collect.json.
 
-Every page passes the secret screen (redact.py) before anything else reads it:
+Every page loses its hidden carriers (hidden.py: HTML comments in prose,
+zero-width and bidi controls) and passes the secret screen (redact.py) before
+anything else reads it:
 a credential committed upstream by mistake becomes [REDACTED:<kind>], is listed
 in docs/results/secret_screen.json by project, path, line and kind (never by
 value), and the run fails once the corpus is written, so the scheduled crawl
@@ -36,6 +38,7 @@ import yaml
 from .config import (
     CACHE_DIR, CHANGE_LOG_PATH, COLLECT_MANIFEST_PATH, DOCS_DIR, ROOT,
 )
+from .hidden import strip_hidden, strip_hidden_values
 from .navigator import GlobSet
 from .redact import redact
 from .registry import CollectRules, Project, Registry
@@ -179,7 +182,12 @@ def _flat_tags(tags) -> List[str]:
 def transform(text: str, rel: str, project: Project, source: Source,
               hidden_prefix: str = "dot-") -> str:
     """Transform: one upstream page -> one corpus page. Pure and idempotent."""
-    meta, body = split_front_matter(text)
+    # A leading BOM is an encoding signature; left in, it hides the front matter.
+    meta, body = split_front_matter(text.lstrip("\ufeff"))
+    # Hidden carriers are third-party text no reader sees: drop them before
+    # anything reads the page.
+    body = strip_hidden(body)
+    meta = strip_hidden_values(meta)
     meta["title"] = _title(meta, body, rel)
     meta["source_file"] = rel
     meta["source_repo"] = project.repo

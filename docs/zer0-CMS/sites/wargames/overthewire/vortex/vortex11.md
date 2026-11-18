@@ -55,8 +55,6 @@ Reading Material
 [Advanced Doug Lea's malloc exploits]: http://www.phrack.org/issues.html?issue=61&id=6#article
 [Exploiting the Wilderness]: http://archive.cert.uni-stuttgart.de/vuln-dev/2004/02/msg00025.html
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -89,5 +87,3 @@ Heap bugs dominate modern vulnerability reports, and the techniques follow the s
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex10/">Level 10</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex12/">Level 12</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

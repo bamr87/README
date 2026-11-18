@@ -28,17 +28,6 @@ keywords:
   - analytics-data-api
 lastmod: '2026-06-14T18:00:00.000Z'
 layout: quest
-learning_paths:
-  character_classes:
-  - 💻 Software Developer
-  - 📊 Data Analyst
-  - 🛠️ DevOps Engineer
-  primary_paths:
-  - DevOps Automation
-  - Web Analytics
-  skill_trees:
-  - MCP & AI Tooling
-  - Web Analytics
 learning_style: hands-on
 level: '1010'
 permalink: /quests/1010/analytics-mcp-setup/
@@ -64,17 +53,6 @@ quest_dependencies:
   unlocks_quests:
   - /quests/1010/query-traffic-with-mcp/
 quest_line: The Observability Path
-quest_mapping:
-  biome: Terminal
-  coordinates: '[10, 0]'
-  realm: Observability
-  region: Warrior
-quest_relationships:
-  child_quests: []
-  parallel_quests: []
-  parent_quest: null
-  sequel_quests:
-  - /quests/1010/query-traffic-with-mcp/
 quest_series: Measure & Master Your Site
 quest_type: main_quest
 rewards:
@@ -89,7 +67,6 @@ rewards:
   unlocks_features:
   - Live analytics access for your AI agent
 skill_focus: devops
-snippet: Give your agent eyes on the traffic.
 source_file: pages/_quests/1010/analytics-mcp-setup.md
 source_repo: bamr87/it-journey
 source_url: https://github.com/bamr87/it-journey/blob/main/pages/_quests/1010/analytics-mcp-setup.md

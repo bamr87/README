@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Understanding this attack explains stack canaries, non-executable stacks and add
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../narnia1/">Level 1</a><a class="sg-index" href="../">Narnia overview</a><a class="sg-next" href="../narnia3/">Level 3</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

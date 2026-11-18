@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -71,5 +69,3 @@ Being able to go from an unknown binary to a working exploit is the point of the
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../behemoth6/">Level 6</a><a class="sg-index" href="../">Behemoth overview</a><a class="sg-next" href="../behemoth8/">Level 8</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -41,7 +41,6 @@ The album arrived at a specific cultural moment — the second Reagan term, the 
 - [The Joshua Tree — Encyclopædia Britannica](https://www.britannica.com/topic/The-Joshua-Tree)
 - [GRAMMY Rewind: U2 Win Their First-Ever GRAMMY For 'The Joshua Tree' In 1988 — Grammy.com](https://www.grammy.com/news/grammy-rewind-u2-win-their-first-ever-grammy-joshua-tree-1988)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [*Sign 'O' the Times* (Prince, March 31, 1987)](sign-o-the-times.md) — another landmark album released in 1987, just three weeks after *The Joshua Tree*.
@@ -49,4 +48,3 @@ The album arrived at a specific cultural moment — the second Reagan term, the 
 - [Aretha Franklin: First Woman in the Rock and Roll Hall of Fame (January 21, 1987)](aretha-franklin-hof.md) — another major Arts & Culture milestone of 1987.
 - [*Full Metal Jacket* (June 26, 1987)](full-metal-jacket.md) — another defining cultural release of 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

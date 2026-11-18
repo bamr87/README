@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas34
     URL:      http://natas34.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -63,5 +61,3 @@ You have reached the last level the OverTheWire maintainers currently publish. I
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas33/">Level 33</a><a class="sg-index" href="../">Natas overview</a><span></span></nav>
 
 </section>
-
-<!-- study-guide:end -->

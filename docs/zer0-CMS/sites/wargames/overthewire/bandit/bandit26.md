@@ -50,8 +50,6 @@ Commands you may need to solve this level
 -----------------------------------------
 ssh, cat, more, vi, ls, id, pwd
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -85,5 +83,3 @@ Restricted shells, kiosk systems and sudo rules that permit "just one safe comma
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit25/">Level 25</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit27/">Level 27</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

@@ -13,8 +13,6 @@ title: 'ADR 0004 — Recursive harness refinement: the Harness² method adopted 
 - **Deciders**: proposed by an agent at the maintainer's request (2026-11-03); the maintainer accepts or rejects it by merging the PR that adds it
 - **Related**: [docs/HARNESS-REFINEMENT.md](../HARNESS-REFINEMENT.md), [docs/HARNESS.md](../HARNESS.md) (the six layers and the ratchet), [docs/JEV.md](../JEV.md), [ADR 0002](0002-agent-step-specs-and-local-runner.md) (the step specs and the local runner this builds on), constitution § 10.8 (prior art first), § 12.3 (gated changes), § 13 (eval baseline and risk tiers), epic bamr87/bamr87#484 (run every loop locally)
 
-<!-- Accepted in and Completed are added by the post-merge ratify job when the maintainer merges this ADR's PR and when the maintainer closes the Tracking issue as completed (docs/adr/README.md#lifecycle). Never write them by hand. A PR that adds or changes an ADR is gated (constitution § 12.3). -->
-
 ## Context
 
 ### Needs assessment

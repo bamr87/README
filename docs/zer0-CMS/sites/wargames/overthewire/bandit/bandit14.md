@@ -50,8 +50,6 @@ Helpful Reading Material
 
 [SSH/OpenSSH/Keys]: https://help.ubuntu.com/community/SSH/OpenSSH/Keys
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -84,5 +82,3 @@ Passwords get guessed and phished; keys are far harder to steal remotely. Almost
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit13/">Level 13</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit15/">Level 15</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

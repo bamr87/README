@@ -7,13 +7,13 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: eabd1736bd67db3e
+source_fingerprint: 2d6d3056428aa8b1
 tags:
 ---
 
 # GodotGo
 
-> Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same.
+> Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same. GodotGo's direction is to become the ultimate open home for all things Godot game-making: data, tools, resources and transparency, with one reusable framework, identical tooling for every game, and an agent-ready build-and-test loop for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -21,7 +21,7 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/godotgo` - 30 docs |
+| Corpus | `docs/godotgo` - 31 docs |
 | External | no |
 
 ## Signals
@@ -30,14 +30,14 @@ tags:
 - has AGENTS.md operating manual
 - keeps a changelog
 - has a security policy
-- ~19,467 words across 30 indexed documents
+- ~21,407 words across 31 indexed documents
 - code samples in: bash, gdscript, plaintext, text, json, python
 
 ## Navigation
 
-30 published pages in 6 sections (max depth 4) — [browse the full map](../../docs/browse/godotgo.md) · [tree as JSON](../nav/godotgo.json)
+31 published pages in 6 sections (max depth 4) — [browse the full map](../../docs/browse/godotgo.md) · [tree as JSON](../nav/godotgo.json)
 
-- **Documentation** (14 pages)
+- **Documentation** (15 pages)
 - **Games** (7 pages)
 
 ## Key documents

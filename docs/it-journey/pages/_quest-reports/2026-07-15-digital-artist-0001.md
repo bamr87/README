@@ -71,7 +71,7 @@ created; `code guide.md` reported `command not found` only because VS Code isn't
 - **Footnote `[^speed]`** → `passed`. Produced `<sup id="fnref:speed">` linked to a backlinked `<li id="fn:speed">`.
 - **Task list `- [x]` / fenced ```` ```python ````** → `passed` *with a caveat*:
 under plain kramdown both render as literal text; they only become checkboxes / highlighted code once `kramdown-parser-gfm` (GFM input mode) is loaded — Jekyll's default, but the quest states it unconditionally.
-- **Attribute list `{: .lead #intro }`, definition list, `{​% raw %​}` Liquid block,
+- **Attribute list `{: .lead #intro }`, definition list, `{% raw %}` Liquid block,
 YAML frontmatter** → all `passed` (kramdown / liquid gem / PyYAML), matching the quest's claims.
 - **Windows PowerShell block** → `skipped` (Linux/pwsh backslash-path artifact, not a quest defect). **Cloud Realms block** → `reasoned` (comment-only, nothing to run).
 

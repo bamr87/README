@@ -5,7 +5,6 @@ source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0015-rati
 title: 0015 — The post-merge job records ratification, acceptance and completion,
   and merges that record itself
 ---
-<!-- kit: governance v0.1.0 -->
 # 0015 — The post-merge job records ratification, acceptance and completion, and merges that record itself
 
 - **Status:** ratified

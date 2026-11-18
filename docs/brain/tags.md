@@ -11,7 +11,7 @@ title: Tags
 
 # Tags
 
-**1143** tags. A linked tag has a concept note.
+**1144** tags. A linked tag has a concept note.
 
 | Tag | Pages |
 |---|---:|
@@ -70,6 +70,7 @@ title: Tags
 | [[brain/concepts/installation\|installation]] | 18 |
 | `security-specialist` | 18 |
 | `0101` | 17 |
+| [[brain/concepts/architecture\|architecture]] | 17 |
 | [[brain/concepts/css\|css]] | 17 |
 | `data-scientist` | 17 |
 | [[brain/concepts/search\|search]] | 17 |
@@ -80,7 +81,6 @@ title: Tags
 | [[brain/concepts/markdown\|markdown]] | 16 |
 | `project-based` | 16 |
 | [[brain/concepts/remote-theme\|remote-theme]] | 16 |
-| [[brain/concepts/architecture\|architecture]] | 15 |
 | `quests` | 15 |
 | [[brain/concepts/quickstart\|quickstart]] | 15 |
 | `0111` | 14 |
@@ -320,6 +320,7 @@ title: Tags
 | `404` | 3 |
 | `a11y` | 3 |
 | `admin` | 3 |
+| `adr` | 3 |
 | `agentic-workflows` | 3 |
 | `ai-assisted` | 3 |
 | `ai-integration` | 3 |
@@ -451,6 +452,7 @@ title: Tags
 | `supply-chain` | 3 |
 | `system-design` | 3 |
 | `technique` | 3 |
+| `template` | 3 |
 | `twitter-cards` | 3 |
 | `uefi` | 3 |
 | `utilities` | 3 |
@@ -573,7 +575,6 @@ title: Tags
 | `sustainable-finance` | 2 |
 | `system-administration` | 2 |
 | `systemd` | 2 |
-| `template` | 2 |
 | `timing` | 2 |
 | `tokens` | 2 |
 | `tooling` | 2 |
@@ -594,7 +595,6 @@ title: Tags
 | `accounting` | 1 |
 | `achievements` | 1 |
 | `administration` | 1 |
-| `adr` | 1 |
 | `adventure-game` | 1 |
 | `agent-memory` | 1 |
 | `agent-planning` | 1 |
@@ -738,6 +738,7 @@ title: Tags
 | `databases` | 1 |
 | `ddd` | 1 |
 | `debian` | 1 |
+| `decisions` | 1 |
 | `deduction` | 1 |
 | `definitions` | 1 |
 | `delegation` | 1 |

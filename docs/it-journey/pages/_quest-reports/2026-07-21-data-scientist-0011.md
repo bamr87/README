@@ -103,10 +103,10 @@ Grouped by quest; every item is evidenced by a command result (§🔬) or a quot
 - **low** · the "AI Conversation Capture Format" template omits `layout: post` (unlike the working Step-4 example) — builds but renders unstyled. · *Fix:* add `layout: post`.
 
 **Prompt Crystal (`prompt-crystal-mastery-vscode-copilot.md`)**
-- **high** · Chapter 4 prompt-file schema · *Observed:* templates use `name`/`description`/`version`/`inputs: […]` frontmatter with `{​{ inputs.x }​}` substitution; documented VS Code "prompt files" use `mode`/`description`/`tools`/`model` and `${input:variableName}` — so a learner's files likely won't have variables substituted. · *Fix:* verify against current docs and correct the schema.
+- **high** · Chapter 4 prompt-file schema · *Observed:* templates use `name`/`description`/`version`/`inputs: […]` frontmatter with `{{ inputs.x }}` substitution; documented VS Code "prompt files" use `mode`/`description`/`tools`/`model` and `${input:variableName}` — so a learner's files likely won't have variables substituted. · *Fix:* verify against current docs and correct the schema.
 - **medium** · code-fence labeling · 5 ` ```javascript ` blocks (L194, 205, 581, 948,
   952) are plain English prompt text and throw `SyntaxError` under `node`. · *Fix:* retag as ` ```text `/` ```markdown `.
-- **low** · `{​% raw %​}…{​% endraw %​}` Liquid wrapper leaks into raw-source view as clutter around every `{​{ inputs.x }​}`. · *Fix:* cleaner escaping or a note.
+- **low** · `{% raw %}…{% endraw %}` Liquid wrapper leaks into raw-source view as clutter around every `{{ inputs.x }}`. · *Fix:* cleaner escaping or a note.
 
 **Summon the Golem (`ouroboros-loop-03-summon-the-golem.md`)** — no blocking issues.
 - **low** · level-numbering · metadata says "Level 0011" but sibling links use `/quests/0101/` and `/quests/1011/`; unexplained. · *Fix:* reconcile / explain the binary level-per-quest scheme (see §🔗).

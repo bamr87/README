@@ -42,8 +42,6 @@ There is no information available for this level. Login to [vortex.labs.overthew
 
 [vortex.labs.overthewire.org]: ssh://vortex.labs.overthewire.org:2228
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -75,5 +73,3 @@ Penetration testers frequently begin with exactly this: no documentation and a d
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../vortex8/">Level 8</a><a class="sg-index" href="../">Vortex overview</a><a class="sg-next" href="../vortex10/">Level 10</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

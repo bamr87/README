@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Outbox - content map
 
-Every published page in [`docs/outbox/`](../outbox/) as it appears in the sidebar: **21 pages** across **4 sections** (max depth 3).
+Every published page in [`docs/outbox/`](../outbox/) as it appears in the sidebar: **22 pages** across **4 sections** (max depth 3).
 
 - [outbox (README)](../outbox/README.md)
 - [Changelog](../outbox/CHANGELOG.md)
@@ -18,6 +18,7 @@ Every published page in [`docs/outbox/`](../outbox/) as it appears in the sideba
 - [outbox (CLAUDE)](../outbox/CLAUDE.md)
 - [PRD — outbox](../outbox/PRD.md)
 - [SCHEMA — bamr87/outbox](../outbox/SCHEMA.md)
+- [Security Policy](../outbox/SECURITY.md)
 - **Agents** <small>(4)</small>
   - [Claimant-A](../outbox/agents/claimant_a.md)
   - [Claimant-B](../outbox/agents/claimant_b.md)

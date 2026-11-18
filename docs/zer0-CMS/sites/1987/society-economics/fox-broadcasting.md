@@ -38,7 +38,6 @@ Fox's launch also had structural consequences for the industry. The FCC's 1993 r
 - [Fox Broadcasting Company — Wikipedia](https://en.wikipedia.org/wiki/Fox_Broadcasting_Company)
 - [Fox Broadcasting Company — Encyclopedia.com](https://www.encyclopedia.com/economics/economics-magazines/fox-broadcasting-company)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Black Monday (October 19, 1987)](black-monday.md) — the stock market crash that dominated U.S. economic news in October 1987.
@@ -46,4 +45,3 @@ Fox's launch also had structural consequences for the industry. The FCC's 1993 r
 - [1987 World Series (October 17–25, 1987)](world-series-1987.md) — another major Society & Economics event of 1987.
 - [FDA Approves Prozac (December 29, 1987)](prozac-fda-approval.md) — another Society & Economics milestone of 1987.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->

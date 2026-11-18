@@ -179,4 +179,4 @@ title: 'Tasks: Fleet Studio'
 
 > Append-only. Mirror each item into [BACKLOG.md](../../BACKLOG.md) with a `BL-YYYYMMDD-NN` id (`python3 tools/next_backlog_id.py`). CI ([tools/spec_validator.py](../../tools/spec_validator.py)) checks this section exists. CI ([tools/backlog_lint.py](../../tools/backlog_lint.py)) checks the BACKLOG mirror.
 
-- _none_  <!-- populated during /implement -->
+- _none_

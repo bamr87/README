@@ -48,8 +48,6 @@ Reading Material
 
 [Socks5 Request For Comment]: http://www.faqs.org/rfcs/rfc1928.html
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -82,5 +80,3 @@ It shows how defences based on source IP can be circumvented with proxies.
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../semtex4/">Level 4</a><a class="sg-index" href="../">Semtex overview</a><a class="sg-next" href="../semtex6/">Level 6</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

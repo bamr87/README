@@ -13,9 +13,6 @@ title: SCHEMA — projects
 > own repo, branch, and release cycle — a separate schema pyramid rooted at
 > its **own** SCHEMA.md, which the hub never descends into.
 
-<!-- GENERATED from .gitmodules + _data/projects.yml by
-     tools/gen-projects-schema.py — regenerate instead of hand-editing. -->
-
 ## Structure
 
 | entry | kind | purpose | rules |

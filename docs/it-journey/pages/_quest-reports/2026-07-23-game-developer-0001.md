@@ -53,7 +53,7 @@ Two quests are strong-with-caveats (**The Summoning 78%**, **SEO Optimization 62
 | 2 | ⚠️ | Stack Attack Analysis: IT-Journey (side) | 60 | A solid stack *report*, but sold as a hands-on quest; 3 code fences mislabeled by language; `docker-compose` v1 syntax. |
 | 3 | ❌ | Build a Personal Website with GitHub Pages (side) | 16 | Non-functional tutorial: no steps, no runnable code, duplicate-URL contradiction, placeholder objectives. |
 | 4 | ⚠️ | The Summoning: Raise the Site and Give It a Voice (main) | 78 | Strongest in the slice — every local artifact was created & run successfully; deducts for a workflow `--baseurl` gap + prereq contradiction. |
-| 5 | ⚠️ | SEO Optimization: Meta Tags, Sitemaps & Structured Data (main) | 62 | Accurate concepts, but two verified bugs: `bundle add` alone won't activate the plugin, and the `{​% raw %​}{​% seo %​}{​% endraw %​}` snippet breaks tag generation if pasted verbatim. |
+| 5 | ⚠️ | SEO Optimization: Meta Tags, Sitemaps & Structured Data (main) | 62 | Accurate concepts, but two verified bugs: `bundle add` alone won't activate the plugin, and the `{% raw %}{% seo %}{% endraw %}` snippet breaks tag generation if pasted verbatim. |
 
 ## 🔬 Evidence
 
@@ -78,17 +78,17 @@ All figures below come from the sealed `walk-evidence.json` (execute mode, dispo
 
 **5. seo-optimization — ⚠️ 62.0.** Snippets: **available 11 (5 runnable) · ran 9 · passed 7 · failed 2 · skipped 1 · reasoned 4**. Dimensions: commands_work 2, content_accuracy 3, completeness 4, clarity 3, structure 4, safety 5. Two failures carry real build evidence:
 - `bundle add jekyll-seo-tag jekyll-sitemap` alone did **not** generate `/sitemap.xml` — verified against Jekyll 4.4.1 and a real build; the sitemap appeared only after `_config.yml`'s `plugins:` list was edited. ❌
-- The `{​% raw %​}{​% seo %​}{​% endraw %​}` snippet, pasted verbatim (with the raw wrapper), **breaks SEO tag generation**. ❌
+- The `{% raw %}{% seo %}{% endraw %}` snippet, pasted verbatim (with the raw wrapper), **breaks SEO tag generation**. ❌
 
 ## 🐞 Issues Found
 
 **High severity**
 
 - **high · personal-site · whole document** — Non-functional as a tutorial: no ordered steps, no runnable snippets (0 runnable recorded), objectives are the auto-seeded placeholder ("authors should refine"). *Observed:* engine 16%, commands_work 0/completeness 0; source is a services table. *Fix:* rewrite as real steps (create `<username>.github.io` repo → add `index.html`/`_config.yml` → enable Pages → verify live URL), or demote/merge it — as-is it derails a beginner who reached it expecting to "build a personal website."
-- **high · personal-site · table rows 2 & 6 (lines 76, 80)** — Duplicate-URL contradiction: both `Domain 1` (GitHub Pages) and `Domain 3` (Cloudflare) point to the identical `{​% raw %​}{​{ site.github_user }​}{​% endraw %​}.github.io/` URL. *Fix:* give each host a distinct URL or drop the redundant row.
-- **high · personal-site · Liquid (line 75, etc.)** — `site.*` variables are wrapped in `{​% raw %​}…{​% endraw %​}`, so they render as literal `{​% raw %​}{​{ site.github_user }​}{​% endraw %​}` instead of interpolating. *Fix:* remove the `raw` wrap around real site variables.
+- **high · personal-site · table rows 2 & 6 (lines 76, 80)** — Duplicate-URL contradiction: both `Domain 1` (GitHub Pages) and `Domain 3` (Cloudflare) point to the identical `{% raw %}{{ site.github_user }}{% endraw %}.github.io/` URL. *Fix:* give each host a distinct URL or drop the redundant row.
+- **high · personal-site · Liquid (line 75, etc.)** — `site.*` variables are wrapped in `{% raw %}…{% endraw %}`, so they render as literal `{% raw %}{{ site.github_user }}{% endraw %}` instead of interpolating. *Fix:* remove the `raw` wrap around real site variables.
 - **high · seo-optimization · Platform quick-start + Chapter 2 (line ~151/291)** — `bundle add jekyll-seo-tag jekyll-sitemap` is presented as sufficient, but the plugin isn't active until it's also in `_config.yml`'s `plugins:` list; `/sitemap.xml` 404s silently otherwise (verified). *Fix:* state the `plugins:` edit right beside the `bundle add`.
-- **high · seo-optimization · Chapter 2 `{​% raw %​}{​% seo %​}{​% endraw %​}` snippet (line ~312)** — Copied verbatim with the `raw`/`endraw` wrapper it breaks tag generation (verified). *Fix:* show bare `{​% seo %​}` with a note that `raw` is only for embedding the example inside rendered docs.
+- **high · seo-optimization · Chapter 2 `{% raw %}{% seo %}{% endraw %}` snippet (line ~312)** — Copied verbatim with the `raw`/`endraw` wrapper it breaks tag generation (verified). *Fix:* show bare `{% seo %}` with a note that `raw` is only for embedding the example inside rendered docs.
 - **high · it-journey-stack-analysis · Objectives (lines 3–11)** — Auto-seeded objectives promise "hands-on exercises" and a "follow-up scenario" that don't exist; the quest is a report. *Fix:* rewrite objectives to match a stack-analysis report, or add real hands-on steps (clone it-journey, `docker compose up`, verify Jekyll on :4002).
 - **high · it-journey-stack-analysis · mislabeled fences (lines ~510–534, 544–565, 491–502)** — ` ```ruby `/` ```python `/` ```bash ` blocks contain prose or YAML; fail `ruby -c` / `py_compile` (verified). *Fix:* retag as ` ```text `/` ```yaml `.
 
@@ -96,7 +96,7 @@ All figures below come from the sealed `walk-evidence.json` (execute mode, dispo
 
 - **medium · it-journey-stack-analysis · Quick Start (line ~472)** — `docker-compose up` (v1) → `command not found` on modern Docker. *Fix:* use `docker compose up`.
 - **medium · it-journey-stack-analysis · Guardian 2.0 sample (lines ~280–306)** — `LinkHealthGuardian` raises `AttributeError` on instantiation (`_check_lychee`/`_check_openai_key` never defined). *Fix:* label as illustrative pseudocode or stub the methods.
-- **medium · self-operating-website-01-the-summoning · Chapter 1 workflow YAML** — Jekyll build lacks `--baseurl "${​{ steps.pages.outputs.base_path }​}"` (and `id: pages`), so project-pages deployments ship broken relative asset paths. *Fix:* adopt GitHub's official Jekyll-on-Pages build step.
+- **medium · self-operating-website-01-the-summoning · Chapter 1 workflow YAML** — Jekyll build lacks `--baseurl "${{ steps.pages.outputs.base_path }}"` (and `id: pages`), so project-pages deployments ship broken relative asset paths. *Fix:* adopt GitHub's official Jekyll-on-Pages build step.
 - **medium · self-operating-website-01-the-summoning · Prerequisites (line ~45)** — Says "complete the prequel epic first" (a live zer0-mistakes site) while the narrative frames it as raising a site "from the dark of an empty repository." *Fix:* resolve whether a prior site is required; link the prequel or drop the requirement.
 
 **Low severity**

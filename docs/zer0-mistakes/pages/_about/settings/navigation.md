@@ -32,12 +32,10 @@ title: Navigation Editor
 
 <div class="tab-content pt-4" id="navTabContent">
 
-  <!-- ═══════ Overview Tab ═══════ -->
   <div class="tab-pane fade show active" id="pane-overview" role="tabpanel">
     {% include components/nav-editor.html %}
   </div>
 
-  <!-- ═══════ Editor Tab ═══════ -->
   <div class="tab-pane fade" id="pane-editor" role="tabpanel">
 
     <p class="text-body-secondary mb-3">Select a navigation file to edit. Changes are reflected in the Export YAML tab.</p>
@@ -64,7 +62,6 @@ title: Navigation Editor
 
   </div>
 
-  <!-- ═══════ Export YAML Tab ═══════ -->
   <div class="tab-pane fade" id="pane-export" role="tabpanel">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h5 class="mb-0"><i class="bi bi-filetype-yml me-1"></i> Navigation YAML</h5>

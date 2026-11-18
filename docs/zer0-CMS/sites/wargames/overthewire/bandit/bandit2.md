@@ -53,8 +53,6 @@ Helpful Reading Material
 [Google Search for "dashed filename"]: https://www.google.com/search?q=dashed+filename
 [Advanced Bash-scripting Guide - Chapter 3 - Special Characters]: https://linux.die.net/abs-guide/special-chars.html
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -86,5 +84,3 @@ Attackers deliberately create files whose names look like command-line flags, wh
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../bandit1/">Level 1</a><a class="sg-index" href="../">Bandit overview</a><a class="sg-next" href="../bandit3/">Level 3</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

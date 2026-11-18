@@ -38,8 +38,6 @@ toc_sticky: true
 
 There is no information for this level, intentionally.
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -70,5 +68,3 @@ It shows why short numeric codes need rate limiting, and gives you practice with
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../leviathan5/">Level 5</a><a class="sg-index" href="../">Leviathan overview</a><a class="sg-next" href="../leviathan7/">Level 7</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

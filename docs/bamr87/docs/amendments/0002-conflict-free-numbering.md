@@ -4,7 +4,6 @@ source_repo: bamr87/bamr87
 source_url: https://github.com/bamr87/bamr87/blob/main/docs/amendments/0002-conflict-free-numbering.md
 title: 0002 — Assign sequential ids at merge, not in a pull request
 ---
-<!-- kit: governance v0.1.0 -->
 # 0002 — Assign sequential ids at merge, not in a pull request
 
 - **Status:** ratified

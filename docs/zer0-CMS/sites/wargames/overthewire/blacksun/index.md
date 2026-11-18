@@ -67,8 +67,6 @@ A list of suggested reading material can be found [here][readingmaterial]
   [here]: {{ '/docs/wargames/vortex/' | relative_url }}
   [readingmaterial]: https://overthewire.org/wargames/blacksun/reading_material.html
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -119,5 +117,3 @@ See the [reading list](reading_material/) for papers on format strings, heap exp
 <nav class="sg-nav" aria-label="Level navigation"><span></span><span></span><a class="sg-next" href="blacksun0/">Start at Level 0</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

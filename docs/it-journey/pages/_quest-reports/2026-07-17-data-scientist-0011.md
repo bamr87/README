@@ -57,7 +57,7 @@ The pivotal `docker compose build prd-machine` was verified to fail with *"no co
 3. ⚠️ **Hidden Gem: Publish AI Chats on GitHub Pages** — **68/100** (warn) ·
 Jekyll config, Gemfile, AI-chat post, and `bundle exec jekyll serve` genuinely work; a Linux `bundle install` permission gotcha (no vendor-path/.gitignore guidance) plus a wrong theme URL and a suspect extension ID drag accuracy down.
 4. ⚠️ **Forging the Prompt Crystal: VS Code Copilot Mastery** — **64/100** (warn) ·
-Cross-platform scaffolding and both Mermaid diagrams run; but `{​% raw %​}` Jekyll build artifacts leak into the `.prompt.md` templates, several prompt blocks are mislabeled `javascript` and error as JS, and the Windows/Cloud setup silently overwrites an existing `copilot-instructions.md`.
+Cross-platform scaffolding and both Mermaid diagrams run; but `{% raw %}` Jekyll build artifacts leak into the `.prompt.md` templates, several prompt blocks are mislabeled `javascript` and error as JS, and the Windows/Cloud setup silently overwrites an existing `copilot-instructions.md`.
 
 ## 🔬 Evidence
 
@@ -119,7 +119,7 @@ Dimensions: commands_work 3 · content_accuracy 3 · completeness 4 · clarity 3
   953) are plain-English prompt text and throw SyntaxErrors when linted/run as JS.
 - **reasoned** — The RCTF/CoT/few-shot templates and the `.prompt.md` template bodies
   (lines ~683–839) are prose/markdown: static-checked. These carry the two high-severity
-  defects below (leaked `{​% raw %​}` tags; non-native prompt-file syntax).
+  defects below (leaked `{% raw %}` tags; non-native prompt-file syntax).
 - **skipped** — macOS/Linux `code --install-extension` and `code --list-extensions |
   grep` blocks (no `code` CLI in sandbox / environment-dependent).
 - **safety = 3** — flagged because the Windows/Cloud setup silently truncates an
@@ -141,11 +141,11 @@ a command the engine actually ran or an exact line in the quest source.)
   fence around commit-message prose; running it throws *"syntax error near unexpected
   token 'auth'"*. → Re-fence as ```text``` or ```git-commit```.
 - **HIGH · Prompt Crystal · Chapter 4 `.github/prompts/` templates** — Leaked
-  `{​% raw %​}…{​% endraw %​}` Jekyll escape tags (12 occurrences) in the code-review,
+  `{% raw %}…{% endraw %}` Jekyll escape tags (12 occurrences) in the code-review,
   debug-assistant, and test-generator bodies; copied verbatim they pollute a learner's
   real `.prompt.md`. → Strip the `raw` tags from the rendered template content.
 - **HIGH · Prompt Crystal · Chapter 4 prompt-file syntax** — The shown
-  `name`/`version`/`inputs`/`{​{ inputs.x }​}` convention is not VS Code Copilot's native
+  `name`/`version`/`inputs`/`{{ inputs.x }}` convention is not VS Code Copilot's native
   prompt-file spec (`mode`/`tools`/`description` frontmatter, `${input:var}`). → Align
   with the native spec, or explicitly label it an IT-Journey doc convention Copilot
   won't resolve.

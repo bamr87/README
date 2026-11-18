@@ -39,8 +39,6 @@ toc_sticky: true
     Username: natas11
     URL:      http://natas11.natas.labs.overthewire.org
 
-<!-- study-guide:start -->
-
 <section class="study-guide" markdown="1">
 
 ## Study guide
@@ -73,5 +71,3 @@ Never invent encryption. Use authenticated encryption from a trusted library, or
 <nav class="sg-nav" aria-label="Level navigation"><a class="sg-prev" href="../natas10/">Level 10</a><a class="sg-index" href="../">Natas overview</a><a class="sg-next" href="../natas12/">Level 12</a></nav>
 
 </section>
-
-<!-- study-guide:end -->

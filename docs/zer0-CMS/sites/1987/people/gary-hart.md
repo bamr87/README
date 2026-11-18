@@ -36,7 +36,6 @@ Hart's collapse also left the Democratic Party scrambling for a frontrunner and 
 - [Gary Hart 1988 presidential campaign — Wikipedia](https://en.wikipedia.org/wiki/Gary_Hart_1988_presidential_campaign)
 - [Gary Hart — Encyclopædia Britannica](https://www.britannica.com/biography/Gary-Hart)
 
-<!-- BEGIN GENERATED: related — maintained by build-structure; do not edit by hand -->
 ## Related
 
 - [Margaret Thatcher's Third General Election Victory (June 11, 1987)](margaret-thatcher.md) — another 1987 political watershed reshaping Western democratic politics.
@@ -44,4 +43,3 @@ Hart's collapse also left the Democratic Party scrambling for a frontrunner and 
 - [Klaus Barbie — Convicted (July 4, 1987)](klaus-barbie.md) — another 1987 People entry involving political accountability.
 - [Rudolf Hess (death, August 17, 1987)](rudolf-hess.md) — another notable 1987 People entry.
 - [Index of 1987 topics](../index.md) · [Timeline](../TIMELINE.md)
-<!-- END GENERATED: related -->
