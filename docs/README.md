@@ -14,7 +14,7 @@
 
 | Document | What it covers |
 | --- | --- |
-| [`AGENTS.md`](../AGENTS.md) | The bamr87 context engine: it crawls the fleet's Markdown, distills it into a context pyramid, serves it over MCP, and reviews every repository's documentation against the fleet framework. |
+| [`AGENTS.md`](../AGENTS.md) | README's direction is to become the ultimate open home for all things fleet knowledge and project context: data, tools, resources and transparency, with crawlers, distillers and MCP so every project's docs stay queryable, for everyone… |
 | [`CONTRIBUTING.md`](../CONTRIBUTING.md) | How to contribute: branches, commits, local gates and pull requests. |
 | [`CHANGELOG.md`](../CHANGELOG.md) | Release history: the notable changes in each version, newest first. |
 | [`SECURITY.md`](../SECURITY.md) | Supported versions and how to report a vulnerability privately. |

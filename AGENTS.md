@@ -2,7 +2,7 @@
 
 # README
 
-> The bamr87 context engine: it crawls the fleet's Markdown, distills it into a context pyramid, serves it over MCP, and reviews every repository's documentation against the fleet framework.
+> README's direction is to become the ultimate open home for all things fleet knowledge and project context: data, tools, resources and transparency, with crawlers, distillers and MCP so every project's docs stay queryable, for everyone ([constitution](docs/constitution.md) §1).
 
 ## What this repo is
 
@@ -38,7 +38,7 @@ See [`SCHEMA.md`](SCHEMA.md) and each directory's own `SCHEMA.md`. The pipeline,
 
 | Stage | Input | Output | Entry point |
 | --- | --- | --- | --- |
-| Aggregate | `repos.txt` (from the registry) | `raw_docs/` | `scripts/aggregate.sh`, `aggregate.py` |
+| Aggregate | `repos.txt` (from the registry) | `raw_docs/` | `scripts/aggregate.sh` (a repo it cannot fetch fails the run) |
 | Process | `raw_docs/` | `docs/{project}/` + front matter | `scripts/process.py` |
 | Validate | `docs/` | reports, in-place fixes | `scripts/run_doc_checks.sh` |
 | Index corpus | `docs/` | `docs/docs_index.json`, `docs/results/*.json` | `generate_docs_index.py`, `generate_docs_report.py` |
@@ -47,13 +47,13 @@ See [`SCHEMA.md`](SCHEMA.md) and each directory's own `SCHEMA.md`. The pipeline,
 | Survey | `_data/fleet.yml` or local checkouts | `context/sources/`, `context/reports/{fleet_health,docs_review}.*` | `survey.py`, `gather/`, `analyze/` |
 | Serve | `context/` | CLI and MCP answers | `cli.py`, `mcp/server.py` |
 
-Engine modules (`scripts/context_engine/`): `registry` (registry + navigation contract) → `extractor` (facts) → `navigator` (one nav tree for `context/nav/`, `nav.yml`, `docs/browse/`) → `synthesizer` (cards) → `assembler` (apex, AUTO span, site index, context SCHEMA) → `indexer` → `query` (the one read path for CLI and MCP) → `builder`/`cli`. `ai.py` is the provider-agnostic enrichment layer. `analyze/` holds the survey checks; `analyze/framework.py` is the UPS-DOC rows and `analyze/review.py` the docs review. `scripts/harmonize/` is a legacy, optional Grok-only reorganizer outside the pipeline.
+Engine modules (`scripts/context_engine/`): `registry` (registry + navigation contract) → `extractor` (facts) → `navigator` (one nav tree for `context/nav/`, `nav.yml`, `docs/browse/`) → `synthesizer` (cards) → `assembler` (apex, AUTO span, site index, context SCHEMA) → `indexer` → `query` (the one read path for CLI and MCP) → `builder`/`cli`. `ai.py` is the provider-agnostic enrichment layer, and `screen.py` the injection screen on what goes into it and comes out of it. `analyze/` holds the survey checks; `analyze/framework.py` is the UPS-DOC rows and `analyze/review.py` the docs review. `scripts/harmonize/` is a legacy, optional Grok-only reorganizer outside the pipeline.
 
 ## Conventions
 
 - **Backlog of record:** GitHub Issues with the fleet labels. **Definition of Done:** `.github/pull_request_template.md`. **Decisions:** `docs/adr/`.
 - **Commits:** Conventional Commits. **Branches:** `feature/`, `fix/`, `docs/`, `refactor/`, `test/`, `chore/` off `main`. `CHANGELOG.md` is release-please's.
-- **Registry first.** `_data/projects.yml` is the only hand-edited definition of what is aggregated, and it owns the navigation contract (grouping, labels, depth, exclusions). `_data/fleet.yml` is the separate, hand-maintained inventory the survey reads. Never edit `repos.txt`.
+- **Registry first.** `_data/projects.yml` is the only hand-edited definition of what is aggregated, and it owns the navigation contract (grouping, labels, depth, exclusions). `_data/fleet.yml` is the separate, hand-maintained inventory the survey reads. Never edit `repos.txt`. A project's `url` must be `https://github.com/<owner>/<repo>` and its `branch` letters, digits, `.`, `_`, `/` and `-`, not starting with `-`: `registry.py` rejects anything else, naming the project, before `sync` writes `repos.txt`.
 - **Generated surfaces are never hand-edited:** `context/**`, `docs/**` (the corpus, `docs/index.md`, `docs/browse/`), `repos.txt`, `nav.yml`, and the README `AUTO:projects` span. Fix the registry, the upstream repo or the engine, then rebuild. Never add a `nav:` key to `mkdocs.yml` (it would shadow the inherited one).
 - **Builds succeed with no key** (heuristic mode) and are diff-stable: outputs carry corpus fingerprints, not timestamps. Keep it that way.
 - **The corpus layout is the navigation contract.** `process.py` keeps each upstream's directory structure under `docs/{repo}/`; don't flatten it. Published ≠ navigable: `navigation.publish_hidden`/`navigate_hidden` and `nav.yml` `not_in_nav` declare the gap.
@@ -62,6 +62,7 @@ Engine modules (`scripts/context_engine/`): `registry` (registry + navigation co
 - **The MCP server is read-only**; never add write tools. It reads through `query.py`.
 - **Front matter is the corpus contract** (`title`, `tags`, `category`, dates): processing scripts stay front-matter-aware and idempotent, because the `--apply` fixers run repeatedly in CI. Card and fact contracts change in `synthesizer.py`/`extractor.py`, never in their outputs.
 - **Hooks** (`hooks.d/<stage>/` executables, one directory per stage in `config.HOOK_STAGES`) are non-fatal unless `CONTEXT_HOOKS_STRICT=1`. They run with an allowlisted environment that never carries the build's provider keys (extra variables are named in `CONTEXT_HOOK_ENV`), and their output is secret-screened before it is logged ([hooks.d/README.md](hooks.d/README.md)).
+- **The corpus is untrusted input.** `process.py` drops hidden carriers at ingest; `screen.py` screens facts and AI output at build (`enrichment: quarantined`, fatal under `CONTEXT_INJECTION_STRICT=1`). Upstream text goes into a prompt only through `ai.wrap_facts`.
 - **Tests:** unit tests in `tests/unit/test_cases/` (unittest discovery); `test_context_engine.py` covers the engine, schema lint and MCP dispatch and `test_fleet_survey.py` the survey and the docs framework checks — extend them with the code. Integration tests (`--type integration`) clone real repos and need the network.
 - **One paragraph per line** (`tools/unwrap-prose.py`, vendored — never edit it here). The crawl unwraps the corpus at ingest, because a push to `main` can only fail the prose gate.
 - **SCHEMA protocol:** a structural change updates the governing `SCHEMA.md` in the same commit; `scripts/`, `_data/` and `mcp/` are `coverage: full`. New scripts fit a pipeline stage and get a row in `scripts/SCHEMA.md` and a section in `scripts/README.md`.

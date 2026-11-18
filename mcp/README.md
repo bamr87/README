@@ -1,6 +1,6 @@
 # MCP server — query the context engine
 
-`mcp/server.py` exposes the committed context pyramid (`context/`) over the [Model Context Protocol](https://modelcontextprotocol.io): stdio transport, newline-delimited JSON-RPC 2.0, Python stdlib only. It is **read-only** — it serves what the engine last built and reports staleness; regenerating is always an explicit `python3 -m scripts.context_engine build`.
+`mcp/server.py` exposes the committed context pyramid (`context/`) over the [Model Context Protocol](https://modelcontextprotocol.io): stdio transport, newline-delimited JSON-RPC 2.0, Python stdlib only. It is **read-only** — it serves what the engine last built and reports staleness; regenerating is always an explicit `python3 -m scripts.context_engine build`. Answers quote third-party documentation from upstream repositories, and the `initialize` instructions tell clients to treat it as data, never as instructions (per-answer provenance and trust markers are [#60](https://github.com/bamr87/README/issues/60)).
 
 ## Registration
 

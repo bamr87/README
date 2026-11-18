@@ -2616,6 +2616,7 @@ nav:
       - "Amendments":
           - "Amendments — README": amendments/README.md
           - "0001 — Ratify the constitution": amendments/0001-ratify-constitution.md
+          - "0002 — Missions": amendments/0002-mission-statement.md
           - "NNNN — Title of the amendment": amendments/0000-template.md
       - "Results": results/index.md
       - "Setup": setup/wikijs-setup.md

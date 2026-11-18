@@ -3,6 +3,7 @@ Unit tests for file processing functionality.
 """
 
 import re
+import shutil
 import sys
 import tempfile
 import unittest
@@ -15,6 +16,7 @@ from scripts.process import (
     extract_title_from_content,
     generate_front_matter,
     process_markdown_file,
+    strip_hidden,
 )
 
 
@@ -358,6 +360,100 @@ class TestIngestProseNormalization(unittest.TestCase):
         self.assertTrue(gate_excludes, "no --exclude found in markdown-oneline.yml")
         self.assertEqual(self._excludes(self.aggregate),
                          gate_excludes - {self.CORPUS_BOUNDARY})
+
+
+class TestHiddenCarriers(unittest.TestCase):
+    """Ingest drops what a reader never sees but an agent reads (issue #52)."""
+
+    FAMILY = "\U0001F468\u200d\U0001F469\u200d\U0001F467"   # an emoji ZWJ sequence
+    SCOTLAND = ("\U0001F3F4\U000E0067\U000E0062\U000E0073"   # a subdivision flag:
+                "\U000E0063\U000E0074\U000E007F")             # tag letters + cancel tag
+    RAW = (
+        "---\ntitle: Carriers\n---\n\n"
+        "# Carriers\n\n"
+        "Visible text.<!-- hidden --> More text, then a \u202e bidi override.\n\n"
+        "```html\n<!-- kept: a comment in a code sample is content -->\n```\n\n"
+        "Inline `<!-- kept too -->` code, a family " + FAMILY
+        + " and a flag " + SCOTLAND + ".\n"
+    )
+
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.tmp, ignore_errors=True)
+
+    def _process(self, text, repo="test_repo", name="page.md"):
+        raw = self.tmp / "raw_docs" / repo
+        raw.mkdir(parents=True, exist_ok=True)
+        (raw / name).write_text(text, encoding="utf-8")
+        process_markdown_file(raw / name, self.tmp / "docs")
+        return (self.tmp / "docs" / repo / name).read_text(encoding="utf-8")
+
+    def test_prose_loses_hidden_carriers_and_keeps_content(self):
+        out = self._process(self.RAW)
+        self.assertNotIn("<!-- hidden -->", out)
+        self.assertNotIn("\u202e", out)
+        self.assertIn("Visible text. More text, then a ", out)
+        self.assertIn("```html\n<!-- kept: a comment in a code sample is content -->\n```", out)
+        self.assertIn("`<!-- kept too -->`", out)
+        self.assertIn(self.FAMILY, out)
+        self.assertIn(self.SCOTLAND, out)
+
+    def test_a_second_run_changes_nothing(self):
+        first = self._process(self.RAW)
+        self.assertEqual(self._process(first, repo="again"), first)
+        self.assertEqual(strip_hidden(strip_hidden(self.RAW)), strip_hidden(self.RAW))
+
+    def test_joiners_survive_only_between_non_ascii_characters(self):
+        hindi = "\u0915\u094d\u200d\u0937"     # KA, VIRAMA, ZWJ, SSA
+        persian = "\u0645\u06cc\u200c\u062e"    # a ZWNJ inside a word
+        self.assertEqual(strip_hidden(f"{hindi} {persian}"), f"{hindi} {persian}")
+        # Between ASCII letters a joiner only splits a keyword out of a screen.
+        self.assertEqual(strip_hidden("ig\u200dnore pre\u200cvious"), "ignore previous")
+
+    def test_tag_characters_are_dropped_outside_a_flag(self):
+        smuggled = "".join(chr(0xE0000 + ord(c)) for c in "obey me")
+        self.assertEqual(strip_hidden(f"text{smuggled} end"), "text end")
+
+    def test_a_comment_only_line_keeps_the_paragraph_break(self):
+        self.assertEqual(strip_hidden("one\n<!-- a note\nover two lines -->\ntwo\n"),
+                         "one\n\ntwo\n")
+        self.assertEqual(strip_hidden("one\n\n<!-- note -->\n\ntwo\n"), "one\n\ntwo\n")
+
+    def test_a_comment_behind_a_block_marker_leaves_no_bare_marker(self):
+        # A bare `-` under a list item is a setext underline: Python-Markdown
+        # would turn "b" into a heading. The comment is emptied instead.
+        raw = "- a\n- b\n- <!-- x -->\n\nNext.\n"
+        out = strip_hidden(raw)
+        self.assertNotIn("<!-- x -->", out)
+        self.assertNotIn("-", [line.strip() for line in out.split("\n")])
+        self.assertEqual(out, "- a\n- b\n- <!---->\n\nNext.\n")
+        self.assertEqual(strip_hidden(out), out)
+        # An ordered list keeps its numbering, a trailing comment does not
+        # become a setext underline, and the comments behind a nested marker
+        # become one empty comment.
+        for raw, kept in (
+                ("1. a\n2. <!-- x -->\n3. b\n", "1. a\n2. <!---->\n3. b\n"),
+                ("Title\n=== <!-- x -->\n", "Title\n=== <!---->\n"),
+                ("> q\n> - <!-- a --> <!-- b -->\n", "> q\n> - <!---->\n")):
+            self.assertEqual(strip_hidden(raw), kept)
+            self.assertEqual(strip_hidden(kept), kept)
+
+    def test_empty_and_unclosed_comments_are_left_alone(self):
+        separator = "1. a\n2. b\n<!-- -->\n1. c\n"   # an empty comment splits two lists
+        self.assertEqual(strip_hidden(separator), separator)
+        unclosed = "a literal <!-- that never closes\n"
+        self.assertEqual(strip_hidden(unclosed), unclosed)
+
+    def test_front_matter_values_lose_formatting_characters(self):
+        out = self._process("---\ndescription: \"De\u200bscrip\u202etion\"\n---\n\nBody text.\n")
+        self.assertIn("description: Description", out)
+        self.assertNotIn("\u200b", out)
+
+    def test_a_leading_bom_does_not_hide_the_front_matter(self):
+        out = self._process("\ufeff---\nauthor: Someone\n---\n\n# Bom\n")
+        self.assertTrue(out.startswith("---\n"))
+        self.assertIn("author: Someone", out)
+        self.assertNotIn("\ufeff", out)
 
 
 if __name__ == "__main__":
