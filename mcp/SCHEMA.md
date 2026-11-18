@@ -27,3 +27,6 @@ coverage: full
 
 - No write/mutate tools — the server stays read-only; rebuilding the
   pyramid is an explicit `python3 -m scripts.context_engine build`.
+- No tool argument joined to a filesystem path unchecked — names are
+  validated against the index/nav manifest, paths are confined with
+  `Path.is_relative_to`, and tool errors never echo absolute paths.
