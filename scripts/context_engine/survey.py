@@ -125,10 +125,19 @@ def survey(names: Optional[List[str]] = None, cache_dir: Path = CACHE_DIR,
 
 def survey_local(path: Path, name: Optional[str] = None,
                  kind: Optional[str] = None) -> Dict:
-    """Run the checks over one working tree, using its fleet entry when it has one."""
+    """
+    Run the checks over one working tree, using its fleet entry when it has one.
+
+    The entry is found as `--workspace` finds it - by origin slug, then by
+    directory name - so a checkout under any directory name gets its kind and
+    `link_exclude`; a monorepo package reviewed in place (a folder below its
+    working tree's top) is matched by its directory name alone. An explicit
+    `name` looks the entry up by that name instead; an explicit `kind`
+    overrides the entry's.
+    """
     path = Path(path).resolve()
-    name = name or path.name
-    entry = next((e for e in load_fleet() if e["name"] == name), None) or {}
+    entry = _fleet_entry(path, load_fleet(), name=name)
+    name = name or entry.get("name") or path.name
     source = gather_local(path, name=name, repo=entry.get("repo", name),
                           url=entry.get("url", str(path)),
                           meta=load_github_snapshot().get(name, {}))
@@ -159,6 +168,32 @@ def _origin_slug(path: Path) -> str:
     return "/".join(parts[-2:]) if len(parts) >= 2 else ""
 
 
+def _fleet_entry(path: Path, fleet: List[Dict], name: Optional[str] = None,
+                 slug: Optional[str] = None, top: Optional[Path] = None) -> Dict:
+    """
+    The fleet entry of a checkout, or {} when the inventory does not know it.
+
+    An explicit `name` is looked up by name alone. So is a monorepo package -
+    a directory below the top of its working tree (`top`, or read from
+    `path`), such as zer0-CMS's `packages/zer0-mistakes/` - by its directory
+    name: its origin is the containing repository's, whose entry is not the
+    package's. Otherwise the checkout's origin slug (`slug`, or read from
+    `path`) is tried first, then the directory name - a clone need not live in
+    a directory named after its entry.
+    """
+    def by_name(wanted: str) -> Dict:
+        return next((e for e in fleet if e["name"] == wanted), None) or {}
+
+    if name:
+        return by_name(name)
+    top = work_tree_root(path) if top is None else top
+    if top is not None and not Path(path).samefile(top):
+        return by_name(path.name)
+    slug = (_origin_slug(path) if slug is None else slug).lower()
+    by_repo = next((e for e in fleet if slug and e["repo"].lower() == slug), None)
+    return by_repo or by_name(path.name)
+
+
 def _current_branch(path: Path) -> str:
     import subprocess
     try:
@@ -186,8 +221,6 @@ def survey_workspace(root: Path, names: Optional[List[str]] = None, write: bool 
     """
     root = Path(root).resolve()
     fleet = load_fleet()
-    by_repo = {e["repo"].lower(): e for e in fleet}
-    by_name = {e["name"]: e for e in fleet}
     snapshot = load_github_snapshot()
     # A directory sharing the workspace's own git tree (an empty submodule
     # mount, a stray folder) is not a checkout.
@@ -201,10 +234,7 @@ def survey_workspace(root: Path, names: Optional[List[str]] = None, write: bool 
     for i, (path, top) in enumerate(checkouts, 1):
         slug = _origin_slug(path)
         package = path.resolve().relative_to(top).as_posix() if path.resolve() != top else ""
-        if package:
-            entry = by_name.get(path.name) or {}
-        else:
-            entry = by_repo.get(slug.lower()) or by_name.get(path.name) or {}
+        entry = _fleet_entry(path, fleet, slug=slug, top=top)
         name = entry.get("name") or path.name
         if any(r["name"] == name for r in results):  # a second worktree of one repo
             name = path.name

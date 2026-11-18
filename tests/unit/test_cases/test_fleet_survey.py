@@ -536,3 +536,78 @@ class TestWorkspacePackages(unittest.TestCase):
         from scripts.context_engine.analyze.review import render_review
         self.assertIn("(https://github.com/acme/mono/blob/feature/x/packages/widget/docs/guide.md)",
                       render_review(review))
+
+
+class TestLocalFleetEntry(unittest.TestCase):
+    """`survey --local` finds a checkout's fleet entry by its origin remote, then its directory name."""
+
+    @staticmethod
+    def _checkout(path: Path, origin=None) -> Path:
+        import subprocess
+
+        def git(*args):
+            subprocess.run(["git", *args], cwd=path, check=True, capture_output=True)
+
+        (path / "docs").mkdir(parents=True)
+        (path / "README.md").write_text("# README\n\n> A checkout of the context engine.\n")
+        # An aggregated page whose relative link resolved upstream, not here.
+        (path / "docs" / "index.md").write_text("# Copied\n\n> From upstream.\n\nSee [the guide](guide/missing.md).\n")
+        git("init", "-q", "-b", "main")
+        if origin:
+            git("remote", "add", "origin", origin)
+        git("add", ".")
+        git("-c", "user.name=t", "-c", "user.email=t@t", "commit", "-q", "-m", "init")
+        return path
+
+    def _survey(self, dirname, origin=None, **overrides):
+        from scripts.context_engine.survey import survey_local
+        with tempfile.TemporaryDirectory() as tmp:
+            report = survey_local(self._checkout(Path(tmp) / dirname, origin), **overrides)
+        (name, repo), = report["repositories"].items()
+        broken = [f["subject"] for f in repo["findings"] if f["check"] == "D8"]
+        return name, repo, broken
+
+    def test_the_origin_remote_finds_the_entry_under_another_directory_name(self):
+        name, repo, broken = self._survey("checkout-x", "https://github.com/bamr87/README.git")
+        self.assertEqual(name, "README")
+        self.assertEqual(repo["repo"], "bamr87/README")
+        self.assertEqual(repo["kind"], "tooling")
+        self.assertEqual(broken, [])  # the entry's link_exclude: ["docs/"] applies
+
+    def test_the_directory_name_is_the_fallback(self):
+        name, repo, broken = self._survey("README", "https://github.com/someone/fork")
+        self.assertEqual((name, repo["kind"], broken), ("README", "tooling", []))
+
+    def test_an_explicit_name_still_wins(self):
+        name, repo, broken = self._survey("checkout-x", "https://github.com/bamr87/README", name="checkout-x")
+        self.assertEqual((name, repo["kind"]), ("checkout-x", "default"))
+        self.assertEqual(broken, ["docs/index.md->guide/missing.md"])
+
+    def test_an_explicit_kind_still_overrides(self):
+        name, repo, _ = self._survey("checkout-x", "https://github.com/bamr87/README", kind="default")
+        self.assertEqual((name, repo["kind"]), ("README", "default"))
+
+    def test_a_monorepo_package_is_matched_by_its_directory_name(self):
+        # Its origin is the containing repository's, so the slug would pick that entry.
+        import subprocess
+        from scripts.context_engine.survey import survey_local
+
+        def git(*args):
+            subprocess.run(["git", *args], cwd=mono, check=True, capture_output=True)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            mono = Path(tmp) / "clone"
+            pkg = mono / "packages" / "zer0-mistakes"
+            pkg.mkdir(parents=True)
+            (mono / "README.md").write_text("# zer0-CMS\n\n> The monorepo root.\n")
+            (pkg / "README.md").write_text("# zer0-mistakes\n\n> A theme inside the monorepo.\n")
+            git("init", "-q", "-b", "main")
+            git("remote", "add", "origin", "https://github.com/bamr87/zer0-CMS.git")
+            git("add", ".")
+            git("-c", "user.name=t", "-c", "user.email=t@t", "commit", "-q", "-m", "init")
+            report = survey_local(pkg)
+            whole = survey_local(mono)
+        (name, repo), = report["repositories"].items()
+        self.assertEqual((name, repo["kind"], repo["repo"]), ("zer0-mistakes", "theme", "bamr87/zer0-mistakes"))
+        (name, repo), = whole["repositories"].items()
+        self.assertEqual((name, repo["kind"]), ("zer0-CMS", "app"))  # the clone itself still matches by origin
