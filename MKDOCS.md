@@ -12,6 +12,7 @@ This repo (`bamr87/README`) builds a standalone [MkDocs Material](https://squidf
 |------|---------|
 | [`mkdocs.yml`](mkdocs.yml) | Site config — theme, extensions, `docs_dir: docs`, `site_url`; pulls the nav in with `INHERIT: ./nav.yml` |
 | [`nav.yml`](nav.yml) | **Generated** — the `nav` tree and the `exclude_docs` rules, rendered by the context engine's navigator |
+| [`overrides/`](overrides/) | Hand-written theme overrides wired by `theme.custom_dir`: `main.html` (SEO and Open Graph meta, skip link), `404.html`, `assets/fleet-tokens.css` (design tokens, registered under `extra_css`) |
 | [`brain_site/hook.py`](brain_site/hook.py) | MkDocs hook: resolves `[[wikilinks]]` and callouts, adds backlinks, publishes the graph and its views |
 | [`requirements-docs.txt`](requirements-docs.txt) | Site build deps (`mkdocs`, `mkdocs-material`, `pymdown-extensions`); the hook also needs `requirements.txt` |
 | [`.github/workflows/deploy-pages.yaml`](.github/workflows/deploy-pages.yaml) | Builds and deploys to GitHub Pages |
@@ -43,6 +44,16 @@ To serve without the base-path redirect during quick edits, point `mkdocs serve`
 - **GitHub Pages does not serve dot-paths.** GitHub Pages does not serve a URL containing a dot-prefixed segment — verified against the live site: `_underscore` and plain paths return 200, every `/.dot/` path returns 404. So `navigation.navigate_hidden` is `false` in the registry: the ~1,000 pages under `.github/`, `.claude/`, `.cms/` and friends stay in the build (and the sitemap) but get no sidebar entry, because a sidebar entry for them would be a dead link. Set `navigate_hidden: true` only if those paths ever become servable — e.g. if the corpus renames dot-directories at ingest.
 - **Upstream `icon:` frontmatter is normalized at ingest.** Material resolves `page.meta.icon` as a bundled SVG for every nav entry, so a Jekyll value like `icon: globe` used to fail the whole build — which is why the nav was hand-curated before. `scripts/fix_frontmatter_icons.py` now maps those onto Material icons (keeping the original as `source_icon`), so every page is safe to place in the nav.
 - Adding a new aggregated repo? Add it to `_data/projects.yml` and rebuild — `python3 -m scripts.context_engine build` regenerates `nav.yml`, `context/nav/` and `docs/browse/`. There is nothing to add here by hand.
+
+## Theme overrides
+
+`overrides/` is hand-written source, unlike `docs/`. `mkdocs.yml` points `theme.custom_dir` at it and lists `assets/fleet-tokens.css` under `extra_css`; MkDocs copies the file from `overrides/assets/` into the built site, so the stylesheet is served at `assets/fleet-tokens.css`.
+
+- `overrides/main.html` extends Material's `base.html`. It emits `description`, `og:title`, `og:description`, `og:type`, `og:url` (from `page.canonical_url`) and `og:site_name` in `<head>`, taking the description from the page's `description` frontmatter and falling back to `site_description`. It prepends a visible-on-focus skip link before the header and puts the `#main-content` anchor at the top of the content block.
+- `overrides/404.html` extends `main.html` and gives GitHub Pages a custom `site/404.html` with a short message, a link to the site root and a button that opens the search box.
+- `overrides/assets/fleet-tokens.css` declares the `--fleet-color-*`, `--fleet-space-*` and `--fleet-font-*` custom properties (the indigo palette from `mkdocs.yml`) and the `.skip-link` rule. Keep the `--fleet-color-` prefix: the hub conformance check (UPS-FE-01) looks for it.
+
+These overrides cover UPS-FE-01, UPS-FE-11 and UPS-FE-25. UPS-FE-15 (no 404 page) stays red in the hub checker until it also accepts a 404 template under a MkDocs `custom_dir`; do not add a root `404.html` to satisfy it.
 
 ## Obsidian on the site
 

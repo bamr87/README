@@ -1,0 +1,39 @@
+/* Fleet design tokens for the README site (UPS-FE-01). Palette follows the
+   indigo scheme set in mkdocs.yml; keep the names stable, other fleet surfaces
+   read --fleet-color-*. */
+:root {
+  --fleet-color-primary: #3f51b5;
+  --fleet-color-primary-dark: #303f9f;
+  --fleet-color-accent: #536dfe;
+  --fleet-color-text: #212121;
+  --fleet-color-surface: #ffffff;
+  --fleet-space-1: 0.25rem;
+  --fleet-space-2: 0.5rem;
+  --fleet-space-3: 1rem;
+  --fleet-space-4: 1.5rem;
+  --fleet-font-body: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fleet-font-mono: "Roboto Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+[data-md-color-scheme="slate"] {
+  --fleet-color-text: #e0e0e0;
+  --fleet-color-surface: #1e1e2e;
+}
+
+/* Skip link: off-screen until it receives keyboard focus. */
+.skip-link {
+  position: absolute;
+  top: var(--fleet-space-2);
+  left: var(--fleet-space-2);
+  z-index: 10;
+  padding: var(--fleet-space-2) var(--fleet-space-3);
+  background: var(--fleet-color-primary-dark);
+  color: #ffffff;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}

@@ -47,6 +47,7 @@ coverage: listed
 | `hooks.d/` | dir | Lifecycle hooks the engine runs at each build stage | required |
 | `notes/` | dir | Hand and agent-written notes, copied into the vault at `docs/brain/notes/` | required |
 | `mcp/` | dir | MCP server exposing the pyramid to AI clients | required |
+| `overrides/` | dir | MkDocs Material theme overrides (`theme.custom_dir`): skip link, SEO/Open Graph meta, custom 404, design tokens | required |
 | `scripts/` | dir | Pipeline stages, context engine, gates, and utilities | required |
 | `tests/` | dir | Unit + integration harness (`python tests/test_runner.py`) | required |
 | `tools/` | dir | Vendored hub kit: `unwrap-prose.py` (the one-paragraph-per-line prose gate run by CI and at ingest) and `docs_index.py` (the docs index generator the survey's framework checks reuse) | required terminal |

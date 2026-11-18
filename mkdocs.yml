@@ -17,6 +17,7 @@ site_dir: site
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -50,6 +51,10 @@ theme:
     - search.share
     - content.code.copy
     - content.code.annotate
+
+# Fleet design tokens and the skip-link rule; the file ships from overrides/ (theme.custom_dir).
+extra_css:
+  - assets/fleet-tokens.css
 
 # Plugins
 plugins:
