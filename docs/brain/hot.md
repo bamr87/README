@@ -15,46 +15,39 @@ Read this first. It holds what moved lately and what everything else connects th
 
 ## Recent changes
 
+- 2026-11-18 [[brain/projects/bamr87|Fleet Hub]]: +0 ~7 -0
+    - [[bamr87/_data/SCHEMA|SCHEMA — _data]]
+    - [[bamr87/docs/MCP-SERVERS|MCP server lifecycle]]
+    - [[bamr87/docs/mcp-servers-inventory|MCP servers inventory — consolidation checklist]]
+- 2026-11-18 [[brain/projects/it-journey|IT Journey]]: +1 ~6 -0
+    - [[it-journey/docs/amendments/0004-mission-statement|0004 — Missions]]
+    - [[it-journey/AGENTS|it-journey]]
+    - [[it-journey/PRD|PRD: IT-Journey – Open-Source IT Education Platform]]
+- 2026-11-18 [[brain/projects/bashos|BashOS]]: +0 ~3 -0
+    - [[bashos/docs/DESKTOP-TOUR|The bashOS Desktop — a tour]]
+    - [[bashos/docs/OPENCODE|The engine: OpenCode at the core of bashOS]]
+    - [[bashos/docs/OS|bashOS, the operating system]]
+- 2026-11-18 [[brain/projects/law-ai|Law AI]]: +0 ~1 -0
+    - [[law-ai/BACKLOG|Law AI — Backlog]]
+- 2026-11-18 [[brain/projects/fredgar-ai|Fredgar AI]]: +1 ~6 -0
+    - [[fredgar-ai/docs/amendments/0002-mission-statement|0002 — Missions]]
+    - [[fredgar-ai/AGENTS|fredgar-ai]]
+    - [[fredgar-ai/PRD|Product Requirements Document (PRD): Fredgar AI]]
+- 2026-11-16 [[brain/projects/SCHEMA|SCHEMA Protocol]]: +1 ~6 -0
+    - [[SCHEMA/docs/amendments/0003-mission-statement|0003 — Missions]]
+    - [[SCHEMA/AGENTS|SCHEMA]]
+    - [[SCHEMA/PRD|PRD — Pyramid Schema (SCHEMA)]]
+- 2026-11-18 [[brain/projects/bamr87.github.io|Personal Site]]: +0 ~1 -0
+    - [[bamr87.github.io/pages/_about/features/index|Features Index (Consolidated)]]
+- 2026-11-18 [[brain/projects/zer0-mistakes|Zer0 Mistakes]]: +0 ~1 -0
+    - [[zer0-mistakes/docs/architecture/prd-requirements|Product Requirements Document]]
+- 2026-11-18 [[brain/projects/bashcrawl|Bash Crawl]]: +1 ~1 -0
+    - [[bashcrawl/SECURITY|Security Policy]]
+    - [[bashcrawl/docs/README|Bashcrawl documentation]]
 - 2026-11-11 [[brain/projects/zpl-viewer|ZPL Viewer]]: +19 ~0 -0
     - [[zpl-viewer/AGENTS|zpl-viewer]]
     - [[zpl-viewer/CHANGELOG|Change Log]]
     - [[zpl-viewer/CLAUDE|zpl-viewer]]
-- 2026-11-11 [[brain/projects/zer0-CMS|Zer0 CMS]]: +1205 ~0 -0
-    - [[zer0-CMS/AGENTS|zer0-CMS]]
-    - [[zer0-CMS/ATTRIBUTION|Attribution]]
-    - [[zer0-CMS/CHANGELOG|Changelog]]
-- 2026-10-27 [[brain/projects/vs-sonic-pi|VS Sonic Pi]]: +117 ~0 -0
-    - [[vs-sonic-pi/AGENTS|vs-sonic-pi]]
-    - [[vs-sonic-pi/CHANGELOG|Changelog]]
-    - [[vs-sonic-pi/CLAUDE|vs-sonic-pi]]
-- 2026-11-09 [[brain/projects/SCHEMA|SCHEMA Protocol]]: +35 ~0 -0
-    - [[SCHEMA/AGENTS|SCHEMA]]
-    - [[SCHEMA/CHANGELOG|Changelog]]
-    - [[SCHEMA/CLAUDE|SCHEMA]]
-- 2026-11-04 [[brain/projects/rewind-arcade|Rewind Arcade]]: +76 ~0 -0
-    - [[rewind-arcade/AGENTS|rewind-arcade]]
-    - [[rewind-arcade/CHANGELOG|Changelog]]
-    - [[rewind-arcade/CLAUDE|rewind-arcade]]
-- 2026-10-29 [[brain/projects/outbox|Outbox]]: +21 ~0 -0
-    - [[outbox/AGENTS|outbox]]
-    - [[outbox/CHANGELOG|Changelog]]
-    - [[outbox/CLAUDE|outbox]]
-- 2026-11-11 [[brain/projects/ocrmd|OCRmd]]: +25 ~0 -0
-    - [[ocrmd/AGENTS|ocrmd]]
-    - [[ocrmd/CHANGELOG|Changelog]]
-    - [[ocrmd/CLAUDE|ocrmd]]
-- 2026-11-16 [[brain/projects/lifehacker.dev|Lifehacker]]: +138 ~0 -0
-    - [[lifehacker.dev/AGENTS|lifehacker.dev]]
-    - [[lifehacker.dev/AI_USAGE|AI Usage & Cost]]
-    - [[lifehacker.dev/CHANGELOG|Changelog]]
-- 2026-11-15 [[brain/projects/law-ai|Law AI]]: +299 ~0 -0
-    - [[law-ai/AGENTS|Law AI — Agent Coding Instructions]]
-    - [[law-ai/BACKLOG|Law AI — Backlog]]
-    - [[law-ai/CHANGELOG|Changelog]]
-- 2026-11-11 [[brain/projects/godotgo|GodotGo]]: +30 ~0 -0
-    - [[godotgo/AGENTS|godotgo]]
-    - [[godotgo/CHANGELOG|Changelog]]
-    - [[godotgo/CLAUDE|godotgo]]
 
 ## Most linked pages
 
@@ -62,7 +55,7 @@ Read this first. It holds what moved lately and what everything else connects th
 - [[it-journey/pages/_notes/obsidian/index|Obsidian Knowledge Graph and Wiki Links]] (218 links in)
 - [[it-journey/pages/_quests/home|🏰 Overworld - Master Quest Map]] (187 links in)
 - [[it-journey/pages/_quest-reports/index|Quest Perfection Dashboard]] (130 links in)
-- [[law-ai/docs/constitution|Law AI — Constitution]] (98 links in)
+- [[law-ai/docs/constitution|Law AI — Constitution]] (99 links in)
 - [[zer0-CMS/sites/zer0-pages/pages/wiki/sources/_index|Sources]] (85 links in)
 - [[law-ai/BACKLOG|Law AI — Backlog]] (74 links in)
 - [[zer0-mistakes/features/README|Features Directory]] (60 links in)
@@ -72,7 +65,7 @@ Read this first. It holds what moved lately and what everything else connects th
 - [[zer0-CMS/sites/1987/index|Index — 1987]] (31 links in)
 - [[it-journey/pages/_quests/0000/README|Level 0000 - Foundation & Init World]] (30 links in)
 - [[bamr87/docs/JEV|JEV — the agent logic engine]] (28 links in)
-- [[law-ai/AGENTS|Law AI — Agent Coding Instructions]] (27 links in)
+- [[law-ai/AGENTS|Law AI — Agent Coding Instructions]] (28 links in)
 
 ## Cross-repository concepts
 

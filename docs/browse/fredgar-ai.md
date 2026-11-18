@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Fredgar AI - content map
 
-Every published page in [`docs/fredgar-ai/`](../fredgar-ai/) as it appears in the sidebar: **36 pages** across **6 sections** (max depth 3).
+Every published page in [`docs/fredgar-ai/`](../fredgar-ai/) as it appears in the sidebar: **38 pages** across **6 sections** (max depth 3).
 
 - [Fredgar AI](../fredgar-ai/README.md)
 - [Changelog](../fredgar-ai/CHANGELOG.md)
@@ -21,7 +21,8 @@ Every published page in [`docs/fredgar-ai/`](../fredgar-ai/) as it appears in th
 - [fredgar-ai (CLAUDE)](../fredgar-ai/CLAUDE.md)
 - [fredgar-ai tools](../fredgar-ai/tools/README.md)
 - [Product Requirements Document (PRD): Fredgar AI](../fredgar-ai/PRD.md)
-- **[Documentation](../fredgar-ai/docs/README.md)** <small>(26)</small>
+- [Security Policy](../fredgar-ai/SECURITY.md)
+- **[Documentation](../fredgar-ai/docs/README.md)** <small>(27)</small>
   - [fredgar-ai documentation](../fredgar-ai/docs/README.md)
   - [API and CLI](../fredgar-ai/docs/api-and-cli.md)
   - [Architecture](../fredgar-ai/docs/architecture.md)
@@ -32,9 +33,10 @@ Every published page in [`docs/fredgar-ai/`](../fredgar-ai/) as it appears in th
   - [Leadership & stakeholder analytics — methodology and responsible use](../fredgar-ai/docs/leadership-methodology.md)
   - [Releasing](../fredgar-ai/docs/releasing.md)
   - [Static site — the public mirror on GitHub Pages](../fredgar-ai/docs/static-site.md)
-  - **[Amendments — fredgar-ai](../fredgar-ai/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — fredgar-ai](../fredgar-ai/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — fredgar-ai](../fredgar-ai/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../fredgar-ai/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../fredgar-ai/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../fredgar-ai/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../fredgar-ai/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../fredgar-ai/docs/adr/README.md)

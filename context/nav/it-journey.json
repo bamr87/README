@@ -5,18 +5,18 @@
   "title": "IT Journey",
   "corpus": "docs/it-journey",
   "counts": {
-    "pages": 554,
+    "pages": 557,
     "sections": 54,
     "max_depth": 5,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "44c72f93d1dfda7a",
+  "fingerprint": "a237764155ae7cf9",
   "tree": {
     "type": "section",
     "title": "IT Journey",
     "index": "it-journey/README.md",
-    "pages": 554,
+    "pages": 557,
     "children": [
       {
         "type": "group",
@@ -556,7 +556,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "it-journey/docs/README.md",
-        "pages": 40,
+        "pages": 43,
         "children": [
           {
             "type": "page",
@@ -573,6 +573,12 @@
           },
           {
             "type": "page",
+            "title": "IT-Journey Pillars in Practice",
+            "path": "it-journey/docs/pillars-in-practice.md",
+            "rel": "docs/pillars-in-practice.md"
+          },
+          {
+            "type": "page",
             "title": "it-journey \u2014 Constitution",
             "path": "it-journey/docs/constitution.md",
             "rel": "docs/constitution.md"
@@ -582,6 +588,12 @@
             "title": "IT-Journey: The Master Roadmap",
             "path": "it-journey/docs/ROADMAP.md",
             "rel": "docs/ROADMAP.md"
+          },
+          {
+            "type": "page",
+            "title": "KIS / KISS fix (draft, not applied)",
+            "path": "it-journey/docs/kis-kiss-fix.md",
+            "rel": "docs/kis-kiss-fix.md"
           },
           {
             "type": "page",
@@ -598,9 +610,9 @@
           },
           {
             "type": "page",
-            "title": "Purpose",
-            "path": "it-journey/docs/purpose-page-rewrite.md",
-            "rel": "docs/purpose-page-rewrite.md"
+            "title": "Technical Concepts Library",
+            "path": "it-journey/docs/technical-concepts-library.md",
+            "rel": "docs/technical-concepts-library.md"
           },
           {
             "type": "page",
@@ -642,7 +654,7 @@
             "title": "Amendments \u2014 it-journey",
             "rel": "docs/amendments",
             "index": "it-journey/docs/amendments/README.md",
-            "pages": 6,
+            "pages": 7,
             "children": [
               {
                 "type": "page",
@@ -656,6 +668,12 @@
                 "title": "0001 \u2014 Ratify the constitution",
                 "path": "it-journey/docs/amendments/0001-ratify-constitution.md",
                 "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "0004 \u2014 Missions",
+                "path": "it-journey/docs/amendments/0004-mission-statement.md",
+                "rel": "docs/amendments/0004-mission-statement.md"
               },
               {
                 "type": "page",
@@ -1036,7 +1054,7 @@
               },
               {
                 "type": "page",
-                "title": "Purpose",
+                "title": "Purpose \u2014 Free, Open IT Education for Everyone",
                 "path": "it-journey/pages/_about/purpose.md",
                 "rel": "pages/_about/purpose.md"
               },

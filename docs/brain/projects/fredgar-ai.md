@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 36
+pages: 38
 repo: bamr87/fredgar-ai
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: Fredgar AI
 > [!info] app: `bamr87/fredgar-ai`
 > Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries.
 
-**36** pages collected from commit `8114a91727b7` (2026-11-16).
+**38** pages collected from commit `61113efdb3c2` (2026-11-18).
 
 ## Most connected pages
 
@@ -24,14 +24,14 @@ title: Fredgar AI
 - [[fredgar-ai/docs/api-and-cli|API and CLI]]
 - [[fredgar-ai/docs/constitution|fredgar-ai — Constitution]]
 - [[fredgar-ai/docs/README|fredgar-ai documentation]]
+- [[fredgar-ai/docs/amendments/README|Amendments — fredgar-ai]]
 - [[fredgar-ai/docs/distributed-storage|Distributed extract storage — specification]]
 - [[fredgar-ai/docs/notes/README|Notes]]
-- [[fredgar-ai/docs/amendments/README|Amendments — fredgar-ai]]
 - [[fredgar-ai/AGENTS|fredgar-ai]]
+- [[fredgar-ai/docs/amendments/0002-mission-statement|0002 — Missions]]
 - [[fredgar-ai/docs/architecture|Architecture]]
 - [[fredgar-ai/frontend/README|Fredgar AI — frontend]]
 - [[fredgar-ai/CLAUDE|fredgar-ai]]
-- [[fredgar-ai/docs/adr/README|Architecture Decision Records]]
 
 ## Concepts
 

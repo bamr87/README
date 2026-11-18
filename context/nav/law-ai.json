@@ -5,18 +5,18 @@
   "title": "Law AI",
   "corpus": "docs/law-ai",
   "counts": {
-    "pages": 299,
+    "pages": 300,
     "sections": 74,
     "max_depth": 6,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "03d9518a99ffb655",
+  "fingerprint": "81ea7ff93228b57e",
   "tree": {
     "type": "section",
     "title": "Law AI",
     "index": "law-ai/README.md",
-    "pages": 299,
+    "pages": 300,
     "children": [
       {
         "type": "page",
@@ -69,6 +69,12 @@
         "path": "law-ai/lsat-static/README.md",
         "rel": "lsat-static/README.md",
         "folder": "lsat-static"
+      },
+      {
+        "type": "page",
+        "title": "Security Policy",
+        "path": "law-ai/SECURITY.md",
+        "rel": "SECURITY.md"
       },
       {
         "type": "section",

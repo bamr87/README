@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 027eec82fe650b1d
+source_fingerprint: c20b1fc971afef9e
 tags:
   - agentic-ai
   - ai
@@ -30,7 +30,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashos` - 38 docs |
+| Corpus | `docs/bashos` - 80 docs |
 | External | no |
 
 ## Signals
@@ -40,15 +40,16 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~42,327 words across 38 indexed documents
-- code samples in: bash, plaintext, ts, text, js, markdown, mermaid, json
+- ~70,441 words across 80 indexed documents
+- code samples in: bash, plaintext, mermaid, ts, text, json, js, markdown
 
 ## Navigation
 
-38 published pages in 8 sections (max depth 3) — [browse the full map](../../docs/browse/bashos.md) · [tree as JSON](../nav/bashos.json)
+80 published pages in 15 sections (max depth 4) — [browse the full map](../../docs/browse/bashos.md) · [tree as JSON](../nav/bashos.json)
 
 - **chui** (3 pages)
-- **Documentation** (24 pages)
+- **Documentation** (26 pages)
+- **one-os** (40 pages)
 - **os — bashOS as the operating system** (4 pages)
 
 ## Key documents
@@ -60,7 +61,7 @@ tags:
 - [`CHANGELOG.md`](../../docs/bashos/CHANGELOG.md)
 - [`SECURITY.md`](../../docs/bashos/SECURITY.md)
 - [`docs/frontend/posthog-os-research.md`](../../docs/bashos/docs/frontend/posthog-os-research.md)
-- [`docs/ARCHITECTURE.md`](../../docs/bashos/docs/ARCHITECTURE.md)
+- [`one-os/PLAN.md`](../../docs/bashos/one-os/PLAN.md)
 
 ## Query this context
 

@@ -25,13 +25,13 @@
       "repo": "bamr87/bashcrawl",
       "kind": "game",
       "status": "active",
-      "corpus_files": 79,
-      "fingerprint": "72cc36411c63e96f",
+      "corpus_files": 80,
+      "fingerprint": "239df1ff2a84c7e0",
       "card": "context/cards/bashcrawl.md",
       "facts": "context/facts/bashcrawl.json",
       "nav": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
-      "nav_pages": 79,
+      "nav_pages": 80,
       "nav_sections": 16
     },
     "zer0-mistakes": {
@@ -39,7 +39,7 @@
       "kind": "theme",
       "status": "active",
       "corpus_files": 557,
-      "fingerprint": "731c68f9de83d7cc",
+      "fingerprint": "d4f5934d7a2a1dc3",
       "card": "context/cards/zer0-mistakes.md",
       "facts": "context/facts/zer0-mistakes.json",
       "nav": "context/nav/zer0-mistakes.json",
@@ -51,13 +51,13 @@
       "repo": "bamr87/it-journey",
       "kind": "site",
       "status": "active",
-      "corpus_files": 554,
-      "fingerprint": "aee0c54181705214",
+      "corpus_files": 557,
+      "fingerprint": "5881c785703c9b8d",
       "card": "context/cards/it-journey.md",
       "facts": "context/facts/it-journey.json",
       "nav": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
-      "nav_pages": 554,
+      "nav_pages": 557,
       "nav_sections": 54
     },
     "OverTheWire-website": {
@@ -77,13 +77,13 @@
       "repo": "bamr87/bamr87",
       "kind": "hub",
       "status": "active",
-      "corpus_files": 256,
-      "fingerprint": "6fe8b887a3876b90",
+      "corpus_files": 259,
+      "fingerprint": "cc681bf3a9e4e2a4",
       "card": "context/cards/bamr87.md",
       "facts": "context/facts/bamr87.json",
       "nav": "context/nav/bamr87.json",
       "browse": "docs/browse/bamr87.md",
-      "nav_pages": 256,
+      "nav_pages": 259,
       "nav_sections": 38
     },
     "bamr87.github.io": {
@@ -91,7 +91,7 @@
       "kind": "site",
       "status": "active",
       "corpus_files": 94,
-      "fingerprint": "e130ade97a2fc644",
+      "fingerprint": "73aa80ba8cdc6a5e",
       "card": "context/cards/bamr87.github.io.md",
       "facts": "context/facts/bamr87.github.io.json",
       "nav": "context/nav/bamr87.github.io.json",
@@ -103,14 +103,14 @@
       "repo": "bamr87/bashos",
       "kind": "tooling",
       "status": "active",
-      "corpus_files": 38,
-      "fingerprint": "027eec82fe650b1d",
+      "corpus_files": 80,
+      "fingerprint": "c20b1fc971afef9e",
       "card": "context/cards/bashos.md",
       "facts": "context/facts/bashos.json",
       "nav": "context/nav/bashos.json",
       "browse": "docs/browse/bashos.md",
-      "nav_pages": 38,
-      "nav_sections": 8
+      "nav_pages": 80,
+      "nav_sections": 15
     },
     "cv-pro": {
       "repo": "bamr87/cv-pro",
@@ -142,13 +142,13 @@
       "repo": "bamr87/fredgar-ai",
       "kind": "app",
       "status": "active",
-      "corpus_files": 36,
-      "fingerprint": "1298713d647bf488",
+      "corpus_files": 38,
+      "fingerprint": "2e3ddb33eb463bce",
       "card": "context/cards/fredgar-ai.md",
       "facts": "context/facts/fredgar-ai.json",
       "nav": "context/nav/fredgar-ai.json",
       "browse": "docs/browse/fredgar-ai.md",
-      "nav_pages": 36,
+      "nav_pages": 38,
       "nav_sections": 6
     },
     "githubai": {
@@ -194,13 +194,13 @@
       "repo": "bamr87/law-ai",
       "kind": "app",
       "status": "active",
-      "corpus_files": 299,
-      "fingerprint": "a85803e83ade1919",
+      "corpus_files": 300,
+      "fingerprint": "7e3c333701a10cc0",
       "card": "context/cards/law-ai.md",
       "facts": "context/facts/law-ai.json",
       "nav": "context/nav/law-ai.json",
       "browse": "docs/browse/law-ai.md",
-      "nav_pages": 299,
+      "nav_pages": 300,
       "nav_sections": 74
     },
     "lifehacker.dev": {
@@ -259,13 +259,13 @@
       "repo": "bamr87/SCHEMA",
       "kind": "tooling",
       "status": "active",
-      "corpus_files": 35,
-      "fingerprint": "77ffc73e4a825563",
+      "corpus_files": 36,
+      "fingerprint": "a730b9464b43dd5f",
       "card": "context/cards/SCHEMA.md",
       "facts": "context/facts/SCHEMA.json",
       "nav": "context/nav/SCHEMA.json",
       "browse": "docs/browse/SCHEMA.md",
-      "nav_pages": 35,
+      "nav_pages": 36,
       "nav_sections": 10
     },
     "vs-sonic-pi": {
@@ -322,7 +322,7 @@
       "path": "context/nav/it-journey.json",
       "title": "IT Journey navigation",
       "project": "it-journey",
-      "summary": "554 pages in 54 sections",
+      "summary": "557 pages in 54 sections",
       "browse": "docs/browse/it-journey.md"
     },
     {
@@ -331,7 +331,7 @@
       "path": "context/cards/it-journey.md",
       "title": "README - it-journey",
       "project": "it-journey",
-      "summary": "Gamified, open-source platform for learning IT and software development through hands-on quests, zer0 to her0.",
+      "summary": "IT-Journey's direction is to become the ultimate open home for all things IT learning: data, tools, resources and transparency, with gamified quests from zer0 to her0, practical tutorials, and AI-enhanced learning for everyone (constitution \u00a71).",
       "kind": "site",
       "topics": [
         "education",
@@ -346,7 +346,7 @@
         "docs/it-journey/CHANGELOG.md",
         "docs/it-journey/SECURITY.md",
         "docs/it-journey/CODE_OF_CONDUCT.md",
-        "docs/it-journey/docs/ROADMAP.md"
+        "docs/it-journey/docs/technical-concepts-library.md"
       ]
     },
     {
@@ -388,7 +388,7 @@
       "path": "context/nav/bashcrawl.json",
       "title": "Bash Crawl navigation",
       "project": "bashcrawl",
-      "summary": "79 pages in 16 sections",
+      "summary": "80 pages in 16 sections",
       "browse": "docs/browse/bashcrawl.md"
     },
     {
@@ -409,10 +409,10 @@
         "docs/bashcrawl/CLAUDE.md",
         "docs/bashcrawl/AGENTS.md",
         "docs/bashcrawl/CHANGELOG.md",
+        "docs/bashcrawl/SECURITY.md",
         "docs/bashcrawl/docs/ARCHITECTURE.md",
         "docs/bashcrawl/docs/walkthrough.md",
-        "docs/bashcrawl/docs/termforge/architecture.md",
-        "docs/bashcrawl/docs/termforge/hidden-gem.md"
+        "docs/bashcrawl/docs/termforge/architecture.md"
       ]
     },
     {
@@ -487,7 +487,7 @@
       "path": "context/nav/bamr87.json",
       "title": "Fleet Hub navigation",
       "project": "bamr87",
-      "summary": "256 pages in 38 sections",
+      "summary": "259 pages in 38 sections",
       "browse": "docs/browse/bamr87.md"
     },
     {
@@ -545,7 +545,7 @@
       "path": "context/nav/bashos.json",
       "title": "BashOS navigation",
       "project": "bashos",
-      "summary": "38 pages in 8 sections",
+      "summary": "80 pages in 15 sections",
       "browse": "docs/browse/bashos.md"
     },
     {
@@ -565,7 +565,7 @@
         "docs/bashos/CHANGELOG.md",
         "docs/bashos/SECURITY.md",
         "docs/bashos/docs/frontend/posthog-os-research.md",
-        "docs/bashos/docs/ARCHITECTURE.md"
+        "docs/bashos/one-os/PLAN.md"
       ]
     },
     {
@@ -632,7 +632,7 @@
       "path": "context/nav/fredgar-ai.json",
       "title": "Fredgar AI navigation",
       "project": "fredgar-ai",
-      "summary": "36 pages in 6 sections",
+      "summary": "38 pages in 6 sections",
       "browse": "docs/browse/fredgar-ai.md"
     },
     {
@@ -641,7 +641,7 @@
       "path": "context/cards/fredgar-ai.md",
       "title": "Fredgar AI",
       "project": "fredgar-ai",
-      "summary": "Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries.",
+      "summary": "Fredgar AI's direction is to become the ultimate open home for all things financial: data, tools, resources and transparency, with queryable and auditable SEC EDGAR and FRED data, cited AI, and API-first access for everyone (constitution \u00a71).",
       "kind": "app",
       "topics": [],
       "key_docs": [
@@ -650,9 +650,9 @@
         "docs/fredgar-ai/AGENTS.md",
         "docs/fredgar-ai/CONTRIBUTING.md",
         "docs/fredgar-ai/CHANGELOG.md",
+        "docs/fredgar-ai/SECURITY.md",
         "docs/fredgar-ai/docs/distributed-storage.md",
-        "docs/fredgar-ai/PRD.md",
-        "docs/fredgar-ai/docs/sec-reference/edgar-api.md"
+        "docs/fredgar-ai/PRD.md"
       ]
     },
     {
@@ -748,7 +748,7 @@
       "path": "context/nav/law-ai.json",
       "title": "Law AI navigation",
       "project": "law-ai",
-      "summary": "299 pages in 74 sections",
+      "summary": "300 pages in 74 sections",
       "browse": "docs/browse/law-ai.md"
     },
     {
@@ -765,10 +765,10 @@
         "docs/law-ai/CLAUDE.md",
         "docs/law-ai/AGENTS.md",
         "docs/law-ai/CHANGELOG.md",
+        "docs/law-ai/SECURITY.md",
         "docs/law-ai/BACKLOG.md",
         "docs/law-ai/specs/052-backlog-zero/tasks.md",
-        "docs/law-ai/docs/data-model.md",
-        "docs/law-ai/docs/prd.md"
+        "docs/law-ai/docs/data-model.md"
       ]
     },
     {
@@ -893,7 +893,7 @@
       "path": "context/nav/SCHEMA.json",
       "title": "SCHEMA Protocol navigation",
       "project": "SCHEMA",
-      "summary": "35 pages in 10 sections",
+      "summary": "36 pages in 10 sections",
       "browse": "docs/browse/SCHEMA.md"
     },
     {
@@ -902,7 +902,7 @@
       "path": "context/cards/SCHEMA.md",
       "title": "Pyramid Schema (SCHEMA.md)",
       "project": "SCHEMA",
-      "summary": "Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it.",
+      "summary": "Pyramid Schema's direction is to become the ultimate open home for all things repository structure: data, tools, resources and transparency, with a SCHEMA.md protocol and linter so agents look up structure instead of guessing, for everyone (constitution \u00a71).",
       "kind": "tooling",
       "topics": [],
       "key_docs": [
@@ -913,7 +913,7 @@
         "docs/SCHEMA/CHANGELOG.md",
         "docs/SCHEMA/docs/2026-09-03-the-copy-you-forgot-you-made.md",
         "docs/SCHEMA/spec/pyramid-schema-spec-v0.1.md",
-        "docs/SCHEMA/docs/2026-07-15-pyramid-schema-schema-md-for-ai-agents.md"
+        "docs/SCHEMA/docs/constitution.md"
       ]
     },
     {
@@ -1157,7 +1157,6 @@
       "nav:law-ai": 1
     },
     "024": {
-      "card:it-journey": 1,
       "card:law-ai": 1,
       "nav:law-ai": 1
     },
@@ -1172,9 +1171,6 @@
     "027": {
       "card:law-ai": 1,
       "nav:law-ai": 1
-    },
-    "027eec82fe650b1d": {
-      "card:bashos": 2
     },
     "028": {
       "card:law-ai": 1,
@@ -1205,6 +1201,7 @@
       "nav:law-ai": 1
     },
     "035": {
+      "card:it-journey": 1,
       "card:law-ai": 1,
       "nav:law-ai": 1
     },
@@ -1223,9 +1220,6 @@
     "039": {
       "card:law-ai": 1,
       "nav:law-ai": 1
-    },
-    "03d9518a99ffb655": {
-      "card:law-ai": 1
     },
     "040": {
       "card:law-ai": 1,
@@ -1382,10 +1376,10 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
-    "1024246": {
+    "1035533": {
       "card:it-journey": 1
     },
-    "1042399": {
+    "1038322": {
       "card:bamr87.github.io": 1
     },
     "1051245": {
@@ -1434,12 +1428,6 @@
     "127090": {
       "card:cv-pro": 1
     },
-    "12871": {
-      "card:SCHEMA": 1
-    },
-    "1298713d647bf488": {
-      "card:fredgar-ai": 2
-    },
     "1312b35ba279a08d": {
       "card:scripts": 1
     },
@@ -1454,10 +1442,13 @@
       "apex": 2,
       "card:lifehacker.dev": 5
     },
-    "143": {
+    "13870": {
+      "card:SCHEMA": 1
+    },
+    "142": {
       "card:bamr87.github.io": 1
     },
-    "143405": {
+    "142866": {
       "card:bamr87.github.io": 1
     },
     "144": {
@@ -1476,7 +1467,7 @@
     "1587a747f10b0283": {
       "card:lifehacker.dev": 1
     },
-    "161": {
+    "162": {
       "card:bamr87": 3
     },
     "16263": {
@@ -1521,9 +1512,6 @@
       "card:zer0-CMS": 1,
       "nav:zer0-CMS": 1
     },
-    "2026-07-15-pyramid-schema-schema-md-for-ai-agents.md": {
-      "card:SCHEMA": 3
-    },
     "2026-09-03-the-copy-you-forgot-you-made.md": {
       "card:SCHEMA": 3
     },
@@ -1536,9 +1524,6 @@
     "219": {
       "card:OverTheWire-website": 3
     },
-    "22669e5e45f807f9": {
-      "card:bashos": 1
-    },
     "226e4b5bb0231db9": {
       "card:djangoerp": 2
     },
@@ -1546,8 +1531,11 @@
       "apex": 3,
       "card:OverTheWire-website": 7
     },
-    "246": {
-      "card:it-journey": 1
+    "239df1ff2a84c7e0": {
+      "card:bashcrawl": 2
+    },
+    "245": {
+      "card:bamr87": 1
     },
     "250800": {
       "card:ocrmd": 1
@@ -1558,91 +1546,77 @@
     "253": {
       "card:zer0-CMS": 1
     },
-    "256": {
+    "259": {
       "apex": 3,
       "card:bamr87": 7
-    },
-    "259305": {
-      "card:fredgar-ai": 1
     },
     "263": {
       "card:OverTheWire-website": 1
     },
-    "2820629": {
+    "278430": {
+      "card:fredgar-ai": 1
+    },
+    "2834492": {
       "card:law-ai": 1
     },
-    "2833823": {
+    "2905165": {
       "card:bamr87": 1
     },
-    "299": {
+    "2e3ddb33eb463bce": {
+      "card:fredgar-ai": 2
+    },
+    "300": {
       "apex": 3,
       "card:law-ai": 7
     },
     "300802": {
       "card:githubai": 1
     },
-    "304503": {
-      "card:bashos": 1
-    },
-    "327": {
-      "card:bashos": 1
-    },
-    "34477": {
-      "card:fredgar-ai": 1
-    },
     "355200": {
       "card:rewind-arcade": 1
     },
-    "356673": {
+    "358047": {
       "card:bashcrawl": 1
     },
-    "359": {
-      "card:bashcrawl": 1
+    "373": {
+      "card:fredgar-ai": 1
+    },
+    "37373": {
+      "card:fredgar-ai": 1
     },
     "38059": {
       "card:ocrmd": 1
     },
-    "392": {
+    "394": {
       "card:law-ai": 1
     },
-    "392417": {
+    "394581": {
       "card:law-ai": 1
+    },
+    "3af5a8ad7a54eefa": {
+      "card:SCHEMA": 1
     },
     "3e5cfb0bc89bb299": {
       "card:zer0-CMS": 2
     },
-    "4042403": {
+    "4042514": {
       "card:zer0-mistakes": 1
-    },
-    "405": {
-      "card:bamr87.github.io": 1
     },
     "40806": {
       "card:githubai": 1
     },
-    "417": {
-      "card:law-ai": 1
-    },
-    "42327": {
-      "card:bashos": 1
-    },
-    "430": {
-      "card:bamr87": 1
-    },
-    "430724": {
-      "card:bamr87": 1
-    },
     "441": {
+      "card:bashos": 1,
       "card:it-journey": 3
+    },
+    "442": {
+      "card:bamr87": 1
+    },
+    "442245": {
+      "card:bamr87": 1
     },
     "4486b94c6b0fe3cf": {
       "card:zer0-mistakes": 1
-    },
-    "449": {
-      "card:zer0-mistakes": 1
-    },
-    "44c72f93d1dfda7a": {
-      "card:it-journey": 1
     },
     "459191c53e4947ec": {
       "card:outbox": 1
@@ -1650,14 +1624,11 @@
     "462": {
       "card:lifehacker.dev": 1
     },
-    "46359": {
+    "46532": {
       "card:bashcrawl": 1
     },
     "467": {
       "card:godotgo": 1
-    },
-    "477": {
-      "card:fredgar-ai": 1
     },
     "481": {
       "card:outbox": 1
@@ -1665,32 +1636,47 @@
     "487": {
       "card:zer0-mistakes": 1
     },
-    "487449": {
+    "487545": {
       "card:zer0-mistakes": 1
     },
     "48a34571452a3edb": {
       "card:gitorio": 2
     },
+    "499175": {
+      "card:bashos": 1
+    },
     "50667": {
       "card:rewind-arcade": 1
+    },
+    "532": {
+      "card:bashcrawl": 1
+    },
+    "533": {
+      "card:it-journey": 1
     },
     "53826": {
       "card:outbox": 1
     },
-    "554": {
-      "apex": 3,
-      "card:it-journey": 7
+    "545": {
+      "card:zer0-mistakes": 1
     },
     "555": {
       "apex": 1,
       "card:zer0-mistakes": 2
     },
     "557": {
-      "apex": 2,
+      "apex": 5,
+      "card:it-journey": 7,
       "card:zer0-mistakes": 5
     },
     "568705": {
       "card:vs-sonic-pi": 1
+    },
+    "581": {
+      "card:law-ai": 1
+    },
+    "5881c785703c9b8d": {
+      "card:it-journey": 2
     },
     "5d9a629df7696a9b": {
       "card:djangoerp": 1
@@ -1710,29 +1696,20 @@
     "6759339": {
       "card:zer0-CMS": 1
     },
-    "6cda481e6d59dedf": {
-      "card:bashcrawl": 1
+    "6acbd5f9b5a9273f": {
+      "card:fredgar-ai": 1
     },
-    "6fe8b887a3876b90": {
-      "card:bamr87": 2
+    "70441": {
+      "card:bashos": 1
     },
     "710e6dd71da23388": {
       "card:cv-pro": 2
     },
-    "724": {
-      "card:bamr87": 1
-    },
     "726": {
       "card:zer0-CMS": 2
     },
-    "72cc36411c63e96f": {
-      "card:bashcrawl": 2
-    },
     "731": {
       "card:zer0-CMS": 2
-    },
-    "731c68f9de83d7cc": {
-      "card:zer0-mistakes": 2
     },
     "737": {
       "card:gitorio": 1
@@ -1740,11 +1717,11 @@
     "739dd7de909b9687": {
       "card:rewind-arcade": 1
     },
+    "73aa80ba8cdc6a5e": {
+      "card:bamr87.github.io": 2
+    },
     "7481": {
       "card:outbox": 1
-    },
-    "77ffc73e4a825563": {
-      "card:SCHEMA": 2
     },
     "7a05b21d4b2fcb21": {
       "card:lifehacker.dev": 2
@@ -1752,14 +1729,17 @@
     "7b6a0069fd8d54c3": {
       "card:ocrmd": 2
     },
+    "7e3c333701a10cc0": {
+      "card:law-ai": 2
+    },
     "806": {
       "card:githubai": 1
     },
+    "81ea7ff93228b57e": {
+      "card:law-ai": 1
+    },
     "82127": {
       "card:zpl-viewer": 1
-    },
-    "8237729": {
-      "card:it-journey": 1
     },
     "82830": {
       "card:vs-sonic-pi": 1
@@ -1767,26 +1747,29 @@
     "830": {
       "card:vs-sonic-pi": 1
     },
+    "8317282": {
+      "card:it-journey": 1
+    },
     "856": {
       "card:zer0-CMS": 1
     },
     "856731": {
       "card:zer0-CMS": 1
     },
+    "866": {
+      "card:bamr87.github.io": 1
+    },
     "86990": {
       "card:djangoerp": 1
     },
-    "871": {
+    "870": {
       "card:SCHEMA": 1
     },
     "880c692317be6f62": {
       "card:OverTheWire-website": 2
     },
-    "91b9d9b339ebd36c": {
+    "8ede29eb6add6ecb": {
       "card:bamr87": 1
-    },
-    "92773": {
-      "card:SCHEMA": 1
     },
     "933": {
       "card:cv-pro": 1
@@ -1796,6 +1779,9 @@
     },
     "9891325ca0bbb5c3": {
       "card:vs-sonic-pi": 1
+    },
+    "99421": {
+      "card:SCHEMA": 1
     },
     "9dbe4519b0f1f8cd": {
       "card:bamr87.github.io": 1
@@ -1807,8 +1793,11 @@
       "card:law-ai": 1,
       "nav:law-ai": 1
     },
-    "a85803e83ade1919": {
-      "card:law-ai": 2
+    "a237764155ae7cf9": {
+      "card:it-journey": 1
+    },
+    "a730b9464b43dd5f": {
+      "card:SCHEMA": 2
     },
     "abdel-motaleb": {
       "apex": 3,
@@ -1829,8 +1818,8 @@
     "about.md": {
       "card:bamr87.github.io": 3
     },
-    "ac0a94a98977836b": {
-      "card:fredgar-ai": 1
+    "access": {
+      "card:fredgar-ai": 2
     },
     "accessibility": {
       "card:zer0-mistakes": 2
@@ -1911,8 +1900,10 @@
     "adr": {
       "card:SCHEMA": 1,
       "card:bamr87": 3,
+      "card:bashos": 1,
       "card:gitorio": 1,
       "nav:SCHEMA": 1,
+      "nav:bashos": 1,
       "nav:gitorio": 1
     },
     "advanced": {
@@ -1927,9 +1918,6 @@
       "card:it-journey": 1,
       "nav:bashcrawl": 1,
       "nav:it-journey": 1
-    },
-    "aee0c54181705214": {
-      "card:it-journey": 2
     },
     "against": {
       "apex": 2,
@@ -1976,7 +1964,7 @@
     },
     "agents": {
       "apex": 6,
-      "card:SCHEMA": 5,
+      "card:SCHEMA": 6,
       "card:law-ai": 3,
       "card:outbox": 9,
       "card:zer0-CMS": 2,
@@ -2016,11 +2004,14 @@
     },
     "ai-assisted": {
       "apex": 2,
-      "card:fredgar-ai": 3,
+      "card:fredgar-ai": 2,
       "card:godotgo": 1
     },
     "ai-development.md": {
       "card:godotgo": 3
+    },
+    "ai-enhanced": {
+      "card:it-journey": 2
     },
     "ai-native": {
       "card:zer0-mistakes": 3
@@ -2126,6 +2117,9 @@
       "nav:it-journey": 1,
       "nav:law-ai": 2
     },
+    "api-first": {
+      "card:fredgar-ai": 2
+    },
     "api-routes.md": {
       "card:djangoerp": 3
     },
@@ -2133,7 +2127,7 @@
       "apex": 12,
       "card:cv-pro": 23,
       "card:djangoerp": 3,
-      "card:fredgar-ai": 6,
+      "card:fredgar-ai": 5,
       "card:githubai": 7,
       "card:gitorio": 4,
       "card:law-ai": 4,
@@ -2208,7 +2202,6 @@
     },
     "architecture.md": {
       "card:bashcrawl": 6,
-      "card:bashos": 3,
       "card:djangoerp": 3,
       "card:githubai": 3,
       "card:gitorio": 3,
@@ -2250,6 +2243,9 @@
     },
     "attribution.md": {
       "card:zer0-CMS": 1
+    },
+    "auditable": {
+      "card:fredgar-ai": 2
     },
     "auteurs": {
       "card:zer0-mistakes": 1,
@@ -2435,7 +2431,7 @@
     },
     "bashos": {
       "apex": 6,
-      "card:bashos": 35,
+      "card:bashos": 36,
       "nav:bashos": 4
     },
     "bashos.json": {
@@ -2448,6 +2444,11 @@
     },
     "bc06688437978d88": {
       "card:zpl-viewer": 1
+    },
+    "become": {
+      "card:SCHEMA": 2,
+      "card:fredgar-ai": 2,
+      "card:it-journey": 2
     },
     "begins": {
       "card:bashcrawl": 3,
@@ -2600,8 +2601,8 @@
     "byte": {
       "card:lifehacker.dev": 2
     },
-    "c307422bd8ced662": {
-      "card:SCHEMA": 1
+    "c20b1fc971afef9e": {
+      "card:bashos": 2
     },
     "c3f4144edf0db6e0": {
       "card:githubai": 1
@@ -2702,6 +2703,9 @@
       "card:zer0-mistakes": 1,
       "card:zpl-viewer": 1
     },
+    "cc681bf3a9e4e2a4": {
+      "card:bamr87": 2
+    },
     "cellar": {
       "card:bashcrawl": 1,
       "nav:bashcrawl": 1
@@ -2743,7 +2747,7 @@
       "nav:zer0-CMS": 1
     },
     "changelog.d": {
-      "card:bamr87": 5,
+      "card:bamr87": 6,
       "nav:bamr87": 1
     },
     "changelog.md": {
@@ -2792,6 +2796,9 @@
     "citations": {
       "card:law-ai": 1,
       "nav:law-ai": 1
+    },
+    "cited": {
+      "card:fredgar-ai": 2
     },
     "class": {
       "card:law-ai": 1,
@@ -2970,7 +2977,7 @@
     },
     "company": {
       "apex": 2,
-      "card:fredgar-ai": 3
+      "card:fredgar-ai": 2
     },
     "company-registry": {
       "card:fredgar-ai": 2
@@ -3062,7 +3069,13 @@
     "consolidation": {
       "card:djangoerp": 1
     },
+    "constitution": {
+      "card:SCHEMA": 2,
+      "card:fredgar-ai": 2,
+      "card:it-journey": 2
+    },
     "constitution.md": {
+      "card:SCHEMA": 3,
       "card:djangoerp": 3,
       "card:outbox": 3,
       "card:zpl-viewer": 3
@@ -3346,8 +3359,14 @@
     "d13ab0297f60cc87": {
       "card:OverTheWire-website": 1
     },
+    "d4f5934d7a2a1dc3": {
+      "card:zer0-mistakes": 2
+    },
     "d74b2c8feff6377b": {
       "card:zpl-viewer": 2
+    },
+    "d97d9acc627e6fd1": {
+      "card:bashos": 1
     },
     "dash": {
       "apex": 1
@@ -3368,11 +3387,12 @@
     },
     "data": {
       "apex": 4,
+      "card:SCHEMA": 2,
       "card:bamr87": 7,
       "card:bamr87.github.io": 1,
       "card:cv-pro": 4,
-      "card:fredgar-ai": 4,
-      "card:it-journey": 8,
+      "card:fredgar-ai": 7,
+      "card:it-journey": 10,
       "card:law-ai": 1,
       "card:lifehacker.dev": 1,
       "card:zer0-CMS": 5,
@@ -3561,7 +3581,9 @@
       "nav:law-ai": 1
     },
     "developer": {
-      "card:bamr87": 2
+      "card:bamr87": 2,
+      "card:bashos": 1,
+      "nav:bashos": 1
     },
     "development": {
       "card:SCHEMA": 1,
@@ -3571,7 +3593,7 @@
       "card:fredgar-ai": 1,
       "card:gitorio": 4,
       "card:godotgo": 2,
-      "card:it-journey": 9,
+      "card:it-journey": 7,
       "card:law-ai": 3,
       "card:lifehacker.dev": 1,
       "card:ocrmd": 1,
@@ -3611,6 +3633,11 @@
       "card:it-journey": 1,
       "nav:it-journey": 1
     },
+    "direction": {
+      "card:SCHEMA": 2,
+      "card:fredgar-ai": 2,
+      "card:it-journey": 2
+    },
     "directory": {
       "card:it-journey": 1,
       "card:zer0-CMS": 6,
@@ -3641,7 +3668,7 @@
     "django": {
       "apex": 6,
       "card:djangoerp": 4,
-      "card:fredgar-ai": 3,
+      "card:fredgar-ai": 2,
       "card:law-ai": 3,
       "card:zer0-CMS": 3,
       "nav:law-ai": 1,
@@ -3670,7 +3697,7 @@
       "card:bamr87": 10,
       "card:bamr87.github.io": 4,
       "card:bashcrawl": 7,
-      "card:bashos": 4,
+      "card:bashos": 5,
       "card:cv-pro": 3,
       "card:djangoerp": 2,
       "card:fredgar-ai": 5,
@@ -3767,9 +3794,6 @@
       "apex": 2,
       "card:bashcrawl": 4
     },
-    "e130ade97a2fc644": {
-      "card:bamr87.github.io": 2
-    },
     "e2e": {
       "card:outbox": 4
     },
@@ -3785,10 +3809,7 @@
     },
     "edgar": {
       "apex": 2,
-      "card:fredgar-ai": 3
-    },
-    "edgar-api.md": {
-      "card:fredgar-ai": 3
+      "card:fredgar-ai": 4
     },
     "edits": {
       "card:cv-pro": 2
@@ -3954,6 +3975,11 @@
       "card:godotgo": 3,
       "card:law-ai": 2
     },
+    "everyone": {
+      "card:SCHEMA": 2,
+      "card:fredgar-ai": 2,
+      "card:it-journey": 2
+    },
     "evidence": {
       "card:gitorio": 1,
       "nav:gitorio": 1
@@ -3985,7 +4011,7 @@
     "exploring": {
       "apex": 4,
       "card:bashcrawl": 2,
-      "card:fredgar-ai": 3
+      "card:fredgar-ai": 2
     },
     "extend": {
       "card:law-ai": 1,
@@ -4080,16 +4106,16 @@
       "card:SCHEMA": 3,
       "card:bamr87": 2,
       "card:bamr87.github.io": 4,
-      "card:bashcrawl": 4,
+      "card:bashcrawl": 3,
       "card:bashos": 2,
       "card:cv-pro": 3,
       "card:djangoerp": 4,
-      "card:fredgar-ai": 3,
+      "card:fredgar-ai": 2,
       "card:githubai": 3,
       "card:gitorio": 2,
       "card:godotgo": 3,
       "card:it-journey": 2,
-      "card:law-ai": 4,
+      "card:law-ai": 3,
       "card:lifehacker.dev": 4,
       "card:ocrmd": 4,
       "card:outbox": 3,
@@ -4111,6 +4137,9 @@
     },
     "favorite": {
       "card:bamr87.github.io": 1
+    },
+    "fe25737df1f1b2a5": {
+      "card:bashcrawl": 1
     },
     "feature": {
       "card:bamr87": 1,
@@ -4197,6 +4226,9 @@
       "card:zer0-CMS": 1,
       "card:zer0-mistakes": 1,
       "card:zpl-viewer": 1
+    },
+    "financial": {
+      "card:fredgar-ai": 2
     },
     "find": {
       "card:zpl-viewer": 1
@@ -4337,11 +4369,11 @@
     },
     "fred": {
       "apex": 2,
-      "card:fredgar-ai": 3
+      "card:fredgar-ai": 4
     },
     "fredgar": {
       "apex": 1,
-      "card:fredgar-ai": 4
+      "card:fredgar-ai": 6
     },
     "fredgar-ai": {
       "apex": 5,
@@ -4704,7 +4736,7 @@
     },
     "guessing": {
       "apex": 1,
-      "card:SCHEMA": 3
+      "card:SCHEMA": 4
     },
     "gui": {
       "card:bashos": 1
@@ -4735,7 +4767,7 @@
     },
     "guide": {
       "card:bamr87": 1,
-      "card:bashos": 1,
+      "card:bashos": 4,
       "card:fredgar-ai": 1,
       "card:gitorio": 1,
       "card:it-journey": 1,
@@ -4743,6 +4775,7 @@
       "card:vs-sonic-pi": 1,
       "card:zer0-CMS": 1,
       "card:zer0-mistakes": 4,
+      "nav:bashos": 3,
       "nav:zer0-mistakes": 3
     },
     "guided": {
@@ -4767,7 +4800,7 @@
       "card:lifehacker.dev": 1
     },
     "hands-on": {
-      "card:it-journey": 4
+      "card:it-journey": 2
     },
     "hardening": {
       "card:law-ai": 1,
@@ -5006,9 +5039,6 @@
       "card:zer0-mistakes": 1,
       "card:zpl-viewer": 1
     },
-    "hidden-gem.md": {
-      "card:bashcrawl": 3
-    },
     "historical": {
       "card:gitorio": 3,
       "nav:gitorio": 1
@@ -5031,8 +5061,10 @@
       "card:cv-pro": 4
     },
     "home": {
+      "card:SCHEMA": 2,
       "card:bamr87.github.io": 3,
-      "card:it-journey": 3,
+      "card:fredgar-ai": 2,
+      "card:it-journey": 5,
       "card:zer0-CMS": 2,
       "nav:bamr87.github.io": 1,
       "nav:it-journey": 1,
@@ -5168,7 +5200,7 @@
       "card:bamr87": 13,
       "card:bamr87.github.io": 7,
       "card:bashcrawl": 5,
-      "card:bashos": 4,
+      "card:bashos": 5,
       "card:cv-pro": 4,
       "card:djangoerp": 2,
       "card:fredgar-ai": 2,
@@ -5252,7 +5284,7 @@
       "nav:OverTheWire-website": 1
     },
     "infra": {
-      "card:bamr87": 3
+      "card:bamr87": 2
     },
     "infrastructure": {
       "card:bamr87": 3,
@@ -5307,7 +5339,7 @@
     },
     "instead": {
       "apex": 2,
-      "card:SCHEMA": 3
+      "card:SCHEMA": 4
     },
     "int": {
       "card:zer0-mistakes": 1,
@@ -5371,7 +5403,7 @@
     },
     "it-journey": {
       "apex": 6,
-      "card:it-journey": 35,
+      "card:it-journey": 37,
       "nav:it-journey": 4
     },
     "it-journey.json": {
@@ -5682,7 +5714,7 @@
       "card:bashcrawl": 5
     },
     "learning": {
-      "card:it-journey": 3,
+      "card:it-journey": 5,
       "nav:it-journey": 1
     },
     "left": {
@@ -5702,7 +5734,7 @@
     },
     "let": {
       "apex": 2,
-      "card:SCHEMA": 3
+      "card:SCHEMA": 2
     },
     "level": {
       "card:it-journey": 16,
@@ -5789,7 +5821,7 @@
     },
     "linter": {
       "apex": 2,
-      "card:SCHEMA": 3
+      "card:SCHEMA": 4
     },
     "linting": {
       "apex": 2,
@@ -5830,7 +5862,7 @@
     },
     "look": {
       "apex": 2,
-      "card:SCHEMA": 3
+      "card:SCHEMA": 4
     },
     "loop": {
       "card:bamr87": 2,
@@ -5859,7 +5891,7 @@
     },
     "macro": {
       "apex": 2,
-      "card:fredgar-ai": 3
+      "card:fredgar-ai": 2
     },
     "mailbox": {
       "apex": 2,
@@ -6233,7 +6265,7 @@
       "card:bamr87": 12,
       "card:bamr87.github.io": 6,
       "card:bashcrawl": 9,
-      "card:bashos": 6,
+      "card:bashos": 7,
       "card:cv-pro": 5,
       "card:djangoerp": 4,
       "card:fredgar-ai": 7,
@@ -6445,6 +6477,10 @@
       "apex": 1,
       "card:law-ai": 2
     },
+    "one-os": {
+      "card:bashos": 9,
+      "nav:bashos": 1
+    },
     "only": {
       "card:zer0-CMS": 2
     },
@@ -6454,11 +6490,13 @@
     },
     "open": {
       "apex": 2,
+      "card:SCHEMA": 2,
+      "card:fredgar-ai": 2,
+      "card:it-journey": 2,
       "card:law-ai": 4
     },
     "open-source": {
-      "card:bashos": 2,
-      "card:it-journey": 2
+      "card:bashos": 2
     },
     "opencode": {
       "apex": 2,
@@ -6497,6 +6535,10 @@
     },
     "operating-systems": {
       "card:bashos": 2
+    },
+    "operator": {
+      "card:bashos": 1,
+      "nav:bashos": 1
     },
     "opinions": {
       "card:law-ai": 1,
@@ -6616,7 +6658,7 @@
       "card:bamr87": 31,
       "card:bamr87.github.io": 23,
       "card:bashcrawl": 10,
-      "card:bashos": 8,
+      "card:bashos": 10,
       "card:cv-pro": 8,
       "card:djangoerp": 4,
       "card:fredgar-ai": 4,
@@ -6671,7 +6713,7 @@
       "card:bamr87": 13,
       "card:bamr87.github.io": 3,
       "card:bashcrawl": 5,
-      "card:bashos": 4,
+      "card:bashos": 5,
       "card:cv-pro": 4,
       "card:djangoerp": 2,
       "card:fredgar-ai": 2,
@@ -6786,6 +6828,7 @@
       "nav:zer0-CMS": 1
     },
     "plan.md": {
+      "card:bashos": 3,
       "card:rewind-arcade": 3,
       "card:zer0-CMS": 3
     },
@@ -6805,7 +6848,7 @@
     },
     "platform": {
       "apex": 4,
-      "card:it-journey": 4,
+      "card:it-journey": 2,
       "card:law-ai": 5,
       "card:zer0-CMS": 7,
       "nav:law-ai": 1,
@@ -6827,11 +6870,14 @@
       "nav:law-ai": 1
     },
     "policy": {
+      "card:bashcrawl": 1,
       "card:bashos": 1,
       "card:cv-pro": 1,
+      "card:fredgar-ai": 1,
       "card:gitorio": 1,
       "card:godotgo": 1,
       "card:it-journey": 1,
+      "card:law-ai": 1,
       "card:rewind-arcade": 1,
       "card:scripts": 1,
       "card:vs-sonic-pi": 1,
@@ -6878,6 +6924,9 @@
       "card:bamr87.github.io": 4,
       "card:it-journey": 2
     },
+    "practical": {
+      "card:it-journey": 2
+    },
     "practice": {
       "card:OverTheWire-website": 2
     },
@@ -6898,7 +6947,6 @@
       "card:gitorio": 1,
       "card:godotgo": 1,
       "card:it-journey": 1,
-      "card:law-ai": 3,
       "card:lifehacker.dev": 1,
       "card:ocrmd": 1,
       "card:outbox": 4,
@@ -7081,7 +7129,7 @@
     },
     "protocol": {
       "apex": 4,
-      "card:SCHEMA": 9,
+      "card:SCHEMA": 10,
       "card:outbox": 4,
       "nav:SCHEMA": 1
     },
@@ -7145,7 +7193,7 @@
     },
     "pyramid": {
       "apex": 5,
-      "card:SCHEMA": 7,
+      "card:SCHEMA": 8,
       "card:bamr87": 1,
       "card:githubai": 1,
       "card:outbox": 1,
@@ -7229,6 +7277,9 @@
       "card:zer0-mistakes": 2,
       "card:zpl-viewer": 2
     },
+    "queryable": {
+      "card:fredgar-ai": 2
+    },
     "quest": {
       "card:bamr87.github.io": 2,
       "card:it-journey": 3,
@@ -7304,7 +7355,7 @@
     "react": {
       "apex": 3,
       "card:cv-pro": 4,
-      "card:fredgar-ai": 3,
+      "card:fredgar-ai": 2,
       "card:zer0-CMS": 5,
       "nav:zer0-CMS": 1
     },
@@ -7358,7 +7409,7 @@
       "card:bamr87": 16,
       "card:bamr87.github.io": 7,
       "card:bashcrawl": 8,
-      "card:bashos": 9,
+      "card:bashos": 10,
       "card:cv-pro": 12,
       "card:djangoerp": 7,
       "card:fredgar-ai": 7,
@@ -7444,6 +7495,7 @@
       "apex": 2,
       "card:OverTheWire-website": 2,
       "card:bashcrawl": 1,
+      "card:bashos": 1,
       "card:djangoerp": 3,
       "card:fredgar-ai": 2,
       "card:githubai": 1,
@@ -7455,6 +7507,7 @@
       "card:vs-sonic-pi": 1,
       "card:zpl-viewer": 7,
       "nav:bashcrawl": 1,
+      "nav:bashos": 1,
       "nav:fredgar-ai": 2,
       "nav:githubai": 1,
       "nav:gitorio": 1,
@@ -7558,7 +7611,7 @@
     "repo": {
       "apex": 3,
       "card:OverTheWire-website": 2,
-      "card:SCHEMA": 5,
+      "card:SCHEMA": 4,
       "card:bamr87": 2,
       "card:bamr87.github.io": 3,
       "card:bashcrawl": 2,
@@ -7598,7 +7651,7 @@
     "repository": {
       "apex": 26,
       "card:OverTheWire-website": 1,
-      "card:SCHEMA": 1,
+      "card:SCHEMA": 3,
       "card:bamr87": 2,
       "card:bamr87.github.io": 1,
       "card:bashcrawl": 4,
@@ -7636,6 +7689,11 @@
     "resolve": {
       "card:law-ai": 1,
       "nav:law-ai": 1
+    },
+    "resources": {
+      "card:SCHEMA": 2,
+      "card:fredgar-ai": 2,
+      "card:it-journey": 2
     },
     "rest": {
       "apex": 2,
@@ -7700,9 +7758,6 @@
     "roadmap.d": {
       "card:bamr87": 1,
       "nav:bamr87": 1
-    },
-    "roadmap.md": {
-      "card:it-journey": 3
     },
     "robot": {
       "card:lifehacker.dev": 2
@@ -7850,7 +7905,7 @@
     },
     "schema": {
       "apex": 8,
-      "card:SCHEMA": 31,
+      "card:SCHEMA": 32,
       "card:law-ai": 2,
       "card:zer0-CMS": 2,
       "card:zer0-mistakes": 2,
@@ -7871,7 +7926,7 @@
     },
     "schema.md": {
       "apex": 7,
-      "card:SCHEMA": 13,
+      "card:SCHEMA": 14,
       "card:bamr87": 5,
       "card:githubai": 1,
       "card:outbox": 5,
@@ -7990,14 +8045,11 @@
     },
     "sec": {
       "apex": 2,
-      "card:fredgar-ai": 4,
+      "card:fredgar-ai": 5,
       "nav:fredgar-ai": 1
     },
     "sec-edgar": {
       "card:fredgar-ai": 2
-    },
-    "sec-reference": {
-      "card:fredgar-ai": 3
     },
     "section": {
       "card:OverTheWire-website": 3,
@@ -8005,7 +8057,7 @@
       "card:bamr87": 12,
       "card:bamr87.github.io": 2,
       "card:bashcrawl": 3,
-      "card:bashos": 3,
+      "card:bashos": 4,
       "card:cv-pro": 3,
       "card:djangoerp": 1,
       "card:fredgar-ai": 1,
@@ -8059,11 +8111,14 @@
     "security": {
       "apex": 1,
       "card:OverTheWire-website": 4,
+      "card:bashcrawl": 1,
       "card:bashos": 3,
       "card:cv-pro": 1,
+      "card:fredgar-ai": 1,
       "card:gitorio": 1,
       "card:godotgo": 1,
       "card:it-journey": 1,
+      "card:law-ai": 1,
       "card:rewind-arcade": 1,
       "card:scripts": 1,
       "card:vs-sonic-pi": 1,
@@ -8076,10 +8131,13 @@
       "card:OverTheWire-website": 2
     },
     "security.md": {
+      "card:bashcrawl": 4,
       "card:bashos": 4,
+      "card:fredgar-ai": 4,
       "card:gitorio": 4,
       "card:godotgo": 4,
       "card:it-journey": 4,
+      "card:law-ai": 4,
       "card:rewind-arcade": 4,
       "card:scripts": 4,
       "card:vs-sonic-pi": 4,
@@ -8120,7 +8178,7 @@
     },
     "series": {
       "apex": 2,
-      "card:fredgar-ai": 3,
+      "card:fredgar-ai": 2,
       "card:zer0-mistakes": 3,
       "nav:zer0-mistakes": 3
     },
@@ -8335,7 +8393,6 @@
     },
     "software": {
       "apex": 2,
-      "card:it-journey": 2,
       "card:zer0-mistakes": 2
     },
     "solutions": {
@@ -8573,7 +8630,7 @@
     "structure": {
       "apex": 2,
       "card:OverTheWire-website": 1,
-      "card:SCHEMA": 5,
+      "card:SCHEMA": 8,
       "card:bamr87": 1,
       "card:bamr87.github.io": 1,
       "card:bashcrawl": 2,
@@ -8644,7 +8701,7 @@
     },
     "summaries": {
       "apex": 2,
-      "card:fredgar-ai": 3,
+      "card:fredgar-ai": 2,
       "card:zer0-CMS": 1,
       "nav:zer0-CMS": 1
     },
@@ -8787,6 +8844,9 @@
       "card:bamr87.github.io": 1,
       "card:it-journey": 2
     },
+    "technical-concepts-library.md": {
+      "card:it-journey": 3
+    },
     "technique": {
       "card:law-ai": 1
     },
@@ -8822,7 +8882,7 @@
       "apex": 1
     },
     "termforge": {
-      "card:bashcrawl": 8,
+      "card:bashcrawl": 5,
       "nav:bashcrawl": 1
     },
     "terminal": {
@@ -8881,6 +8941,9 @@
       "card:zpl-viewer": 3
     },
     "things": {
+      "card:SCHEMA": 2,
+      "card:fredgar-ai": 2,
+      "card:it-journey": 2,
       "card:zpl-viewer": 1
     },
     "three": {
@@ -8892,7 +8955,6 @@
     "through": {
       "apex": 3,
       "card:bashos": 3,
-      "card:it-journey": 2,
       "card:zer0-CMS": 4
     },
     "time": {
@@ -8909,7 +8971,7 @@
       "card:bamr87": 15,
       "card:bamr87.github.io": 5,
       "card:bashcrawl": 7,
-      "card:bashos": 6,
+      "card:bashos": 7,
       "card:cv-pro": 6,
       "card:djangoerp": 4,
       "card:fredgar-ai": 4,
@@ -8956,16 +9018,16 @@
     },
     "tools": {
       "apex": 3,
-      "card:SCHEMA": 1,
+      "card:SCHEMA": 3,
       "card:bamr87": 13,
       "card:bashcrawl": 1,
       "card:bashos": 1,
       "card:djangoerp": 1,
-      "card:fredgar-ai": 1,
+      "card:fredgar-ai": 3,
       "card:githubai": 1,
       "card:gitorio": 1,
       "card:godotgo": 1,
-      "card:it-journey": 5,
+      "card:it-journey": 7,
       "card:law-ai": 1,
       "card:lifehacker.dev": 5,
       "card:scripts": 1,
@@ -9133,6 +9195,11 @@
     "trainer": {
       "card:bashcrawl": 2
     },
+    "transparency": {
+      "card:SCHEMA": 2,
+      "card:fredgar-ai": 2,
+      "card:it-journey": 2
+    },
     "treats": {
       "apex": 2,
       "card:godotgo": 3
@@ -9173,16 +9240,16 @@
       "card:SCHEMA": 7,
       "card:bamr87": 8,
       "card:bamr87.github.io": 6,
-      "card:bashcrawl": 7,
+      "card:bashcrawl": 8,
       "card:bashos": 8,
       "card:cv-pro": 7,
       "card:djangoerp": 6,
-      "card:fredgar-ai": 7,
+      "card:fredgar-ai": 8,
       "card:githubai": 7,
       "card:gitorio": 8,
       "card:godotgo": 7,
       "card:it-journey": 8,
-      "card:law-ai": 6,
+      "card:law-ai": 7,
       "card:lifehacker.dev": 6,
       "card:ocrmd": 6,
       "card:outbox": 7,
@@ -9216,13 +9283,16 @@
       "nav:zer0-CMS": 1,
       "nav:zer0-mistakes": 2
     },
+    "tutorials": {
+      "card:it-journey": 2
+    },
     "type": {
       "card:OverTheWire-website": 3,
       "card:SCHEMA": 5,
       "card:bamr87": 12,
       "card:bamr87.github.io": 2,
       "card:bashcrawl": 4,
-      "card:bashos": 3,
+      "card:bashos": 4,
       "card:cv-pro": 3,
       "card:djangoerp": 1,
       "card:fredgar-ai": 1,
@@ -9246,6 +9316,11 @@
       "card:vs-sonic-pi": 2,
       "card:zer0-CMS": 1,
       "nav:zer0-CMS": 1
+    },
+    "u00a71": {
+      "card:SCHEMA": 1,
+      "card:fredgar-ai": 1,
+      "card:it-journey": 1
     },
     "u00e7ais": {
       "card:zer0-mistakes": 1
@@ -9376,6 +9451,11 @@
     "ui-components.md": {
       "card:zer0-mistakes": 3
     },
+    "ultimate": {
+      "card:SCHEMA": 2,
+      "card:fredgar-ai": 2,
+      "card:it-journey": 2
+    },
     "ulysses": {
       "card:zer0-mistakes": 2,
       "nav:zer0-mistakes": 2
@@ -9426,6 +9506,10 @@
       "card:ocrmd": 1,
       "card:scripts": 1,
       "card:zer0-CMS": 1
+    },
+    "user": {
+      "card:bashos": 1,
+      "nav:bashos": 1
     },
     "users": {
       "card:zer0-mistakes": 1

@@ -15,6 +15,9 @@ coverage: listed
   (`NN-name` prefix convention). Non-executable files are skipped.
 - Hooks receive `CONTEXT_ROOT`, `CONTEXT_STAGE`, `CONTEXT_ENGINE_VERSION`,
   and `CONTEXT_ENRICHMENT` in the environment and run from the repo root.
+- Hooks see an allowlisted environment, never the build's provider keys;
+  extra variables are named in `CONTEXT_HOOK_ENV` (README.md § Environment).
+  Their output is secret-screened before it is logged.
 - Failures are reported but non-fatal; set `CONTEXT_HOOKS_STRICT=1` to make
   a failing hook abort the build.
 - Stages: `pre_build`, `post_extract`, `post_brain`, `post_navigate`, `post_synthesize`, `post_assemble`,

@@ -365,6 +365,115 @@ class TestQuery(unittest.TestCase):
         self.assertEqual(report["unresolved"][0]["target"], "Nope")
 
 
+def _git(cwd, *args):
+    import subprocess
+    subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@example.com", *args],
+                   cwd=cwd, check=True, capture_output=True)
+
+
+class TestSecretScreen(unittest.TestCase):
+    """A credential committed upstream never reaches docs/ (README #53)."""
+
+    def setUp(self):
+        import shutil
+        from tests.fixtures.fake_secrets import PLACEHOLDERS, fake_secrets
+        self.fakes, self.placeholders = fake_secrets(), PLACEHOLDERS
+        self.root = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, self.root, ignore_errors=True)
+        self.source = self.root / "origin"
+        (self.source / "guides").mkdir(parents=True)
+        (self.source / "README.md").write_text("# Demo\n\nNothing secret here.\n")
+        project = Project(name="demo", repo="o/demo", url=str(self.source))
+        self.registry = Registry(hub={}, projects=[project], collect=CollectRules())
+        self.report = self.root / "docs" / "results" / "secret_screen.json"
+
+    def _commit(self, text):
+        (self.source / "guides" / "setup.md").write_text(text)
+        if not (self.source / ".git").exists():
+            _git(self.source, "init", "-q", "-b", "main")
+        _git(self.source, "add", "-A")
+        _git(self.source, "commit", "-qm", "page")
+
+    def _collect(self):
+        import contextlib
+        import io
+        from scripts.context_engine.collect import collect
+        out = io.StringIO()
+        with contextlib.redirect_stdout(out):
+            try:
+                collect(self.registry, docs_dir=self.root / "docs",
+                        cache_dir=self.root / "cache" / "collect",
+                        manifest_path=self.root / "m.json", log_path=self.root / "l.jsonl")
+            except RuntimeError as exc:
+                return exc, out.getvalue()
+        return None, out.getvalue()
+
+    def test_credentials_are_redacted_listed_and_fail_the_run(self):
+        from scripts.context_engine.collect import SecretScreenError
+        text = "---\ntitle: Setup\n---\n\n# Setup\n\n"
+        lines = {}
+        for kind, value in self.fakes.items():
+            lines[kind] = text.count("\n") + 1
+            text += f"{kind}: {value}\n"
+        text += "\nPlaceholders:\n\n" + "".join(f"- `{p}`\n" for p in self.placeholders)
+        self._commit(text)
+
+        error, printed = self._collect()
+        self.assertIsInstance(error, SecretScreenError)
+        page = (self.root / "docs" / "demo" / "guides" / "setup.md").read_text()
+        report_text = self.report.read_text()
+        for kind, value in self.fakes.items():
+            self.assertIn(f"{kind}: [REDACTED:{kind}]", page)
+            for surface in (page, report_text, printed, str(error)):
+                self.assertNotIn(value, surface)
+        # Collect unwraps prose after screening, so compare without line breaks.
+        flat = " ".join(page.split())
+        for placeholder in self.placeholders:
+            self.assertIn(" ".join(placeholder.split()), flat)
+        report = json.loads(report_text)
+        self.assertEqual(report["pages_screened"], 2)
+        self.assertEqual(report["hits"], [
+            {"project": "demo", "path": "guides/setup.md", "line": line, "kind": kind}
+            for kind, line in sorted(lines.items(), key=lambda item: item[1])])
+
+    def test_a_clean_crawl_passes_and_removes_a_stale_report(self):
+        self.report.parent.mkdir(parents=True)
+        self.report.write_text("{}\n")
+        self._commit("# Setup\n\nUse `gh auth login`.\n")
+        error, _ = self._collect()
+        self.assertIsNone(error)
+        self.assertFalse(self.report.exists())
+
+
+class TestIngestProseNormalization(unittest.TestCase):
+    """The crawl and the prose gate must not rewrite each other's work."""
+
+    @staticmethod
+    def _excludes(text):
+        import re
+        return set(re.findall(r"--exclude '([^']+)'", text)) | set(
+            re.findall(r'"--exclude", r"([^"]+)"', text))
+
+    def setUp(self):
+        self.collect = (ROOT / "scripts" / "context_engine" / "collect.py").read_text()
+        self.workflow = (ROOT / ".github" / "workflows" / "markdown-oneline.yml").read_text()
+
+    def test_collect_unwraps_what_it_stages(self):
+        self.assertRegex(self.collect, r'"unwrap-prose\.py"\), "--write"')
+
+    def test_the_gate_leaves_the_corpus_to_ingest(self):
+        self.assertIn("^docs/", self._excludes(self.workflow))
+
+    def test_ingest_and_gate_agree_outside_the_corpus(self):
+        self.assertEqual(self._excludes(self.collect), self._excludes(self.workflow) - {"^docs/"})
+
+    def test_collect_unwraps_soft_wrapped_prose(self):
+        from scripts.context_engine.collect import _stage
+        with tempfile.TemporaryDirectory() as temp:
+            staged = _stage({"a.md": "# T\n\nOne\nparagraph.\n"}, Path(temp) / "stage")
+        self.assertEqual(staged["a.md"], "# T\n\nOne paragraph.\n")
+
+
 def _load_hook():
     """The hook imports mkdocs; the unit suite runs without the site dependencies."""
     try:

@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Bash Crawl - content map
 
-Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **79 pages** across **16 sections** (max depth 3).
+Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **80 pages** across **16 sections** (max depth 3).
 
 - **Repository & tooling** <small>(2)</small>
   - **[Bashcrawl Help System](../bashcrawl/src/help/README.md)** <small>(2)</small>
@@ -22,6 +22,7 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
 - [Changelog](../bashcrawl/CHANGELOG.md)
 - [motion/](../bashcrawl/motion/README.md)
 - [PRD — Bashcrawl](../bashcrawl/PRD.md)
+- [Security Policy](../bashcrawl/SECURITY.md)
 - [TermForge](../bashcrawl/termforge/README.md)
 - **Courses** <small>(31)</small>
   - **Navigator** <small>(6)</small>

@@ -16,7 +16,7 @@ title: Personal Site
 > [!info] site: `bamr87/bamr87.github.io`
 > Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages.
 
-**94** pages collected from commit `269c46f7dabe` (2026-11-17).
+**94** pages collected from commit `550d0b2c1a1d` (2026-11-18).
 
 ## Most connected pages
 
@@ -42,6 +42,7 @@ title: Personal Site
 - [[brain/concepts/linux|Linux]] (2)
 - [[brain/concepts/mermaid|Mermaid]] (2)
 - [[brain/concepts/python|Python]] (2)
+- [[brain/concepts/about|About]] (1)
 - [[brain/concepts/bootstrap|Bootstrap]] (1)
 - [[brain/concepts/collaboration|Collaboration]] (1)
 - [[brain/concepts/contributing|Contributing]] (1)
@@ -54,13 +55,12 @@ title: Personal Site
 - [[brain/concepts/performance|Performance]] (1)
 - [[brain/concepts/search|Search]] (1)
 - [[brain/concepts/security|Security]] (1)
-- [[brain/concepts/tutorial|Tutorial]] (1)
 
 ## Shares concepts with
 
 - [[brain/projects/zer0-CMS|Zer0 CMS]] (20)
-- [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (19)
-- [[brain/projects/it-journey|IT Journey]] (17)
+- [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (20)
+- [[brain/projects/it-journey|IT Journey]] (18)
 - [[brain/projects/bashos|BashOS]] (3)
 - [[brain/projects/bamr87|Fleet Hub]] (1)
 - [[brain/projects/fredgar-ai|Fredgar AI]] (1)

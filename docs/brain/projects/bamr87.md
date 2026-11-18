@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 256
+pages: 259
 repo: bamr87/bamr87
 tags:
 - brain/project
@@ -16,19 +16,19 @@ title: Fleet Hub
 > [!info] hub: `bamr87/bamr87`
 > Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashboards.
 
-**256** pages collected from commit `0d91376266aa` (2026-11-16).
+**259** pages collected from commit `80f42680f51a` (2026-11-18).
 
 ## Most connected pages
 
 - [[bamr87/AGENTS|bamr87]]
 - [[bamr87/docs/amendments/README|Amendments — bamr87]]
 - [[bamr87/docs/agentic-patterns/README|Agentic design patterns in the fleet]]
-- [[bamr87/PRD|PRD — bamr87 (dash)]]
 - [[bamr87/tools/README|tools/]]
+- [[bamr87/PRD|PRD — bamr87 (dash)]]
 - [[bamr87/docs/constitution|bamr87 — Constitution]]
 - [[bamr87/docs/JEV|JEV — the agent logic engine]]
-- [[bamr87/tools/console/README|Harness Console]]
 - [[bamr87/docs/adr/README|Architecture Decision Records]]
+- [[bamr87/tools/console/README|Harness Console]]
 - [[bamr87/specs/README|Universal Project Standard (UPS)]]
 - [[bamr87/docs/AI-INTEGRATION|AI Integration — surfaces, auth, and the loops]]
 - [[bamr87/docs/prd/AGENT-NEWS-FEED|PRD — Agent news feed]]

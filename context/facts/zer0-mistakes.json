@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 557,
-    "fingerprint": "731c68f9de83d7cc",
+    "fingerprint": "d4f5934d7a2a1dc3",
     "path": "docs/zer0-mistakes",
     "present": true,
-    "total_bytes": 4042403
+    "total_bytes": 4042514
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -165,7 +165,7 @@
       "accessibility",
       "installation"
     ],
-    "total_words": 487449
+    "total_words": 487545
   },
   "schema_version": "1.0",
   "signals": {

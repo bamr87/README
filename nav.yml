@@ -26,6 +26,7 @@ nav:
       - "Tags": brain/tags.md
       - "Vault health": brain/health.md
       - "Concepts":
+          - "About": brain/concepts/about.md
           - "Accessibility": brain/concepts/accessibility.md
           - "Agentic AI": brain/concepts/agentic-ai.md
           - "Agents": brain/concepts/agents.md
@@ -74,7 +75,6 @@ nav:
           - "Development": brain/concepts/development.md
           - "Devops": brain/concepts/devops.md
           - "Docker": brain/concepts/docker.md
-          - "ESG": brain/concepts/esg.md
           - "ETL Pipeline Design: Build Scalable Data Pipelines with Python": brain/concepts/etl-pipeline-design-build-scalable-data-pipelines-with-python.md
           - "Features": brain/concepts/features.md
           - "Frontend": brain/concepts/frontend.md
@@ -286,11 +286,13 @@ nav:
       - "Documentation":
           - "it-journey documentation": it-journey/docs/README.md
           - "Developer Contribution Guide": it-journey/docs/CONTRIBUTING_DEVELOPER.md
+          - "IT-Journey Pillars in Practice": it-journey/docs/pillars-in-practice.md
           - "it-journey — Constitution": it-journey/docs/constitution.md
           - "IT-Journey: The Master Roadmap": it-journey/docs/ROADMAP.md
+          - "KIS / KISS fix (draft, not applied)": it-journey/docs/kis-kiss-fix.md
           - "Making one-paragraph-per-line universal across repos": it-journey/docs/prose-oneline-universal.md
           - "Notes Workbench — the design": it-journey/docs/notes/WORKBENCH.md
-          - "Purpose": it-journey/docs/purpose-page-rewrite.md
+          - "Technical Concepts Library": it-journey/docs/technical-concepts-library.md
           - "Testing Frameworks": it-journey/docs/testing/TESTING_FRAMEWORKS.md
           - "Agent Evaluation & Tuning (GH-600 Domain 4, implemented)":
               - "Agent Evaluation & Tuning (GH-600 Domain 4, implemented)": it-journey/docs/agents/README.md
@@ -299,6 +301,7 @@ nav:
           - "Amendments — it-journey":
               - "Amendments — it-journey": it-journey/docs/amendments/README.md
               - "0001 — Ratify the constitution": it-journey/docs/amendments/0001-ratify-constitution.md
+              - "0004 — Missions": it-journey/docs/amendments/0004-mission-statement.md
               - "NNNN — Title of the amendment": it-journey/docs/amendments/0000-template.md
               - "docs/amendments/proposed/ — unnumbered amendment records":
                   - "docs/amendments/proposed/ — unnumbered amendment records": it-journey/docs/amendments/proposed/README.md
@@ -355,7 +358,7 @@ nav:
               - "bamr87": it-journey/pages/_about/profile/bamr87.md
               - "IT-Journey Versioning: Semver and Release Strategy": it-journey/pages/_about/versioning.md
               - "Learning Platform Features": it-journey/pages/_about/features/index.md
-              - "Purpose": it-journey/pages/_about/purpose.md
+              - "Purpose — Free, Open IT Education for Everyone": it-journey/pages/_about/purpose.md
               - "Contribute":
                   - "Contributing to IT-Journey": it-journey/pages/_about/contribute/contributing.md
                   - "Contributors":
@@ -1471,6 +1474,7 @@ nav:
       - "Changelog": bashcrawl/CHANGELOG.md
       - "motion/": bashcrawl/motion/README.md
       - "PRD — Bashcrawl": bashcrawl/PRD.md
+      - "Security Policy": bashcrawl/SECURITY.md
       - "TermForge": bashcrawl/termforge/README.md
       - "Courses":
           - "Navigator":
@@ -1847,6 +1851,8 @@ nav:
           - "SCHEMA — bamr87 dash": bamr87/SCHEMA.md
           - "changelog.d/ — pending changelog entries":
               - "changelog.d/ — pending changelog entries": bamr87/changelog.d/README.md
+              - "Pr Review Findings": bamr87/changelog.d/pr-review-findings.md
+              - "Pr Review Kit Concurrency": bamr87/changelog.d/pr-review-kit-concurrency.md
               - "SCHEMA — changelog.d": bamr87/changelog.d/SCHEMA.md
           - "compose/ — the hub's half of the fleet dev stack":
               - "compose/ — the hub's half of the fleet dev stack": bamr87/compose/README.md
@@ -2013,6 +2019,7 @@ nav:
                   - "ADR 0008 — GitHub Actions as the agentic SDLC substrate: typed…": bamr87/docs/adr/0008-typed-decisions-as-pipeline-gates.md
                   - "ADR 0009 — The agentic efficacy model: one agent inventory, five KPIs…": bamr87/docs/adr/0009-agentic-efficacy-model.md
                   - "ADR 0010 — The fleet graph and outcome learning: one model of what the…": bamr87/docs/adr/0010-fleet-graph-and-outcome-learning.md
+                  - "ADR 0011 — One framework, many instances: the stack installs for any…": bamr87/docs/adr/0011-one-framework-many-instances.md
                   - "ADR NNNN — Title in sentence case": bamr87/docs/adr/0000-template.md
                   - "SCHEMA — docs/adr": bamr87/docs/adr/SCHEMA.md
               - "Assets":
@@ -2264,6 +2271,7 @@ nav:
               - "bashos — Constitution": bashos/docs/constitution.md
               - "bashOS, the operating system": bashos/docs/OS.md
               - "bashOS: a reference architecture for the agent appliance": bashos/docs/ARCHITECTURE.md
+              - "one-os": bashos/docs/ONE-OS.md
               - "The bashOS Desktop": bashos/docs/DESKTOP.md
               - "The bashOS Desktop — a tour": bashos/docs/DESKTOP-TOUR.md
               - "The bashOS Orchestration Harness": bashos/docs/HARNESS.md
@@ -2278,6 +2286,7 @@ nav:
                   - "ADR 0001 — Record architecture decisions": bashos/docs/adr/0001-record-architecture-decisions.md
                   - "ADR 0002 — bashOS the OS is an Omarchy-style layer on Debian 13, imaged…": bashos/docs/adr/0002-bashos-os-debian-mkosi.md
                   - "ADR 0003 — bashOS by BASH Consulting is a fork of Omarchy, kept current…": bashos/docs/adr/0003-bashos-on-omarchy.md
+                  - "ADR 0004 — one-os lives in bashos: one tool to build, boot, manage and…": bashos/docs/adr/0004-one-os.md
                   - "ADR NNNN — Title in sentence case": bashos/docs/adr/0000-template.md
               - "bashOS L6 OS Shell — Frontend Docs":
                   - "bashOS L6 OS Shell — Frontend Docs": bashos/docs/frontend/README.md
@@ -2286,6 +2295,53 @@ nav:
                   - "Relation: desktop GUI (PR #20) ↔ OS-shell evolution (this folder)": bashos/docs/frontend/RELATION-TO-DESKTOP.md
                   - "ROADMAP: bashOS L6 OS Shell (on desktop GUI)": bashos/docs/frontend/ROADMAP-os-shell.md
                   - "SPEC: bashOS L6 OS Shell (evolution of gui/web)": bashos/docs/frontend/SPEC-os-shell.md
+          - "one-os":
+              - "one-os (README)": bashos/one-os/README.md
+              - "one-os (CLAUDE)": bashos/one-os/CLAUDE.md
+              - "one-os — Implementation Plan": bashos/one-os/PLAN.md
+              - "one-os — working notes for coding agents": bashos/one-os/AGENTS.md
+              - "Documentation":
+                  - "one-os documentation": bashos/one-os/docs/README.md
+                  - "Documentation tools": bashos/one-os/docs/tools/README.md
+                  - "Epic: bashOS and Amrchy as bootable systems": bashos/one-os/docs/epics/0001-bashos-and-amrchy.md
+                  - "Field report: SteamOS on an X870E desktop — \"No networks found\"": bashos/one-os/docs/field-reports/2026-11-12-steamos-silent-network.md
+                  - "Hardware checklist (PLAN §9)": bashos/one-os/docs/hardware-checklist.md
+                  - "Hardware results": bashos/one-os/docs/hardware-results.md
+                  - "Phase 0 spike report": bashos/one-os/docs/spike.md
+                  - "Troubleshooting": bashos/one-os/docs/troubleshooting.md
+                  - "Adr":
+                      - "ADR-0001: Ventoy as the boot manager": bashos/one-os/docs/adr/0001-ventoy-as-boot-manager.md
+                      - "ADR-0002: Build a payload, not a dd image": bashos/one-os/docs/adr/0002-payload-not-dd-image.md
+                      - "ADR-0003: File-based self-test hook": bashos/one-os/docs/adr/0003-selftest-hook-mechanism.md
+                      - "ADR-0004: qemu-guest-agent as the VM control channel": bashos/one-os/docs/adr/0004-guest-agent-control-channel.md
+                  - "Developer Guide":
+                      - "Architecture": bashos/one-os/docs/developer-guide/01-architecture.md
+                      - "Live VMs and debugging": bashos/one-os/docs/developer-guide/03-vm-tooling.md
+                      - "Testing": bashos/one-os/docs/developer-guide/02-testing.md
+                      - "Working with Claude Code": bashos/one-os/docs/developer-guide/04-claude-code.md
+                  - "Operator Guide":
+                      - "Building the image": bashos/one-os/docs/operator-guide/02-building.md
+                      - "Flashing from the command line": bashos/one-os/docs/operator-guide/03-flashing-cli.md
+                      - "Maintenance": bashos/one-os/docs/operator-guide/04-maintenance.md
+                      - "Remote sessions: drive a machine and run Claude Code on it": bashos/one-os/docs/operator-guide/06-remote-sessions.md
+                      - "The flash wizard": bashos/one-os/docs/operator-guide/01-flash-wizard.md
+                      - "The network boot server (PXE)": bashos/one-os/docs/operator-guide/05-network-boot-server.md
+                  - "Reference":
+                      - "Environment variables": bashos/one-os/docs/reference/environment.md
+                      - "Make targets": bashos/one-os/docs/reference/make-targets.md
+                      - "manifest.yaml reference": bashos/one-os/docs/reference/manifest.md
+                      - "On-stick tools reference": bashos/one-os/docs/reference/stick-tools.md
+                      - "scripts/oneos-vm reference": bashos/one-os/docs/reference/oneos-vm.md
+                      - "Stick layout and ventoy.json": bashos/one-os/docs/reference/stick-layout.md
+                  - "User Guide":
+                      - "Adding and updating ISOs": bashos/one-os/docs/user-guide/06-adding-isos.md
+                      - "Booting on a PC": bashos/one-os/docs/user-guide/02-booting.md
+                      - "Getting started": bashos/one-os/docs/user-guide/01-getting-started.md
+                      - "Install an OS onto another drive": bashos/one-os/docs/user-guide/05-install-an-os.md
+                      - "Install SteamOS": bashos/one-os/docs/user-guide/07-steamos.md
+                      - "Network install with netboot.xyz": bashos/one-os/docs/user-guide/04-network-install.md
+                      - "one-os quick reference": bashos/one-os/docs/user-guide/quick-reference.md
+                      - "The home base": bashos/one-os/docs/user-guide/03-home-base.md
           - "os — bashOS as the operating system":
               - "os — bashOS as the operating system": bashos/os/README.md
               - "bashOS migrations": bashos/os/migrations/README.md
@@ -2363,6 +2419,7 @@ nav:
           - "fredgar-ai (CLAUDE)": fredgar-ai/CLAUDE.md
           - "fredgar-ai tools": fredgar-ai/tools/README.md
           - "Product Requirements Document (PRD): Fredgar AI": fredgar-ai/PRD.md
+          - "Security Policy": fredgar-ai/SECURITY.md
           - "Documentation":
               - "fredgar-ai documentation": fredgar-ai/docs/README.md
               - "API and CLI": fredgar-ai/docs/api-and-cli.md
@@ -2377,6 +2434,7 @@ nav:
               - "Amendments — fredgar-ai":
                   - "Amendments — fredgar-ai": fredgar-ai/docs/amendments/README.md
                   - "0001 — Ratify the constitution": fredgar-ai/docs/amendments/0001-ratify-constitution.md
+                  - "0002 — Missions": fredgar-ai/docs/amendments/0002-mission-statement.md
                   - "NNNN — Title of the amendment": fredgar-ai/docs/amendments/0000-template.md
               - "Architecture Decision Records":
                   - "Architecture Decision Records": fredgar-ai/docs/adr/README.md
@@ -2682,6 +2740,7 @@ nav:
           - "Law AI — Backlog": law-ai/BACKLOG.md
           - "law-ai tools": law-ai/tools/README.md
           - "LSAT Practice — static site (lsat-static)": law-ai/lsat-static/README.md
+          - "Security Policy": law-ai/SECURITY.md
           - "Documentation":
               - "law-ai documentation": law-ai/docs/README.md
               - "Browser end-to-end testing": law-ai/docs/e2e-testing.md
@@ -3360,6 +3419,7 @@ nav:
               - "Amendments — SCHEMA":
                   - "Amendments — SCHEMA": SCHEMA/docs/amendments/README.md
                   - "0001 — Ratify the constitution": SCHEMA/docs/amendments/0001-ratify-constitution.md
+                  - "0003 — Missions": SCHEMA/docs/amendments/0003-mission-statement.md
                   - "NNNN — Title of the amendment": SCHEMA/docs/amendments/0000-template.md
                   - "SCHEMA — docs/amendments": SCHEMA/docs/amendments/SCHEMA.md
           - "Example":

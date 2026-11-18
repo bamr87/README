@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 72cc36411c63e96f
+source_fingerprint: 239df1ff2a84c7e0
 tags:
   - bash
   - education
@@ -24,7 +24,7 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashcrawl` - 79 docs |
+| Corpus | `docs/bashcrawl` - 80 docs |
 | External | no |
 
 ## Signals
@@ -32,12 +32,13 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~46,359 words across 79 indexed documents
+- has a security policy
+- ~46,532 words across 80 indexed documents
 - code samples in: bash, plaintext, js, text, json, yaml
 
 ## Navigation
 
-79 published pages in 16 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
+80 published pages in 16 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
 
 - **Repository & tooling** (2 pages)
 - **Courses** (31 pages)
@@ -50,10 +51,10 @@ tags:
 - [`CLAUDE.md`](../../docs/bashcrawl/CLAUDE.md)
 - [`AGENTS.md`](../../docs/bashcrawl/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/bashcrawl/CHANGELOG.md)
+- [`SECURITY.md`](../../docs/bashcrawl/SECURITY.md)
 - [`docs/ARCHITECTURE.md`](../../docs/bashcrawl/docs/ARCHITECTURE.md)
 - [`docs/walkthrough.md`](../../docs/bashcrawl/docs/walkthrough.md)
 - [`docs/termforge/architecture.md`](../../docs/bashcrawl/docs/termforge/architecture.md)
-- [`docs/termforge/hidden-gem.md`](../../docs/bashcrawl/docs/termforge/hidden-gem.md)
 
 ## Query this context
 

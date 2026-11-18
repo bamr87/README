@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Law AI - content map
 
-Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sidebar: **299 pages** across **74 sections** (max depth 6).
+Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sidebar: **300 pages** across **74 sections** (max depth 6).
 
 - [Law AI (README)](../law-ai/README.md)
 - [Changelog](../law-ai/CHANGELOG.md)
@@ -19,6 +19,7 @@ Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sideba
 - [Law AI — Backlog](../law-ai/BACKLOG.md)
 - [law-ai tools](../law-ai/tools/README.md)
 - [LSAT Practice — static site (lsat-static)](../law-ai/lsat-static/README.md)
+- [Security Policy](../law-ai/SECURITY.md)
 - **[Documentation](../law-ai/docs/README.md)** <small>(46)</small>
   - [law-ai documentation](../law-ai/docs/README.md)
   - [Browser end-to-end testing](../law-ai/docs/e2e-testing.md)

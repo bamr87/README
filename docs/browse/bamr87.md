@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Fleet Hub - content map
 
-Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sidebar: **256 pages** across **38 sections** (max depth 4).
+Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sidebar: **259 pages** across **38 sections** (max depth 4).
 
 - [👋 Hi, I'm Amr Abdel-Motaleb](../bamr87/README.md)
 - [bamr87 (AGENTS)](../bamr87/AGENTS.md)
@@ -19,8 +19,10 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
 - [Index — the bamr87 hub as the fleet's central repository](../bamr87/CATALOG.md)
 - [PRD — bamr87 (dash)](../bamr87/PRD.md)
 - [SCHEMA — bamr87 dash](../bamr87/SCHEMA.md)
-- **[changelog.d/ — pending changelog entries](../bamr87/changelog.d/README.md)** <small>(2)</small>
+- **[changelog.d/ — pending changelog entries](../bamr87/changelog.d/README.md)** <small>(4)</small>
   - [changelog.d/ — pending changelog entries](../bamr87/changelog.d/README.md)
+  - [Pr Review Findings](../bamr87/changelog.d/pr-review-findings.md)
+  - [Pr Review Kit Concurrency](../bamr87/changelog.d/pr-review-kit-concurrency.md)
   - [SCHEMA — changelog.d](../bamr87/changelog.d/SCHEMA.md)
 - **[compose/ — the hub's half of the fleet dev stack](../bamr87/compose/README.md)** <small>(3)</small>
   - [compose/ — the hub's half of the fleet dev stack](../bamr87/compose/README.md)
@@ -41,7 +43,7 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
   - **[diagrams/pipeline-map/](../bamr87/diagrams/pipeline-map/README.md)** <small>(2)</small>
     - [diagrams/pipeline-map/](../bamr87/diagrams/pipeline-map/README.md)
     - [SCHEMA — diagrams/pipeline-map](../bamr87/diagrams/pipeline-map/SCHEMA.md)
-- **[Documentation](../bamr87/docs/README.md)** <small>(161)</small>
+- **[Documentation](../bamr87/docs/README.md)** <small>(162)</small>
   - [bamr87 documentation](../bamr87/docs/README.md)
   - [Agent Verification — proving features work the way a user experiences…](../bamr87/docs/VERIFICATION.md)
   - [AI Integration — surfaces, auth, and the loops](../bamr87/docs/AI-INTEGRATION.md)
@@ -175,7 +177,7 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
     - **[docs/amendments/proposed/ — unnumbered amendment records](../bamr87/docs/amendments/proposed/README.md)** <small>(2)</small>
       - [docs/amendments/proposed/ — unnumbered amendment records](../bamr87/docs/amendments/proposed/README.md)
       - [SCHEMA — docs/amendments/proposed](../bamr87/docs/amendments/proposed/SCHEMA.md)
-  - **[Architecture Decision Records](../bamr87/docs/adr/README.md)** <small>(13)</small>
+  - **[Architecture Decision Records](../bamr87/docs/adr/README.md)** <small>(14)</small>
     - [Architecture Decision Records](../bamr87/docs/adr/README.md)
     - [ADR 0001 — Record architecture decisions](../bamr87/docs/adr/0001-record-architecture-decisions.md)
     - [ADR 0002 — Agent step specs and the local loop runner](../bamr87/docs/adr/0002-agent-step-specs-and-local-runner.md)
@@ -187,6 +189,7 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
     - [ADR 0008 — GitHub Actions as the agentic SDLC substrate: typed…](../bamr87/docs/adr/0008-typed-decisions-as-pipeline-gates.md)
     - [ADR 0009 — The agentic efficacy model: one agent inventory, five KPIs…](../bamr87/docs/adr/0009-agentic-efficacy-model.md)
     - [ADR 0010 — The fleet graph and outcome learning: one model of what the…](../bamr87/docs/adr/0010-fleet-graph-and-outcome-learning.md)
+    - [ADR 0011 — One framework, many instances: the stack installs for any…](../bamr87/docs/adr/0011-one-framework-many-instances.md)
     - [ADR NNNN — Title in sentence case](../bamr87/docs/adr/0000-template.md)
     - [SCHEMA — docs/adr](../bamr87/docs/adr/SCHEMA.md)
   - **Assets** <small>(2)</small>

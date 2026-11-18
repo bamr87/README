@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 299,
-    "fingerprint": "a85803e83ade1919",
+    "file_count": 300,
+    "fingerprint": "7e3c333701a10cc0",
     "path": "docs/law-ai",
     "present": true,
-    "total_bytes": 2820629
+    "total_bytes": 2834492
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -26,17 +26,17 @@
     "CLAUDE.md",
     "AGENTS.md",
     "CHANGELOG.md",
+    "SECURITY.md",
     "BACKLOG.md",
     "specs/052-backlog-zero/tasks.md",
-    "docs/data-model.md",
-    "docs/prd.md"
+    "docs/data-model.md"
   ],
   "navigation": {
     "browse": "docs/browse/law-ai.md",
-    "fingerprint": "03d9518a99ffb655",
+    "fingerprint": "81ea7ff93228b57e",
     "index": "law-ai/README.md",
     "max_depth": 6,
-    "pages": 299,
+    "pages": 300,
     "present": true,
     "sections": 74,
     "skipped": 0,
@@ -86,7 +86,7 @@
   },
   "rollups": {
     "categories": {
-      "law-ai": 299
+      "law-ai": 300
     },
     "code_languages": [
       "bash",
@@ -98,7 +98,7 @@
       "sql",
       "cypher"
     ],
-    "indexed_documents": 299,
+    "indexed_documents": 300,
     "top_tags": [
       "structure",
       "foundations",
@@ -116,7 +116,7 @@
       "flaw",
       "fallacy"
     ],
-    "total_words": 392417
+    "total_words": 394581
   },
   "schema_version": "1.0",
   "signals": {
@@ -125,7 +125,7 @@
     "has_claude_md": true,
     "has_contributing": false,
     "has_schema_md": false,
-    "has_security_policy": false
+    "has_security_policy": true
   },
   "structure": {
     "root_docs": [
@@ -133,7 +133,8 @@
       "BACKLOG.md",
       "CHANGELOG.md",
       "CLAUDE.md",
-      "README.md"
+      "README.md",
+      "SECURITY.md"
     ],
     "top_dirs": [
       {

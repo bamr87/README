@@ -5,18 +5,18 @@
   "title": "Fleet Hub",
   "corpus": "docs/bamr87",
   "counts": {
-    "pages": 256,
+    "pages": 259,
     "sections": 38,
     "max_depth": 4,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "91b9d9b339ebd36c",
+  "fingerprint": "8ede29eb6add6ecb",
   "tree": {
     "type": "section",
     "title": "Fleet Hub",
     "index": "bamr87/README.md",
-    "pages": 256,
+    "pages": 259,
     "children": [
       {
         "type": "page",
@@ -72,7 +72,7 @@
         "title": "changelog.d/ \u2014 pending changelog entries",
         "rel": "changelog.d",
         "index": "bamr87/changelog.d/README.md",
-        "pages": 2,
+        "pages": 4,
         "children": [
           {
             "type": "page",
@@ -80,6 +80,18 @@
             "path": "bamr87/changelog.d/README.md",
             "rel": "changelog.d/README.md",
             "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "Pr Review Findings",
+            "path": "bamr87/changelog.d/pr-review-findings.md",
+            "rel": "changelog.d/pr-review-findings.md"
+          },
+          {
+            "type": "page",
+            "title": "Pr Review Kit Concurrency",
+            "path": "bamr87/changelog.d/pr-review-kit-concurrency.md",
+            "rel": "changelog.d/pr-review-kit-concurrency.md"
           },
           {
             "type": "page",
@@ -232,7 +244,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "bamr87/docs/README.md",
-        "pages": 161,
+        "pages": 162,
         "children": [
           {
             "type": "page",
@@ -1052,7 +1064,7 @@
             "title": "Architecture Decision Records",
             "rel": "docs/adr",
             "index": "bamr87/docs/adr/README.md",
-            "pages": 13,
+            "pages": 14,
             "children": [
               {
                 "type": "page",
@@ -1120,6 +1132,12 @@
                 "title": "ADR 0010 \u2014 The fleet graph and outcome learning: one model of what the\u2026",
                 "path": "bamr87/docs/adr/0010-fleet-graph-and-outcome-learning.md",
                 "rel": "docs/adr/0010-fleet-graph-and-outcome-learning.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0011 \u2014 One framework, many instances: the stack installs for any\u2026",
+                "path": "bamr87/docs/adr/0011-one-framework-many-instances.md",
+                "rel": "docs/adr/0011-one-framework-many-instances.md"
               },
               {
                 "type": "page",

@@ -16,7 +16,7 @@ title: Lifehacker
 > [!info] site: `bamr87/lifehacker.dev`
 > Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude Code.
 
-**138** pages collected from commit `54f57817b286` (2026-11-16).
+**138** pages collected from commit `83813e2c00ee` (2026-11-16).
 
 ## Most connected pages
 

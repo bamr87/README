@@ -15,6 +15,23 @@ Every crawl that changed a corpus, newest first. Dates are the upstream commit d
 
 | Date | Project | Commit | Added | Changed | Removed |
 |---|---|---|---:|---:|---:|
+| 2026-11-18 | [[brain/projects/bamr87\|Fleet Hub]] | `80f42680f51a` | 0 | 7 | 0 |
+| 2026-11-18 | [[brain/projects/it-journey\|IT Journey]] | `5e93a84c71ea` | 1 | 6 | 0 |
+| 2026-11-18 | [[brain/projects/bashos\|BashOS]] | `94417f6f537b` | 0 | 3 | 0 |
+| 2026-11-18 | [[brain/projects/bamr87\|Fleet Hub]] | `d00ad06aff0c` | 0 | 6 | 0 |
+| 2026-11-18 | [[brain/projects/it-journey\|IT Journey]] | `bfc05c782660` | 0 | 1 | 0 |
+| 2026-11-18 | [[brain/projects/law-ai\|Law AI]] | `5b2bad1de77c` | 0 | 1 | 0 |
+| 2026-11-18 | [[brain/projects/fredgar-ai\|Fredgar AI]] | `8d60b2151b4f` | 1 | 6 | 0 |
+| 2026-11-18 | [[brain/projects/it-journey\|IT Journey]] | `cf595e74495b` | 0 | 2 | 1 |
+| 2026-11-16 | [[brain/projects/SCHEMA\|SCHEMA Protocol]] | `b67e198f0e47` | 1 | 6 | 0 |
+| 2026-11-18 | [[brain/projects/law-ai\|Law AI]] | `904f30109f9f` | 1 | 9 | 0 |
+| 2026-11-18 | [[brain/projects/fredgar-ai\|Fredgar AI]] | `1f30f6a169f5` | 1 | 13 | 0 |
+| 2026-11-18 | [[brain/projects/bashos\|BashOS]] | `d230fe89bca7` | 42 | 7 | 0 |
+| 2026-11-18 | [[brain/projects/bamr87.github.io\|Personal Site]] | `550d0b2c1a1d` | 0 | 1 | 0 |
+| 2026-11-18 | [[brain/projects/bamr87\|Fleet Hub]] | `077e740556b6` | 3 | 35 | 0 |
+| 2026-11-18 | [[brain/projects/it-journey\|IT Journey]] | `5be4585f0417` | 3 | 6 | 0 |
+| 2026-11-18 | [[brain/projects/zer0-mistakes\|Zer0 Mistakes]] | `746cc9bb2ec9` | 0 | 1 | 0 |
+| 2026-11-18 | [[brain/projects/bashcrawl\|Bash Crawl]] | `6dbcc89b0901` | 1 | 1 | 0 |
 | 2026-11-11 | [[brain/projects/zpl-viewer\|ZPL Viewer]] | `2ecbd4ef4a6d` | 19 | 0 | 0 |
 | 2026-11-11 | [[brain/projects/zer0-CMS\|Zer0 CMS]] | `3abeb8cf05e8` | 1205 | 0 | 0 |
 | 2026-10-27 | [[brain/projects/vs-sonic-pi\|VS Sonic Pi]] | `ebd621fd894f` | 117 | 0 | 0 |

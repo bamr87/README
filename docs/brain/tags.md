@@ -11,7 +11,7 @@ title: Tags
 
 # Tags
 
-**1141** tags. A linked tag has a concept note.
+**1143** tags. A linked tag has a concept note.
 
 | Tag | Pages |
 |---|---:|
@@ -85,6 +85,7 @@ title: Tags
 | [[brain/concepts/quickstart\|quickstart]] | 15 |
 | `0111` | 14 |
 | `1110` | 14 |
+| [[brain/concepts/open-source\|open-source]] | 14 |
 | [[brain/concepts/privacy\|privacy]] | 14 |
 | `systems` | 14 |
 | `1000` | 13 |
@@ -92,7 +93,6 @@ title: Tags
 | `1011` | 13 |
 | [[brain/concepts/claude\|claude]] | 13 |
 | [[brain/concepts/getting-started\|getting-started]] | 13 |
-| [[brain/concepts/open-source\|open-source]] | 13 |
 | [[brain/concepts/ruby\|ruby]] | 13 |
 | [[brain/concepts/workflow\|workflow]] | 13 |
 | [[brain/concepts/yaml\|yaml]] | 13 |
@@ -145,6 +145,7 @@ title: Tags
 | `0100` | 8 |
 | [[brain/concepts/ai-agents\|ai-agents]] | 8 |
 | [[brain/concepts/ai-assisted-development\|ai-assisted-development]] | 8 |
+| [[brain/concepts/changelog\|changelog]] | 8 |
 | `ci-cd-devops` | 8 |
 | `cloud-computing` | 8 |
 | [[brain/concepts/collaboration\|collaboration]] | 8 |
@@ -168,14 +169,13 @@ title: Tags
 | [[brain/concepts/writing\|writing]] | 8 |
 | [[brain/concepts/authoring\|authoring]] | 7 |
 | `backend` | 7 |
-| [[brain/concepts/changelog\|changelog]] | 7 |
 | [[brain/concepts/cheatsheet\|cheatsheet]] | 7 |
 | [[brain/concepts/climate\|climate]] | 7 |
 | `cloud-engineering` | 7 |
 | [[brain/concepts/containers\|containers]] | 7 |
 | `contributor` | 7 |
 | `epic_quest` | 7 |
-| [[brain/concepts/esg\|esg]] | 7 |
+| `esg` | 7 |
 | `front-matter` | 7 |
 | `hardware` | 7 |
 | [[brain/concepts/hosting\|hosting]] | 7 |
@@ -225,6 +225,7 @@ title: Tags
 | `visualization` | 6 |
 | `wcag` | 6 |
 | `web-design` | 6 |
+| [[brain/concepts/about\|about]] | 5 |
 | `ai-development` | 5 |
 | `algorithmic-accountability` | 5 |
 | [[brain/concepts/ci-cd\|ci/cd]] | 5 |
@@ -258,7 +259,6 @@ title: Tags
 | `transparency` | 5 |
 | `windows` | 5 |
 | [[brain/concepts/zsh\|zsh]] | 5 |
-| `about` | 4 |
 | `ai-powered` | 4 |
 | `aieo` | 4 |
 | `aipd` | 4 |
@@ -425,6 +425,7 @@ title: Tags
 | `plugin` | 3 |
 | `posthog` | 3 |
 | `prerequisites` | 3 |
+| `principles` | 3 |
 | `protest` | 3 |
 | `public-health` | 3 |
 | `pxe` | 3 |
@@ -468,7 +469,6 @@ title: Tags
 | `adventurer` | 2 |
 | `africa` | 2 |
 | `ai-images` | 2 |
-| `article` | 2 |
 | `awards` | 2 |
 | `badges` | 2 |
 | `baking` | 2 |
@@ -528,6 +528,7 @@ title: Tags
 | `master-data` | 2 |
 | `medicine` | 2 |
 | `mentorship` | 2 |
+| `mission` | 2 |
 | `nanobar` | 2 |
 | `networkmanager` | 2 |
 | `neural-networks` | 2 |
@@ -539,7 +540,6 @@ title: Tags
 | `paradox` | 2 |
 | `personalization` | 2 |
 | `portfolio` | 2 |
-| `principles` | 2 |
 | `problem-solving` | 2 |
 | `progress` | 2 |
 | `prometheus` | 2 |
@@ -625,6 +625,7 @@ title: Tags
 | `archive` | 1 |
 | `argumentative` | 1 |
 | `arithmetic` | 1 |
+| `article` | 1 |
 | `artifacts` | 1 |
 | `arts-culture` | 1 |
 | `assumption` | 1 |
@@ -924,7 +925,6 @@ title: Tags
 | `microservices` | 1 |
 | `microsoft-learn` | 1 |
 | `middle-east` | 1 |
-| `mission` | 1 |
 | `mlflow` | 1 |
 | `mlops` | 1 |
 | `mobile-phones` | 1 |
@@ -1011,6 +1011,7 @@ title: Tags
 | `public health` | 1 |
 | `public-speaking` | 1 |
 | `pull requests` | 1 |
+| `purpose` | 1 |
 | `pyspark` | 1 |
 | `quantifier` | 1 |
 | `quest-system` | 1 |
@@ -1028,6 +1029,7 @@ title: Tags
 | `relationship` | 1 |
 | `release-automation` | 1 |
 | `release-engineering` | 1 |
+| `release-please` | 1 |
 | `reno` | 1 |
 | `repo-structure` | 1 |
 | `rescue-system` | 1 |

@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 554
+pages: 557
 repo: bamr87/it-journey
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: IT Journey
 > [!info] site: `bamr87/it-journey`
 > Educational IT platform with quests, blog posts, and technical documentation.
 
-**554** pages collected from commit `1576cbbf3f65` (2026-11-16).
+**557** pages collected from commit `5e93a84c71ea` (2026-11-18).
 
 ## Most connected pages
 
@@ -58,9 +58,9 @@ title: IT Journey
 
 ## Shares concepts with
 
-- [[brain/projects/zer0-CMS|Zer0 CMS]] (86)
-- [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (86)
-- [[brain/projects/bamr87.github.io|Personal Site]] (17)
+- [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (88)
+- [[brain/projects/zer0-CMS|Zer0 CMS]] (87)
+- [[brain/projects/bamr87.github.io|Personal Site]] (18)
 - [[brain/projects/bashos|BashOS]] (7)
 - [[brain/projects/gitorio|Gitorio]] (6)
 - [[brain/projects/bamr87|Fleet Hub]] (4)

@@ -14,6 +14,12 @@ The one exception is a dot-prefixed segment, which is renamed with
 Provenance sits in front matter as a repo, a path and a branch-based URL, never
 a commit: a commit there would rewrite every page on every upstream change.
 The commit a crawl read is recorded once per project in context/vault/collect.json.
+
+Every page passes the secret screen (redact.py) before anything else reads it:
+a credential committed upstream by mistake becomes [REDACTED:<kind>], is listed
+in docs/results/secret_screen.json by project, path, line and kind (never by
+value), and the run fails once the corpus is written, so the scheduled crawl
+stops before its commit. A clean run removes a stale report.
 """
 
 import json
@@ -31,6 +37,7 @@ from .config import (
     CACHE_DIR, CHANGE_LOG_PATH, COLLECT_MANIFEST_PATH, DOCS_DIR, ROOT,
 )
 from .navigator import GlobSet
+from .redact import redact
 from .registry import CollectRules, Project, Registry
 from .vault import weave_pages
 
@@ -38,6 +45,11 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from fix_frontmatter_icons import normalize_frontmatter  # noqa: E402
 
 CLONE_TIMEOUT = 600
+SECRET_SCREEN_NAME = "results/secret_screen.json"
+
+
+class SecretScreenError(RuntimeError):
+    """The secret screen redacted at least one credential in this crawl."""
 _FRONT_MATTER = re.compile(r"\A---\s*\n(.*?)\n---[ \t]*(?:\n|\Z)", re.S)
 _H1 = re.compile(r"^#\s+(.+)$", re.M)
 # A relative Markdown link target, so renamed dot-segments can follow the page.
@@ -250,12 +262,41 @@ def collect_frozen(project: Project, registry: Registry, docs_dir: Path,
     found = {upstream_path(p.relative_to(corpus).as_posix(), prefix): p
              for p in corpus.rglob("*.md")}
     source = Source(root=corpus, commit="", commit_date="", branch=project.branch or "main")
-    pages = {corpus_path(rel, prefix): transform(
-                 found[rel].read_text(encoding="utf-8", errors="replace"),
-                 rel, project, source, prefix)
-             for rel in select(list(found), registry.collect, project.collect)}
+    pages: Dict[str, str] = {}
+    hits: List[Dict] = []
+    for rel in select(list(found), registry.collect, project.collect):
+        text = _screen(found[rel].read_text(encoding="utf-8", errors="replace"),
+                       project, rel, hits)
+        pages[corpus_path(rel, prefix)] = transform(text, rel, project, source, prefix)
     staged = _stage(pages, cache_dir.parent / "collect-stage" / project.name)
-    return {"source": source, "pages": staged, "tracked": len(found), "frozen": True}
+    return {"source": source, "pages": staged, "tracked": len(found), "frozen": True,
+            "secrets": hits}
+
+
+def _screen(text: str, project: Project, rel: str, hits: List[Dict]) -> str:
+    """Redact credentials before anything else reads the page; note where, never what."""
+    text, found = redact(text)
+    hits.extend({"project": project.name, "path": rel, "line": hit.line, "kind": hit.kind}
+                for hit in found)
+    return text
+
+
+def write_secret_screen(hits: List[Dict], pages: int, path: Path) -> None:
+    """The report exists only after a crawl that redacted something."""
+    if not hits:
+        if path.exists():
+            path.unlink()
+        return
+    path.parent.mkdir(parents=True, exist_ok=True)
+    report = {
+        "description": ("Secret screen of the collected corpus "
+                        "(scripts/context_engine/collect.py): each credential found "
+                        "upstream, redacted to [REDACTED:<kind>] in docs/. Values are "
+                        "never recorded."),
+        "pages_screened": pages,
+        "hits": sorted(hits, key=lambda h: (h["project"], h["path"], h["line"], h["kind"])),
+    }
+    path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
 
 
 def collect_project(project: Project, registry: Registry,
@@ -267,14 +308,15 @@ def collect_project(project: Project, registry: Registry,
     tracked = [line for line in _git(source.root, "ls-files", "-z").split("\0")
                if line.lower().endswith(".md")]
     pages: Dict[str, str] = {}
+    hits: List[Dict] = []
     for rel in select(tracked, registry.collect, project.collect):
         path = source.root / rel
         if path.is_symlink() or not path.is_file():
             continue
-        text = path.read_text(encoding="utf-8", errors="replace")
+        text = _screen(path.read_text(encoding="utf-8", errors="replace"), project, rel, hits)
         pages[corpus_path(rel, prefix)] = transform(text, rel, project, source, prefix)
     staged = _stage(pages, cache_dir.parent / "collect-stage" / project.name)
-    return {"source": source, "pages": staged, "tracked": len(tracked)}
+    return {"source": source, "pages": staged, "tracked": len(tracked), "secrets": hits}
 
 
 def _record(entries: Dict[str, Dict], log_lines: List[Dict],
@@ -371,7 +413,17 @@ def collect(registry: Registry, names: Optional[List[str]] = None,
               f"Markdown files (+{len(changes['added'])} "
               f"~{len(changes['changed'])} -{len(changes['removed'])})")
     _record(entries, log_lines, manifest_path, log_path)
+    secrets = [hit for result in results.values() for hit in result.get("secrets", [])]
+    write_secret_screen(secrets, sum(len(r["pages"]) for r in results.values()),
+                        docs_dir / SECRET_SCREEN_NAME)
     live = sum(1 for entry in entries.values() if entry["status"] == "live")
     if projects and not live:
         raise RuntimeError("collect reached no repository: " + "; ".join(failures))
+    if secrets:
+        for hit in secrets:
+            print(f"[collect] secret screen: {hit['project']}/{hit['path']}:{hit['line']} "
+                  f"{hit['kind']} redacted")
+        raise SecretScreenError(
+            f"secret screen redacted {len(secrets)} credential(s); see "
+            f"docs/{SECRET_SCREEN_NAME}. Revoke them and remove them upstream.")
     return entries

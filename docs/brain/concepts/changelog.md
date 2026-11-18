@@ -4,8 +4,8 @@ aliases:
 category: brain
 generated: true
 kind: concept
-pages: 7
-projects: 2
+pages: 8
+projects: 3
 tags:
 - brain/concept
 title: Changelog
@@ -16,7 +16,7 @@ title: Changelog
 # Changelog
 
 > [!abstract] Summary
-> 7 pages across 2 projects (Zer0 Mistakes, Zer0 CMS) cover this subject.
+> 8 pages across 3 projects (Zer0 Mistakes, IT Journey, Zer0 CMS) cover this subject.
 
 ## Across the fleet
 
@@ -28,6 +28,10 @@ title: Changelog
 - [[zer0-mistakes/docs/implementation/sitemap-integration|Comprehensive Sitemap Integration Summary]]
 - [[zer0-mistakes/fr/docs/development/release-management|Gestion des versions]]
 - [[zer0-mistakes/pages/_docs/development/release-management|Release Management]]
+
+### [[brain/projects/it-journey|IT Journey]] (1)
+
+- [[it-journey/pages/_about/versioning|IT-Journey Versioning: Semver and Release Strategy]]
 
 ### [[brain/projects/zer0-CMS|Zer0 CMS]] (1)
 

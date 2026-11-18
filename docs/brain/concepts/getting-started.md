@@ -50,4 +50,5 @@ title: Getting Started
 - [[brain/concepts/github-pages|Github Pages]] (3 shared pages)
 - [[brain/concepts/quickstart|Quickstart]] (3 shared pages)
 - [[brain/concepts/remote-theme|Remote Theme]] (3 shared pages)
+- [[brain/concepts/about|About]] (2 shared pages)
 - [[brain/concepts/bootstrap|Bootstrap]] (2 shared pages)

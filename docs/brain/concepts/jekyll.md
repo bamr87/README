@@ -56,9 +56,9 @@ title: Jekyll
 ### [[brain/projects/it-journey|IT Journey]] (21)
 
 - [[it-journey/pages/_quests/codex/zer0-to-her0-cmstyle|Epic Quest: Zer0-to-Her0 CMStyle]]
+- [[it-journey/README|README - it-journey]]
 - [[it-journey/pages/_quests/0001/forge-your-character|Forge Your Character: Crafting Your Contributor Identity]]
 - [[it-journey/pages/_quests/0001/github-pages-basics|GitHub Pages Basics: Host Your Jekyll Site for Free]]
-- [[it-journey/README|README - it-journey]]
 - [[it-journey/pages/_quests/0001/jekyll-fundamentals|Jekyll Fundamentals: Build Static Sites with Ruby]]
 - [[it-journey/pages/_quests/0001/liquid-templating|Liquid Templating: Dynamic Content for Jekyll Sites]]
 - [[it-journey/pages/_quests/0001/yaml-configuration|YAML Configuration: Site Settings Mastery]]

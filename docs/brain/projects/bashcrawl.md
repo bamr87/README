@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 79
+pages: 80
 repo: bamr87/bashcrawl
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: Bash Crawl
 > [!info] game: `bamr87/bashcrawl`
 > Interactive shell-scripting tutorial — learn Bash by exploring a dungeon.
 
-**79** pages collected from commit `c9c2f04a56be` (2026-11-15).
+**80** pages collected from commit `6dbcc89b0901` (2026-11-18).
 
 ## Most connected pages
 

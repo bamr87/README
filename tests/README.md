@@ -18,7 +18,7 @@ The testing framework provides:
 tests/
 ├── unit/                          # Unit tests
 │   ├── test_cases/                # unittest modules (discovered by the runner)
-│   │   ├── test_context_engine.py # registry, extractor, navigator, synthesizer, index/query, AI provider, schema lint, MCP
+│   │   ├── test_context_engine.py # registry, extractor, navigator, synthesizer, index/query, AI provider, secret screen, hooks, schema lint, MCP
 │   │   ├── test_file_processing.py
 │   │   ├── test_fleet_survey.py   # fleet survey checks + health report
 │   │   ├── test_repo_operations.py
@@ -29,6 +29,7 @@ tests/
 │   ├── test_integration.py        # Integration test cases
 │   └── test_repo_runner.py        # Repository test runner
 ├── fixtures/                      # Test fixtures and sample data
+│   ├── fake_secrets.py            # Credential-shaped fakes for the secret screen, built at runtime
 │   └── sample_docs.py             # Sample documentation files
 ├── test-docs/                     # Sample markdown fixtures
 ├── results/                       # Test results storage (generated)
@@ -72,10 +73,10 @@ python tests/test_runner.py --type integration --repos https://github.com/octoca
 
 Unit tests verify individual components in isolation. The runner discovers every `tests/unit/test_cases/test_*.py` module:
 
-- **Context engine** (`test_context_engine.py`): registry, extractor, navigator, icon normalizer, synthesizer/assembler, index and query, AI provider selection, schema lint, MCP dispatch — all against fixtures
-- **Fleet survey** (`test_fleet_survey.py`): link resolver, governance/structure/quality/metadata checks, health scoring, report rendering, fleet inventory
+- **Context engine** (`test_context_engine.py`): registry, extractor, navigator, icon normalizer, secret screen (`redact.py`), hook environment and output screening, synthesizer/assembler, index and query, AI provider selection, schema lint, MCP dispatch — all against fixtures
+- **Fleet survey** (`test_fleet_survey.py`): link resolver, governance/structure/quality/metadata checks, health scoring, report rendering, fleet inventory, working-tree reads that never follow a symlink out of the checkout
 - **Tracked surfaces** (`test_tracked_surfaces.py`): `scripts/check_tracked_surfaces.py` against clean and broken fixture repos
-- **File processing** (`test_file_processing.py`): title extraction, front matter generation, ingest prose normalization
+- **File processing** (`test_file_processing.py`): title extraction, front matter generation, the ingest secret screen (and `aggregate.sh` failing with `process.py`), ingest prose normalization
 - **Repository operations** (`test_repo_operations.py`): git operations and file discovery
 
 `tests/unit/test_docs_tools.py` sits outside `test_cases/` and uses bare pytest functions, so the custom harness does not run it; run it with `python -m pytest tests/unit/test_docs_tools.py`.

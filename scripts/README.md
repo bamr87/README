@@ -87,26 +87,35 @@ scripts/
 ├── fix_h1.py               # H1 heading fixer
 ├── fix_whitespace.py       # Trailing whitespace remover
 ├── generate_docs_index.py  # Comprehensive JSON index generator
-├── generate_docs_report.py # Quality report generator
+├── generate_docs_report.py # Quality report generator (docs/results/)
 ├── lint_docs.py            # Documentation linter
 ├── normalize_tags.py       # Tag normalization utility
 ├── run_doc_checks.sh       # Quality check orchestrator
 ├── schema_lint.py          # SCHEMA.md pyramid drift gate
 ├── check_tracked_surfaces.py # Integrity gate: surfaces reference tracked files
+├── fix_mkdocs_links.py     # MkDocs link converter/validator (outside the pipeline)
+├── aggregate_mkdocs.py     # Alternative category-bucketing aggregator (outside the pipeline)
+├── mkdocs_quality_report.py # MkDocs compatibility/quality analyzer (outside the pipeline)
+├── analyze_doc_structure.py # Corpus structure analysis utility (outside the pipeline)
+├── cleanup_docs.py         # Corpus cleanup utility (outside the pipeline)
+├── wiki-manage.sh          # Wiki.js stack wrapper (see ../WIKIJS-QUICKSTART.md)
 ├── context_engine/         # Context engine package (stages 5-7, 10)
+│   ├── config.py           # Shared paths and constants
 │   ├── registry.py         # Fleet registry (_data/projects.yml) + repos.txt sync
 │   ├── collect.py          # Extract, transform, load: repositories -> docs/
 │   ├── vault.py            # Notes, link resolution, weaving, the graph
 │   ├── brain.py            # Generated notes under docs/brain/ + Obsidian settings
 │   ├── extractor.py        # Corpus -> structured facts (L2)
+│   ├── navigator.py        # Corpus + navigation contract -> context/nav/, nav.yml, docs/browse/
 │   ├── synthesizer.py      # Facts -> project cards (L1)
 │   ├── assembler.py        # Apex README, AUTO span, site index (L0)
 │   ├── indexer.py          # Query index + freshness manifest
 │   ├── query.py            # Read-side API (shared by CLI and MCP)
 │   ├── ai.py               # Provider-agnostic enrichment (Anthropic/xAI/mock)
-│   ├── hooks.py            # hooks.d/<stage>/ lifecycle runner
+│   ├── hooks.py            # hooks.d/<stage>/ lifecycle runner (allowlisted env)
+│   ├── redact.py           # Secret screen: credential shapes -> [REDACTED:<kind>]
 │   ├── builder.py + cli.py # Orchestration + command-line interface
-│   ├── gather/             # Shallow blobless clones -> source manifests
+│   ├── gather/             # Shallow blobless clones / working trees -> source manifests
 │   ├── analyze/            # Checks -> findings -> health score; framework.py = UPS-DOC rows, review.py = docs review
 │   ├── survey.py           # Fleet documentation survey (`survey` command)
 │   └── __main__.py         # `python3 -m scripts.context_engine`
@@ -125,7 +134,7 @@ scripts/
 
 | Stage | Input | Output | Scripts |
 |-------|-------|--------|---------|
-| 1-2. Collect | `_data/projects.yml` | `docs/{project}/`, `context/vault/collect.json` | `context_engine/collect.py`, `../tools/unwrap-prose.py` |
+| 1-2. Collect | `_data/projects.yml` | `docs/{project}/` (secret-screened; `docs/results/secret_screen.json` on a hit), `context/vault/collect.json` | `context_engine/collect.py`, `context_engine/redact.py`, `../tools/unwrap-prose.py` |
 | 3. Validation | `docs/` | Reports/Fixes | All validation scripts |
 | 4. Indexing | `docs/` | `docs/docs_index.json` | `generate_docs_index.py` |
 | 4b. Brain | `docs/` + registry `brain:` + `../notes/` | `docs/brain/`, `docs/.obsidian/` | `context_engine/brain.py` |
@@ -203,6 +212,7 @@ These scripts are specifically designed for MkDocs compatibility and should be u
 
 - Reads `_data/projects.yml`; a project's `collect:` rules, plus the fleet-wide ones, say what counts as official documentation
 - Takes only git-tracked Markdown, so ignored build output never enters the corpus
+- Screens every page for credentials first (`redact.py`): a GitHub, Anthropic, xAI, AWS or Slack token, or a PEM private key, becomes `[REDACTED:<kind>]`; the run writes `docs/results/secret_screen.json` (project, path, line, kind, never the value), finishes the corpus, and exits 1 so the scheduled crawl stops before its commit. A clean run removes a stale report
 - Normalizes in memory: front matter, provenance (`source_repo`, `source_file`, `source_url`), icons, tags, one paragraph per line
 - Renames dot-directories with `collect.hidden_prefix`, since neither GitHub Pages nor Obsidian shows them
 - Stages every project first, then weaves links across the whole corpus, then writes only what changed and deletes what upstream dropped
@@ -567,6 +577,8 @@ python3 -m scripts.context_engine projects         # fleet roster
 ```
 
 **AI enrichment** (`ai.py`): provider-agnostic — `--ai auto` (default) uses Anthropic when a credential is present (`ANTHROPIC_API_KEY`, or **Claude Code OAuth** via `CLAUDE_CODE_OAUTH_TOKEN` from `claude setup-token` / `ANTHROPIC_AUTH_TOKEN`, sent as Bearer auth), else xAI when `XAI_API_KEY`/`GROK_API_KEY` is set, else pure heuristics; `--ai mock` exercises the AI path deterministically for tests. Enrichment failures fall back to heuristic text — a build never fails because of an API. Every provider failure surfaces as `AIError`: 429/500/502/503/504/529 are retried up to 3 attempts, a `Retry-After` header (delay-seconds or HTTP-date) is honoured but clamped to 1–30 s, and malformed responses are wrapped rather than raised. Each build has an AI budget: `CONTEXT_AI_MAX_CALLS` caps the number of provider calls (unset means unlimited) and `CONTEXT_AI_DEADLINE_S` (default `600`) stops new requests that many seconds after the first one, keeping the weekly `aggregate-docs.yaml` inside its 30-minute timeout; once either is spent, the remaining cards and the apex use heuristic text, and the build summary (`ai_skipped`) and log name the cards that fell back.
+
+**Secret screen** (`redact.py`): the stdlib matcher behind ingest's credential check. `redact(text)` returns the text with each credential replaced by `[REDACTED:<kind>]` and one `Hit(kind, line)` per credential, never the value. `context_engine/collect.py` runs it on every crawled page, `hooks.py` on hook output (a hook also gets an allowlisted environment, never the build's provider keys: see `../hooks.d/README.md`), and `AIError` on its message, which can quote a provider's response body. The survey's working-tree mode (`survey --local`, `--workspace`) never follows a tracked symlink, so a link out of a checkout cannot pull a local file into the review.
 
 **Outputs**: `context/facts/*.json`, `context/cards/*.md`, `context/nav/*.json`, `context/README.md`, `context/SCHEMA.md`, `context/index/{context_index,manifest}.json`, plus the regenerated `repos.txt`, `nav.yml`, `docs/browse/`, root README span, and `docs/index.md`. All generated — never hand-edit.
 

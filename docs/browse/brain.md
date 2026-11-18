@@ -21,6 +21,7 @@ Every published page in [`docs/brain/`](../brain/) as it appears in the sidebar:
 - [Tags](../brain/tags.md)
 - [Vault health](../brain/health.md)
 - **Concepts** <small>(150)</small>
+  - [About](../brain/concepts/about.md)
   - [Accessibility](../brain/concepts/accessibility.md)
   - [Agentic AI](../brain/concepts/agentic-ai.md)
   - [Agents](../brain/concepts/agents.md)
@@ -69,7 +70,6 @@ Every published page in [`docs/brain/`](../brain/) as it appears in the sidebar:
   - [Development](../brain/concepts/development.md)
   - [Devops](../brain/concepts/devops.md)
   - [Docker](../brain/concepts/docker.md)
-  - [ESG](../brain/concepts/esg.md)
   - [ETL Pipeline Design: Build Scalable Data Pipelines with Python](../brain/concepts/etl-pipeline-design-build-scalable-data-pipelines-with-python.md)
   - [Features](../brain/concepts/features.md)
   - [Frontend](../brain/concepts/frontend.md)

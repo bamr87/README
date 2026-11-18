@@ -28,7 +28,7 @@
   ],
   "counts": {
     "projects": 23,
-    "pages": 4259
+    "pages": 4312
   },
   "projects": {
     "it-journey": {
@@ -37,11 +37,11 @@
       "tree": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
       "registered": true,
-      "pages": 554,
+      "pages": 557,
       "sections": 54,
       "max_depth": 5,
       "skipped": 0,
-      "fingerprint": "44c72f93d1dfda7a"
+      "fingerprint": "a237764155ae7cf9"
     },
     "zer0-mistakes": {
       "title": "Zer0 Mistakes",
@@ -61,11 +61,11 @@
       "tree": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
       "registered": true,
-      "pages": 79,
+      "pages": 80,
       "sections": 16,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "6cda481e6d59dedf"
+      "fingerprint": "fe25737df1f1b2a5"
     },
     "scripts": {
       "title": "Scripts",
@@ -97,11 +97,11 @@
       "tree": "context/nav/bamr87.json",
       "browse": "docs/browse/bamr87.md",
       "registered": true,
-      "pages": 256,
+      "pages": 259,
       "sections": 38,
       "max_depth": 4,
       "skipped": 0,
-      "fingerprint": "91b9d9b339ebd36c"
+      "fingerprint": "8ede29eb6add6ecb"
     },
     "bamr87.github.io": {
       "title": "Personal Site",
@@ -121,11 +121,11 @@
       "tree": "context/nav/bashos.json",
       "browse": "docs/browse/bashos.md",
       "registered": true,
-      "pages": 38,
-      "sections": 8,
-      "max_depth": 3,
+      "pages": 80,
+      "sections": 15,
+      "max_depth": 4,
       "skipped": 0,
-      "fingerprint": "22669e5e45f807f9"
+      "fingerprint": "d97d9acc627e6fd1"
     },
     "cv-pro": {
       "title": "CV Pro",
@@ -157,11 +157,11 @@
       "tree": "context/nav/fredgar-ai.json",
       "browse": "docs/browse/fredgar-ai.md",
       "registered": true,
-      "pages": 36,
+      "pages": 38,
       "sections": 6,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "ac0a94a98977836b"
+      "fingerprint": "6acbd5f9b5a9273f"
     },
     "githubai": {
       "title": "GitHub AI",
@@ -205,11 +205,11 @@
       "tree": "context/nav/law-ai.json",
       "browse": "docs/browse/law-ai.md",
       "registered": true,
-      "pages": 299,
+      "pages": 300,
       "sections": 74,
       "max_depth": 6,
       "skipped": 0,
-      "fingerprint": "03d9518a99ffb655"
+      "fingerprint": "81ea7ff93228b57e"
     },
     "lifehacker.dev": {
       "title": "Lifehacker",
@@ -265,11 +265,11 @@
       "tree": "context/nav/SCHEMA.json",
       "browse": "docs/browse/SCHEMA.md",
       "registered": true,
-      "pages": 35,
+      "pages": 36,
       "sections": 10,
       "max_depth": 5,
       "skipped": 0,
-      "fingerprint": "c307422bd8ced662"
+      "fingerprint": "3af5a8ad7a54eefa"
     },
     "vs-sonic-pi": {
       "title": "VS Sonic Pi",
@@ -341,7 +341,7 @@
       "sections": 2,
       "max_depth": 2,
       "skipped": 0,
-      "fingerprint": "e7f33169fcf5c664"
+      "fingerprint": "99c56b18965350be"
     },
     "results": {
       "title": "Results",

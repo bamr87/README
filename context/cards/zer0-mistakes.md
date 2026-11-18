@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 731c68f9de83d7cc
+source_fingerprint: d4f5934d7a2a1dc3
 tags:
   - accessibility
   - ai
@@ -43,7 +43,7 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~487,449 words across 557 indexed documents
+- ~487,545 words across 557 indexed documents
 - code samples in: bash, yaml, html, text, liquid, markdown, javascript, css
 
 ## Navigation

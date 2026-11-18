@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 36,
-    "fingerprint": "1298713d647bf488",
+    "file_count": 38,
+    "fingerprint": "2e3ddb33eb463bce",
     "path": "docs/fredgar-ai",
     "present": true,
-    "total_bytes": 259305
+    "total_bytes": 278430
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -21,7 +21,7 @@
       "Development"
     ],
     "readme": "README.md",
-    "summary": "Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries.",
+    "summary": "Fredgar AI's direction is to become the ultimate open home for all things financial: data, tools, resources and transparency, with queryable and auditable SEC EDGAR and FRED data, cited AI, and API-first access for everyone (constitution \u00a71).",
     "title": "Fredgar AI"
   },
   "key_docs": [
@@ -30,16 +30,16 @@
     "AGENTS.md",
     "CONTRIBUTING.md",
     "CHANGELOG.md",
+    "SECURITY.md",
     "docs/distributed-storage.md",
-    "PRD.md",
-    "docs/sec-reference/edgar-api.md"
+    "PRD.md"
   ],
   "navigation": {
     "browse": "docs/browse/fredgar-ai.md",
-    "fingerprint": "ac0a94a98977836b",
+    "fingerprint": "6acbd5f9b5a9273f",
     "index": "fredgar-ai/README.md",
     "max_depth": 3,
-    "pages": 36,
+    "pages": 38,
     "present": true,
     "sections": 6,
     "skipped": 0,
@@ -47,7 +47,7 @@
     "top_sections": [
       {
         "index": "fredgar-ai/docs/README.md",
-        "pages": 26,
+        "pages": 27,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -68,7 +68,7 @@
   },
   "rollups": {
     "categories": {
-      "fredgar-ai": 36
+      "fredgar-ai": 38
     },
     "code_languages": [
       "bash",
@@ -78,7 +78,7 @@
       "mermaid",
       "sql"
     ],
-    "indexed_documents": 36,
+    "indexed_documents": 38,
     "top_tags": [
       "entity-resolution",
       "master-data",
@@ -96,7 +96,7 @@
       "sec-edgar",
       "wikidata"
     ],
-    "total_words": 34477
+    "total_words": 37373
   },
   "schema_version": "1.0",
   "signals": {
@@ -105,7 +105,7 @@
     "has_claude_md": true,
     "has_contributing": true,
     "has_schema_md": false,
-    "has_security_policy": false
+    "has_security_policy": true
   },
   "structure": {
     "root_docs": [
@@ -114,11 +114,12 @@
       "CLAUDE.md",
       "CONTRIBUTING.md",
       "PRD.md",
-      "README.md"
+      "README.md",
+      "SECURITY.md"
     ],
     "top_dirs": [
       {
-        "doc_count": 26,
+        "doc_count": 27,
         "name": "docs"
       },
       {

@@ -54,12 +54,12 @@ title: Zer0 CMS
 - [[brain/concepts/ci-cd|CI CD]] (6)
 - [[brain/concepts/seo|SEO]] (6)
 - [[brain/concepts/css|CSS]] (5)
-- [[brain/concepts/esg|ESG]] (5)
+- [[brain/concepts/quickstart|Quickstart]] (5)
 
 ## Shares concepts with
 
-- [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (112)
-- [[brain/projects/it-journey|IT Journey]] (86)
+- [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (111)
+- [[brain/projects/it-journey|IT Journey]] (87)
 - [[brain/projects/bamr87.github.io|Personal Site]] (20)
 - [[brain/projects/law-ai|Law AI]] (6)
 - [[brain/projects/bashos|BashOS]] (5)

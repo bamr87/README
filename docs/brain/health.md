@@ -11,7 +11,7 @@ title: Vault health
 
 # Vault health
 
-**228** unresolved link targets, **1773** orphan pages, **316** titles shared by more than one page. Fix these upstream: `docs/` is regenerated.
+**228** unresolved link targets, **1778** orphan pages, **316** titles shared by more than one page. Fix these upstream: `docs/` is regenerated.
 
 ## Unresolved links
 
@@ -87,11 +87,11 @@ title: Vault health
 | OverTheWire-website | 230 |
 | law-ai | 90 |
 | vs-sonic-pi | 90 |
-| it-journey | 88 |
-| bamr87 | 76 |
+| it-journey | 87 |
+| bamr87 | 78 |
 | bamr87.github.io | 69 |
 | gitorio | 55 |
-| bashcrawl | 40 |
+| bashcrawl | 41 |
 | lifehacker.dev | 30 |
 | SCHEMA | 22 |
 | githubai | 12 |
@@ -99,9 +99,9 @@ title: Vault health
 | rewind-arcade | 8 |
 | fredgar-ai | 7 |
 | outbox | 6 |
+| bashos | 5 |
 | godotgo | 5 |
 | scripts | 3 |
-| bashos | 2 |
 | djangoerp | 2 |
 | ocrmd | 2 |
 | zpl-viewer | 2 |
@@ -121,11 +121,11 @@ title: Vault health
 | Architecture Decision Records | 20 |
 | ADR 0001 — Record architecture decisions | 18 |
 | ADR NNNN — Title in sentence case | 18 |
+| Security Policy | 13 |
 | Documentation | 10 |
-| Security Policy | 10 |
-| Getting Started | 8 |
+| Getting Started | 9 |
+| Architecture | 8 |
 | About | 7 |
-| Architecture | 7 |
 | scripts | 7 |
 | contributing | 6 |
 | AGENTS.md | 5 |
@@ -136,6 +136,7 @@ title: Vault health
 | Tags | 5 |
 | {{title}} | 5 |
 | <% tp.file.title %> | 5 |
+| Troubleshooting | 5 |
 | Amr Abdel-Motaleb | 4 |
 | Categories | 4 |
 | Customization | 4 |
@@ -145,11 +146,12 @@ title: Vault health
 | Law AI | 4 |
 | lifehacker.dev | 4 |
 | Live Coding | 4 |
+| Make Targets | 4 |
 | NEW — Agent merge of mergeable PRs, and a review gate | 4 |
 | Notes | 4 |
 | Roadmap | 4 |
 | SCHEMA — features | 4 |
-| Troubleshooting | 4 |
+| Testing | 4 |
 | Wargames | 4 |
 | Wizard Topples Capitalist Dominance Ingeniously | 4 |
 | AI Usage & Cost | 3 |
@@ -171,6 +173,4 @@ title: Vault health
 | Google Tag Manager | 3 |
 | Installation | 3 |
 | Liquid | 3 |
-| Make Targets | 3 |
 | MathJax Math | 3 |
-| Navigation | 3 |

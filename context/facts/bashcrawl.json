@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 79,
-    "fingerprint": "72cc36411c63e96f",
+    "file_count": 80,
+    "fingerprint": "239df1ff2a84c7e0",
     "path": "docs/bashcrawl",
     "present": true,
-    "total_bytes": 356673
+    "total_bytes": 358047
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -29,17 +29,17 @@
     "CLAUDE.md",
     "AGENTS.md",
     "CHANGELOG.md",
+    "SECURITY.md",
     "docs/ARCHITECTURE.md",
     "docs/walkthrough.md",
-    "docs/termforge/architecture.md",
-    "docs/termforge/hidden-gem.md"
+    "docs/termforge/architecture.md"
   ],
   "navigation": {
     "browse": "docs/browse/bashcrawl.md",
-    "fingerprint": "6cda481e6d59dedf",
+    "fingerprint": "fe25737df1f1b2a5",
     "index": "bashcrawl/README.md",
     "max_depth": 3,
-    "pages": 79,
+    "pages": 80,
     "present": true,
     "sections": 16,
     "skipped": 0,
@@ -93,7 +93,7 @@
   },
   "rollups": {
     "categories": {
-      "bashcrawl": 79
+      "bashcrawl": 80
     },
     "code_languages": [
       "bash",
@@ -103,9 +103,9 @@
       "json",
       "yaml"
     ],
-    "indexed_documents": 79,
+    "indexed_documents": 80,
     "top_tags": [],
-    "total_words": 46359
+    "total_words": 46532
   },
   "schema_version": "1.0",
   "signals": {
@@ -114,7 +114,7 @@
     "has_claude_md": true,
     "has_contributing": false,
     "has_schema_md": false,
-    "has_security_policy": false
+    "has_security_policy": true
   },
   "structure": {
     "root_docs": [
@@ -122,7 +122,8 @@
       "CHANGELOG.md",
       "CLAUDE.md",
       "PRD.md",
-      "README.md"
+      "README.md",
+      "SECURITY.md"
     ],
     "top_dirs": [
       {

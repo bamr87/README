@@ -17,7 +17,7 @@ To see how it all connects, open the [Second Brain](brain/index.md): the [graph]
 
 ### [README - it-journey](it-journey/README.md)
 
-Educational IT platform with quests, blog posts, and technical documentation. *(554 documents, 54 sections)*
+Educational IT platform with quests, blog posts, and technical documentation. *(557 documents, 54 sections)*
 
 [Content map](browse/it-journey.md)
 
@@ -29,7 +29,7 @@ Jekyll theme and software architecture patterns for GitHub Pages. *(557 document
 
 ### [Bashcrawl](bashcrawl/README.md)
 
-Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(79 documents, 16 sections)*
+Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(80 documents, 16 sections)*
 
 [Content map](browse/bashcrawl.md)
 
@@ -47,7 +47,7 @@ OverTheWire wargame guides and security-challenge documentation (external refere
 
 ### [👋 Hi, I'm Amr Abdel-Motaleb](bamr87/README.md)
 
-Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashboards. *(256 documents, 38 sections)*
+Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashboards. *(259 documents, 38 sections)*
 
 [Content map](browse/bamr87.md)
 
@@ -59,7 +59,7 @@ Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built
 
 ### [bashOS](bashos/README.md)
 
-Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine. *(38 documents, 8 sections)*
+Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine. *(80 documents, 15 sections)*
 
 [Content map](browse/bashos.md)
 
@@ -77,7 +77,7 @@ Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, 
 
 ### [Fredgar AI](fredgar-ai/README.md)
 
-Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries. *(36 documents, 6 sections)*
+Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries. *(38 documents, 6 sections)*
 
 [Content map](browse/fredgar-ai.md)
 
@@ -101,7 +101,7 @@ Godot 4 game workspace: one reusable framework, five sample games and tooling th
 
 ### [Law AI](law-ai/README.md)
 
-Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama. *(299 documents, 74 sections)*
+Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama. *(300 documents, 74 sections)*
 
 [Content map](browse/law-ai.md)
 
@@ -131,7 +131,7 @@ Retro gaming workspace: browser arcade recreations, console emulation via ES-DE,
 
 ### [Pyramid Schema (SCHEMA.md)](SCHEMA/README.md)
 
-Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it. *(35 documents, 10 sections)*
+Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it. *(36 documents, 10 sections)*
 
 [Content map](browse/SCHEMA.md)
 

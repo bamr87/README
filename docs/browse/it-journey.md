@@ -9,7 +9,7 @@ nav_exclude: true
 
 # IT Journey - content map
 
-Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **554 pages** across **54 sections** (max depth 5).
+Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **557 pages** across **54 sections** (max depth 5).
 
 - **[Repository & tooling](../it-journey/redirects/README.md)** <small>(54)</small>
   - **[redirects/](../it-journey/redirects/README.md)** <small>(43)</small>
@@ -93,22 +93,25 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Digs](../it-journey/_data/brand/sections/dig.md)
       - [Docs](../it-journey/_data/brand/sections/docs.md)
       - [Quests](../it-journey/_data/brand/sections/quest.md)
-- **[Documentation](../it-journey/docs/README.md)** <small>(40)</small>
+- **[Documentation](../it-journey/docs/README.md)** <small>(43)</small>
   - [it-journey documentation](../it-journey/docs/README.md)
   - [Developer Contribution Guide](../it-journey/docs/CONTRIBUTING_DEVELOPER.md)
+  - [IT-Journey Pillars in Practice](../it-journey/docs/pillars-in-practice.md)
   - [it-journey — Constitution](../it-journey/docs/constitution.md)
   - [IT-Journey: The Master Roadmap](../it-journey/docs/ROADMAP.md)
+  - [KIS / KISS fix (draft, not applied)](../it-journey/docs/kis-kiss-fix.md)
   - [Making one-paragraph-per-line universal across repos](../it-journey/docs/prose-oneline-universal.md)
   - [Notes Workbench — the design](../it-journey/docs/notes/WORKBENCH.md)
-  - [Purpose](../it-journey/docs/purpose-page-rewrite.md)
+  - [Technical Concepts Library](../it-journey/docs/technical-concepts-library.md)
   - [Testing Frameworks](../it-journey/docs/testing/TESTING_FRAMEWORKS.md)
   - **[Agent Evaluation & Tuning (GH-600 Domain 4, implemented)](../it-journey/docs/agents/README.md)** <small>(3)</small>
     - [Agent Evaluation & Tuning (GH-600 Domain 4, implemented)](../it-journey/docs/agents/README.md)
     - [Agent Failure RCA — <date> <short title>](../it-journey/docs/agents/rca-template.md)
     - [Agent Instruction Changelog](../it-journey/docs/agents/instructions-changelog.md)
-  - **[Amendments — it-journey](../it-journey/docs/amendments/README.md)** <small>(6)</small>
+  - **[Amendments — it-journey](../it-journey/docs/amendments/README.md)** <small>(7)</small>
     - [Amendments — it-journey](../it-journey/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../it-journey/docs/amendments/0001-ratify-constitution.md)
+    - [0004 — Missions](../it-journey/docs/amendments/0004-mission-statement.md)
     - [NNNN — Title of the amendment](../it-journey/docs/amendments/0000-template.md)
     - **[docs/amendments/proposed/ — unnumbered amendment records](../it-journey/docs/amendments/proposed/README.md)** <small>(3)</small>
       - [docs/amendments/proposed/ — unnumbered amendment records](../it-journey/docs/amendments/proposed/README.md)
@@ -165,7 +168,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
     - [bamr87](../it-journey/pages/_about/profile/bamr87.md)
     - [IT-Journey Versioning: Semver and Release Strategy](../it-journey/pages/_about/versioning.md)
     - [Learning Platform Features](../it-journey/pages/_about/features/index.md)
-    - [Purpose](../it-journey/pages/_about/purpose.md)
+    - [Purpose — Free, Open IT Education for Everyone](../it-journey/pages/_about/purpose.md)
     - **Contribute** <small>(6)</small>
       - [Contributing to IT-Journey](../it-journey/pages/_about/contribute/contributing.md)
       - **[Contributors](../it-journey/pages/_about/contribute/contributors/index.md)** <small>(5)</small>

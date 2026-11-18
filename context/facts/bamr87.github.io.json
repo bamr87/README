@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 94,
-    "fingerprint": "e130ade97a2fc644",
+    "fingerprint": "73aa80ba8cdc6a5e",
     "path": "docs/bamr87.github.io",
     "present": true,
-    "total_bytes": 1042399
+    "total_bytes": 1038322
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -105,7 +105,7 @@
       "about",
       "principles"
     ],
-    "total_words": 143405
+    "total_words": 142866
   },
   "schema_version": "1.0",
   "signals": {

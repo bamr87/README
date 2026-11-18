@@ -55,6 +55,7 @@ The fleet's documentation as one linked knowledge base. Open `docs/` as a vault 
 
 ## Concepts
 
+- [[brain/concepts/about|About]] (5)
 - [[brain/concepts/accessibility|Accessibility]] (25)
 - [[brain/concepts/agentic-ai|Agentic AI]] (32)
 - [[brain/concepts/agents|Agents]] (6)
@@ -77,7 +78,7 @@ The fleet's documentation as one linked knowledge base. Open `docs/` as a vault 
 - [[brain/concepts/beginner|Beginner]] (21)
 - [[brain/concepts/bootstrap|Bootstrap]] (34)
 - [[brain/concepts/bootstrap-integration|Bootstrap Integration]] (16)
-- [[brain/concepts/changelog|Changelog]] (7)
+- [[brain/concepts/changelog|Changelog]] (8)
 - [[brain/concepts/cheatsheet|Cheatsheet]] (7)
 - [[brain/concepts/ci|CI]] (6)
 - [[brain/concepts/ci-cd|CI CD]] (41)
@@ -103,7 +104,6 @@ The fleet's documentation as one linked knowledge base. Open `docs/` as a vault 
 - [[brain/concepts/development|Development]] (29)
 - [[brain/concepts/devops|Devops]] (40)
 - [[brain/concepts/docker|Docker]] (58)
-- [[brain/concepts/esg|ESG]] (7)
 - [[brain/concepts/etl-pipeline-design-build-scalable-data-pipelines-with-python|ETL Pipeline Design: Build Scalable Data Pipelines with Python]] (5)
 - [[brain/concepts/features|Features]] (11)
 - [[brain/concepts/frontend|Frontend]] (20)
@@ -156,7 +156,7 @@ The fleet's documentation as one linked knowledge base. Open `docs/` as a vault 
 - [[brain/concepts/observability|Observability]] (11)
 - [[brain/concepts/obsidian|Obsidian]] (29)
 - [[brain/concepts/onboarding|Onboarding]] (6)
-- [[brain/concepts/open-source|Open Source]] (13)
+- [[brain/concepts/open-source|Open Source]] (14)
 - [[brain/concepts/operations|Operations]] (9)
 - [[brain/concepts/os-selection|OS Selection]] (7)
 - [[brain/concepts/performance|Performance]] (11)

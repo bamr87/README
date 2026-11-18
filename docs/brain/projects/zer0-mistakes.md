@@ -16,7 +16,7 @@ title: Zer0 Mistakes
 > [!info] theme: `bamr87/zer0-mistakes`
 > Jekyll theme and software architecture patterns for GitHub Pages.
 
-**557** pages collected from commit `61be17017ef7` (2026-11-16).
+**557** pages collected from commit `41ade3ec52c1` (2026-11-18).
 
 ## Most connected pages
 
@@ -58,9 +58,9 @@ title: Zer0 Mistakes
 
 ## Shares concepts with
 
-- [[brain/projects/zer0-CMS|Zer0 CMS]] (112)
-- [[brain/projects/it-journey|IT Journey]] (86)
-- [[brain/projects/bamr87.github.io|Personal Site]] (19)
+- [[brain/projects/zer0-CMS|Zer0 CMS]] (111)
+- [[brain/projects/it-journey|IT Journey]] (88)
+- [[brain/projects/bamr87.github.io|Personal Site]] (20)
 - [[brain/projects/law-ai|Law AI]] (6)
 - [[brain/projects/gitorio|Gitorio]] (5)
 - [[brain/projects/bashos|BashOS]] (4)

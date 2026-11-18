@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 6fe8b887a3876b90
+source_fingerprint: cc681bf3a9e4e2a4
 tags:
   - claude-code
   - github-projects
@@ -33,7 +33,7 @@ tags:
 | Kind | hub |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bamr87` - 256 docs |
+| Corpus | `docs/bamr87` - 259 docs |
 | External | no |
 
 ## Signals
@@ -43,18 +43,18 @@ tags:
 - has AGENTS.md operating manual
 - has a contribution guide
 - keeps a changelog
-- ~430,724 words across 256 indexed documents
+- ~442,245 words across 259 indexed documents
 - code samples in: bash, text, yaml, plaintext, json, markdown, python, console
 
 ## Navigation
 
-256 published pages in 38 sections (max depth 4) — [browse the full map](../../docs/browse/bamr87.md) · [tree as JSON](../nav/bamr87.json)
+259 published pages in 38 sections (max depth 4) — [browse the full map](../../docs/browse/bamr87.md) · [tree as JSON](../nav/bamr87.json)
 
-- **changelog.d/ — pending changelog entries** (2 pages)
+- **changelog.d/ — pending changelog entries** (4 pages)
 - **compose/ — the hub's half of the fleet dev stack** (3 pages)
 - **Data** (6 pages)
 - **diagrams/** (4 pages)
-- **Documentation** (161 pages)
+- **Documentation** (162 pages)
 - **evals** (4 pages)
 - **features/** (4 pages)
 - **Infrastructure** (3 pages)

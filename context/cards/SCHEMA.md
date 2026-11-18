@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 77ffc73e4a825563
+source_fingerprint: a730b9464b43dd5f
 tags:
   - agents
   - claude-code
@@ -18,7 +18,7 @@ tags:
 
 # Pyramid Schema (SCHEMA.md)
 
-> Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it.
+> Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it. Pyramid Schema's direction is to become the ultimate open home for all things repository structure: data, tools, resources and transparency, with a SCHEMA.md protocol and linter so agents look up structure instead of guessing, for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -26,7 +26,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/SCHEMA` - 35 docs |
+| Corpus | `docs/SCHEMA` - 36 docs |
 | External | no |
 
 ## Signals
@@ -35,14 +35,14 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~12,871 words across 35 indexed documents
+- ~13,870 words across 36 indexed documents
 - code samples in: plaintext, bash, markdown, python
 
 ## Navigation
 
-35 published pages in 10 sections (max depth 5) — [browse the full map](../../docs/browse/SCHEMA.md) · [tree as JSON](../nav/SCHEMA.json)
+36 published pages in 10 sections (max depth 5) — [browse the full map](../../docs/browse/SCHEMA.md) · [tree as JSON](../nav/SCHEMA.json)
 
-- **Documentation** (10 pages)
+- **Documentation** (11 pages)
 - **Example** (11 pages)
 - **Protocol** (2 pages)
 - **Spec** (2 pages)
@@ -57,7 +57,7 @@ tags:
 - [`CHANGELOG.md`](../../docs/SCHEMA/CHANGELOG.md)
 - [`docs/2026-09-03-the-copy-you-forgot-you-made.md`](../../docs/SCHEMA/docs/2026-09-03-the-copy-you-forgot-you-made.md)
 - [`spec/pyramid-schema-spec-v0.1.md`](../../docs/SCHEMA/spec/pyramid-schema-spec-v0.1.md)
-- [`docs/2026-07-15-pyramid-schema-schema-md-for-ai-agents.md`](../../docs/SCHEMA/docs/2026-07-15-pyramid-schema-schema-md-for-ai-agents.md)
+- [`docs/constitution.md`](../../docs/SCHEMA/docs/constitution.md)
 
 ## Query this context
 

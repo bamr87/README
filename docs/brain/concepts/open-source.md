@@ -4,7 +4,7 @@ aliases:
 category: brain
 generated: true
 kind: concept
-pages: 13
+pages: 14
 projects: 5
 tags:
 - brain/concept
@@ -16,11 +16,11 @@ title: Open Source
 # Open Source
 
 > [!abstract] Summary
-> 13 pages across 5 projects (IT Journey, Zer0 CMS, Zer0 Mistakes, Personal Site) cover this subject.
+> 14 pages across 5 projects (IT Journey, Zer0 CMS, Zer0 Mistakes, Personal Site) cover this subject.
 
 ## Across the fleet
 
-### [[brain/projects/it-journey|IT Journey]] (7)
+### [[brain/projects/it-journey|IT Journey]] (8)
 
 - [[it-journey/pages/_quests/codex/zer0-to-her0-cmstyle|Epic Quest: Zer0-to-Her0 CMStyle]]
 - [[it-journey/pages/_quests/codex/twin-rigs|Epic Quest: The Twin Rigs]]
@@ -28,6 +28,7 @@ title: Open Source
 - [[it-journey/pages/_quests/1111/open-source-contribution|Open Source Contribution: Maintaining and Licensing]]
 - [[it-journey/pages/_quests/1000/twin-rigs-07-the-free-stalls|The Free Stalls: Stock SteamOS with Open Source Games]]
 - [[it-journey/pages/_about/contribute/contributing|Contributing to IT-Journey]]
+- [[it-journey/pages/_about/purpose|Purpose — Free, Open IT Education for Everyone]]
 - [[it-journey/pages/_about/about|About IT-Journey — From zer0 to her0]]
 
 ### [[brain/projects/zer0-CMS|Zer0 CMS]] (2)
@@ -50,6 +51,6 @@ title: Open Source
 
 ## Related concepts
 
-- [[brain/concepts/esg|ESG]] (3 shared pages)
+- [[brain/concepts/about|About]] (3 shared pages)
 - [[brain/concepts/architecture|Architecture]] (2 shared pages)
 - [[brain/concepts/collaboration|Collaboration]] (2 shared pages)

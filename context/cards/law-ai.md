@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: a85803e83ade1919
+source_fingerprint: 7e3c333701a10cc0
 tags:
   - conditional
   - diagnosis
@@ -33,7 +33,7 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/law-ai` - 299 docs |
+| Corpus | `docs/law-ai` - 300 docs |
 | External | no |
 
 ## Signals
@@ -41,12 +41,13 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~392,417 words across 299 indexed documents
+- has a security policy
+- ~394,581 words across 300 indexed documents
 - code samples in: bash, plaintext, json, mermaid, python, yaml, sql, cypher
 
 ## Navigation
 
-299 published pages in 74 sections (max depth 6) — [browse the full map](../../docs/browse/law-ai.md) · [tree as JSON](../nav/law-ai.json)
+300 published pages in 74 sections (max depth 6) — [browse the full map](../../docs/browse/law-ai.md) · [tree as JSON](../nav/law-ai.json)
 
 - **Documentation** (46 pages)
 - **Law AI — Backend** (60 pages)
@@ -59,10 +60,10 @@ tags:
 - [`CLAUDE.md`](../../docs/law-ai/CLAUDE.md)
 - [`AGENTS.md`](../../docs/law-ai/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/law-ai/CHANGELOG.md)
+- [`SECURITY.md`](../../docs/law-ai/SECURITY.md)
 - [`BACKLOG.md`](../../docs/law-ai/BACKLOG.md)
 - [`specs/052-backlog-zero/tasks.md`](../../docs/law-ai/specs/052-backlog-zero/tasks.md)
 - [`docs/data-model.md`](../../docs/law-ai/docs/data-model.md)
-- [`docs/prd.md`](../../docs/law-ai/docs/prd.md)
 
 ## Query this context
 

@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 38
+pages: 80
 repo: bamr87/bashos
 tags:
 - brain/project
@@ -16,21 +16,21 @@ title: BashOS
 > [!info] tooling: `bamr87/bashos`
 > Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine.
 
-**38** pages collected from commit `fa83080c237d` (2026-11-11).
+**80** pages collected from commit `94417f6f537b` (2026-11-18).
 
 ## Most connected pages
 
+- [[bashos/one-os/docs/README|one-os documentation]]
 - [[bashos/README|bashOS]]
 - [[bashos/AGENTS|bashos]]
 - [[bashos/docs/constitution|bashos — Constitution]]
+- [[bashos/docs/adr/0004-one-os|ADR 0004 — one-os lives in bashos: one tool to build, boot, manage and deploy machines]]
 - [[bashos/docs/frontend/README|bashOS L6 OS Shell — Frontend Docs]]
+- [[bashos/one-os/docs/epics/0001-bashos-and-amrchy|Epic: bashOS and Amrchy as bootable systems]]
+- [[bashos/one-os/docs/user-guide/01-getting-started|Getting started]]
 - [[bashos/docs/HARNESS|The bashOS Orchestration Harness]]
 - [[bashos/docs/OS|bashOS, the operating system]]
 - [[bashos/docs/adr/0002-bashos-os-debian-mkosi|ADR 0002 — bashOS the OS is an Omarchy-style layer on Debian 13, imaged with mkosi]]
-- [[bashos/os/README|os — bashOS as the operating system]]
-- [[bashos/CONTRIBUTING|Contributing to bashOS]]
-- [[bashos/docs/DESKTOP|The bashOS Desktop]]
-- [[bashos/docs/adr/0003-bashos-on-omarchy|ADR 0003 — bashOS by BASH Consulting is a fork of Omarchy, kept current by an AI-assisted upstream sync]]
 - [[bashos/docs/adr/README|Architecture Decision Records]]
 
 ## Concepts

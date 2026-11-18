@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 299
+pages: 300
 repo: bamr87/law-ai
 tags:
 - brain/project
@@ -16,15 +16,15 @@ title: Law AI
 > [!info] app: `bamr87/law-ai`
 > Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama.
 
-**299** pages collected from commit `ce8e5640e5cd` (2026-11-15).
+**300** pages collected from commit `511add3c55e2` (2026-11-18).
 
 ## Most connected pages
 
 - [[law-ai/AGENTS|Law AI — Agent Coding Instructions]]
 - [[law-ai/docs/architecture|Law AI Architecture]]
 - [[law-ai/docs/constitution|Law AI — Constitution]]
-- [[law-ai/docs/adr/0005-claude-default-runtime|ADR 0005 — Claude-default LLM provider chain]]
 - [[law-ai/README|Law AI]]
+- [[law-ai/docs/adr/0005-claude-default-runtime|ADR 0005 — Claude-default LLM provider chain]]
 - [[law-ai/docs/prd|Law AI]]
 - [[law-ai/specs/005-lsat-lab/spec|Spec: LSAT Lab]]
 - [[law-ai/docs/adr/README|Architecture Decision Records]]
