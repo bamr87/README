@@ -1,5 +1,6 @@
 """
-Integration tests for the documentation aggregator.
+Integration tests for the documentation aggregator. The crawl tests run the
+real crawler, scripts/aggregate.sh, against GitHub, so they need the network.
 """
 
 import os
@@ -11,13 +12,13 @@ from pathlib import Path
 # Add the project root to the path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from scripts.aggregate import process_repository
 from scripts.process import main as process_main
+from tests.crawl import repo_dir_name, run_aggregate
 
 
 class TestIntegration(unittest.TestCase):
     """Integration tests for the full documentation aggregator workflow."""
-    
+
     def setUp(self):
         """Set up test fixtures."""
         self.orig_cwd = os.getcwd()
@@ -26,6 +27,8 @@ class TestIntegration(unittest.TestCase):
         self.docs_dir = Path(self.temp_dir) / "docs"
         self.raw_docs_dir.mkdir()
         self.docs_dir.mkdir()
+        # aggregate.sh gets a working directory of its own
+        self.crawl_dir = Path(self.temp_dir) / "crawl"
 
     def tearDown(self):
         """Clean up test fixtures."""
@@ -34,69 +37,54 @@ class TestIntegration(unittest.TestCase):
         # later tests that rely on repo-relative paths.
         os.chdir(self.orig_cwd)
         shutil.rmtree(self.temp_dir)
-    
+
+    def crawled_files(self, repo_url):
+        corpus = self.crawl_dir / "docs" / repo_dir_name(repo_url)
+        return [p for p in corpus.rglob("*") if p.is_file()]
+
     def test_full_workflow_simple_repo(self):
-        """Test the full workflow with a simple repository."""
-        # Test with a simple repository
+        """Crawl a small public repository end to end with scripts/aggregate.sh."""
         repo_url = "https://github.com/octocat/Hello-World"
-        
-        # Process repository
-        result = process_repository(repo_url, self.temp_dir, str(self.raw_docs_dir))
-        
-        # Check repository processing
-        self.assertTrue(result['success'])
-        self.assertGreater(result['files_found'], 0)
-        self.assertGreater(result['files_copied'], 0)
-        
-        # Check if files were copied
-        raw_files = list(self.raw_docs_dir.rglob("*"))
-        self.assertGreater(len(raw_files), 0)
-        
-        # Process the files
-        os.chdir(self.temp_dir)
-        process_main()
-        
-        # Check if organized files were created (Hello-World ships a bare
-        # "README" with no .md extension; filenames are preserved)
-        organized_files = [p for p in self.docs_dir.rglob("*") if p.is_file()]
+
+        result = run_aggregate(self.crawl_dir, [repo_url])
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+        # Hello-World ships a bare "README" with no .md extension; filenames
+        # are preserved
+        organized_files = self.crawled_files(repo_url)
         self.assertGreater(len(organized_files), 0)
-        
+
         # Check if files have front matter
         for file_path in organized_files:
             content = file_path.read_text()
             self.assertIn("---", content)  # Should have front matter
             self.assertIn("title:", content)
             self.assertIn("source_file:", content)
-    
+
     def test_workflow_with_multiple_repos(self):
         """Test workflow with multiple repositories."""
         repos = [
             "https://github.com/octocat/Hello-World",
             # Add more repos as needed for testing
         ]
-        
-        results = []
+
+        result = run_aggregate(self.crawl_dir, repos)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+        # Check that every repository reached the corpus
         for repo_url in repos:
-            result = process_repository(repo_url, self.temp_dir, str(self.raw_docs_dir))
-            results.append(result)
-        
-        # Check that all repositories were processed successfully
-        for result in results:
-            self.assertTrue(result['success'])
-            self.assertGreater(result['files_found'], 0)
-    
+            self.assertGreater(len(self.crawled_files(repo_url)), 0, repo_url)
+
     def test_error_handling_invalid_repo(self):
-        """Test error handling with invalid repository URL."""
+        """A repository that cannot be cloned fails the crawl and is named."""
         invalid_repo = "https://github.com/nonexistent/repo"
-        
-        result = process_repository(invalid_repo, self.temp_dir, str(self.raw_docs_dir))
-        
-        # Should handle error gracefully
-        self.assertFalse(result['success'])
-        self.assertIsNotNone(result['error'])
-        self.assertEqual(result['files_found'], 0)
-        self.assertEqual(result['files_copied'], 0)
-    
+
+        result = run_aggregate(self.crawl_dir, [invalid_repo])
+
+        self.assertEqual(result.returncode, 1, result.stdout + result.stderr)
+        self.assertIn(f"  - {invalid_repo}\n", result.stderr)
+        self.assertEqual(self.crawled_files(invalid_repo), [])
+
     def test_file_organization_by_repo(self):
         """Test that files are organized under docs/{repo_name}/."""
         # Create test files with different content

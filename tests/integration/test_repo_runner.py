@@ -1,9 +1,10 @@
 """
-Integration test runner for testing against real GitHub repositories.
+Integration test runner for testing against real GitHub repositories. Each
+repository is crawled by the real crawler, scripts/aggregate.sh, in a working
+directory of its own.
 """
 
 import json
-import os
 import sys
 import tempfile
 import time
@@ -13,9 +14,8 @@ from pathlib import Path
 # Add the project root to the path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from scripts.aggregate import process_repository
-from scripts.process import main as process_main
 from tests.config import TEST_CONFIG, get_test_output_path
+from tests.crawl import repo_dir_name, run_aggregate
 
 
 class RepoTestRunner:
@@ -56,66 +56,53 @@ class RepoTestRunner:
         start_time = time.time()
         
         try:
-            # Process repository
-            raw_docs_dir = Path(self.temp_dir) / "raw_docs"
-            raw_docs_dir.mkdir(exist_ok=True)
-            
-            process_result = process_repository(repo_url, self.temp_dir, str(raw_docs_dir))
-            
-            if not process_result['success']:
-                repo_result['error'] = process_result['error']
+            # Crawl the repository: clone, copy, process, unwrap
+            crawl_dir = Path(tempfile.mkdtemp(dir=self.temp_dir))
+            crawl = run_aggregate(crawl_dir, [repo_url])
+
+            if crawl.returncode != 0:
+                repo_result['error'] = (crawl.stderr or crawl.stdout).strip()[-500:]
                 return repo_result
-            
-            repo_result['files_found'] = process_result['files_found']
-            repo_result['files_copied'] = process_result['files_copied']
-            
-            # Process files with Python script
-            docs_dir = Path(self.temp_dir) / "docs"
-            docs_dir.mkdir(exist_ok=True)
-            
-            # Change to temp directory for processing
-            original_cwd = os.getcwd()
-            os.chdir(self.temp_dir)
-            
-            try:
-                process_main()
-                
-                # Count organized files
-                organized_files = list(docs_dir.rglob("*.md"))
-                repo_result['files_organized'] = len(organized_files)
-                
-                # Analyze file details
-                for file_path in organized_files:
-                    try:
-                        content = file_path.read_text()
-                        
-                        # Extract front matter
-                        if content.startswith('---'):
-                            fm_end = content.find('---', 3)
-                            if fm_end > 0:
-                                import yaml
-                                fm_content = content[3:fm_end]
-                                fm_data = yaml.safe_load(fm_content)
-                                
-                                if fm_data and 'category' in fm_data:
-                                    repo_result['categories_found'].add(fm_data['category'])
-                                
-                                file_detail = {
-                                    'path': str(file_path.relative_to(docs_dir)),
-                                    'category': fm_data.get('category', 'unknown') if fm_data else 'unknown',
-                                    'title': fm_data.get('title', 'unknown') if fm_data else 'unknown',
-                                    'tags': fm_data.get('tags', []) if fm_data else [],
-                                    'has_summary': 'summary' in fm_data if fm_data else False
-                                }
-                                repo_result['file_details'].append(file_detail)
-                    except Exception as e:
-                        print(f"Error analyzing file {file_path}: {e}")
-                
-                repo_result['success'] = True
-                
-            finally:
-                os.chdir(original_cwd)
-            
+
+            docs_dir = crawl_dir / "docs"
+            corpus = docs_dir / repo_dir_name(repo_url)
+            crawled_files = [p for p in corpus.rglob("*") if p.is_file()]
+            repo_result['files_found'] = len(crawled_files)
+            repo_result['files_copied'] = len(crawled_files)
+
+            # Count organized files
+            organized_files = list(corpus.rglob("*.md"))
+            repo_result['files_organized'] = len(organized_files)
+
+            # Analyze file details
+            for file_path in organized_files:
+                try:
+                    content = file_path.read_text()
+
+                    # Extract front matter
+                    if content.startswith('---'):
+                        fm_end = content.find('---', 3)
+                        if fm_end > 0:
+                            import yaml
+                            fm_content = content[3:fm_end]
+                            fm_data = yaml.safe_load(fm_content)
+
+                            if fm_data and 'category' in fm_data:
+                                repo_result['categories_found'].add(fm_data['category'])
+
+                            file_detail = {
+                                'path': str(file_path.relative_to(docs_dir)),
+                                'category': fm_data.get('category', 'unknown') if fm_data else 'unknown',
+                                'title': fm_data.get('title', 'unknown') if fm_data else 'unknown',
+                                'tags': fm_data.get('tags', []) if fm_data else [],
+                                'has_summary': 'summary' in fm_data if fm_data else False
+                            }
+                            repo_result['file_details'].append(file_detail)
+                except Exception as e:
+                    print(f"Error analyzing file {file_path}: {e}")
+
+            repo_result['success'] = True
+
         except Exception as e:
             repo_result['error'] = str(e)
         

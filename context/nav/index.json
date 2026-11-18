@@ -11,7 +11,7 @@
   ],
   "counts": {
     "projects": 6,
-    "pages": 2290
+    "pages": 2291
   },
   "projects": {
     "it-journey": {
@@ -104,11 +104,11 @@
       "tree": "context/nav/amendments.json",
       "browse": "docs/browse/amendments.md",
       "registered": false,
-      "pages": 3,
+      "pages": 4,
       "sections": 0,
       "max_depth": 1,
       "skipped": 0,
-      "fingerprint": "a763036fe9f9e13b"
+      "fingerprint": "2de79048bf37776f"
     },
     "results": {
       "title": "Results",

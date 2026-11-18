@@ -9,7 +9,7 @@ generated: true
 
 # Content map
 
-**2,290** published pages across **6** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
+**2,291** published pages across **6** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
 
 | Corpus | Pages | Sections | Top-level sections |
 |---|---:|---:|---|
@@ -25,7 +25,7 @@ generated: true
 Corpora published from `docs/` that no registry entry claims — they navigate under **Reference**.
 
 - **Adr** — 3 pages (`docs/adr/`)
-- **Amendments** — 3 pages (`docs/amendments/`)
+- **Amendments** — 4 pages (`docs/amendments/`)
 - **Results** — 1 page (`docs/results/`)
 - **Setup** — 1 page (`docs/setup/`)
 - **Wargames** — 1 page (`docs/wargames/`)

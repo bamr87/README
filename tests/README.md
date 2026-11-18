@@ -21,7 +21,7 @@ tests/
 │   │   ├── test_context_engine.py # registry, extractor, navigator, synthesizer, index/query, AI provider, secret screen, hooks, schema lint, MCP
 │   │   ├── test_file_processing.py
 │   │   ├── test_fleet_survey.py   # fleet survey checks + health report
-│   │   ├── test_repo_operations.py
+│   │   ├── test_repo_crawl.py     # scripts/aggregate.sh end to end against local bare repos
 │   │   └── test_tracked_surfaces.py
 │   ├── test_docs_tools.py         # pytest-style; NOT run by the harness (see below)
 │   └── test_runner.py             # Unit test runner (--module/--class/--method)
@@ -34,6 +34,7 @@ tests/
 ├── test-docs/                     # Sample markdown fixtures
 ├── results/                       # Runner output (generated per run, gitignored)
 ├── config.py                      # Test configuration
+├── crawl.py                       # Runs scripts/aggregate.sh in a scratch working directory
 ├── test_runner.py                 # Main test runner
 ├── TESTING_FRAMEWORK.md           # Framework architecture notes
 ├── SCHEMA.md                      # Structure contract for this directory
@@ -77,7 +78,7 @@ Unit tests verify individual components in isolation. The runner discovers every
 - **Fleet survey** (`test_fleet_survey.py`): link resolver, governance/structure/quality/metadata checks, health scoring, report rendering, fleet inventory, working-tree reads that never follow a symlink out of the checkout
 - **Tracked surfaces** (`test_tracked_surfaces.py`): `scripts/check_tracked_surfaces.py` against clean and broken fixture repos
 - **File processing** (`test_file_processing.py`): title extraction, front matter generation, the ingest secret screen (and `aggregate.sh` failing with `process.py`), ingest prose normalization
-- **Repository operations** (`test_repo_operations.py`): git operations and file discovery
+- **Repository crawl** (`test_repo_crawl.py`): `scripts/aggregate.sh` end to end against local bare repositories, offline: a repository it cannot fetch (missing, unknown branch, no directory name) fails the run while the others still reach `docs/`, a leftover clone is fast-forwarded or reported, symlinks are never copied
 
 `tests/unit/test_docs_tools.py` sits outside `test_cases/` and uses bare pytest functions, so the custom harness does not run it; run it with `python -m pytest tests/unit/test_docs_tools.py`.
 
@@ -85,7 +86,7 @@ Unit tests verify individual components in isolation. The runner discovers every
 
 Integration tests verify the complete workflow:
 
-- **Full Workflow Tests**: Test the entire aggregation process
+- **Full Workflow Tests**: Run the real crawler, `scripts/aggregate.sh`, against GitHub (through `tests/crawl.py`, in a scratch working directory)
 - **File Organization Tests**: Verify files are organized correctly
 - **Front Matter Generation Tests**: Test YAML front matter creation
 

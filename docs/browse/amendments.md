@@ -9,8 +9,9 @@ nav_exclude: true
 
 # Amendments - content map
 
-Every published page in [`docs/amendments/`](../amendments/) as it appears in the sidebar: **3 pages** across **0 sections** (max depth 1).
+Every published page in [`docs/amendments/`](../amendments/) as it appears in the sidebar: **4 pages** across **0 sections** (max depth 1).
 
 - [Amendments — README](../amendments/README.md)
 - [0001 — Ratify the constitution](../amendments/0001-ratify-constitution.md)
+- [0002 — Missions](../amendments/0002-mission-statement.md)
 - [NNNN — Title of the amendment](../amendments/0000-template.md)

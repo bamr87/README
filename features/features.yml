@@ -26,6 +26,8 @@ features:
     surface: cli
     link: "scripts"
     docs: "PRD.md"
+    tests:
+      - tests/unit/test_cases/test_repo_crawl.py
   - id: README-002
     title: "Extract"
     description: "Derive per-project facts offline: identity, governance signals, structure, rollups, key documents, corpus fingerprint."
@@ -147,3 +149,11 @@ features:
       - tests/unit/test_cases/test_fleet_survey.py
     scenarios: []
     evidence: []
+  - id: README-013
+    title: "Missions in constitution §1"
+    description: "Three product missions under one direction statement, ratified through amendment 0002."
+    implemented: false
+    status: planned
+    prd: ["§1.1"]
+    surface: docs
+    docs: "docs/constitution.md"
