@@ -57,9 +57,9 @@ Requirement ids are stable: features cite them in `features/features.yml` (`prd:
 - **FR4 · Synthesize**: render facts into per-project cards with a frontmatter contract; optionally AI-enrich the essence paragraph.
 - **FR5 · Assemble**: build the consolidated apex README; inject the fleet table into the root README `AUTO:projects` span; mirror the fleet overview to the published site home (`docs/index.md`).
 - **FR6 · Index**: build a term index + manifest so queries need no rescan; navigation section titles are indexed alongside cards and facts.
-- **FR7 · Serve**: answer queries via CLI (`query/card/facts/nav/apex/status/projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_schema`, `context_status` + `context://` resources).
+- **FR7 · Serve**: answer queries via CLI (`query/card/facts/nav/apex/status/projects`) and via MCP (`list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_doc`, `get_schema`, `context_status` + `context://` resources).
 - **FR8 · Evolve**: scheduled CI re-crawls, rebuilds, schema-lints, and commits; hooks allow agents to extend every build.
-- **FR9 · Read a document** (planned, README-010, #59): an MCP `get_doc` tool returns one indexed corpus page by path, confined to `docs/` and capped in size, so a client can follow a `search_context`/`get_nav` pointer without leaving MCP.
+- **FR9 · Read a document** (shipped, README-010, #59): an MCP `get_doc` tool returns one indexed corpus page by path, confined to `docs/` and capped in size, so a client can follow a `search_context`/`get_nav` pointer without leaving MCP.
 - **FR10 · Provenance** (planned, README-011, #60): every MCP answer carries its source (engine or upstream repo), commit, path, enrichment mode and a trust marker, with upstream text fenced as untrusted data.
 - **FR11 · Survey and docs review**: survey the documentation of every repository in the fleet inventory (`_data/fleet.yml`) on its default branch — a shallow clone each, run through the registered checks and scored — and write a manifest per repository (`context/sources/<name>.json`), the health report (`context/reports/fleet_health.{json,md}`) and the docs review (`context/reports/docs_review.{json,md}`): every repository's documents in one place, checked against the hub's documentation framework (`specs/DOCS.md`). `survey --workspace DIR` reviews the local checkouts under `DIR`, each on its current branch, and writes only the docs review; `survey --local PATH` checks one working tree and writes nothing. The survey never touches the corpus, the navigation surfaces or the pyramid.
 
@@ -115,7 +115,7 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | [README-007](features/features.yml) | Serve | shipped | [`mcp`](mcp) · [`PRD.md`](PRD.md) | FR7 |
 | [README-008](features/features.yml) | Evolve | shipped | [`hooks.d`](hooks.d) · [`PRD.md`](PRD.md) | FR8 |
 | [README-009](features/features.yml) | Published fleet documentation site | shipped | route `/` · [`MKDOCS.md`](MKDOCS.md) | FR3, FR5 |
-| [README-010](features/features.yml) | MCP get_doc tool | planned | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | FR9 |
+| [README-010](features/features.yml) | MCP get_doc tool | shipped | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | FR9 |
 | [README-011](features/features.yml) | MCP provenance and trust markers | planned | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | FR10 |
 | [README-012](features/features.yml) | Fleet survey and docs review | shipped | [`scripts/context_engine/survey.py`](scripts/context_engine/survey.py) · [`README.md`](README.md) | FR11 |
 | [README-013](features/features.yml) | Missions in constitution §1 | planned | [`docs/constitution.md`](docs/constitution.md) | §1.1 |
