@@ -13,7 +13,7 @@ from typing import Dict, FrozenSet, List, Optional, Tuple
 from .config import (
     APEX_PATH, BRAIN_DIR, CARDS_DIR, CONTEXT_INDEX_PATH, DOCS_DIR,
     DOCS_INDEX_PATH, FACTS_DIR, GRAPH_PATH, MANIFEST_PATH, NAV_DIR,
-    NAV_FLEET_PATH, ROOT,
+    NAV_FLEET_PATH, ROOT, SECRET_SCREEN_PATH, SOURCES_DIR,
 )
 from .vault import Resolver, notes_from_graph
 
@@ -176,6 +176,119 @@ def get_doc(path: str, max_chars: int = DOC_MAX_CHARS) -> Dict:
 
 def get_manifest() -> Dict:
     return json.loads(_require(MANIFEST_PATH).read_text(encoding="utf-8"))
+
+
+# Provenance trust markers (README-011): text an upstream repository wrote,
+# versus text this engine wrote itself.
+TRUST_UPSTREAM = "untrusted-third-party"
+TRUST_ENGINE = "first-party"
+
+
+def _json_or_empty(path: Path) -> Dict:
+    """A JSON object from `path`, or {} when it is absent or unreadable."""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return data if isinstance(data, dict) else {}
+
+
+def get_source(name: str) -> Dict:
+    """
+    `context/sources/<name>.json` (repo, head.sha, fingerprint), confined like
+    every other per-project read; {} when the survey has not written it.
+    """
+    try:
+        path = _confined(SOURCES_DIR, name, ".json")
+    except ContextMissing:
+        return {}
+    return _json_or_empty(path)
+
+
+def project_enrichment(name: str, manifest: Dict) -> Optional[str]:
+    """
+    How a project's card was enriched: the manifest's per-project record
+    (`heuristic`, `ai:<provider>` or `quarantined`), else the build-wide mode
+    a manifest older than that record carries.
+    """
+    return ((manifest.get("project_enrichment") or {}).get(name)
+            or manifest.get("enrichment"))
+
+
+def provenance(project: Optional[str], path: str,
+               manifest: Optional[Dict] = None,
+               index: Optional[Dict] = None) -> Dict:
+    """
+    Where an answer comes from: always the six keys `source`, `repo`,
+    `commit`, `path`, `enrichment`, `trust`.
+
+    With a `project`, the content is derived from that upstream repository:
+    `commit` is its surveyed head SHA, else its corpus fingerprint, and
+    `trust` is untrusted-third-party. Without one, the engine wrote it.
+    """
+    if manifest is None:
+        manifest = _json_or_empty(MANIFEST_PATH)
+    if not project:
+        return {"source": "engine", "repo": None, "commit": None, "path": path,
+                "enrichment": manifest.get("enrichment"), "trust": TRUST_ENGINE}
+    if index is None:
+        index = _json_or_empty(CONTEXT_INDEX_PATH)
+    source = get_source(project)
+    info = (index.get("projects") or {}).get(project) or {}
+    head = source.get("head") if isinstance(source.get("head"), dict) else {}
+    return {
+        "source": "upstream",
+        "repo": source.get("repo") or info.get("repo"),
+        "commit": (head.get("sha") or source.get("fingerprint")
+                   or info.get("fingerprint")
+                   or (manifest.get("fingerprints") or {}).get(project)),
+        "path": path,
+        "enrichment": project_enrichment(project, manifest),
+        "trust": TRUST_UPSTREAM,
+    }
+
+
+def with_provenance(results: List[Dict], manifest: Optional[Dict] = None,
+                    index: Optional[Dict] = None) -> List[Dict]:
+    """Search rows, each with the provenance of the document it points at."""
+    if manifest is None:
+        manifest = _json_or_empty(MANIFEST_PATH)
+    if index is None:
+        index = _json_or_empty(CONTEXT_INDEX_PATH)
+    return [{**row, "provenance": provenance(row.get("project"),
+                                             row.get("path") or row.get("id"),
+                                             manifest, index)}
+            for row in results]
+
+
+def project_status(manifest: Optional[Dict] = None) -> Dict[str, Dict]:
+    """
+    Per project: its enrichment mode and its screen result.
+
+    `screen.status` is `quarantined` (with the injection screen's `q4_hits`)
+    or `clean` when the manifest carries the per-project record that only a
+    screening build writes, with `redactions`, the credentials collect's
+    secret screen redacted; an older manifest gives `not screened`.
+    """
+    manifest = get_manifest() if manifest is None else manifest
+    per_project = manifest.get("project_enrichment")
+    quarantined = manifest.get("quarantined") or {}
+    redactions: Dict[str, int] = {}
+    for hit in _json_or_empty(SECRET_SCREEN_PATH).get("hits") or []:
+        if isinstance(hit, dict) and hit.get("project"):
+            redactions[hit["project"]] = redactions.get(hit["project"], 0) + 1
+    names = sorted(set(manifest.get("fingerprints") or {}) | set(per_project or {}))
+    status: Dict[str, Dict] = {}
+    for name in names:
+        if per_project is None:
+            screen: Dict = {"status": "not screened"}
+        else:
+            hits = list(quarantined.get(name) or [])
+            screen = {"status": "quarantined" if hits else "clean",
+                      "q4_hits": hits, "redactions": redactions.get(name, 0)}
+        status[name] = {"enrichment": project_enrichment(name, manifest),
+                        "screen": screen}
+    return status
 
 
 def list_projects(index: Optional[Dict] = None) -> List[Dict]:
