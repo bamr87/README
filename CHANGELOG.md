@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/bamr87/README/compare/v0.4.0...v0.5.0) (2026-11-21)
+
+
+### Added
+
+* **mcp:** provenance and trust markers on every MCP answer (README-011) ([5086224](https://github.com/bamr87/README/commit/5086224e1483b86fe75600e905ebd9947d1cbd52)), closes [#60](https://github.com/bamr87/README/issues/60)
+
 ## [0.4.0](https://github.com/bamr87/README/compare/v0.3.0...v0.4.0) (2026-11-18)
 
 
