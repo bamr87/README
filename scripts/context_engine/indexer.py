@@ -125,11 +125,15 @@ def build_index(registry: Registry, facts_by_name: Dict[str, Dict],
 
 def write_index(index: Dict, docs_index: Optional[Dict] = None,
                 fleet_nav: Optional[Dict] = None,
-                quarantined: Optional[Dict[str, List[str]]] = None) -> None:
+                quarantined: Optional[Dict[str, List[str]]] = None,
+                project_enrichment: Optional[Dict[str, str]] = None) -> None:
     """
     Write the query index and the freshness manifest. `quarantined` maps a
     project (or `apex`) to the injection screen's hits; the manifest carries
     it only when there are any, so a clean build stays diff-stable.
+    `project_enrichment` maps each project to how its card was enriched
+    (`heuristic`, `ai:<provider>` or `quarantined`), which can differ from the
+    build-wide `enrichment` when a card fell back or was quarantined.
     """
     INDEX_DIR.mkdir(parents=True, exist_ok=True)
     CONTEXT_INDEX_PATH.write_text(
@@ -139,6 +143,8 @@ def write_index(index: Dict, docs_index: Optional[Dict] = None,
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "engine_version": ENGINE_VERSION,
         "enrichment": index["metadata"]["enrichment"],
+        **({"project_enrichment": dict(sorted(project_enrichment.items()))}
+           if project_enrichment is not None else {}),
         **({"quarantined": quarantined} if quarantined else {}),
         "project_count": index["metadata"]["project_count"],
         "fingerprints": {name: info.get("fingerprint")

@@ -13,7 +13,7 @@ from .collect import collect
 from .navigator import check_nav
 from .query import (
     ContextMissing, get_apex, get_card, get_facts, get_hot, get_manifest, get_nav,
-    get_neighbours, get_note, list_nav, list_projects, search, vault_lint,
+    get_neighbours, get_note, list_nav, list_projects, search, vault_lint, with_provenance,
 )
 from .registry import RegistryError, load_registry, sync_repos_txt
 from .survey import (FleetError, load_fleet, summarize, summarize_review, survey,
@@ -109,7 +109,8 @@ def _cmd_sync(_args: argparse.Namespace) -> int:
 def _cmd_query(args: argparse.Namespace) -> int:
     results = search(args.terms, limit=args.limit)
     if args.json:
-        print(json.dumps(results, indent=2))
+        # Machine output names each row's source; the text output is unchanged.
+        print(json.dumps(with_provenance(results), indent=2))
         return 0
     if not results:
         print("no matches in the context layer")

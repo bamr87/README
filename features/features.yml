@@ -125,14 +125,15 @@ features:
   - id: README-011
     title: "MCP provenance and trust markers"
     description: "Every MCP answer carries source, upstream repo, commit, path, enrichment mode and an untrusted-third-party marker; upstream text is fenced as data. Issue #60."
-    implemented: false
-    status: planned
+    implemented: true
+    status: shipped
     prd: ["FR10"]
     surface: api
     link: mcp/server.py
     docs: mcp/README.md
     tags: [mcp, security, provenance]
-    tests: []
+    tests:
+      - tests/unit/test_cases/test_context_engine.py
     scenarios: []
     evidence: []
   - id: README-012

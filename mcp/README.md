@@ -1,6 +1,6 @@
 # MCP server — query the context engine
 
-`mcp/server.py` exposes the committed context pyramid (`context/`) over the [Model Context Protocol](https://modelcontextprotocol.io): stdio transport, newline-delimited JSON-RPC 2.0, Python stdlib only. It is **read-only** — it serves what the engine last built and reports staleness; regenerating is always an explicit `python3 -m scripts.context_engine build`. Answers quote third-party documentation from upstream repositories, and the `initialize` instructions tell clients to treat it as data, never as instructions (per-answer provenance and trust markers are [#60](https://github.com/bamr87/README/issues/60)).
+`mcp/server.py` exposes the committed context pyramid (`context/`) over the [Model Context Protocol](https://modelcontextprotocol.io): stdio transport, newline-delimited JSON-RPC 2.0, Python stdlib only. It is **read-only** — it serves what the engine last built and reports staleness; regenerating is always an explicit `python3 -m scripts.context_engine build`. Answers quote third-party documentation from upstream repositories, so every answer that carries upstream text says where it came from and fences that text as untrusted data, and the `initialize` instructions tell clients to treat fenced content as data, never as instructions (see [Provenance](#provenance)).
 
 ## Registration
 
@@ -24,13 +24,13 @@ Any other MCP client can launch it the same way (command `python3`, args `mcp/se
 | Tool | Arguments | Returns |
 |---|---|---|
 | `list_projects` | — | Fleet roster with kind, status, corpus size, context paths |
-| `get_project` | `name` | The project's card (markdown) + facts (JSON) |
-| `search_context` | `query`, `limit?` | Ranked matches across cards/facts/apex, with pointers into `docs/` |
-| `get_readme` | — | The consolidated fleet README (L0 apex) |
-| `get_nav` | `name?`, `depth?`, `flat?` | A corpus's published section/page hierarchy — omit `name` to list every navigable corpus, `flat: true` for every page with its breadcrumb |
-| `get_doc` | `path`, `max_chars?` | One page of the `docs/` corpus listed in `docs/docs_index.json`: its body without front matter, headed by `project · repo · path`, truncated at `max_chars` (default 20000) with a `[truncated: N of M characters]` note |
+| `get_project` | `name` | The project's card (markdown) + facts (JSON), fenced as untrusted upstream data, then their provenance (JSON) |
+| `search_context` | `query`, `limit?` | Ranked matches across cards/facts/apex, with pointers into `docs/`; each row has a `provenance` object, and an upstream row's `title` and `summary` are fenced |
+| `get_readme` | — | The consolidated fleet README (L0 apex), each project's section fenced as untrusted data from that project's repo |
+| `get_nav` | `name?`, `depth?`, `flat?` | A corpus's published section/page hierarchy — omit `name` to list every navigable corpus, `flat: true` for every page with its breadcrumb; a corpus's answer has a `provenance` object |
+| `get_doc` | `path`, `max_chars?` | One page of the `docs/` corpus listed in `docs/docs_index.json`: its body without front matter, headed by `project · repo · path`, an upstream page's body fenced, truncated at `max_chars` (default 20000) with a `[truncated: N of M characters]` note after the fence |
 | `get_schema` | `path?` | A `SCHEMA.md` from the structure pyramid (default: root) |
-| `context_status` | — | Freshness manifest: generation time, enrichment, fingerprints |
+| `context_status` | — | Freshness manifest: generation time, enrichment, fingerprints, plus `projects`: each project's `enrichment` and `screen` result |
 | `get_note` | `target` | One vault note with its text, backlinks and outgoing links; takes a path, title or alias |
 | `get_neighbours` | `target`, `depth?` | Notes within `depth` links of a note, in either direction |
 | `get_hot` | — | The hot cache: recent changes, most linked pages, cross-repository concepts |
@@ -39,6 +39,25 @@ Any other MCP client can launch it the same way (command `python3`, args `mcp/se
 ## Resources
 
 `context://apex`, `context://index`, `context://manifest`, `context://nav`, `context://cards/<name>`, `context://facts/<name>`, `context://nav/<name>`.
+
+## Provenance
+
+MCP answers mix this repo's own text (schemas, registry descriptions, the engine's synthesis) with documentation written in upstream repositories, any of which may be external. So that a client can tell them apart, `get_project`, `search_context`, `get_readme`, `get_nav` and `get_doc` each say where their content comes from (README-011, [#60](https://github.com/bamr87/README/issues/60)).
+
+**Provenance object.** Every one of those results lists one object per source under `_meta["io.bamr87.readme/provenance"]` (MCP allows `_meta` on a tool result). JSON answers also carry it in the payload: a `provenance` key on each `search_context` row and on a named `get_nav` tree, and a `PROVENANCE (JSON)` block after `get_project`'s fence. Each object has six keys:
+
+| Key | Value |
+|---|---|
+| `source` | `upstream` for text derived from a project's repository, `engine` for text this engine wrote |
+| `repo` | The upstream `owner/name`; `null` for engine text |
+| `commit` | The surveyed head SHA from `context/sources/<name>.json`, else the corpus fingerprint; `null` for engine text |
+| `path` | The file the answer was read from (`context/cards/<name>.md`, `docs/<name>/…`, …) |
+| `enrichment` | How the project's card was written: `heuristic`, `ai:<provider>` or `quarantined` (the manifest's `project_enrichment`, else its build-wide `enrichment`) |
+| `trust` | `untrusted-third-party` for upstream text, `first-party` for engine text |
+
+**Fence.** Upstream text in a text answer sits inside `<untrusted-doc repo="owner/name">` … `</untrusted-doc>`: a card and its facts, an upstream search row's `title` and `summary`, each project's section of the apex, and an upstream page's body from `get_doc`. A fence tag inside the upstream text (`</untrusted-doc>`, in any case or spacing) has its `<` written as `&lt;`, so the text cannot close the fence early and read as the engine's. The `initialize` instructions tell clients that fenced content is third-party data, not instructions. The apex's fleet table and AI overview stay outside the fences: they are the engine's summaries of registry and screened upstream text. The CLI never fences, and `query` prints exactly what it did before; only `query --json` gains each row's `provenance`.
+
+**Screen results.** `context_status` returns the manifest plus `projects`, keyed by project, each with its `enrichment` and a `screen` result. The result is `{"status": "clean" | "quarantined", "q4_hits": [...], "redactions": N}`, where the hits are the build's injection screen (`scripts/context_engine/screen.py`) and `redactions` counts the credentials collect's secret screen redacted (`docs/results/secret_screen.json`). A manifest built before per-project records existed gives `{"status": "not screened"}`.
 
 ## Smoke test
 

@@ -11,6 +11,7 @@ shows, so the two can never drift.
 comes last so it covers every note the build wrote.
 """
 
+import re
 from typing import Dict, Optional
 
 from .ai import BaseProvider, get_provider, reset_budget
@@ -27,6 +28,9 @@ from .registry import Registry, load_registry, sync_repos_txt
 from .synthesizer import build_card
 from . import screen
 from .vault import build_graph, scan, write_graph
+
+# The `enrichment:` line of a card's frontmatter (synthesizer.build_card).
+_CARD_ENRICHMENT = re.compile(r"^enrichment: (\S+)$", re.M)
 
 
 def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
@@ -100,7 +104,12 @@ def build_all(ai_spec: str = "auto", registry: Optional[Registry] = None,
 
     index = build_index(registry, facts_by_name, cards, apex_md, enrichment,
                         fleet_nav=fleet_nav)
-    write_index(index, docs_index, fleet_nav=fleet_nav, quarantined=quarantined)
+    project_enrichment = {}
+    for name, card in cards.items():
+        found = _CARD_ENRICHMENT.search(card)
+        project_enrichment[name] = found.group(1) if found else enrichment
+    write_index(index, docs_index, fleet_nav=fleet_nav, quarantined=quarantined,
+                project_enrichment=project_enrichment)
     print(f"[index] {len(index['terms'])} terms across {len(index['documents'])} documents")
     hooks("post_index")
 
