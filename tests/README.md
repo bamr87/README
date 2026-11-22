@@ -21,9 +21,12 @@ tests/
 │   │   ├── test_context_engine.py # registry, extractor, navigator, synthesizer, index/query, AI provider, secret screen, hooks, schema lint, MCP
 │   │   ├── test_fleet_survey.py   # fleet survey checks + health report
 │   │   ├── test_second_brain.py   # collect (crawl, screens, prose), vault, brain notes, site hook
+│   │   ├── test_brain_site.py     # the browser scripts: they parse, the node suite passes, views agree
 │   │   └── test_tracked_surfaces.py
 │   ├── test_docs_tools.py         # pytest-style; NOT run by the harness (see below)
 │   └── test_runner.py             # Unit test runner (--module/--class/--method)
+├── js/                            # Node suites for brain_site/assets (run by test_brain_site.py)
+│   └── workspace.test.cjs         # the workspace's tree, search and saved layout, with no browser
 ├── integration/                   # Integration tests
 │   ├── test_integration.py        # Integration test cases
 │   └── test_repo_runner.py        # Repository test runner

@@ -5,7 +5,9 @@ docs/ stays a plain Obsidian vault; this hook makes the published site read it
 the same way. It reads the graph the engine wrote (context/vault/graph.json) and
 resolves links with the engine's Resolver, so the site cannot disagree with the
 vault. It converts [[wikilinks]] and callouts, adds a backlinks panel to each
-page, and publishes the graph and the browser assets.
+page, and publishes the graph and the browser assets: the views in brain.js
+and the workspace in workspace.js, which reads the same graph and the pages
+this hook renders.
 """
 
 import html
@@ -28,6 +30,9 @@ from scripts.context_engine.vault import (  # noqa: E402
 
 ASSETS = Path(__file__).parent / "assets"
 PUBLISHED = "assets/brain"
+# In load order: workspace.js registers its view with brain.js, which needs d3.
+STYLES = ("brain.css", "workspace.css")
+SCRIPTS = ("d3-force.bundle.js", "brain.js", "workspace.js")
 PANEL_LIMIT = 40
 _CALLOUT = re.compile(r"^(>[ \t]*)\[!(\w+)\]([+-]?)[ \t]*(.*)$")
 # Obsidian callout type -> Material admonition type.
@@ -53,10 +58,28 @@ def on_config(config):
         incoming.setdefault(nodes[target]["path"], []).append(source)
     state.update(graph=graph, resolver=Resolver(notes_from_graph(graph)),
                  incoming=incoming, outgoing=outgoing)
-    config.extra_css.append(f"{PUBLISHED}/brain.css")
-    config.extra_javascript.append(f"{PUBLISHED}/d3-force.bundle.js")
-    config.extra_javascript.append(f"{PUBLISHED}/brain.js")
+    config.extra_css.extend(f"{PUBLISHED}/{name}" for name in STYLES)
+    config.extra_javascript.extend(f"{PUBLISHED}/{name}" for name in SCRIPTS)
     return config
+
+
+def graph_payload(graph: dict, urls: dict[str, str]) -> dict:
+    """The graph as the browser gets it: short keys, and only notes with a page.
+
+    `fingerprint` names the build of the vault, so a reader can tell which one
+    a deployed site is showing.
+    """
+    keep = {i: n for i, n in enumerate(graph["nodes"]) if n["path"] in urls}
+    index = {old: new for new, old in enumerate(sorted(keep))}
+    return {
+        "fingerprint": graph.get("fingerprint", ""),
+        "nodes": [{"t": keep[i]["title"], "p": keep[i]["project"], "k": keep[i]["kind"],
+                   "u": urls[keep[i]["path"]], "s": keep[i]["summary"],
+                   "g": keep[i]["tags"], "f": keep[i]["path"], "w": keep[i]["words"]}
+                  for i in sorted(keep)],
+        "edges": [[index[a], index[b]] for a, b in graph["edges"]
+                  if a in index and b in index],
+    }
 
 
 def on_files(files, config):
@@ -64,18 +87,7 @@ def on_files(files, config):
         files.append(File.generated(config, f"{PUBLISHED}/{asset.name}",
                                     abs_src_path=str(asset)))
     state["urls"] = {f.src_uri: f.url for f in files.documentation_pages()}
-    graph = state["graph"]
-    # The browser needs less than the engine keeps; a node with no page is dropped.
-    keep = {i: n for i, n in enumerate(graph["nodes"]) if n["path"] in state["urls"]}
-    index = {old: new for new, old in enumerate(sorted(keep))}
-    payload = {
-        "nodes": [{"t": keep[i]["title"], "p": keep[i]["project"], "k": keep[i]["kind"],
-                   "u": state["urls"][keep[i]["path"]], "s": keep[i]["summary"],
-                   "g": keep[i]["tags"], "f": keep[i]["path"], "w": keep[i]["words"]}
-                  for i in sorted(keep)],
-        "edges": [[index[a], index[b]] for a, b in graph["edges"]
-                  if a in index and b in index],
-    }
+    payload = graph_payload(state["graph"], state["urls"])
     files.append(File.generated(config, f"{PUBLISHED}/graph.json",
                                 content=json.dumps(payload, ensure_ascii=False,
                                                    separators=(",", ":"))))

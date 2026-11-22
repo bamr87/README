@@ -1,8 +1,16 @@
 /* Obsidian-style views for the published vault: graph, local graph, hover
    previews, quick switcher, canvas and table. Material's instant navigation
-   swaps the page without reloading, so everything re-attaches on document$. */
+   swaps the page without reloading, so everything re-attaches on document$.
+   window.BrainVault is what workspace.js builds on: the vault, the graph, the
+   picker and the registry of views a [data-brain-view] host can ask for. */
 (function () {
   "use strict";
+
+  const api = { opener: null, views: {} };
+  // What the current page has mounted, and which page that is: a view that
+  // finishes loading after the reader moved on is taken down, not kept.
+  let active = [];
+  let generation = 0;
 
   const PALETTE = ["#5c6bc0", "#26a69a", "#ef6c00", "#ab47bc", "#42a5f5", "#9ccc65", "#ec407a", "#ffca28",
     "#8d6e63", "#26c6da", "#d4e157", "#ff7043", "#7e57c2", "#66bb6a", "#29b6f6", "#ffa726",
@@ -93,7 +101,7 @@
       ctx.textAlign = "center";
       nodes.forEach((n) => {
         if (!state.filter(n)) return;
-        const big = radius(n) * view.k > (options.labelAt || 7);
+        const big = radius(n) * view.k > (options.labelAt ?? 7);
         if (big || n === hover || n === state.focus || (lit && lit.has(n))) {
           ctx.fillText(n.data.t.slice(0, 40), n.x, n.y + radius(n) + 12 / view.k);
         }
@@ -168,7 +176,9 @@
     };
   }
 
-  function open(url) {
+  function open(url, leave, event) {
+    // The workspace keeps a note inside itself; `leave` asks for the site page.
+    if (!leave && api.opener && api.opener(url, event)) return;
     // A real link click, so Material's instant navigation handles history.
     const link = document.createElement("a");
     link.href = siteUrl(url);
@@ -187,12 +197,11 @@
   }
 
   /* ---- global graph ------------------------------------------------------- */
-  let active = [];
+  // Every view returns a handle, so whoever mounted it can take it down again.
   async function mountGlobalGraph(host) {
     const v = await vault();
     const { nodes, links } = buildSubgraph(v, v.nodes.map((_, i) => i));
     const graph = createGraph(host, v, nodes, links, { scale: 0.22, repel: -70, distance: 40, labelAt: 9 });
-    active.push(graph);
 
     const hidden = new Set();
     const panel = document.createElement("div");
@@ -234,6 +243,7 @@
     [search, orphans, concepts].forEach((el) => el.addEventListener("input", apply));
     panel.querySelectorAll("[data-force]").forEach((el) => el.addEventListener("input", () => graph.setForce(el.dataset.force, +el.value)));
     apply();
+    return { destroy() { graph.destroy(); panel.remove(); } };
   }
 
   /* ---- local graph -------------------------------------------------------- */
@@ -241,7 +251,10 @@
     const panel = document.querySelector(".brain-panel[data-brain-path]");
     const sidebar = document.querySelector(".md-sidebar--secondary .md-sidebar__inner");
     if (!panel) return;
+    const page = generation;
     const v = await vault();
+    // The reader may have moved on while the vault was loading.
+    if (page !== generation || !panel.isConnected) return;
     const centre = v.byPath.get(panel.dataset.brainPath);
     if (centre === undefined || !v.neighbours[centre].size) return;
     const near = new Set([centre, ...v.neighbours[centre]]);
@@ -261,16 +274,30 @@
   /* ---- hover preview ------------------------------------------------------ */
   let preview = null, previewTimer = 0;
   function hidePreview() { clearTimeout(previewTimer); if (preview) { preview.remove(); preview = null; } }
-  function nodeForLink(v, anchor) {
-    const url = new URL(anchor.href, location.href);
+  // The index of the note a site URL points at, or -1. The graph keeps the
+  // URLs MkDocs wrote, which are percent-encoded and call the home page "./".
+  function indexForUrl(v, href) {
+    let url;
+    try { url = new URL(href, location.href); } catch (error) { return -1; }
     const base = new URL(scope()).pathname;
-    if (url.origin !== location.origin || !url.pathname.startsWith(base)) return null;
-    const i = v.byUrl.get(decodeURI(url.pathname.slice(base.length)));
-    return i === undefined ? null : v.nodes[i];
+    if (url.origin !== location.origin || !url.pathname.startsWith(base)) return -1;
+    const path = url.pathname.slice(base.length);
+    let decoded = path;
+    try { decoded = decodeURI(path); } catch (error) { decoded = path; }
+    for (const key of [path, decoded, encodeURI(decoded), path || "./"]) {
+      const i = v.byUrl.get(key);
+      if (i !== undefined) return i;
+    }
+    return -1;
   }
+  function nodeForLink(v, anchor) {
+    const i = indexForUrl(v, anchor.href);
+    return i < 0 ? null : v.nodes[i];
+  }
+  const PREVIEWED = ".md-content a[href], .brain-ws [data-brain-preview] a[href]";
   function bindPreviews() {
     document.addEventListener("mouseover", (event) => {
-      const anchor = event.target.closest && event.target.closest(".md-content a[href]");
+      const anchor = event.target.closest && event.target.closest(PREVIEWED);
       if (!anchor) return;
       clearTimeout(previewTimer);
       previewTimer = setTimeout(async () => {
@@ -293,7 +320,7 @@
       }, 300);
     });
     document.addEventListener("mouseout", (event) => {
-      if (event.target.closest && event.target.closest(".md-content a[href]")) hidePreview();
+      if (event.target.closest && event.target.closest(PREVIEWED)) hidePreview();
     });
   }
 
@@ -307,36 +334,63 @@
     for (const char of text) { if (char === term[i]) i += 1; if (i === term.length) return 1000 - text.length; }
     return -1;
   }
-  async function openSwitcher() {
+  // One modal list for the quick switcher and the workspace's command palette.
+  // `rows(term)` returns the items to show; `show(item)` its [text, hint].
+  function pick(options) {
     if (document.querySelector(".brain-switcher")) return;
-    const v = await vault();
+    const before = document.activeElement;
     const shell = document.createElement("div");
     shell.className = "brain-switcher";
-    shell.innerHTML = '<div class="brain-switcher-box" role="dialog" aria-label="Quick switcher"><input type="text" placeholder="Find a note" aria-label="Find a note"><ul></ul></div>';
+    const box = document.createElement("div");
+    box.className = "brain-switcher-box";
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-modal", "true");
+    box.setAttribute("aria-label", options.label);
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = options.placeholder;
+    input.setAttribute("aria-label", options.placeholder);
+    input.setAttribute("role", "combobox");
+    input.setAttribute("aria-expanded", "true");
+    input.setAttribute("aria-controls", "brain-switcher-list");
+    input.setAttribute("autocomplete", "off");
+    const list = document.createElement("ul");
+    list.id = "brain-switcher-list";
+    list.setAttribute("role", "listbox");
+    box.append(input, list);
+    shell.appendChild(box);
     document.body.appendChild(shell);
-    const input = shell.querySelector("input");
-    const list = shell.querySelector("ul");
     let rows = [], cursor = 0;
-    const close = () => shell.remove();
+    const close = () => {
+      shell.remove();
+      if (before && before.isConnected && before.focus) before.focus();
+    };
+    const choose = (item, event) => { close(); options.choose(item, event); };
     function paint() {
-      list.replaceChildren(...rows.map((n, i) => {
+      list.replaceChildren(...rows.map((item, i) => {
+        const [text, hint] = options.show(item);
         const li = document.createElement("li");
-        li.textContent = n.t;
-        const where = document.createElement("span");
-        where.textContent = n.p;
-        li.append(where);
+        li.id = `brain-switcher-row-${i}`;
+        li.setAttribute("role", "option");
+        li.setAttribute("aria-selected", String(i === cursor));
+        li.textContent = text;
+        if (hint) {
+          const where = document.createElement("span");
+          where.textContent = hint;
+          li.append(where);
+        }
         if (i === cursor) li.className = "is-active";
-        li.addEventListener("click", () => { close(); open(n.u); });
+        li.addEventListener("click", (event) => choose(item, event));
         return li;
       }));
       const current = list.children[cursor];
-      if (current) current.scrollIntoView({ block: "nearest" });
+      if (current) {
+        current.scrollIntoView({ block: "nearest" });
+        input.setAttribute("aria-activedescendant", current.id);
+      } else { input.removeAttribute("aria-activedescendant"); }
     }
     function update() {
-      const term = input.value.trim().toLowerCase();
-      rows = !term ? v.nodes.filter((n) => n.k === "project" || n.k === "map").slice(0, 20)
-        : v.nodes.map((n) => [score(term, n.t), n]).filter((r) => r[0] >= 0)
-          .sort((a, b) => b[0] - a[0]).slice(0, 20).map((r) => r[1]);
+      rows = options.rows(input.value.trim().toLowerCase());
       cursor = 0;
       paint();
     }
@@ -346,11 +400,27 @@
       if (e.key === "Escape") close();
       if (e.key === "ArrowDown") { e.preventDefault(); cursor = Math.min(cursor + 1, rows.length - 1); paint(); }
       if (e.key === "ArrowUp") { e.preventDefault(); cursor = Math.max(cursor - 1, 0); paint(); }
-      if (e.key === "Enter" && rows[cursor]) { close(); open(rows[cursor].u); }
+      if (e.key === "Enter" && rows[cursor]) choose(rows[cursor], e);
     });
     shell.addEventListener("click", (e) => { if (e.target === shell) close(); });
     update();
     input.focus();
+  }
+  // Best matches of `term` among `items`, by the text `read` gives each.
+  function rank(term, items, read, limit) {
+    return items.map((item) => [score(term, read(item)), item]).filter((r) => r[0] >= 0)
+      .sort((a, b) => b[0] - a[0]).slice(0, limit).map((r) => r[1]);
+  }
+  async function openSwitcher() {
+    const v = await vault();
+    pick({
+      label: "Quick switcher",
+      placeholder: "Find a note",
+      rows: (term) => (!term ? v.nodes.filter((n) => n.k === "project" || n.k === "map").slice(0, 20)
+        : rank(term, v.nodes, (n) => n.t, 20)),
+      show: (n) => [n.t, n.p],
+      choose: (n, event) => open(n.u, false, event),
+    });
   }
 
   function addHeaderButtons() {
@@ -359,6 +429,7 @@
     const icons = {
       graph: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17 3a3 3 0 0 0-2.8 4l-3.6 3.2a3 3 0 0 0-3.9.6L5 9.9A3 3 0 1 0 4 12l2.4 1a3 3 0 0 0 .7 2.4l-1.8 2.8a3 3 0 1 0 1.7 1l1.8-2.8a3 3 0 0 0 3.5-1.6l3.8.9A3 3 0 1 0 16.4 14l-3.8-.9a3 3 0 0 0-.7-1.5l3.6-3.2A3 3 0 1 0 17 3z"/></svg>',
       find: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16v2H4V5zm0 6h10v2H4v-2zm0 6h16v2H4v-2zm14-7 3 2-3 2v-4z"/></svg>',
+      workspace: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2v12h4V6H4zm6 0v12h6V6h-6zm8 0v12h2V6h-2z"/></svg>',
     };
     const make = (label, icon, action) => {
       const button = document.createElement("button");
@@ -370,7 +441,8 @@
       button.addEventListener("click", action);
       return button;
     };
-    search.before(make("Quick switcher (Ctrl+O)", icons.find, openSwitcher),
+    search.before(make("Workspace", icons.workspace, () => open("brain/workspace/")),
+      make("Quick switcher (Ctrl+O)", icons.find, openSwitcher),
       make("Graph view", icons.graph, () => open("brain/graph/")));
   }
 
@@ -461,7 +533,7 @@
     }, { passive: false });
     const observer = new ResizeObserver(fit);
     observer.observe(host);
-    active.push({ destroy() { observer.disconnect(); canvas.remove(); } });
+    return { destroy() { observer.disconnect(); canvas.remove(); } };
   }
 
   /* ---- table -------------------------------------------------------------- */
@@ -513,20 +585,55 @@
     input.addEventListener("input", paint);
     select.addEventListener("change", paint);
     paint();
+    return { destroy() { host.replaceChildren(); } };
   }
 
+  /* ---- mounting ----------------------------------------------------------- */
+  api.views.graph = mountGlobalGraph;
+  api.views.canvas = mountCanvas;
+  api.views.table = mountTable;
+
+  function mountHost(host) {
+    const mount = api.views[host.dataset.brainView];
+    if (!mount || host.dataset.brainMounted) return;
+    host.dataset.brainMounted = "1";
+    host.replaceChildren();
+    const page = generation;
+    Promise.resolve().then(() => mount(host)).then((handle) => {
+      if (!handle) return;
+      if (page === generation) { active.push(handle); } else { handle.destroy(); }
+    }).catch((error) => {
+      console.error(`brain: the ${host.dataset.brainView} view failed to load`, error);
+      host.textContent = "This view could not be loaded. Reload the page to try again.";
+    });
+  }
+  // A script loaded after this one (workspace.js) adds its view here; a host
+  // already on the page is mounted straight away.
+  api.register = function (name, mount) {
+    api.views[name] = mount;
+    document.querySelectorAll("[data-brain-view]").forEach((host) => {
+      if (host.dataset.brainView === name) mountHost(host);
+    });
+  };
+
   function mountPage() {
+    generation += 1;
     active.forEach((item) => item.destroy());
     active = [];
     hidePreview();
     addHeaderButtons();
     document.querySelectorAll("[data-brain-view]").forEach((host) => {
-      host.replaceChildren();
-      const mount = { graph: mountGlobalGraph, canvas: mountCanvas, table: mountTable }[host.dataset.brainView];
-      if (mount) mount(host);
+      delete host.dataset.brainMounted;
+      mountHost(host);
     });
     mountLocalGraph();
   }
+
+  Object.assign(api, {
+    vault, siteUrl, cssVar, colourOf, score, rank, pick, open, openSwitcher,
+    createGraph, buildSubgraph, indexForUrl, hidePreview,
+  });
+  window.BrainVault = api;
 
   document.addEventListener("keydown", (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "o") { e.preventDefault(); openSwitcher(); }
