@@ -15,7 +15,8 @@ The fleet's documentation as one linked knowledge base. Open `docs/` as a vault 
 
 | View | What it shows |
 |---|---|
-| [[brain/graph\|Graph view]] | Every note and link |
+| [[brain/graph\|Graph view]] | Every note and link, by repository or by connection |
+| [[brain/atlas\|Atlas]] | Every repository's documentation as rings of sections |
 | [[brain/canvas\|Canvas]] | Projects and the concepts they share |
 | [[brain/pages\|All pages]] | A sortable table of the vault |
 | [[brain/tags\|Tags]] | Every tag, by use |

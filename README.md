@@ -14,7 +14,8 @@ Instead of hand-writing documentation *about* the fleet, this repo **grows it**:
 
 - One `collect` stage that gathers each repository's official documentation into `docs/`, an Obsidian vault
 - A second brain in `docs/brain/`: generated concept and project notes, a hot cache, a change log and vault health
-- Obsidian's views on the published site: graph, local graph, backlinks, hover previews, quick switcher, canvas
+- Obsidian's views on the published site: a WebGL graph explorer (repositories as constellations, hover, find-and-fly, a path finder), local graph, backlinks, hover previews, quick switcher, canvas
+- The Atlas: every corpus's navigation as one clickable sunburst, and an emblem of each repository on its project note
 - A distiller that builds a context pyramid: a fleet README, one card per project and structured facts
 - A queryable index with a CLI and an MCP server (`mcp/server.py`) for AI clients
 - Scheduled regeneration so the context evolves with the fleet
@@ -97,7 +98,7 @@ AI clients query the same pyramid through MCP — the server is registered in [`
 | 5. Navigate | `docs/` + registry `navigation:` | `nav.yml`, `context/nav/`, `docs/browse/` | `scripts/context_engine/navigator.py` |
 | 6. Distill | corpus + registry + nav | `context/` pyramid (L2→L0) | `python3 -m scripts.context_engine build` |
 | 7. Serve | `context/` | CLI + MCP answers | `mcp/server.py` |
-| 8. Publish | `docs/` + `context/vault/graph.json` | the site, with Obsidian's views | `brain_site/hook.py` |
+| 8. Publish | `docs/` + `context/vault/graph.json` + `context/nav/` | the site, with Obsidian's views, the graph explorer and the Atlas | `brain_site/hook.py`, `brain_site/views.py` |
 
 Ingest normalizes as it writes: upstream `icon:` frontmatter is mapped onto bundled Material icons (`scripts/fix_frontmatter_icons.py`) and soft-wrapped prose is unwrapped (`tools/unwrap-prose.py`), so each crawled page lands in a state the navigation and the `markdown-oneline` gate already accept.
 

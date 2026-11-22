@@ -1,4 +1,4 @@
-# A reader moves through the second brain: graph, concept note, backlinks.
+# A reader moves through the second brain: graph, a found note, concept note, backlinks, the Atlas.
 schema: scenario/v1
 id: second-brain
 feature: README-017
@@ -9,9 +9,20 @@ steps:
   - wait: { selector: ".brain-view canvas" }
   - expect: { visible: ".brain-controls" }
   - screenshot: graph
+  - fill: { selector: ".brain-find input", value: "token rotation" }
+  - expect: { count: { selector: ".brain-suggest li", min: 1 } }
+  - press: Enter
+  - expect: { visible: ".brain-card h3" }
+  - screenshot: graph-selected
   - goto: /brain/concepts/docker/
   - wait: { selector: ".brain-local canvas" }
   - expect: { visible: ".admonition" }
   - expect: { count: { selector: ".brain-panel a", min: 1 } }
   - screenshot: concept
+  - goto: /brain/atlas/
+  - expect: { visible: "svg.atlas" }
+  - expect: { count: { selector: "svg.atlas .atlas-arc", min: 20 } }
+  - screenshot: atlas
+  - goto: /brain/projects/djangoerp/
+  - expect: { visible: ".atlas-emblem svg" }
   - expect: { no_console_errors: true }

@@ -48,7 +48,7 @@ See [`SCHEMA.md`](SCHEMA.md) and each directory's own `SCHEMA.md`. The pipeline,
 | Survey | `_data/fleet.yml` or local checkouts | `context/sources/`, `context/reports/{fleet_health,docs_review}.*` | `survey.py`, `gather/`, `analyze/` |
 | Graph | `docs/` | `context/vault/graph.json` | `vault.py` |
 | Serve | `context/` | CLI and MCP answers | `cli.py`, `mcp/server.py` |
-| Publish | `docs/` + the graph | the site: wikilinks, backlinks, graph, canvas | `brain_site/hook.py` |
+| Publish | `docs/` + the graph + `context/nav/` | the site: wikilinks, backlinks, the graph explorer, the Atlas, canvas | `brain_site/hook.py`, `brain_site/views.py` |
 
 Engine modules (`scripts/context_engine/`): `registry` (registry, collection, navigation and brain rules) → `collect` (the ETL) → `vault` (what a note and a link are; the one link resolver) → `extractor` (facts) → `brain` (generated notes) → `navigator` (one nav tree for `context/nav/`, `nav.yml`, `docs/browse/`) → `synthesizer` (cards) → `assembler` (apex, AUTO span, site index, context SCHEMA) → `indexer` → `query` (the one read path for CLI and MCP) → `builder`/`cli`. `ai.py` is the provider-agnostic enrichment layer, and `screen.py` the injection screen on what goes into it and comes out of it; `redact.py` (secrets) and `hidden.py` (hidden carriers) screen every page at collect. `analyze/` holds the survey checks; `analyze/framework.py` is the UPS-DOC rows and `analyze/review.py` the docs review. `scripts/harmonize/` is a legacy, optional Grok-only reorganizer outside the pipeline.
 

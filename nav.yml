@@ -18,6 +18,7 @@ nav:
   - "Second Brain":
       - "Second Brain": brain/index.md
       - "All pages": brain/pages.md
+      - "Atlas": brain/atlas.md
       - "Canvas": brain/canvas.md
       - "Change log": brain/log.md
       - "Graph view": brain/graph.md
@@ -5020,6 +5021,7 @@ nav:
           - "ADR 0001 — Record architecture decisions": adr/0001-record-architecture-decisions.md
           - "ADR 0002 — Treat docs/ as an Obsidian vault with one link resolver": adr/0002-docs-as-an-obsidian-vault.md
           - "ADR 0003 — README is the fleet's knowledge plane, and the hub console…": adr/0003-readme-as-the-fleet-knowledge-plane.md
+          - "ADR 0004 — The site's graph is a WebGL explorer, and the Atlas draws…": adr/0004-webgl-graph-explorer-and-atlas.md
           - "ADR NNNN — Title in sentence case": adr/0000-template.md
       - "Amendments":
           - "Amendments — README": amendments/README.md

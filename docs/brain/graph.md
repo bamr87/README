@@ -12,6 +12,6 @@ title: Graph view
 
 # Graph view
 
-Every note in the vault and every link between them. Drag to pan, scroll to zoom, click a node to open it.
+Every note in the vault and every link between them, grouped by repository. Scroll to zoom, hover a note to light up its links, select it to read its summary, and double-click to open it. Switch to Relaxed to let the links pull related notes together, or find the shortest path between two notes.
 
 <div class="brain-view" data-brain-view="graph"></div>

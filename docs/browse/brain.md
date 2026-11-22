@@ -9,10 +9,11 @@ nav_exclude: true
 
 # Brain - content map
 
-Every published page in [`docs/brain/`](../brain/) as it appears in the sidebar: **182 pages** across **2 sections** (max depth 2).
+Every published page in [`docs/brain/`](../brain/) as it appears in the sidebar: **183 pages** across **2 sections** (max depth 2).
 
 - [Second Brain](../brain/index.md)
 - [All pages](../brain/pages.md)
+- [Atlas](../brain/atlas.md)
 - [Canvas](../brain/canvas.md)
 - [Change log](../brain/log.md)
 - [Graph view](../brain/graph.md)

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T23:05:34+00:00",
+  "generated_at": "2026-11-22T16:18:35+00:00",
   "engine_version": "1.0.0",
   "enrichment": "heuristic",
   "project_enrichment": {
@@ -56,7 +56,7 @@
   "corpus_index_present": true,
   "corpus_index_generated_at": "2026-11-18T12:01:23.147865",
   "navigation": {
-    "pages": 4349,
+    "pages": 4351,
     "corpora": 23,
     "fingerprints": {
       "it-journey": "a237764155ae7cf9",

@@ -21,7 +21,8 @@ from mkdocs.structure.files import File
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from scripts.context_engine.config import GRAPH_PATH  # noqa: E402
+from brain_site import views  # noqa: E402
+from scripts.context_engine.config import GRAPH_PATH, NAV_DIR, NAV_FLEET_PATH  # noqa: E402
 from scripts.context_engine.vault import (  # noqa: E402
     Resolver, WIKILINK, looks_like_link, map_prose, notes_from_graph, parse_wikilink,
 )
@@ -38,7 +39,23 @@ CALLOUT_TYPES = {
     "error": "danger", "cite": "quote",
 }
 
-state: Dict = {"graph": None, "resolver": None, "incoming": {}, "outgoing": {}, "urls": {}}
+ATLAS_SLOT = '<div class="brain-view" data-brain-view="atlas"></div>'
+
+state: Dict = {"graph": None, "resolver": None, "incoming": {}, "outgoing": {}, "urls": {},
+               "navs": [], "colours": {}}
+
+
+def _load_navs() -> list:
+    """(name, tree) for every navigable corpus, in registry order; empty when the engine has not built."""
+    if not NAV_FLEET_PATH.is_file():
+        return []
+    order = json.loads(NAV_FLEET_PATH.read_text(encoding="utf-8")).get("order") or []
+    navs = []
+    for name in order:
+        path = NAV_DIR / f"{name}.json"
+        if path.is_file():
+            navs.append((name, json.loads(path.read_text(encoding="utf-8"))))
+    return navs
 
 
 def on_config(config):
@@ -51,10 +68,12 @@ def on_config(config):
     for source, target in graph["edges"]:
         outgoing.setdefault(nodes[source]["path"], []).append(target)
         incoming.setdefault(nodes[target]["path"], []).append(source)
+    navs = _load_navs()
     state.update(graph=graph, resolver=Resolver(notes_from_graph(graph)),
-                 incoming=incoming, outgoing=outgoing)
+                 incoming=incoming, outgoing=outgoing, navs=navs,
+                 colours=views.colours([name for name, _ in navs]))
     config.extra_css.append(f"{PUBLISHED}/brain.css")
-    config.extra_javascript.append(f"{PUBLISHED}/d3-force.bundle.js")
+    # The graph engine is published too, but brain.js loads it only on a page that draws a graph.
     config.extra_javascript.append(f"{PUBLISHED}/brain.js")
     return config
 
@@ -68,13 +87,31 @@ def on_files(files, config):
     # The browser needs less than the engine keeps; a node with no page is dropped.
     keep = {i: n for i, n in enumerate(graph["nodes"]) if n["path"] in state["urls"]}
     index = {old: new for new, old in enumerate(sorted(keep))}
+    edges = [[index[a], index[b]] for a, b in graph["edges"] if a in index and b in index]
+    kept = [keep[i] for i in sorted(keep)]
+    degree = [0] * len(kept)
+    for a, b in edges:
+        degree[a] += 1
+        degree[b] += 1
+    layout = views.constellation(kept, degree)
+    palette = state["colours"]
+    titles = {name: nav.get("title") or name for name, nav in state["navs"]}
+    nodes = []
+    for node, (x, y), d in zip(kept, layout["positions"], degree, strict=True):
+        row = {"t": node["title"], "p": node["project"], "k": node["kind"],
+               "u": state["urls"][node["path"]], "s": node["summary"],
+               "g": node["tags"], "f": node["path"], "w": node["words"], "x": x, "y": y, "d": d}
+        repo = posixpath.splitext(posixpath.basename(node["path"]))[0]
+        if node["kind"] == "project" and repo in palette:
+            row["c"] = palette[repo]   # a project note wears its repository's colour
+        nodes.append(row)
     payload = {
-        "nodes": [{"t": keep[i]["title"], "p": keep[i]["project"], "k": keep[i]["kind"],
-                   "u": state["urls"][keep[i]["path"]], "s": keep[i]["summary"],
-                   "g": keep[i]["tags"], "f": keep[i]["path"], "w": keep[i]["words"]}
-                  for i in sorted(keep)],
-        "edges": [[index[a], index[b]] for a, b in graph["edges"]
-                  if a in index and b in index],
+        "nodes": nodes,
+        "edges": edges,
+        "colours": palette,
+        "concept": views.CONCEPT,
+        "neutral": views.NEUTRAL,
+        "clusters": [{**c, "t": titles.get(c["p"], c["p"] or "(root)")} for c in layout["clusters"]],
     }
     files.append(File.generated(config, f"{PUBLISHED}/graph.json",
                                 content=json.dumps(payload, ensure_ascii=False,
@@ -149,8 +186,34 @@ def _link_list(indices: List[int], page_url: str) -> str:
     return f"<ul>{''.join(items)}</ul>"
 
 
+def _href(path: str, page_url: str) -> str | None:
+    url = state["urls"].get(path)
+    if url is None:
+        return None
+    return posixpath.relpath(url or ".", page_url or ".") + "/"
+
+
+def _illustrate(content: str, page) -> str:
+    """The Atlas on its page; a repository's emblem under the H1 of its project note."""
+    link = lambda target: _href(target, page.url)  # noqa: E731
+    if ATLAS_SLOT in content:
+        svg = views.fleet_atlas(state["navs"], state["colours"], link)
+        return content.replace(ATLAS_SLOT, f'<div class="brain-view" data-brain-view="atlas">{svg}</div>')
+    if page.meta.get("kind") == "project":
+        name = posixpath.splitext(posixpath.basename(page.file.src_uri))[0]
+        nav = dict(state["navs"]).get(name)
+        emblem = nav and views.project_emblem(nav, state["colours"].get(name, views.NEUTRAL), link)
+        if emblem and "</h1>" in content:
+            figure = (f'<figure class="atlas-emblem">{emblem}<figcaption>{html.escape(nav.get("title") or name)}'
+                      " by section: each wedge is a folder of its documentation, sized by pages. "
+                      "Select one to open it.</figcaption></figure>")
+            return content.replace("</h1>", "</h1>" + figure, 1)
+    return content
+
+
 def on_page_content(content, page, config, files):
     path = page.file.src_uri
+    content = _illustrate(content, page)
     if page.meta.get("kind") == "map" and page.meta.get("hide"):
         return content
     back = state["incoming"].get(path, [])
