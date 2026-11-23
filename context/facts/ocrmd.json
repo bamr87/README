@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 26,
-    "fingerprint": "80e60cd0271c44ff",
+    "file_count": 27,
+    "fingerprint": "5cce78e339383902",
     "path": "docs/ocrmd",
     "present": true,
-    "total_bytes": 261713
+    "total_bytes": 271878
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -21,7 +21,7 @@
       "Changelog"
     ],
     "readme": "README.md",
-    "summary": "Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search.",
+    "summary": "ocrmd's direction is to become the ultimate open home for all things document digitization: data, tools, resources and transparency, with cross-checked OCR, disagreement flags, a searchable inventory and a local-first path for everyone (constitution \u00a71).",
     "title": "ocrmd"
   },
   "key_docs": [
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/ocrmd.md",
-    "fingerprint": "4f7fa88f3a3ddcd7",
+    "fingerprint": "de693062f24ce8d0",
     "index": "ocrmd/README.md",
     "max_depth": 3,
-    "pages": 26,
+    "pages": 27,
     "present": true,
     "sections": 4,
     "skipped": 0,
@@ -47,7 +47,7 @@
     "top_sections": [
       {
         "index": "ocrmd/docs/README.md",
-        "pages": 19,
+        "pages": 20,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -68,7 +68,7 @@
   },
   "rollups": {
     "categories": {
-      "ocrmd": 26
+      "ocrmd": 27
     },
     "code_languages": [
       "text",
@@ -79,9 +79,9 @@
       "bash",
       "markdown"
     ],
-    "indexed_documents": 26,
+    "indexed_documents": 27,
     "top_tags": [],
-    "total_words": 39851
+    "total_words": 41338
   },
   "schema_version": "1.0",
   "signals": {
@@ -103,7 +103,7 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 19,
+        "doc_count": 20,
         "name": "docs"
       },
       {

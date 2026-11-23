@@ -16,7 +16,7 @@ New here? [getting-started.md](getting-started.md) takes you from a fresh clone 
 
 | Document | What it covers |
 | --- | --- |
-| [`AGENTS.md`](../AGENTS.md) | A three-pillar retro gaming monorepo: play browser recreations (`arcade/`), emulate consoles with ES-DE and RetroArch (`emulate/`), and catalog the physical collection (`catalog/`), all on one set of system ids. |
+| [`AGENTS.md`](../AGENTS.md) | Rewind Arcade's direction is to become the ultimate open home for all things retro gaming: data, tools, resources and transparency, with browser arcade play, ES-DE emulation and a physical game catalog on one set of system ids, for… |
 | [`CHANGELOG.md`](../CHANGELOG.md) | Release history: the notable changes in each version, newest first. |
 | [`SECURITY.md`](../SECURITY.md) | Supported versions and how to report a vulnerability privately. |
 | [`PRD.md`](../PRD.md) | The product requirements for Rewind Arcade: problem, users, goals and non-goals, features, requirements and proposed success measures. |
@@ -33,6 +33,7 @@ New here? [getting-started.md](getting-started.md) takes you from a fresh clone 
 | [`docs/formats.md`](formats.md) | Cartridge, disc, floppy, tape, PCB and software: how each kind of media is treated as a first-class field next to the system id. |
 | [`docs/getting-started.md`](getting-started.md) | Play, emulate and catalog from a fresh clone: the three entry points, in order, and what each needs on your machine. |
 | [`docs/legal.md`](legal.md) | What this repository ships, what it downloads, and what it refuses to (games, BIOS images, dumps). |
+| [`docs/library.md`](library.md) | How one ROM collection becomes the same library on the desktop (ES-DE) and in the browser (the arcade): the catalog identifies and describes every dump and fetches its artwork, emulate links it into ES-DE with gamelists and collections… |
 | [`docs/adr/`](adr/README.md) | The index and format of rewind-arcade's architecture decisions — the choices that are hard to reverse, recorded in the PR that makes them. |
 | [`docs/amendments/`](amendments/README.md) | The append-only log of numbered amendments to rewind-arcade's constitution, with each record's status and what it affects. |
 | [`docs/systems/`](systems/README.md) | Every platform id this monorepo knows and which pillar supports it, generated from `systems/registry.yaml`, with links to the per-family encyclopedia pages. |

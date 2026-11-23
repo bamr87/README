@@ -21,7 +21,7 @@ node-only layer   importers/ · deploy/ (net, fs)
 ## Pure modules
 
 ### `core/`
-The keystone. `formats.ts` registers each printer language and detects which one a document is written in; `pipeline.ts` dispatches parse / format / emit / convert on that id; `validate.ts` combines a language's syntax checks with the shared lint rules; `units.ts` converts dots ↔ inches ↔ millimetres; `templates.ts` holds the starter labels; `diagnostics.ts` defines the format-neutral finding shape.
+The keystone. `formats.ts` registers each printer language and detects which one a document is written in; `pipeline.ts` dispatches parse / format / emit / convert on that id; `validate.ts` combines a language's syntax checks with the shared lint rules; `units.ts` converts dots ↔ inches ↔ millimetres; `templates.ts` holds the starter labels; `diagnostics.ts` defines the format-neutral finding shape; `limits.ts` holds the resource caps for untrusted input (graphic dimensions and decoded bytes per graphic, per label and for the `~DG`/`~DY` store, the PNG pixel count, and the `InflateLimitError` thrown when decompression passes its cap).
 
 `inflate.ts` and `base64.ts` are the codecs the rest of the pure layer needs but cannot get from Node: a dependency-free DEFLATE (RFC 1951/1950) and base64. Both exist because `zlib` and `Buffer` are unavailable in the webview, and both the `:Z64:` graphic encoding and the PNG decoder need them there.
 
@@ -33,6 +33,8 @@ Nothing here may import `vscode` — the webview bundle compiles these files.
 `graphics.ts` decodes the four ways ZPL spells a bitmap — plain ASCII hex, the ACS compressed hex with letter run counts and `,` `!` `:` row operators, `:B64:` and `:Z64:` — and models the graphic store that `~DG`/`~DY` fill and `^XG`/`^IM` draw from. It also encodes: the ACS compressor is what keeps an imported logo's `^GF` field small.
 
 `text.ts` holds the glyph metrics every renderer shares. ZPL sizes a character cell and CSS sizes an em; the conversion has to be identical in the canvas preview and the SVG exporter, or a label that fits on screen overflows in the exported file.
+
+Graphic decoding is bounded: `decodeGraphicData` checks the declared geometry against `core/limits.ts` before allocating and `:Z64:` inflation stops at the cap, so a crafted label gets a warning and no graphic rather than an out-of-memory extension host.
 
 Bitmaps are drawn as runs of filled rectangles rather than through `putImageData`, which ignores the canvas transform and would drop the label's home offset, the field rotation and the preview zoom.
 
@@ -62,7 +64,7 @@ Everything between an image file and printable dots, and pure so the preview sha
 `imageToLabel.ts` is the label side of artwork import: it takes decoded pixels from `image/` and emits `^GF` / `GW` fields, reporting the judgement calls (a downscale, a trim, heavy ink coverage) the user should see. `capture.ts` cleans a raw printer capture into editable labels.
 
 ### `deploy/`
-`printers.ts` models printer profiles from settings data; `transports.ts` implements raw TCP 9100, file/device and spool-directory delivery — the only place in the extension that opens a socket; `deploy.ts` orchestrates conversion + send and returns an outcome rather than throwing.
+`printers.ts` models printer profiles from settings data; `transports.ts` implements raw TCP 9100, file/device and spool-directory delivery — the only place in the extension that opens a socket; `deploy.ts` orchestrates conversion + send and returns an outcome rather than throwing. `trust.ts` holds Deploy's trust decisions, free of `vscode` and `fs`: which settings layer a printer list came from, whether a send must be confirmed (a printer the workspace defined always asks, whatever `confirmBeforeSend` says; a dry run never does), the confirmation text, and where a `file` / `directory` path resolves (relative paths resolve against the first workspace folder, and the transport receives the absolute path). `labelStudio.deploy.confirmBeforeSend` is application-scoped, and both it and `labelStudio.printers` are restricted configurations in an untrusted workspace. A target outside the workspace is confirmed once per exact path and remembered in workspace state.
 
 ## VS Code layer
 
@@ -70,10 +72,10 @@ Everything between an image file and printable dots, and pure so the preview sha
 - `config.ts` — every settings read, with fallback to the legacy `zplViewer.*` keys.
 - `previewPanel.ts` — owns the preview webview, pushes document text + render options, receives export bytes.
 - `providers/` — hover, completion, symbols, folding, formatting; each one dispatches on the document's language. `formatter.ts` exports its edits as well as the provider, because `labelStudio.formatDocument` has to apply them to the document it was handed: VS Code's own `editor.action.formatDocument` formats whichever code editor has focus, and none does while the preview webview holds it.
-- `ui/` — `commands.ts` (every command, kept thin, plus `LABEL_ACTIONS`: the single catalog the action quick pick and the Actions tree both read), `labelExplorer.ts` (the five activity-bar trees), `statusBar.ts` (the label's language/size/density, and the click target for the action list), `barcodeStudio.ts` (studio webview host).
+- `ui/` — `commands.ts` (every command, kept thin, plus `LABEL_ACTIONS`: the single catalog the action quick pick and the Actions tree both read), `labelExplorer.ts` (the five activity-bar trees), `statusBar.ts` (the label's language/size/density, and the click target for the action list), `barcodeStudio.ts` (studio webview host), `webviewHtml.ts` (the one template fill both webviews render through) and `webviewGuards.ts` (the webview trust boundary, free of `vscode` so unit tests cover it: the crypto CSP nonce, and the shape checks every incoming webview message passes, including the allowlist of commands the preview toolbar may run — Deploy is not on it).
 
   Commands take an optional target — a tree node, an explorer URI, or nothing — and resolve it to a document, so the same command works from a menu, the palette and the preview toolbar. A menu entry whose `when` clause cannot match any tree item's `contextValue` fails silently in VS Code, so `src/test/integration/ui.test.ts` asserts that every declared command, menu entry, submenu and `viewItem` actually connects to something.
-- `webview/` — `main.ts` + `preview.html` for the preview, `studio/main.ts` + `studio/studio.html` for the barcode studio. Both bundles are built by the `webview` webpack config.
+- `webview/` — `main.ts` + `preview.html` for the preview, `studio/main.ts` + `studio/studio.html` for the barcode studio. Both bundles are built by the `webview` webpack config. Both pages ship a CSP that allows scripts only by nonce (no `'unsafe-eval'`); the e2e harness keeps that CSP, so the e2e suite proves the bundle runs under it.
 
 ## Conventions
 

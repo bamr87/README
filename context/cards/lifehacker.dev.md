@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: f6bbfee6027e0701
+source_fingerprint: 3bd8323e14b2a533
 tags:
   - ai
   - news
@@ -15,7 +15,7 @@ tags:
 
 # lifehacker.dev
 
-> Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude Code. Surviving life, one byte at a time. Knowledge, tools, and comedy — published by a robot, reviewed by a human, shipped with the mistakes left in.
+> Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude Code. lifehacker.dev's direction is to become the ultimate open home for all things practical technology: data, tools, resources and transparency, with hacks, tools and field notes that keep satire in the framing and never in the facts, and a human-gated publishing loop for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -23,7 +23,7 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/lifehacker.dev` - 138 docs |
+| Corpus | `docs/lifehacker.dev` - 139 docs |
 | External | no |
 
 ## Signals
@@ -31,14 +31,14 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~192,441 words across 138 indexed documents
+- ~193,851 words across 139 indexed documents
 - code samples in: console, plaintext, ruby, bash, yaml, text, json, mermaid
 
 ## Navigation
 
-137 published pages in 12 sections (max depth 4) — [browse the full map](../../docs/browse/lifehacker.dev.md) · [tree as JSON](../nav/lifehacker.dev.json)
+138 published pages in 12 sections (max depth 4) — [browse the full map](../../docs/browse/lifehacker.dev.md) · [tree as JSON](../nav/lifehacker.dev.json)
 
-- **Documentation** (26 pages)
+- **Documentation** (27 pages)
 - **MCP** (2 pages)
 - **Pages** (97 pages)
 - **Scripts** (3 pages)

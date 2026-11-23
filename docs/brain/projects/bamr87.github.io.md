@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 94
+pages: 96
 repo: bamr87/bamr87.github.io
 tags:
 - brain/project
@@ -16,22 +16,22 @@ title: Personal Site
 > [!info] site: `bamr87/bamr87.github.io`
 > Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages.
 
-**94** pages collected from commit `5416a6551627` (2026-11-18).
+**96** pages collected from commit `be6ee19381d5` (2026-11-23).
 
 ## Most connected pages
 
 - [[bamr87.github.io/docs/constitution|bamr87.github.io — Constitution]]
 - [[bamr87.github.io/AGENTS|bamr87.github.io]]
+- [[bamr87.github.io/docs/amendments/README|Amendments — bamr87.github.io]]
 - [[bamr87.github.io/pages/home|Home]]
 - [[bamr87.github.io/PRD|PRD — bamr87.github.io]]
 - [[bamr87.github.io/docs/README|bamr87.github.io documentation]]
-- [[bamr87.github.io/docs/amendments/README|Amendments — bamr87.github.io]]
 - [[bamr87.github.io/README|Profile & Résumé]]
 - [[bamr87.github.io/pages/_about/contribute/contributors/index|Contributors]]
 - [[bamr87.github.io/CLAUDE|bamr87.github.io]]
 - [[bamr87.github.io/docs/adr/README|Architecture Decision Records]]
 - [[bamr87.github.io/docs/amendments/0001-ratify-constitution|0001 — Ratify the constitution]]
-- [[bamr87.github.io/pages/_about/contribute/contributing|contributing]]
+- [[bamr87.github.io/docs/amendments/0002-mission-statement|0002 — Missions]]
 
 ## Concepts
 

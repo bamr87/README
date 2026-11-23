@@ -9,7 +9,7 @@ nav_exclude: true
 
 # OCRmd - content map
 
-Every published page in [`docs/ocrmd/`](../ocrmd/) as it appears in the sidebar: **26 pages** across **4 sections** (max depth 3).
+Every published page in [`docs/ocrmd/`](../ocrmd/) as it appears in the sidebar: **27 pages** across **4 sections** (max depth 3).
 
 - [ocrmd (README)](../ocrmd/README.md)
 - [Changelog](../ocrmd/CHANGELOG.md)
@@ -18,7 +18,7 @@ Every published page in [`docs/ocrmd/`](../ocrmd/) as it appears in the sidebar:
 - [ocrmd (CLAUDE)](../ocrmd/CLAUDE.md)
 - [PRD — ocrmd](../ocrmd/PRD.md)
 - [Security Policy](../ocrmd/SECURITY.md)
-- **[Documentation](../ocrmd/docs/README.md)** <small>(19)</small>
+- **[Documentation](../ocrmd/docs/README.md)** <small>(20)</small>
   - [ocrmd documentation](../ocrmd/docs/README.md)
   - [Destinations and the library API](../ocrmd/docs/integrations.md)
   - [Inventory, search, exports and extraction](../ocrmd/docs/corpus.md)
@@ -30,9 +30,10 @@ Every published page in [`docs/ocrmd/`](../ocrmd/) as it appears in the sidebar:
   - [Scanning with a webcam](../ocrmd/docs/scanning.md)
   - [Setup](../ocrmd/docs/setup.md)
   - [The web UI](../ocrmd/docs/web-ui.md)
-  - **[Amendments — ocrmd](../ocrmd/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — ocrmd](../ocrmd/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — ocrmd](../ocrmd/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../ocrmd/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../ocrmd/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../ocrmd/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../ocrmd/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../ocrmd/docs/adr/README.md)

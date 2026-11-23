@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Zer0 Mistakes - content map
 
-Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **558 pages** across **95 sections** (max depth 6).
+Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears in the sidebar: **559 pages** across **95 sections** (max depth 6).
 
 - **[Repository & tooling](../zer0-mistakes/scripts/README.md)** <small>(10)</small>
   - [Docker Configuration](../zer0-mistakes/docker/README.md)
@@ -58,12 +58,13 @@ Every published page in [`docs/zer0-mistakes/`](../zer0-mistakes/) as it appears
       - [Card.Prompt](../zer0-mistakes/_design-system/components/surfaces/Card.prompt.md)
       - [Featurecard.Prompt](../zer0-mistakes/_design-system/components/surfaces/FeatureCard.prompt.md)
       - [Postcard.Prompt](../zer0-mistakes/_design-system/components/surfaces/PostCard.prompt.md)
-- **[Documentation](../zer0-mistakes/docs/README.md)** <small>(83)</small>
+- **[Documentation](../zer0-mistakes/docs/README.md)** <small>(84)</small>
   - [Developer Documentation](../zer0-mistakes/docs/README.md)
   - [zer0-mistakes Constitution](../zer0-mistakes/docs/constitution.md)
-  - **[Amendments — zer0-mistakes](../zer0-mistakes/docs/amendments/README.md)** <small>(4)</small>
+  - **[Amendments — zer0-mistakes](../zer0-mistakes/docs/amendments/README.md)** <small>(5)</small>
     - [Amendments — zer0-mistakes](../zer0-mistakes/docs/amendments/README.md)
     - [0001 Ratify the Constitution](../zer0-mistakes/docs/amendments/0001-ratify-constitution.md)
+    - [0003 Missions](../zer0-mistakes/docs/amendments/0003-mission-statement.md)
     - [Amendment Record Template](../zer0-mistakes/docs/amendments/0000-template.md)
     - [Proposed: Agent merge of mergeable PRs, and a review gate](../zer0-mistakes/docs/amendments/proposed/agent-merge-review-gate.md)
   - **[Architecture Decision Records](../zer0-mistakes/docs/adr/README.md)** <small>(3)</small>

@@ -16,7 +16,7 @@ title: GitHub AI
 > [!info] tooling: `bamr87/githubai`
 > Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut releases.
 
-**54** pages collected from commit `2065d55dc123` (2026-11-18).
+**54** pages collected from commit `ca9b60aac510` (2026-11-18).
 
 ## Most connected pages
 

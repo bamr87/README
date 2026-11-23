@@ -7,13 +7,13 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 517c59a43aa02862
+source_fingerprint: 3b5d08707053e361
 tags:
 ---
 
 # Label Studio
 
-> Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal labels.
+> Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal labels. Label Studio's direction is to become the ultimate open home for all things thermal labels: data, tools, resources and transparency, with offline ZPL II and EPL2 preview, authoring, analysis, merge and deploy for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -21,7 +21,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/zpl-viewer` - 19 docs |
+| Corpus | `docs/zpl-viewer` - 21 docs |
 | External | no |
 
 ## Signals
@@ -29,14 +29,15 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~10,819 words across 19 indexed documents
+- has a security policy
+- ~13,349 words across 21 indexed documents
 - code samples in: plaintext, bash, zpl, jsonc
 
 ## Navigation
 
-19 published pages in 4 sections (max depth 3) — [browse the full map](../../docs/browse/zpl-viewer.md) · [tree as JSON](../nav/zpl-viewer.json)
+21 published pages in 4 sections (max depth 3) — [browse the full map](../../docs/browse/zpl-viewer.md) · [tree as JSON](../nav/zpl-viewer.json)
 
-- **Documentation** (12 pages)
+- **Documentation** (13 pages)
 
 ## Key documents
 
@@ -44,10 +45,10 @@ tags:
 - [`CLAUDE.md`](../../docs/zpl-viewer/CLAUDE.md)
 - [`AGENTS.md`](../../docs/zpl-viewer/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/zpl-viewer/CHANGELOG.md)
+- [`SECURITY.md`](../../docs/zpl-viewer/SECURITY.md)
 - [`src/README.md`](../../docs/zpl-viewer/src/README.md)
+- [`PRD.md`](../../docs/zpl-viewer/PRD.md)
 - [`docs/constitution.md`](../../docs/zpl-viewer/docs/constitution.md)
-- [`docs/reference/settings.md`](../../docs/zpl-viewer/docs/reference/settings.md)
-- [`docs/reference/commands.md`](../../docs/zpl-viewer/docs/reference/commands.md)
 
 ## Query this context
 

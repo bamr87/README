@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: e19001884a5a20c7
+source_fingerprint: 9112ae16746b6da2
 tags:
   - ai
   - concept
@@ -44,7 +44,7 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~860,195 words across 1207 indexed documents
+- ~860,816 words across 1207 indexed documents
 - code samples in: bash, yaml, python, plaintext, html, text, javascript, liquid
 
 ## Navigation

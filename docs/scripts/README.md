@@ -22,12 +22,12 @@ Every tool, the command the hub installs it as, and what it does:
 
 | Script | Command | What it does |
 | --- | --- | --- |
-| [`project-init.sh`](project-init.sh) | `project-wizard` | Interactive/non-interactive project scaffolding wizard — Django, React, Node, Python, custom; optional Docker, CI, license, and GitHub repo creation |
+| [`project-init.sh`](project-init.sh) | `project-wizard` | Interactive/non-interactive project scaffolding wizard — Django, React, Node, Python, custom; optional Docker, CI, license, and GitHub repo creation; `--dry-run` prints the plan |
 | [`forkme.sh`](FORKME/forkme.sh) → `FORKME/forkme.sh` | `forkme` | Repository forking/cloning utility with 10 strategies (full, shallow, sparse, toplevel, structure, filetype, analysis, mirror, bundle, metadata-only) |
 | [`STASHME/stashme.sh`](STASHME/stashme.sh) | `stashme` | Multi-repo cloud stash — pushes uncommitted work across many repos to timestamped `stashme/…` backup branches, with restore and cleanup modes |
 | [`git_init.sh`](git_init.sh) | `git-init` | Interactive/headless git + GitHub repo creator; prefers `gh`, falls back to `npx degit` for templates, uses gitignore.io for `.gitignore` |
-| [`rename-directory.sh`](rename-directory.sh) | `rename-dir` | Safe directory rename with git/Docker pre-flight checks and optional backup |
-| [`create_package.sh`](create_package.sh) | `create-package` | Bootstraps a Python package repo from `microsoft/python-package-template` |
+| [`rename-directory.sh`](rename-directory.sh) | `rename-dir` | Safe directory rename with git/Docker pre-flight checks and optional backup; `--dry-run` previews, `--yes` (with `--backup` / `--no-backup`) runs unattended |
+| [`create_package.sh`](create_package.sh) | `create-package` | Bootstraps a Python package repo from `microsoft/python-package-template`; `--dry-run` previews, and a non-empty target needs `--force` |
 | [`tools/unwrap-prose.py`](tools/unwrap-prose.py) | — | Liquid-safe markdown unwrapper enforcing one-paragraph-per-line; backs the `markdown-oneline` CI gate |
 
 Per-tool guides live next to the tools: [`FORKME/`](FORKME/FORKME.md), [`STASHME/`](STASHME/STASHME.md), and [`docs/rename-directory-quick-reference.md`](docs/rename-directory-quick-reference.md).
@@ -42,12 +42,12 @@ cd scripts
 Then, from the checkout:
 
 ```bash
-# install: none; every tool runs from the checkout (./install.sh only puts project-wizard on PATH, see Installation)
+# install: none; every tool runs from the checkout (./install.sh only puts project-wizard on PATH, --uninstall reverses it; see Installation)
 ./project-init.sh --help                                          # every tool prints its own flags with --help
-tests/smoke.sh                                                    # offline safety smoke (sandboxed HOME, stub gh); CI: smoke.yml
-./git_init.sh --headless -n previewme --dry-run                   # smoke test, no side effects
-./STASHME/stashme.sh --dry-run                                    # smoke test, no side effects
-shellcheck --severity=warning *.sh FORKME/forkme.sh STASHME/stashme.sh tests/*.sh   # lint (.shellcheckrc disables SC2034/SC2086/SC1091)
+tests/smoke.sh                                                    # offline safety smoke (sandboxed HOME, stub gh and git, the --dry-run contracts); CI: smoke.yml
+./git_init.sh --headless -n previewme --dry-run                   # preview, no side effects (tests/smoke.sh holds this contract)
+./STASHME/stashme.sh --dry-run                                    # preview, no side effects (tests/smoke.sh holds this contract)
+shellcheck --severity=warning *.sh FORKME/forkme.sh STASHME/stashme.sh tests/*.sh completions/*.bash   # lint (.shellcheckrc disables SC2034/SC2086/SC1091)
 python3 tools/unwrap-prose.py --check                             # markdown one-paragraph-per-line (fix with --write)
 python3 tools/docs_index.py --check                               # docs/README.md index is current (rebuild with --write)
 ```
@@ -68,13 +68,32 @@ cd /path/to/bamr87        # the hub checkout
 ```bash
 git clone https://github.com/bamr87/scripts.git
 cd scripts
+./install.sh --dry-run   # optional: print every write and change nothing
 ./install.sh
 source ~/.zshrc          # or ~/.bashrc
 ```
 
-Running both is harmless (the symlinks are idempotent), but redundant — the hub's setup is a strict superset for CLI installation.
+The rc file is picked from your login shell (`$SHELL`) and gets its `PATH` line only once; `--no-shell-rc` leaves your rc files alone. `./install.sh --help` lists every flag.
+
+Don't run both. The hub's setup is a strict superset for CLI installation, so if `~/.local/bin/project-wizard` already exists and is not this checkout's link (the hub's, say), `install.sh` stops before writing anything and prints where the existing one points; pass `--force` only if you want `project-wizard` to point at this checkout instead.
+
+To undo the standalone install, run `./install.sh --uninstall` (add `--dry-run` to preview it). It removes `~/.local/bin/project-wizard` only when it points to this checkout, takes the `PATH` block out of `~/.zshrc` and `~/.bashrc` after copying each to `<rc>.bak`, and asks before deleting `~/.project-wizard/`, which holds your templates and config; with no terminal to ask it keeps the directory, and `--purge` deletes it without asking. A second run changes nothing.
 
 Every script also runs directly with no installation at all; each prints its options with `--help`.
+
+### Shell completions
+
+Tab completion for `forkme`, `stashme` and `git-init` lives in [`completions/`](completions/). It completes every flag, the values of `forkme --strategy` and `--tag-mode` and of `git-init --license` and `--scaffold`, and directories wherever a tool takes one (`stashme`'s base directory and `-d`, `forkme --target` and `--work-dir`, `git-init --path`). Each file also completes the script under its own name, so `./forkme.sh`, `./STASHME/stashme.sh` and `./git_init.sh` work from a checkout. Neither `install.sh` nor the hub's `tools/setup.sh` loads them yet, so add one line to your shell's rc file:
+
+```bash
+# ~/.bashrc (bash 3.2 or later)
+for f in /path/to/scripts/completions/*.bash; do source "$f"; done
+
+# ~/.zshrc, after compinit if your setup runs it (_toolbelt loads the bash files through bashcompinit)
+source /path/to/scripts/completions/_toolbelt
+```
+
+[`tests/smoke.sh`](tests/smoke.sh) fails when a completion file stops offering exactly the long flags its tool's `--help` lists, so a new flag goes into both.
 
 ## 🎯 Usage
 
@@ -114,6 +133,12 @@ To set your own defaults, copy [`.env.example`](dot-env.example) and either pass
 | `SETUP_CI` | Set up GitHub Actions | `true`, `false` |
 
 `./project-init.sh --help` prints the full option list without writing anything. A run logs to `~/.project-wizard/wizard.log`.
+
+To preview a run, add `--dry-run`: the wizard resolves the configuration as usual (prompts included), then prints every file it would write and every `git` and `gh` command it would run, the `gh repo create` call among them. It creates nothing, writes no log and never calls `gh`. Only the flag decides it, so a `DRY_RUN=false` in `./.env` or a `--config` file cannot turn a dry run into a real one:
+
+```bash
+PROJECT_NAME=sandbox ./project-init.sh --non-interactive --dry-run
+```
 
 ### ForkMe
 
@@ -163,7 +188,7 @@ Creates a git repo (and optionally the GitHub remote) in interactive or headless
 ./git_init.sh                                                   # interactive
 ./git_init.sh --headless -n myrepo -u myuser --gitignore python,macos --scaffold python
 ./git_init.sh --headless -n myrepo -u myuser -t octocat/template-repo
-./git_init.sh --headless -n localrepo --no-push
+./git_init.sh --headless -n localrepo --no-push              # local only: no GitHub repo, no push
 ./git_init.sh --headless -n previewme --dry-run                 # preview only
 ```
 
@@ -175,19 +200,25 @@ Renames a directory with pre-flight validation — checks source/target paths an
 
 ```bash
 ./rename-directory.sh ~/projects/old-name ~/projects/new-name
+./rename-directory.sh --dry-run ~/projects/old-name ~/projects/new-name             # checks only, nothing changes
+./rename-directory.sh --yes ~/projects/old-name ~/projects/new-name                 # unattended, with a backup
+./rename-directory.sh --yes --no-backup ~/projects/old-name ~/projects/new-name     # unattended, no backup
 ./rename-directory.sh --help
 ```
+
+It asks up to three questions (stop related containers, continue with uncommitted changes, create a backup). `--yes` answers the first two and takes the backup unless `--no-backup` is given; `--backup` or `--no-backup` alone answers only the backup question. With no stdin to answer from (CI, cron) and no such flag, the run stops before changing anything. If piped answers run out partway, it stops before copying or moving anything and names any containers an earlier answer already stopped.
 
 → [Quick reference](docs/rename-directory-quick-reference.md)
 
 ### Create Package
 
 ```bash
-./create_package.sh awesome-lib   # → ~/github/awesome-lib, seeded from microsoft/python-package-template
+./create_package.sh awesome-lib             # → ~/github/awesome-lib, seeded from microsoft/python-package-template
+./create_package.sh --dry-run awesome-lib   # print the mkdir, git init, clone, rsync and git add steps; change nothing
 ./create_package.sh --help
 ```
 
-The name must be a plain directory name; anything starting with `-` or containing `/` is rejected. The template files are staged (`git add .`) but not committed.
+The name must be a plain directory name; anything starting with `-` or containing `/` is rejected. A `~/github/<name>` that already exists and is not empty is refused, untouched, unless you pass `--force` to overlay the template onto it. The template files are staged (`git add .`) but not committed.
 
 ## 🔒 Prerequisites
 
@@ -205,6 +236,7 @@ The [docs index](docs/README.md) lists every document with a one-line summary: t
 | --- | --- |
 | `*.sh` (root) | The tools themselves (`forkme.sh` is a symlink to `FORKME/forkme.sh`); see [Features](#-features) |
 | `FORKME/`, `STASHME/` | ForkMe and StashMe, each with its own guide, quick reference and examples |
+| `completions/` | Bash and zsh tab completion for `forkme`, `stashme` and `git-init`; see [Shell completions](#shell-completions) |
 | `docs/` | Docs index, decision log, the rename-directory quick reference |
 | `tests/` | `smoke.sh`, the offline safety smoke run by `smoke.yml` |
 | `tools/` | Repo maintenance scripts (the prose gate and the docs index generator) |
@@ -214,11 +246,11 @@ The [docs index](docs/README.md) lists every document with a one-line summary: t
 
 ## ✅ Development
 
-The gates are ShellCheck, the offline smoke test [`tests/smoke.sh`](tests/smoke.sh) (side-effect-free `--help` for every tool, `CREATE_GITHUB_REPO` / `PUSH_TO_GITHUB` honored, run against a sandboxed `HOME` and a stub `gh`), the markdown one-paragraph-per-line rule and the docs index check, all in the [Quick start](#quick-start) block. In CI, [`smoke.yml`](dot-github/workflows/smoke.yml) runs ShellCheck and the smoke test (the hub's shared `standard-ci.yml` shellchecks nothing here), [`markdown-oneline.yml`](dot-github/workflows/markdown-oneline.yml) enforces the prose rule and [`ci.yml`](dot-github/workflows/ci.yml) calls the hub's shared `standard-ci.yml`. [`claude.yml`](dot-github/workflows/claude.yml) is the `@claude` handler, and `conformance.yml`, `release.yml` (release-please) and `verify.yml` are likewise thin callers of hub workflows. Conventions for new scripts, commits and branches live in [AGENTS.md](AGENTS.md).
+The gates are ShellCheck, the offline smoke test [`tests/smoke.sh`](tests/smoke.sh) (side-effect-free `--help` for every tool, `CREATE_GITHUB_REPO` / `PUSH_TO_GITHUB` and `git_init.sh --no-push` honored, `install.sh`'s `--dry-run`, `--force` and `--uninstall` contracts, and the `--dry-run` of `git_init.sh`, `forkme.sh`, `stashme.sh`, `project-init.sh`, `rename-directory.sh` and `create_package.sh` writing nothing and making no `gh` call, `git` push, pull, fetch or clone, or `docker stop` (`project-init.sh`'s even when a sourced `./.env` or `--config` sets `DRY_RUN=false`), while a real stash into local bare remotes still reaches its summary, `rename-directory.sh --yes` renames with no stdin, `rename-directory.sh` names the containers it already stopped when piped answers run out, and `create_package.sh` refuses a non-empty target without `--force`; run against a sandboxed `HOME` with recording `gh`, `git` and `docker` stubs), the markdown one-paragraph-per-line rule and the docs index check, all in the [Quick start](#quick-start) block. In CI, [`smoke.yml`](dot-github/workflows/smoke.yml) runs ShellCheck and the smoke test (the hub's shared `standard-ci.yml` shellchecks nothing here), [`markdown-oneline.yml`](dot-github/workflows/markdown-oneline.yml) enforces the prose rule and [`ci.yml`](dot-github/workflows/ci.yml) calls the hub's shared `standard-ci.yml`. [`claude.yml`](dot-github/workflows/claude.yml) is the `@claude` handler, and `conformance.yml`, `release.yml` (release-please) and `verify.yml` are likewise thin callers of hub workflows. Conventions for new scripts, commits and branches live in [AGENTS.md](AGENTS.md).
 
 ## Contributing
 
-Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). AI agents start with [AGENTS.md](AGENTS.md); [CLAUDE.md](CLAUDE.md) imports it for Claude Code. This repo is a submodule of the [bamr87/bamr87 dash](https://github.com/bamr87/bamr87), so changes land here first.
+Contributions are welcome via pull request. Use [Conventional Commits](https://www.conventionalcommits.org/) and keep the CI checks green. The fleet-wide workflow is described in the hub's [CONTRIBUTING.md](https://github.com/bamr87/bamr87/blob/main/CONTRIBUTING.md). To catch the CI gates before you push, run `pip install pre-commit && pre-commit install` once: [`.pre-commit-config.yaml`](dot-pre-commit-config.yaml) runs ShellCheck (`--severity=warning`), the one-paragraph-per-line prose check and the docs index check on what you commit (`pre-commit run --all-files` runs them on everything). AI agents start with [AGENTS.md](AGENTS.md); [CLAUDE.md](CLAUDE.md) imports it for Claude Code. This repo is a submodule of the [bamr87/bamr87 dash](https://github.com/bamr87/bamr87), so changes land here first.
 
 ## Changelog
 

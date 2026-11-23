@@ -10,6 +10,8 @@ source_url: https://github.com/bamr87/bamr87.github.io/blob/main/README.md
 title: Profile & Résumé
 ---
 
+> This site's direction is to become the ultimate open home for this practitioner's public profile, résumé and work: data, tools, resources and transparency, with an inspectable Jekyll portfolio and a current résumé, for collaborators and the general public ([constitution](https://github.com/bamr87/bamr87.github.io/blob/main/docs/constitution.md) §1).
+
 **Featured: [the Quest Log](https://bamr87.github.io/quest-log/)**, my repositories written up as levels and side quests, one per deep dive. This site is one of the side quests: [read its entry](https://bamr87.github.io/posts/2026/11/02/quest-log-bamr87-github-io/).
 
 ## About Me
@@ -390,7 +392,7 @@ Denver, CO 80206
 | 5     | tbsp | Cooking oil, for deep-frying  |                                     |
 | 1     | tbsp | Salt                          |                                     |
 
-## Working with this repo
+## Quick start
 
 This page is the README of [bamr87/bamr87.github.io](https://github.com/bamr87/bamr87.github.io), a Jekyll site on the [zer0-mistakes](https://github.com/bamr87/zer0-mistakes) theme. To edit it, clone it with `gh repo clone bamr87/bamr87.github.io`, then preview and test it locally:
 

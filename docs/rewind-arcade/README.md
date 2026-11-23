@@ -6,7 +6,7 @@ title: Rewind Arcade
 ---
 # Rewind Arcade
 
-> Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog.
+> Rewind Arcade's direction is to become the ultimate open home for all things retro gaming: data, tools, resources and transparency, with browser arcade play, ES-DE emulation and a physical game catalog on one set of system ids, for everyone ([constitution](docs/constitution.md) §1).
 
 [![CI](https://github.com/bamr87/rewind-arcade/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/rewind-arcade/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/rewind-arcade)](LICENSE) [![Live site](https://img.shields.io/badge/live-bamr87.github.io%2Frewind--arcade-2ea44f)](https://bamr87.github.io/rewind-arcade/)
 
@@ -27,7 +27,7 @@ System ids are shared. `roms/nes` that emulate laid out is the same `nes` the ca
 ## Features
 
 - **Play:** 17 original recreations in an ES-DE-style browser frontend, plus an in-browser console loader (`#/emulate`) for dumps you own, a catalog browser (`#/catalog`) and a systems atlas (`#/systems`); static files, no backend.
-- **Emulate:** 38 declarative console manifests that install and configure ES-DE, RetroArch and libretro cores on macOS, Raspberry Pi and Debian; adding a console is one YAML file.
+- **Emulate:** 38 declarative console manifests that install and configure ES-DE, RetroArch and libretro cores on macOS, Raspberry Pi, Debian and SteamOS; adding a console is one YAML file.
 - **Catalog:** dump identification for 8 cartridge families, a physical inventory, price tracking and SQLite analytics, with dumps referenced in place and never moved.
 - **One registry:** every platform id is defined once in `systems/registry.yaml` and shared by all three pillars.
 
@@ -84,7 +84,7 @@ Emulate ships **38** console manifests with two dozen systems enabled in a fresh
 - [Formats](docs/formats.md)
 - [Systems encyclopedia](docs/systems/README.md)
 - [Legal](docs/legal.md)
-- Emulate: [commands](emulate/docs/commands.md) · [macOS](emulate/docs/macos.md) · [Pi](emulate/docs/raspberry-pi.md) · [Debian](emulate/docs/debian.md)
+- Emulate: [commands](emulate/docs/commands.md) · [macOS](emulate/docs/macos.md) · [Pi](emulate/docs/raspberry-pi.md) · [Debian](emulate/docs/debian.md) · [SteamOS](emulate/docs/steamos.md)
 - Catalog: [systems](catalog/docs/systems.md) · [matching](catalog/docs/matching.md) · [data dictionary](catalog/docs/data-dictionary.md)
 
 ## Project structure

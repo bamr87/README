@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 80
+pages: 81
 repo: bamr87/bashcrawl
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: Bash Crawl
 > [!info] game: `bamr87/bashcrawl`
 > Interactive shell-scripting tutorial — learn Bash by exploring a dungeon.
 
-**80** pages collected from commit `a644fbbcead2` (2026-11-18).
+**81** pages collected from commit `aaa4c540ba6c` (2026-11-19).
 
 ## Most connected pages
 
@@ -24,11 +24,11 @@ title: Bash Crawl
 - [[bashcrawl/docs/README|Bashcrawl documentation]]
 - [[bashcrawl/docs/generated/README|Generated reference]]
 - [[bashcrawl/termforge/README|TermForge]]
+- [[bashcrawl/AGENTS|bashcrawl]]
 - [[bashcrawl/docs/constitution|bashcrawl — Constitution]]
 - [[bashcrawl/docs/termforge/architecture|TermForge Architecture]]
-- [[bashcrawl/AGENTS|bashcrawl]]
 - [[bashcrawl/docs/PLATFORM|The Bashcrawl Platform]]
+- [[bashcrawl/docs/amendments/README|Amendments — bashcrawl]]
 - [[bashcrawl/PRD|PRD — Bashcrawl]]
 - [[bashcrawl/docs/ARCHITECTURE|Bashcrawl architecture]]
-- [[bashcrawl/docs/amendments/README|Amendments — bashcrawl]]
 - [[bashcrawl/docs/schemas/plugin.v1|Plugins v1]]

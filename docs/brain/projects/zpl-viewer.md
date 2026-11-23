@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 19
+pages: 21
 repo: bamr87/zpl-viewer
 tags:
 - brain/project
@@ -16,19 +16,19 @@ title: ZPL Viewer
 > [!info] tooling: `bamr87/zpl-viewer`
 > Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal labels.
 
-**19** pages collected from commit `debbd5656507` (2026-11-18).
+**21** pages collected from commit `c3d4f9229f5f` (2026-11-19).
 
 ## Most connected pages
 
 - [[zpl-viewer/README|Label Studio]]
 - [[zpl-viewer/docs/constitution|zpl-viewer — Constitution]]
+- [[zpl-viewer/docs/amendments/README|Amendments — zpl-viewer]]
 - [[zpl-viewer/PRD|PRD — Label Studio (zpl-viewer)]]
 - [[zpl-viewer/docs/README|zpl-viewer documentation]]
-- [[zpl-viewer/docs/amendments/README|Amendments — zpl-viewer]]
 - [[zpl-viewer/AGENTS|zpl-viewer]]
 - [[zpl-viewer/CLAUDE|zpl-viewer]]
 - [[zpl-viewer/docs/adr/README|Architecture Decision Records]]
 - [[zpl-viewer/docs/amendments/0001-ratify-constitution|0001 — Ratify the constitution]]
+- [[zpl-viewer/docs/amendments/0002-mission-statement|0002 — Missions]]
 - [[zpl-viewer/docs/testing|Testing Label Studio]]
 - [[zpl-viewer/CHANGELOG|Change Log]]
-- [[zpl-viewer/docs/adr/0000-template|ADR NNNN — Title in sentence case]]

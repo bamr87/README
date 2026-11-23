@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 54,
-    "fingerprint": "a99be7120c07c1ad",
+    "fingerprint": "e3032097ea5f420d",
     "path": "docs/githubai",
     "present": true,
-    "total_bytes": 324666
+    "total_bytes": 325888
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -103,7 +103,7 @@
     ],
     "indexed_documents": 54,
     "top_tags": [],
-    "total_words": 44275
+    "total_words": 44433
   },
   "schema_version": "1.0",
   "signals": {

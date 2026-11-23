@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 31,
-    "fingerprint": "2d6d3056428aa8b1",
+    "fingerprint": "464568176a232a24",
     "path": "docs/godotgo",
     "present": true,
-    "total_bytes": 149749
+    "total_bytes": 153555
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -87,7 +87,7 @@
     ],
     "indexed_documents": 31,
     "top_tags": [],
-    "total_words": 21407
+    "total_words": 21952
   },
   "schema_version": "1.0",
   "signals": {

@@ -5,7 +5,7 @@ categories:
 date: 2026-05-31 20:54:57+00:00
 description: Quick reference for the semantic --zer0-* CSS custom properties used
   across Zer0-Mistakes, with pointers to the full design-system architecture.
-lastmod: 2026-11-15 00:00:00+00:00
+lastmod: 2026-11-16 12:00:00+00:00
 source_file: docs/ui/design-tokens.md
 source_repo: bamr87/zer0-mistakes
 source_url: https://github.com/bamr87/zer0-mistakes/blob/main/docs/ui/design-tokens.md
@@ -114,6 +114,8 @@ Strongest first:
 | `--zer0-radius-xl` | 0.75rem | Landing feature cards |
 | `--zer0-radius-pill` | 50rem | Pills, badges |
 | `--zer0-radius-circle` | 50% | Icon chips, avatars, FABs |
+
+Every rounded surface in `_sass/` uses these tokens, so overriding one (say `--zer0-radius: 0.75rem`) re-rounds the whole theme. A partial never spells out a value the scale names: write `var(--zer0-radius)`, not `0.375rem`. A radius that is deliberately off the scale (a 2px underline, a 10px card corner, a book cover's spine) stays a literal and says why on the same line with an `// off-scale: <why>` comment. There is no `--zer0-radius-md`: the step between `--zer0-radius` and `--zer0-radius-xl` is `--zer0-radius-lg`. `ruby scripts/design-system-check.rb` enforces all three rules (#390).
 
 ---
 

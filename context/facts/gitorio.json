@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 145,
-    "fingerprint": "34de0367b060090d",
+    "fingerprint": "b4b69e8181691aac",
     "path": "docs/gitorio",
     "present": true,
-    "total_bytes": 1061977
+    "total_bytes": 1065752
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -131,7 +131,7 @@
       "release-engineering",
       "prompt-injection"
     ],
-    "total_words": 153372
+    "total_words": 153894
   },
   "schema_version": "1.0",
   "signals": {

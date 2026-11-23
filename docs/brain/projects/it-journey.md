@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 557
+pages: 558
 repo: bamr87/it-journey
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: IT Journey
 > [!info] site: `bamr87/it-journey`
 > Educational IT platform with quests, blog posts, and technical documentation.
 
-**557** pages collected from commit `683ac7759a44` (2026-11-18).
+**558** pages collected from commit `cd7e07203ac9` (2026-11-22).
 
 ## Most connected pages
 

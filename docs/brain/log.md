@@ -15,6 +15,27 @@ Every crawl that changed a corpus, newest first. Dates are the upstream commit d
 
 | Date | Project | Commit | Added | Changed | Removed |
 |---|---|---|---:|---:|---:|
+| 2026-11-19 | [[brain/projects/zpl-viewer\|ZPL Viewer]] | `c3d4f9229f5f` | 2 | 10 | 0 |
+| 2026-11-18 | [[brain/projects/zer0-CMS\|Zer0 CMS]] | `9b68af57dcb4` | 0 | 5 | 0 |
+| 2026-11-22 | [[brain/projects/SCHEMA\|SCHEMA Protocol]] | `7bbf155e8649` | 1 | 6 | 0 |
+| 2026-11-18 | [[brain/projects/rewind-arcade\|Rewind Arcade]] | `8a853869af23` | 5 | 20 | 0 |
+| 2026-11-18 | [[brain/projects/outbox\|Outbox]] | `33bbcd07005e` | 1 | 7 | 0 |
+| 2026-11-19 | [[brain/projects/ocrmd\|OCRmd]] | `07b999edb865` | 1 | 8 | 0 |
+| 2026-11-18 | [[brain/projects/lifehacker.dev\|Lifehacker]] | `f3af95a087b0` | 1 | 10 | 0 |
+| 2026-11-19 | [[brain/projects/law-ai\|Law AI]] | `7eccd0505213` | 8 | 10 | 0 |
+| 2026-11-18 | [[brain/projects/godotgo\|GodotGo]] | `1b47214264b7` | 0 | 5 | 0 |
+| 2026-11-19 | [[brain/projects/gitorio\|Gitorio]] | `1679e35e0fa2` | 0 | 4 | 0 |
+| 2026-11-18 | [[brain/projects/githubai\|GitHub AI]] | `ca9b60aac510` | 0 | 4 | 0 |
+| 2026-11-22 | [[brain/projects/fredgar-ai\|Fredgar AI]] | `0de06e6de6d6` | 0 | 6 | 0 |
+| 2026-11-21 | [[brain/projects/djangoerp\|Django ERP]] | `5bd920929197` | 5 | 8 | 0 |
+| 2026-11-18 | [[brain/projects/cv-pro\|CV Pro]] | `a60d087b7088` | 1 | 7 | 0 |
+| 2026-11-19 | [[brain/projects/bashos\|BashOS]] | `2680f58f3a3d` | 2608 | 26 | 0 |
+| 2026-11-23 | [[brain/projects/bamr87.github.io\|Personal Site]] | `be6ee19381d5` | 2 | 12 | 0 |
+| 2026-11-23 | [[brain/projects/bamr87\|Fleet Hub]] | `fc6908eec92c` | 7 | 38 | 9 |
+| 2026-11-22 | [[brain/projects/it-journey\|IT Journey]] | `cd7e07203ac9` | 1 | 5 | 0 |
+| 2026-11-19 | [[brain/projects/zer0-mistakes\|Zer0 Mistakes]] | `c3c52a7c9a59` | 1 | 14 | 0 |
+| 2026-11-19 | [[brain/projects/bashcrawl\|Bash Crawl]] | `aaa4c540ba6c` | 1 | 17 | 0 |
+| 2026-11-22 | [[brain/projects/scripts\|Scripts]] | `f835befd55c2` | 0 | 7 | 0 |
 | 2026-11-18 | [[brain/projects/bashcrawl\|Bash Crawl]] | `a644fbbcead2` | 0 | 2 | 0 |
 | 2026-11-18 | [[brain/projects/zpl-viewer\|ZPL Viewer]] | `debbd5656507` | 0 | 13 | 0 |
 | 2026-11-18 | [[brain/projects/zer0-CMS\|Zer0 CMS]] | `d0c3a6cc3eae` | 2 | 281 | 0 |
