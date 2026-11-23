@@ -992,14 +992,11 @@ python3 scripts/generate_docs_report.py
 
 ### Python Packages
 
-```
-pyyaml
-requests
-```
+`requirements.txt` lists them (`pyyaml`, `requests`, `nltk`, `pytest`); `requirements-docs.txt` adds the MkDocs site build.
 
 ### System Requirements
 
-- Python 3.7+
+- Python 3.9+ (the engine uses `str.removesuffix`; CI runs 3.12)
 - Git
 - Bash (for shell scripts)
 
@@ -1079,7 +1076,7 @@ repos:
 
 | Issue | Solution |
 |-------|----------|
-| `No python interpreter found` | Install Python 3.7+ and ensure it's in PATH |
+| `No python interpreter found` | Install Python 3.9+ and ensure it's in PATH |
 | `Module yaml not found` | Run `pip install -r requirements.txt` |
 | `Permission denied` | Make scripts executable: `chmod +x scripts/*.sh` |
 | `Git clone timeout` | Check network connection; increase `CLONE_TIMEOUT` in `context_engine/collect.py` |
