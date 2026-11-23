@@ -126,3 +126,12 @@ extra:
       link: https://linkedin.com/in/amrabdel
     - icon: fontawesome/solid/globe
       link: https://bashconsultants.com
+  # The fleet's page bridge, mounted by overrides/main.html: lets a paired Claude
+  # Code session see the page a developer has open. A developer tool, so it is
+  # off unless the variable is set (`FLEET_ASSIST=1 mkdocs serve`); the published
+  # site is built without it and carries no tag. See MKDOCS.md "Theme overrides".
+  fleet_assist:
+    enabled: !ENV [FLEET_ASSIST, false]
+    repo: bamr87/README
+    branch: main
+    base: /README

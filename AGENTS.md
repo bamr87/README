@@ -83,7 +83,7 @@ Engine modules (`scripts/context_engine/`): `registry` (registry, collection, na
 
 ## Fleet context
 
-A submodule of [bamr87/bamr87](https://github.com/bamr87/bamr87): commit and push here first, then the hub bumps its pointer. The hub owns the standards this repo checks (`specs/`, including the documentation framework), and the tools it vendors (`tools/unwrap-prose.py`, `tools/docs_index.py`) stay byte-identical to the hub's copies. The fleet-pulse doctor and the hub's issue pipeline act on this repo like any other.
+A submodule of [bamr87/bamr87](https://github.com/bamr87/bamr87): commit and push here first, then the hub bumps its pointer. The hub owns the standards this repo checks (`specs/`, including the documentation framework), and the files it vendors (`tools/unwrap-prose.py`, `tools/docs_index.py`, and the page-bridge payload `docs/assets/js/fleet-assist.js`, mounted by `overrides/main.html` only under `FLEET_ASSIST=1 mkdocs serve`) stay byte-identical to the hub's copies. The fleet-pulse doctor and the hub's issue pipeline act on this repo like any other.
 
 ## Standard deviations
 

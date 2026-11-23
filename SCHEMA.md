@@ -42,12 +42,12 @@ coverage: listed
 | `brain_site/` | dir | MkDocs hook, build-time views (layout, Atlas) and browser assets: wikilinks, callouts, backlinks, the WebGL graph, Atlas, canvas, previews, quick switcher, and the vault workspace | required terminal |
 | `assets/` | dir | Hub feedback kit: `js/fleet-feedback.js` + `js/fleet-feedback-capture.js` | terminal |
 | `context/` | dir | The context pyramid: facts, cards, apex, query index (rebuilt by the engine) | generated |
-| `docs/` | dir | The Obsidian vault: L3 corpus collected from fleet repos, plus the generated notes in `docs/brain/` | generated |
+| `docs/` | dir | The Obsidian vault: L3 corpus collected from fleet repos, plus the generated notes in `docs/brain/`; also holds the hub's vendored page-bridge payload, `assets/js/fleet-assist.js` | generated |
 | `features/` | dir | Hub verify kit: `features.yml`, the feature index graded by the hub | terminal |
 | `hooks.d/` | dir | Lifecycle hooks the engine runs at each build stage | required |
 | `notes/` | dir | Hand and agent-written notes, copied into the vault at `docs/brain/notes/` | required |
 | `mcp/` | dir | MCP server exposing the pyramid to AI clients | required |
-| `overrides/` | dir | MkDocs Material theme overrides (`theme.custom_dir`): skip link, SEO/Open Graph meta, custom 404, design tokens | required |
+| `overrides/` | dir | MkDocs Material theme overrides (`theme.custom_dir`): skip link, SEO/Open Graph meta, custom 404, design tokens, the development-only page bridge mount | required |
 | `scripts/` | dir | Pipeline stages, context engine, gates, and utilities | required |
 | `tests/` | dir | Unit + integration harness (`python tests/test_runner.py`) | required |
 | `tools/` | dir | Vendored hub kit: `unwrap-prose.py` (the one-paragraph-per-line prose gate run by CI and at ingest) and `docs_index.py` (the docs index generator the survey's framework checks reuse) | required terminal |
@@ -72,7 +72,7 @@ coverage: listed
 | `SECURITY.md` | file | Security policy: supported versions, private reporting and the 7-day response window (community kit) | |
 | `WIKIJS-QUICKSTART.md` | file | Wiki.js quickstart guide | |
 | `docker-compose.yml` | file | Wiki.js + Postgres stack (mounts docs/ read-only) | |
-| `mkdocs.yml` | file | MkDocs Material config — pulls the generated nav in with `INHERIT` | required |
+| `mkdocs.yml` | file | MkDocs Material config — pulls the generated nav in with `INHERIT`; `extra.fleet_assist` switches the page bridge on with `FLEET_ASSIST=1` | required |
 | `nav.yml` | file | Published navigation: MkDocs `nav` + `exclude_docs`, rendered by the engine's navigator | generated |
 | `pyproject.toml` | file | Tool config only (no package): ruff lint rules and the pytest config | |
 | `release-please-config.json` | file | release-please configuration (release kit) | |
@@ -100,5 +100,9 @@ coverage: listed
   (`tools/fanout.sh --kit prose`, and `tools/docs_index.py` copied from the
   hub's `tools/`); fix it there and re-vendor, or the conformance checker
   reports the copy as drifted.
+- No local edits to `docs/assets/js/fleet-assist.js` — it is the page-bridge
+  payload, vendored verbatim from the hub's assistant kit
+  (`tools/fanout.sh --kit assist`) and held byte-identical to it; it is mounted
+  from `overrides/main.html`, which is the file to edit.
 - No fleet-project source code here — it belongs in the project's own repo;
   this repo only carries distilled context about it.
