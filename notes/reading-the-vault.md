@@ -17,3 +17,5 @@ The brain ([[brain/index|Second Brain]]) holds what the engine works out across 
 Notes (`notes/`) hold what people and agents decide is worth keeping. They are the only part written by hand.
 
 When a link looks wrong, fix it where the page comes from. [[brain/health|Vault health]] lists what is broken and which repository owns it.
+
+To read all three layers side by side, open the [[brain/workspace|workspace]] on the published site: folders on the left, notes in tabs, and each note's links and outline on the right.

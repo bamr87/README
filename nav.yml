@@ -25,6 +25,7 @@ nav:
       - "Reading the vault": brain/notes/reading-the-vault.md
       - "Tags": brain/tags.md
       - "Vault health": brain/health.md
+      - "Workspace": brain/workspace.md
       - "Concepts":
           - "About": brain/concepts/about.md
           - "Accessibility": brain/concepts/accessibility.md

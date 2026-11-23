@@ -28,7 +28,7 @@
   ],
   "counts": {
     "projects": 23,
-    "pages": 6984
+    "pages": 6985
   },
   "projects": {
     "it-journey": {
@@ -337,11 +337,11 @@
       "tree": "context/nav/brain.json",
       "browse": "docs/browse/brain.md",
       "registered": false,
-      "pages": 182,
+      "pages": 183,
       "sections": 2,
       "max_depth": 2,
       "skipped": 0,
-      "fingerprint": "99c56b18965350be"
+      "fingerprint": "88f04d1dd05f49d7"
     },
     "results": {
       "title": "Results",

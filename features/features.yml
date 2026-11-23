@@ -218,3 +218,20 @@ features:
     docs: "mcp/README.md"
     tests:
       - tests/unit/test_cases/test_second_brain.py
+  - id: README-019
+    title: "Vault workspace"
+    description: "The published site opens the vault in one window at /brain/workspace/: a file explorer, tabs and split panes, search, backlinks, an outline, a local graph and a command palette, read from the graph and the pages the site already serves."
+    implemented: true
+    status: shipped
+    prd: ["FR15"]
+    surface: ui
+    link: /brain/workspace/
+    docs: MKDOCS.md
+    tags: [site, mkdocs, obsidian, workspace]
+    tests:
+      - tests/unit/test_cases/test_brain_site.py
+      - tests/js/workspace.test.cjs
+    scenarios:
+      - verify/scenarios/brain-workspace.yml
+      - verify/scenarios/brain-workspace-panes.yml
+    evidence: []

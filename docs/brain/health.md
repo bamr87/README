@@ -11,7 +11,7 @@ title: Vault health
 
 # Vault health
 
-**228** unresolved link targets, **2415** orphan pages, **427** titles shared by more than one page. Fix these upstream: `docs/` is regenerated.
+**229** unresolved link targets, **2415** orphan pages, **427** titles shared by more than one page. Fix these upstream: `docs/` is regenerated.
 
 ## Unresolved links
 

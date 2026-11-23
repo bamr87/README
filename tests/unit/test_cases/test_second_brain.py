@@ -350,6 +350,20 @@ class TestBrain(unittest.TestCase):
             self._generate(root)
             self.assertTrue((root / "docs/brain/notes/a-decision.md").is_file())
 
+    def test_the_workspace_is_a_page_the_index_points_at(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            self._docs(root)
+            self._generate(root)
+            page = (root / "docs/brain/workspace.md").read_text()
+            meta = split_note(page)[0]
+            self.assertIn('data-brain-view="workspace"', page)
+            # The workspace takes the whole window, so the page hides both sidebars.
+            self.assertEqual(meta["hide"], ["navigation", "toc"])
+            self.assertIn("[[brain/workspace\\|Workspace]]", (root / "docs/brain/index.md").read_text())
+            notes, _ = scan(root / "docs")
+            self.assertIn("brain/workspace.md", notes["brain/index.md"].links)
+
     def test_obsidian_settings_colour_each_project(self):
         settings = brain.obsidian_settings(["p", "q"])
         groups = json.loads(settings["graph.json"])["colorGroups"]
@@ -739,6 +753,25 @@ class TestSiteHook(unittest.TestCase):
 
     def test_folded_callout(self):
         self.assertIn("??? note", HOOK.render_callouts("> [!note]-\n> Hidden\n"))
+
+    def test_the_browser_gets_only_notes_that_have_a_page(self):
+        def node(path):
+            return {"title": path, "project": "p", "kind": "doc", "summary": "", "tags": [],
+                    "path": path, "words": 1}
+        graph = {"fingerprint": "abc123", "nodes": [node("a.md"), node("gone.md"), node("b.md")],
+                 "edges": [[0, 1], [0, 2], [2, 0], [1, 2]]}
+        payload = HOOK.graph_payload(graph, {"a.md": "a/", "b.md": "b/"})
+        self.assertEqual(payload["fingerprint"], "abc123")
+        self.assertEqual([(n["f"], n["u"]) for n in payload["nodes"]], [("a.md", "a/"), ("b.md", "b/")])
+        # Edges are renumbered to the nodes that are left, and one end missing drops the edge.
+        self.assertEqual(payload["edges"], [[0, 1], [1, 0]])
+
+    def test_every_registered_asset_exists_and_loads_in_order(self):
+        for name in HOOK.STYLES + HOOK.SCRIPTS:
+            self.assertTrue((HOOK.ASSETS / name).is_file(), name)
+        # workspace.js registers its view with brain.js, which draws with d3.
+        order = [HOOK.SCRIPTS.index(n) for n in ("d3-force.bundle.js", "brain.js", "workspace.js")]
+        self.assertEqual(order, sorted(order))
 
 
 if __name__ == "__main__":

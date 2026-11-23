@@ -1,0 +1,31 @@
+# A reader opens the vault's workspace, lands on a note from its address, and
+# runs a command. Every step works on a desktop and on a phone.
+schema: scenario/v1
+id: brain-workspace
+feature: README-019
+title: "The workspace opens the vault in one window"
+viewports: [desktop, mobile]
+steps:
+  - goto: /brain/workspace/
+  - wait: { selector: ".brain-ws .brain-ws-home" }
+  - expect: { visible: ".brain-ws-ribbon" }
+  - expect: { count: { selector: ".brain-ws-card", min: 1 } }
+  - expect: { no_horizontal_scroll: true }
+  - screenshot: start
+  # The address names the note, so a link to the workspace is a link to a note.
+  - goto: /brain/workspace/#/brain/concepts/docker.md
+  - wait: { selector: ".brain-ws-note .admonition" }
+  - expect: { count: { selector: ".brain-ws-tab", min: 1 } }
+  - expect: { count: { selector: ".brain-ws-note a[href]", min: 1 } }
+  - expect: { no_horizontal_scroll: true }
+  - screenshot: note
+  # The command palette opens the graph in a tab of its own.
+  - press: Control+p
+  - wait: { selector: ".brain-switcher input" }
+  - fill: { selector: ".brain-switcher input", value: "graph" }
+  - press: Enter
+  - wait: { selector: ".brain-ws-view canvas" }
+  - expect: { url: "#/graph" }
+  - expect: { count: { selector: ".brain-ws-tab", min: 2 } }
+  - screenshot: graph
+  - expect: { no_console_errors: true }
