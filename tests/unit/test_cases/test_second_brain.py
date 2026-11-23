@@ -727,6 +727,33 @@ class TestSiteViews(unittest.TestCase):
         self.assertEqual(palette["alpha"], views.hex_colour(groups[1]["color"]["rgb"]))
         self.assertEqual(palette["beta"], views.hex_colour(groups[2]["color"]["rgb"]))
 
+    def test_the_vaults_colour_groups_read_back_by_repository(self):
+        # Obsidian has groups only for repositories with a corpus, so reading its own
+        # settings is what keeps a missing one from shifting every colour after it.
+        settings = json.loads(brain.obsidian_settings(["beta", "gamma"])["graph.json"])
+        palette = views.obsidian_colours(settings)
+        self.assertEqual(set(palette), {"beta", "gamma"}, "the concept group is not a repository")
+        self.assertEqual(palette, views.colours(["beta", "gamma"]))
+        self.assertNotEqual(palette["beta"], views.colours(["alpha", "beta", "gamma"])["beta"])
+
+    def test_atlas_labels_read_on_every_repository_colour(self):
+        fills = list(views.colours([str(i) for i in range(48)]).values()) + [views.NEUTRAL, views.CONCEPT]
+        for fill in fills:
+            self.assertGreaterEqual(views.contrast(fill, views.label_ink(fill)), 4.5, fill)
+        self.assertEqual(views.label_ink("#ffd54f"), views.INK_DARK)
+        self.assertEqual(views.label_ink("#5c6bc0"), views.INK_LIGHT)
+        light = views.fleet_atlas([("alpha", self.NAV)], {"alpha": "#ffd54f"}, lambda p: "/" + p)
+        dark = views.fleet_atlas([("alpha", self.NAV)], {"alpha": "#5c6bc0"}, lambda p: "/" + p)
+        self.assertIn('class="atlas-label atlas-label--dark"', light)
+        self.assertIn('class="atlas-label"', dark)
+        self.assertNotIn("atlas-label--dark", dark)
+
+    def test_the_atlas_is_a_group_of_links_for_a_screen_reader(self):
+        # An image's children are presentational, so its links would not be announced.
+        svg = views.fleet_atlas([("alpha", self.NAV)], {"alpha": "#5c6bc0"}, lambda p: "/" + p)
+        self.assertIn('role="group"', svg)
+        self.assertNotIn('role="img"', svg)
+
     def test_packed_circles_never_overlap(self):
         radii = [50, 30, 30, 20, 10, 10, 5]
         centres = views.pack(radii, 4)
@@ -848,6 +875,19 @@ class TestSiteHook(unittest.TestCase):
         self.assertEqual([(n["f"], n["u"]) for n in payload["nodes"]], [("a.md", "a/"), ("b.md", "b/")])
         # Edges are renumbered to the nodes that are left, and one end missing drops the edge.
         self.assertEqual(payload["edges"], [[0, 1], [1, 0]])
+        # Two notes that link each other are linked once: each has one linked note.
+        self.assertEqual([n["d"] for n in payload["nodes"]], [1, 1])
+
+    def test_the_site_palette_is_the_vaults(self):
+        with tempfile.TemporaryDirectory() as temp:
+            docs = Path(temp)
+            # Registry order says alpha, beta; only beta has a corpus, so Obsidian colours it first.
+            self.assertEqual(HOOK.site_palette(docs, ["alpha", "beta"]), views.colours(["alpha", "beta"]),
+                             "before the vault is built, registry order")
+            (docs / ".obsidian").mkdir()
+            (docs / ".obsidian" / "graph.json").write_text(brain.obsidian_settings(["beta"])["graph.json"],
+                                                          encoding="utf-8")
+            self.assertEqual(HOOK.site_palette(docs, ["alpha", "beta"]), views.colours(["beta"]))
 
     def test_every_registered_asset_exists_and_loads_in_order(self):
         for name in HOOK.STYLES + HOOK.SCRIPTS:

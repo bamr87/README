@@ -8,7 +8,7 @@ The site's graph views draw with [sigma.js](https://github.com/jacomyal/sigma.js
 | --- | --- | --- |
 | `sigma` | 4.0.6 | WebGL rendering, camera, hover and click events |
 | `graphology` | 0.26.0 | The graph model |
-| `graphology-layout-forceatlas2` | 0.10.1 | The "Relaxed" layout, run in a web worker |
+| `graphology-layout-forceatlas2` | 0.10.1 | The "By connection" layout, run in a web worker |
 | `graphology-shortest-path` | 2.1.0 | The path finder |
 
 Their own dependencies (`graphology-utils`, `events`, `mnemonist`, `obliterator`, `@yomguithereal/helpers`) come along, also MIT.
