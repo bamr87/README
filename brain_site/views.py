@@ -21,6 +21,8 @@ SECTION_GAP = 14.0   # between two sections of one repository
 PROJECT_GAP = 60.0   # between two repositories
 NEUTRAL = "#b0b0b0"  # notes that belong to no registered repository
 HUB = "brain"        # the generated notes: concepts sit at the centre, bridging repositories
+INK_LIGHT = "#ffffff"  # a label on a dark wedge
+INK_DARK = "#111111"   # a label on a light one
 
 
 def hex_colour(rgb: int) -> str:
@@ -30,6 +32,40 @@ def hex_colour(rgb: int) -> str:
 def colours(order: Sequence[str]) -> dict[str, str]:
     """One colour per repository, in registry order: the same as Obsidian's colour groups."""
     return {name: hex_colour(PALETTE[i % len(PALETTE)]) for i, name in enumerate(order)}
+
+
+def obsidian_colours(settings: dict) -> dict[str, str]:
+    """The colour of each repository as the vault's own `.obsidian/graph.json` gives it.
+
+    The site reads its palette from there, so a repository wears the same colour in
+    Obsidian and on the site whatever decided the order of the groups.
+    """
+    out: dict[str, str] = {}
+    for group in settings.get("colorGroups") or []:
+        query = group.get("query") or ""
+        rgb = (group.get("color") or {}).get("rgb")
+        if query.startswith('path:"') and query.endswith('/"') and isinstance(rgb, int):
+            out[query[len('path:"'):-len('/"')]] = hex_colour(rgb)
+    return out
+
+
+def _luminance(colour: str) -> float:
+    def channel(value: int) -> float:
+        s = value / 255
+        return s / 12.92 if s <= 0.03928 else ((s + 0.055) / 1.055) ** 2.4
+    r, g, b = (int(colour[i:i + 2], 16) for i in (1, 3, 5))
+    return 0.2126 * channel(r) + 0.7152 * channel(g) + 0.0722 * channel(b)
+
+
+def contrast(a: str, b: str) -> float:
+    """The WCAG contrast ratio of two #rrggbb colours."""
+    high, low = sorted((_luminance(a), _luminance(b)), reverse=True)
+    return (high + 0.05) / (low + 0.05)
+
+
+def label_ink(fill: str) -> str:
+    """The label colour that reads on `fill`: white or near-black, whichever contrasts more."""
+    return INK_DARK if contrast(fill, INK_DARK) > contrast(fill, INK_LIGHT) else INK_LIGHT
 
 
 CONCEPT = hex_colour(CONCEPT_COLOUR)
@@ -209,7 +245,8 @@ def sunburst(items: Sequence[dict], *, title: str, subtitle: str, size: int = 64
                 path = (f'<path class="atlas-arc" d="{_arc(c, r0, r1, a0, a1)}" fill="{fill}" '
                         f'data-label="{html.escape(tip)}"><title>{html.escape(tip)}</title></path>')
                 # xlink:href, not href: Material's instant navigation rewrites every [href] with
-                # `el.href = el.href`, which throws on an SVG link, whose href is read-only.
+                # `el.href = el.href`, which throws on an SVG link, whose href is read-only. Its click
+                # handler cannot follow an SVG link either, so brain.js follows these clicks itself.
                 arcs.append(f'<a xlink:href="{html.escape(item["href"])}">{path}</a>' if item.get("href") else path)
                 if labels and depth == 0 and a1 - a0 > 0.11:
                     mid = (a0 + a1) / 2
@@ -222,7 +259,8 @@ def sunburst(items: Sequence[dict], *, title: str, subtitle: str, size: int = 64
                     room = int((r1 - r0) / 5.2)
                     if len(name) > room:
                         name = name[:max(room - 1, 3)] + "…"
-                    texts.append(f'<text class="atlas-label" x="{x:.2f}" y="{y:.2f}" '
+                    shade = " atlas-label--dark" if label_ink(fill) == INK_DARK else ""
+                    texts.append(f'<text class="atlas-label{shade}" x="{x:.2f}" y="{y:.2f}" '
                                  'text-anchor="middle" dominant-baseline="central" '
                                  f'transform="rotate({turn:.1f} {x:.2f} {y:.2f})">{html.escape(name)}</text>')
             draw(item.get("children") or [], depth + 1, cursor, width, base)
@@ -230,7 +268,7 @@ def sunburst(items: Sequence[dict], *, title: str, subtitle: str, size: int = 64
 
     draw(list(items), 0, 0.0, 2 * math.pi, None)
     return (f'<svg class="atlas" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" '
-            f'viewBox="0 0 {size} {size}" role="img" '
+            f'viewBox="0 0 {size} {size}" role="group" '
             f'aria-label="{html.escape(title)}: {html.escape(subtitle)}">'
             + "".join(arcs) + "".join(texts)
             + f'<text class="atlas-centre" x="{c}" y="{c - 6}" text-anchor="middle">{html.escape(title)}</text>'

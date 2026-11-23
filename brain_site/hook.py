@@ -78,20 +78,35 @@ def on_config(config):
     navs = _load_navs()
     state.update(graph=graph, resolver=Resolver(notes_from_graph(graph)),
                  incoming=incoming, outgoing=outgoing, navs=navs,
-                 colours=views.colours([name for name, _ in navs]))
+                 colours=site_palette(Path(config["docs_dir"]), [name for name, _ in navs]))
     config.extra_css.extend(f"{PUBLISHED}/{name}" for name in STYLES)
     config.extra_javascript.extend(f"{PUBLISHED}/{name}" for name in SCRIPTS)
     return config
+
+
+def site_palette(docs_dir: Path, order: list[str]) -> dict[str, str]:
+    """Each repository's colour: the vault's Obsidian colour groups, so the site and the app agree.
+
+    The engine writes those groups only for repositories with a corpus; one it has not
+    built yet falls back to the registry order the groups would have used.
+    """
+    settings = docs_dir / ".obsidian" / "graph.json"
+    if settings.is_file():
+        palette = views.obsidian_colours(json.loads(settings.read_text(encoding="utf-8")))
+        if palette:
+            return palette
+    return views.colours(order)
 
 
 def graph_payload(graph: dict, urls: dict[str, str], navs: list | None = None,
                   palette: dict[str, str] | None = None) -> dict:
     """The graph as the browser gets it: short keys, and only notes with a page.
 
-    Each note carries where the constellation puts it (`x`, `y`) and its links
-    (`d`); `clusters` are the repositories' circles and `colours` the palette in
-    registry order. `fingerprint` names the build of the vault, so a reader can
-    tell which one a deployed site is showing.
+    Each note carries where the constellation puts it (`x`, `y`) and how many
+    notes it links with either way (`d`: a pair that links both ways counts
+    once); `clusters` are the repositories' circles and `colours` the palette.
+    `fingerprint` names the build of the vault, so a reader can tell which one a
+    deployed site is showing.
     """
     palette = palette or {}
     keep = {i: n for i, n in enumerate(graph["nodes"]) if n["path"] in urls}
@@ -99,7 +114,7 @@ def graph_payload(graph: dict, urls: dict[str, str], navs: list | None = None,
     edges = [[index[a], index[b]] for a, b in graph["edges"] if a in index and b in index]
     kept = [keep[i] for i in sorted(keep)]
     degree = [0] * len(kept)
-    for a, b in edges:
+    for a, b in {(min(a, b), max(a, b)) for a, b in edges if a != b}:
         degree[a] += 1
         degree[b] += 1
     layout = views.constellation(kept, degree)

@@ -44,14 +44,14 @@ The d3-force bundle is removed.
 - The graph opens in the same arrangement every time, readable from afar, and every interaction stays on the page.
 - A reader can go from a question to a note (find), from a note to its neighbourhood (hover, card, local graph), and from one note to another (path).
 - The Atlas and the emblems show the size and the organization of the documentation at a glance, and every wedge is a link into it.
-- Pages without a graph download nothing new.
+- A page that draws no graph downloads nothing new. Every note with a link draws one, its local graph, so about six pages in ten load the engine (2,761 of 4,362 notes had a link when this was written).
 
 **Negative**
 
 - The graph needs WebGL 2. A browser without it gets a note linking to the Atlas and the table instead of a graph.
-- The engine is about 464 KB minified (121 KB gzipped) against 17 KB for d3-force, loaded on graph pages only, and a vendored bundle is ours to rebuild when sigma moves. sigma 4 also changed defaults from 3 (sizes are measured in graph units unless a view says otherwise), so a major bump means reading its declarations first.
+- The engine is about 464 KB minified (121 KB gzipped) against 17 KB for d3-force. It loads on every page that draws a graph, which includes the local graph on any note with a link, so most readers fetch it once and their browser caches it. A vendored bundle is ours to rebuild when sigma moves. sigma 4 also changed defaults from 3 (sizes are measured in graph units unless a view says otherwise), so a major bump means reading its declarations first.
 - The graph payload grows by each note's position and link count (about 1.7 MB uncompressed for 4,360 notes).
-- Material's instant navigation rewrites every `[href]` by assigning `el.href`, which throws on an SVG link, so the Atlas links with `xlink:href`; a future theme change could need the same care.
+- Material's instant navigation rewrites every `[href]` by assigning `el.href`, which throws on an SVG link, so the Atlas links with `xlink:href`. Its click handler reads `el.href` too and cannot follow an SVG link either (the click throws and the browser reloads the page), so `brain.js` follows clicks on the Atlas and the emblems itself, before Material sees them. A future theme change could need the same care.
 
 ## Alternatives considered
 

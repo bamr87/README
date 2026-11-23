@@ -255,6 +255,7 @@
   // Views the site draws at build time: a note keeps the picture and brain.js wires it up.
   const DRAWN = ["atlas"];
   const STORE_KEY = "brain-workspace";
+  const XLINK = "http://www.w3.org/1999/xlink";
   const TREE_ROW = 28;
   const RESULT_ROW = 50;
   const LINK_LIMIT = 100;
@@ -358,6 +359,12 @@
       try { node.setAttribute(name, new URL(node.getAttribute(name), pageUrl).href); } catch (error) { node.removeAttribute(name); }
     };
     article.querySelectorAll("a[href]").forEach((node) => absolute(node, "href"));
+    // The Atlas links its wedges with xlink:href (brain_site/views.py says why): those resolve against the page too.
+    article.querySelectorAll("a").forEach((node) => {
+      const raw = node.getAttributeNS(XLINK, "href");
+      if (raw === null) return;
+      try { node.setAttributeNS(XLINK, "xlink:href", new URL(raw, pageUrl).href); } catch (error) { node.removeAttributeNS(XLINK, "href"); }
+    });
     article.querySelectorAll("img[src], source[src], video[src], audio[src], iframe[src]").forEach((node) => absolute(node, "src"));
     const template = document.createElement("template");
     template.content.append(...article.childNodes);

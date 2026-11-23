@@ -103,11 +103,11 @@ A small detail mattered: the camera flies a selected note to the left of centre,
 
 The "illustration" became an Atlas: a sunburst of every repository's documentation, drawn as SVG by the site build. Repositories sit in the inner ring and their sections around them, each wedge sized by page count and linked to its section. Each project note gets a smaller emblem of its own sections. It needs no JavaScript at all; a few lines of script only name the hovered wedge in the middle.
 
-It also surfaced a bug in someone else's code. MkDocs Material's instant navigation rewrites every element matching `[href]` by assigning `el.href = el.href`. On an SVG link, `href` is a read-only object, so the assignment throws. Writing the links as `xlink:href` keeps them out of that selector, and browsers still follow them.
+It also surfaced a bug in someone else's code. MkDocs Material's instant navigation rewrites every element matching `[href]` by assigning `el.href = el.href`. On an SVG link, `href` is a read-only object, so the assignment throws. Writing the links as `xlink:href` keeps them out of that selector. Material's click handler has the same blind spot: it builds a URL from `link.href`, which on an SVG link is an object, so a click threw and the browser reloaded the whole page. A few lines of script now follow those clicks before Material sees them.
 
 ## Step 6: don't ship weight to pages that don't need it
 
-The WebGL engine is 464 KB minified (121 KB gzipped), against 17 KB for the d3-force bundle it replaced. The site has 4,400 pages, and most of them never draw a graph. So the engine loads on demand, only when a page mounts one, and a small vendor note records exactly how to rebuild the bundle and where its licences live.
+The WebGL engine is 464 KB minified (121 KB gzipped), against 17 KB for the d3-force bundle it replaced. So the engine loads on demand, only when a page mounts a graph. That is more pages than I first assumed: every note with a link shows its local graph, which is about six pages in ten. A reader fetches the engine once and the browser caches it, and a small vendor note records exactly how to rebuild the bundle and where its licences live.
 
 ## Working with AI: tips from this session
 

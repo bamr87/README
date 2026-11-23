@@ -194,7 +194,7 @@ features:
       - tests/unit/test_cases/test_second_brain.py
   - id: README-017
     title: "Obsidian views on the site"
-    description: "The published site shows wikilinks, callouts, backlinks, hover previews, a quick switcher, a canvas, a table of every note, and a WebGL graph explorer: repositories laid out as labelled constellations or relaxed by their links, a note's links lit on hover, a summary card on selection, find-and-fly, filters, a shortest-path finder and a two-depth local graph on every page."
+    description: "The published site shows wikilinks, callouts, backlinks, hover previews, a quick switcher, a canvas, a table of every note, and a WebGL graph explorer: repositories laid out as labelled constellations or relaxed by their links, a note's links lit on hover, a summary card on selection, find-and-fly, filters, a shortest-path finder and a two-depth local graph on every note that has links."
     implemented: true
     status: shipped
     prd: ["FR14"]

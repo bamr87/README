@@ -51,7 +51,22 @@
     }
     return enginePromise;
   }
-  const hasWebGL2 = () => { try { return !!document.createElement("canvas").getContext("webgl2"); } catch (e) { return false; } };
+  // Asked once per page load, and the probe's context is given back: a browser keeps only a
+  // handful of WebGL contexts alive, and instant navigation would otherwise add one per page.
+  let webgl2 = null;
+  function hasWebGL2() {
+    if (webgl2 === null) {
+      try {
+        const gl = document.createElement("canvas").getContext("webgl2");
+        webgl2 = !!gl;
+        const lose = gl && gl.getExtension("WEBGL_lose_context");
+        if (lose) lose.loseContext();
+      } catch (error) {
+        webgl2 = false;
+      }
+    }
+    return webgl2;
+  }
 
   // Material's colours can be hsla() or carry var(); a 2D context hands any CSS colour back as hex or rgba.
   const probe = document.createElement("canvas").getContext("2d");
@@ -71,6 +86,13 @@
       edge: dark ? "rgba(255,255,255,0.09)" : "rgba(30,35,45,0.09)",
       faded: dark ? "#353945" : "#e6e8ec",
     };
+  }
+  // Material's palette toggle changes the body's colour scheme without a new page, so a graph
+  // that has read the theme is told when it changes. Returns the function that stops telling it.
+  function onSchemeChange(callback) {
+    const watcher = new MutationObserver(callback);
+    watcher.observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
+    return () => watcher.disconnect();
   }
   function withAlpha(colour, alpha) {
     const hex = plain(colour, "#888888");
@@ -99,7 +121,7 @@
   /* One renderer for both graphs: hover lights a note's links, a selection keeps them lit,
      a path shows only its route, and a filter hides what the controls exclude. */
   function renderer(B, graph, host, options) {
-    const ink = theme();
+    let ink = theme();
     const look = { hovered: null, selected: null, near: new Set(), path: null, route: null, show: () => true };
     const focus = () => look.hovered || look.selected;
     // A link takes its repository's colour, barely: thousands of them should read as a texture, not a mesh.
@@ -128,7 +150,8 @@
         allowInvalidContainer: true,
       },
       nodeReducer(key, data, attrs) {
-        if (!look.show(attrs)) return { visibility: "hidden" };
+        // A route shows every step, even one the filters hide.
+        if (!(look.path && look.path.has(key)) && !look.show(attrs)) return { visibility: "hidden" };
         const out = { labelColor: ink.fg, backdropColor: ink.bg, backdropShadowColor: ink.dark ? "rgba(0,0,0,.6)" : "rgba(0,0,0,.25)" };
         if (look.path) {
           if (look.path.has(key)) Object.assign(out, { labelVisibility: "visible", zIndex: 2, size: data.size * 1.3 });
@@ -145,9 +168,9 @@
         return out;
       },
       edgeReducer(key, data) {
+        if (look.path) return look.route.has(key) ? { color: ink.accent, size: 3, zIndex: 2 } : { visibility: "hidden" };
         const [s, t] = graph.extremities(key);
         if (!look.show(graph.getNodeAttributes(s)) || !look.show(graph.getNodeAttributes(t))) return { visibility: "hidden" };
-        if (look.path) return look.route.has(key) ? { color: ink.accent, size: 3, zIndex: 2 } : { visibility: "hidden" };
         const f = focus();
         if (f) return s === f || t === f ? { color: graph.getNodeAttribute(f, "color"), size: 1.5, zIndex: 1 } : { visibility: "hidden" };
         return { color: tint(s, t), size: 0.5 };
@@ -160,8 +183,15 @@
     // sigma follows the window's size; a panel or pane can change size on its own.
     const observer = new ResizeObserver(() => sigma.scheduleRefresh());
     observer.observe(host);
+    // A new scheme repaints everything that read the old one, the explorer's halos included.
+    const unwatch = onSchemeChange(() => {
+      ink = theme();
+      tints.clear();
+      redraw();
+    });
     return {
       sigma, graph, look, redraw,
+      ink: () => ink,
       select(node) { look.selected = node; look.path = null; look.route = null; setNear(); redraw(); },
       showPath(nodes) {
         look.path = new Set(nodes);
@@ -189,7 +219,7 @@
         this.flyTo((x0 + x1) / 2, (y0 + y1) / 2, Math.min(1.1, Math.max(0.08, Math.max(x1 - x0, y1 - y0) * 2.4)));
       },
       reset() { sigma.getCamera().reset({ duration: 600 }); },
-      destroy() { observer.disconnect(); sigma.kill(); },
+      destroy() { observer.disconnect(); unwatch(); sigma.kill(); },
     };
   }
 
@@ -223,6 +253,18 @@
     }
     const [B, v] = await Promise.all([engine(), vault()]);
     if (own && !host.isConnected) return null;
+    // Whatever the explorer starts is stopped by this handle, also when setting up fails halfway.
+    const stops = [];
+    const handle = { destroy() { stops.splice(0).reverse().forEach((stop) => stop()); } };
+    try {
+      explore(B, v, host, own, stops);
+    } catch (error) {
+      handle.destroy();
+      throw error;
+    }
+    return handle;
+  }
+  function explore(B, v, host, own, stops) {
     const stage = document.createElement("div");
     stage.className = "brain-stage";
     host.appendChild(stage);
@@ -230,6 +272,7 @@
     const card = document.createElement("aside");
     const r = renderer(B, graph, stage, { labelAt: 9, labelDensity: 0.06, hub: (a) => v.nodes[a.i].p === "brain",
       cover: () => (card.hidden ? 0 : card.offsetWidth + 16) });
+    stops.push(() => r.destroy());
     const { sigma } = r;
     const home = new Map();
     graph.forEachNode((key, a) => home.set(key, [a.x, a.y]));
@@ -237,9 +280,10 @@
     // Repository halos behind the notes and their names above them, kept in step with the camera.
     const halos = sigma.createLayer("brain-halos", "div", { beforeLayer: "stage" });
     const names = sigma.createLayer("brain-names", "div", { beforeLayer: "mouse" });
-    let clusters = v.clusters.filter((c) => c.n >= 3);
-    const ink = theme();
+    const known = v.clusters || [];
+    let clusters = known.filter((c) => c.n >= 3);
     function paintClusters() {
+      const dark = r.ink().dark;
       const ratio = sigma.getCamera().ratio;
       const fade = Math.max(0, Math.min(1, (ratio - 0.18) / 0.32));
       halos.replaceChildren(...clusters.map((c) => {
@@ -250,7 +294,7 @@
         halo.className = "brain-halo";
         const colour = c.p === "brain" ? v.concept : v.colours.get(c.p) || v.neutral;
         Object.assign(halo.style, { left: `${centre.x - radius}px`, top: `${centre.y - radius}px`, width: `${radius * 2}px`, height: `${radius * 2}px`,
-          background: `radial-gradient(circle, ${colour}${ink.dark ? "26" : "1f"} 0%, ${colour}0a 62%, transparent 72%)` });
+          background: `radial-gradient(circle, ${colour}${dark ? "26" : "1f"} 0%, ${colour}0a 62%, transparent 72%)` });
         return halo;
       }));
       names.replaceChildren(...clusters.filter(() => fade > 0.02).map((c) => {
@@ -296,7 +340,7 @@
     const hidden = new Set();
     const boxes = new Map();
     const groups = panel.querySelector(".brain-groups");
-    const counts = new Map(v.clusters.map((c) => [c.p, c.n]));
+    const counts = new Map(known.map((c) => [c.p, c.n]));
     [...counts.keys()].filter((p) => p !== "").sort((a, b) => counts.get(b) - counts.get(a)).forEach((p) => {
       const row = document.createElement("label");
       const colour = p === "brain" ? v.concept : v.colours.get(p) || v.neutral;
@@ -333,8 +377,10 @@
     [concepts, orphans].forEach((el) => el.addEventListener("change", apply));
 
     // Layout: the constellation the site computed, or ForceAtlas2 relaxing it in a worker.
-    let worker = null, settle = 0;
+    let worker = null, settle = 0, frame = 0;
+    stops.push(() => { clearTimeout(settle); cancelAnimationFrame(frame); if (worker) worker.kill(); });
     function glide(targets) {
+      cancelAnimationFrame(frame);
       const start = new Map();
       graph.forEachNode((key, a) => start.set(key, [a.x, a.y]));
       const began = performance.now();
@@ -344,9 +390,9 @@
           const [x0, y0] = start.get(key), [x1, y1] = targets.get(key);
           return { ...a, x: x0 + (x1 - x0) * e, y: y0 + (y1 - y0) * e };
         }, { attributes: ["x", "y"] });
-        if (t < 1) requestAnimationFrame(step);
+        if (t < 1) frame = requestAnimationFrame(step);
       };
-      requestAnimationFrame(step);
+      frame = requestAnimationFrame(step);
     }
     function recentre() {
       // After a relaxation the circles no longer hold: put each repository's name on its notes' centre.
@@ -358,17 +404,18 @@
       clusters = [...sums].filter(([, s]) => s.n >= 3).map(([p, s]) => {
         const x = s.x / s.n, y = s.y / s.n;
         const reach = s.pts.map(([px, py]) => Math.hypot(px - x, py - y)).sort((a, b) => a - b);
-        const c = v.clusters.find((k) => k.p === p) || { t: p };
+        const c = known.find((k) => k.p === p) || { t: p };
         return { p, t: c.t, n: s.n, x, y, r: reach[Math.floor(reach.length * 0.8)] || 10 };
       });
     }
     function layout(mode) {
       panel.querySelectorAll("[data-layout]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.layout === mode)));
       clearTimeout(settle);
+      cancelAnimationFrame(frame);
       if (worker) { worker.kill(); worker = null; }
       r.reset();
       if (mode === "home") {
-        clusters = v.clusters.filter((c) => c.n >= 3);
+        clusters = known.filter((c) => c.n >= 3);
         glide(home);
         return;
       }
@@ -500,21 +547,18 @@
     // On its own page the graph answers anywhere; in a workspace pane, only while it has the focus.
     const listener = own ? document : host;
     listener.addEventListener("keydown", keys);
+    stops.push(() => listener.removeEventListener("keydown", keys));
 
     apply();
-    let deepTimer = 0;
     if (own) {
-      const deep = decodeURIComponent(location.hash.slice(1));
-      if (deep && v.byPath.has(deep)) deepTimer = setTimeout(() => choose(v.byPath.get(deep)), 300);
+      // A note's path in the address selects it; an address that is not one is left alone.
+      let deep = "";
+      try { deep = decodeURIComponent(location.hash.slice(1)); } catch (error) { deep = ""; }
+      if (deep && v.byPath.has(deep)) {
+        const timer = setTimeout(() => choose(v.byPath.get(deep)), 300);
+        stops.push(() => clearTimeout(timer));
+      }
     }
-    return {
-      destroy() {
-        clearTimeout(settle); clearTimeout(deepTimer);
-        if (worker) worker.kill();
-        listener.removeEventListener("keydown", keys);
-        r.destroy();
-      },
-    };
   }
 
   /* ---- local graph: a note at the centre, its links in rings ----------------- */
@@ -606,6 +650,26 @@
       target.addEventListener("focus", () => show(arc));
       target.addEventListener("blur", () => reset(arc));
     });
+  }
+
+  /* ---- Atlas links --------------------------------------------------------- */
+  // Material's instant navigation follows a clicked link with `new URL(link.href)`. On an SVG link
+  // `href` is an object, not a string, so that throws and the browser reloads the whole page.
+  // A click on the Atlas or an emblem is taken here first, on the way down, and followed with an
+  // ordinary link instead; a modified click is left to the browser, or to the workspace.
+  const XLINK = "http://www.w3.org/1999/xlink";
+  function bindAtlasLinks() {
+    document.addEventListener("click", (event) => {
+      const link = event.target instanceof Element ? event.target.closest("svg.atlas a") : null;
+      if (!link || event.button !== 0) return;
+      event.stopPropagation();
+      const raw = link.getAttributeNS(XLINK, "href") || link.getAttribute("href");
+      if (!raw) return;
+      const modified = event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+      if (modified && !api.opener) return;
+      event.preventDefault();
+      open(new URL(raw, location.href).href, false, event);
+    }, true);
   }
 
   /* ---- hover preview ------------------------------------------------------ */
@@ -979,5 +1043,6 @@
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "o") { e.preventDefault(); openSwitcher(); }
   });
   bindPreviews();
+  bindAtlasLinks();
   if (typeof document$ !== "undefined") { document$.subscribe(mountPage); } else { document.addEventListener("DOMContentLoaded", mountPage); }
 })();
