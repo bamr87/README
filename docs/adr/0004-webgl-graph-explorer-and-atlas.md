@@ -3,7 +3,7 @@
 - **Status**: proposed
 - **Date**: 2026-11-22
 - **Deciders**: the maintainer, by merging; proposed by a Claude Code session
-- **Related**: [ADR 0002](0002-docs-as-an-obsidian-vault.md) (the vault and its views), [ADR 0003](0003-readme-as-the-fleet-knowledge-plane.md) (README as the hub's source of content), feature README-017 and README-019, `brain_site/`
+- **Related**: [ADR 0002](0002-docs-as-an-obsidian-vault.md) (the vault and its views), [ADR 0003](0003-readme-as-the-fleet-knowledge-plane.md) (README as the hub's source of content), features README-017 (graph) and README-020 (Atlas), `brain_site/`
 
 ## Context
 
