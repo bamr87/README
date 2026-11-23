@@ -1,7 +1,7 @@
 // The workspace's logic, run under node with no browser: the explorer tree,
-// search, tags, the local graph's neighbourhood, the long-list window and the
-// saved layout. Run it with `node --test tests/js/workspace.test.cjs`; the
-// Python suite runs it too (tests/unit/test_cases/test_brain_site.py).
+// search, tags, the long-list window and the saved layout. Run it with
+// `node --test tests/js/workspace.test.cjs`; the Python suite runs it too
+// (tests/unit/test_cases/test_brain_site.py).
 const test = require("node:test");
 const assert = require("node:assert/strict");
 const path = require("node:path");
@@ -91,16 +91,6 @@ test("tags are counted once per note, whatever their case", () => {
     note("c.md", "C", { g: ["docker"] }),
   ]);
   assert.deepEqual(tags, [{ key: "docker", count: 3, tag: "docker" }, { key: "ci", count: 1, tag: "ci" }]);
-});
-
-test("the neighbourhood grows by depth and stops at the cap", () => {
-  // 0 - 1 - 2 - 3, and 0 - 4
-  const neighbours = [new Set([1, 4]), new Set([0, 2]), new Set([1, 3]), new Set([2]), new Set([0])];
-  assert.deepEqual(core.neighbourhood(neighbours, 0, 1, 99), [0, 1, 4]);
-  assert.deepEqual(core.neighbourhood(neighbours, 0, 2, 99), [0, 1, 4, 2]);
-  assert.deepEqual(core.neighbourhood(neighbours, 0, 3, 99), [0, 1, 4, 2, 3]);
-  assert.deepEqual(core.neighbourhood(neighbours, 0, 3, 2), [0, 1]);
-  assert.deepEqual(core.neighbourhood([new Set()], 0, 2, 99), [0]);
 });
 
 test("the list window covers the screen plus spare rows and stays in range", () => {

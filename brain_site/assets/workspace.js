@@ -162,23 +162,6 @@
     })).sort((a, b) => b.count - a.count || compare(a.key, b.key));
   }
 
-  // The notes within `depth` links of `centre`, nearest first, at most `cap`.
-  function neighbourhood(neighbours, centre, depth, cap) {
-    const seen = new Set([centre]);
-    let frontier = [centre];
-    for (let step = 0; step < depth && frontier.length; step += 1) {
-      const next = [];
-      for (const i of frontier) {
-        for (const j of neighbours[i]) {
-          if (seen.size >= cap) return [...seen];
-          if (!seen.has(j)) { seen.add(j); next.push(j); }
-        }
-      }
-      frontier = next;
-    }
-    return [...seen];
-  }
-
   // Which rows of a long list are on screen, with a few spare either side.
   function windowRange(scrollTop, viewHeight, rowHeight, total, spare) {
     const start = clamp(Math.floor(scrollTop / rowHeight) - spare, 0, total);
@@ -229,7 +212,7 @@
 
   const core = {
     MAX_GROUPS, MAX_TABS, RECENT_LIMIT, buildTree, flattenTree, ancestors, parseQuery,
-    buildSearchIndex, matchClause, searchNotes, tagCounts, neighbourhood, windowRange,
+    buildSearchIndex, matchClause, searchNotes, tagCounts, windowRange,
     defaultLayout, restoreLayout,
   };
   if (typeof module !== "undefined" && module.exports) { module.exports = core; return; }
@@ -269,6 +252,8 @@
   // Notes that are a view of the vault rather than a page to read.
   const SPECIAL = { "brain/graph.md": "graph", "brain/canvas.md": "canvas", "brain/workspace.md": "home" };
   const EMBEDDED = ["graph", "canvas", "table"];
+  // Views the site draws at build time: a note keeps the picture and brain.js wires it up.
+  const DRAWN = ["atlas"];
   const STORE_KEY = "brain-workspace";
   const TREE_ROW = 28;
   const RESULT_ROW = 50;
@@ -424,6 +409,7 @@
     let saveTimer = 0;
     let toastTimer = 0;
     let localGraph = null;
+    let localAsk = 0;
     let detailsKey = "";
 
     const titleOf = (i) => v.nodes[i].t || basename(v.nodes[i].f);
@@ -892,7 +878,7 @@
       } else {
         tab.el = el("div", { class: "brain-ws-view", "data-view": tab.kind });
         const host = tab.el;
-        Promise.resolve().then(() => api.views[tab.kind](host)).then((handle) => {
+        Promise.resolve().then(() => api.views[tab.kind](host, { embedded: true })).then((handle) => {
           if (!handle) return;
           if (tab.el === host) tab.handles.push(handle); else handle.destroy();
         }).catch((error) => {
@@ -929,9 +915,11 @@
           .map((heading) => ({ level: Number(heading.tagName[1]), text: heading.textContent.trim(), heading }))
           .filter((item) => item.text);
         body.querySelectorAll("[data-brain-view]").forEach((host) => {
+          const name = host.dataset.brainView;
+          if (DRAWN.includes(name)) { if (api.views[name]) api.views[name](host); return; }
           host.replaceChildren();
-          if (!EMBEDDED.includes(host.dataset.brainView)) return;
-          Promise.resolve().then(() => api.views[host.dataset.brainView](host)).then((handle) => {
+          if (!EMBEDDED.includes(name)) return;
+          Promise.resolve().then(() => api.views[name](host, { embedded: true })).then((handle) => {
             if (!handle) return;
             if (stale()) handle.destroy(); else tab.handles.push(handle);
           }).catch((error) => console.error("brain: an embedded view failed to load", error));
@@ -1192,19 +1180,23 @@
       return list;
     }
     function stopLocalGraph() {
+      localAsk += 1;
       if (localGraph) localGraph.destroy();
       localGraph = null;
     }
     function drawLocalGraph(host, i) {
       stopLocalGraph();
       host.replaceChildren();
-      const near = neighbourhood(v.neighbours, i, layout.depth, LOCAL_GRAPH_CAP);
-      const { nodes, links, lookup } = api.buildSubgraph(v, near);
-      // labelAt is the size a node needs to be named; a small graph names them all.
-      const few = near.length <= 16;
-      localGraph = api.createGraph(host, v, nodes, links, {
-        focus: lookup.get(i), scale: 0.8, repel: few ? -220 : -90, distance: few ? 80 : 40, labelAt: few ? 0 : 8,
-      });
+      const ask = localAsk;
+      // brain.js lays the rings out and draws them; the workspace offers a third ring and a larger cap.
+      api.localGraph(host, i, layout.depth, { cap: LOCAL_GRAPH_CAP }).then((handle) => {
+        const current = ask === localAsk && !destroyed;
+        if (!handle) {
+          if (current) host.replaceChildren(el("p", { class: "brain-ws-hint", text: "The local graph needs WebGL 2, which this browser does not offer." }));
+          return;
+        }
+        if (current) localGraph = handle; else handle.destroy();
+      }).catch((error) => console.error("brain: the local graph failed to draw", error));
     }
     const detailsShown = () => (narrow.matches ? drawer === "right" : layout.right.open);
     // What the panel shows depends on exactly this; anything else leaves it be.

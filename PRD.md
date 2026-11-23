@@ -131,6 +131,7 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | [README-017](features/features.yml) | Obsidian views on the site | shipped | route `/brain/` · [`MKDOCS.md`](MKDOCS.md) | FR14 |
 | [README-018](features/features.yml) | Vault reads for agents | shipped | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | FR7 |
 | [README-019](features/features.yml) | Vault workspace | shipped | route `/brain/workspace/` · [`MKDOCS.md`](MKDOCS.md) | FR15 |
+| [README-020](features/features.yml) | Atlas and project emblems | shipped | route `/brain/atlas/` · [`MKDOCS.md`](MKDOCS.md) | FR14 |
 
 **Requirement → feature trace**
 
@@ -150,7 +151,7 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | §1.1 | README-013 |
 | FR12 | README-015 |
 | FR13 | README-016 |
-| FR14 | README-017 |
+| FR14 | README-017, README-020 |
 | FR15 | README-019 |
 <!-- features:end -->
 

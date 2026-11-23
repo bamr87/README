@@ -39,7 +39,7 @@ coverage: listed
 | `_data/` | dir | Registries — projects.yml is the source of truth for the fleet | required |
 | `_drafts/` | dir | Session hand-off posts drafted for bamr87/it-journey; deleted once published | terminal |
 | `_includes/` | dir | Hub feedback kit: `custom/fleet-feedback.html` widget include (Jekyll-shaped; not yet wired into MkDocs) | terminal |
-| `brain_site/` | dir | MkDocs hook and browser assets: wikilinks, callouts, backlinks, graph, canvas, previews, quick switcher, and the vault workspace | required terminal |
+| `brain_site/` | dir | MkDocs hook, build-time views (layout, Atlas) and browser assets: wikilinks, callouts, backlinks, the WebGL graph, Atlas, canvas, previews, quick switcher, and the vault workspace | required terminal |
 | `assets/` | dir | Hub feedback kit: `js/fleet-feedback.js` + `js/fleet-feedback-capture.js` | terminal |
 | `context/` | dir | The context pyramid: facts, cards, apex, query index (rebuilt by the engine) | generated |
 | `docs/` | dir | The Obsidian vault: L3 corpus collected from fleet repos, plus the generated notes in `docs/brain/` | generated |

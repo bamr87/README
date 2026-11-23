@@ -13,7 +13,9 @@ This repo (`bamr87/README`) builds a standalone [MkDocs Material](https://squidf
 | [`mkdocs.yml`](mkdocs.yml) | Site config — theme, extensions, `docs_dir: docs`, `site_url`; pulls the nav in with `INHERIT: ./nav.yml` |
 | [`nav.yml`](nav.yml) | **Generated** — the `nav` tree and the `exclude_docs` rules, rendered by the context engine's navigator |
 | [`overrides/`](overrides/) | Hand-written theme overrides wired by `theme.custom_dir`: `main.html` (SEO and Open Graph meta, skip link), `404.html`, `assets/fleet-tokens.css` (design tokens, registered under `extra_css`) |
-| [`brain_site/hook.py`](brain_site/hook.py) | MkDocs hook: resolves `[[wikilinks]]` and callouts, adds backlinks, publishes the graph and the browser assets in [`brain_site/assets/`](brain_site/assets/) (the views in `brain.js`, the workspace in `workspace.js`) |
+| [`brain_site/hook.py`](brain_site/hook.py) | MkDocs hook: resolves `[[wikilinks]]` and callouts, adds backlinks, draws the Atlas and the project emblems, and publishes the graph and the browser assets in [`brain_site/assets/`](brain_site/assets/) (the views in `brain.js`, the workspace in `workspace.js`) |
+| [`brain_site/views.py`](brain_site/views.py) | Build-time pictures: repository colours, the constellation layout the graph opens on, and the Atlas SVG (no MkDocs import, unit-tested) |
+| [`brain_site/VENDOR.md`](brain_site/VENDOR.md) | How `assets/graph-engine.bundle.js` (sigma and graphology) is built and updated |
 | [`requirements-docs.txt`](requirements-docs.txt) | Site build deps (`mkdocs`, `mkdocs-material`, `pymdown-extensions`); the hook also needs `requirements.txt` |
 | [`.github/workflows/deploy-pages.yaml`](.github/workflows/deploy-pages.yaml) | Builds and deploys to GitHub Pages |
 | [`docs/`](docs/) | Source content (generated; one folder per aggregated repo) |
@@ -63,8 +65,9 @@ These overrides cover UPS-FE-01, UPS-FE-11 and UPS-FE-25. UPS-FE-15 (no 404 page
 |---|---|---|
 | The app window | `/brain/workspace/`: files, tabs, split panes, links, outline, commands | `workspace.js` (next section) |
 | Wikilinks, callouts | Links and admonitions | `hook.py`, at render time; `docs/` is not changed |
-| Graph view | `/brain/graph/`: filter, groups, forces, orphans | `brain.js` on `/brain/graph/` |
-| Local graph | Right sidebar of each page | `brain.js` |
+| Graph view | `/brain/graph/`: a WebGL explorer. Repositories as labelled constellations ("By repository", laid out at build time) or relaxed by their links ("By connection", ForceAtlas2 in a worker); hover lights a note's links, a click opens a summary card, double-click opens the note; find-and-fly (`/`), concept and orphan filters, repository toggles (Alt-click to show one), a shortest-path finder, full screen, and a `#path` deep link to the selected note | `brain.js` + `graph-engine.bundle.js` |
+| Local graph | Right sidebar of each page: the note at the centre, its links in a ring, a second ring on demand | `brain.js` + `graph-engine.bundle.js` |
+| *(no Obsidian equivalent)* | `/brain/atlas/`: a sunburst of every corpus's navigation, each wedge linked to its section; an emblem of the same kind on each project note | `views.py` via `hook.py`, drawn at build time; `brain.js` names the hovered wedge |
 | Backlinks, outgoing links | Panel at the foot of each page | `hook.py` |
 | Page preview | Hovering an internal link | `brain.js` |
 | Quick switcher | `Ctrl+O` / `Cmd+O`, or the header button | `brain.js` |
@@ -72,7 +75,7 @@ These overrides cover UPS-FE-01, UPS-FE-11 and UPS-FE-25. UPS-FE-15 (no 404 page
 | Bases | `/brain/pages/`, a sortable table | `brain.js` |
 | Tag pane | `/brain/tags/` | generated |
 
-Everything re-attaches on `document$`, because `navigation.instant` swaps pages without a reload. A build needs `context/vault/graph.json`, so run `python3 -m scripts.context_engine build` first. To use the vault in the app, open `docs/` as a vault; the graph colours and core plugins are in `docs/.obsidian/`.
+Everything re-attaches on `document$`, because `navigation.instant` swaps pages without a reload. The graph engine (sigma 4 on graphology, about 120 KB gzipped) is loaded only by a page that draws a graph, and needs WebGL 2; without it the graph page links to the Atlas and the table instead. Repository colours come from one palette in registry order, shared with Obsidian's colour groups. The Atlas's wedges link with `xlink:href` because Material's instant navigation rewrites every `[href]` with `el.href = el.href`, which throws on an SVG link. Decision and the projects it borrows from: [ADR 0004](docs/adr/0004-webgl-graph-explorer-and-atlas.md). A build needs `context/vault/graph.json`, so run `python3 -m scripts.context_engine build` first. To use the vault in the app, open `docs/` as a vault; the graph colours and core plugins are in `docs/.obsidian/`.
 
 ### The workspace
 
@@ -93,7 +96,7 @@ The address is the note: `/brain/workspace/#/it-journey/README.md` opens that no
 
 Under 760 pixels the workspace shows one pane, puts the ribbon along the bottom and turns the sidebars into drawers.
 
-The logic with no DOM in it (the folder tree, the search, the saved layout) is at the top of `workspace.js` and is what `tests/js/workspace.test.cjs` loads under node; `tests/unit/test_cases/test_brain_site.py` runs that suite, checks both scripts parse, and fails if a generated view page asks for a view the browser does not have. A new view is a function that takes a host element and returns `{ destroy() }`: add it to `BrainVault.views` in `brain.js`, or call `BrainVault.register(name, mount)` from a script loaded after it, and list the script in `SCRIPTS` in `hook.py`.
+The logic with no DOM in it (the folder tree, the search, the saved layout) is at the top of `workspace.js` and is what `tests/js/workspace.test.cjs` loads under node; `tests/unit/test_cases/test_brain_site.py` runs that suite, checks both scripts parse, and fails if a generated view page asks for a view the browser does not have. A new view is a function that takes a host element and an options object and returns `{ destroy() }`; inside the workspace it gets `{ embedded: true }` and leaves the address and the page's keyboard to the workspace. Add it to `BrainVault.views` in `brain.js`, or call `BrainVault.register(name, mount)` from a script loaded after it, and list the script in `SCRIPTS` in `hook.py`. A view the site draws at build time, such as the Atlas, keeps its picture: `brain.js` only wires it up. The workspace's local graph is the same ring layout as the page's side panel (`BrainVault.localGraph`), with a third ring on offer.
 
 ## Deployment (GitHub Pages)
 

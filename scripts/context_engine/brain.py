@@ -412,7 +412,8 @@ def render_index(concepts: List[Concept], names: List[str], titles: Dict[str, st
              "in Obsidian, or use the views here.\n",
              "| View | What it shows |", "|---|---|",
              "| [[brain/workspace\\|Workspace]] | The vault as one window: files, tabs, links and graph |",
-             "| [[brain/graph\\|Graph view]] | Every note and link |",
+             "| [[brain/graph\\|Graph view]] | Every note and link, by repository or by connection |",
+             "| [[brain/atlas\\|Atlas]] | Every repository's documentation as rings of sections |",
              "| [[brain/canvas\\|Canvas]] | Projects and the concepts they share |",
              "| [[brain/pages\\|All pages]] | A sortable table of the vault |",
              "| [[brain/tags\\|Tags]] | Every tag, by use |",
@@ -591,9 +592,16 @@ def generate(registry: Registry, ai: Optional[BaseProvider] = None,
         "log.md": render_log(log, titles),
         "health.md": render_health(notes, dict(unresolved), incoming),
         "tags.md": render_tags(notes, concepts),
-        "graph.md": _view("Graph view", "Every note in the vault and every link between them. "
-                          "Drag to pan, scroll to zoom, click a node to open it.",
+        "graph.md": _view("Graph view", "Every note in the vault and every link between them, "
+                          "grouped by repository. Scroll to zoom, hover a note to light up its links, "
+                          "select it to read its summary, and double-click to open it. Switch to "
+                          "Relaxed to let the links pull related notes together, or find the "
+                          "shortest path between two notes.",
                           '<div class="brain-view" data-brain-view="graph"></div>'),
+        "atlas.md": _view("Atlas", "Every repository's documentation as one picture: repositories "
+                          "in the inner ring, their sections around them, each wedge sized by its "
+                          "pages. Select a wedge to open that section.",
+                          '<div class="brain-view" data-brain-view="atlas"></div>'),
         "canvas.md": _view("Canvas", "Projects and the concepts they share. The same board "
                            "opens in Obsidian as `brain/fleet.canvas`.",
                            '<div class="brain-view" data-brain-view="canvas"></div>'),

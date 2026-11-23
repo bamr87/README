@@ -194,7 +194,7 @@ features:
       - tests/unit/test_cases/test_second_brain.py
   - id: README-017
     title: "Obsidian views on the site"
-    description: "The published site shows wikilinks, callouts, backlinks, a global and a local graph, hover previews, a quick switcher, a canvas and a table of every note."
+    description: "The published site shows wikilinks, callouts, backlinks, hover previews, a quick switcher, a canvas, a table of every note, and a WebGL graph explorer: repositories laid out as labelled constellations or relaxed by their links, a note's links lit on hover, a summary card on selection, find-and-fly, filters, a shortest-path finder and a two-depth local graph on every page."
     implemented: true
     status: shipped
     prd: ["FR14"]
@@ -234,4 +234,19 @@ features:
     scenarios:
       - verify/scenarios/brain-workspace.yml
       - verify/scenarios/brain-workspace-panes.yml
+    evidence: []
+  - id: README-020
+    title: "Atlas and project emblems"
+    description: "A sunburst of every corpus's navigation drawn as SVG at build time (repositories inside, their sections and sub-sections outside, each wedge sized by pages and linked to its section), and a smaller emblem of the same kind on each repository's project note."
+    implemented: true
+    status: shipped
+    prd: ["FR14"]
+    surface: ui
+    link: /brain/atlas/
+    docs: MKDOCS.md
+    tags: [site, mkdocs, navigation, illustration]
+    tests:
+      - tests/unit/test_cases/test_second_brain.py
+    scenarios:
+      - verify/scenarios/second-brain.yml
     evidence: []

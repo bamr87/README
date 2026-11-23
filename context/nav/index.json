@@ -28,7 +28,7 @@
   ],
   "counts": {
     "projects": 23,
-    "pages": 6985
+    "pages": 6988
   },
   "projects": {
     "it-journey": {
@@ -313,11 +313,11 @@
       "tree": "context/nav/adr.json",
       "browse": "docs/browse/adr.md",
       "registered": false,
-      "pages": 4,
+      "pages": 6,
       "sections": 0,
       "max_depth": 1,
       "skipped": 0,
-      "fingerprint": "5e760fee94927e8b"
+      "fingerprint": "046d2f2d7e4e3849"
     },
     "amendments": {
       "title": "Amendments",
@@ -337,11 +337,11 @@
       "tree": "context/nav/brain.json",
       "browse": "docs/browse/brain.md",
       "registered": false,
-      "pages": 183,
+      "pages": 184,
       "sections": 2,
       "max_depth": 2,
       "skipped": 0,
-      "fingerprint": "88f04d1dd05f49d7"
+      "fingerprint": "4636ea11ee0e6373"
     },
     "results": {
       "title": "Results",
