@@ -5,18 +5,18 @@
   "title": "SCHEMA Protocol",
   "corpus": "docs/SCHEMA",
   "counts": {
-    "pages": 36,
+    "pages": 37,
     "sections": 10,
     "max_depth": 5,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "3af5a8ad7a54eefa",
+  "fingerprint": "634834bc9517ea23",
   "tree": {
     "type": "section",
     "title": "SCHEMA Protocol",
     "index": "SCHEMA/README.md",
-    "pages": 36,
+    "pages": 37,
     "children": [
       {
         "type": "page",
@@ -74,7 +74,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "SCHEMA/docs/README.md",
-        "pages": 11,
+        "pages": 12,
         "children": [
           {
             "type": "page",
@@ -118,7 +118,7 @@
             "title": "Amendments \u2014 SCHEMA",
             "rel": "docs/amendments",
             "index": "SCHEMA/docs/amendments/README.md",
-            "pages": 5,
+            "pages": 6,
             "children": [
               {
                 "type": "page",
@@ -132,6 +132,12 @@
                 "title": "0001 \u2014 Ratify the constitution",
                 "path": "SCHEMA/docs/amendments/0001-ratify-constitution.md",
                 "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "0002 \u2014 AGENTS.md is the how-to-work document, and the quality gates are\u2026",
+                "path": "SCHEMA/docs/amendments/0002-agents-md-precedence.md",
+                "rel": "docs/amendments/0002-agents-md-precedence.md"
               },
               {
                 "type": "page",

@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Lifehacker - content map
 
-Every published page in [`docs/lifehacker.dev/`](../lifehacker.dev/) as it appears in the sidebar: **137 pages** across **12 sections** (max depth 4).
+Every published page in [`docs/lifehacker.dev/`](../lifehacker.dev/) as it appears in the sidebar: **138 pages** across **12 sections** (max depth 4).
 
 - [Lifehacker.dev (index)](../lifehacker.dev/index.md)
 - [AI Usage & Cost](../lifehacker.dev/AI_USAGE.md)
@@ -20,7 +20,7 @@ Every published page in [`docs/lifehacker.dev/`](../lifehacker.dev/) as it appea
 - [lifehacker.dev tools](../lifehacker.dev/tools/README.md)
 - [PRD — lifehacker.dev](../lifehacker.dev/PRD.md)
 - [Site Health](../lifehacker.dev/SITE_HEALTH.md)
-- **[Documentation](../lifehacker.dev/docs/README.md)** <small>(26)</small>
+- **[Documentation](../lifehacker.dev/docs/README.md)** <small>(27)</small>
   - [lifehacker.dev documentation](../lifehacker.dev/docs/README.md)
   - [AI Usage Metering — every token, every dollar, every PR](../lifehacker.dev/docs/AI-USAGE.md)
   - [Architecture — the lifehacker.dev autopilot](../lifehacker.dev/docs/ARCHITECTURE.md)
@@ -37,10 +37,11 @@ Every published page in [`docs/lifehacker.dev/`](../lifehacker.dev/) as it appea
   - [The session-retrospective hook](../lifehacker.dev/docs/RETROSPECTIVE-HOOK.md)
   - [Trace Bloom](../lifehacker.dev/docs/TRACE-BLOOM.md)
   - [Workflow reference](../lifehacker.dev/docs/reference/workflows.md)
-  - **[Amendments — lifehacker.dev](../lifehacker.dev/docs/amendments/README.md)** <small>(4)</small>
+  - **[Amendments — lifehacker.dev](../lifehacker.dev/docs/amendments/README.md)** <small>(5)</small>
     - [Amendments — lifehacker.dev](../lifehacker.dev/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../lifehacker.dev/docs/amendments/0001-ratify-constitution.md)
     - [0002 — Reflow the constitution to one paragraph per line (editorial, no…](../lifehacker.dev/docs/amendments/0002-reflow-to-one-paragraph-per-line.md)
+    - [0003 — Missions](../lifehacker.dev/docs/amendments/0003-mission-statement.md)
     - [NNNN — Title of the amendment](../lifehacker.dev/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../lifehacker.dev/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../lifehacker.dev/docs/adr/README.md)

@@ -6,6 +6,45 @@ title: Changelog
 ---
 # Changelog
 
+## [0.3.2](https://github.com/bamr87/bamr87.github.io/compare/v0.3.1...v0.3.2) (2026-11-18)
+
+
+### Fixed
+
+* **site:** remove visible placeholders, TODOs and the placeholder post ([e5efe9b](https://github.com/bamr87/bamr87.github.io/commit/e5efe9b18e6d3ae32f5a23abfa41ecca17fd937e))
+* **site:** remove visible placeholders, TODOs and the placeholder post ([28bdda7](https://github.com/bamr87/bamr87.github.io/commit/28bdda7e3899fc18e3f9731aef211cb922830c64))
+
+
+### Documentation
+
+* rename Working with this repo to Quick start ([0f80d46](https://github.com/bamr87/bamr87.github.io/commit/0f80d460b46d30a4fa9697e0672742ec1bbb5fa8))
+* rename Working with this repo to Quick start ([7495601](https://github.com/bamr87/bamr87.github.io/commit/749560190758025d2511b30e54b9a77fbfb05993))
+
+## [0.3.1](https://github.com/bamr87/bamr87.github.io/compare/v0.3.0...v0.3.1) (2026-11-18)
+
+
+### Fixed
+
+* **metadata:** date the contributors and notebooks index pages ([181b52d](https://github.com/bamr87/bamr87.github.io/commit/181b52d9cdddb97e7298c6c53206583a715299b6))
+* **metadata:** date the contributors and notebooks index pages ([906ab19](https://github.com/bamr87/bamr87.github.io/commit/906ab1946e86265a6da9d4b5461da2c9f5691c0b))
+* **pages:** render post-index card images and the page-1 link correctly ([2fad8d5](https://github.com/bamr87/bamr87.github.io/commit/2fad8d5bb9245de855e357e0b285bb7d6307e886))
+* **pages:** render post-index card images and the page-1 link correctly ([79bd838](https://github.com/bamr87/bamr87.github.io/commit/79bd8383574402c451501390ab893e9df3a29b92)), closes [#23](https://github.com/bamr87/bamr87.github.io/issues/23)
+
+
+### Changed
+
+* **images:** cut /notes/ and /pages/ image weight by recompressing the heavy images ([096514e](https://github.com/bamr87/bamr87.github.io/commit/096514e232d07187d769ba7c0d1f642ed45894ff))
+* **images:** recompress the heaviest images and replace the GIF with an MP4 ([dc06e2e](https://github.com/bamr87/bamr87.github.io/commit/dc06e2e55c3b1349a370b2664db0d280f150ba4f))
+
+
+### Documentation
+
+* **constitution:** state the missions in §1 (amendment 0002) ([306be86](https://github.com/bamr87/bamr87.github.io/commit/306be861cc0ebff1f4d0b05c5a13c061781f9889))
+* **constitution:** state the missions in §1 (amendment 0002) ([16c0d52](https://github.com/bamr87/bamr87.github.io/commit/16c0d5251a623c90cff143adfd1ec0b1baaea35d))
+* **evidence:** record the page-weight before and after for [#32](https://github.com/bamr87/bamr87.github.io/issues/32) ([34d5511](https://github.com/bamr87/bamr87.github.io/commit/34d5511fd02751f85791bd73bc43cdfe5f8e889f))
+* **feedback:** say the no-JS link opens a blank issue until zer0-mistakes[#636](https://github.com/bamr87/bamr87.github.io/issues/636) ([fc3589d](https://github.com/bamr87/bamr87.github.io/commit/fc3589d7252698b4c23612c5ba6768326b00b216))
+* point the profile tagline at the constitution on GitHub ([ddb3ebf](https://github.com/bamr87/bamr87.github.io/commit/ddb3ebfbd157cb666531c7d1763b5472457abc6e))
+
 ## [0.3.0](https://github.com/bamr87/bamr87.github.io/compare/v0.2.1...v0.3.0) (2026-11-05)
 
 

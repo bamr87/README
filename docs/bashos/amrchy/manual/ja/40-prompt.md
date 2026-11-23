@@ -1,0 +1,13 @@
+---
+source_file: amrchy/manual/ja/40-prompt.md
+source_repo: bamr87/bashos
+source_url: https://github.com/bamr87/bashos/blob/main/amrchy/manual/ja/40-prompt.md
+title: プロンプト
+---
+# プロンプト
+
+Omarchyには、デフォルトでミニマルな[Starship](https://starship.rs/)プロンプトが付属しています。私のプロンプトはそのくらいが好きなのです。ユーザー名を知る必要はありません。いつも私なのですから。時刻を知る必要もありません。いつも上部に表示されているのですから。
+
+ ![prompt](images/prompt.webp)
+
+もっと情報やスタイルが欲しい場合は、`~/.config/starship.toml`の[Starship.rs](https://starship.rs/)設定を変更できます。できることはたくさんあります。ただ、やりすぎないでください（あるいはやりすぎてください。好きにしてください。あなたのコンピューターなのですから！）

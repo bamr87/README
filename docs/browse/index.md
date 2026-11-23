@@ -9,33 +9,33 @@ generated: true
 
 # Content map
 
-**4,351** published pages across **23** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
+**6,988** published pages across **23** fleet corpora. The left sidebar mirrors this structure; each map below expands one corpus in full.
 
 | Corpus | Pages | Sections | Top-level sections |
 |---|---:|---:|---|
-| [IT Journey](it-journey.md) | 557 | 54 | Repository & tooling, Data, Documentation, IT-Journey — Home |
-| [Zer0 Mistakes](zer0-mistakes.md) | 558 | 95 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory, zer0 |
-| [Bash Crawl](bashcrawl.md) | 80 | 16 | Repository & tooling, Courses, Documentation, 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here |
+| [IT Journey](it-journey.md) | 558 | 54 | Repository & tooling, Data, Documentation, IT-Journey — Home |
+| [Zer0 Mistakes](zer0-mistakes.md) | 559 | 95 | Repository & tooling, Data, Design System, Documentation, Examples, Français, Includes, Pages, Templates Directory, zer0 |
+| [Bash Crawl](bashcrawl.md) | 81 | 16 | Repository & tooling, Courses, Documentation, 🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here |
 | [Scripts](scripts.md) | 25 | 5 | Documentation, 🍴 ForkMe - Advanced GitHub Repository Forking Utility, 💾 StashMe - Multi-Repository Cloud Stash Utility |
 | [OverTheWire](OverTheWire-website.md) | 232 | 17 | Includes, Information, Wargames |
-| [Fleet Hub](bamr87.md) | 275 | 40 | changelog.d/ — pending changelog entries, compose/ — the hub's half of the fleet dev stack, Data, diagrams/, Documentati |
-| [Personal Site](bamr87.github.io.md) | 94 | 19 | Documentation, Home |
-| [BashOS](bashos.md) | 80 | 15 | chui, Documentation, one-os, os — bashOS as the operating system |
-| [CV Pro](cv-pro.md) | 32 | 6 | CV Builder Pro, cv — the CV build, maintain & publish machine, Documentation |
-| [Django ERP](djangoerp.md) | 18 | 3 | Documentation |
+| [Fleet Hub](bamr87.md) | 273 | 40 | changelog.d/ — pending changelog entries, compose/ — the hub's half of the fleet dev stack, Data, diagrams/, Documentati |
+| [Personal Site](bamr87.github.io.md) | 96 | 19 | Documentation, Home |
+| [BashOS](bashos.md) | 2,688 | 78 | chui, Documentation, Omarchy, one-os, os — bashOS as the operating system |
+| [CV Pro](cv-pro.md) | 33 | 6 | CV Builder Pro, cv — the CV build, maintain & publish machine, Documentation |
+| [Django ERP](djangoerp.md) | 23 | 3 | Documentation |
 | [Fredgar AI](fredgar-ai.md) | 38 | 6 | Documentation |
 | [GitHub AI](githubai.md) | 54 | 10 | Documentation, GitHubAI as a GitHub App, Template files installed into consumer repos, 🌱 AI-Seed — the autonomous AI orc |
 | [Gitorio](gitorio.md) | 145 | 37 | Docs, Documentation, Examples — reference compiler output, Packages, Seeds — the bootstrap-era build plan (historical),  |
 | [GodotGo](godotgo.md) | 31 | 6 | Documentation, Games |
-| [Law AI](law-ai.md) | 301 | 74 | Documentation, Law AI — Backend, LawMode.ai, Specs — Spec-Driven Development for Law AI |
-| [Lifehacker](lifehacker.dev.md) | 137 | 12 | Documentation, MCP, Pages, Scripts |
-| [OCRmd](ocrmd.md) | 26 | 4 | Documentation |
-| [Outbox](outbox.md) | 22 | 4 | Agents, Documentation |
-| [Rewind Arcade](rewind-arcade.md) | 76 | 11 | Catalog — cartridge-index, Documentation, Emulate — retro-pi, Play — Rewind Arcade, retro-pi |
-| [SCHEMA Protocol](SCHEMA.md) | 36 | 10 | Documentation, Example, Protocol, Spec, Templates |
+| [Law AI](law-ai.md) | 309 | 75 | Documentation, Law AI — Backend, LawMode.ai, Specs — Spec-Driven Development for Law AI |
+| [Lifehacker](lifehacker.dev.md) | 138 | 12 | Documentation, MCP, Pages, Scripts |
+| [OCRmd](ocrmd.md) | 27 | 4 | Documentation |
+| [Outbox](outbox.md) | 23 | 4 | Agents, Documentation |
+| [Rewind Arcade](rewind-arcade.md) | 81 | 12 | Catalog — cartridge-index, Documentation, Emulate — retro-pi, Play — Rewind Arcade, retro-pi |
+| [SCHEMA Protocol](SCHEMA.md) | 37 | 10 | Documentation, Example, Protocol, Spec, Templates |
 | [VS Sonic Pi](vs-sonic-pi.md) | 118 | 6 | Documentation, Media |
 | [Zer0 CMS](zer0-CMS.md) | 1,201 | 181 | Apps, content/ — the platform, Documentation, media/ — the design system, Packages, Sites, Source, Tools, web/ — the Rea |
-| [ZPL Viewer](zpl-viewer.md) | 19 | 4 | Documentation |
+| [ZPL Viewer](zpl-viewer.md) | 21 | 4 | Documentation |
 
 ## Not in the fleet registry
 
@@ -43,7 +43,7 @@ Corpora published from `docs/` that no registry entry claims — they navigate u
 
 - **Adr** — 6 pages (`docs/adr/`)
 - **Amendments** — 4 pages (`docs/amendments/`)
-- **Brain** — 183 pages (`docs/brain/`)
+- **Brain** — 184 pages (`docs/brain/`)
 - **Results** — 1 page (`docs/results/`)
 - **Setup** — 1 page (`docs/setup/`)
 - **Wargames** — 1 page (`docs/wargames/`)

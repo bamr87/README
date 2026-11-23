@@ -5,7 +5,9 @@ docs/ stays a plain Obsidian vault; this hook makes the published site read it
 the same way. It reads the graph the engine wrote (context/vault/graph.json) and
 resolves links with the engine's Resolver, so the site cannot disagree with the
 vault. It converts [[wikilinks]] and callouts, adds a backlinks panel to each
-page, and publishes the graph and the browser assets.
+page, and publishes the graph and the browser assets: the views in brain.js
+and the workspace in workspace.js, which reads the same graph and the pages
+this hook renders.
 """
 
 import html
@@ -29,6 +31,11 @@ from scripts.context_engine.vault import (  # noqa: E402
 
 ASSETS = Path(__file__).parent / "assets"
 PUBLISHED = "assets/brain"
+STYLES = ("brain.css", "workspace.css")
+# In load order: workspace.js registers its view with brain.js. The graph engine
+# (graph-engine.bundle.js) is published too, but brain.js loads it only on a page
+# that draws a graph.
+SCRIPTS = ("brain.js", "workspace.js")
 PANEL_LIMIT = 40
 _CALLOUT = re.compile(r"^(>[ \t]*)\[!(\w+)\]([+-]?)[ \t]*(.*)$")
 # Obsidian callout type -> Material admonition type.
@@ -72,20 +79,22 @@ def on_config(config):
     state.update(graph=graph, resolver=Resolver(notes_from_graph(graph)),
                  incoming=incoming, outgoing=outgoing, navs=navs,
                  colours=views.colours([name for name, _ in navs]))
-    config.extra_css.append(f"{PUBLISHED}/brain.css")
-    # The graph engine is published too, but brain.js loads it only on a page that draws a graph.
-    config.extra_javascript.append(f"{PUBLISHED}/brain.js")
+    config.extra_css.extend(f"{PUBLISHED}/{name}" for name in STYLES)
+    config.extra_javascript.extend(f"{PUBLISHED}/{name}" for name in SCRIPTS)
     return config
 
 
-def on_files(files, config):
-    for asset in sorted(ASSETS.iterdir()):
-        files.append(File.generated(config, f"{PUBLISHED}/{asset.name}",
-                                    abs_src_path=str(asset)))
-    state["urls"] = {f.src_uri: f.url for f in files.documentation_pages()}
-    graph = state["graph"]
-    # The browser needs less than the engine keeps; a node with no page is dropped.
-    keep = {i: n for i, n in enumerate(graph["nodes"]) if n["path"] in state["urls"]}
+def graph_payload(graph: dict, urls: dict[str, str], navs: list | None = None,
+                  palette: dict[str, str] | None = None) -> dict:
+    """The graph as the browser gets it: short keys, and only notes with a page.
+
+    Each note carries where the constellation puts it (`x`, `y`) and its links
+    (`d`); `clusters` are the repositories' circles and `colours` the palette in
+    registry order. `fingerprint` names the build of the vault, so a reader can
+    tell which one a deployed site is showing.
+    """
+    palette = palette or {}
+    keep = {i: n for i, n in enumerate(graph["nodes"]) if n["path"] in urls}
     index = {old: new for new, old in enumerate(sorted(keep))}
     edges = [[index[a], index[b]] for a, b in graph["edges"] if a in index and b in index]
     kept = [keep[i] for i in sorted(keep)]
@@ -94,18 +103,18 @@ def on_files(files, config):
         degree[a] += 1
         degree[b] += 1
     layout = views.constellation(kept, degree)
-    palette = state["colours"]
-    titles = {name: nav.get("title") or name for name, nav in state["navs"]}
+    titles = {name: nav.get("title") or name for name, nav in navs or []}
     nodes = []
     for node, (x, y), d in zip(kept, layout["positions"], degree, strict=True):
         row = {"t": node["title"], "p": node["project"], "k": node["kind"],
-               "u": state["urls"][node["path"]], "s": node["summary"],
+               "u": urls[node["path"]], "s": node["summary"],
                "g": node["tags"], "f": node["path"], "w": node["words"], "x": x, "y": y, "d": d}
         repo = posixpath.splitext(posixpath.basename(node["path"]))[0]
         if node["kind"] == "project" and repo in palette:
             row["c"] = palette[repo]   # a project note wears its repository's colour
         nodes.append(row)
-    payload = {
+    return {
+        "fingerprint": graph.get("fingerprint", ""),
         "nodes": nodes,
         "edges": edges,
         "colours": palette,
@@ -113,6 +122,14 @@ def on_files(files, config):
         "neutral": views.NEUTRAL,
         "clusters": [{**c, "t": titles.get(c["p"], c["p"] or "(root)")} for c in layout["clusters"]],
     }
+
+
+def on_files(files, config):
+    for asset in sorted(ASSETS.iterdir()):
+        files.append(File.generated(config, f"{PUBLISHED}/{asset.name}",
+                                    abs_src_path=str(asset)))
+    state["urls"] = {f.src_uri: f.url for f in files.documentation_pages()}
+    payload = graph_payload(state["graph"], state["urls"], state["navs"], state["colours"])
     files.append(File.generated(config, f"{PUBLISHED}/graph.json",
                                 content=json.dumps(payload, ensure_ascii=False,
                                                    separators=(",", ":"))))

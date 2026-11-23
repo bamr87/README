@@ -1,0 +1,26 @@
+# A reader at a desk uses the workspace the way Obsidian is used: the file
+# explorer on the left, the note's links on the right, two panes side by side.
+schema: scenario/v1
+id: brain-workspace-panes
+feature: README-019
+title: "The workspace shows files, links and split panes"
+viewports: [desktop]
+steps:
+  - goto: /brain/workspace/#/brain/concepts/docker.md
+  - wait: { selector: ".brain-ws-note .admonition" }
+  # The right sidebar: local graph, backlinks, outgoing links, outline.
+  - wait: { selector: ".brain-ws-right .brain-ws-local canvas" }
+  - expect: { count: { selector: ".brain-ws-right .brain-ws-links a", min: 1 } }
+  - expect: { count: { selector: ".brain-ws-outline button", min: 1 } }
+  # The file explorer: a folder opens, a note inside it opens in the tab.
+  - click: ".brain-ws-row.is-folder"
+  - wait: { selector: ".brain-ws-row.is-note" }
+  - click: ".brain-ws-row.is-note"
+  - wait: { selector: ".brain-ws-row.is-note.is-active" }
+  - screenshot: explorer
+  # Split right: the same note in a second pane.
+  - press: Control+Backslash
+  - expect: { count: { selector: ".brain-ws-group", min: 2 } }
+  - expect: { no_horizontal_scroll: true }
+  - screenshot: split
+  - expect: { no_console_errors: true }

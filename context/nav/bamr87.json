@@ -5,18 +5,18 @@
   "title": "Fleet Hub",
   "corpus": "docs/bamr87",
   "counts": {
-    "pages": 275,
+    "pages": 273,
     "sections": 40,
     "max_depth": 4,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "657a249fb83ef242",
+  "fingerprint": "7be943e2332d8043",
   "tree": {
     "type": "section",
     "title": "Fleet Hub",
     "index": "bamr87/README.md",
-    "pages": 275,
+    "pages": 273,
     "children": [
       {
         "type": "page",
@@ -72,7 +72,7 @@
         "title": "changelog.d/ \u2014 pending changelog entries",
         "rel": "changelog.d",
         "index": "bamr87/changelog.d/README.md",
-        "pages": 9,
+        "pages": 2,
         "children": [
           {
             "type": "page",
@@ -80,48 +80,6 @@
             "path": "bamr87/changelog.d/README.md",
             "rel": "changelog.d/README.md",
             "is_index": true
-          },
-          {
-            "type": "page",
-            "title": "Claude Run Transient Retry",
-            "path": "bamr87/changelog.d/claude-run-transient-retry.md",
-            "rel": "changelog.d/claude-run-transient-retry.md"
-          },
-          {
-            "type": "page",
-            "title": "Claude Run Version Line",
-            "path": "bamr87/changelog.d/claude-run-version-line.md",
-            "rel": "changelog.d/claude-run-version-line.md"
-          },
-          {
-            "type": "page",
-            "title": "Merge Readiness",
-            "path": "bamr87/changelog.d/merge-readiness.md",
-            "rel": "changelog.d/merge-readiness.md"
-          },
-          {
-            "type": "page",
-            "title": "Mission And About Section",
-            "path": "bamr87/changelog.d/mission-and-about-section.md",
-            "rel": "changelog.d/mission-and-about-section.md"
-          },
-          {
-            "type": "page",
-            "title": "Pr Queue Maintainer Actions",
-            "path": "bamr87/changelog.d/pr-queue-maintainer-actions.md",
-            "rel": "changelog.d/pr-queue-maintainer-actions.md"
-          },
-          {
-            "type": "page",
-            "title": "Pr Review Findings",
-            "path": "bamr87/changelog.d/pr-review-findings.md",
-            "rel": "changelog.d/pr-review-findings.md"
-          },
-          {
-            "type": "page",
-            "title": "Pr Review Kit Concurrency",
-            "path": "bamr87/changelog.d/pr-review-kit-concurrency.md",
-            "rel": "changelog.d/pr-review-kit-concurrency.md"
           },
           {
             "type": "page",
@@ -296,7 +254,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "bamr87/docs/README.md",
-        "pages": 168,
+        "pages": 171,
         "children": [
           {
             "type": "page",
@@ -496,6 +454,12 @@
             "title": "JEV \u2014 the agent logic engine",
             "path": "bamr87/docs/JEV.md",
             "rel": "docs/JEV.md"
+          },
+          {
+            "type": "page",
+            "title": "Link check",
+            "path": "bamr87/docs/LINK-CHECK.md",
+            "rel": "docs/LINK-CHECK.md"
           },
           {
             "type": "page",
@@ -1089,6 +1053,18 @@
               },
               {
                 "type": "page",
+                "title": "0034 \u2014 Fleet mission statements and the repository about section",
+                "path": "bamr87/docs/amendments/0034-mission-and-about-section.md",
+                "rel": "docs/amendments/0034-mission-and-about-section.md"
+              },
+              {
+                "type": "page",
+                "title": "0035 \u2014 A merge or close the maintainer confirms in the console PR queue\u2026",
+                "path": "bamr87/docs/amendments/0035-pr-queue-maintainer-actions.md",
+                "rel": "docs/amendments/0035-pr-queue-maintainer-actions.md"
+              },
+              {
+                "type": "page",
                 "title": "NNNN \u2014 Title of the amendment",
                 "path": "bamr87/docs/amendments/0000-template.md",
                 "rel": "docs/amendments/0000-template.md"
@@ -1104,7 +1080,7 @@
                 "title": "docs/amendments/proposed/ \u2014 unnumbered amendment records",
                 "rel": "docs/amendments/proposed",
                 "index": "bamr87/docs/amendments/proposed/README.md",
-                "pages": 4,
+                "pages": 2,
                 "children": [
                   {
                     "type": "page",
@@ -1112,18 +1088,6 @@
                     "path": "bamr87/docs/amendments/proposed/README.md",
                     "rel": "docs/amendments/proposed/README.md",
                     "is_index": true
-                  },
-                  {
-                    "type": "page",
-                    "title": "NEW \u2014 A merge or close the maintainer confirms in the console PR queue\u2026",
-                    "path": "bamr87/docs/amendments/proposed/pr-queue-maintainer-actions.md",
-                    "rel": "docs/amendments/proposed/pr-queue-maintainer-actions.md"
-                  },
-                  {
-                    "type": "page",
-                    "title": "NEW \u2014 Fleet mission statements and the repository about section",
-                    "path": "bamr87/docs/amendments/proposed/mission-and-about-section.md",
-                    "rel": "docs/amendments/proposed/mission-and-about-section.md"
                   },
                   {
                     "type": "page",
@@ -1140,7 +1104,7 @@
             "title": "Architecture Decision Records",
             "rel": "docs/adr",
             "index": "bamr87/docs/adr/README.md",
-            "pages": 15,
+            "pages": 17,
             "children": [
               {
                 "type": "page",
@@ -1220,6 +1184,18 @@
                 "title": "ADR 0012 \u2014 Merge readiness: every pull request is checked, reviewed and\u2026",
                 "path": "bamr87/docs/adr/0012-merge-readiness.md",
                 "rel": "docs/adr/0012-merge-readiness.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0013 \u2014 The docked assistant and the page bridge: an agent session\u2026",
+                "path": "bamr87/docs/adr/0013-console-page-assistant.md",
+                "rel": "docs/adr/0013-console-page-assistant.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0014 \u2014 The fleet assistant baseline: one page bridge, an adapter\u2026",
+                "path": "bamr87/docs/adr/0014-fleet-assistant-baseline.md",
+                "rel": "docs/adr/0014-fleet-assistant-baseline.md"
               },
               {
                 "type": "page",
@@ -1379,7 +1355,7 @@
         "title": "evals",
         "rel": "evals",
         "index": "bamr87/evals/README.md",
-        "pages": 4,
+        "pages": 5,
         "children": [
           {
             "type": "page",
@@ -1387,6 +1363,13 @@
             "path": "bamr87/evals/README.md",
             "rel": "evals/README.md",
             "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "SCHEMA \u2014 console-assist",
+            "path": "bamr87/evals/console-assist/SCHEMA.md",
+            "rel": "evals/console-assist/SCHEMA.md",
+            "folder": "evals/console-assist"
           },
           {
             "type": "page",
@@ -1966,7 +1949,7 @@
         "title": "Universal Project Standard (UPS)",
         "rel": "specs",
         "index": "bamr87/specs/README.md",
-        "pages": 13,
+        "pages": 14,
         "children": [
           {
             "type": "page",
@@ -1998,6 +1981,12 @@
             "title": "UPS-AGENT \u2014 Agent context",
             "path": "bamr87/specs/AGENT-CONTEXT.md",
             "rel": "specs/AGENT-CONTEXT.md"
+          },
+          {
+            "type": "page",
+            "title": "UPS-AST \u2014 The fleet assistant",
+            "path": "bamr87/specs/ASSIST.md",
+            "rel": "specs/ASSIST.md"
           },
           {
             "type": "page",

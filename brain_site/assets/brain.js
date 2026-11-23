@@ -1,9 +1,17 @@
 /* Obsidian-style views for the published vault: graph, local graph, atlas, hover
    previews, quick switcher, canvas and table. The graphs draw with sigma (WebGL),
    loaded from graph-engine.bundle.js only on a page that has one. Material's instant navigation
-   swaps the page without reloading, so everything re-attaches on document$. */
+   swaps the page without reloading, so everything re-attaches on document$.
+   window.BrainVault is what workspace.js builds on: the vault, the local graph, the
+   picker and the registry of views a [data-brain-view] host can ask for. */
 (function () {
   "use strict";
+
+  const api = { opener: null, views: {} };
+  // What the current page has mounted, and which page that is: a view that
+  // finishes loading after the reader moved on is taken down, not kept.
+  let active = [];
+  let generation = 0;
 
   const CONCEPT = "#ffd54f";   // the canvas board's concept colour; the graphs read theirs from graph.json
 
@@ -116,6 +124,8 @@
         minCameraRatio: 0.03,
         maxCameraRatio: 3,
         stagePadding: 24,
+        // A workspace tab that is not showing has no size yet; it draws once it has one.
+        allowInvalidContainer: true,
       },
       nodeReducer(key, data, attrs) {
         if (!look.show(attrs)) return { visibility: "hidden" };
@@ -147,6 +157,9 @@
     const setNear = () => { const f = focus(); look.near = f ? new Set(graph.neighbors(f)) : new Set(); };
     sigma.on("enterNode", ({ node }) => { look.hovered = node; setNear(); host.style.cursor = "pointer"; redraw(); });
     sigma.on("leaveNode", () => { look.hovered = null; setNear(); host.style.cursor = ""; redraw(); });
+    // sigma follows the window's size; a panel or pane can change size on its own.
+    const observer = new ResizeObserver(() => sigma.scheduleRefresh());
+    observer.observe(host);
     return {
       sigma, graph, look, redraw,
       select(node) { look.selected = node; look.path = null; look.route = null; setNear(); redraw(); },
@@ -176,11 +189,13 @@
         this.flyTo((x0 + x1) / 2, (y0 + y1) / 2, Math.min(1.1, Math.max(0.08, Math.max(x1 - x0, y1 - y0) * 2.4)));
       },
       reset() { sigma.getCamera().reset({ duration: 600 }); },
-      destroy() { sigma.kill(); },
+      destroy() { observer.disconnect(); sigma.kill(); },
     };
   }
 
-  function open(url) {
+  function open(url, leave, event) {
+    // The workspace keeps a note inside itself; `leave` asks for the site page.
+    if (!leave && api.opener && api.opener(url, event)) return;
     // A real link click, so Material's instant navigation handles history.
     const link = document.createElement("a");
     link.href = siteUrl(url);
@@ -197,14 +212,17 @@
   }
 
   /* ---- global graph: an explorer over every note ---------------------------- */
-  let active = [];
-  async function mountGlobalGraph(host) {
+  // Every view returns a handle, so whoever mounted it can take it down again.
+  // `embedded` is the workspace: it owns the address and the keyboard, and it
+  // keeps a tab's host off the page while another tab is showing.
+  async function mountGlobalGraph(host, options = {}) {
+    const own = !options.embedded;
     if (!hasWebGL2()) {
-      unsupported(host, 'This view needs WebGL 2, which this browser does not offer. Browse the <a href="../atlas/">Atlas</a> or <a href="../pages/">All pages</a> instead.');
-      return;
+      unsupported(host, `This view needs WebGL 2, which this browser does not offer. Browse the <a href="${siteUrl("brain/atlas/")}">Atlas</a> or <a href="${siteUrl("brain/pages/")}">All pages</a> instead.`);
+      return null;
     }
     const [B, v] = await Promise.all([engine(), vault()]);
-    if (!host.isConnected) return;
+    if (own && !host.isConnected) return null;
     const stage = document.createElement("div");
     stage.className = "brain-stage";
     host.appendChild(stage);
@@ -364,7 +382,11 @@
     // Selection: a card with the note's summary, its neighbours and a path finder.
     let pathFrom = null;
     function select(key, fly) {
-      if (key === null) { r.clear(); card.hidden = true; pathFrom = null; history.replaceState(null, "", location.pathname + location.search); return; }
+      if (key === null) {
+        r.clear(); card.hidden = true; pathFrom = null;
+        if (own) history.replaceState(null, "", location.pathname + location.search);
+        return;
+      }
       const n = v.nodes[graph.getNodeAttribute(key, "i")];
       if (pathFrom && pathFrom !== key) {
         const route = B.bidirectional(graph, pathFrom, key);
@@ -390,7 +412,7 @@
         return;
       }
       r.select(key);
-      history.replaceState(null, "", `#${encodeURIComponent(n.f)}`);
+      if (own) history.replaceState(null, "", `#${encodeURIComponent(n.f)}`);
       const near = graph.neighbors(key).map((k) => v.nodes[graph.getNodeAttribute(k, "i")]).sort((a, b) => (b.d || 0) - (a.d || 0));
       card.hidden = false;
       card.innerHTML = `<button type="button" class="brain-card-close" aria-label="Close">×</button>
@@ -475,24 +497,70 @@
       if (e.key === "/" && document.activeElement !== find && !e.target.closest("input, textarea")) { e.preventDefault(); find.focus(); }
       if (e.key === "Escape" && document.activeElement !== find) select(null);
     };
-    document.addEventListener("keydown", keys);
+    // On its own page the graph answers anywhere; in a workspace pane, only while it has the focus.
+    const listener = own ? document : host;
+    listener.addEventListener("keydown", keys);
 
     apply();
-    const deep = decodeURIComponent(location.hash.slice(1));
-    if (deep && v.byPath.has(deep)) setTimeout(() => choose(v.byPath.get(deep)), 300);
-    active.push({ destroy() { clearTimeout(settle); if (worker) worker.kill(); document.removeEventListener("keydown", keys); r.destroy(); } });
+    let deepTimer = 0;
+    if (own) {
+      const deep = decodeURIComponent(location.hash.slice(1));
+      if (deep && v.byPath.has(deep)) deepTimer = setTimeout(() => choose(v.byPath.get(deep)), 300);
+    }
+    return {
+      destroy() {
+        clearTimeout(settle); clearTimeout(deepTimer);
+        if (worker) worker.kill();
+        listener.removeEventListener("keydown", keys);
+        r.destroy();
+      },
+    };
   }
 
-  /* ---- local graph: the current note at the centre, its links in rings ------- */
+  /* ---- local graph: a note at the centre, its links in rings ----------------- */
+  // Rings: the note, then its links, then theirs, each ring sorted by repository so colours band together.
+  function ringLayout(v, centre, depth, cap) {
+    const rings = [[centre]];
+    const seen = new Set([centre]);
+    for (let d = 1; d <= depth; d += 1) {
+      const next = [];
+      rings[d - 1].forEach((i) => v.neighbours[i].forEach((j) => { if (!seen.has(j) && seen.size < cap) { seen.add(j); next.push(j); } }));
+      if (!next.length) break;
+      next.sort((a, b) => (v.nodes[a].p + v.nodes[a].t).localeCompare(v.nodes[b].p + v.nodes[b].t));
+      rings.push(next);
+    }
+    const where = new Map([[centre, [0, 0]]]);
+    rings.slice(1).forEach((ring, d) => ring.forEach((i, k) => {
+      const angle = (2 * Math.PI * k) / ring.length + d * 0.35;
+      where.set(i, [Math.cos(angle) * (d + 1) * 10, Math.sin(angle) * (d + 1) * 10]);
+    }));
+    return where;
+  }
+  // Draws note `centre`'s rings into `host` and resolves to a handle, or to null
+  // where WebGL 2 is missing. The page's side panel and the workspace both use it.
+  async function localGraph(host, centre, depth = 1, options = {}) {
+    if (!hasWebGL2()) return null;
+    const [B, v] = await Promise.all([engine(), vault()]);
+    const where = ringLayout(v, centre, depth, options.cap || 90);
+    // Small dots in a small panel: the more rings, the smaller.
+    const scale = depth > 1 ? 0.35 : 0.55;
+    const graph = buildGraph(B, v, [...where.keys()], (i) => where.get(i), scale);
+    graph.setNodeAttribute(String(centre), "size", Math.max(7, sizeOf(v.nodes[centre]) * scale + 3));
+    const r = renderer(B, graph, host, { labelAt: 6, labelDensity: 0.5, pinned: String(centre), screenSizes: true });
+    r.sigma.on("clickNode", ({ node, event }) => { if (+node !== centre) open(v.nodes[+node].u, false, event && event.original); });
+    r.redraw();
+    return { destroy() { r.destroy(); } };
+  }
   async function mountLocalGraph() {
     const panel = document.querySelector(".brain-panel[data-brain-path]");
     const sidebar = document.querySelector(".md-sidebar--secondary .md-sidebar__inner");
     if (!panel || !hasWebGL2()) return;
-    const v = await vault();
+    const page = generation;
+    const [v] = await Promise.all([vault(), engine()]);
+    // The reader may have moved on while the vault was loading.
+    if (page !== generation || !panel.isConnected) return;
     const centre = v.byPath.get(panel.dataset.brainPath);
     if (centre === undefined || !v.neighbours[centre].size) return;
-    const B = await engine();
-    if (!panel.isConnected) return;
     const title = document.createElement("div");
     title.className = "brain-local-title";
     title.innerHTML = 'Local graph <span class="brain-depth" role="group" aria-label="Depth"><button type="button" aria-pressed="true" data-depth="1">1</button><button type="button" aria-pressed="false" data-depth="2">2</button></span>';
@@ -500,36 +568,20 @@
     host.className = "brain-local";
     const visible = sidebar && sidebar.offsetParent !== null;
     if (visible) { sidebar.append(title, host); } else { panel.prepend(title, host); }
-    let r = null;
+    let drawn = null, asked = 0;
     function draw(depth) {
-      if (r) r.destroy();
+      asked += 1;
+      const mine = asked;
+      if (drawn) { drawn.destroy(); drawn = null; }
       title.querySelectorAll("[data-depth]").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.depth === depth)));
-      // Rings: the note, then its links, then theirs, each ring sorted by repository so colours band together.
-      const rings = [[centre]];
-      const seen = new Set([centre]);
-      for (let d = 1; d <= depth; d += 1) {
-        const next = [];
-        rings[d - 1].forEach((i) => v.neighbours[i].forEach((j) => { if (!seen.has(j) && seen.size < 90) { seen.add(j); next.push(j); } }));
-        if (!next.length) break;
-        next.sort((a, b) => (v.nodes[a].p + v.nodes[a].t).localeCompare(v.nodes[b].p + v.nodes[b].t));
-        rings.push(next);
-      }
-      const where = new Map([[centre, [0, 0]]]);
-      rings.slice(1).forEach((ring, d) => ring.forEach((i, k) => {
-        const angle = (2 * Math.PI * k) / ring.length + d * 0.35;
-        where.set(i, [Math.cos(angle) * (d + 1) * 10, Math.sin(angle) * (d + 1) * 10]);
-      }));
-      // Small dots in a small panel: the more rings, the smaller.
-      const scale = depth > 1 ? 0.35 : 0.55;
-      const graph = buildGraph(B, v, [...where.keys()], (i) => where.get(i), scale);
-      graph.setNodeAttribute(String(centre), "size", Math.max(7, sizeOf(v.nodes[centre]) * scale + 3));
-      r = renderer(B, graph, host, { labelAt: 6, labelDensity: 0.5, pinned: String(centre), screenSizes: true });
-      r.sigma.on("clickNode", ({ node }) => { if (+node !== centre) open(v.nodes[+node].u); });
-      r.redraw();
+      localGraph(host, centre, depth).then((handle) => {
+        if (!handle) return;
+        if (mine === asked) { drawn = handle; } else { handle.destroy(); }
+      }).catch((error) => console.error("brain: the local graph failed to draw", error));
     }
     title.querySelectorAll("[data-depth]").forEach((b) => b.addEventListener("click", () => draw(+b.dataset.depth)));
+    active.push({ destroy() { asked += 1; if (drawn) drawn.destroy(); title.remove(); host.remove(); } });
     draw(1);
-    active.push({ destroy() { if (r) r.destroy(); title.remove(); host.remove(); } });
   }
 
   /* ---- atlas: the server drew it; hovering a wedge names it in the middle ---- */
@@ -559,16 +611,30 @@
   /* ---- hover preview ------------------------------------------------------ */
   let preview = null, previewTimer = 0;
   function hidePreview() { clearTimeout(previewTimer); if (preview) { preview.remove(); preview = null; } }
-  function nodeForLink(v, anchor) {
-    const url = new URL(anchor.href, location.href);
+  // The index of the note a site URL points at, or -1. The graph keeps the
+  // URLs MkDocs wrote, which are percent-encoded and call the home page "./".
+  function indexForUrl(v, href) {
+    let url;
+    try { url = new URL(href, location.href); } catch (error) { return -1; }
     const base = new URL(scope()).pathname;
-    if (url.origin !== location.origin || !url.pathname.startsWith(base)) return null;
-    const i = v.byUrl.get(decodeURI(url.pathname.slice(base.length)));
-    return i === undefined ? null : v.nodes[i];
+    if (url.origin !== location.origin || !url.pathname.startsWith(base)) return -1;
+    const path = url.pathname.slice(base.length);
+    let decoded = path;
+    try { decoded = decodeURI(path); } catch (error) { decoded = path; }
+    for (const key of [path, decoded, encodeURI(decoded), path || "./"]) {
+      const i = v.byUrl.get(key);
+      if (i !== undefined) return i;
+    }
+    return -1;
   }
+  function nodeForLink(v, anchor) {
+    const i = indexForUrl(v, anchor.href);
+    return i < 0 ? null : v.nodes[i];
+  }
+  const PREVIEWED = ".md-content a[href], .brain-ws [data-brain-preview] a[href]";
   function bindPreviews() {
     document.addEventListener("mouseover", (event) => {
-      const anchor = event.target.closest && event.target.closest(".md-content a[href]");
+      const anchor = event.target.closest && event.target.closest(PREVIEWED);
       if (!anchor) return;
       clearTimeout(previewTimer);
       previewTimer = setTimeout(async () => {
@@ -591,7 +657,7 @@
       }, 300);
     });
     document.addEventListener("mouseout", (event) => {
-      if (event.target.closest && event.target.closest(".md-content a[href]")) hidePreview();
+      if (event.target.closest && event.target.closest(PREVIEWED)) hidePreview();
     });
   }
 
@@ -605,36 +671,63 @@
     for (const char of text) { if (char === term[i]) i += 1; if (i === term.length) return 1000 - text.length; }
     return -1;
   }
-  async function openSwitcher() {
+  // One modal list for the quick switcher and the workspace's command palette.
+  // `rows(term)` returns the items to show; `show(item)` its [text, hint].
+  function pick(options) {
     if (document.querySelector(".brain-switcher")) return;
-    const v = await vault();
+    const before = document.activeElement;
     const shell = document.createElement("div");
     shell.className = "brain-switcher";
-    shell.innerHTML = '<div class="brain-switcher-box" role="dialog" aria-label="Quick switcher"><input type="text" placeholder="Find a note" aria-label="Find a note"><ul></ul></div>';
+    const box = document.createElement("div");
+    box.className = "brain-switcher-box";
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-modal", "true");
+    box.setAttribute("aria-label", options.label);
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = options.placeholder;
+    input.setAttribute("aria-label", options.placeholder);
+    input.setAttribute("role", "combobox");
+    input.setAttribute("aria-expanded", "true");
+    input.setAttribute("aria-controls", "brain-switcher-list");
+    input.setAttribute("autocomplete", "off");
+    const list = document.createElement("ul");
+    list.id = "brain-switcher-list";
+    list.setAttribute("role", "listbox");
+    box.append(input, list);
+    shell.appendChild(box);
     document.body.appendChild(shell);
-    const input = shell.querySelector("input");
-    const list = shell.querySelector("ul");
     let rows = [], cursor = 0;
-    const close = () => shell.remove();
+    const close = () => {
+      shell.remove();
+      if (before && before.isConnected && before.focus) before.focus();
+    };
+    const choose = (item, event) => { close(); options.choose(item, event); };
     function paint() {
-      list.replaceChildren(...rows.map((n, i) => {
+      list.replaceChildren(...rows.map((item, i) => {
+        const [text, hint] = options.show(item);
         const li = document.createElement("li");
-        li.textContent = n.t;
-        const where = document.createElement("span");
-        where.textContent = n.p;
-        li.append(where);
+        li.id = `brain-switcher-row-${i}`;
+        li.setAttribute("role", "option");
+        li.setAttribute("aria-selected", String(i === cursor));
+        li.textContent = text;
+        if (hint) {
+          const where = document.createElement("span");
+          where.textContent = hint;
+          li.append(where);
+        }
         if (i === cursor) li.className = "is-active";
-        li.addEventListener("click", () => { close(); open(n.u); });
+        li.addEventListener("click", (event) => choose(item, event));
         return li;
       }));
       const current = list.children[cursor];
-      if (current) current.scrollIntoView({ block: "nearest" });
+      if (current) {
+        current.scrollIntoView({ block: "nearest" });
+        input.setAttribute("aria-activedescendant", current.id);
+      } else { input.removeAttribute("aria-activedescendant"); }
     }
     function update() {
-      const term = input.value.trim().toLowerCase();
-      rows = !term ? v.nodes.filter((n) => n.k === "project" || n.k === "map").slice(0, 20)
-        : v.nodes.map((n) => [score(term, n.t), n]).filter((r) => r[0] >= 0)
-          .sort((a, b) => b[0] - a[0]).slice(0, 20).map((r) => r[1]);
+      rows = options.rows(input.value.trim().toLowerCase());
       cursor = 0;
       paint();
     }
@@ -644,11 +737,27 @@
       if (e.key === "Escape") close();
       if (e.key === "ArrowDown") { e.preventDefault(); cursor = Math.min(cursor + 1, rows.length - 1); paint(); }
       if (e.key === "ArrowUp") { e.preventDefault(); cursor = Math.max(cursor - 1, 0); paint(); }
-      if (e.key === "Enter" && rows[cursor]) { close(); open(rows[cursor].u); }
+      if (e.key === "Enter" && rows[cursor]) choose(rows[cursor], e);
     });
     shell.addEventListener("click", (e) => { if (e.target === shell) close(); });
     update();
     input.focus();
+  }
+  // Best matches of `term` among `items`, by the text `read` gives each.
+  function rank(term, items, read, limit) {
+    return items.map((item) => [score(term, read(item)), item]).filter((r) => r[0] >= 0)
+      .sort((a, b) => b[0] - a[0]).slice(0, limit).map((r) => r[1]);
+  }
+  async function openSwitcher() {
+    const v = await vault();
+    pick({
+      label: "Quick switcher",
+      placeholder: "Find a note",
+      rows: (term) => (!term ? v.nodes.filter((n) => n.k === "project" || n.k === "map").slice(0, 20)
+        : rank(term, v.nodes, (n) => n.t, 20)),
+      show: (n) => [n.t, n.p],
+      choose: (n, event) => open(n.u, false, event),
+    });
   }
 
   function addHeaderButtons() {
@@ -657,6 +766,7 @@
     const icons = {
       graph: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17 3a3 3 0 0 0-2.8 4l-3.6 3.2a3 3 0 0 0-3.9.6L5 9.9A3 3 0 1 0 4 12l2.4 1a3 3 0 0 0 .7 2.4l-1.8 2.8a3 3 0 1 0 1.7 1l1.8-2.8a3 3 0 0 0 3.5-1.6l3.8.9A3 3 0 1 0 16.4 14l-3.8-.9a3 3 0 0 0-.7-1.5l3.6-3.2A3 3 0 1 0 17 3z"/></svg>',
       find: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 5h16v2H4V5zm0 6h10v2H4v-2zm0 6h16v2H4v-2zm14-7 3 2-3 2v-4z"/></svg>',
+      workspace: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2v12h4V6H4zm6 0v12h6V6h-6zm8 0v12h2V6h-2z"/></svg>',
     };
     const make = (label, icon, action) => {
       const button = document.createElement("button");
@@ -668,7 +778,8 @@
       button.addEventListener("click", action);
       return button;
     };
-    search.before(make("Quick switcher (Ctrl+O)", icons.find, openSwitcher),
+    search.before(make("Workspace", icons.workspace, () => open("brain/workspace/")),
+      make("Quick switcher (Ctrl+O)", icons.find, openSwitcher),
       make("Graph view", icons.graph, () => open("brain/graph/")));
   }
 
@@ -759,7 +870,7 @@
     }, { passive: false });
     const observer = new ResizeObserver(fit);
     observer.observe(host);
-    active.push({ destroy() { observer.disconnect(); canvas.remove(); } });
+    return { destroy() { observer.disconnect(); canvas.remove(); } };
   }
 
   /* ---- table -------------------------------------------------------------- */
@@ -811,22 +922,58 @@
     input.addEventListener("input", paint);
     select.addEventListener("change", paint);
     paint();
+    return { destroy() { host.replaceChildren(); } };
   }
 
+  /* ---- mounting ----------------------------------------------------------- */
+  api.views.graph = mountGlobalGraph;
+  api.views.atlas = mountAtlas;
+  api.views.canvas = mountCanvas;
+  api.views.table = mountTable;
+  // The site draws these at build time: their host keeps what it holds.
+  const DRAWN = new Set(["atlas"]);
+
+  function mountHost(host) {
+    const mount = api.views[host.dataset.brainView];
+    if (!mount || host.dataset.brainMounted) return;
+    host.dataset.brainMounted = "1";
+    if (!DRAWN.has(host.dataset.brainView)) host.replaceChildren();
+    const page = generation;
+    Promise.resolve().then(() => mount(host)).then((handle) => {
+      if (!handle) return;
+      if (page === generation) { active.push(handle); } else { handle.destroy(); }
+    }).catch((error) => {
+      console.error(`brain: the ${host.dataset.brainView} view failed to load`, error);
+      host.textContent = "This view could not be loaded. Reload the page to try again.";
+    });
+  }
+  // A script loaded after this one (workspace.js) adds its view here; a host
+  // already on the page is mounted straight away.
+  api.register = function (name, mount) {
+    api.views[name] = mount;
+    document.querySelectorAll("[data-brain-view]").forEach((host) => {
+      if (host.dataset.brainView === name) mountHost(host);
+    });
+  };
+
   function mountPage() {
+    generation += 1;
     active.forEach((item) => item.destroy());
     active = [];
     hidePreview();
     addHeaderButtons();
     document.querySelectorAll("[data-brain-view]").forEach((host) => {
-      // The Atlas arrives drawn by the site; every other view is built here.
-      if (host.dataset.brainView === "atlas") { mountAtlas(host); return; }
-      host.replaceChildren();
-      const mount = { graph: mountGlobalGraph, canvas: mountCanvas, table: mountTable }[host.dataset.brainView];
-      if (mount) mount(host);
+      delete host.dataset.brainMounted;
+      mountHost(host);
     });
     mountLocalGraph();
   }
+
+  Object.assign(api, {
+    vault, siteUrl, cssVar, colourOf, score, rank, pick, open, openSwitcher,
+    localGraph, indexForUrl, hidePreview,
+  });
+  window.BrainVault = api;
 
   document.addEventListener("keydown", (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "o") { e.preventDefault(); openSwitcher(); }

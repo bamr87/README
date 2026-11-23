@@ -16,7 +16,7 @@ title: Scripts
 > [!info] tooling: `bamr87/scripts`
 > Automation scripts for forking, linting, stashing, and project management across the fleet.
 
-**25** pages collected from commit `4aacaf5915f6` (2026-11-18).
+**25** pages collected from commit `f835befd55c2` (2026-11-22).
 
 ## Most connected pages
 

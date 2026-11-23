@@ -207,7 +207,35 @@ features:
     scenarios:
       - verify/scenarios/second-brain.yml
     evidence: []
+  - id: README-018
+    title: "Vault reads for agents"
+    description: "CLI commands and read-only MCP tools for a note, its neighbours, the hot cache and vault health, plus a Claude Code skill and a save command for durable notes."
+    implemented: true
+    status: shipped
+    prd: ["FR7"]
+    surface: api
+    link: "mcp/server.py"
+    docs: "mcp/README.md"
+    tests:
+      - tests/unit/test_cases/test_second_brain.py
   - id: README-019
+    title: "Vault workspace"
+    description: "The published site opens the vault in one window at /brain/workspace/: a file explorer, tabs and split panes, search, backlinks, an outline, a local graph and a command palette, read from the graph and the pages the site already serves."
+    implemented: true
+    status: shipped
+    prd: ["FR15"]
+    surface: ui
+    link: /brain/workspace/
+    docs: MKDOCS.md
+    tags: [site, mkdocs, obsidian, workspace]
+    tests:
+      - tests/unit/test_cases/test_brain_site.py
+      - tests/js/workspace.test.cjs
+    scenarios:
+      - verify/scenarios/brain-workspace.yml
+      - verify/scenarios/brain-workspace-panes.yml
+    evidence: []
+  - id: README-020
     title: "Atlas and project emblems"
     description: "A sunburst of every corpus's navigation drawn as SVG at build time (repositories inside, their sections and sub-sections outside, each wedge sized by pages and linked to its section), and a smaller emblem of the same kind on each repository's project note."
     implemented: true
@@ -222,14 +250,3 @@ features:
     scenarios:
       - verify/scenarios/second-brain.yml
     evidence: []
-  - id: README-018
-    title: "Vault reads for agents"
-    description: "CLI commands and read-only MCP tools for a note, its neighbours, the hot cache and vault health, plus a Claude Code skill and a save command for durable notes."
-    implemented: true
-    status: shipped
-    prd: ["FR7"]
-    surface: api
-    link: "mcp/server.py"
-    docs: "mcp/README.md"
-    tests:
-      - tests/unit/test_cases/test_second_brain.py

@@ -8,6 +8,7 @@ together, in the shape the LLM-wiki pattern uses:
   hot.md             the hot cache: what changed lately, what is most connected
   log.md             the change log, rendered from context/vault/log.jsonl
   health.md          lint: unresolved links, orphans, ambiguous titles
+  workspace.md       the page the site's workspace opens on (brain_site/assets)
   concepts/<slug>.md one note per subject shared across pages, linking them
   projects/<name>.md one note per repository, linking its key pages and concepts
   notes/*.md         durable notes from `notes/`, copied in unchanged
@@ -410,6 +411,7 @@ def render_index(concepts: List[Concept], names: List[str], titles: Dict[str, st
              "The fleet's documentation as one linked knowledge base. Open `docs/` as a vault "
              "in Obsidian, or use the views here.\n",
              "| View | What it shows |", "|---|---|",
+             "| [[brain/workspace\\|Workspace]] | The vault as one window: files, tabs, links and graph |",
              "| [[brain/graph\\|Graph view]] | Every note and link, by repository or by connection |",
              "| [[brain/atlas\\|Atlas]] | Every repository's documentation as rings of sections |",
              "| [[brain/canvas\\|Canvas]] | Projects and the concepts they share |",
@@ -446,8 +448,8 @@ def render_tags(notes: Dict[str, Note], concepts: List[Concept]) -> str:
     return "\n".join(lines) + "\n"
 
 
-def _view(title: str, intro: str, html: str) -> str:
-    return _front(title=title, kind="map", tags=["brain/map"], hide=["toc"]) \
+def _view(title: str, intro: str, html: str, hide: tuple[str, ...] = ("toc",)) -> str:
+    return _front(title=title, kind="map", tags=["brain/map"], hide=list(hide)) \
         + f"# {title}\n\n{intro}\n\n{html}\n"
 
 
@@ -606,6 +608,14 @@ def generate(registry: Registry, ai: Optional[BaseProvider] = None,
         "pages.md": _view("All pages", "Every note in the vault. Obsidian shows the same "
                           "data through `brain/pages.base`.",
                           '<div class="brain-view" data-brain-view="table"></div>'),
+        # The site's own Obsidian window; in the app this page is only a pointer.
+        "workspace.md": _view("Workspace", "The vault in one window, the way Obsidian lays it "
+                              "out: a file explorer, tabs and split panes, backlinks, an "
+                              "outline, a local graph and a command palette. It opens on the "
+                              "published site and reads the same notes and links as every "
+                              "other page.",
+                              '<div class="brain-view" data-brain-view="workspace"></div>',
+                              hide=("navigation", "toc")),
         "fleet.canvas": render_canvas(names, titles, concepts, notes),
         "pages.base": render_base(),
     }

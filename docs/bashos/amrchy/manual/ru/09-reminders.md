@@ -1,0 +1,11 @@
+---
+source_file: amrchy/manual/ru/09-reminders.md
+source_repo: bamr87/bashos
+source_url: https://github.com/bamr87/bashos/blob/main/amrchy/manual/ru/09-reminders.md
+title: Напоминания
+---
+# Напоминания
+
+В Omarchy есть встроенный способ устанавливать простые напоминания на основе таймера обратного отсчёта с сообщением. Это можно делать через `Super + Ctrl + R`, просмотреть все установленные через `Super + Ctrl + Alt + R` и очистить все через `Super + Ctrl + Shift + R`. Всё также доступно через _Действия > Напоминание_. Также можно использовать CLI с `omarchy reminder 7 'Tea ready'`.
+
+ ![reminders](images/reminders.webp)

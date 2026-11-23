@@ -65,6 +65,7 @@ Requirement ids are stable: features cite them in `features/features.yml` (`prd:
 - **FR12 · Vault**: `docs/` opens as an Obsidian vault. Every link is resolved by one resolver, and permalink and title links that would not resolve in Obsidian or MkDocs are woven into path-qualified wikilinks at ingest.
 - **FR13 · Second brain**: each build regenerates notes in `docs/brain/`: concepts from shared tags and unanswered links, project notes, a hot cache, a change log and vault health, with AI summaries cached so a keyless build reproduces them. `notes/` holds hand and agent-written notes.
 - **FR14 · Obsidian on the site**: the published site shows wikilinks, callouts, backlinks, a global and a local graph, hover previews, a quick switcher, a canvas and a table of every note.
+- **FR15 · Workspace**: the published site opens the vault in one window at `/brain/workspace/`: a file explorer, tabs and split panes, a search over titles, tags, paths and summaries, backlinks, outgoing links, an outline, a local graph and a command palette, on a desktop and on a phone. It reads the graph and the pages the site already publishes, so it renders no Markdown and resolves no link itself, and it writes nothing but its layout, in the reader's own browser.
 
 ## 5. Non-functional requirements
 
@@ -128,8 +129,9 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | [README-015](features/features.yml) | Obsidian vault | shipped | [`scripts/context_engine/vault.py`](scripts/context_engine/vault.py) · [`README.md`](README.md) | FR12 |
 | [README-016](features/features.yml) | Second brain notes | shipped | [`scripts/context_engine/brain.py`](scripts/context_engine/brain.py) · [`README.md`](README.md) | FR13 |
 | [README-017](features/features.yml) | Obsidian views on the site | shipped | route `/brain/` · [`MKDOCS.md`](MKDOCS.md) | FR14 |
-| [README-019](features/features.yml) | Atlas and project emblems | shipped | route `/brain/atlas/` · [`MKDOCS.md`](MKDOCS.md) | FR14 |
 | [README-018](features/features.yml) | Vault reads for agents | shipped | [`mcp/server.py`](mcp/server.py) · [`mcp/README.md`](mcp/README.md) | FR7 |
+| [README-019](features/features.yml) | Vault workspace | shipped | route `/brain/workspace/` · [`MKDOCS.md`](MKDOCS.md) | FR15 |
+| [README-020](features/features.yml) | Atlas and project emblems | shipped | route `/brain/atlas/` · [`MKDOCS.md`](MKDOCS.md) | FR14 |
 
 **Requirement → feature trace**
 
@@ -149,7 +151,8 @@ Every user-facing capability has a stable id in the feature catalog [`features/f
 | §1.1 | README-013 |
 | FR12 | README-015 |
 | FR13 | README-016 |
-| FR14 | README-017, README-019 |
+| FR14 | README-017, README-020 |
+| FR15 | README-019 |
 <!-- features:end -->
 
 ## 7. Success criteria

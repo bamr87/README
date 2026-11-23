@@ -8,6 +8,35 @@ title: Change Log
 
 All notable changes to the Label Studio extension (formerly ZPL Viewer) will be documented in this file.
 
+## [0.4.0](https://github.com/bamr87/zpl-viewer/compare/zpl-viewer-v0.3.1...zpl-viewer-v0.4.0) (2026-11-18)
+
+
+### Features
+
+* **webview:** accessible names, live regions, keyboard shortcuts and focus styles ([85bfc42](https://github.com/bamr87/zpl-viewer/commit/85bfc4287706d330ca8201663e77c94766553cb0))
+* **webview:** accessible names, live regions, keyboard shortcuts and focus styles ([cb4f4f9](https://github.com/bamr87/zpl-viewer/commit/cb4f4f9ce8708e5dff4be1a292e826c139423d24))
+
+
+### Bug Fixes
+
+* **preview:** keep page and zoom across refreshes and export the label shown ([12e33bd](https://github.com/bamr87/zpl-viewer/commit/12e33bda5c812151b893ad9c59601430ba0c41fb))
+* **preview:** keep page and zoom across refreshes and export the label shown ([a3e047b](https://github.com/bamr87/zpl-viewer/commit/a3e047b1577bfa489c0a59f679ac31f532f81cb6))
+* **release:** package a .vsix instead of npm publish ([0ffffe7](https://github.com/bamr87/zpl-viewer/commit/0ffffe7e618836213e97825f741f8cf6a8678dbf))
+* **release:** package a .vsix instead of npm publish ([5d1c3b2](https://github.com/bamr87/zpl-viewer/commit/5d1c3b264fc81923cf6f6a3397b85c7f19591665))
+* **security:** cap graphic sizes and :Z64: inflation ([8e8be23](https://github.com/bamr87/zpl-viewer/commit/8e8be231bc1368de88204ae6a7ef2b05a748e878))
+
+## [0.3.1](https://github.com/bamr87/zpl-viewer/compare/zpl-viewer-v0.3.0...zpl-viewer-v0.3.1) (2026-11-18)
+
+
+### Bug Fixes
+
+* **ci:** bump Playwright to 1.65 for the ubuntu-26.04 runner ([debbd56](https://github.com/bamr87/zpl-viewer/commit/debbd56565072d9e68b8377f75c1848dcc91475e))
+* **ci:** bump Playwright to 1.65 for the ubuntu-26.04 runner ([f7b6a78](https://github.com/bamr87/zpl-viewer/commit/f7b6a780c26a4172f59c53e696aaedcdd970d9fd))
+* **deploy:** stop workspace settings from silently writing files ([95ade0c](https://github.com/bamr87/zpl-viewer/commit/95ade0ca22b7506a91d0348331093ec4ef89b159)), closes [#49](https://github.com/bamr87/zpl-viewer/issues/49)
+* **deploy:** workspace-defined printers always confirm; app-scoped confirmBeforeSend; resolved paths ([a91984d](https://github.com/bamr87/zpl-viewer/commit/a91984da783e573afa00293f4b06ce05b8cd9a97))
+* **webview:** drop unsafe-eval, crypto nonce, validated webview messages ([b9aefcc](https://github.com/bamr87/zpl-viewer/commit/b9aefccb0bf9724e673232740f06c6d1e284db97))
+* **webview:** harden the webview trust boundary ([1324fae](https://github.com/bamr87/zpl-viewer/commit/1324fae332b77fa959f2e373659ee85817e19a1e)), closes [#52](https://github.com/bamr87/zpl-viewer/issues/52)
+
 ## [0.3.0](https://github.com/bamr87/zpl-viewer/compare/zpl-viewer-v0.2.0...zpl-viewer-v0.3.0) (2026-10-31)
 
 

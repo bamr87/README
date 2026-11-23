@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Personal Site - content map
 
-Every published page in [`docs/bamr87.github.io/`](../bamr87.github.io/) as it appears in the sidebar: **94 pages** across **19 sections** (max depth 5).
+Every published page in [`docs/bamr87.github.io/`](../bamr87.github.io/) as it appears in the sidebar: **96 pages** across **19 sections** (max depth 5).
 
 - [Profile & Résumé](../bamr87.github.io/README.md)
 - [bamr87.github.io (AGENTS)](../bamr87.github.io/AGENTS.md)
@@ -18,20 +18,22 @@ Every published page in [`docs/bamr87.github.io/`](../bamr87.github.io/) as it a
 - [Data](../bamr87.github.io/_data/README.md)
 - [PRD — bamr87.github.io](../bamr87.github.io/PRD.md)
 - [Site generation scripts](../bamr87.github.io/scripts/README.md)
-- **[Documentation](../bamr87.github.io/docs/README.md)** <small>(9)</small>
+- **[Documentation](../bamr87.github.io/docs/README.md)** <small>(10)</small>
   - [bamr87.github.io documentation](../bamr87.github.io/docs/README.md)
   - [bamr87.github.io — Constitution](../bamr87.github.io/docs/constitution.md)
   - [Collections reference](../bamr87.github.io/docs/reference/collections.md)
-  - **[Amendments — bamr87.github.io](../bamr87.github.io/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — bamr87.github.io](../bamr87.github.io/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — bamr87.github.io](../bamr87.github.io/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../bamr87.github.io/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../bamr87.github.io/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../bamr87.github.io/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../bamr87.github.io/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../bamr87.github.io/docs/adr/README.md)
     - [ADR 0001 — Record architecture decisions](../bamr87.github.io/docs/adr/0001-record-architecture-decisions.md)
     - [ADR NNNN — Title in sentence case](../bamr87.github.io/docs/adr/0000-template.md)
-- **[Home](../bamr87.github.io/pages/home.md)** <small>(78)</small>
+- **[Home](../bamr87.github.io/pages/home.md)** <small>(79)</small>
   - [Home](../bamr87.github.io/pages/home.md)
+  - [placeholders](../bamr87.github.io/pages/_drafts/placeholders.md)
   - [search](../bamr87.github.io/pages/search.md)
   - [Tags](../bamr87.github.io/pages/tags.md)
   - [The Quest Log](../bamr87.github.io/pages/quest-log.md)

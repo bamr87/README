@@ -5,18 +5,18 @@
   "title": "Brain",
   "corpus": "docs/brain",
   "counts": {
-    "pages": 183,
+    "pages": 184,
     "sections": 2,
     "max_depth": 2,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "96c107915ebc8711",
+  "fingerprint": "4636ea11ee0e6373",
   "tree": {
     "type": "section",
     "title": "Brain",
     "index": "brain/index.md",
-    "pages": 183,
+    "pages": 184,
     "children": [
       {
         "type": "page",
@@ -79,6 +79,12 @@
         "title": "Vault health",
         "path": "brain/health.md",
         "rel": "health.md"
+      },
+      {
+        "type": "page",
+        "title": "Workspace",
+        "path": "brain/workspace.md",
+        "rel": "workspace.md"
       },
       {
         "type": "section",

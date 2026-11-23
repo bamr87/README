@@ -23,8 +23,8 @@ title: Docker
 ### [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (38)
 
 - [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
-- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll]]
 - [[zer0-mistakes/README|zer0-mistakes]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll]]
 - [[zer0-mistakes/fr/docs/getting-started/theme-guide|Guide du thème Jekyll : configuration, personnalisation, déploiement]]
 - [[zer0-mistakes/pages/_docs/getting-started/theme-guide|Jekyll Theme Guide: Setup, Customize, Deploy]]
 - [[zer0-mistakes/fr/docs/installation|Installation]]

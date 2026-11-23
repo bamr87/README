@@ -1,6 +1,4 @@
 ---
-TODO:
-- Add a story line
 author: bamr87
 description: This is an overall outline of this site, and a place to start or come
   back to when lost.
@@ -24,10 +22,6 @@ title: Home
 ```text
 I want to build an integration from Github to an LLM (such as Gemini) to review markdown files for grammar, spelling, completeness, etc., and then commit the changes for review.
 ```
-
-## TODO 
-
-{{ page.TODO }} {:.dev-settings .alert .alert-warning}
 
 ## Introduction
 

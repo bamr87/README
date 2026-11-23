@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 18
+pages: 23
 repo: bamr87/djangoerp
 tags:
 - brain/project
@@ -16,19 +16,19 @@ title: Django ERP
 > [!info] app: `bamr87/djangoerp`
 > Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning.
 
-**18** pages collected from commit `ca47145def5d` (2026-11-18).
+**23** pages collected from commit `5bd920929197` (2026-11-21).
 
 ## Most connected pages
 
 - [[djangoerp/README|DjangoERP]]
-- [[djangoerp/PRD|PRD — djangoerp]]
-- [[djangoerp/docs/constitution|djangoerp — Constitution]]
 - [[djangoerp/AGENTS|djangoerp]]
-- [[djangoerp/docs/README|djangoerp documentation]]
-- [[djangoerp/docs/amendments/README|Amendments — djangoerp]]
-- [[djangoerp/CLAUDE|djangoerp]]
-- [[djangoerp/docs/adr/README|Architecture Decision Records]]
-- [[djangoerp/docs/amendments/0001-ratify-constitution|0001 — Ratify the constitution]]
-- [[djangoerp/docs/amendments/0002-mission-statement|0002 — Missions]]
-- [[djangoerp/CHANGELOG|Changelog]]
+- [[djangoerp/PRD|PRD — djangoerp]]
 - [[djangoerp/docs/ARCHITECTURE|DjangoERP architecture]]
+- [[djangoerp/docs/constitution|djangoerp — Constitution]]
+- [[djangoerp/docs/README|djangoerp documentation]]
+- [[djangoerp/docs/adr/README|Architecture Decision Records]]
+- [[djangoerp/docs/amendments/README|Amendments — djangoerp]]
+- [[djangoerp/simulation/README|simulation — the agent simulation sandbox]]
+- [[djangoerp/docs/adr/0003-agent-simulation-sandbox|ADR 0003 — An agent simulation sandbox that drives the ERP through its services]]
+- [[djangoerp/docs/adr/0004-registry-driven-workspace-shell|ADR 0004 — One registry-driven workspace shell for every module]]
+- [[djangoerp/workspace/README|workspace — the common app shell]]

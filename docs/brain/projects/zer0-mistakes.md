@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 560
+pages: 561
 repo: bamr87/zer0-mistakes
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: Zer0 Mistakes
 > [!info] theme: `bamr87/zer0-mistakes`
 > Jekyll theme and software architecture patterns for GitHub Pages.
 
-**560** pages collected from commit `e6105005bb04` (2026-11-18).
+**561** pages collected from commit `c3c52a7c9a59` (2026-11-19).
 
 ## Most connected pages
 
@@ -26,8 +26,8 @@ title: Zer0 Mistakes
 - [[zer0-mistakes/fr/docs/index|Documentation]]
 - [[zer0-mistakes/pages/_docs/index|Documentation]]
 - [[zer0-mistakes/fr/docs/jekyll/index|Jekyll]]
-- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll]]
 - [[zer0-mistakes/README|zer0-mistakes]]
+- [[zer0-mistakes/pages/_docs/jekyll/index|Jekyll]]
 - [[zer0-mistakes/fr/docs/development/index|Développement]]
 - [[zer0-mistakes/pages/_docs/development/index|Development]]
 - [[zer0-mistakes/docs/systems/README|System Documentation]]

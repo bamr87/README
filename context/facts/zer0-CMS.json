@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 1207,
-    "fingerprint": "e19001884a5a20c7",
+    "fingerprint": "9112ae16746b6da2",
     "path": "docs/zer0-CMS",
     "present": true,
-    "total_bytes": 6776682
+    "total_bytes": 6780619
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -154,7 +154,7 @@
       "europe",
       "documentation"
     ],
-    "total_words": 860195
+    "total_words": 860816
   },
   "schema_version": "1.0",
   "signals": {

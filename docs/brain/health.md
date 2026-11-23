@@ -11,7 +11,7 @@ title: Vault health
 
 # Vault health
 
-**228** unresolved link targets, **1786** orphan pages, **318** titles shared by more than one page. Fix these upstream: `docs/` is regenerated.
+**229** unresolved link targets, **2415** orphan pages, **427** titles shared by more than one page. Fix these upstream: `docs/` is regenerated.
 
 ## Unresolved links
 
@@ -83,15 +83,16 @@ title: Vault health
 | Project | Orphan pages |
 |---|---:|
 | zer0-CMS | 680 |
+| bashos | 632 |
 | zer0-mistakes | 241 |
 | OverTheWire-website | 230 |
-| law-ai | 90 |
+| law-ai | 98 |
 | vs-sonic-pi | 90 |
-| it-journey | 87 |
-| bamr87 | 84 |
-| bamr87.github.io | 69 |
+| it-journey | 88 |
+| bamr87 | 76 |
+| bamr87.github.io | 70 |
 | gitorio | 55 |
-| bashcrawl | 41 |
+| bashcrawl | 40 |
 | lifehacker.dev | 30 |
 | SCHEMA | 22 |
 | githubai | 12 |
@@ -99,12 +100,11 @@ title: Vault health
 | rewind-arcade | 8 |
 | fredgar-ai | 7 |
 | outbox | 6 |
-| bashos | 5 |
 | godotgo | 5 |
 | ocrmd | 3 |
 | scripts | 3 |
+| zpl-viewer | 3 |
 | djangoerp | 2 |
-| zpl-viewer | 2 |
 | README.md | 1 |
 | adr | 1 |
 | setup | 1 |
@@ -114,36 +114,54 @@ title: Vault health
 
 | Title | Pages |
 |---|---:|
+| Neovim | 50 |
+| Omarchy CLI | 50 |
+| TUIs | 50 |
+| AI | 39 |
+| Dotfiles | 39 |
 | Changelog | 36 |
+| Windows VM | 28 |
 | 0001 — Ratify the constitution | 22 |
 | CLAUDE.md | 22 |
+| Terminal | 22 |
 | Architecture Decision Records | 21 |
 | NNNN — Title of the amendment | 21 |
 | ADR 0001 — Record architecture decisions | 19 |
 | ADR NNNN — Title in sentence case | 18 |
-| Security Policy | 16 |
+| Security Policy | 17 |
+| Prompt | 15 |
+| GUIs | 14 |
+| Branding | 13 |
+| FAQ | 13 |
+| 0002 — Missions | 12 |
 | Documentation | 10 |
-| Getting Started | 9 |
+| Gaming | 10 |
+| Getting Started | 10 |
+| 0003 — Missions | 8 |
 | Architecture | 8 |
 | About | 7 |
+| Navigation | 7 |
 | scripts | 7 |
-| 0002 — Missions | 6 |
 | contributing | 6 |
+| Troubleshooting | 6 |
 | AGENTS.md | 5 |
 | bamr87 | 5 |
 | Home | 5 |
 | Index | 5 |
+| Omarchy na... | 5 |
 | SCHEMA — docs | 5 |
 | Tags | 5 |
+| Testing | 5 |
 | {{title}} | 5 |
 | <% tp.file.title %> | 5 |
-| Troubleshooting | 5 |
-| 0003 — Missions | 4 |
 | Amr Abdel-Motaleb | 4 |
+| Avisos | 4 |
 | Categories | 4 |
 | Customization | 4 |
 | Development | 4 |
 | features/ | 4 |
+| GUI | 4 |
+| IA | 4 |
 | Jekyll | 4 |
 | Law AI | 4 |
 | lifehacker.dev | 4 |
@@ -151,26 +169,8 @@ title: Vault health
 | Make Targets | 4 |
 | NEW — Agent merge of mergeable PRs, and a review gate | 4 |
 | Notes | 4 |
+| Omarchy на... | 4 |
 | Roadmap | 4 |
 | SCHEMA — features | 4 |
-| Testing | 4 |
+| Shell-plugins | 4 |
 | Wargames | 4 |
-| Wizard Topples Capitalist Dominance Ingeniously | 4 |
-| AI Usage & Cost | 3 |
-| AIEO — AI Engine Optimization | 3 |
-| Analytics | 3 |
-| bashcrawl | 3 |
-| bashos | 3 |
-| Business | 3 |
-| Configuration | 3 |
-| Contributor Covenant Code of Conduct | 3 |
-| Design system | 3 |
-| djangoerp | 3 |
-| Docker | 3 |
-| Front Matter | 3 |
-| Generated Title | 3 |
-| Git with the Program | 3 |
-| godotgo | 3 |
-| Google Analytics | 3 |
-| Google Tag Manager | 3 |
-| Installation | 3 |

@@ -17,19 +17,19 @@ To see how it all connects, open the [Second Brain](brain/index.md): the [graph]
 
 ### [README - it-journey](it-journey/README.md)
 
-Educational IT platform with quests, blog posts, and technical documentation. *(557 documents, 54 sections)*
+Educational IT platform with quests, blog posts, and technical documentation. *(558 documents, 54 sections)*
 
 [Content map](browse/it-journey.md)
 
 ### [zer0-mistakes](zer0-mistakes/README.md)
 
-Jekyll theme and software architecture patterns for GitHub Pages. *(560 documents, 95 sections)*
+Jekyll theme and software architecture patterns for GitHub Pages. *(561 documents, 95 sections)*
 
 [Content map](browse/zer0-mistakes.md)
 
 ### [Bashcrawl](bashcrawl/README.md)
 
-Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(80 documents, 16 sections)*
+Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. *(81 documents, 16 sections)*
 
 [Content map](browse/bashcrawl.md)
 
@@ -47,31 +47,31 @@ OverTheWire wargame guides and security-challenge documentation (external refere
 
 ### [👋 Hi, I'm Amr Abdel-Motaleb](bamr87/README.md)
 
-Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashboards. *(275 documents, 40 sections)*
+Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashboards. *(273 documents, 40 sections)*
 
 [Content map](browse/bamr87.md)
 
 ### [Profile & Résumé](bamr87.github.io/README.md)
 
-Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages. *(94 documents, 19 sections)*
+Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages. *(96 documents, 19 sections)*
 
 [Content map](browse/bamr87.github.io.md)
 
 ### [bashOS](bashos/README.md)
 
-Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine. *(80 documents, 15 sections)*
+Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine. *(2688 documents, 78 sections)*
 
 [Content map](browse/bashos.md)
 
 ### [cv-pro — the CV machine and its builder, in one repository](cv-pro/README.md)
 
-CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract and renders) and app/ (the React builder). *(32 documents, 6 sections)*
+CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract and renders) and app/ (the React builder). *(33 documents, 6 sections)*
 
 [Content map](browse/cv-pro.md)
 
 ### [DjangoERP](djangoerp/README.md)
 
-Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning. *(18 documents, 3 sections)*
+Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP planning. *(23 documents, 3 sections)*
 
 [Content map](browse/djangoerp.md)
 
@@ -101,37 +101,37 @@ Godot 4 game workspace: one reusable framework, five sample games and tooling th
 
 ### [Law AI](law-ai/README.md)
 
-Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama. *(301 documents, 74 sections)*
+Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first via Ollama. *(309 documents, 75 sections)*
 
 [Content map](browse/law-ai.md)
 
 ### [lifehacker.dev](lifehacker.dev/index.md)
 
-Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude Code. *(138 documents, 12 sections)*
+Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude Code. *(139 documents, 12 sections)*
 
 [Content map](browse/lifehacker.dev.md)
 
 ### [ocrmd](ocrmd/README.md)
 
-Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search. *(26 documents, 4 sections)*
+Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search. *(27 documents, 4 sections)*
 
 [Content map](browse/ocrmd.md)
 
 ### [outbox](outbox/README.md)
 
-Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer. *(22 documents, 4 sections)*
+Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer. *(23 documents, 4 sections)*
 
 [Content map](browse/outbox.md)
 
 ### [Rewind Arcade](rewind-arcade/README.md)
 
-Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog. *(76 documents, 11 sections)*
+Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog. *(81 documents, 12 sections)*
 
 [Content map](browse/rewind-arcade.md)
 
 ### [Pyramid Schema (SCHEMA.md)](SCHEMA/README.md)
 
-Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it. *(36 documents, 10 sections)*
+Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it. *(37 documents, 10 sections)*
 
 [Content map](browse/SCHEMA.md)
 
@@ -149,7 +149,7 @@ Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS 
 
 ### [Label Studio](zpl-viewer/README.md)
 
-Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal labels. *(19 documents, 4 sections)*
+Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal labels. *(21 documents, 4 sections)*
 
 [Content map](browse/zpl-viewer.md)
 

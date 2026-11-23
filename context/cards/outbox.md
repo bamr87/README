@@ -7,13 +7,13 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 5ca2d367be15780a
+source_fingerprint: 5623397f6f6190dc
 tags:
 ---
 
 # outbox
 
-> Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer.
+> Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay scorer. Outbox's direction is to become the ultimate open home for all things competitive agent messaging: data, tools, resources and transparency, with an immutable mailbox protocol, replayable races and a reproducible offline harness for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -21,7 +21,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/outbox` - 22 docs |
+| Corpus | `docs/outbox` - 23 docs |
 | External | no |
 
 ## Signals
@@ -31,15 +31,15 @@ tags:
 - has AGENTS.md operating manual
 - keeps a changelog
 - has a security policy
-- ~7,808 words across 22 indexed documents
+- ~9,004 words across 23 indexed documents
 - code samples in: bash, plaintext, json
 
 ## Navigation
 
-22 published pages in 4 sections (max depth 3) — [browse the full map](../../docs/browse/outbox.md) · [tree as JSON](../nav/outbox.json)
+23 published pages in 4 sections (max depth 3) — [browse the full map](../../docs/browse/outbox.md) · [tree as JSON](../nav/outbox.json)
 
 - **Agents** (4 pages)
-- **Documentation** (10 pages)
+- **Documentation** (11 pages)
 
 ## Key documents
 
@@ -49,8 +49,8 @@ tags:
 - [`AGENTS.md`](../../docs/outbox/AGENTS.md)
 - [`CHANGELOG.md`](../../docs/outbox/CHANGELOG.md)
 - [`SECURITY.md`](../../docs/outbox/SECURITY.md)
+- [`PRD.md`](../../docs/outbox/PRD.md)
 - [`e2e/README.md`](../../docs/outbox/e2e/README.md)
-- [`docs/constitution.md`](../../docs/outbox/docs/constitution.md)
 
 ## Query this context
 

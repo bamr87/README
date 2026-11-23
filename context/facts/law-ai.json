@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 301,
-    "fingerprint": "4d59a9bc401ffa12",
+    "file_count": 309,
+    "fingerprint": "24455e3880c5c9aa",
     "path": "docs/law-ai",
     "present": true,
-    "total_bytes": 2777982
+    "total_bytes": 2836434
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -33,12 +33,12 @@
   ],
   "navigation": {
     "browse": "docs/browse/law-ai.md",
-    "fingerprint": "221ca68765577dac",
+    "fingerprint": "94f5776bf7bc72b0",
     "index": "law-ai/README.md",
     "max_depth": 6,
-    "pages": 301,
+    "pages": 309,
     "present": true,
-    "sections": 74,
+    "sections": 75,
     "skipped": 0,
     "title": "Law AI",
     "top_sections": [
@@ -51,7 +51,7 @@
       },
       {
         "index": "law-ai/backend/README.md",
-        "pages": 60,
+        "pages": 68,
         "path": "backend",
         "title": "Law AI \u2014 Backend",
         "type": "section"
@@ -86,7 +86,7 @@
   },
   "rollups": {
     "categories": {
-      "law-ai": 301
+      "law-ai": 309
     },
     "code_languages": [
       "bash",
@@ -98,7 +98,7 @@
       "sql",
       "cypher"
     ],
-    "indexed_documents": 301,
+    "indexed_documents": 309,
     "top_tags": [
       "structure",
       "foundations",
@@ -116,7 +116,7 @@
       "flaw",
       "fallacy"
     ],
-    "total_words": 386459
+    "total_words": 395345
   },
   "schema_version": "1.0",
   "signals": {
@@ -142,7 +142,7 @@
         "name": "specs"
       },
       {
-        "doc_count": 60,
+        "doc_count": 68,
         "name": "backend"
       },
       {

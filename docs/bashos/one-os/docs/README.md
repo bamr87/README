@@ -49,7 +49,7 @@ The quickest way in is the stick (or SD card): it boots a persistent Linux **hom
 4. [Working with Claude Code](developer-guide/04-claude-code.md) — CLAUDE.md, the skill, guard rails
 
 **Reference**
-- [Make targets](reference/make-targets.md) · [oneos-vm CLI](reference/oneos-vm.md) · [On-stick tools](reference/stick-tools.md) · [manifest.yaml](reference/manifest.md) · [Stick layout and ventoy.json](reference/stick-layout.md) · [Environment variables](reference/environment.md)
+- [Make targets](reference/make-targets.md) · [oneos-vm CLI](reference/oneos-vm.md) · [On-stick tools](reference/stick-tools.md) · [manifest.yaml](reference/manifest.md) · [Stick layout and ventoy.json](reference/stick-layout.md) · [Environment variables](reference/environment.md) · [Machine profiles](reference/machines.md)
 
 **Records and decisions**
 - [Design plan](../PLAN.md) · [ADRs](adr/) · [Phase 0 spike report](spike.md)

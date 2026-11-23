@@ -14,7 +14,7 @@ The root [`README.md`](../README.md) is a GitHub profile. To work in the repo st
 
 | Document | What it covers |
 | --- | --- |
-| [`AGENTS.md`](../AGENTS.md) | The fleet's control plane: about forty projects mounted as Git submodules and managed, monitored and standardized from one hub, which is also the GitHub profile and the public Harness Console site. |
+| [`AGENTS.md`](../AGENTS.md) | The bamr87 hub's direction is to become the ultimate open home for the fleet: the control plane, the shared standards, and a public window onto every project. See [constitution § 1](constitution.md#1-mission). |
 | [`CONTRIBUTING.md`](../CONTRIBUTING.md) | How to contribute: branches, commits, local gates and pull requests. |
 | [`CHANGELOG.md`](../CHANGELOG.md) | Release history: the notable changes in each version, newest first. |
 | [`SCHEMA.md`](../SCHEMA.md) | Control plane for a fleet of ~40 project submodules: the root repo is the machinery (registry, gates, seeds, site) that manages and standardizes them. |
@@ -25,6 +25,7 @@ The root [`README.md`](../README.md) is a GitHub profile. To work in the repo st
 
 | Document | What it covers |
 | --- | --- |
+| [`docs/ABOUT-SECTION.md`](ABOUT-SECTION.md) | The fleet standard for each repo's public-facing about section: a consistent, reliable, comprehensive site map of contribution, docs, governance and the other fundamental pages. |
 | [`docs/AGENT-EFFICACY.md`](AGENT-EFFICACY.md) | Every AI agent the fleet runs, in one generated inventory (`_data/agents.yml`), held to the agentic efficacy contract (constitution § 29): what each agent must declare, how drift check (p) keeps the inventory complete, and how the… |
 | [`docs/AI-INTEGRATION.md`](AI-INTEGRATION.md) | The AI layer — every surface where Claude runs, the Claude auth order and secrets matrix, the loops, and how all of it propagates to the fleet. |
 | [`docs/ARCH-RESEARCH-HARNESS.md`](ARCH-RESEARCH-HARNESS.md) | A research-and-development harness that studies the high-level architecture and the deeper structural challenges of every codebase in the bamr87 fleet, grounds each judgement in current software-architecture literature, and turns the… |
@@ -50,6 +51,7 @@ The root [`README.md`](../README.md) is a GitHub profile. To work in the repo st
 | [`docs/EXPEDITE-SPRINTS.md`](EXPEDITE-SPRINTS.md) | The fleet's standard for one top-priority, time-boxed sprint at a time (constitution § 27, amendment `expedite-sprints`), driven end to end by the existing loops with three gates only Amr passes. |
 | [`docs/FLEET-COMPOSE.md`](FLEET-COMPOSE.md) | Launching and debugging any submodule from the hub with its real services, on a port nobody else claims, without a commit in the submodule. |
 | [`docs/FLEET-GRAPH.md`](FLEET-GRAPH.md) | Everything the control plane manages and how it relates, as one model you can ask: what depends on this, what does this need, how are these two connected, and what is missing. |
+| [`docs/FLEET.md`](FLEET.md) | Organization structure, general information, and a per-repo context table for the bamr87 fleet, including about-section coverage as of 2026-11-16. |
 | [`docs/FORGE-HOST.md`](FORGE-HOST.md) | Running the fleet's containers on the `forge` LAN host while the Mac runs the terminal dash. |
 | [`docs/FRONTEND-PLATFORM.md`](FRONTEND-PLATFORM.md) | How the fleet's frontends share one platform without sharing one framework: six standard layers (tokens, Web Components, one app shell with micro-frontends, one OIDC identity, contracts, a registry with conformance), four tiers, the… |
 | [`docs/HARNESS-OPS.md`](HARNESS-OPS.md) | Managing the fleet's AI harnesses and schedules: the `harnesses:` contract, the daily inventory, mass deploy via the harness fan-out (`fanout.yml`, kit `harness`), caps, cost forecasting, and the local stack. |
@@ -58,6 +60,7 @@ The root [`README.md`](../README.md) is a GitHub profile. To work in the repo st
 | [`docs/ISSUE-PIPELINE.md`](ISSUE-PIPELINE.md) | The three-tier loop that turns an open issue into a merge-ready PR: label state machine, evidence bundles, caps, autonomy gates and the two human brakes. |
 | [`docs/JEV.md`](JEV.md) | The fleet's harness-level AI agent logic engine: conflict-free numbering (ids assigned at merge, never in a pull request), tiered pull-request conflict triage and resolution, loop step specs that CI and a local run render alike, and… |
 | [`docs/LEARNING.md`](LEARNING.md) | What happened to each loop's output, one estimate per loop and per repo of how likely the next output is to land, and where the next slots would pay. Shadow only: it prints a plan, steers no loop and changes no cap. |
+| [`docs/LINK-CHECK.md`](LINK-CHECK.md) | Every link the fleet publishes — in the owned repos' Markdown and HTML, in the data the profile README is generated from, and on every live site — checked once, and each broken one reported with the file and line or the page that publishes… |
 | [`docs/MACHINE-API.md`](MACHINE-API.md) | The agent-facing JSON the site publishes (`/api/v1/*.json`, `llms.txt`) and how to start from it. |
 | [`docs/mcp-servers-inventory.md`](mcp-servers-inventory.md) | First consolidation set for epic [#683](https://github.com/bamr87/bamr87/issues/683) / backlog [#684](https://github.com/bamr87/bamr87/issues/684). Audit date: **2026-11-05** (America/Denver). Hub tree + cheap GitHub API reads of related… |
 | [`docs/MCP-SERVERS.md`](MCP-SERVERS.md) | Status: **proposed** (constitution § 25, amendment `mcp-lifecycle`; epic [#683](https://github.com/bamr87/bamr87/issues/683), backlog [#684](https://github.com/bamr87/bamr87/issues/684)). Feature: `HUB-NEW` / slug `mcp-lifecycle`.… |
@@ -111,6 +114,7 @@ The root [`README.md`](../README.md) is a GitHub profile. To work in the repo st
 | [`docs/prd/DECISION-INDEX.md`](prd/DECISION-INDEX.md) | **Status: proposed.** Implemented in the pull request that proposes it; the requirements below are ratified when the maintainer merges it. Feature: `HUB-NEW` (slug `decision-index`) in… |
 | [`docs/prd/EXPEDITE-SPRINTS.md`](prd/EXPEDITE-SPRINTS.md) | Status: Draft / proposed. Requirement id assigned at merge as `FR-NEW:expedite-sprints` → predicted **FR86** (FR84 if this merges before #685 and #686). Feature: `HUB-NEW:expedite-sprints`. Epic… |
 | [`docs/prd/FLEET-ACTIVITY-LOG.md`](prd/FLEET-ACTIVITY-LOG.md) | **Status: Draft / proposed.** Design only; nothing here is implemented yet. Feature: `HUB-024` in [`features/features.yml`](../features/features.yml) (`status: planned`). Requirements: FR7–FR15, NFR4–NFR6 in the root… |
+| [`docs/prd/FLEET-ACTIVITY-REPLAY-DECISIONS.md`](prd/FLEET-ACTIVITY-REPLAY-DECISIONS.md) | **Status: Proposed.** Accepted when the maintainer merges the P0 pull request ([#618](https://github.com/bamr87/bamr87/issues/618), epic [#624](https://github.com/bamr87/bamr87/issues/624)). Nothing here runs: P0 changes no compose… |
 | [`docs/prd/FLEET-ACTIVITY-REPLAY-PLAN.md`](prd/FLEET-ACTIVITY-REPLAY-PLAN.md) | **Status: Draft / proposed.** Plan only; nothing here is implemented. Accepted when the maintainer merges this PR; each phase lands in its own PR. Feature: `HUB-NEW` (slug `fleet-activity-replay`) — the same feature the design PR… |
 | [`docs/prd/FLEET-ACTIVITY-REPLAY.md`](prd/FLEET-ACTIVITY-REPLAY.md) | **Status: Draft / proposed.** Design only; nothing is implemented by this PR. Feature: `HUB-NEW`… |
 | [`docs/prd/FUNCTIONAL-SPEC-LIBRARY.md`](prd/FUNCTIONAL-SPEC-LIBRARY.md) | **Status: Draft / proposed.** Design only; nothing here is implemented. Accepted when the maintainer merges this PR. The resolver, the gate and the spec page land in later PRs. Features: `HUB-NEW` slugs `functional-spec-library`… |

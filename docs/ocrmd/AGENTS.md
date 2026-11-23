@@ -6,7 +6,7 @@ title: ocrmd
 ---
 # ocrmd
 
-> A webcam, image and PDF book scanner that reads every page twice — local OCR and a vision LLM — and diffs the readings into cross-checked Markdown with a searchable inventory.
+> ocrmd's direction is to become the ultimate open home for all things document digitization: data, tools, resources and transparency, with cross-checked OCR, disagreement flags, a searchable inventory and a local-first path for everyone ([constitution](docs/constitution.md) §1).
 
 ## What this repo is
 
@@ -34,7 +34,7 @@ python3 -m venv .venv && .venv/bin/pip install -e '.[dev,rapidocr]'   # add ,pdf
 python3 tools/docs_index.py --write                               # regenerate the docs/README.md index after adding or renaming a doc
 ```
 
-The driver uses a throwaway `OCRMD_ROOT` ([run-ocrmd skill](dot-claude/skills/run-ocrmd/SKILL.md)). [CI](dot-github/workflows/ci.yml) runs `ruff` on Linux for pull requests and the full suite on **macos-latest** for `main` pushes and manual runs (Apple Vision and AVFoundation are macOS-only). `.vscode/` debug configs run `ocrmd.cli` in-process, so breakpoints work anywhere, including under uvicorn. Every command and option: [docs/reference/cli.md](docs/reference/cli.md).
+The driver uses a throwaway `OCRMD_ROOT` ([run-ocrmd skill](dot-claude/skills/run-ocrmd/SKILL.md)). [CI](dot-github/workflows/ci.yml) runs `ruff` and `pytest` on Linux (RapidOCR) for pull requests and the full suite on **macos-latest** for `main` pushes and manual runs (Apple Vision and AVFoundation are macOS-only; tests that assert Vision's reading are marked `needs_vision` and skip on Linux). `.vscode/` debug configs run `ocrmd.cli` in-process, so breakpoints work anywhere, including under uvicorn. Every command and option: [docs/reference/cli.md](docs/reference/cli.md).
 
 ## Layout
 
