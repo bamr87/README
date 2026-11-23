@@ -14,8 +14,9 @@ title: zpl-viewer documentation
 
 | Document | What it covers |
 | --- | --- |
-| [`AGENTS.md`](../AGENTS.md) | Label Studio (`zpl-viewer`), an offline VS Code extension for ZPL II and EPL2 thermal labels — the commands, layout, conventions and layering rules for working on it. |
+| [`AGENTS.md`](../AGENTS.md) | Label Studio's direction is to become the ultimate open home for all things thermal labels: data, tools, resources and transparency, with offline ZPL II and EPL2 preview, authoring, analysis, merge and deploy for everyone… |
 | [`CHANGELOG.md`](../CHANGELOG.md) | Release history: the notable changes in each version, newest first. |
+| [`SECURITY.md`](../SECURITY.md) | How to report a vulnerability in Label Studio (`zpl-viewer`), which versions get fixes, and what the extension's security surface is. |
 | [`PRD.md`](../PRD.md) | Product requirements for Label Studio: problem, users, goals, scope and proposed success metrics, derived from this repo's README, agent docs, config and code, with anything they do not state marked **TBD**. |
 | [`src/`](../src/README.md) | What each source module does and which layer it belongs to — the vscode layer, the pure layer shared with the webview, and the node-only layer. |
 | [`tools/`](../tools/README.md) | Operator scripts vendored from the bamr87 hub; nothing here ships to users, and nothing here is edited in this repo. |

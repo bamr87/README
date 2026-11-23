@@ -9,7 +9,7 @@ nav_exclude: true
 
 # CV Pro - content map
 
-Every published page in [`docs/cv-pro/`](../cv-pro/) as it appears in the sidebar: **32 pages** across **6 sections** (max depth 3).
+Every published page in [`docs/cv-pro/`](../cv-pro/) as it appears in the sidebar: **33 pages** across **6 sections** (max depth 3).
 
 - [cv-pro — the CV machine and its builder, in one repository](../cv-pro/README.md)
 - [Changelog](../cv-pro/CHANGELOG.md)
@@ -38,12 +38,13 @@ Every published page in [`docs/cv-pro/`](../cv-pro/) as it appears in the sideba
     - [jd/ — job descriptions & tailored variants](../cv-pro/cv/jd/README.md)
     - [Aesse Investments | ERP Architect](../cv-pro/cv/jd/aesse-erp-architect.md)
     - [Sr. Manager – Financial Systems and ITBP / Senior Manager – Accounting…](../cv-pro/cv/jd/valmont-sr-mgr-financial-systems-itbp.md)
-- **[Documentation](../cv-pro/docs/README.md)** <small>(8)</small>
+- **[Documentation](../cv-pro/docs/README.md)** <small>(9)</small>
   - [cv-pro documentation](../cv-pro/docs/README.md)
   - [cv-pro — Constitution](../cv-pro/docs/constitution.md)
-  - **[Amendments — cv-pro](../cv-pro/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — cv-pro](../cv-pro/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — cv-pro](../cv-pro/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../cv-pro/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../cv-pro/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../cv-pro/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../cv-pro/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../cv-pro/docs/adr/README.md)

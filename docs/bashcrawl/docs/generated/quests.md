@@ -6,7 +6,7 @@ title: Quest Index
 ---
 # Quest Index
 
-> Every quest with its objective, XP and the command and location that complete it, from `src/help/data/quests.yaml`.
+> Every quest with its objective, XP, the command and location that complete it, and its checklist steps, from `src/help/data/quests.yaml`.
 
 ## Quest 0: Awakening: Know Thy Place
 - Objective: Cast the 'pwd' spell to reveal your place in the dungeon.
@@ -55,3 +55,4 @@ title: Quest Index
 - XP: `200`
 - Completion command: `source`
 - Completion location: `study|help`
+- Steps: Carry the amulet and coins; Find the chapel library; Read the tome: ./tome; Enter the hidden study; Run the grimoire: ./grimoire; Define bc: source grimoire

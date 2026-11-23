@@ -124,6 +124,7 @@ title: Tags
 | [[brain/concepts/components\|components]] | 10 |
 | [[brain/concepts/customization\|customization]] | 10 |
 | `europe` | 10 |
+| [[brain/concepts/governance\|governance]] | 10 |
 | [[brain/concepts/liquid\|liquid]] | 10 |
 | [[brain/concepts/sitemap\|sitemap]] | 10 |
 | `styling` | 10 |
@@ -132,7 +133,6 @@ title: Tags
 | [[brain/concepts/claude-code\|claude-code]] | 9 |
 | [[brain/concepts/dashboard\|dashboard]] | 9 |
 | `entity` | 9 |
-| [[brain/concepts/governance\|governance]] | 9 |
 | [[brain/concepts/javascript\|javascript]] | 9 |
 | [[brain/concepts/jupyter\|jupyter]] | 9 |
 | [[brain/concepts/keyboard\|keyboard]] | 9 |
@@ -262,6 +262,7 @@ title: Tags
 | `ai-powered` | 4 |
 | `aieo` | 4 |
 | `aipd` | 4 |
+| `amendments` | 4 |
 | `anthropic` | 4 |
 | `apprentice` | 4 |
 | `archaeology` | 4 |
@@ -324,7 +325,6 @@ title: Tags
 | `agentic-workflows` | 3 |
 | `ai-assisted` | 3 |
 | `ai-integration` | 3 |
-| `amendments` | 3 |
 | `animation` | 3 |
 | `api` | 3 |
 | `authors` | 3 |

@@ -5,18 +5,18 @@
   "title": "IT Journey",
   "corpus": "docs/it-journey",
   "counts": {
-    "pages": 557,
+    "pages": 558,
     "sections": 54,
     "max_depth": 5,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "a237764155ae7cf9",
+  "fingerprint": "62bb2efb016198aa",
   "tree": {
     "type": "section",
     "title": "IT Journey",
     "index": "it-journey/README.md",
-    "pages": 557,
+    "pages": 558,
     "children": [
       {
         "type": "group",
@@ -410,6 +410,13 @@
         "path": "it-journey/README.md",
         "rel": "README.md",
         "is_index": true
+      },
+      {
+        "type": "page",
+        "title": "Astro spike",
+        "path": "it-journey/astro/README.md",
+        "rel": "astro/README.md",
+        "folder": "astro"
       },
       {
         "type": "page",

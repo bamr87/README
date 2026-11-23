@@ -25,29 +25,29 @@ Hub: [bamr87/bamr87](https://github.com/bamr87/bamr87) · This page is the apex 
 
 | Project | Kind | Status | Docs | Sections | What it is |
 |---|---|---|---|---|---|
-| [it-journey](cards/it-journey.md) | site | active | 557 | 54 | Educational IT platform with quests, blog posts, and technical documentation. |
-| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 560 | 95 | Jekyll theme and software architecture patterns for GitHub Pages. |
-| [bashcrawl](cards/bashcrawl.md) | game | active | 80 | 16 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
+| [it-journey](cards/it-journey.md) | site | active | 558 | 54 | Educational IT platform with quests, blog posts, and technical documentation. |
+| [zer0-mistakes](cards/zer0-mistakes.md) | theme | active | 561 | 95 | Jekyll theme and software architecture patterns for GitHub Pages. |
+| [bashcrawl](cards/bashcrawl.md) | game | active | 81 | 16 | Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. |
 | [scripts](cards/scripts.md) | tooling | active | 25 | 5 | Automation scripts for forking, linting, stashing, and project management across the fleet. |
 | [OverTheWire-website](cards/OverTheWire-website.md) | site | active | 232 | 17 | OverTheWire wargame guides and security-challenge documentation (external reference corpus). |
-| [bamr87](cards/bamr87.md) | hub | active | 275 | 40 | Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashb… |
-| [bamr87.github.io](cards/bamr87.github.io.md) | site | active | 94 | 19 | Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages. |
-| [bashos](cards/bashos.md) | tooling | active | 80 | 15 | Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engi… |
-| [cv-pro](cards/cv-pro.md) | app | active | 32 | 6 | CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract and renders) and app/ (the R… |
-| [djangoerp](cards/djangoerp.md) | app | active | 18 | 3 | Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP plannin… |
+| [bamr87](cards/bamr87.md) | hub | active | 273 | 40 | Amr's profile README and fleet control-plane monorepo: ~40 project submodules, shared standards, CI and dashb… |
+| [bamr87.github.io](cards/bamr87.github.io.md) | site | active | 96 | 19 | Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages. |
+| [bashos](cards/bashos.md) | tooling | active | 2688 | 78 | Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engi… |
+| [cv-pro](cards/cv-pro.md) | app | active | 33 | 6 | CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract and renders) and app/ (the R… |
+| [djangoerp](cards/djangoerp.md) | app | active | 23 | 3 | Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, manufacturing and MRP plannin… |
 | [fredgar-ai](cards/fredgar-ai.md) | app | active | 38 | 6 | Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries. |
 | [githubai](cards/githubai.md) | tooling | active | 54 | 10 | Claude Code SDLC framework: reusable GitHub Actions that triage issues, implement work, review PRs and cut re… |
 | [gitorio](cards/gitorio.md) | app | active | 145 | 37 | Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude … |
 | [godotgo](cards/godotgo.md) | game | active | 31 | 6 | Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the s… |
-| [law-ai](cards/law-ai.md) | app | active | 301 | 74 | Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first vi… |
-| [lifehacker.dev](cards/lifehacker.dev.md) | site | active | 138 | 12 | Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude C… |
-| [ocrmd](cards/ocrmd.md) | tooling | active | 26 | 4 | Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-te… |
-| [outbox](cards/outbox.md) | tooling | active | 22 | 4 | Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay… |
-| [rewind-arcade](cards/rewind-arcade.md) | game | active | 76 | 11 | Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog. |
-| [SCHEMA](cards/SCHEMA.md) | tooling | active | 36 | 10 | Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessi… |
+| [law-ai](cards/law-ai.md) | app | active | 309 | 75 | Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j knowledge graph, local-first vi… |
+| [lifehacker.dev](cards/lifehacker.dev.md) | site | active | 139 | 12 | Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude C… |
+| [ocrmd](cards/ocrmd.md) | tooling | active | 27 | 4 | Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-te… |
+| [outbox](cards/outbox.md) | tooling | active | 23 | 4 | Async competitive outbox harness for three agents: mailbox protocol, injected lag, confidence race and replay… |
+| [rewind-arcade](cards/rewind-arcade.md) | game | active | 81 | 12 | Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog. |
+| [SCHEMA](cards/SCHEMA.md) | tooling | active | 37 | 10 | Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessi… |
 | [vs-sonic-pi](cards/vs-sonic-pi.md) | tooling | active | 118 | 6 | VS Code extension to write and perform Sonic Pi music live: IntelliSense, hover docs, built-in tutorial, OSC … |
 | [zer0-CMS](cards/zer0-CMS.md) | app | active | 1207 | 181 | Fork of Front Matter CMS reworked into zer0-CMS: a governed VS Code + Rails CMS for zer0-themed markdown site… |
-| [zpl-viewer](cards/zpl-viewer.md) | tooling | active | 19 | 4 | Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal la… |
+| [zpl-viewer](cards/zpl-viewer.md) | tooling | active | 21 | 4 | Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal la… |
 
 ### README - it-journey
 
@@ -55,8 +55,8 @@ Educational IT platform with quests, blog posts, and technical documentation.
 
 - Repository: [bamr87/it-journey](https://github.com/bamr87/it-journey)
 - Card: [context/cards/it-journey.md](cards/it-journey.md) · Facts: [context/facts/it-journey.json](facts/it-journey.json)
-- Corpus: [`docs/it-journey/`](../docs/it-journey/) (557 documents)
-- Navigation: [tree](nav/it-journey.json) · [content map](../docs/browse/it-journey.md) — 557 pages in 54 sections
+- Corpus: [`docs/it-journey/`](../docs/it-journey/) (558 documents)
+- Navigation: [tree](nav/it-journey.json) · [content map](../docs/browse/it-journey.md) — 558 pages in 54 sections
 - Topics: education, jekyll, quests
 
 ### zer0-mistakes
@@ -65,8 +65,8 @@ Jekyll theme and software architecture patterns for GitHub Pages.
 
 - Repository: [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes)
 - Card: [context/cards/zer0-mistakes.md](cards/zer0-mistakes.md) · Facts: [context/facts/zer0-mistakes.json](facts/zer0-mistakes.json)
-- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (560 documents)
-- Navigation: [tree](nav/zer0-mistakes.json) · [content map](../docs/browse/zer0-mistakes.md) — 558 pages in 95 sections
+- Corpus: [`docs/zer0-mistakes/`](../docs/zer0-mistakes/) (561 documents)
+- Navigation: [tree](nav/zer0-mistakes.json) · [content map](../docs/browse/zer0-mistakes.md) — 559 pages in 95 sections
 - Topics: jekyll, theme, github-pages
 
 ### Bashcrawl
@@ -75,8 +75,8 @@ Interactive shell-scripting tutorial — learn Bash by exploring a dungeon.
 
 - Repository: [bamr87/bashcrawl](https://github.com/bamr87/bashcrawl)
 - Card: [context/cards/bashcrawl.md](cards/bashcrawl.md) · Facts: [context/facts/bashcrawl.json](facts/bashcrawl.json)
-- Corpus: [`docs/bashcrawl/`](../docs/bashcrawl/) (80 documents)
-- Navigation: [tree](nav/bashcrawl.json) · [content map](../docs/browse/bashcrawl.md) — 80 pages in 16 sections
+- Corpus: [`docs/bashcrawl/`](../docs/bashcrawl/) (81 documents)
+- Navigation: [tree](nav/bashcrawl.json) · [content map](../docs/browse/bashcrawl.md) — 81 pages in 16 sections
 - Topics: bash, education, game
 
 ### 🛠️ scripts
@@ -105,8 +105,8 @@ Amr's profile README and fleet control-plane monorepo: ~40 project submodules, s
 
 - Repository: [bamr87/bamr87](https://github.com/bamr87/bamr87)
 - Card: [context/cards/bamr87.md](cards/bamr87.md) · Facts: [context/facts/bamr87.json](facts/bamr87.json)
-- Corpus: [`docs/bamr87/`](../docs/bamr87/) (275 documents)
-- Navigation: [tree](nav/bamr87.json) · [content map](../docs/browse/bamr87.md) — 275 pages in 40 sections
+- Corpus: [`docs/bamr87/`](../docs/bamr87/) (273 documents)
+- Navigation: [tree](nav/bamr87.json) · [content map](../docs/browse/bamr87.md) — 273 pages in 40 sections
 
 ### Profile & Résumé
 
@@ -114,8 +114,8 @@ Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built
 
 - Repository: [bamr87/bamr87.github.io](https://github.com/bamr87/bamr87.github.io)
 - Card: [context/cards/bamr87.github.io.md](cards/bamr87.github.io.md) · Facts: [context/facts/bamr87.github.io.json](facts/bamr87.github.io.json)
-- Corpus: [`docs/bamr87.github.io/`](../docs/bamr87.github.io/) (94 documents)
-- Navigation: [tree](nav/bamr87.github.io.json) · [content map](../docs/browse/bamr87.github.io.md) — 94 pages in 19 sections
+- Corpus: [`docs/bamr87.github.io/`](../docs/bamr87.github.io/) (96 documents)
+- Navigation: [tree](nav/bamr87.github.io.json) · [content map](../docs/browse/bamr87.github.io.md) — 96 pages in 19 sections
 
 ### bashOS
 
@@ -123,8 +123,8 @@ Terminal-first AI runtime that routes Claude slash commands through a LangGraph 
 
 - Repository: [bamr87/bashos](https://github.com/bamr87/bashos)
 - Card: [context/cards/bashos.md](cards/bashos.md) · Facts: [context/facts/bashos.json](facts/bashos.json)
-- Corpus: [`docs/bashos/`](../docs/bashos/) (80 documents)
-- Navigation: [tree](nav/bashos.json) · [content map](../docs/browse/bashos.md) — 80 pages in 15 sections
+- Corpus: [`docs/bashos/`](../docs/bashos/) (2688 documents)
+- Navigation: [tree](nav/bashos.json) · [content map](../docs/browse/bashos.md) — 2688 pages in 78 sections
 
 ### cv-pro — the CV machine and its builder, in one repository
 
@@ -132,8 +132,8 @@ CV as code and the CV Builder Pro app in one repository: cv/ (the data, contract
 
 - Repository: [bamr87/cv-pro](https://github.com/bamr87/cv-pro)
 - Card: [context/cards/cv-pro.md](cards/cv-pro.md) · Facts: [context/facts/cv-pro.json](facts/cv-pro.json)
-- Corpus: [`docs/cv-pro/`](../docs/cv-pro/) (32 documents)
-- Navigation: [tree](nav/cv-pro.json) · [content map](../docs/browse/cv-pro.md) — 32 pages in 6 sections
+- Corpus: [`docs/cv-pro/`](../docs/cv-pro/) (33 documents)
+- Navigation: [tree](nav/cv-pro.json) · [content map](../docs/browse/cv-pro.md) — 33 pages in 6 sections
 
 ### DjangoERP
 
@@ -141,8 +141,8 @@ Modular Django REST ERP: double-entry accounting, inventory, purchasing, sales, 
 
 - Repository: [bamr87/djangoerp](https://github.com/bamr87/djangoerp)
 - Card: [context/cards/djangoerp.md](cards/djangoerp.md) · Facts: [context/facts/djangoerp.json](facts/djangoerp.json)
-- Corpus: [`docs/djangoerp/`](../docs/djangoerp/) (18 documents)
-- Navigation: [tree](nav/djangoerp.json) · [content map](../docs/browse/djangoerp.md) — 18 pages in 3 sections
+- Corpus: [`docs/djangoerp/`](../docs/djangoerp/) (23 documents)
+- Navigation: [tree](nav/djangoerp.json) · [content map](../docs/browse/djangoerp.md) — 23 pages in 3 sections
 
 ### Fredgar AI
 
@@ -186,8 +186,8 @@ Open legal intelligence platform prototype: Django, CrewAI agents and a Neo4j kn
 
 - Repository: [bamr87/law-ai](https://github.com/bamr87/law-ai)
 - Card: [context/cards/law-ai.md](cards/law-ai.md) · Facts: [context/facts/law-ai.json](facts/law-ai.json)
-- Corpus: [`docs/law-ai/`](../docs/law-ai/) (301 documents)
-- Navigation: [tree](nav/law-ai.json) · [content map](../docs/browse/law-ai.md) — 301 pages in 74 sections
+- Corpus: [`docs/law-ai/`](../docs/law-ai/) (309 documents)
+- Navigation: [tree](nav/law-ai.json) · [content map](../docs/browse/law-ai.md) — 309 pages in 75 sections
 
 ### lifehacker.dev
 
@@ -195,8 +195,8 @@ Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mi
 
 - Repository: [bamr87/lifehacker.dev](https://github.com/bamr87/lifehacker.dev)
 - Card: [context/cards/lifehacker.dev.md](cards/lifehacker.dev.md) · Facts: [context/facts/lifehacker.dev.json](facts/lifehacker.dev.json)
-- Corpus: [`docs/lifehacker.dev/`](../docs/lifehacker.dev/) (138 documents)
-- Navigation: [tree](nav/lifehacker.dev.json) · [content map](../docs/browse/lifehacker.dev.md) — 137 pages in 12 sections
+- Corpus: [`docs/lifehacker.dev/`](../docs/lifehacker.dev/) (139 documents)
+- Navigation: [tree](nav/lifehacker.dev.json) · [content map](../docs/browse/lifehacker.dev.md) — 138 pages in 12 sections
 
 ### ocrmd
 
@@ -204,8 +204,8 @@ Scan books and pages into cross-checked Markdown: local OCR diffed against a Cla
 
 - Repository: [bamr87/ocrmd](https://github.com/bamr87/ocrmd)
 - Card: [context/cards/ocrmd.md](cards/ocrmd.md) · Facts: [context/facts/ocrmd.json](facts/ocrmd.json)
-- Corpus: [`docs/ocrmd/`](../docs/ocrmd/) (26 documents)
-- Navigation: [tree](nav/ocrmd.json) · [content map](../docs/browse/ocrmd.md) — 26 pages in 4 sections
+- Corpus: [`docs/ocrmd/`](../docs/ocrmd/) (27 documents)
+- Navigation: [tree](nav/ocrmd.json) · [content map](../docs/browse/ocrmd.md) — 27 pages in 4 sections
 
 ### outbox
 
@@ -213,8 +213,8 @@ Async competitive outbox harness for three agents: mailbox protocol, injected la
 
 - Repository: [bamr87/outbox](https://github.com/bamr87/outbox)
 - Card: [context/cards/outbox.md](cards/outbox.md) · Facts: [context/facts/outbox.json](facts/outbox.json)
-- Corpus: [`docs/outbox/`](../docs/outbox/) (22 documents)
-- Navigation: [tree](nav/outbox.json) · [content map](../docs/browse/outbox.md) — 22 pages in 4 sections
+- Corpus: [`docs/outbox/`](../docs/outbox/) (23 documents)
+- Navigation: [tree](nav/outbox.json) · [content map](../docs/browse/outbox.md) — 23 pages in 4 sections
 
 ### Rewind Arcade
 
@@ -222,8 +222,8 @@ Retro gaming workspace: browser arcade recreations, console emulation via ES-DE,
 
 - Repository: [bamr87/rewind-arcade](https://github.com/bamr87/rewind-arcade)
 - Card: [context/cards/rewind-arcade.md](cards/rewind-arcade.md) · Facts: [context/facts/rewind-arcade.json](facts/rewind-arcade.json)
-- Corpus: [`docs/rewind-arcade/`](../docs/rewind-arcade/) (76 documents)
-- Navigation: [tree](nav/rewind-arcade.json) · [content map](../docs/browse/rewind-arcade.md) — 76 pages in 11 sections
+- Corpus: [`docs/rewind-arcade/`](../docs/rewind-arcade/) (81 documents)
+- Navigation: [tree](nav/rewind-arcade.json) · [content map](../docs/browse/rewind-arcade.md) — 81 pages in 12 sections
 
 ### Pyramid Schema (SCHEMA.md)
 
@@ -231,8 +231,8 @@ Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up rep
 
 - Repository: [bamr87/SCHEMA](https://github.com/bamr87/SCHEMA)
 - Card: [context/cards/SCHEMA.md](cards/SCHEMA.md) · Facts: [context/facts/SCHEMA.json](facts/SCHEMA.json)
-- Corpus: [`docs/SCHEMA/`](../docs/SCHEMA/) (36 documents)
-- Navigation: [tree](nav/SCHEMA.json) · [content map](../docs/browse/SCHEMA.md) — 36 pages in 10 sections
+- Corpus: [`docs/SCHEMA/`](../docs/SCHEMA/) (37 documents)
+- Navigation: [tree](nav/SCHEMA.json) · [content map](../docs/browse/SCHEMA.md) — 37 pages in 10 sections
 
 ### Sonic Pi for VS Code
 
@@ -258,8 +258,8 @@ Label Studio: offline VS Code extension to read, preview, create, merge and depl
 
 - Repository: [bamr87/zpl-viewer](https://github.com/bamr87/zpl-viewer)
 - Card: [context/cards/zpl-viewer.md](cards/zpl-viewer.md) · Facts: [context/facts/zpl-viewer.json](facts/zpl-viewer.json)
-- Corpus: [`docs/zpl-viewer/`](../docs/zpl-viewer/) (19 documents)
-- Navigation: [tree](nav/zpl-viewer.json) · [content map](../docs/browse/zpl-viewer.md) — 19 pages in 4 sections
+- Corpus: [`docs/zpl-viewer/`](../docs/zpl-viewer/) (21 documents)
+- Navigation: [tree](nav/zpl-viewer.json) · [content map](../docs/browse/zpl-viewer.md) — 21 pages in 4 sections
 
 ## Query this context
 

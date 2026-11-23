@@ -1,0 +1,11 @@
+---
+source_file: amrchy/manual/si/09-reminders.md
+source_repo: bamr87/bashos
+source_url: https://github.com/bamr87/bashos/blob/main/amrchy/manual/si/09-reminders.md
+title: මතක්කිරීම්
+---
+# මතක්කිරීම්
+
+Omarchy හි ගණන් කිරීමේ ටයිමරයක් සහ පණිවිඩයක් මත පදනම්ව සරල මතක්කිරීම් සැකසීමට අභ්‍යන්තර ක්‍රමයක් ඇත. ඔබට මෙය `Super + Ctrl + R` හරහා කළ හැකිය, `Super + Ctrl + Alt + R` හරහා සැකසූ සියල්ල දැකිය හැකිය, සහ `Super + Ctrl + Shift + R` හරහා සියල්ල හිස් කළ හැකිය. සියල්ල _ක්‍රියාත්මක > මතක්කිරීම_ හරහා ද ප්‍රවේශ විය හැකිය. ඔබට `omarchy reminder 7 'Tea ready'` සමඟ cli එක ද භාවිත කළ හැකිය.
+
+ ![reminders](images/reminders.webp)

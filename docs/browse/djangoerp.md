@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Django ERP - content map
 
-Every published page in [`docs/djangoerp/`](../djangoerp/) as it appears in the sidebar: **18 pages** across **3 sections** (max depth 3).
+Every published page in [`docs/djangoerp/`](../djangoerp/) as it appears in the sidebar: **23 pages** across **3 sections** (max depth 3).
 
 - [DjangoERP (README)](../djangoerp/README.md)
 - [Changelog](../djangoerp/CHANGELOG.md)
@@ -17,7 +17,9 @@ Every published page in [`docs/djangoerp/`](../djangoerp/) as it appears in the 
 - [djangoerp (CLAUDE)](../djangoerp/CLAUDE.md)
 - [djangoerp tools](../djangoerp/tools/README.md)
 - [PRD — djangoerp](../djangoerp/PRD.md)
-- **[Documentation](../djangoerp/docs/README.md)** <small>(12)</small>
+- [simulation — the agent simulation sandbox](../djangoerp/simulation/README.md)
+- [workspace — the common app shell](../djangoerp/workspace/README.md)
+- **[Documentation](../djangoerp/docs/README.md)** <small>(15)</small>
   - [djangoerp documentation](../djangoerp/docs/README.md)
   - [API routes](../djangoerp/docs/reference/api-routes.md)
   - [DjangoERP architecture](../djangoerp/docs/ARCHITECTURE.md)
@@ -28,7 +30,10 @@ Every published page in [`docs/djangoerp/`](../djangoerp/) as it appears in the 
     - [0001 — Ratify the constitution](../djangoerp/docs/amendments/0001-ratify-constitution.md)
     - [0002 — Missions](../djangoerp/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../djangoerp/docs/amendments/0000-template.md)
-  - **[Architecture Decision Records](../djangoerp/docs/adr/README.md)** <small>(3)</small>
+  - **[Architecture Decision Records](../djangoerp/docs/adr/README.md)** <small>(6)</small>
     - [Architecture Decision Records](../djangoerp/docs/adr/README.md)
     - [ADR 0001 — Record architecture decisions](../djangoerp/docs/adr/0001-record-architecture-decisions.md)
+    - [ADR 0002 — Absorb conversion costs into finished goods at work-order…](../djangoerp/docs/adr/0002-absorb-conversion-costs-into-finished-goods.md)
+    - [ADR 0003 — An agent simulation sandbox that drives the ERP through its…](../djangoerp/docs/adr/0003-agent-simulation-sandbox.md)
+    - [ADR 0004 — One registry-driven workspace shell for every module](../djangoerp/docs/adr/0004-registry-driven-workspace-shell.md)
     - [ADR NNNN — Title in sentence case](../djangoerp/docs/adr/0000-template.md)

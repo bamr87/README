@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 76
+pages: 81
 repo: bamr87/rewind-arcade
 tags:
 - brain/project
@@ -16,7 +16,7 @@ title: Rewind Arcade
 > [!info] game: `bamr87/rewind-arcade`
 > Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog.
 
-**76** pages collected from commit `bddc9710432b` (2026-11-18).
+**81** pages collected from commit `8a853869af23` (2026-11-18).
 
 ## Most connected pages
 
@@ -25,10 +25,10 @@ title: Rewind Arcade
 - [[rewind-arcade/retro-pi/README|retro-pi]]
 - [[rewind-arcade/emulate/README|Emulate — retro-pi]]
 - [[rewind-arcade/retro-pi/docs/README|Documentation]]
+- [[rewind-arcade/emulate/docs/commands|Command reference]]
 - [[rewind-arcade/docs/README|rewind-arcade documentation]]
+- [[rewind-arcade/docs/getting-started|Getting started]]
 - [[rewind-arcade/docs/systems/README|Systems]]
 - [[rewind-arcade/docs/constitution|rewind-arcade — Constitution]]
-- [[rewind-arcade/docs/getting-started|Getting started]]
-- [[rewind-arcade/emulate/docs/commands|Command reference]]
+- [[rewind-arcade/AGENTS|rewind-arcade]]
 - [[rewind-arcade/PRD|PRD — Rewind Arcade]]
-- [[rewind-arcade/catalog/README|Catalog — cartridge-index]]

@@ -28,7 +28,7 @@
   ],
   "counts": {
     "projects": 23,
-    "pages": 4349
+    "pages": 6985
   },
   "projects": {
     "it-journey": {
@@ -37,11 +37,11 @@
       "tree": "context/nav/it-journey.json",
       "browse": "docs/browse/it-journey.md",
       "registered": true,
-      "pages": 557,
+      "pages": 558,
       "sections": 54,
       "max_depth": 5,
       "skipped": 0,
-      "fingerprint": "a237764155ae7cf9"
+      "fingerprint": "62bb2efb016198aa"
     },
     "zer0-mistakes": {
       "title": "Zer0 Mistakes",
@@ -49,11 +49,11 @@
       "tree": "context/nav/zer0-mistakes.json",
       "browse": "docs/browse/zer0-mistakes.md",
       "registered": true,
-      "pages": 558,
+      "pages": 559,
       "sections": 95,
       "max_depth": 6,
       "skipped": 2,
-      "fingerprint": "e46a70d6f67dbdb1"
+      "fingerprint": "7e9fd46afee7a7b2"
     },
     "bashcrawl": {
       "title": "Bash Crawl",
@@ -61,11 +61,11 @@
       "tree": "context/nav/bashcrawl.json",
       "browse": "docs/browse/bashcrawl.md",
       "registered": true,
-      "pages": 80,
+      "pages": 81,
       "sections": 16,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "fe25737df1f1b2a5"
+      "fingerprint": "f7855b3e6cfd8fd2"
     },
     "scripts": {
       "title": "Scripts",
@@ -97,11 +97,11 @@
       "tree": "context/nav/bamr87.json",
       "browse": "docs/browse/bamr87.md",
       "registered": true,
-      "pages": 275,
+      "pages": 273,
       "sections": 40,
       "max_depth": 4,
       "skipped": 0,
-      "fingerprint": "657a249fb83ef242"
+      "fingerprint": "7be943e2332d8043"
     },
     "bamr87.github.io": {
       "title": "Personal Site",
@@ -109,11 +109,11 @@
       "tree": "context/nav/bamr87.github.io.json",
       "browse": "docs/browse/bamr87.github.io.md",
       "registered": true,
-      "pages": 94,
+      "pages": 96,
       "sections": 19,
       "max_depth": 5,
       "skipped": 0,
-      "fingerprint": "9dbe4519b0f1f8cd"
+      "fingerprint": "3cff8641271e7da5"
     },
     "bashos": {
       "title": "BashOS",
@@ -121,11 +121,11 @@
       "tree": "context/nav/bashos.json",
       "browse": "docs/browse/bashos.md",
       "registered": true,
-      "pages": 80,
-      "sections": 15,
-      "max_depth": 4,
+      "pages": 2688,
+      "sections": 78,
+      "max_depth": 6,
       "skipped": 0,
-      "fingerprint": "d97d9acc627e6fd1"
+      "fingerprint": "4d85a535505921e1"
     },
     "cv-pro": {
       "title": "CV Pro",
@@ -133,11 +133,11 @@
       "tree": "context/nav/cv-pro.json",
       "browse": "docs/browse/cv-pro.md",
       "registered": true,
-      "pages": 32,
+      "pages": 33,
       "sections": 6,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "18b990201059e6d1"
+      "fingerprint": "2762be7149fa0b83"
     },
     "djangoerp": {
       "title": "Django ERP",
@@ -145,11 +145,11 @@
       "tree": "context/nav/djangoerp.json",
       "browse": "docs/browse/djangoerp.md",
       "registered": true,
-      "pages": 18,
+      "pages": 23,
       "sections": 3,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "20ddf64fe1501ab3"
+      "fingerprint": "e62feba4167dac21"
     },
     "fredgar-ai": {
       "title": "Fredgar AI",
@@ -205,11 +205,11 @@
       "tree": "context/nav/law-ai.json",
       "browse": "docs/browse/law-ai.md",
       "registered": true,
-      "pages": 301,
-      "sections": 74,
+      "pages": 309,
+      "sections": 75,
       "max_depth": 6,
       "skipped": 0,
-      "fingerprint": "221ca68765577dac"
+      "fingerprint": "94f5776bf7bc72b0"
     },
     "lifehacker.dev": {
       "title": "Lifehacker",
@@ -217,11 +217,11 @@
       "tree": "context/nav/lifehacker.dev.json",
       "browse": "docs/browse/lifehacker.dev.md",
       "registered": true,
-      "pages": 137,
+      "pages": 138,
       "sections": 12,
       "max_depth": 4,
       "skipped": 1,
-      "fingerprint": "1587a747f10b0283"
+      "fingerprint": "cfcdf32cb8bf3459"
     },
     "ocrmd": {
       "title": "OCRmd",
@@ -229,11 +229,11 @@
       "tree": "context/nav/ocrmd.json",
       "browse": "docs/browse/ocrmd.md",
       "registered": true,
-      "pages": 26,
+      "pages": 27,
       "sections": 4,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "4f7fa88f3a3ddcd7"
+      "fingerprint": "de693062f24ce8d0"
     },
     "outbox": {
       "title": "Outbox",
@@ -241,11 +241,11 @@
       "tree": "context/nav/outbox.json",
       "browse": "docs/browse/outbox.md",
       "registered": true,
-      "pages": 22,
+      "pages": 23,
       "sections": 4,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "4502267585c36300"
+      "fingerprint": "92d7f799cdb06f1a"
     },
     "rewind-arcade": {
       "title": "Rewind Arcade",
@@ -253,11 +253,11 @@
       "tree": "context/nav/rewind-arcade.json",
       "browse": "docs/browse/rewind-arcade.md",
       "registered": true,
-      "pages": 76,
-      "sections": 11,
+      "pages": 81,
+      "sections": 12,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "739dd7de909b9687"
+      "fingerprint": "e66df70f2234405e"
     },
     "SCHEMA": {
       "title": "SCHEMA Protocol",
@@ -265,11 +265,11 @@
       "tree": "context/nav/SCHEMA.json",
       "browse": "docs/browse/SCHEMA.md",
       "registered": true,
-      "pages": 36,
+      "pages": 37,
       "sections": 10,
       "max_depth": 5,
       "skipped": 0,
-      "fingerprint": "3af5a8ad7a54eefa"
+      "fingerprint": "634834bc9517ea23"
     },
     "vs-sonic-pi": {
       "title": "VS Sonic Pi",
@@ -301,11 +301,11 @@
       "tree": "context/nav/zpl-viewer.json",
       "browse": "docs/browse/zpl-viewer.md",
       "registered": true,
-      "pages": 19,
+      "pages": 21,
       "sections": 4,
       "max_depth": 3,
       "skipped": 0,
-      "fingerprint": "bc06688437978d88"
+      "fingerprint": "3ceea4ec609f20a5"
     },
     "adr": {
       "title": "Adr",

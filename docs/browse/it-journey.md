@@ -9,7 +9,7 @@ nav_exclude: true
 
 # IT Journey - content map
 
-Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **557 pages** across **54 sections** (max depth 5).
+Every published page in [`docs/it-journey/`](../it-journey/) as it appears in the sidebar: **558 pages** across **54 sections** (max depth 5).
 
 - **[Repository & tooling](../it-journey/redirects/README.md)** <small>(54)</small>
   - **[redirects/](../it-journey/redirects/README.md)** <small>(43)</small>
@@ -72,6 +72,7 @@ Every published page in [`docs/it-journey/`](../it-journey/) as it appears in th
       - [Development Scripts](../it-journey/scripts/development/README.md)
       - [Post Organizer Utility](../it-journey/scripts/development/content/README.md)
 - [README - it-journey](../it-journey/README.md)
+- [Astro spike](../it-journey/astro/README.md)
 - [Changelog](../it-journey/CHANGELOG.md)
 - [Code of Conduct](../it-journey/CODE_OF_CONDUCT.md)
 - [Contributing](../it-journey/CONTRIBUTING.md)

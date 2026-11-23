@@ -56,15 +56,9 @@ curl -s http://localhost:2024/runs/wait -X POST \
 
 The response is the final `KernelState`: `output`, `route`, and the `trace` log. LangGraph Studio can attach to `http://localhost:2024` for a visual view of the kernel graph.
 
-> The graph reference in `langgraph.json` must be the **module path**
-> (`bashos.kernel.server:graph`), not a file path — the server imports the
-> installed package; file-path loading breaks the package's relative imports.
+> The graph reference in `langgraph.json` must be the **module path** (`bashos.kernel.server:graph`), not a file path — the server imports the installed package; file-path loading breaks the package's relative imports.
 
-> The service runs `langgraph dev --allow-blocking`: on the claude-code backend
-> the adapter spawns the Claude Code CLI, whose bootstrap does synchronous file
-> IO that the dev server's blocking detector would otherwise reject as a
-> `BlockingError`. Fine for a dev server; a production deployment would prefer
-> the `api` backend (fully async) or thread-wrapped calls.
+> The service runs `langgraph dev --allow-blocking`: on the claude-code backend the adapter spawns the Claude Code CLI, whose bootstrap does synchronous file IO that the dev server's blocking detector would otherwise reject as a `BlockingError`. Fine for a dev server; a production deployment would prefer the `api` backend (fully async) or thread-wrapped calls.
 
 ## Observability (Phoenix)
 
@@ -77,8 +71,7 @@ bashos run "/sh list open ports"                      # kernel spans → Phoenix
 ```
 
 - In compose, `langgraph-dev` ships with tracing on, pointed at the bundled `phoenix` service.
-- Spans cover kernel nodes and loop structure. On the `claude-code` backend the
-model call runs inside the `claude` subprocess, so its span carries timing but not token-level detail; the `api` backend yields full LLM telemetry.
+- Spans cover kernel nodes and loop structure. On the `claude-code` backend the model call runs inside the `claude` subprocess, so its span carries timing but not token-level detail; the `api` backend yields full LLM telemetry.
 
 ### Already running a Phoenix?
 
@@ -107,4 +100,6 @@ The image bundles the Claude Code CLI (via npm) and shellcheck, so all three loo
 
 ## Image layout
 
-One image (`docker/Dockerfile`) backs both app services: `python:3.12-slim` + Node (for the Claude Code CLI) + shellcheck + the package installed with `.[trace]` extras + `langgraph-cli[inmem]`. The compose `command` selects the role: default `bashos`, or `langgraph dev` for the API server.
+One image (`docker/Dockerfile`) backs both app services: a slim Python base (its `FROM` line) + Node (for the OpenCode engine and the Claude Code CLI) + shellcheck + the package installed editable with `.[trace]` extras + `langgraph-cli[inmem]`. The compose `command` selects the role: default `bashos`, or `langgraph dev` for the API server.
+
+The layers run from the slowest-changing to the fastest. The system packages and the engine come first, then the Python dependencies, keyed on `pyproject.toml` and `README.md` alone: the editable install is made against a one-file stub package and only puts `/app/src` on the import path. The source comes last (`langgraph.json`, `opencode.jsonc`, `src/`, `.claude/`, `docs/`) with nothing run after it, so a change there rebuilds only those copies. CI's `docker` job in `ci.yml` builds the image only when one of these inputs, `docker/`, `.dockerignore` or the workflow itself changed, and only a push to `main` writes the build cache that pull requests read.

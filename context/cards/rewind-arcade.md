@@ -7,13 +7,13 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 91557fe857342ad7
+source_fingerprint: ca30dd97c6053089
 tags:
 ---
 
 # Rewind Arcade
 
-> Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog.
+> Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog. Rewind Arcade's direction is to become the ultimate open home for all things retro gaming: data, tools, resources and transparency, with browser arcade play, ES-DE emulation and a physical game catalog on one set of system ids, for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -21,7 +21,7 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/rewind-arcade` - 76 docs |
+| Corpus | `docs/rewind-arcade` - 81 docs |
 | External | no |
 
 ## Signals
@@ -31,16 +31,16 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~51,272 words across 76 indexed documents
+- ~58,912 words across 81 indexed documents
 - code samples in: sh, plaintext, yaml, bash, python, text, toml
 
 ## Navigation
 
-76 published pages in 11 sections (max depth 3) — [browse the full map](../../docs/browse/rewind-arcade.md) · [tree as JSON](../nav/rewind-arcade.json)
+81 published pages in 12 sections (max depth 3) — [browse the full map](../../docs/browse/rewind-arcade.md) · [tree as JSON](../nav/rewind-arcade.json)
 
 - **Catalog — cartridge-index** (6 pages)
-- **Documentation** (19 pages)
-- **Emulate — retro-pi** (21 pages)
+- **Documentation** (21 pages)
+- **Emulate — retro-pi** (24 pages)
 - **Play — Rewind Arcade** (3 pages)
 - **retro-pi** (21 pages)
 

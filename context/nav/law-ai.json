@@ -5,18 +5,18 @@
   "title": "Law AI",
   "corpus": "docs/law-ai",
   "counts": {
-    "pages": 301,
-    "sections": 74,
+    "pages": 309,
+    "sections": 75,
     "max_depth": 6,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "221ca68765577dac",
+  "fingerprint": "94f5776bf7bc72b0",
   "tree": {
     "type": "section",
     "title": "Law AI",
     "index": "law-ai/README.md",
-    "pages": 301,
+    "pages": 309,
     "children": [
       {
         "type": "page",
@@ -410,7 +410,7 @@
         "title": "Law AI \u2014 Backend",
         "rel": "backend",
         "index": "law-ai/backend/README.md",
-        "pages": 60,
+        "pages": 68,
         "children": [
           {
             "type": "page",
@@ -430,7 +430,7 @@
             "type": "section",
             "title": "Law AI",
             "rel": "backend/law_ai",
-            "pages": 58,
+            "pages": 66,
             "children": [
               {
                 "type": "page",
@@ -443,21 +443,14 @@
                 "type": "section",
                 "title": "Agents Runtime",
                 "rel": "backend/law_ai/agents_runtime",
-                "pages": 21,
+                "pages": 29,
                 "children": [
                   {
                     "type": "section",
                     "title": "Prompts",
                     "rel": "backend/law_ai/agents_runtime/prompts",
-                    "pages": 21,
+                    "pages": 29,
                     "children": [
-                      {
-                        "type": "page",
-                        "title": "lawmode review \u2014 advisory legal-risk review of source code",
-                        "path": "law-ai/backend/law_ai/agents_runtime/prompts/lawmode/review.v1.md",
-                        "rel": "backend/law_ai/agents_runtime/prompts/lawmode/review.v1.md",
-                        "folder": "backend/law_ai/agents_runtime/prompts/lawmode"
-                      },
                       {
                         "type": "page",
                         "title": "LSAT Argumentative Writing \u2014 prompt authoring",
@@ -559,6 +552,68 @@
                         "title": "TopicFrontier \u2014 Prioritize",
                         "path": "law-ai/backend/law_ai/agents_runtime/prompts/topic_frontier_prioritize.v1.md",
                         "rel": "backend/law_ai/agents_runtime/prompts/topic_frontier_prioritize.v1.md"
+                      },
+                      {
+                        "type": "section",
+                        "title": "Lawmode",
+                        "rel": "backend/law_ai/agents_runtime/prompts/lawmode",
+                        "pages": 9,
+                        "children": [
+                          {
+                            "type": "page",
+                            "title": "lawmode accessibility \u2014 WCAG in user-interface code",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/lawmode/accessibility.v1.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/lawmode/accessibility.v1.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "lawmode copyright \u2014 copying, attribution and trademarks",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/lawmode/copyright.v1.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/lawmode/copyright.v1.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "lawmode domain \u2014 the industry the code serves",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/lawmode/domain.v1.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/lawmode/domain.v1.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "lawmode jurisdiction \u2014 which jurisdictions the code is subject to",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/lawmode/jurisdiction.v1.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/lawmode/jurisdiction.v1.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "lawmode licence \u2014 open-source licence compliance",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/lawmode/licence.v1.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/lawmode/licence.v1.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "lawmode privacy \u2014 personal data in the code",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/lawmode/privacy.v1.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/lawmode/privacy.v1.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "lawmode regulatory \u2014 rules that follow from the industry",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/lawmode/regulatory.v1.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/lawmode/regulatory.v1.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "lawmode review \u2014 advisory legal-risk review of source code",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/lawmode/review.v1.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/lawmode/review.v1.md"
+                          },
+                          {
+                            "type": "page",
+                            "title": "lawmode security \u2014 weaknesses that carry a legal duty, and export\u2026",
+                            "path": "law-ai/backend/law_ai/agents_runtime/prompts/lawmode/security.v1.md",
+                            "rel": "backend/law_ai/agents_runtime/prompts/lawmode/security.v1.md"
+                          }
+                        ]
                       },
                       {
                         "type": "section",

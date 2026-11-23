@@ -22,8 +22,6 @@ username: $GITHUB_USERNAME
 
 https://opensource.guide/
 
-TODO: Right contribution instructions.
-
 Here's a list of contributors:
 
 - [[bamr87.github.io/pages/_about/contribute/contributors/bamr87/README|Amr]]

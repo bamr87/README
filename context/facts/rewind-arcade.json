@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 76,
-    "fingerprint": "91557fe857342ad7",
+    "file_count": 81,
+    "fingerprint": "ca30dd97c6053089",
     "path": "docs/rewind-arcade",
     "present": true,
-    "total_bytes": 358635
+    "total_bytes": 408965
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -21,7 +21,7 @@
       "Contributing"
     ],
     "readme": "README.md",
-    "summary": "Retro gaming workspace: browser arcade recreations, console emulation via ES-DE, and a physical game catalog.",
+    "summary": "Rewind Arcade's direction is to become the ultimate open home for all things retro gaming: data, tools, resources and transparency, with browser arcade play, ES-DE emulation and a physical game catalog on one set of system ids, for everyone (constitution \u00a71).",
     "title": "Rewind Arcade"
   },
   "key_docs": [
@@ -36,12 +36,12 @@
   ],
   "navigation": {
     "browse": "docs/browse/rewind-arcade.md",
-    "fingerprint": "739dd7de909b9687",
+    "fingerprint": "e66df70f2234405e",
     "index": "rewind-arcade/README.md",
     "max_depth": 3,
-    "pages": 76,
+    "pages": 81,
     "present": true,
-    "sections": 11,
+    "sections": 12,
     "skipped": 0,
     "title": "Rewind Arcade",
     "top_sections": [
@@ -54,14 +54,14 @@
       },
       {
         "index": "rewind-arcade/docs/README.md",
-        "pages": 19,
+        "pages": 21,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
       },
       {
         "index": "rewind-arcade/emulate/README.md",
-        "pages": 21,
+        "pages": 24,
         "path": "emulate",
         "title": "Emulate \u2014 retro-pi",
         "type": "section"
@@ -96,7 +96,7 @@
   },
   "rollups": {
     "categories": {
-      "rewind-arcade": 76
+      "rewind-arcade": 81
     },
     "code_languages": [
       "sh",
@@ -107,9 +107,9 @@
       "text",
       "toml"
     ],
-    "indexed_documents": 76,
+    "indexed_documents": 81,
     "top_tags": [],
-    "total_words": 51272
+    "total_words": 58912
   },
   "schema_version": "1.0",
   "signals": {
@@ -131,16 +131,16 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 21,
+        "doc_count": 24,
         "name": "emulate"
       },
       {
         "doc_count": 21,
-        "name": "retro-pi"
+        "name": "docs"
       },
       {
-        "doc_count": 19,
-        "name": "docs"
+        "doc_count": 21,
+        "name": "retro-pi"
       },
       {
         "doc_count": 6,

@@ -115,7 +115,7 @@ The fleet's documentation as one linked knowledge base. Open `docs/` as a vault 
 - [[brain/concepts/github-actions|Github Actions]] (26)
 - [[brain/concepts/github-pages|Github Pages]] (41)
 - [[brain/concepts/glossary|Glossary]] (6)
-- [[brain/concepts/governance|Governance]] (9)
+- [[brain/concepts/governance|Governance]] (10)
 - [[brain/concepts/hosting|Hosting]] (7)
 - [[brain/concepts/html|Html]] (5)
 - [[brain/concepts/http|Http]] (6)

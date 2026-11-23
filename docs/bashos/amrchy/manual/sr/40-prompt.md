@@ -1,0 +1,13 @@
+---
+source_file: amrchy/manual/sr/40-prompt.md
+source_repo: bamr87/bashos
+source_url: https://github.com/bamr87/bashos/blob/main/amrchy/manual/sr/40-prompt.md
+title: Промпт
+---
+# Промпт
+
+Omarchy по подразумеваној вредности долази са минималним [Starship](https://starship.rs/) промптом. Тако волим да држим свој промпт. Не треба ми да знам корисника, јер сам то увек ја, и не треба ми да знам време, јер је увек на врху.
+
+ ![prompt](images/prompt.webp)
+
+Ако желиш више информација или стила, можеш да промениш конфигурацију за [Starship.rs](https://starship.rs/) у `~/.config/starship.toml`. Много тога можеш да урадиш. Само немој да претераш (или претерај, ради шта год хоћеш, то је твој рачунар!)

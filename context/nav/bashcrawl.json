@@ -5,18 +5,18 @@
   "title": "Bash Crawl",
   "corpus": "docs/bashcrawl",
   "counts": {
-    "pages": 80,
+    "pages": 81,
     "sections": 16,
     "max_depth": 3,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "fe25737df1f1b2a5",
+  "fingerprint": "f7855b3e6cfd8fd2",
   "tree": {
     "type": "section",
     "title": "Bash Crawl",
     "index": "bashcrawl/README.md",
-    "pages": 80,
+    "pages": 81,
     "children": [
       {
         "type": "group",
@@ -352,7 +352,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "bashcrawl/docs/README.md",
-        "pages": 35,
+        "pages": 36,
         "children": [
           {
             "type": "page",
@@ -420,7 +420,7 @@
             "title": "Amendments \u2014 bashcrawl",
             "rel": "docs/amendments",
             "index": "bashcrawl/docs/amendments/README.md",
-            "pages": 4,
+            "pages": 5,
             "children": [
               {
                 "type": "page",
@@ -434,6 +434,12 @@
                 "title": "0001 \u2014 Ratify the constitution",
                 "path": "bashcrawl/docs/amendments/0001-ratify-constitution.md",
                 "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "0003 \u2014 Missions",
+                "path": "bashcrawl/docs/amendments/0003-mission-statement.md",
+                "rel": "docs/amendments/0003-mission-statement.md"
               },
               {
                 "type": "page",

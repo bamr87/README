@@ -1,10 +1,10 @@
 {
   "corpus": {
     "file_count": 38,
-    "fingerprint": "c93bf0fe864f66a2",
+    "fingerprint": "049b0e7f09d863cc",
     "path": "docs/fredgar-ai",
     "present": true,
-    "total_bytes": 276912
+    "total_bytes": 284728
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -96,7 +96,7 @@
       "sec-edgar",
       "wikidata"
     ],
-    "total_words": 37143
+    "total_words": 38301
   },
   "schema_version": "1.0",
   "signals": {

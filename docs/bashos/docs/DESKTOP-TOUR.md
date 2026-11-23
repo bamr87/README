@@ -59,12 +59,9 @@ One composer, and everything the kernel does with what you type.
 
 ![Typing a line, completing it, and running it](media/console-run.gif)
 
-- **Slash completion.** Typing `/` at the start of a line opens the command
-list, filtered as you type, each row showing the command, its loop, its description and its argument hint. `↑`/`↓` move, `Tab` or `Enter` accepts, `Esc` dismisses.
-- **Plain english works too.** A line with no slash goes to the kernel's
-classifier, which picks the best command — the run card shows which one it chose and why.
-- **Submitting.** `Enter` runs, `Shift+Enter` adds a newline, `↑` on an empty
-composer recalls your previous lines. The composer grows with the text and shows the model it will use.
+- **Slash completion.** Typing `/` at the start of a line opens the command list, filtered as you type, each row showing the command, its loop, its description and its argument hint. `↑`/`↓` move, `Tab` or `Enter` accepts, `Esc` dismisses.
+- **Plain english works too.** A line with no slash goes to the kernel's classifier, which picks the best command — the run card shows which one it chose and why.
+- **Submitting.** `Enter` runs, `Shift+Enter` adds a newline, `↑` on an empty composer recalls your previous lines. The composer grows with the text and shows the model it will use.
 - **The run card.** Your line, a live status pill, and then two things: the **activity feed** and the **answer**.
 
 **The activity feed is the kernel narrating itself.** Blue dots are graph nodes as they complete (`parse`, `classify`, `prompt loop`, `respond`), grey dots are trace lines the nodes appended, orange dots are **tool calls the engine made** — streamed as they happen on a `react` run, the same events the REPL prints as `· read file`. Each carries a timestamp.
@@ -83,11 +80,9 @@ One scene at a time is right for one line of work. Watching a run stream while t
 
 ![Opening a pane, maximizing it, and closing it](media/side-by-side.gif)
 
-- **Open one** from the palette (`Side by side: …`), from the pane's split
-button, or by right-clicking any scene in the sidebar, any quick-run chip, or any row in the Runs table.
+- **Open one** from the palette (`Side by side: …`), from the pane's split button, or by right-clicking any scene in the sidebar, any quick-run chip, or any row in the Runs table.
 - **Focus follows the click.** The focused pane is outlined, its hash is the one in the address bar, and the sidebar marks every open scene with a dot.
-- **Pane chrome** is deliberately small: split, maximize/restore, close. Free
-drag, minimize and a taskbar live in [Desktop](#desktop--windows-icons-a-taskbar), where they have somewhere to go.
+- **Pane chrome** is deliberately small: split, maximize/restore, close. Free drag, minimize and a taskbar live in [Desktop](#desktop--windows-icons-a-taskbar), where they have somewhere to go.
 - **The Console is a singleton.** It owns a persistent DOM and a live event stream, so it is focused rather than mounted twice.
 - **Two run details** can sit side by side, because a run id distinguishes them.
 
@@ -110,12 +105,10 @@ Two panes cover most of the work. When it isn't enough, the whole window becomes
 
 ![Opening a window, dragging it, snapping it, minimizing and restoring](media/desktop.gif)
 
-- **Icons open windows.** Double-click one (or right-click for the usual four
-actions). The sidebar steps aside — the icons and the taskbar are the navigation here.
+- **Icons open windows.** Double-click one (or right-click for the usual four actions). The sidebar steps aside — the icons and the taskbar are the navigation here.
 - **Drag by the title bar, resize from the corner.** Geometry is stored as percentages, so a layout survives a resized browser.
 - **Snap** by dragging to an edge: left half, right half, or the top for full screen. A dashed preview shows where it will land before you let go.
-- **Minimize really minimizes**, because the taskbar really restores. A
-minimized window keeps its place in the list, in italics; clicking the focused window's task minimizes it again.
+- **Minimize really minimizes**, because the taskbar really restores. A minimized window keeps its place in the list, in italics; clicking the focused window's task minimizes it again.
 - **Tile** or **cascade** every open window from the two buttons at the right of the taskbar, or from the palette.
 - Up to eight windows. Past that, opening one reuses the window you are not looking at rather than growing forever.
 

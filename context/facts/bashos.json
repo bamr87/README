@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 80,
-    "fingerprint": "fd132b1a44c3413f",
+    "file_count": 2688,
+    "fingerprint": "86bb7f9bd080297d",
     "path": "docs/bashos",
     "present": true,
-    "total_bytes": 497578
+    "total_bytes": 17357086
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -14,14 +14,14 @@
       "Quick start",
       "Commands",
       "Terminal environment (macOS) \u2014 chui",
-      "The operating system (Linux) \u2014 os",
+      "The operating system (Linux) \u2014 amrchy and os",
       "Auth \u2014 Claude Code OAuth, wired into the engine",
       "Desktop (GUI)",
       "Architecture",
       "Extending"
     ],
     "readme": "README.md",
-    "summary": "Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine.",
+    "summary": "bashOS's direction is to become the ultimate open home for all things terminal-first AI runtime: data, tools, resources and transparency, with an inspectable kernel for slash commands and a GUI that sits beside the terminal, not above it, for everyone (constitution \u00a71).",
     "title": "bashOS"
   },
   "key_docs": [
@@ -31,17 +31,17 @@
     "CONTRIBUTING.md",
     "CHANGELOG.md",
     "SECURITY.md",
-    "docs/frontend/posthog-os-research.md",
-    "one-os/PLAN.md"
+    "amrchy/docs/elsewhen.md",
+    "amrchy/docs/file-layout.md"
   ],
   "navigation": {
     "browse": "docs/browse/bashos.md",
-    "fingerprint": "d97d9acc627e6fd1",
+    "fingerprint": "4d85a535505921e1",
     "index": "bashos/README.md",
-    "max_depth": 4,
-    "pages": 80,
+    "max_depth": 6,
+    "pages": 2688,
     "present": true,
-    "sections": 15,
+    "sections": 78,
     "skipped": 0,
     "title": "BashOS",
     "top_sections": [
@@ -54,14 +54,21 @@
       },
       {
         "index": "bashos/docs/README.md",
-        "pages": 26,
+        "pages": 30,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
       },
       {
+        "index": "bashos/amrchy/README.md",
+        "pages": 2603,
+        "path": "amrchy",
+        "title": "Omarchy",
+        "type": "section"
+      },
+      {
         "index": "bashos/one-os/README.md",
-        "pages": 40,
+        "pages": 41,
         "path": "one-os",
         "title": "one-os",
         "type": "section"
@@ -89,19 +96,19 @@
   },
   "rollups": {
     "categories": {
-      "bashos": 80
+      "bashos": 2688
     },
     "code_languages": [
-      "bash",
       "plaintext",
-      "mermaid",
-      "ts",
-      "text",
+      "bash",
+      "lua",
       "json",
-      "js",
-      "markdown"
+      "toml",
+      "jsonc",
+      "ini",
+      "text"
     ],
-    "indexed_documents": 80,
+    "indexed_documents": 2688,
     "top_tags": [
       "ai",
       "agentic-ai",
@@ -113,7 +120,7 @@
       "open-source",
       "system-design"
     ],
-    "total_words": 70196
+    "total_words": 2117942
   },
   "schema_version": "1.0",
   "signals": {
@@ -135,11 +142,15 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 40,
+        "doc_count": 2603,
+        "name": "amrchy"
+      },
+      {
+        "doc_count": 41,
         "name": "one-os"
       },
       {
-        "doc_count": 26,
+        "doc_count": 30,
         "name": "docs"
       },
       {

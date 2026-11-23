@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 8137a02af1b58038
+source_fingerprint: 6a1b5e181b742e1d
 tags:
   - about
   - bash
@@ -25,7 +25,7 @@ tags:
 
 # Profile & Résumé
 
-> Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages. Featured: the Quest Log, my repositories written up as levels and side quests, one per deep dive. This site is one of the side quests: read its entry.
+> Amr Abdel-Motaleb's personal profile, résumé and project portfolio site, built with Jekyll on GitHub Pages. This site's direction is to become the ultimate open home for this practitioner's public profile, résumé and work: data, tools, resources and transparency, with an inspectable Jekyll portfolio and a current résumé, for collaborators and the general public (constitution §1).
 
 | | |
 |---|---|
@@ -33,7 +33,7 @@ tags:
 | Kind | site |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bamr87.github.io` - 94 docs |
+| Corpus | `docs/bamr87.github.io` - 96 docs |
 | External | no |
 
 ## Signals
@@ -41,15 +41,15 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~142,670 words across 94 indexed documents
+- ~146,051 words across 96 indexed documents
 - code samples in: plaintext, powershell, html, python, raw, bash, shell, yaml
 
 ## Navigation
 
-94 published pages in 19 sections (max depth 5) — [browse the full map](../../docs/browse/bamr87.github.io.md) · [tree as JSON](../nav/bamr87.github.io.json)
+96 published pages in 19 sections (max depth 5) — [browse the full map](../../docs/browse/bamr87.github.io.md) · [tree as JSON](../nav/bamr87.github.io.json)
 
-- **Documentation** (9 pages)
-- **Home** (78 pages)
+- **Documentation** (10 pages)
+- **Home** (79 pages)
 
 ## Key documents
 

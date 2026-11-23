@@ -6,7 +6,7 @@ title: Label Studio
 ---
 # Label Studio
 
-> Label Studio: offline VS Code extension to read, preview, create, merge and deploy ZPL II and EPL2 thermal labels.
+> Label Studio's direction is to become the ultimate open home for all things thermal labels: data, tools, resources and transparency, with offline ZPL II and EPL2 preview, authoring, analysis, merge and deploy for everyone ([constitution](docs/constitution.md) §1).
 
 [![CI](https://github.com/bamr87/zpl-viewer/actions/workflows/ci.yml/badge.svg)](https://github.com/bamr87/zpl-viewer/actions/workflows/ci.yml) [![License](https://img.shields.io/github/license/bamr87/zpl-viewer)](LICENSE)
 
@@ -21,7 +21,7 @@ A VS Code extension for everything that happens to a thermal label before it com
 | Verb | What you get |
 |---|---|
 | **Read** | Syntax highlighting, hover docs, IntelliSense, outline and folding for ZPL II and EPL2. |
-| **View** | Live label preview on a `<canvas>`, page navigation, zoom, PNG/PDF/SVG export. |
+| **View** | Live label preview on a `<canvas>`, page navigation, zoom (kept across edits and refreshes), PNG (the label showing, or a pick) / PDF / SVG export. |
 | **Create** | Starter templates (shipping, product, asset tag, shelf, GS1 carton), snippets, a barcode studio. |
 | **Modify** | Formatters for both languages, barcode field insertion, image import, format conversion. |
 | **Graphics** | Every ZPL graphic encoding renders: ASCII hex, Zebra's compressed hex, `:B64:` and `:Z64:`, plus `~DG`/`~DY` downloads recalled with `^XG`/`^IM`. |

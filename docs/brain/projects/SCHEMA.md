@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 36
+pages: 37
 repo: bamr87/SCHEMA
 tags:
 - brain/project
@@ -16,22 +16,22 @@ title: SCHEMA Protocol
 > [!info] tooling: `bamr87/SCHEMA`
 > Pyramid Schema: the SCHEMA.md protocol and linter that let AI agents look up repo structure instead of guessing it.
 
-**36** pages collected from commit `5270ed58f6fb` (2026-11-18).
+**37** pages collected from commit `7bbf155e8649` (2026-11-22).
 
 ## Most connected pages
 
 - [[SCHEMA/docs/constitution|SCHEMA — Constitution]]
 - [[SCHEMA/PRD|PRD — Pyramid Schema (SCHEMA)]]
-- [[SCHEMA/README|Pyramid Schema (SCHEMA.md)]]
 - [[SCHEMA/docs/amendments/README|Amendments — SCHEMA]]
+- [[SCHEMA/README|Pyramid Schema (SCHEMA.md)]]
 - [[SCHEMA/docs/README|SCHEMA documentation]]
 - [[SCHEMA/AGENTS|SCHEMA]]
+- [[SCHEMA/docs/amendments/0002-agents-md-precedence|0002 — AGENTS.md is the how-to-work document, and the quality gates are the CI gate]]
 - [[SCHEMA/CLAUDE|SCHEMA]]
 - [[SCHEMA/docs/amendments/0001-ratify-constitution|0001 — Ratify the constitution]]
 - [[SCHEMA/docs/amendments/0003-mission-statement|0003 — Missions]]
 - [[SCHEMA/example/acme-app/README|acme-app]]
 - [[SCHEMA/CHANGELOG|Changelog]]
-- [[SCHEMA/SCHEMA|SCHEMA — pyramid-schema]]
 
 ## Concepts
 

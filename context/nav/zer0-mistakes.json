@@ -5,7 +5,7 @@
   "title": "Zer0 Mistakes",
   "corpus": "docs/zer0-mistakes",
   "counts": {
-    "pages": 558,
+    "pages": 559,
     "sections": 95,
     "max_depth": 6,
     "skipped": 2
@@ -14,12 +14,12 @@
     "pages/_about/README.md",
     "pages/_about/features/README.md"
   ],
-  "fingerprint": "e46a70d6f67dbdb1",
+  "fingerprint": "7e9fd46afee7a7b2",
   "tree": {
     "type": "section",
     "title": "Zer0 Mistakes",
     "index": "zer0-mistakes/README.md",
-    "pages": 558,
+    "pages": 559,
     "children": [
       {
         "type": "group",
@@ -356,7 +356,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "zer0-mistakes/docs/README.md",
-        "pages": 83,
+        "pages": 84,
         "children": [
           {
             "type": "page",
@@ -376,7 +376,7 @@
             "title": "Amendments \u2014 zer0-mistakes",
             "rel": "docs/amendments",
             "index": "zer0-mistakes/docs/amendments/README.md",
-            "pages": 4,
+            "pages": 5,
             "children": [
               {
                 "type": "page",
@@ -390,6 +390,12 @@
                 "title": "0001 Ratify the Constitution",
                 "path": "zer0-mistakes/docs/amendments/0001-ratify-constitution.md",
                 "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "0003 Missions",
+                "path": "zer0-mistakes/docs/amendments/0003-mission-statement.md",
+                "rel": "docs/amendments/0003-mission-statement.md"
               },
               {
                 "type": "page",

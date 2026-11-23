@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: c6367fa672d5a37d
+source_fingerprint: fc42394161e226ba
 tags:
   - bash
   - education
@@ -16,7 +16,7 @@ tags:
 
 # Bashcrawl
 
-> Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. Learn real terminal skills by playing a fantasy dungeon crawl — in your own shell, or in a free browser trainer built from the same content.
+> Interactive shell-scripting tutorial — learn Bash by exploring a dungeon. Bashcrawl's direction is to become the ultimate open home for all things terminal learning: data, tools, resources and transparency, with a fantasy dungeon in your shell and a free browser trainer built from the same content, for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -24,7 +24,7 @@ tags:
 | Kind | game |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashcrawl` - 80 docs |
+| Corpus | `docs/bashcrawl` - 81 docs |
 | External | no |
 
 ## Signals
@@ -33,16 +33,16 @@ tags:
 - has AGENTS.md operating manual
 - keeps a changelog
 - has a security policy
-- ~46,262 words across 80 indexed documents
+- ~48,917 words across 81 indexed documents
 - code samples in: bash, plaintext, js, text, json, yaml
 
 ## Navigation
 
-80 published pages in 16 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
+81 published pages in 16 sections (max depth 3) — [browse the full map](../../docs/browse/bashcrawl.md) · [tree as JSON](../nav/bashcrawl.json)
 
 - **Repository & tooling** (2 pages)
 - **Courses** (31 pages)
-- **Documentation** (35 pages)
+- **Documentation** (36 pages)
 - **🚪 Welcome to the Entrance - Your Terminal Adventure Begins Here** (3 pages)
 
 ## Key documents

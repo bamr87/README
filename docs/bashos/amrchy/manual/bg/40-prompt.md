@@ -1,0 +1,13 @@
+---
+source_file: amrchy/manual/bg/40-prompt.md
+source_repo: bamr87/bashos
+source_url: https://github.com/bamr87/bashos/blob/main/amrchy/manual/bg/40-prompt.md
+title: Подкана
+---
+# Подкана
+
+Omarchy идва с минимална подкана [Starship](https://starship.rs/) по подразбиране. Така обичам да държа подканата си. Нямам нужда да знам потребителя, защото това винаги съм аз, и нямам нужда да знам часа, защото той винаги е най-горе.
+
+ ![prompt](images/prompt.webp)
+
+Ако искаш повече информация или стил, можеш да промениш конфигурацията на [Starship.rs](https://starship.rs/) в `~/.config/starship.toml`. Можеш да направиш много неща. Просто не прекалявай (или пък прекалявай, прави каквото искаш, това е твоят компютър!)

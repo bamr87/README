@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 94,
-    "fingerprint": "8137a02af1b58038",
+    "file_count": 96,
+    "fingerprint": "6a1b5e181b742e1d",
     "path": "docs/bamr87.github.io",
     "present": true,
-    "total_bytes": 1037099
+    "total_bytes": 1061952
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -18,10 +18,10 @@
       "Technical / Skills",
       "Strengths",
       "Favorite Dish",
-      "Working with this repo"
+      "Quick start"
     ],
     "readme": "README.md",
-    "summary": "Featured: the Quest Log, my repositories written up as levels and side quests, one per deep dive. This site is one of the side quests: read its entry.",
+    "summary": "This site's direction is to become the ultimate open home for this practitioner's public profile, r\u00e9sum\u00e9 and work: data, tools, resources and transparency, with an inspectable Jekyll portfolio and a current r\u00e9sum\u00e9, for collaborators and the general public (constitution \u00a71).",
     "title": "Profile & R\u00e9sum\u00e9"
   },
   "key_docs": [
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/bamr87.github.io.md",
-    "fingerprint": "9dbe4519b0f1f8cd",
+    "fingerprint": "3cff8641271e7da5",
     "index": "bamr87.github.io/README.md",
     "max_depth": 5,
-    "pages": 94,
+    "pages": 96,
     "present": true,
     "sections": 19,
     "skipped": 0,
@@ -47,14 +47,14 @@
     "top_sections": [
       {
         "index": "bamr87.github.io/docs/README.md",
-        "pages": 9,
+        "pages": 10,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
       },
       {
         "index": "bamr87.github.io/pages/home.md",
-        "pages": 78,
+        "pages": 79,
         "path": "pages",
         "title": "Home",
         "type": "section"
@@ -75,7 +75,7 @@
   },
   "rollups": {
     "categories": {
-      "bamr87.github.io": 94
+      "bamr87.github.io": 96
     },
     "code_languages": [
       "plaintext",
@@ -87,7 +87,7 @@
       "shell",
       "yaml"
     ],
-    "indexed_documents": 94,
+    "indexed_documents": 96,
     "top_tags": [
       "jekyll",
       "notes",
@@ -105,7 +105,7 @@
       "about",
       "principles"
     ],
-    "total_words": 142670
+    "total_words": 146051
   },
   "schema_version": "1.0",
   "signals": {
@@ -126,11 +126,11 @@
     ],
     "top_dirs": [
       {
-        "doc_count": 78,
+        "doc_count": 79,
         "name": "pages"
       },
       {
-        "doc_count": 9,
+        "doc_count": 10,
         "name": "docs"
       },
       {

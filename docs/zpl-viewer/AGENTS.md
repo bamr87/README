@@ -6,7 +6,7 @@ title: zpl-viewer
 ---
 # zpl-viewer
 
-> Label Studio (`zpl-viewer`), an offline VS Code extension for ZPL II and EPL2 thermal labels — the commands, layout, conventions and layering rules for working on it.
+> Label Studio's direction is to become the ultimate open home for all things thermal labels: data, tools, resources and transparency, with offline ZPL II and EPL2 preview, authoring, analysis, merge and deploy for everyone ([constitution](docs/constitution.md) §1).
 
 ## What this repo is
 
@@ -40,7 +40,7 @@ Docs gates: `python3 tools/unwrap-prose.py --check` (one paragraph per line) and
 | `syntaxes/`, `snippets/`, `language-configuration*.json` | TextMate grammars, snippets and editor behaviour for ZPL and EPL |
 | `samples/` | Example labels and a sample data source (opened by the Run Extension launch config) |
 | `docs/` | Docs index, ADRs (`docs/adr/`), the testing guide, and generated reference (`docs/reference/`) |
-| `scripts/` | Node maintenance scripts: `gen-reference-docs.mjs`, `smoke-test.mjs` |
+| `scripts/` | Node maintenance scripts: `gen-reference-docs.mjs`, `gen-verify-harness.mjs` (the preview harness page for e2e and the verify kit), `smoke-test.mjs` |
 | `tools/` | Vendored fleet tools (`unwrap-prose.py`, `docs_index.py`) |
 | `features/`, `verify/` | Feature index (`features/v1`) and the user-scenario verification kit |
 | `public/` | Vendored fleet feedback widget scripts |
@@ -53,7 +53,7 @@ Docs gates: `python3 tools/unwrap-prose.py --check` (one paragraph per line) and
 - **Decisions:** ADRs in `docs/adr/NNNN-slug.md`, indexed in `docs/adr/README.md`. Add one for anything hard to reverse.
 - **Commits:** Conventional Commits (`feat fix docs style refactor test chore perf ci build`). The PR title is the squash subject.
 - **Branches:** `feature/`, `fix/`, `docs/`, `refactor/`, `test/` or `chore/` off `main`; open a PR, never push to `main` directly.
-- **Releases:** release-please (`.github/workflows/release.yml` → `bamr87/.github`) opens a release PR from the Conventional Commit titles; merging it tags `vX.Y.Z`, creates the GitHub Release and runs the shared publish workflow. Version source is `package.json` (`.release-please-manifest.json`, `release-please-config.json`). Needs the `NPM_TOKEN` secret, plus an optional `RELEASE_PLEASE_TOKEN` PAT so the release PR triggers CI. Never edit `CHANGELOG.md` or a version number by hand.
+- **Releases:** release-please (`.github/workflows/release.yml`) opens a release PR from the Conventional Commit titles; merging it tags `vX.Y.Z`, creates the GitHub Release and a `package` job runs `vsce package` and attaches the `.vsix` to it (nothing is published to npm). Version source is `package.json` (`.release-please-manifest.json`, `release-please-config.json`). An optional `RELEASE_PLEASE_TOKEN` PAT lets the release PR trigger CI. Marketplace / Open VSX publishing is not wired yet: it needs a registered publisher and the owner's `VSCE_PAT` / `OVSX_PAT` secrets. Never edit `CHANGELOG.md` or a version number by hand.
 - **Generated:** `docs/reference/{commands,settings,keybindings}.md` come from `package.json` `contributes` — after changing a command, setting or keybinding run `npm run docs:reference`; `src/test/unit/referenceDocs.test.ts` fails `npm run test:unit` while they are stale. The `docs/README.md` index span comes from each document's summary line (`python3 tools/docs_index.py --write`).
 - **Vendored, never edited here:** `tools/unwrap-prose.py`, `tools/docs_index.py`, `public/fleet-feedback*.js` — change them in the hub and re-vendor.
 - **README-First, README-Last:** read the nearest `README.md` before changing a directory, and update it after.
@@ -63,7 +63,7 @@ Docs gates: `python3 tools/unwrap-prose.py --check` (one paragraph per line) and
 ## Architecture rules
 
 - `src/README.md` is the module guide — read it before adding code.
-- **Pure layer** (`core/`, `formats/`, `renderer/`, `barcode/`, `data/`, `emit/`, `analysis/`) must not import `vscode`, `fs`, `net` or `zlib`: it is compiled into the webview bundle and exercised directly by unit tests. Anything it needs goes in `tsconfig.webview.json`.
+- **Pure layer** (`core/`, `formats/`, `renderer/`, `image/`, `barcode/`, `data/`, `emit/`, `analysis/`) must not import `vscode`, `fs`, `net` or `zlib`: it is compiled into the webview bundle and exercised directly by unit tests. Anything it needs goes in `tsconfig.webview.json`.
 - **Node-only** code lives in `importers/` and `deploy/`; **VS Code** code in `extension.ts`, `config.ts`, `diagnostics.ts`, `previewPanel.ts`, `providers/` and `ui/`. Commands stay thin — logic belongs below them, where it can be unit-tested.
 - Add a printer language by creating `src/formats/<id>/` and registering it in `src/core/formats.ts`; parse into the existing IR rather than inventing a second one.
 - `src/barcode/symbologies.ts` is the single source of truth for symbologies (encoder id, ZPL command, EPL selector, charset, length, check digit). Never hard-code a symbology mapping elsewhere.

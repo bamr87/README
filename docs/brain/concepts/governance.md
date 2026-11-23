@@ -4,7 +4,7 @@ aliases:
 category: brain
 generated: true
 kind: concept
-pages: 9
+pages: 10
 projects: 5
 tags:
 - brain/concept
@@ -16,14 +16,15 @@ title: Governance
 # Governance
 
 > [!abstract] Summary
-> 9 pages across 5 projects (Zer0 Mistakes, IT Journey, Fleet Hub, Gitorio) cover this subject.
+> 10 pages across 5 projects (Zer0 Mistakes, IT Journey, Fleet Hub, Gitorio) cover this subject.
 
 ## Across the fleet
 
-### [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (4)
+### [[brain/projects/zer0-mistakes|Zer0 Mistakes]] (5)
 
 - [[zer0-mistakes/docs/constitution|zer0-mistakes Constitution]]
 - [[zer0-mistakes/docs/amendments/0001-ratify-constitution|0001 Ratify the Constitution]]
+- [[zer0-mistakes/docs/amendments/0003-mission-statement|0003 Missions]]
 - [[zer0-mistakes/docs/amendments/0000-template|Amendment Record Template]]
 - [[zer0-mistakes/docs/amendments/proposed/agent-merge-review-gate|Proposed: Agent merge of mergeable PRs, and a review gate]]
 
