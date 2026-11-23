@@ -1,8 +1,22 @@
 {% extends "base.html" %}
 
 {# Fleet overrides for the Material theme (see MKDOCS.md "Theme overrides"):
-   SEO and Open Graph meta in <head>, a skip link before the header and a stable
-   target for it inside the content column. #}
+   SEO and Open Graph meta in <head>, a skip link before the header, a stable
+   target for it inside the content column and, in development only, the
+   fleet's page bridge. #}
+
+{# The page bridge (<fleet-assist>; kit: bamr87/bamr87 templates/assistant,
+   adapters/mkdocs.html; spec UPS-AST). `fa` is set only when the site is built
+   with FLEET_ASSIST=1 (mkdocs.yml extra.fleet_assist), so the published site
+   carries no tag. `fa_source` is the repository path of the file behind the
+   page: its Markdown file, or what a template that has no page (404.html)
+   names in `fleet_assist_source`. Titles and paths come from the corpus, which
+   is untrusted input, so both are escaped. The `-` in the tags around the
+   bridge trims their whitespace: with the switch off, every page is
+   byte-identical to one built without the bridge. #}
+{% set fa = config.extra.fleet_assist if config.extra.fleet_assist and config.extra.fleet_assist.enabled else none %}
+{% set fa_source = ((fa.docs_dir | default('docs')) ~ '/' ~ page.file.src_uri) if fa and page and page.file else (fleet_assist_source | default('')) %}
+{% set fa_title = page.title if page and page.title else config.site_name %}
 
 {% block extrahead %}
   {% set description = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
@@ -25,5 +39,38 @@
 
 {% block content %}
   <a id="main-content" tabindex="-1"></a>
+  {%- if fa %}
+  {# navigation.instant swaps this container and keeps the <fleet-assist> tag
+     in `scripts`, so the facts of the page now showing travel in here. #}
+  <template id="fleet-assist-page" data-source="{{ fa_source | e }}" data-page-title="{{ fa_title | e }}"></template>
+  {%- endif %}
   {{ super() }}
 {% endblock %}
+
+{% block scripts -%}
+  {{ super() }}
+  {%- if fa %}
+  <script src="{{ 'assets/js/fleet-assist.js' | url }}" defer></script>
+  <fleet-assist
+    repo="{{ fa.repo }}"
+    branch="{{ fa.branch | default('main') }}"
+    source="{{ fa_source | e }}"
+    page-title="{{ fa_title | e }}"
+    base="{{ fa.base | default('') }}"
+    framework="mkdocs"
+    root="article, main"
+    {% if fa.broker %}broker="{{ fa.broker }}"{% endif %}></fleet-assist>
+  <script>
+    /* After an instant navigation, point the tag at the page now showing. */
+    if (typeof document$ !== "undefined") {
+      document$.subscribe(function () {
+        var page = document.getElementById("fleet-assist-page");
+        var tag = document.querySelector("fleet-assist");
+        if (!page || !tag) return;
+        tag.setAttribute("source", page.dataset.source);
+        tag.setAttribute("page-title", page.dataset.pageTitle);
+      });
+    }
+  </script>
+  {%- endif %}
+{%- endblock %}

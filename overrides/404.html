@@ -2,6 +2,9 @@
 
 {# Custom 404: GitHub Pages serves site/404.html for any missing path. #}
 
+{# No Markdown file is behind this page: the page bridge in main.html names this template instead. #}
+{% set fleet_assist_source = "overrides/404.html" %}
+
 {% block content %}
   <a id="main-content" tabindex="-1"></a>
   <h1>Page not found</h1>

@@ -12,7 +12,7 @@ This repo (`bamr87/README`) builds a standalone [MkDocs Material](https://squidf
 |------|---------|
 | [`mkdocs.yml`](mkdocs.yml) | Site config — theme, extensions, `docs_dir: docs`, `site_url`; pulls the nav in with `INHERIT: ./nav.yml` |
 | [`nav.yml`](nav.yml) | **Generated** — the `nav` tree and the `exclude_docs` rules, rendered by the context engine's navigator |
-| [`overrides/`](overrides/) | Hand-written theme overrides wired by `theme.custom_dir`: `main.html` (SEO and Open Graph meta, skip link), `404.html`, `assets/fleet-tokens.css` (design tokens, registered under `extra_css`) |
+| [`overrides/`](overrides/) | Hand-written theme overrides wired by `theme.custom_dir`: `main.html` (SEO and Open Graph meta, skip link, the development-only page bridge), `404.html`, `assets/fleet-tokens.css` (design tokens, registered under `extra_css`) |
 | [`brain_site/hook.py`](brain_site/hook.py) | MkDocs hook: resolves `[[wikilinks]]` and callouts, adds backlinks, publishes the graph and its views |
 | [`requirements-docs.txt`](requirements-docs.txt) | Site build deps (`mkdocs`, `mkdocs-material`, `pymdown-extensions`); the hook also needs `requirements.txt` |
 | [`.github/workflows/deploy-pages.yaml`](.github/workflows/deploy-pages.yaml) | Builds and deploys to GitHub Pages |
@@ -35,6 +35,8 @@ Then open **<http://localhost:8000/README/>** — note the `/README/` path. The 
 
 To serve without the base-path redirect during quick edits, point `mkdocs serve` at a different address: `mkdocs serve -a localhost:8001`.
 
+To let a Claude Code session see the page you have open, serve with the fleet's page bridge on: `FLEET_ASSIST=1 mkdocs serve`. It is a developer tool: without the variable no page carries the `<fleet-assist>` tag, and the published site is built without it (see [Theme overrides](#theme-overrides)).
+
 ## Build behavior (read this before "fixing" warnings)
 
 - **The build is intentionally non-strict.** `mkdocs build` exits 0 but prints several hundred `WARNING` lines about broken links and missing anchors. These are inherent to aggregating Markdown from many independent repos (relative links point at files that weren't aggregated). They are expected — do **not** add `--strict` to the deploy, and don't hand-edit `docs/` to chase them.
@@ -50,6 +52,7 @@ To serve without the base-path redirect during quick edits, point `mkdocs serve`
 `overrides/` is hand-written source, unlike `docs/`. `mkdocs.yml` points `theme.custom_dir` at it and lists `assets/fleet-tokens.css` under `extra_css`; MkDocs copies the file from `overrides/assets/` into the built site, so the stylesheet is served at `assets/fleet-tokens.css`.
 
 - `overrides/main.html` extends Material's `base.html`. It emits `description`, `og:title`, `og:description`, `og:type`, `og:url` (from `page.canonical_url`) and `og:site_name` in `<head>`, taking the description from the page's `description` frontmatter and falling back to `site_description`. It prepends a visible-on-focus skip link before the header and puts the `#main-content` anchor at the top of the content block.
+- `overrides/main.html` also mounts the fleet's page bridge, `<fleet-assist>`, at the end of `<body>` (its `scripts` block), and only when `extra.fleet_assist.enabled` is true. `mkdocs.yml` reads that key from the environment (`!ENV [FLEET_ASSIST, false]`), so `FLEET_ASSIST=1 mkdocs serve` turns it on and a plain `mkdocs build` emits no tag. The tag tells a paired session the repository, the branch and the file behind the page: `docs/` plus the page's source path, or `overrides/404.html` on the not-found page. `navigation.instant` swaps pages without a reload and keeps the tag, so a `document$` subscriber copies the new page's source and title from the `<template id="fleet-assist-page">` in the content block. The payload, `docs/assets/js/fleet-assist.js`, is vendored from the hub's assistant kit ([`templates/assistant/`](https://github.com/bamr87/bamr87/tree/main/templates/assistant), which also explains pairing) and held byte-identical to it: never edit it here. MkDocs copies that file into every build; without the tag no page loads it.
 - `overrides/404.html` extends `main.html` and gives GitHub Pages a custom `site/404.html` with a short message, a link to the site root and a button that opens the search box.
 - `overrides/assets/fleet-tokens.css` declares the `--fleet-color-*`, `--fleet-space-*` and `--fleet-font-*` custom properties (the indigo palette from `mkdocs.yml`) and the `.skip-link` rule. Keep the `--fleet-color-` prefix: the hub conformance check (UPS-FE-01) looks for it.
 
