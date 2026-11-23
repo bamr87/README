@@ -84,7 +84,7 @@ python3 -m scripts.context_engine nav bashcrawl --depth 2
 python3 -m scripts.context_engine status
 ```
 
-AI clients query the same pyramid through MCP — the server is registered in [`.mcp.json`](.mcp.json), so Claude Code picks it up automatically in this repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_doc`, `get_schema`, `context_status`. See [mcp/README.md](mcp/README.md).
+AI clients query the same pyramid through MCP — the server is registered in [`.mcp.json`](.mcp.json), so Claude Code picks it up automatically in this repo. Tools: `list_projects`, `get_project`, `search_context`, `get_readme`, `get_nav`, `get_doc`, `get_schema`, `context_status`, and the vault reads `get_note`, `get_neighbours`, `get_hot`, `vault_lint`. See [mcp/README.md](mcp/README.md).
 
 ## How it works
 
@@ -157,6 +157,9 @@ The survey also consolidates the fleet's documentation for review. `python3 -m s
 | `context/` | **Generated** context pyramid (facts, cards, apex, index) |
 | `docs/` | **Generated** Obsidian vault: the collected corpus, `docs/brain/` notes, MkDocs site content |
 | `mcp/` | MCP query server |
+| `notes/` | The one hand-written part of the vault: cross-repository notes, copied to `docs/brain/notes/` |
+| `brain_site/` | MkDocs hook and browser assets that publish the vault's wikilinks, backlinks, graph and canvas |
+| `overrides/` | MkDocs Material theme overrides: skip link, SEO/Open Graph meta, 404 page, design tokens |
 | `hooks.d/` | Build lifecycle hooks |
 | `tools/` | Vendored hub kit — `unwrap-prose.py` (the one-paragraph-per-line prose gate) and `docs_index.py` (the docs index generator) |
 | `tests/` | Unit + integration harness (`python tests/test_runner.py`) |
