@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 79e4c2bf12f67b7f
+source_fingerprint: c8cc015455d28b87
 tags:
   - agents
   - claude-code
@@ -26,7 +26,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/SCHEMA` - 36 docs |
+| Corpus | `docs/SCHEMA` - 37 docs |
 | External | no |
 
 ## Signals
@@ -35,14 +35,14 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~13,661 words across 36 indexed documents
+- ~14,516 words across 37 indexed documents
 - code samples in: plaintext, bash, markdown, python
 
 ## Navigation
 
-36 published pages in 10 sections (max depth 5) — [browse the full map](../../docs/browse/SCHEMA.md) · [tree as JSON](../nav/SCHEMA.json)
+37 published pages in 10 sections (max depth 5) — [browse the full map](../../docs/browse/SCHEMA.md) · [tree as JSON](../nav/SCHEMA.json)
 
-- **Documentation** (11 pages)
+- **Documentation** (12 pages)
 - **Example** (11 pages)
 - **Protocol** (2 pages)
 - **Spec** (2 pages)

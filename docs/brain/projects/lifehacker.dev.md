@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 138
+pages: 139
 repo: bamr87/lifehacker.dev
 tags:
 - brain/project
@@ -16,13 +16,13 @@ title: Lifehacker
 > [!info] site: `bamr87/lifehacker.dev`
 > Tech knowledge, tools and comedy at lifehacker.dev: a Jekyll site on the zer0-mistakes theme, run by Claude Code.
 
-**138** pages collected from commit `4b8b503f0916` (2026-11-18).
+**139** pages collected from commit `f3af95a087b0` (2026-11-18).
 
 ## Most connected pages
 
-- [[lifehacker.dev/pages/_docs/index|Docs]]
 - [[lifehacker.dev/AGENTS|lifehacker.dev]]
 - [[lifehacker.dev/README|lifehacker.dev]]
+- [[lifehacker.dev/pages/_docs/index|Docs]]
 - [[lifehacker.dev/pages/_docs/the-gate-that-only-reads-your-own-diff|The Gate That Only Reads Your Own Diff]]
 - [[lifehacker.dev/pages/_docs/the-rate-limiter-grows-a-bypass-lane|The Rate Limiter Grows a Bypass Lane]]
 - [[lifehacker.dev/pages/_docs/the-build-that-deletes-its-own-plugins|The Build That Deletes Its Own Plugins]]

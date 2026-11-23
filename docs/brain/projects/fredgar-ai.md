@@ -16,7 +16,7 @@ title: Fredgar AI
 > [!info] app: `bamr87/fredgar-ai`
 > Django + React app for exploring SEC EDGAR company data and FRED macro series, with AI-assisted summaries.
 
-**38** pages collected from commit `61113efdb3c2` (2026-11-18).
+**38** pages collected from commit `0de06e6de6d6` (2026-11-22).
 
 ## Most connected pages
 
@@ -29,8 +29,8 @@ title: Fredgar AI
 - [[fredgar-ai/docs/notes/README|Notes]]
 - [[fredgar-ai/AGENTS|fredgar-ai]]
 - [[fredgar-ai/docs/amendments/0002-mission-statement|0002 — Missions]]
-- [[fredgar-ai/docs/architecture|Architecture]]
 - [[fredgar-ai/frontend/README|Fredgar AI — frontend]]
+- [[fredgar-ai/docs/architecture|Architecture]]
 - [[fredgar-ai/CLAUDE|fredgar-ai]]
 
 ## Concepts

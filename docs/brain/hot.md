@@ -15,45 +15,46 @@ Read this first. It holds what moved lately and what everything else connects th
 
 ## Recent changes
 
-- 2026-11-18 [[brain/projects/bashcrawl|Bash Crawl]]: +0 ~2 -0
-    - [[bashcrawl/docs/generated/motion|Motion Clips and Art]]
-    - [[bashcrawl/docs/walkthrough|Bashcrawl: Complete Walkthrough]]
-- 2026-11-18 [[brain/projects/zpl-viewer|ZPL Viewer]]: +0 ~13 -0
+- 2026-11-19 [[brain/projects/zpl-viewer|ZPL Viewer]]: +2 ~10 -0
+    - [[zpl-viewer/SECURITY|Security Policy]]
+    - [[zpl-viewer/docs/amendments/0002-mission-statement|0002 — Missions]]
     - [[zpl-viewer/AGENTS|zpl-viewer]]
-    - [[zpl-viewer/CLAUDE|zpl-viewer]]
-    - [[zpl-viewer/PRD|PRD — Label Studio (zpl-viewer)]]
-- 2026-11-18 [[brain/projects/zer0-CMS|Zer0 CMS]]: +2 ~281 -0
-    - [[zer0-CMS/docs/amendments/0003-mission-statement|0003 — Missions]]
-    - [[zer0-CMS/docs/plan/newsroom-journalism-discovery|Newsroom and journalism platform — discovery]]
-    - [[zer0-CMS/AGENTS|zer0-CMS]]
-- 2026-11-18 [[brain/projects/vs-sonic-pi|VS Sonic Pi]]: +1 ~13 -0
-    - [[vs-sonic-pi/docs/amendments/0002-mission-statement|0002 — Missions]]
-    - [[vs-sonic-pi/AGENTS|vs-sonic-pi]]
-    - [[vs-sonic-pi/CLAUDE|vs-sonic-pi]]
-- 2026-11-18 [[brain/projects/SCHEMA|SCHEMA Protocol]]: +0 ~12 -0
-    - [[SCHEMA/AGENTS|SCHEMA]]
-    - [[SCHEMA/CLAUDE|SCHEMA]]
+- 2026-11-18 [[brain/projects/zer0-CMS|Zer0 CMS]]: +0 ~5 -0
+    - [[zer0-CMS/CHANGELOG|Changelog]]
+    - [[zer0-CMS/docs/CICD|SDLC / CI]]
+    - [[zer0-CMS/docs/plan/PLAN|PLAN: zer0-CMS → one Python platform with a React frontend (ADR 0006)]]
+- 2026-11-22 [[brain/projects/SCHEMA|SCHEMA Protocol]]: +1 ~6 -0
+    - [[SCHEMA/docs/amendments/0002-agents-md-precedence|0002 — AGENTS.md is the how-to-work document, and the quality gates are the CI gate]]
+    - [[SCHEMA/CHANGELOG|Changelog]]
     - [[SCHEMA/PRD|PRD — Pyramid Schema (SCHEMA)]]
-- 2026-11-18 [[brain/projects/rewind-arcade|Rewind Arcade]]: +0 ~19 -0
-    - [[rewind-arcade/AGENTS|rewind-arcade]]
-    - [[rewind-arcade/CLAUDE|rewind-arcade]]
-    - [[rewind-arcade/PRD|PRD — Rewind Arcade]]
-- 2026-11-18 [[brain/projects/outbox|Outbox]]: +1 ~12 -0
-    - [[outbox/SECURITY|Security Policy]]
+- 2026-11-18 [[brain/projects/rewind-arcade|Rewind Arcade]]: +5 ~20 -0
+    - [[rewind-arcade/docs/amendments/0002-mission-statement|0002 — Missions]]
+    - [[rewind-arcade/docs/library|The game library]]
+    - [[rewind-arcade/emulate/docs/development|Development harness]]
+- 2026-11-18 [[brain/projects/outbox|Outbox]]: +1 ~7 -0
+    - [[outbox/docs/amendments/0002-mission-statement|0002 — Missions]]
     - [[outbox/AGENTS|outbox]]
-    - [[outbox/CLAUDE|outbox]]
-- 2026-11-18 [[brain/projects/ocrmd|OCRmd]]: +1 ~16 -0
-    - [[ocrmd/SECURITY|Security Policy]]
+    - [[outbox/CHANGELOG|Changelog]]
+- 2026-11-19 [[brain/projects/ocrmd|OCRmd]]: +1 ~8 -0
+    - [[ocrmd/docs/amendments/0002-mission-statement|0002 — Missions]]
     - [[ocrmd/AGENTS|ocrmd]]
-    - [[ocrmd/CLAUDE|ocrmd]]
-- 2026-11-18 [[brain/projects/lifehacker.dev|Lifehacker]]: +0 ~16 -0
+    - [[ocrmd/CHANGELOG|Changelog]]
+- 2026-11-18 [[brain/projects/lifehacker.dev|Lifehacker]]: +1 ~10 -0
+    - [[lifehacker.dev/docs/amendments/0003-mission-statement|0003 — Missions]]
     - [[lifehacker.dev/AGENTS|lifehacker.dev]]
-    - [[lifehacker.dev/AI_USAGE|AI Usage & Cost]]
-    - [[lifehacker.dev/CLAUDE|lifehacker.dev]]
-- 2026-11-18 [[brain/projects/law-ai|Law AI]]: +1 ~33 -0
-    - [[law-ai/docs/amendments/0003-mission-statement|0003 — Missions]]
-    - [[law-ai/AGENTS|Law AI — Agent Coding Instructions]]
-    - [[law-ai/BACKLOG|Law AI — Backlog]]
+    - [[lifehacker.dev/CHANGELOG|Changelog]]
+- 2026-11-19 [[brain/projects/law-ai|Law AI]]: +8 ~10 -0
+    - [[law-ai/backend/law_ai/agents_runtime/prompts/lawmode/accessibility.v1|lawmode accessibility — WCAG in user-interface code]]
+    - [[law-ai/backend/law_ai/agents_runtime/prompts/lawmode/copyright.v1|lawmode copyright — copying, attribution and trademarks]]
+    - [[law-ai/backend/law_ai/agents_runtime/prompts/lawmode/domain.v1|lawmode domain — the industry the code serves]]
+- 2026-11-18 [[brain/projects/godotgo|GodotGo]]: +0 ~5 -0
+    - [[godotgo/AGENTS|godotgo]]
+    - [[godotgo/CHANGELOG|Changelog]]
+    - [[godotgo/README|GodotGo]]
+- 2026-11-19 [[brain/projects/gitorio|Gitorio]]: +0 ~4 -0
+    - [[gitorio/BACKLOG|GitFactory — Backlog]]
+    - [[gitorio/CHANGELOG|Changelog]]
+    - [[gitorio/docs/README|gitorio documentation]]
 
 ## Most linked pages
 

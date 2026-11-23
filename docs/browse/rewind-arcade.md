@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Rewind Arcade - content map
 
-Every published page in [`docs/rewind-arcade/`](../rewind-arcade/) as it appears in the sidebar: **76 pages** across **11 sections** (max depth 3).
+Every published page in [`docs/rewind-arcade/`](../rewind-arcade/) as it appears in the sidebar: **81 pages** across **12 sections** (max depth 3).
 
 - [Rewind Arcade](../rewind-arcade/README.md)
 - [Changelog](../rewind-arcade/CHANGELOG.md)
@@ -25,16 +25,18 @@ Every published page in [`docs/rewind-arcade/`](../rewind-arcade/) as it appears
     - [Data dictionary](../rewind-arcade/catalog/docs/data-dictionary.md)
     - [Matching](../rewind-arcade/catalog/docs/matching.md)
     - [Systems](../rewind-arcade/catalog/docs/systems.md)
-- **[Documentation](../rewind-arcade/docs/README.md)** <small>(19)</small>
+- **[Documentation](../rewind-arcade/docs/README.md)** <small>(21)</small>
   - [rewind-arcade documentation](../rewind-arcade/docs/README.md)
   - [Architecture](../rewind-arcade/docs/architecture.md)
   - [Formats](../rewind-arcade/docs/formats.md)
   - [Getting started](../rewind-arcade/docs/getting-started.md)
   - [Legal](../rewind-arcade/docs/legal.md)
   - [rewind-arcade — Constitution](../rewind-arcade/docs/constitution.md)
-  - **[Amendments — rewind-arcade](../rewind-arcade/docs/amendments/README.md)** <small>(3)</small>
+  - [The game library](../rewind-arcade/docs/library.md)
+  - **[Amendments — rewind-arcade](../rewind-arcade/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — rewind-arcade](../rewind-arcade/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../rewind-arcade/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../rewind-arcade/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../rewind-arcade/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../rewind-arcade/docs/adr/README.md)** <small>(3)</small>
     - [Architecture Decision Records](../rewind-arcade/docs/adr/README.md)
@@ -48,29 +50,33 @@ Every published page in [`docs/rewind-arcade/`](../rewind-arcade/) as it appears
     - [Nintendo](../rewind-arcade/docs/systems/nintendo.md)
     - [Sega](../rewind-arcade/docs/systems/sega.md)
     - [Sony](../rewind-arcade/docs/systems/sony.md)
-- **[Emulate — retro-pi](../rewind-arcade/emulate/README.md)** <small>(21)</small>
+- **[Emulate — retro-pi](../rewind-arcade/emulate/README.md)** <small>(24)</small>
   - [Emulate — retro-pi](../rewind-arcade/emulate/README.md)
   - [BIOS / firmware](../rewind-arcade/emulate/bios/README.md)
   - [Containerized verification](../rewind-arcade/emulate/docker/README.md)
   - [Contributing](../rewind-arcade/emulate/CONTRIBUTING.md)
   - [emulate (AGENTS)](../rewind-arcade/emulate/AGENTS.md)
   - [emulate (CLAUDE)](../rewind-arcade/emulate/CLAUDE.md)
-  - [Packages](../rewind-arcade/emulate/packages/example-pack/README.md)
   - [ROMs](../rewind-arcade/emulate/roms/README.md)
-  - **[Documentation](../rewind-arcade/emulate/docs/README.md)** <small>(13)</small>
+  - **[Documentation](../rewind-arcade/emulate/docs/README.md)** <small>(15)</small>
     - [Documentation](../rewind-arcade/emulate/docs/README.md)
     - [Adding a system](../rewind-arcade/emulate/docs/adding-systems.md)
     - [Architecture](../rewind-arcade/emulate/docs/architecture.md)
     - [Command reference](../rewind-arcade/emulate/docs/commands.md)
     - [Configuration](../rewind-arcade/emulate/docs/configuration.md)
     - [Debian and Ubuntu](../rewind-arcade/emulate/docs/debian.md)
+    - [Development harness](../rewind-arcade/emulate/docs/development.md)
     - [Driving retro-pi's emulators from a reinforcement learning loop](../rewind-arcade/emulate/docs/ml-integration-plan.md)
     - [ES-DE (EmulationStation Desktop Edition)](../rewind-arcade/emulate/docs/emulationstation.md)
     - [Getting started](../rewind-arcade/emulate/docs/getting-started.md)
     - [Legal notes](../rewind-arcade/emulate/docs/legal.md)
     - [macOS](../rewind-arcade/emulate/docs/macos.md)
     - [Raspberry Pi](../rewind-arcade/emulate/docs/raspberry-pi.md)
+    - [SteamOS](../rewind-arcade/emulate/docs/steamos.md)
     - [Troubleshooting](../rewind-arcade/emulate/docs/troubleshooting.md)
+  - **Packages** <small>(2)</small>
+    - [example-pack](../rewind-arcade/emulate/packages/example-pack/README.md)
+    - [ml](../rewind-arcade/emulate/packages/ml/README.md)
 - **[Play — Rewind Arcade](../rewind-arcade/arcade/README.md)** <small>(3)</small>
   - [Play — Rewind Arcade](../rewind-arcade/arcade/README.md)
   - [arcade (AGENTS)](../rewind-arcade/arcade/AGENTS.md)

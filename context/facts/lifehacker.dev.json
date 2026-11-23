@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 138,
-    "fingerprint": "f6bbfee6027e0701",
+    "file_count": 139,
+    "fingerprint": "3bd8323e14b2a533",
     "path": "docs/lifehacker.dev",
     "present": true,
-    "total_bytes": 1268491
+    "total_bytes": 1278201
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -21,7 +21,7 @@
       "Contributing"
     ],
     "readme": "README.md",
-    "summary": "Surviving life, one byte at a time. Knowledge, tools, and comedy \u2014 published by a robot, reviewed by a human, shipped with the mistakes left in.",
+    "summary": "lifehacker.dev's direction is to become the ultimate open home for all things practical technology: data, tools, resources and transparency, with hacks, tools and field notes that keep satire in the framing and never in the facts, and a human-gated publishing loop for everyone (constitution \u00a71).",
     "title": "lifehacker.dev"
   },
   "key_docs": [
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/lifehacker.dev.md",
-    "fingerprint": "1587a747f10b0283",
+    "fingerprint": "cfcdf32cb8bf3459",
     "index": "lifehacker.dev/index.md",
     "max_depth": 4,
-    "pages": 137,
+    "pages": 138,
     "present": true,
     "sections": 12,
     "skipped": 1,
@@ -47,7 +47,7 @@
     "top_sections": [
       {
         "index": "lifehacker.dev/docs/README.md",
-        "pages": 26,
+        "pages": 27,
         "path": "docs",
         "title": "Documentation",
         "type": "section"
@@ -89,7 +89,7 @@
   },
   "rollups": {
     "categories": {
-      "lifehacker.dev": 138
+      "lifehacker.dev": 139
     },
     "code_languages": [
       "console",
@@ -101,12 +101,12 @@
       "json",
       "mermaid"
     ],
-    "indexed_documents": 138,
+    "indexed_documents": 139,
     "top_tags": [
       "news",
       "ai"
     ],
-    "total_words": 192441
+    "total_words": 193851
   },
   "schema_version": "1.0",
   "signals": {
@@ -134,7 +134,7 @@
         "name": "pages"
       },
       {
-        "doc_count": 26,
+        "doc_count": 27,
         "name": "docs"
       },
       {

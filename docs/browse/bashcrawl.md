@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Bash Crawl - content map
 
-Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **80 pages** across **16 sections** (max depth 3).
+Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the sidebar: **81 pages** across **16 sections** (max depth 3).
 
 - **Repository & tooling** <small>(2)</small>
   - **[Bashcrawl Help System](../bashcrawl/src/help/README.md)** <small>(2)</small>
@@ -61,7 +61,7 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
     - [Making things](../bashcrawl/courses/workshop/01-make.md)
     - [Removing things](../bashcrawl/courses/workshop/03-remove.md)
     - [Writing files from the shell](../bashcrawl/courses/workshop/05-write.md)
-- **[Documentation](../bashcrawl/docs/README.md)** <small>(35)</small>
+- **[Documentation](../bashcrawl/docs/README.md)** <small>(36)</small>
   - [Bashcrawl documentation](../bashcrawl/docs/README.md)
   - [Advanced Topics](../bashcrawl/docs/advanced.md)
   - [Authoring Courses](../bashcrawl/docs/authoring-courses.md)
@@ -72,9 +72,10 @@ Every published page in [`docs/bashcrawl/`](../bashcrawl/) as it appears in the 
   - [Gameplay Guide](../bashcrawl/docs/gameplay.md)
   - [Getting Started](../bashcrawl/docs/getting-started.md)
   - [The Bashcrawl Platform](../bashcrawl/docs/PLATFORM.md)
-  - **[Amendments — bashcrawl](../bashcrawl/docs/amendments/README.md)** <small>(4)</small>
+  - **[Amendments — bashcrawl](../bashcrawl/docs/amendments/README.md)** <small>(5)</small>
     - [Amendments — bashcrawl](../bashcrawl/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../bashcrawl/docs/amendments/0001-ratify-constitution.md)
+    - [0003 — Missions](../bashcrawl/docs/amendments/0003-mission-statement.md)
     - [NEW — Agent merge of mergeable PRs, and a review gate](../bashcrawl/docs/amendments/proposed/agent-merge-review-gate.md)
     - [NNNN — Title of the amendment](../bashcrawl/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../bashcrawl/docs/adr/README.md)** <small>(3)</small>

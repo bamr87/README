@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Brain - content map
 
-Every published page in [`docs/brain/`](../brain/) as it appears in the sidebar: **182 pages** across **2 sections** (max depth 2).
+Every published page in [`docs/brain/`](../brain/) as it appears in the sidebar: **183 pages** across **2 sections** (max depth 2).
 
 - [Second Brain](../brain/index.md)
 - [All pages](../brain/pages.md)
@@ -20,6 +20,7 @@ Every published page in [`docs/brain/`](../brain/) as it appears in the sidebar:
 - [Reading the vault](../brain/notes/reading-the-vault.md)
 - [Tags](../brain/tags.md)
 - [Vault health](../brain/health.md)
+- [Workspace](../brain/workspace.md)
 - **Concepts** <small>(150)</small>
   - [About](../brain/concepts/about.md)
   - [Accessibility](../brain/concepts/accessibility.md)

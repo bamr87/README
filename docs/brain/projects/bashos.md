@@ -2,7 +2,7 @@
 category: brain
 generated: true
 kind: project
-pages: 80
+pages: 2688
 repo: bamr87/bashos
 tags:
 - brain/project
@@ -16,22 +16,22 @@ title: BashOS
 > [!info] tooling: `bamr87/bashos`
 > Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine.
 
-**80** pages collected from commit `8b220e1762ae` (2026-11-18).
+**2688** pages collected from commit `2680f58f3a3d` (2026-11-19).
 
 ## Most connected pages
 
+- [[bashos/amrchy/README|Omarchy]]
 - [[bashos/one-os/docs/README|one-os documentation]]
-- [[bashos/README|bashOS]]
 - [[bashos/AGENTS|bashos]]
-- [[bashos/docs/constitution|bashos — Constitution]]
-- [[bashos/docs/adr/0004-one-os|ADR 0004 — one-os lives in bashos: one tool to build, boot, manage and deploy machines]]
-- [[bashos/docs/frontend/README|bashOS L6 OS Shell — Frontend Docs]]
-- [[bashos/one-os/docs/epics/0001-bashos-and-amrchy|Epic: bashOS and Amrchy as bootable systems]]
-- [[bashos/one-os/docs/user-guide/01-getting-started|Getting started]]
-- [[bashos/docs/HARNESS|The bashOS Orchestration Harness]]
-- [[bashos/docs/OS|bashOS, the operating system]]
-- [[bashos/docs/adr/0002-bashos-os-debian-mkosi|ADR 0002 — bashOS the OS is an Omarchy-style layer on Debian 13, imaged with mkosi]]
-- [[bashos/docs/adr/README|Architecture Decision Records]]
+- [[bashos/README|bashOS]]
+- [[bashos/amrchy/manual/03-coming-from-mac-or-windows|Coming From Mac or Windows]]
+- [[bashos/amrchy/manual/ar/03-coming-from-mac-or-windows|الانتقال من Mac أو Windows]]
+- [[bashos/amrchy/manual/bg/03-coming-from-mac-or-windows|Идваш от Mac или Windows]]
+- [[bashos/amrchy/manual/bn/03-coming-from-mac-or-windows|Mac বা Windows থেকে আসছেন]]
+- [[bashos/amrchy/manual/ca/03-coming-from-mac-or-windows|Si véns de Mac o Windows]]
+- [[bashos/amrchy/manual/cs/03-coming-from-mac-or-windows|Přecházíte z Macu nebo Windows]]
+- [[bashos/amrchy/manual/da/03-coming-from-mac-or-windows|Kommer du fra Mac eller Windows]]
+- [[bashos/amrchy/manual/de/03-coming-from-mac-or-windows|Von Mac oder Windows kommen]]
 
 ## Concepts
 

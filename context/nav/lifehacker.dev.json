@@ -5,7 +5,7 @@
   "title": "Lifehacker",
   "corpus": "docs/lifehacker.dev",
   "counts": {
-    "pages": 137,
+    "pages": 138,
     "sections": 12,
     "max_depth": 4,
     "skipped": 1
@@ -13,12 +13,12 @@
   "skipped": [
     "README.md"
   ],
-  "fingerprint": "1587a747f10b0283",
+  "fingerprint": "cfcdf32cb8bf3459",
   "tree": {
     "type": "section",
     "title": "Lifehacker",
     "index": "lifehacker.dev/index.md",
-    "pages": 137,
+    "pages": 138,
     "children": [
       {
         "type": "page",
@@ -82,7 +82,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "lifehacker.dev/docs/README.md",
-        "pages": 26,
+        "pages": 27,
         "children": [
           {
             "type": "page",
@@ -188,7 +188,7 @@
             "title": "Amendments \u2014 lifehacker.dev",
             "rel": "docs/amendments",
             "index": "lifehacker.dev/docs/amendments/README.md",
-            "pages": 4,
+            "pages": 5,
             "children": [
               {
                 "type": "page",
@@ -208,6 +208,12 @@
                 "title": "0002 \u2014 Reflow the constitution to one paragraph per line (editorial, no\u2026",
                 "path": "lifehacker.dev/docs/amendments/0002-reflow-to-one-paragraph-per-line.md",
                 "rel": "docs/amendments/0002-reflow-to-one-paragraph-per-line.md"
+              },
+              {
+                "type": "page",
+                "title": "0003 \u2014 Missions",
+                "path": "lifehacker.dev/docs/amendments/0003-mission-statement.md",
+                "rel": "docs/amendments/0003-mission-statement.md"
               },
               {
                 "type": "page",

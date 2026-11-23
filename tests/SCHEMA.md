@@ -19,6 +19,7 @@ coverage: listed
 | `config.py` | file | Test configuration (integration repos, output paths) | required |
 | `fixtures/` | dir | Test data and fixtures | |
 | `integration/` | dir | Integration tests of the collect stage (`test_repo_runner.py` clones real repos; network required) | terminal |
+| `js/` | dir | Node suites for the browser logic in `brain_site/assets` (`node --test`, no dependencies); run by `unit/test_cases/test_brain_site.py` | terminal |
 | `results/` | dir | Runner output, gitignored, created per run | generated |
 | `test-docs/` | dir | Sample markdown fixtures | terminal |
 | `test_runner.py` | file | Main runner (`--type` unit, integration, all, quick) | required |

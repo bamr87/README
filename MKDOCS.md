@@ -13,7 +13,7 @@ This repo (`bamr87/README`) builds a standalone [MkDocs Material](https://squidf
 | [`mkdocs.yml`](mkdocs.yml) | Site config — theme, extensions, `docs_dir: docs`, `site_url`; pulls the nav in with `INHERIT: ./nav.yml` |
 | [`nav.yml`](nav.yml) | **Generated** — the `nav` tree and the `exclude_docs` rules, rendered by the context engine's navigator |
 | [`overrides/`](overrides/) | Hand-written theme overrides wired by `theme.custom_dir`: `main.html` (SEO and Open Graph meta, skip link, the development-only page bridge), `404.html`, `assets/fleet-tokens.css` (design tokens, registered under `extra_css`) |
-| [`brain_site/hook.py`](brain_site/hook.py) | MkDocs hook: resolves `[[wikilinks]]` and callouts, adds backlinks, publishes the graph and its views |
+| [`brain_site/hook.py`](brain_site/hook.py) | MkDocs hook: resolves `[[wikilinks]]` and callouts, adds backlinks, publishes the graph and the browser assets in [`brain_site/assets/`](brain_site/assets/) (the views in `brain.js`, the workspace in `workspace.js`) |
 | [`requirements-docs.txt`](requirements-docs.txt) | Site build deps (`mkdocs`, `mkdocs-material`, `pymdown-extensions`); the hook also needs `requirements.txt` |
 | [`.github/workflows/deploy-pages.yaml`](.github/workflows/deploy-pages.yaml) | Builds and deploys to GitHub Pages |
 | [`docs/`](docs/) | Source content (generated; one folder per aggregated repo) |
@@ -64,6 +64,7 @@ These overrides cover UPS-FE-01, UPS-FE-11 and UPS-FE-25. UPS-FE-15 (no 404 page
 
 | Obsidian | On the site | Where |
 |---|---|---|
+| The app window | `/brain/workspace/`: files, tabs, split panes, links, outline, commands | `workspace.js` (next section) |
 | Wikilinks, callouts | Links and admonitions | `hook.py`, at render time; `docs/` is not changed |
 | Graph view | `/brain/graph/`: filter, groups, forces, orphans | `brain.js` on `/brain/graph/` |
 | Local graph | Right sidebar of each page | `brain.js` |
@@ -75,6 +76,27 @@ These overrides cover UPS-FE-01, UPS-FE-11 and UPS-FE-25. UPS-FE-15 (no 404 page
 | Tag pane | `/brain/tags/` | generated |
 
 Everything re-attaches on `document$`, because `navigation.instant` swaps pages without a reload. A build needs `context/vault/graph.json`, so run `python3 -m scripts.context_engine build` first. To use the vault in the app, open `docs/` as a vault; the graph colours and core plugins are in `docs/.obsidian/`.
+
+### The workspace
+
+`/brain/workspace/` lays the vault out the way the Obsidian app does, in the browser, with nothing to install. The header button with the three columns opens it from any page.
+
+| Part | What it does |
+|---|---|
+| Ribbon | Switches the left sidebar between files, search, tags and bookmarks; opens the graph, the canvas, the quick switcher and the command palette; leaves the workspace |
+| Files | The vault's folders, one colour per repository as in the graph. Only the rows on screen exist, so 4,000 notes scroll like 40. Arrow keys move, Enter opens |
+| Search | Titles, tags, paths and summaries, ranked. `tag:`, `project:`, `kind:` and `path:` narrow it, quotes keep a phrase together and a leading minus excludes. Page text stays with the header search |
+| Tabs and panes | A click opens a note in the current tab and keeps its history; Ctrl or Cmd with a click opens a new tab; `Split right` puts up to three panes side by side |
+| Note details | The note's local graph (one to three links away), backlinks, outgoing links, outline and properties |
+| Command palette | `Ctrl+P` / `Cmd+P`: every action above by name, with its key |
+
+It adds no second renderer and no second resolver. A note in a tab is the article of the page MkDocs already built for it, fetched and placed in the tab, so wikilinks, callouts and code look as they do on the page; the explorer, the search and the links all come from `assets/brain/graph.json`. What the published page cannot do without Material's own scripts (Mermaid diagrams, the code copy button) the tab does not do either; `Open on the site` is one click away.
+
+The address is the note: `/brain/workspace/#/it-journey/README.md` opens that note, and `#/graph` and `#/canvas` open those views, so a link to the workspace can be a link to a note. Open tabs, the sidebars, bookmarks and recent notes are kept in the reader's own `localStorage` (key `brain-workspace`) and nowhere else: the workspace makes no request but a GET for the graph and the pages. A saved layout is checked against the current graph when it is restored, so a note a later build removed is dropped rather than shown broken.
+
+Under 760 pixels the workspace shows one pane, puts the ribbon along the bottom and turns the sidebars into drawers.
+
+The logic with no DOM in it (the folder tree, the search, the saved layout) is at the top of `workspace.js` and is what `tests/js/workspace.test.cjs` loads under node; `tests/unit/test_cases/test_brain_site.py` runs that suite, checks both scripts parse, and fails if a generated view page asks for a view the browser does not have. A new view is a function that takes a host element and returns `{ destroy() }`: add it to `BrainVault.views` in `brain.js`, or call `BrainVault.register(name, mount)` from a script loaded after it, and list the script in `SCRIPTS` in `hook.py`.
 
 ## Deployment (GitHub Pages)
 

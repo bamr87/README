@@ -5,18 +5,18 @@
   "title": "Personal Site",
   "corpus": "docs/bamr87.github.io",
   "counts": {
-    "pages": 94,
+    "pages": 96,
     "sections": 19,
     "max_depth": 5,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "9dbe4519b0f1f8cd",
+  "fingerprint": "3cff8641271e7da5",
   "tree": {
     "type": "section",
     "title": "Personal Site",
     "index": "bamr87.github.io/README.md",
-    "pages": 94,
+    "pages": 96,
     "children": [
       {
         "type": "page",
@@ -68,7 +68,7 @@
         "title": "Documentation",
         "rel": "docs",
         "index": "bamr87.github.io/docs/README.md",
-        "pages": 9,
+        "pages": 10,
         "children": [
           {
             "type": "page",
@@ -95,7 +95,7 @@
             "title": "Amendments \u2014 bamr87.github.io",
             "rel": "docs/amendments",
             "index": "bamr87.github.io/docs/amendments/README.md",
-            "pages": 3,
+            "pages": 4,
             "children": [
               {
                 "type": "page",
@@ -109,6 +109,12 @@
                 "title": "0001 \u2014 Ratify the constitution",
                 "path": "bamr87.github.io/docs/amendments/0001-ratify-constitution.md",
                 "rel": "docs/amendments/0001-ratify-constitution.md"
+              },
+              {
+                "type": "page",
+                "title": "0002 \u2014 Missions",
+                "path": "bamr87.github.io/docs/amendments/0002-mission-statement.md",
+                "rel": "docs/amendments/0002-mission-statement.md"
               },
               {
                 "type": "page",
@@ -153,7 +159,7 @@
         "title": "Home",
         "rel": "pages",
         "index": "bamr87.github.io/pages/home.md",
-        "pages": 78,
+        "pages": 79,
         "children": [
           {
             "type": "page",
@@ -161,6 +167,13 @@
             "path": "bamr87.github.io/pages/home.md",
             "rel": "pages/home.md",
             "is_index": true
+          },
+          {
+            "type": "page",
+            "title": "placeholders",
+            "path": "bamr87.github.io/pages/_drafts/placeholders.md",
+            "rel": "pages/_drafts/placeholders.md",
+            "folder": "pages/_drafts"
           },
           {
             "type": "page",

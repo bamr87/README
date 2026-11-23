@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: fd132b1a44c3413f
+source_fingerprint: 86bb7f9bd080297d
 tags:
   - agentic-ai
   - ai
@@ -22,7 +22,7 @@ tags:
 
 # bashOS
 
-> Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine.
+> Terminal-first AI runtime that routes Claude slash commands through a LangGraph kernel onto the OpenCode engine. bashOS's direction is to become the ultimate open home for all things terminal-first AI runtime: data, tools, resources and transparency, with an inspectable kernel for slash commands and a GUI that sits beside the terminal, not above it, for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -30,7 +30,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bashos` - 80 docs |
+| Corpus | `docs/bashos` - 2688 docs |
 | External | no |
 
 ## Signals
@@ -40,16 +40,17 @@ tags:
 - has a contribution guide
 - keeps a changelog
 - has a security policy
-- ~70,196 words across 80 indexed documents
-- code samples in: bash, plaintext, mermaid, ts, text, json, js, markdown
+- ~2,117,942 words across 2688 indexed documents
+- code samples in: plaintext, bash, lua, json, toml, jsonc, ini, text
 
 ## Navigation
 
-80 published pages in 15 sections (max depth 4) — [browse the full map](../../docs/browse/bashos.md) · [tree as JSON](../nav/bashos.json)
+2688 published pages in 78 sections (max depth 6) — [browse the full map](../../docs/browse/bashos.md) · [tree as JSON](../nav/bashos.json)
 
 - **chui** (3 pages)
-- **Documentation** (26 pages)
-- **one-os** (40 pages)
+- **Documentation** (30 pages)
+- **Omarchy** (2603 pages)
+- **one-os** (41 pages)
 - **os — bashOS as the operating system** (4 pages)
 
 ## Key documents
@@ -60,8 +61,8 @@ tags:
 - [`CONTRIBUTING.md`](../../docs/bashos/CONTRIBUTING.md)
 - [`CHANGELOG.md`](../../docs/bashos/CHANGELOG.md)
 - [`SECURITY.md`](../../docs/bashos/SECURITY.md)
-- [`docs/frontend/posthog-os-research.md`](../../docs/bashos/docs/frontend/posthog-os-research.md)
-- [`one-os/PLAN.md`](../../docs/bashos/one-os/PLAN.md)
+- [`amrchy/docs/elsewhen.md`](../../docs/bashos/amrchy/docs/elsewhen.md)
+- [`amrchy/docs/file-layout.md`](../../docs/bashos/amrchy/docs/file-layout.md)
 
 ## Query this context
 

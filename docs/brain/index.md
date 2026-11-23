@@ -15,6 +15,7 @@ The fleet's documentation as one linked knowledge base. Open `docs/` as a vault 
 
 | View | What it shows |
 |---|---|
+| [[brain/workspace\|Workspace]] | The vault as one window: files, tabs, links and graph |
 | [[brain/graph\|Graph view]] | Every note and link |
 | [[brain/canvas\|Canvas]] | Projects and the concepts they share |
 | [[brain/pages\|All pages]] | A sortable table of the vault |
@@ -114,7 +115,7 @@ The fleet's documentation as one linked knowledge base. Open `docs/` as a vault 
 - [[brain/concepts/github-actions|Github Actions]] (26)
 - [[brain/concepts/github-pages|Github Pages]] (41)
 - [[brain/concepts/glossary|Glossary]] (6)
-- [[brain/concepts/governance|Governance]] (9)
+- [[brain/concepts/governance|Governance]] (10)
 - [[brain/concepts/hosting|Hosting]] (7)
 - [[brain/concepts/html|Html]] (5)
 - [[brain/concepts/http|Http]] (6)

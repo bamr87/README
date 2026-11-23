@@ -16,7 +16,7 @@ title: Gitorio
 > [!info] app: `bamr87/gitorio`
 > Factorio-style factory builder for GitHub automation: blueprints compile to Actions workflows running Claude Code.
 
-**145** pages collected from commit `c324d78d8e38` (2026-11-18).
+**145** pages collected from commit `1679e35e0fa2` (2026-11-19).
 
 ## Most connected pages
 
@@ -27,11 +27,11 @@ title: Gitorio
 - [[gitorio/PRD|PRD — gitorio (GitFactory)]]
 - [[gitorio/docs/amendments/README|Amendments — gitorio]]
 - [[gitorio/packages/git-with-the-program/CONTRIBUTING|Contributing to Git with the Program]]
-- [[gitorio/docs/README|gitorio documentation]]
 - [[gitorio/packages/gitnexus/README|Nexus Forge (gitnexus)]]
 - [[gitorio/packages/wtd/README|🚀 WTD – What To Do]]
 - [[gitorio/specs/README|Specs — spec-driven development for GitFactory]]
 - [[gitorio/specs/_template/plan|Plan: {Feature Name}]]
+- [[gitorio/specs/_template/spec|Spec: {Feature Name}]]
 
 ## Concepts
 

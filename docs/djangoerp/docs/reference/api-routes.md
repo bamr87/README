@@ -51,20 +51,20 @@ Paths are relative to the host (`http://localhost:8000` in development). Every `
 | GET POST | `/api/journal/entries/` | `JournalEntryViewSet.list/create` | `IsAuthenticated`, `IsAccountant` | API endpoint for journal entries |
 | GET PUT PATCH DELETE | `/api/journal/entries/{pk}/` | `JournalEntryViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated`, `IsAccountant` | — |
 | POST | `/api/journal/entries/{pk}/reverse/` | `JournalEntryViewSet.reverse_entry` | `IsAuthenticated`, `IsAccountant` | Post a reversing entry for this posted manual entry: the same lines with debits and credits swapped, linked through `reverses`. 201 the first time; a repeat call returns the same reversal with 200. Optional body: {"date": "YYYY-MM-DD", "description": "..."}. |
-| GET | `/api/journal/lines/` | `JournalLineViewSet.list` | `IsAuthenticated` | API endpoint for journal lines (read-only) |
-| GET | `/api/journal/lines/{pk}/` | `JournalLineViewSet.retrieve` | `IsAuthenticated` | — |
+| GET | `/api/journal/lines/` | `JournalLineViewSet.list` | `IsAuthenticated`, `IsAccountantOrAuditorReadOnly` | API endpoint for journal lines (read-only) |
+| GET | `/api/journal/lines/{pk}/` | `JournalLineViewSet.retrieve` | `IsAuthenticated`, `IsAccountantOrAuditorReadOnly` | — |
 | GET | `/api/journal/` | `APIRootView` | `IsAuthenticated` | Provided by `rest_framework`. |
 
 ## `/api/invoices/`
 
 | Method | Path | View | Access | Summary |
 | --- | --- | --- | --- | --- |
-| GET POST | `/api/invoices/invoices/` | `InvoiceViewSet.list/create` | `IsAuthenticated` | — |
-| GET PUT PATCH DELETE | `/api/invoices/invoices/{pk}/` | `InvoiceViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated` | — |
-| POST | `/api/invoices/invoices/{pk}/post/` | `InvoiceViewSet.post_to_ledger` | `IsAuthenticated`, `IsAccountant` | Post the invoice to the general ledger (Dr partner receivable, Cr revenue). Optional body: {"posting_date": "YYYY-MM-DD"}. |
-| GET POST | `/api/invoices/payments/` | `PaymentViewSet.list/create` | `IsAuthenticated` | — |
-| GET PUT PATCH DELETE | `/api/invoices/payments/{pk}/` | `PaymentViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated` | — |
-| POST | `/api/invoices/payments/{pk}/post/` | `PaymentViewSet.post_to_ledger` | `IsAuthenticated`, `IsAccountant` | Post the payment to the general ledger (Dr deposit account, Cr partner receivable). |
+| GET POST | `/api/invoices/invoices/` | `InvoiceViewSet.list/create` | `IsAuthenticated`, `IsAccountantOrAuditorReadOnly` | — |
+| GET PUT PATCH DELETE | `/api/invoices/invoices/{pk}/` | `InvoiceViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated`, `IsAccountantOrAuditorReadOnly` | — |
+| POST | `/api/invoices/invoices/{pk}/post/` | `InvoiceViewSet.post_to_ledger` | `IsAuthenticated`, `IsAccountantOrAuditorReadOnly` | Post the invoice to the general ledger (Dr partner receivable, Cr revenue). Optional body: {"posting_date": "YYYY-MM-DD"}. |
+| GET POST | `/api/invoices/payments/` | `PaymentViewSet.list/create` | `IsAuthenticated`, `IsAccountantOrAuditorReadOnly` | — |
+| GET PUT PATCH DELETE | `/api/invoices/payments/{pk}/` | `PaymentViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated`, `IsAccountantOrAuditorReadOnly` | — |
+| POST | `/api/invoices/payments/{pk}/post/` | `PaymentViewSet.post_to_ledger` | `IsAuthenticated`, `IsAccountantOrAuditorReadOnly` | Post the payment to the general ledger (Dr deposit account, Cr partner receivable). |
 | GET | `/api/invoices/` | `APIRootView` | `IsAuthenticated` | Provided by `rest_framework`. |
 
 ## `/api/reports/`
@@ -73,9 +73,9 @@ Paths are relative to the host (`http://localhost:8000` in development). Every `
 | --- | --- | --- | --- | --- |
 | GET POST | `/api/reports/templates/` | `ReportTemplateViewSet.list/create` | GET `IsAuthenticated`; POST `IsAuthenticated`, `IsAccountant` | API endpoint for report templates |
 | GET PUT PATCH DELETE | `/api/reports/templates/{pk}/` | `ReportTemplateViewSet.retrieve/update/partial_update/destroy` | GET `IsAuthenticated`; PUT `IsAuthenticated`, `IsAccountant`; PATCH `IsAuthenticated`, `IsAccountant`; DELETE `IsAuthenticated`, `IsAccountant` | — |
-| GET POST | `/api/reports/saved-reports/` | `SavedReportViewSet.list/create` | `IsAuthenticated` | API endpoint for saved reports |
-| GET PUT PATCH DELETE | `/api/reports/saved-reports/{pk}/` | `SavedReportViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated` | — |
-| POST | `/api/reports/saved-reports/{pk}/regenerate/` | `SavedReportViewSet.regenerate` | `IsAuthenticated` | Regenerate a report with the same parameters |
+| GET POST | `/api/reports/saved-reports/` | `SavedReportViewSet.list/create` | `IsAuthenticated`, `IsAccountantOrReadOnly` | API endpoint for saved reports |
+| GET PUT PATCH DELETE | `/api/reports/saved-reports/{pk}/` | `SavedReportViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated`, `IsAccountantOrReadOnly` | — |
+| POST | `/api/reports/saved-reports/{pk}/regenerate/` | `SavedReportViewSet.regenerate` | `IsAuthenticated`, `IsAccountantOrReadOnly` | Regenerate a report with the same parameters |
 | GET | `/api/reports/` | `APIRootView` | `IsAuthenticated` | Provided by `rest_framework`. |
 
 ## `/api/partners/`
@@ -166,9 +166,59 @@ Paths are relative to the host (`http://localhost:8000` in development). Every `
 
 | Method | Path | View | Access | Summary |
 | --- | --- | --- | --- | --- |
-| GET POST | `/api/company/companies/` | `CompanyViewSet.list/create` | `IsAuthenticated` | API endpoint for the legal entity/entities this installation keeps books for |
-| GET PUT PATCH DELETE | `/api/company/companies/{pk}/` | `CompanyViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated` | — |
+| GET POST | `/api/company/companies/` | `CompanyViewSet.list/create` | `IsAuthenticated`, `IsAccountantOrReadOnly` | API endpoint for the legal entity/entities this installation keeps books for |
+| GET PUT PATCH DELETE | `/api/company/companies/{pk}/` | `CompanyViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated`, `IsAccountantOrReadOnly` | — |
 | GET | `/api/company/` | `APIRootView` | `IsAuthenticated` | Provided by `rest_framework`. |
+
+## `/api/simulation/`
+
+| Method | Path | View | Access | Summary |
+| --- | --- | --- | --- | --- |
+| GET POST | `/api/simulation/scenarios/` | `ScenarioViewSet.list/create` | `IsAuthenticated`, `IsAccountantOrReadOnly` | API endpoint for the agent simulation sandbox's scenario (one per database) |
+| GET PUT PATCH DELETE | `/api/simulation/scenarios/{pk}/` | `ScenarioViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated`, `IsAccountantOrReadOnly` | — |
+| POST | `/api/simulation/scenarios/{pk}/advance/` | `ScenarioViewSet.advance` | `IsAuthenticated`, `IsAccountantOrReadOnly` | Run the economy forward: body {"ticks": 1..120}. Each tick is one transaction; returns the KPI snapshots compiled after each tick. |
+| GET | `/api/simulation/scenarios/{pk}/dashboard/` | `ScenarioViewSet.dashboard` | `IsAuthenticated`, `IsAccountantOrReadOnly` | Everything the console's cockpit shows: KPIs, series, lines, agents, decisions, stock, jobs. |
+| GET | `/api/simulation/scenarios/{pk}/design/` | `ScenarioViewSet.design` | `IsAuthenticated`, `IsAccountantOrReadOnly` | The system map: agent roles, parameter catalogue, posting matrix, invariants and flows, live. |
+| GET | `/api/simulation/scenarios/{pk}/financials/` | `ScenarioViewSet.financials` | `IsAuthenticated`, `IsAccountantOrReadOnly` | Trial balance, balance sheet and income statements from the report generators, cost drivers, unit economics and reconciliations. Query: as_of, from (YYYY-MM-DD). |
+| GET | `/api/simulation/scenarios/{pk}/ledger/` | `ScenarioViewSet.ledger` | `IsAuthenticated`, `IsAccountantOrReadOnly` | General ledger for one account: ?account=<code>&from=&to=. |
+| POST | `/api/simulation/scenarios/{pk}/resume/` | `ScenarioViewSet.resume` | `IsAuthenticated`, `IsAccountantOrReadOnly` | Clear a guardrail halt so the scenario can advance again (the halted tick was rolled back). |
+| GET | `/api/simulation/scenarios/{pk}/trace/` | `ScenarioViewSet.trace` | `IsAuthenticated`, `IsAccountantOrReadOnly` | Agent decisions and journal entries behind a document reference: ?reference=SO-00012. |
+| GET POST | `/api/simulation/lines/` | `ProductionLineViewSet.list/create` | `IsAuthenticated`, `IsAccountantOrReadOnly` | API endpoint for production lines |
+| GET PUT PATCH DELETE | `/api/simulation/lines/{pk}/` | `ProductionLineViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated`, `IsAccountantOrReadOnly` | — |
+| POST | `/api/simulation/lines/{pk}/retire/` | `ProductionLineViewSet.retire` | `IsAuthenticated`, `IsAccountantOrReadOnly` | Retire the line: queued jobs move to a sister line, the asset is disposed of at book value. |
+| GET | `/api/simulation/agents/` | `AgentViewSet.list` | `IsAuthenticated`, `IsAccountantOrReadOnly` | API endpoint for simulation agents (the roster is created with the scenario) |
+| GET PUT PATCH | `/api/simulation/agents/{pk}/` | `AgentViewSet.retrieve/update/partial_update` | `IsAuthenticated`, `IsAccountantOrReadOnly` | — |
+| GET | `/api/simulation/decisions/` | `AgentDecisionViewSet.list` | `IsAuthenticated`, `IsAccountantOrReadOnly` | API endpoint for agent decisions (read-only): what each agent saw, chose and why, which brain decided, what it cost, and the documents it produced |
+| GET | `/api/simulation/decisions/{pk}/` | `AgentDecisionViewSet.retrieve` | `IsAuthenticated`, `IsAccountantOrReadOnly` | — |
+| GET | `/api/simulation/snapshots/` | `TickSnapshotViewSet.list` | `IsAuthenticated`, `IsAccountantOrReadOnly` | API endpoint for per-tick KPI snapshots compiled from the ledger (read-only) |
+| GET | `/api/simulation/snapshots/{pk}/` | `TickSnapshotViewSet.retrieve` | `IsAuthenticated`, `IsAccountantOrReadOnly` | — |
+| GET POST | `/api/simulation/experiments/` | `ExperimentViewSet.list/create` | `IsAuthenticated`, `IsAccountantOrReadOnly` | API endpoint for what-if experiments |
+| GET PUT PATCH DELETE | `/api/simulation/experiments/{pk}/` | `ExperimentViewSet.retrieve/update/partial_update/destroy` | `IsAuthenticated`, `IsAccountantOrReadOnly` | — |
+| GET | `/api/simulation/` | `APIRootView` | `IsAuthenticated` | Provided by `rest_framework`. |
+
+## `/api/workspace/`
+
+| Method | Path | View | Access | Summary |
+| --- | --- | --- | --- | --- |
+| GET | `/api/workspace/flow/{resource}/{object_id}/` | `WorkspaceViewSet.flow` | `IsAuthenticated` | Document flow for one business object: related documents, the journal entries and stock moves it caused, and its audit trail — each section only where the user's role may read it. |
+| GET | `/api/workspace/overview/` | `WorkspaceViewSet.overview` | `IsAuthenticated` | Home page: work queues, record counts and recent activity, for what this user may read. |
+| GET | `/api/workspace/registry/` | `WorkspaceViewSet.registry` | `IsAuthenticated` | Every module and business object the shell shows: navigation groups, endpoints, field types, filters, lifecycles, actions and the roles that may read and write each, introspected from the live viewsets. |
+| GET | `/api/workspace/search/` | `WorkspaceViewSet.search` | `IsAuthenticated` | Global search (?search=) across every resource this user may list, using each viewset's search fields. |
+| GET | `/api/workspace/statements/` | `WorkspaceViewSet.statements` | `IsAuthenticated` | A live financial statement from reports.report_generators: ?report=trial_balance\|balance_sheet\|income_statement\|general_ledger with as_of, from, to and (for the general ledger) account. |
+| GET | `/api/workspace/` | `APIRootView` | `IsAuthenticated` | Provided by `rest_framework`. |
+
+## `/app/`
+
+| Method | Path | View | Access | Summary |
+| --- | --- | --- | --- | --- |
+| ANY | `/app/` | `workspace.views.shell` | public | The workspace single-page app: one shell, every module, deep-linkable at /app/<module>/<resource>/<id>/. |
+| ANY | `/app/{path}` | `workspace.views.shell` | public | The workspace single-page app: one shell, every module, deep-linkable at /app/<module>/<resource>/<id>/. |
+
+## `/console/`
+
+| Method | Path | View | Access | Summary |
+| --- | --- | --- | --- | --- |
+| ANY | `/console/` | `simulation.views.console` | public | The simulation console: a page of the common workspace shell that drives /api/simulation/. |
 
 ## Site root (`company/urls_web.py`)
 
@@ -178,3 +228,4 @@ Paths are relative to the host (`http://localhost:8000` in development). Every `
 | ANY | `/healthz` | `company.views.healthz` | public | Liveness probe (hub UPS-BE-10): 200 `{"status": "ok"}` from a live process; touches no dependency. |
 | ANY | `/readyz` | `company.views.readyz` | public | Readiness probe (hub UPS-BE-10): 200 when the database and the Celery broker answer, else 503 `"degraded"`. |
 | ANY | `/health/` | `company.views.health` | public | Liveness probe for CI smoke tests and deployment healthchecks. |
+| ANY | `/version` | `company.views.version` | public | Build identity: the release version and the commit and build time of the running image. |

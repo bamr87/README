@@ -5,18 +5,18 @@
   "title": "Django ERP",
   "corpus": "docs/djangoerp",
   "counts": {
-    "pages": 18,
+    "pages": 23,
     "sections": 3,
     "max_depth": 3,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "20ddf64fe1501ab3",
+  "fingerprint": "e62feba4167dac21",
   "tree": {
     "type": "section",
     "title": "Django ERP",
     "index": "djangoerp/README.md",
-    "pages": 18,
+    "pages": 23,
     "children": [
       {
         "type": "page",
@@ -57,11 +57,25 @@
         "rel": "PRD.md"
       },
       {
+        "type": "page",
+        "title": "simulation \u2014 the agent simulation sandbox",
+        "path": "djangoerp/simulation/README.md",
+        "rel": "simulation/README.md",
+        "folder": "simulation"
+      },
+      {
+        "type": "page",
+        "title": "workspace \u2014 the common app shell",
+        "path": "djangoerp/workspace/README.md",
+        "rel": "workspace/README.md",
+        "folder": "workspace"
+      },
+      {
         "type": "section",
         "title": "Documentation",
         "rel": "docs",
         "index": "djangoerp/docs/README.md",
-        "pages": 12,
+        "pages": 15,
         "children": [
           {
             "type": "page",
@@ -134,7 +148,7 @@
             "title": "Architecture Decision Records",
             "rel": "docs/adr",
             "index": "djangoerp/docs/adr/README.md",
-            "pages": 3,
+            "pages": 6,
             "children": [
               {
                 "type": "page",
@@ -148,6 +162,24 @@
                 "title": "ADR 0001 \u2014 Record architecture decisions",
                 "path": "djangoerp/docs/adr/0001-record-architecture-decisions.md",
                 "rel": "docs/adr/0001-record-architecture-decisions.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0002 \u2014 Absorb conversion costs into finished goods at work-order\u2026",
+                "path": "djangoerp/docs/adr/0002-absorb-conversion-costs-into-finished-goods.md",
+                "rel": "docs/adr/0002-absorb-conversion-costs-into-finished-goods.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0003 \u2014 An agent simulation sandbox that drives the ERP through its\u2026",
+                "path": "djangoerp/docs/adr/0003-agent-simulation-sandbox.md",
+                "rel": "docs/adr/0003-agent-simulation-sandbox.md"
+              },
+              {
+                "type": "page",
+                "title": "ADR 0004 \u2014 One registry-driven workspace shell for every module",
+                "path": "djangoerp/docs/adr/0004-registry-driven-workspace-shell.md",
+                "rel": "docs/adr/0004-registry-driven-workspace-shell.md"
               },
               {
                 "type": "page",

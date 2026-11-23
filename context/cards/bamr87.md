@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: cd8a0f015977f041
+source_fingerprint: 88115ff82e9fe123
 tags:
   - claude-code
   - github-projects
@@ -33,7 +33,7 @@ tags:
 | Kind | hub |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/bamr87` - 275 docs |
+| Corpus | `docs/bamr87` - 273 docs |
 | External | no |
 
 ## Signals
@@ -43,19 +43,19 @@ tags:
 - has AGENTS.md operating manual
 - has a contribution guide
 - keeps a changelog
-- ~468,940 words across 275 indexed documents
-- code samples in: bash, text, yaml, plaintext, json, markdown, python, console
+- ~490,068 words across 273 indexed documents
+- code samples in: bash, text, yaml, plaintext, json, markdown, console, python
 
 ## Navigation
 
-275 published pages in 40 sections (max depth 4) — [browse the full map](../../docs/browse/bamr87.md) · [tree as JSON](../nav/bamr87.json)
+273 published pages in 40 sections (max depth 4) — [browse the full map](../../docs/browse/bamr87.md) · [tree as JSON](../nav/bamr87.json)
 
-- **changelog.d/ — pending changelog entries** (9 pages)
+- **changelog.d/ — pending changelog entries** (2 pages)
 - **compose/ — the hub's half of the fleet dev stack** (3 pages)
 - **Data** (8 pages)
 - **diagrams/** (4 pages)
-- **Documentation** (168 pages)
-- **evals** (4 pages)
+- **Documentation** (171 pages)
+- **evals** (5 pages)
 - **features/** (4 pages)
 - **Infrastructure** (3 pages)
 - **Pages** (8 pages)
@@ -72,7 +72,7 @@ tags:
 - [`CONTRIBUTING.md`](../../docs/bamr87/CONTRIBUTING.md)
 - [`CHANGELOG.md`](../../docs/bamr87/CHANGELOG.md)
 - [`docs/adr/0002-agent-step-specs-and-local-runner.md`](../../docs/bamr87/docs/adr/0002-agent-step-specs-and-local-runner.md)
-- [`docs/JEV.md`](../../docs/bamr87/docs/JEV.md)
+- [`CATALOG.md`](../../docs/bamr87/CATALOG.md)
 
 ## Query this context
 

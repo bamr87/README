@@ -1,10 +1,10 @@
 {
   "corpus": {
-    "file_count": 557,
-    "fingerprint": "2136ab5913a9bfb5",
+    "file_count": 558,
+    "fingerprint": "e9afdb68704bb488",
     "path": "docs/it-journey",
     "present": true,
-    "total_bytes": 8307469
+    "total_bytes": 8320075
   },
   "engine_version": "1.0.0",
   "identity": {
@@ -36,10 +36,10 @@
   ],
   "navigation": {
     "browse": "docs/browse/it-journey.md",
-    "fingerprint": "a237764155ae7cf9",
+    "fingerprint": "62bb2efb016198aa",
     "index": "it-journey/README.md",
     "max_depth": 5,
-    "pages": 557,
+    "pages": 558,
     "present": true,
     "sections": 54,
     "skipped": 0,
@@ -93,7 +93,7 @@
   },
   "rollups": {
     "categories": {
-      "it-journey": 557
+      "it-journey": 558
     },
     "code_languages": [
       "bash",
@@ -105,7 +105,7 @@
       "powershell",
       "python"
     ],
-    "indexed_documents": 557,
+    "indexed_documents": 558,
     "top_tags": [
       "main_quest",
       "gamified-learning",
@@ -123,7 +123,7 @@
       "automation",
       "game-developer"
     ],
-    "total_words": 1035107
+    "total_words": 1036874
   },
   "schema_version": "1.0",
   "signals": {
@@ -169,6 +169,10 @@
       {
         "doc_count": 1,
         "name": "_includes"
+      },
+      {
+        "doc_count": 1,
+        "name": "astro"
       },
       {
         "doc_count": 1,

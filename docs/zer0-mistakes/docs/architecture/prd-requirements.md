@@ -42,6 +42,16 @@ Create the most developer-friendly Jekyll theme that eliminates setup friction t
 
 ---
 
+## 1.1 Missions
+
+zer0-mistakes's direction is to become the ultimate open home for all things Jekyll themes and GitHub Pages craft — data, tools, resources and transparency, gathered in one place that anyone can inspect and reuse.
+
+1. **Provide data, tools, resources and transparency for all stakeholders, developers, technical writers, theme practitioners and the general public.** Developers, technical writers, content creators, open-source projects, AI agents, and the general public are first-class audiences. The aim is a shared, open commons: the same sources, the same tools, and the same trail of evidence for everyone.
+2. **Eliminate setup friction through intelligent automation, Docker-first development and zero-configuration deployment, while delivering enterprise-grade features with privacy-first principles.** Consent-based analytics, no surprise telemetry, and a theme that works immediately on GitHub Pages are part of that path. The theme is published as a Ruby gem and a remote theme, built on Bootstrap 5.
+3. **Empower both human developers and AI agents to build beautiful, functional GitHub Pages sites without configuration complexity.** Serve the theme, the install path and the agent-friendly docs so anyone can adopt it — an open toolkit for working with all things Jekyll themes and GitHub Pages craft.
+
+These missions set the course; they do not claim the work is finished. They serve the vision in docs/architecture/prd-requirements.md. The earlier single mission sentence is absorbed into these three. Privacy-first and AI-and-human authoring principles are kept. Every feature must trace to them.
+
 ## 🎯 Product Goals & Objectives
 
 ### Primary Goals
@@ -703,7 +713,7 @@ Every user-facing capability has a stable id in the feature catalog [`_data/feat
 | [ZER0-047](../../_data/features.yml) | Site Configuration Detection & Smart 404 | shipped | [`404.html`](../../404.html) · route `/docs/features/smart-404/` | TBD |
 | [ZER0-048](../../_data/features.yml) | Config-Driven Frontmatter Validation | shipped | route `/` · route `/docs/development/frontmatter-validation/` | TBD |
 | [ZER0-049](../../_data/features.yml) | Dynamic Collection-Based Navigation Fallback | shipped | route `/` · route `/docs/features/dynamic-navigation/` | TBD |
-| [ZER0-050](../../_data/features.yml) | Admin Layout & Configuration Dashboards | shipped | route `/admin/` · route `/docs/features/admin-dashboard/` | TBD |
+| [ZER0-050](../../_data/features.yml) | Admin Layout & Configuration Dashboards | shipped | route `/about/config/` · route `/docs/features/admin-dashboard/` | TBD |
 | [ZER0-051](../../_data/features.yml) | AGENTS.md Cross-Tool Agent Entry Point | shipped | [link](https://github.com/bamr87/zer0-mistakes/blob/main/AGENTS.md) · route `/docs/development/agents/` | Feature 7 |
 | [ZER0-052](../../_data/features.yml) | Data-Driven Roadmap with Auto-Generated Diagram | shipped | route `/roadmap/` | TBD |
 | [ZER0-053](../../_data/features.yml) | Vendored Bootstrap & Icon Assets | shipped | route `/` · route `/docs/features/vendored-assets/` | TBD |
@@ -741,7 +751,7 @@ Every user-facing capability has a stable id in the feature catalog [`_data/feat
 | [ZER0-085](../../_data/features.yml) | Visual Evidence Autogen | shipped | route `/` · route `/docs/development/testing/` | TBD |
 | [ZER0-086](../../_data/features.yml) | Claude-Guided Site Builder | shipped | route `/setup/` · route `/docs/features/site-builder/` | TBD |
 | [ZER0-087](../../_data/features.yml) | Bring-Your-Own AI Provider (Claude or Grok) and Open Site Builder Sessions | shipped | route `/setup/` · route `/docs/features/site-builder/` | TBD |
-| [ZER0-088](../../_data/features.yml) | zer0 studio — the Rails theme workbench | shipped | [link](https://github.com/bamr87/zer0-mistakes/tree/main/studio) · [`studio/README.md`](../../studio/README.md) | Feature 13 |
+| [ZER0-088](../../_data/features.yml) | zer0 studio — the Rails theme workbench | shipped | [link](https://github.com/bamr87/zer0-mistakes/tree/main/studio) · [docs](https://github.com/bamr87/zer0-mistakes/blob/main/studio/README.md) | Feature 13 |
 
 **Requirement → feature trace**
 

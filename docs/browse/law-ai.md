@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Law AI - content map
 
-Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sidebar: **301 pages** across **74 sections** (max depth 6).
+Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sidebar: **309 pages** across **75 sections** (max depth 6).
 
 - [Law AI (README)](../law-ai/README.md)
 - [Changelog](../law-ai/CHANGELOG.md)
@@ -72,14 +72,13 @@ Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sideba
   - **Reference** <small>(2)</small>
     - [HTTP and WebSocket routes](../law-ai/docs/reference/http-routes.md)
     - [Make targets](../law-ai/docs/reference/make-targets.md)
-- **[Law AI — Backend](../law-ai/backend/README.md)** <small>(60)</small>
+- **[Law AI — Backend](../law-ai/backend/README.md)** <small>(68)</small>
   - [Law AI — Backend](../law-ai/backend/README.md)
   - [LegalBench Dataset Licenses](../law-ai/backend/var/legalbench/LICENSES.md)
-  - **Law AI** <small>(58)</small>
+  - **Law AI** <small>(66)</small>
     - [DISCLAIMER](../law-ai/backend/law_ai/lawmode/disclaimer.md)
-    - **Agents Runtime** <small>(21)</small>
-      - **Prompts** <small>(21)</small>
-        - [lawmode review — advisory legal-risk review of source code](../law-ai/backend/law_ai/agents_runtime/prompts/lawmode/review.v1.md)
+    - **Agents Runtime** <small>(29)</small>
+      - **Prompts** <small>(29)</small>
         - [LSAT Argumentative Writing — prompt authoring](../law-ai/backend/law_ai/agents_runtime/prompts/lsat_factory_writing.v1.md)
         - [LSAT contrast author — re-ask one stimulus as a different question type…](../law-ai/backend/law_ai/agents_runtime/prompts/lsat_contrast_author.v1.md)
         - [LSAT draft judge — adversarial review of one drafted item](../law-ai/backend/law_ai/agents_runtime/prompts/lsat_draft_judge.v1.md)
@@ -97,6 +96,16 @@ Every published page in [`docs/law-ai/`](../law-ai/) as it appears in the sideba
         - [LSATSourceExtractor Prompt — v1](../law-ai/backend/law_ai/agents_runtime/prompts/lsat_source_extractor.v1.md)
         - [LSATWritingEvaluator Prompt — v1](../law-ai/backend/law_ai/agents_runtime/prompts/lsat_writing_evaluator.v1.md)
         - [TopicFrontier — Prioritize](../law-ai/backend/law_ai/agents_runtime/prompts/topic_frontier_prioritize.v1.md)
+        - **Lawmode** <small>(9)</small>
+          - [lawmode accessibility — WCAG in user-interface code](../law-ai/backend/law_ai/agents_runtime/prompts/lawmode/accessibility.v1.md)
+          - [lawmode copyright — copying, attribution and trademarks](../law-ai/backend/law_ai/agents_runtime/prompts/lawmode/copyright.v1.md)
+          - [lawmode domain — the industry the code serves](../law-ai/backend/law_ai/agents_runtime/prompts/lawmode/domain.v1.md)
+          - [lawmode jurisdiction — which jurisdictions the code is subject to](../law-ai/backend/law_ai/agents_runtime/prompts/lawmode/jurisdiction.v1.md)
+          - [lawmode licence — open-source licence compliance](../law-ai/backend/law_ai/agents_runtime/prompts/lawmode/licence.v1.md)
+          - [lawmode privacy — personal data in the code](../law-ai/backend/law_ai/agents_runtime/prompts/lawmode/privacy.v1.md)
+          - [lawmode regulatory — rules that follow from the industry](../law-ai/backend/law_ai/agents_runtime/prompts/lawmode/regulatory.v1.md)
+          - [lawmode review — advisory legal-risk review of source code](../law-ai/backend/law_ai/agents_runtime/prompts/lawmode/review.v1.md)
+          - [lawmode security — weaknesses that carry a legal duty, and export…](../law-ai/backend/law_ai/agents_runtime/prompts/lawmode/security.v1.md)
         - **Legal Workflow** <small>(3)</small>
           - [Analyze Node Prompt — Spec 010 / LegalWorkflow](../law-ai/backend/law_ai/agents_runtime/prompts/legal_workflow/analyze.md)
           - [Cite Check Node — Spec 010 / LegalWorkflow](../law-ai/backend/law_ai/agents_runtime/prompts/legal_workflow/cite_check.md)

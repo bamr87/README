@@ -9,7 +9,7 @@ nav_exclude: true
 
 # SCHEMA Protocol - content map
 
-Every published page in [`docs/SCHEMA/`](../SCHEMA/) as it appears in the sidebar: **36 pages** across **10 sections** (max depth 5).
+Every published page in [`docs/SCHEMA/`](../SCHEMA/) as it appears in the sidebar: **37 pages** across **10 sections** (max depth 5).
 
 - [Pyramid Schema (SCHEMA.md)](../SCHEMA/README.md)
 - [Changelog](../SCHEMA/CHANGELOG.md)
@@ -19,16 +19,17 @@ Every published page in [`docs/SCHEMA/`](../SCHEMA/) as it appears in the sideba
 - [SCHEMA — features](../SCHEMA/features/SCHEMA.md)
 - [SCHEMA — pyramid-schema](../SCHEMA/SCHEMA.md)
 - [SCHEMA — tools](../SCHEMA/tools/SCHEMA.md)
-- **[Documentation](../SCHEMA/docs/README.md)** <small>(11)</small>
+- **[Documentation](../SCHEMA/docs/README.md)** <small>(12)</small>
   - [SCHEMA documentation](../SCHEMA/docs/README.md)
   - [Pyramid Schema — Effectiveness & Token-Reduction Report](../SCHEMA/docs/2026-07-15-effectiveness-report.md)
   - [SCHEMA — Constitution](../SCHEMA/docs/constitution.md)
   - [SCHEMA — docs](../SCHEMA/docs/SCHEMA.md)
   - [The Copy You Forgot You Made](../SCHEMA/docs/2026-09-03-the-copy-you-forgot-you-made.md)
   - [The Pyramid Schema: SCHEMA.md in Every Directory, and Why Stateless…](../SCHEMA/docs/2026-07-15-pyramid-schema-schema-md-for-ai-agents.md)
-  - **[Amendments — SCHEMA](../SCHEMA/docs/amendments/README.md)** <small>(5)</small>
+  - **[Amendments — SCHEMA](../SCHEMA/docs/amendments/README.md)** <small>(6)</small>
     - [Amendments — SCHEMA](../SCHEMA/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../SCHEMA/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — AGENTS.md is the how-to-work document, and the quality gates are…](../SCHEMA/docs/amendments/0002-agents-md-precedence.md)
     - [0003 — Missions](../SCHEMA/docs/amendments/0003-mission-statement.md)
     - [NNNN — Title of the amendment](../SCHEMA/docs/amendments/0000-template.md)
     - [SCHEMA — docs/amendments](../SCHEMA/docs/amendments/SCHEMA.md)

@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 4d59a9bc401ffa12
+source_fingerprint: 24455e3880c5c9aa
 tags:
   - conditional
   - diagnosis
@@ -33,7 +33,7 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/law-ai` - 301 docs |
+| Corpus | `docs/law-ai` - 309 docs |
 | External | no |
 
 ## Signals
@@ -42,15 +42,15 @@ tags:
 - has AGENTS.md operating manual
 - keeps a changelog
 - has a security policy
-- ~386,459 words across 301 indexed documents
+- ~395,345 words across 309 indexed documents
 - code samples in: bash, plaintext, json, mermaid, python, yaml, sql, cypher
 
 ## Navigation
 
-301 published pages in 74 sections (max depth 6) — [browse the full map](../../docs/browse/law-ai.md) · [tree as JSON](../nav/law-ai.json)
+309 published pages in 75 sections (max depth 6) — [browse the full map](../../docs/browse/law-ai.md) · [tree as JSON](../nav/law-ai.json)
 
 - **Documentation** (47 pages)
-- **Law AI — Backend** (60 pages)
+- **Law AI — Backend** (68 pages)
 - **LawMode.ai** (10 pages)
 - **Specs — Spec-Driven Development for Law AI** (175 pages)
 

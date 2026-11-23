@@ -16,7 +16,7 @@ title: GodotGo
 > [!info] game: `bamr87/godotgo`
 > Godot 4 game workspace: one reusable framework, five sample games and tooling that treats every project the same.
 
-**31** pages collected from commit `1249b008f062` (2026-11-18).
+**31** pages collected from commit `1b47214264b7` (2026-11-18).
 
 ## Most connected pages
 

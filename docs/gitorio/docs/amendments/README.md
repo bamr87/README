@@ -6,6 +6,8 @@ title: Amendments — gitorio
 ---
 # Amendments — gitorio
 
+> The append-only log of changes to the constitution: numbering, status and the process for amending it.
+
 The append-only log of changes to [the constitution](../constitution.md). Process: constitution § 8.
 
 - File name: `NNNN-kebab-slug.md`, next free number, never reused. Copy [0000-template.md](0000-template.md).

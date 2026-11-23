@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Fleet Hub - content map
 
-Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sidebar: **275 pages** across **40 sections** (max depth 4).
+Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sidebar: **273 pages** across **40 sections** (max depth 4).
 
 - [👋 Hi, I'm Amr Abdel-Motaleb](../bamr87/README.md)
 - [bamr87 (AGENTS)](../bamr87/AGENTS.md)
@@ -19,15 +19,8 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
 - [Index — the bamr87 hub as the fleet's central repository](../bamr87/CATALOG.md)
 - [PRD — bamr87 (dash)](../bamr87/PRD.md)
 - [SCHEMA — bamr87 dash](../bamr87/SCHEMA.md)
-- **[changelog.d/ — pending changelog entries](../bamr87/changelog.d/README.md)** <small>(9)</small>
+- **[changelog.d/ — pending changelog entries](../bamr87/changelog.d/README.md)** <small>(2)</small>
   - [changelog.d/ — pending changelog entries](../bamr87/changelog.d/README.md)
-  - [Claude Run Transient Retry](../bamr87/changelog.d/claude-run-transient-retry.md)
-  - [Claude Run Version Line](../bamr87/changelog.d/claude-run-version-line.md)
-  - [Merge Readiness](../bamr87/changelog.d/merge-readiness.md)
-  - [Mission And About Section](../bamr87/changelog.d/mission-and-about-section.md)
-  - [Pr Queue Maintainer Actions](../bamr87/changelog.d/pr-queue-maintainer-actions.md)
-  - [Pr Review Findings](../bamr87/changelog.d/pr-review-findings.md)
-  - [Pr Review Kit Concurrency](../bamr87/changelog.d/pr-review-kit-concurrency.md)
   - [SCHEMA — changelog.d](../bamr87/changelog.d/SCHEMA.md)
 - **[compose/ — the hub's half of the fleet dev stack](../bamr87/compose/README.md)** <small>(3)</small>
   - [compose/ — the hub's half of the fleet dev stack](../bamr87/compose/README.md)
@@ -51,7 +44,7 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
   - **[diagrams/pipeline-map/](../bamr87/diagrams/pipeline-map/README.md)** <small>(2)</small>
     - [diagrams/pipeline-map/](../bamr87/diagrams/pipeline-map/README.md)
     - [SCHEMA — diagrams/pipeline-map](../bamr87/diagrams/pipeline-map/SCHEMA.md)
-- **[Documentation](../bamr87/docs/README.md)** <small>(168)</small>
+- **[Documentation](../bamr87/docs/README.md)** <small>(171)</small>
   - [bamr87 documentation](../bamr87/docs/README.md)
   - [About section — the repository site map](../bamr87/docs/ABOUT-SECTION.md)
   - [Agent Verification — proving features work the way a user experiences…](../bamr87/docs/VERIFICATION.md)
@@ -85,6 +78,7 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
   - [Harness refinement — the Harness² method on the hub's own loops](../bamr87/docs/HARNESS-REFINEMENT.md)
   - [Issue Pipeline](../bamr87/docs/ISSUE-PIPELINE.md)
   - [JEV — the agent logic engine](../bamr87/docs/JEV.md)
+  - [Link check](../bamr87/docs/LINK-CHECK.md)
   - [Machine API](../bamr87/docs/MACHINE-API.md)
   - [MCP server lifecycle](../bamr87/docs/MCP-SERVERS.md)
   - [MCP servers inventory — consolidation checklist](../bamr87/docs/mcp-servers-inventory.md)
@@ -182,14 +176,14 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
     - [0031 — Grok ↔ Claude Code holistic governance (handoff, audit trail…](../bamr87/docs/amendments/0031-grok-claude-governance.md)
     - [0032 — Claude Code executes; Grok bots set direction only](../bamr87/docs/amendments/0032-claude-code-executes.md)
     - [0033 — On-premise compute: an enrolled node runs local sessions and…](../bamr87/docs/amendments/0033-onprem-compute.md)
+    - [0034 — Fleet mission statements and the repository about section](../bamr87/docs/amendments/0034-mission-and-about-section.md)
+    - [0035 — A merge or close the maintainer confirms in the console PR queue…](../bamr87/docs/amendments/0035-pr-queue-maintainer-actions.md)
     - [NNNN — Title of the amendment](../bamr87/docs/amendments/0000-template.md)
     - [SCHEMA — docs/amendments](../bamr87/docs/amendments/SCHEMA.md)
-    - **[docs/amendments/proposed/ — unnumbered amendment records](../bamr87/docs/amendments/proposed/README.md)** <small>(4)</small>
+    - **[docs/amendments/proposed/ — unnumbered amendment records](../bamr87/docs/amendments/proposed/README.md)** <small>(2)</small>
       - [docs/amendments/proposed/ — unnumbered amendment records](../bamr87/docs/amendments/proposed/README.md)
-      - [NEW — A merge or close the maintainer confirms in the console PR queue…](../bamr87/docs/amendments/proposed/pr-queue-maintainer-actions.md)
-      - [NEW — Fleet mission statements and the repository about section](../bamr87/docs/amendments/proposed/mission-and-about-section.md)
       - [SCHEMA — docs/amendments/proposed](../bamr87/docs/amendments/proposed/SCHEMA.md)
-  - **[Architecture Decision Records](../bamr87/docs/adr/README.md)** <small>(15)</small>
+  - **[Architecture Decision Records](../bamr87/docs/adr/README.md)** <small>(17)</small>
     - [Architecture Decision Records](../bamr87/docs/adr/README.md)
     - [ADR 0001 — Record architecture decisions](../bamr87/docs/adr/0001-record-architecture-decisions.md)
     - [ADR 0002 — Agent step specs and the local loop runner](../bamr87/docs/adr/0002-agent-step-specs-and-local-runner.md)
@@ -203,6 +197,8 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
     - [ADR 0010 — The fleet graph and outcome learning: one model of what the…](../bamr87/docs/adr/0010-fleet-graph-and-outcome-learning.md)
     - [ADR 0011 — One framework, many instances: the stack installs for any…](../bamr87/docs/adr/0011-one-framework-many-instances.md)
     - [ADR 0012 — Merge readiness: every pull request is checked, reviewed and…](../bamr87/docs/adr/0012-merge-readiness.md)
+    - [ADR 0013 — The docked assistant and the page bridge: an agent session…](../bamr87/docs/adr/0013-console-page-assistant.md)
+    - [ADR 0014 — The fleet assistant baseline: one page bridge, an adapter…](../bamr87/docs/adr/0014-fleet-assistant-baseline.md)
     - [ADR NNNN — Title in sentence case](../bamr87/docs/adr/0000-template.md)
     - [SCHEMA — docs/adr](../bamr87/docs/adr/SCHEMA.md)
   - **Assets** <small>(2)</small>
@@ -227,8 +223,9 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
     - [PRD — Shared functional specification library](../bamr87/docs/prd/FUNCTIONAL-SPEC-LIBRARY.md)
     - [PRD — Visual evidence for guides and tutorials](../bamr87/docs/prd/VISUAL-EVIDENCE.md)
     - [SCHEMA — docs/prd](../bamr87/docs/prd/SCHEMA.md)
-- **[evals](../bamr87/evals/README.md)** <small>(4)</small>
+- **[evals](../bamr87/evals/README.md)** <small>(5)</small>
   - [evals](../bamr87/evals/README.md)
+  - [SCHEMA — console-assist](../bamr87/evals/console-assist/SCHEMA.md)
   - [SCHEMA — evals](../bamr87/evals/SCHEMA.md)
   - [SCHEMA — jev-classify](../bamr87/evals/jev-classify/SCHEMA.md)
   - [SCHEMA — t1-intake](../bamr87/evals/t1-intake/SCHEMA.md)
@@ -309,12 +306,13 @@ Every published page in [`docs/bamr87/`](../bamr87/) as it appears in the sideba
       - [Saturday: direction for the week](../bamr87/tools/weekly/briefs/grok-prepare.md)
       - [SCHEMA — tools/weekly/briefs](../bamr87/tools/weekly/briefs/SCHEMA.md)
       - [Sunday: the plan sign-off](../bamr87/tools/weekly/briefs/grok-plan.md)
-- **[Universal Project Standard (UPS)](../bamr87/specs/README.md)** <small>(13)</small>
+- **[Universal Project Standard (UPS)](../bamr87/specs/README.md)** <small>(14)</small>
   - [Universal Project Standard (UPS)](../bamr87/specs/README.md)
   - [Conformance: declaring, auditing, adopting](../bamr87/specs/CONFORMANCE.md)
   - [SCHEMA — specs](../bamr87/specs/SCHEMA.md)
   - [Stack profiles and the applicability matrix](../bamr87/specs/STACKS.md)
   - [UPS-AGENT — Agent context](../bamr87/specs/AGENT-CONTEXT.md)
+  - [UPS-AST — The fleet assistant](../bamr87/specs/ASSIST.md)
   - [UPS-BE — HTTP API conventions and the client contract](../bamr87/specs/BACKEND.md)
   - [UPS-DOC — Documentation](../bamr87/specs/DOCS.md)
   - [UPS-FB — The universal feedback component](../bamr87/specs/FEEDBACK.md)

@@ -9,7 +9,7 @@ nav_exclude: true
 
 # Outbox - content map
 
-Every published page in [`docs/outbox/`](../outbox/) as it appears in the sidebar: **22 pages** across **4 sections** (max depth 3).
+Every published page in [`docs/outbox/`](../outbox/) as it appears in the sidebar: **23 pages** across **4 sections** (max depth 3).
 
 - [outbox (README)](../outbox/README.md)
 - [Changelog](../outbox/CHANGELOG.md)
@@ -24,13 +24,14 @@ Every published page in [`docs/outbox/`](../outbox/) as it appears in the sideba
   - [Claimant-B](../outbox/agents/claimant_b.md)
   - [Grok Bots group kickoff](../outbox/agents/grok_bots_kickoff.md)
   - [Scout](../outbox/agents/scout.md)
-- **[Documentation](../outbox/docs/README.md)** <small>(10)</small>
+- **[Documentation](../outbox/docs/README.md)** <small>(11)</small>
   - [outbox documentation](../outbox/docs/README.md)
   - [outbox CLI reference](../outbox/docs/reference/cli.md)
   - [outbox — Constitution](../outbox/docs/constitution.md)
-  - **[Amendments — outbox](../outbox/docs/amendments/README.md)** <small>(3)</small>
+  - **[Amendments — outbox](../outbox/docs/amendments/README.md)** <small>(4)</small>
     - [Amendments — outbox](../outbox/docs/amendments/README.md)
     - [0001 — Ratify the constitution](../outbox/docs/amendments/0001-ratify-constitution.md)
+    - [0002 — Missions](../outbox/docs/amendments/0002-mission-statement.md)
     - [NNNN — Title of the amendment](../outbox/docs/amendments/0000-template.md)
   - **[Architecture Decision Records](../outbox/docs/adr/README.md)** <small>(4)</small>
     - [Architecture Decision Records](../outbox/docs/adr/README.md)

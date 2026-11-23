@@ -7,13 +7,13 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: 80e60cd0271c44ff
+source_fingerprint: 5cce78e339383902
 tags:
 ---
 
 # ocrmd
 
-> Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search.
+> Scan books and pages into cross-checked Markdown: local OCR diffed against a Claude vision read, with full-text search. ocrmd's direction is to become the ultimate open home for all things document digitization: data, tools, resources and transparency, with cross-checked OCR, disagreement flags, a searchable inventory and a local-first path for everyone (constitution §1).
 
 | | |
 |---|---|
@@ -21,7 +21,7 @@ tags:
 | Kind | tooling |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/ocrmd` - 26 docs |
+| Corpus | `docs/ocrmd` - 27 docs |
 | External | no |
 
 ## Signals
@@ -30,14 +30,14 @@ tags:
 - has AGENTS.md operating manual
 - keeps a changelog
 - has a security policy
-- ~39,851 words across 26 indexed documents
+- ~41,338 words across 27 indexed documents
 - code samples in: text, plaintext, sh, python, toml, bash, markdown
 
 ## Navigation
 
-26 published pages in 4 sections (max depth 3) — [browse the full map](../../docs/browse/ocrmd.md) · [tree as JSON](../nav/ocrmd.json)
+27 published pages in 4 sections (max depth 3) — [browse the full map](../../docs/browse/ocrmd.md) · [tree as JSON](../nav/ocrmd.json)
 
-- **Documentation** (19 pages)
+- **Documentation** (20 pages)
 
 ## Key documents
 

@@ -6,7 +6,7 @@ title: bamr87.github.io
 ---
 # bamr87.github.io
 
-> Amr Abdel-Motaleb's GitHub Pages site — profile, résumé and project portfolio plus blog, docs and notes collections — and the rules for changing it.
+> This site's direction is to become the ultimate open home for this practitioner's public profile, résumé and work: data, tools, resources and transparency, with an inspectable Jekyll portfolio and a current résumé, for collaborators and the general public ([constitution](docs/constitution.md) §1).
 
 ## What this repo is
 
@@ -56,7 +56,7 @@ python3 tools/unwrap-prose.py --check                           # markdown one-p
 
 ## The theme is remote
 
-- `_config.yml` sets `remote_theme: bamr87/zer0-mistakes`, so there is no `_layouts/`, `_includes/` or `_sass/` here. Every layout (`root`, `default`, `article`, `home`, …) and include lives in [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes): fix markup, styling, navigation rendering and Liquid/layout errors there. This repo supplies content, `_config.yml`, `_data/` and `assets/`.
+- `_config.yml` sets `remote_theme: bamr87/zer0-mistakes`, so there is no `_layouts/` or `_sass/` here, and `_includes/` holds one local override, `_includes/core/footer.html` (the theme's footer without its newsletter placeholder; see issue #27), and one site-only include the theme does not have, `_includes/posts-timeline.html` (the `/posts/` timeline and its Timeline / Cards / List views; its styles and script are scoped under `ptl-`). Every layout (`root`, `default`, `article`, `home`, …) and include lives in [bamr87/zer0-mistakes](https://github.com/bamr87/zer0-mistakes): fix markup, styling, navigation rendering and Liquid/layout errors there. This repo supplies content, `_config.yml`, `_data/` and `assets/`.
 - A theme tag needs its plugin in `_config.yml` `plugins:` (`include_cached` needs `jekyll-include-cache`); a missing one fails the build with `Liquid syntax error … Unknown tag`.
 - The two build modes resolve the theme differently, so a change that works locally can still break the published site:
 
@@ -71,6 +71,7 @@ python3 tools/unwrap-prose.py --check                           # markdown one-p
 - `index.html` is the homepage: a full-bleed dashboard over `site.data.portfolio`, with inline CSS/JS scoped under `.dash` and its JS wrapped in a Liquid `raw`/`endraw` block so Liquid leaves it alone.
 - `README.md` is a Jekyll page (`permalink: /profile/`), so its links are rendered on the site. Relative links to excluded files 404 there; link those by GitHub URL.
 - Navigation is `_data/navigation/*.yml`: the navbar reads `main.yml`, and a page picks its sidebar with `sidebar.nav`. The theme's navbar and `nav-tree` read `children:`, not `sublinks:`; with `sublinks:` the dropdowns silently do not render.
+- Reader feedback is the theme's widget, switched on by `page_feedback:` in `_config.yml`: a floating "Improve this page" button and the inline trigger in the page action bar open one dialog that files a pre-filled issue in this repo, labelled `page-feedback`. Without JavaScript both link to the issue form; the theme hard-codes `template=page_improvement.yml` in that link while this repo ships `.github/ISSUE_TEMPLATE/page_feedback.yml`, so the fix belongs in bamr87/zer0-mistakes ([#636](https://github.com/bamr87/zer0-mistakes/issues/636)), not here. Once it ships, add `issue_template: 'page_feedback.yml'` to the block.
 
 ## Generated content
 
@@ -98,7 +99,7 @@ Member of the bamr87 fleet, mounted in the hub as the submodule `projects/bamr87
 ## Standard deviations
 
 - UPS-DOC-08: `README.md` is over the 2,000-word budget because it is the published résumé at `/profile/`; its length is the CV itself, not repo documentation.
-- UPS-DOC-10: `README.md` keeps the résumé's own order (front-matter title, About Me, dashboard, CV) instead of the portfolio skeleton's H1, tagline, Overview and Features, because it is a published CV page. It ends with **Working with this repo** and **License**, and links the docs index.
+- UPS-DOC-10: `README.md` keeps the résumé's own order (front-matter title, About Me, dashboard, CV) instead of the portfolio skeleton's H1, tagline, Overview and Features, because it is a published CV page. It ends with **Quick start** and **License**, and links the docs index.
 
 ## Governance
 

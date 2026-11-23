@@ -7,7 +7,7 @@ status: active
 generated: true
 generated_by: context_engine 1.0.0
 enrichment: heuristic
-source_fingerprint: ccdec8237bb56238
+source_fingerprint: 9eb2b566a0240cd3
 tags:
 ---
 
@@ -21,7 +21,7 @@ tags:
 | Kind | app |
 | Status | active |
 | Branch | default |
-| Corpus | `docs/djangoerp` - 18 docs |
+| Corpus | `docs/djangoerp` - 23 docs |
 | External | no |
 
 ## Signals
@@ -29,14 +29,14 @@ tags:
 - has CLAUDE.md agent guidance
 - has AGENTS.md operating manual
 - keeps a changelog
-- ~13,295 words across 18 indexed documents
+- ~21,718 words across 23 indexed documents
 - code samples in: bash, mermaid, plaintext
 
 ## Navigation
 
-18 published pages in 3 sections (max depth 3) — [browse the full map](../../docs/browse/djangoerp.md) · [tree as JSON](../nav/djangoerp.json)
+23 published pages in 3 sections (max depth 3) — [browse the full map](../../docs/browse/djangoerp.md) · [tree as JSON](../nav/djangoerp.json)
 
-- **Documentation** (12 pages)
+- **Documentation** (15 pages)
 
 ## Key documents
 
@@ -46,7 +46,7 @@ tags:
 - [`CHANGELOG.md`](../../docs/djangoerp/CHANGELOG.md)
 - [`docs/reference/api-routes.md`](../../docs/djangoerp/docs/reference/api-routes.md)
 - [`docs/ARCHITECTURE.md`](../../docs/djangoerp/docs/ARCHITECTURE.md)
-- [`docs/constitution.md`](../../docs/djangoerp/docs/constitution.md)
+- [`simulation/README.md`](../../docs/djangoerp/simulation/README.md)
 - [`PRD.md`](../../docs/djangoerp/PRD.md)
 
 ## Query this context

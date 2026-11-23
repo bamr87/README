@@ -40,4 +40,6 @@ Add an ADR in the same PR as the change it justifies.
 | 0009 | [The agentic efficacy model: one agent inventory, five KPIs per kind of agent, and checks that run in shadow before they gate](0009-agentic-efficacy-model.md) | accepted |
 | 0010 | [The fleet graph and outcome learning: one model of what the control plane manages, and a shadow estimate of where each loop's work lands](0010-fleet-graph-and-outcome-learning.md) | accepted |
 | 0011 | [One framework, many instances: the stack installs for any owner](0011-one-framework-many-instances.md) | accepted |
-| 0012 | [Merge readiness: every pull request is checked, reviewed and adjusted before it merges, and says so in one place](0012-merge-readiness.md) | proposed |
+| 0012 | [Merge readiness: every pull request is checked, reviewed and adjusted before it merges, and says so in one place](0012-merge-readiness.md) | accepted |
+| 0013 | [The docked assistant and the page bridge: an agent session may see and use the console page a person has open, and the confirming yes stays theirs](0013-console-page-assistant.md) | accepted |
+| 0014 | [The fleet assistant baseline: one page bridge, an adapter per platform, and the console as the one broker](0014-fleet-assistant-baseline.md) | accepted |
