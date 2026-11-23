@@ -5,18 +5,18 @@
   "title": "Brain",
   "corpus": "docs/brain",
   "counts": {
-    "pages": 183,
+    "pages": 184,
     "sections": 2,
     "max_depth": 2,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "88f04d1dd05f49d7",
+  "fingerprint": "4636ea11ee0e6373",
   "tree": {
     "type": "section",
     "title": "Brain",
     "index": "brain/index.md",
-    "pages": 183,
+    "pages": 184,
     "children": [
       {
         "type": "page",
@@ -30,6 +30,12 @@
         "title": "All pages",
         "path": "brain/pages.md",
         "rel": "pages.md"
+      },
+      {
+        "type": "page",
+        "title": "Atlas",
+        "path": "brain/atlas.md",
+        "rel": "atlas.md"
       },
       {
         "type": "page",

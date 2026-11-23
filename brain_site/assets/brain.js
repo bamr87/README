@@ -1,7 +1,8 @@
-/* Obsidian-style views for the published vault: graph, local graph, hover
-   previews, quick switcher, canvas and table. Material's instant navigation
+/* Obsidian-style views for the published vault: graph, local graph, atlas, hover
+   previews, quick switcher, canvas and table. The graphs draw with sigma (WebGL),
+   loaded from graph-engine.bundle.js only on a page that has one. Material's instant navigation
    swaps the page without reloading, so everything re-attaches on document$.
-   window.BrainVault is what workspace.js builds on: the vault, the graph, the
+   window.BrainVault is what workspace.js builds on: the vault, the local graph, the
    picker and the registry of views a [data-brain-view] host can ask for. */
 (function () {
   "use strict";
@@ -12,10 +13,8 @@
   let active = [];
   let generation = 0;
 
-  const PALETTE = ["#5c6bc0", "#26a69a", "#ef6c00", "#ab47bc", "#42a5f5", "#9ccc65", "#ec407a", "#ffca28",
-    "#8d6e63", "#26c6da", "#d4e157", "#ff7043", "#7e57c2", "#66bb6a", "#29b6f6", "#ffa726",
-    "#78909c", "#ba68c8", "#4db6ac", "#f06292", "#aed581", "#90a4ae", "#ffd54f", "#4fc3f7"];
-  const CONCEPT = "#ffd54f";
+  const CONCEPT = "#ffd54f";   // the canvas board's concept colour; the graphs read theirs from graph.json
+
   const scope = () => (typeof __md_scope !== "undefined" ? __md_scope : new URL(".", location.href));
   const siteUrl = (path) => new URL(path, scope()).href;
 
@@ -24,7 +23,7 @@
     if (!vaultPromise) {
       vaultPromise = fetch(siteUrl("assets/brain/graph.json")).then((r) => r.json()).then((data) => {
         const projects = [...new Set(data.nodes.map((n) => n.p))].sort();
-        const colours = new Map(projects.map((p, i) => [p, PALETTE[i % PALETTE.length]]));
+        const colours = new Map(Object.entries(data.colours || {}));
         const neighbours = data.nodes.map(() => new Set());
         data.edges.forEach(([a, b]) => { neighbours[a].add(b); neighbours[b].add(a); });
         const byUrl = new Map(data.nodes.map((n, i) => [n.u, i]));
@@ -34,145 +33,193 @@
     }
     return vaultPromise;
   }
-  const colourOf = (v, n) => (n.k === "concept" ? CONCEPT : v.colours.get(n.p) || "#90a4ae");
+  const colourOf = (v, n) => n.c || (n.k === "concept" ? v.concept : v.colours.get(n.p) || v.neutral || "#b0b0b0");
   const cssVar = (name) => getComputedStyle(document.body).getPropertyValue(name).trim();
 
-  /* ---- force-directed graph on a canvas ---------------------------------- */
-  function createGraph(host, v, nodes, links, options) {
-    const canvas = document.createElement("canvas");
-    canvas.className = "brain-canvas";
-    host.appendChild(canvas);
-    const ctx = canvas.getContext("2d");
-    const view = { x: 0, y: 0, k: options.scale || 1 };
-    let width = 0, height = 0, hover = null, dragged = null, panning = null, moved = false;
-    const state = { filter: () => true, focus: options.focus };
-
-    const degree = new Map(nodes.map((n) => [n, 0]));
-    links.forEach((l) => { degree.set(l.source, degree.get(l.source) + 1); degree.set(l.target, degree.get(l.target) + 1); });
-    const radius = (n) => Math.min(14, 2.5 + Math.sqrt(degree.get(n) || 0) * 1.1);
-
-    const simulation = d3.forceSimulation(nodes)
-      .force("charge", d3.forceManyBody().strength(options.repel || -60).theta(1.1).distanceMax(600))
-      .force("link", d3.forceLink(links).distance(options.distance || 45).strength(0.25))
-      .force("x", d3.forceX().strength(0.05))
-      .force("y", d3.forceY().strength(0.05))
-      .alphaDecay(0.03)
-      .on("tick", draw);
-
-    function resize() {
-      const box = host.getBoundingClientRect();
-      const ratio = window.devicePixelRatio || 1;
-      width = box.width; height = box.height;
-      canvas.width = width * ratio; canvas.height = height * ratio;
-      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
-      draw();
+  /* ---- the graph engine: sigma on graphology, loaded only where a graph is drawn ---- */
+  let enginePromise = null;
+  function engine() {
+    if (window.BrainGraph) return Promise.resolve(window.BrainGraph);
+    if (!enginePromise) {
+      enginePromise = new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = siteUrl("assets/brain/graph-engine.bundle.js");
+        script.onload = () => resolve(window.BrainGraph);
+        script.onerror = () => { enginePromise = null; reject(new Error("the graph engine did not load")); };
+        document.head.appendChild(script);
+      });
     }
-    const toWorld = (x, y) => [(x - width / 2 - view.x) / view.k, (y - height / 2 - view.y) / view.k];
-
-    function draw() {
-      if (!width) return;
-      ctx.clearRect(0, 0, width, height);
-      ctx.save();
-      ctx.translate(width / 2 + view.x, height / 2 + view.y);
-      ctx.scale(view.k, view.k);
-      const lit = hover ? new Set([hover, ...hover.near]) : null;
-      ctx.lineWidth = 0.6 / view.k;
-      ctx.strokeStyle = cssVar("--md-default-fg-color--lighter") || "#999";
-      // Thousands of full-strength edges would bury the nodes.
-      ctx.globalAlpha = lit ? 1 : Math.min(1, 40 / Math.sqrt(links.length + 1) / 4);
-      ctx.beginPath();
-      links.forEach((l) => {
-        if (!state.filter(l.source) || !state.filter(l.target)) return;
-        if (lit && !(l.source === hover || l.target === hover)) return;
-        ctx.moveTo(l.source.x, l.source.y); ctx.lineTo(l.target.x, l.target.y);
-      });
-      ctx.stroke();
-      ctx.globalAlpha = 1;
-      const label = cssVar("--md-default-fg-color") || "#333";
-      nodes.forEach((n) => {
-        if (!state.filter(n)) return;
-        ctx.globalAlpha = lit && !lit.has(n) ? 0.15 : 1;
-        ctx.fillStyle = n === state.focus ? cssVar("--md-accent-fg-color") : colourOf(v, n.data);
-        ctx.beginPath(); ctx.arc(n.x, n.y, radius(n), 0, 6.283); ctx.fill();
-      });
-      ctx.globalAlpha = 1;
-      ctx.fillStyle = label;
-      ctx.font = `${11 / view.k}px sans-serif`;
-      ctx.textAlign = "center";
-      nodes.forEach((n) => {
-        if (!state.filter(n)) return;
-        const big = radius(n) * view.k > (options.labelAt ?? 7);
-        if (big || n === hover || n === state.focus || (lit && lit.has(n))) {
-          ctx.fillText(n.data.t.slice(0, 40), n.x, n.y + radius(n) + 12 / view.k);
-        }
-      });
-      ctx.restore();
-    }
-
-    function pick(event) {
-      const box = canvas.getBoundingClientRect();
-      const [x, y] = toWorld(event.clientX - box.left, event.clientY - box.top);
-      let best = null, bestD = Infinity;
-      nodes.forEach((n) => {
-        if (!state.filter(n)) return;
-        const d = Math.hypot(n.x - x, n.y - y);
-        if (d < Math.max(radius(n), 6 / view.k) && d < bestD) { best = n; bestD = d; }
-      });
-      return best;
-    }
-
-    canvas.addEventListener("pointerdown", (e) => {
-      canvas.setPointerCapture(e.pointerId);
-      moved = false;
-      dragged = pick(e);
-      if (dragged) { simulation.alphaTarget(0.2).restart(); } else { panning = [e.clientX - view.x, e.clientY - view.y]; }
-      canvas.classList.add("is-dragging");
-    });
-    canvas.addEventListener("pointermove", (e) => {
-      if (dragged) {
-        const box = canvas.getBoundingClientRect();
-        [dragged.fx, dragged.fy] = toWorld(e.clientX - box.left, e.clientY - box.top);
-        moved = true;
-      } else if (panning) {
-        view.x = e.clientX - panning[0]; view.y = e.clientY - panning[1]; moved = true; draw();
-      } else {
-        const next = pick(e);
-        if (next !== hover) { hover = next; canvas.style.cursor = next ? "pointer" : ""; draw(); }
+    return enginePromise;
+  }
+  // Asked once per page load, and the probe's context is given back: a browser keeps only a
+  // handful of WebGL contexts alive, and instant navigation would otherwise add one per page.
+  let webgl2 = null;
+  function hasWebGL2() {
+    if (webgl2 === null) {
+      try {
+        const gl = document.createElement("canvas").getContext("webgl2");
+        webgl2 = !!gl;
+        const lose = gl && gl.getExtension("WEBGL_lose_context");
+        if (lose) lose.loseContext();
+      } catch (error) {
+        webgl2 = false;
       }
-    });
-    canvas.addEventListener("pointerup", () => {
-      if (dragged) {
-        simulation.alphaTarget(0);
-        const clicked = !moved && dragged;
-        dragged.fx = dragged.fy = null;
-        dragged = null;
-        if (clicked) open(clicked.data.u);
-      }
-      panning = null;
-      canvas.classList.remove("is-dragging");
-    });
-    canvas.addEventListener("wheel", (e) => {
-      e.preventDefault();
-      const box = canvas.getBoundingClientRect();
-      const [x, y] = toWorld(e.clientX - box.left, e.clientY - box.top);
-      view.k = Math.min(8, Math.max(0.05, view.k * Math.exp(-e.deltaY * 0.0015)));
-      view.x = e.clientX - box.left - width / 2 - x * view.k;
-      view.y = e.clientY - box.top - height / 2 - y * view.k;
-      draw();
-    }, { passive: false });
+    }
+    return webgl2;
+  }
 
-    const observer = new ResizeObserver(resize);
-    observer.observe(host);
-    resize();
+  // Material's colours can be hsla() or carry var(); a 2D context hands any CSS colour back as hex or rgba.
+  const probe = document.createElement("canvas").getContext("2d");
+  function plain(colour, fallback) {
+    if (!colour) return fallback;
+    probe.fillStyle = fallback;
+    probe.fillStyle = colour;
+    return probe.fillStyle;
+  }
+  function theme() {
+    const dark = (document.body.getAttribute("data-md-color-scheme") || "").includes("slate");
     return {
-      simulation, draw,
-      setFilter(fn) { state.filter = fn; draw(); },
-      setForce(name, value) {
-        if (name === "repel") simulation.force("charge").strength(-value);
-        if (name === "distance") simulation.force("link").distance(value);
-        simulation.alpha(0.4).restart();
+      dark,
+      fg: plain(cssVar("--md-default-fg-color"), dark ? "#e2e4e9" : "#1f2329"),
+      bg: plain(cssVar("--md-default-bg-color"), dark ? "#1e2129" : "#ffffff"),
+      accent: plain(cssVar("--md-accent-fg-color"), "#526cfe"),
+      edge: dark ? "rgba(255,255,255,0.09)" : "rgba(30,35,45,0.09)",
+      faded: dark ? "#353945" : "#e6e8ec",
+    };
+  }
+  // Material's palette toggle changes the body's colour scheme without a new page, so a graph
+  // that has read the theme is told when it changes. Returns the function that stops telling it.
+  function onSchemeChange(callback) {
+    const watcher = new MutationObserver(callback);
+    watcher.observe(document.body, { attributes: true, attributeFilter: ["data-md-color-scheme"] });
+    return () => watcher.disconnect();
+  }
+  function withAlpha(colour, alpha) {
+    const hex = plain(colour, "#888888");
+    if (!hex.startsWith("#")) return hex;
+    const [r, g, b] = [1, 3, 5].map((i) => parseInt(hex.slice(i, i + 2), 16));
+    return `rgba(${r},${g},${b},${alpha})`;
+  }
+  const sizeOf = (n) => (n.k === "project" ? 9 : n.k === "concept" ? 5 : 2) + Math.min(10, Math.sqrt(n.d || 0) * 1.15);
+  const plural = (count, word) => `${count.toLocaleString()} ${word}${count === 1 ? "" : "s"}`;
+  const escapeHtml = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  function buildGraph(B, v, indices, place, scale = 1) {
+    const graph = new B.Graph({ type: "undirected" });
+    indices.forEach((i) => {
+      const n = v.nodes[i];
+      const [x, y] = place ? place(i) : [n.x, n.y];
+      graph.addNode(String(i), { x, y, size: sizeOf(n) * scale, color: colourOf(v, n), label: n.t, i });
+    });
+    v.edges.forEach(([a, b]) => {
+      const s = String(a), t = String(b);
+      if (a !== b && graph.hasNode(s) && graph.hasNode(t) && !graph.hasEdge(s, t)) graph.addEdge(s, t);
+    });
+    return graph;
+  }
+
+  /* One renderer for both graphs: hover lights a note's links, a selection keeps them lit,
+     a path shows only its route, and a filter hides what the controls exclude. */
+  function renderer(B, graph, host, options) {
+    let ink = theme();
+    const look = { hovered: null, selected: null, near: new Set(), path: null, route: null, show: () => true };
+    const focus = () => look.hovered || look.selected;
+    // A link takes its repository's colour, barely: thousands of them should read as a texture, not a mesh.
+    // Links into the concept hub are fainter still, so the repositories stay legible from afar.
+    const tints = new Map();
+    const tint = (s, t) => {
+      const a = graph.getNodeAttributes(s), b = graph.getNodeAttributes(t);
+      const hub = options.hub && (options.hub(a) || options.hub(b));
+      const base = options.hub && options.hub(a) ? b.color : a.color;
+      const key = base + (hub ? "h" : "");
+      if (!tints.has(key)) tints.set(key, withAlpha(base, hub ? (ink.dark ? 0.05 : 0.04) : (ink.dark ? 0.16 : 0.12)));
+      return tints.get(key);
+    };
+    const sigma = new B.Sigma(graph, host, {
+      settings: {
+        // sigma 4 measures sizes in graph units by default; a small local graph needs pixels.
+        itemSizesReference: options.screenSizes ? "screen" : "positions",
+        labelDensity: options.labelDensity || 0.08,
+        labelGridCellSize: 70,
+        labelRenderedSizeThreshold: options.labelAt || 7,
+        hideEdgesOnMove: graph.size > 4000,
+        minCameraRatio: 0.03,
+        maxCameraRatio: 3,
+        stagePadding: 24,
+        // A workspace tab that is not showing has no size yet; it draws once it has one.
+        allowInvalidContainer: true,
       },
-      destroy() { simulation.stop(); observer.disconnect(); canvas.remove(); },
+      nodeReducer(key, data, attrs) {
+        // A route shows every step, even one the filters hide.
+        if (!(look.path && look.path.has(key)) && !look.show(attrs)) return { visibility: "hidden" };
+        const out = { labelColor: ink.fg, backdropColor: ink.bg, backdropShadowColor: ink.dark ? "rgba(0,0,0,.6)" : "rgba(0,0,0,.25)" };
+        if (look.path) {
+          if (look.path.has(key)) Object.assign(out, { labelVisibility: "visible", zIndex: 2, size: data.size * 1.3 });
+          else Object.assign(out, { color: ink.faded, labelVisibility: "hidden", zIndex: 0 });
+          return out;
+        }
+        const f = focus();
+        if (f) {
+          if (key === f) Object.assign(out, { labelVisibility: "visible", zIndex: 3, size: data.size * 1.4, backdropVisibility: "visible" });
+          else if (look.near.has(key)) Object.assign(out, { labelVisibility: "visible", zIndex: 2 });
+          else Object.assign(out, { color: ink.faded, labelVisibility: "hidden", zIndex: 0 });
+        }
+        if (key === look.selected || (key === options.pinned && !f)) Object.assign(out, { labelVisibility: "visible", backdropVisibility: "visible", zIndex: 3 });
+        return out;
+      },
+      edgeReducer(key, data) {
+        if (look.path) return look.route.has(key) ? { color: ink.accent, size: 3, zIndex: 2 } : { visibility: "hidden" };
+        const [s, t] = graph.extremities(key);
+        if (!look.show(graph.getNodeAttributes(s)) || !look.show(graph.getNodeAttributes(t))) return { visibility: "hidden" };
+        const f = focus();
+        if (f) return s === f || t === f ? { color: graph.getNodeAttribute(f, "color"), size: 1.5, zIndex: 1 } : { visibility: "hidden" };
+        return { color: tint(s, t), size: 0.5 };
+      },
+    });
+    const redraw = () => sigma.refresh({ skipIndexation: true });
+    const setNear = () => { const f = focus(); look.near = f ? new Set(graph.neighbors(f)) : new Set(); };
+    sigma.on("enterNode", ({ node }) => { look.hovered = node; setNear(); host.style.cursor = "pointer"; redraw(); });
+    sigma.on("leaveNode", () => { look.hovered = null; setNear(); host.style.cursor = ""; redraw(); });
+    // sigma follows the window's size; a panel or pane can change size on its own.
+    const observer = new ResizeObserver(() => sigma.scheduleRefresh());
+    observer.observe(host);
+    // A new scheme repaints everything that read the old one, the explorer's halos included.
+    const unwatch = onSchemeChange(() => {
+      ink = theme();
+      tints.clear();
+      redraw();
+    });
+    return {
+      sigma, graph, look, redraw,
+      ink: () => ink,
+      select(node) { look.selected = node; look.path = null; look.route = null; setNear(); redraw(); },
+      showPath(nodes) {
+        look.path = new Set(nodes);
+        look.route = new Set(nodes.slice(1).map((n, i) => graph.edge(nodes[i], n)));
+        redraw();
+      },
+      clear() { look.selected = null; look.path = null; look.route = null; setNear(); redraw(); },
+      setFilter(fn) { look.show = fn; redraw(); },
+      // Move the camera to a point, keeping it clear of whatever covers the right side (the card).
+      flyTo(x, y, ratio) {
+        const a = sigma.viewportToFramedGraph({ x: 0, y: 0 }), b = sigma.viewportToFramedGraph({ x: 100, y: 0 });
+        const perPixel = Math.hypot(b.x - a.x, b.y - a.y) / 100 / sigma.getCamera().ratio;
+        const shift = options.cover ? options.cover() / 2 : 0;
+        sigma.getCamera().animate({ x: x + shift * perPixel * ratio, y, ratio }, { duration: 650 });
+      },
+      fly(node, ratio) {
+        const d = sigma.getNodeDisplayData(node);
+        if (d) this.flyTo(d.x, d.y, ratio || 0.12);
+      },
+      fit(keys) {
+        const points = keys.map((k) => sigma.getNodeDisplayData(k)).filter(Boolean);
+        if (!points.length) return;
+        const xs = points.map((p) => p.x), ys = points.map((p) => p.y);
+        const [x0, x1, y0, y1] = [Math.min(...xs), Math.max(...xs), Math.min(...ys), Math.max(...ys)];
+        this.flyTo((x0 + x1) / 2, (y0 + y1) / 2, Math.min(1.1, Math.max(0.08, Math.max(x1 - x0, y1 - y0) * 2.4)));
+      },
+      reset() { sigma.getCamera().reset({ duration: 600 }); },
+      destroy() { observer.disconnect(); unwatch(); sigma.kill(); },
     };
   }
 
@@ -187,88 +234,442 @@
     link.remove();
   }
 
-  function buildSubgraph(v, indices) {
-    const nodes = indices.map((i) => ({ data: v.nodes[i], index0: i }));
-    const lookup = new Map(nodes.map((n) => [n.index0, n]));
-    nodes.forEach((n) => { n.near = [...v.neighbours[n.index0]].map((i) => lookup.get(i)).filter(Boolean); });
-    const links = v.edges.filter(([a, b]) => lookup.has(a) && lookup.has(b))
-      .map(([a, b]) => ({ source: lookup.get(a), target: lookup.get(b) }));
-    return { nodes, links, lookup };
+  function unsupported(host, message) {
+    const note = document.createElement("p");
+    note.className = "brain-unsupported";
+    note.innerHTML = message;
+    host.appendChild(note);
   }
 
-  /* ---- global graph ------------------------------------------------------- */
+  /* ---- global graph: an explorer over every note ---------------------------- */
   // Every view returns a handle, so whoever mounted it can take it down again.
-  async function mountGlobalGraph(host) {
-    const v = await vault();
-    const { nodes, links } = buildSubgraph(v, v.nodes.map((_, i) => i));
-    const graph = createGraph(host, v, nodes, links, { scale: 0.22, repel: -70, distance: 40, labelAt: 9 });
+  // `embedded` is the workspace: it owns the address and the keyboard, and it
+  // keeps a tab's host off the page while another tab is showing.
+  async function mountGlobalGraph(host, options = {}) {
+    const own = !options.embedded;
+    if (!hasWebGL2()) {
+      unsupported(host, `This view needs WebGL 2, which this browser does not offer. Browse the <a href="${siteUrl("brain/atlas/")}">Atlas</a> or <a href="${siteUrl("brain/pages/")}">All pages</a> instead.`);
+      return null;
+    }
+    const [B, v] = await Promise.all([engine(), vault()]);
+    if (own && !host.isConnected) return null;
+    // Whatever the explorer starts is stopped by this handle, also when setting up fails halfway.
+    const stops = [];
+    const handle = { destroy() { stops.splice(0).reverse().forEach((stop) => stop()); } };
+    try {
+      explore(B, v, host, own, stops);
+    } catch (error) {
+      handle.destroy();
+      throw error;
+    }
+    return handle;
+  }
+  function explore(B, v, host, own, stops) {
+    const stage = document.createElement("div");
+    stage.className = "brain-stage";
+    host.appendChild(stage);
+    const graph = buildGraph(B, v, v.nodes.map((_, i) => i));
+    const card = document.createElement("aside");
+    const r = renderer(B, graph, stage, { labelAt: 9, labelDensity: 0.06, hub: (a) => v.nodes[a.i].p === "brain",
+      cover: () => (card.hidden ? 0 : card.offsetWidth + 16) });
+    stops.push(() => r.destroy());
+    const { sigma } = r;
+    const home = new Map();
+    graph.forEachNode((key, a) => home.set(key, [a.x, a.y]));
 
-    const hidden = new Set();
+    // Repository halos behind the notes and their names above them, kept in step with the camera.
+    const halos = sigma.createLayer("brain-halos", "div", { beforeLayer: "stage" });
+    const names = sigma.createLayer("brain-names", "div", { beforeLayer: "mouse" });
+    const known = v.clusters || [];
+    let clusters = known.filter((c) => c.n >= 3);
+    function paintClusters() {
+      const dark = r.ink().dark;
+      const ratio = sigma.getCamera().ratio;
+      const fade = Math.max(0, Math.min(1, (ratio - 0.18) / 0.32));
+      halos.replaceChildren(...clusters.map((c) => {
+        const centre = sigma.graphToViewport({ x: c.x, y: c.y });
+        const edge = sigma.graphToViewport({ x: c.x + c.r, y: c.y });
+        const radius = Math.hypot(edge.x - centre.x, edge.y - centre.y);
+        const halo = document.createElement("div");
+        halo.className = "brain-halo";
+        const colour = c.p === "brain" ? v.concept : v.colours.get(c.p) || v.neutral;
+        Object.assign(halo.style, { left: `${centre.x - radius}px`, top: `${centre.y - radius}px`, width: `${radius * 2}px`, height: `${radius * 2}px`,
+          background: `radial-gradient(circle, ${colour}${dark ? "26" : "1f"} 0%, ${colour}0a 62%, transparent 72%)` });
+        return halo;
+      }));
+      names.replaceChildren(...clusters.filter(() => fade > 0.02).map((c) => {
+        const centre = sigma.graphToViewport({ x: c.x, y: c.y });
+        const edge = sigma.graphToViewport({ x: c.x, y: c.y + c.r });
+        const label = document.createElement("div");
+        label.className = "brain-name";
+        label.textContent = c.p === "brain" ? "Concepts" : c.t;
+        label.style.left = `${centre.x}px`;
+        label.style.top = `${Math.min(centre.y, edge.y) - 4}px`;
+        label.style.opacity = String(fade);
+        label.style.fontSize = `${Math.max(0.6, Math.min(1.1, 0.45 + Math.sqrt(c.n) / 40))}rem`;
+        return label;
+      }));
+    }
+    sigma.on("afterRender", paintClusters);
+
+    // Controls: find, layout, filters, repositories, path.
     const panel = document.createElement("div");
     panel.className = "brain-controls";
-    panel.innerHTML = `<input type="search" placeholder="Filter notes" aria-label="Filter notes">
-      <label><input type="checkbox" data-opt="orphans"> Show orphans</label>
-      <label><input type="checkbox" data-opt="concepts" checked> Show concepts</label>
-      <details><summary>Forces</summary>
-        <label>Repel <input type="range" min="10" max="200" value="70" data-force="repel"></label>
-        <label>Distance <input type="range" min="10" max="150" value="40" data-force="distance"></label>
-      </details>
-      <details><summary>Groups</summary><div class="brain-groups"></div></details>
+    panel.innerHTML = `<div class="brain-find"><input type="search" placeholder="Find a note  ( / )" aria-label="Find a note" autocomplete="off"><ul class="brain-suggest" role="listbox"></ul></div>
+      <div class="brain-toggle" role="group" aria-label="Layout">
+        <button type="button" data-layout="home" aria-pressed="true" title="Each repository in its own circle, folders inside it">By repository</button>
+        <button type="button" data-layout="relax" aria-pressed="false" title="Let the links pull related notes together">By connection</button>
+      </div>
+      <label><input type="checkbox" data-opt="concepts" checked> Concepts</label>
+      <label><input type="checkbox" data-opt="orphans"> Notes with no links</label>
+      <details><summary>Repositories</summary><div class="brain-groups"></div></details>
       <div class="brain-stats"></div>`;
     host.appendChild(panel);
+    const wide = document.createElement("button");
+    wide.type = "button";
+    wide.className = "brain-wide";
+    wide.title = "Full screen";
+    wide.setAttribute("aria-label", "Full screen");
+    wide.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5 5h5v2H7v3H5V5zm9 0h5v5h-2V7h-3V5zM5 14h2v3h3v2H5v-5zm12 3v-3h2v5h-5v-2h3z"/></svg>';
+    wide.addEventListener("click", () => (document.fullscreenElement ? document.exitFullscreen() : host.requestFullscreen && host.requestFullscreen()));
+    host.appendChild(wide);
+    card.className = "brain-card";
+    card.hidden = true;
+    host.appendChild(card);
+
+    const hidden = new Set();
+    const boxes = new Map();
     const groups = panel.querySelector(".brain-groups");
-    v.projects.forEach((p) => {
+    const counts = new Map(known.map((c) => [c.p, c.n]));
+    [...counts.keys()].filter((p) => p !== "").sort((a, b) => counts.get(b) - counts.get(a)).forEach((p) => {
       const row = document.createElement("label");
-      row.innerHTML = `<input type="checkbox" checked><span class="brain-swatch" style="background:${v.colours.get(p)}"></span>`;
-      row.append(p || "(root)");
+      const colour = p === "brain" ? v.concept : v.colours.get(p) || v.neutral;
+      row.innerHTML = `<input type="checkbox" checked><span class="brain-swatch" style="background:${colour}"></span><span class="brain-group-name"></span><span class="brain-count">${counts.get(p)}</span>`;
+      row.querySelector(".brain-group-name").textContent = p === "brain" ? "Concepts and maps" : p;
+      boxes.set(p, row.querySelector("input"));
       row.querySelector("input").addEventListener("change", (e) => {
-        if (e.target.checked) { hidden.delete(p); } else { hidden.add(p); }
+        if (e.target.checked) hidden.delete(p); else hidden.add(p);
+        apply();
+      });
+      row.title = "Alt-click to show only this repository";
+      row.addEventListener("click", (e) => {
+        if (!e.altKey) return;
+        e.preventDefault();
+        hidden.clear();
+        boxes.forEach((box, q) => { box.checked = q === p; if (q !== p) hidden.add(q); });
         apply();
       });
       groups.appendChild(row);
     });
-    const search = panel.querySelector("input[type=search]");
-    const orphans = panel.querySelector('[data-opt="orphans"]');
     const concepts = panel.querySelector('[data-opt="concepts"]');
+    const orphans = panel.querySelector('[data-opt="orphans"]');
     const stats = panel.querySelector(".brain-stats");
     function apply() {
-      const term = search.value.trim().toLowerCase();
-      const test = (n) => !hidden.has(n.data.p)
-        && (orphans.checked || n.near.length > 0)
-        && (concepts.checked || n.data.k !== "concept")
-        && (!term || n.data.t.toLowerCase().includes(term) || n.data.g.some((t) => t.toLowerCase().includes(term)));
-      graph.setFilter(test);
-      stats.textContent = `${nodes.filter(test).length} of ${nodes.length} notes, ${links.length} links`;
+      const test = (a) => {
+        const n = v.nodes[a.i];
+        return !hidden.has(n.p) && (orphans.checked || (n.d || 0) > 0) && (concepts.checked || n.k !== "concept");
+      };
+      r.setFilter(test);
+      let shown = 0;
+      graph.forEachNode((_, a) => { if (test(a)) shown += 1; });
+      stats.textContent = `${plural(shown, "note")} of ${graph.order.toLocaleString()} · ${plural(graph.size, "link")} · ${plural(counts.size, "group")}`;
     }
-    [search, orphans, concepts].forEach((el) => el.addEventListener("input", apply));
-    panel.querySelectorAll("[data-force]").forEach((el) => el.addEventListener("input", () => graph.setForce(el.dataset.force, +el.value)));
+    [concepts, orphans].forEach((el) => el.addEventListener("change", apply));
+
+    // Layout: the constellation the site computed, or ForceAtlas2 relaxing it in a worker.
+    let worker = null, settle = 0, frame = 0;
+    stops.push(() => { clearTimeout(settle); cancelAnimationFrame(frame); if (worker) worker.kill(); });
+    function glide(targets) {
+      cancelAnimationFrame(frame);
+      const start = new Map();
+      graph.forEachNode((key, a) => start.set(key, [a.x, a.y]));
+      const began = performance.now();
+      const step = (now) => {
+        const t = Math.min(1, (now - began) / 700), e = t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2;
+        graph.updateEachNodeAttributes((key, a) => {
+          const [x0, y0] = start.get(key), [x1, y1] = targets.get(key);
+          return { ...a, x: x0 + (x1 - x0) * e, y: y0 + (y1 - y0) * e };
+        }, { attributes: ["x", "y"] });
+        if (t < 1) frame = requestAnimationFrame(step);
+      };
+      frame = requestAnimationFrame(step);
+    }
+    function recentre() {
+      // After a relaxation the circles no longer hold: put each repository's name on its notes' centre.
+      const sums = new Map();
+      graph.forEachNode((_, a) => {
+        const p = v.nodes[a.i].p, s = sums.get(p) || { x: 0, y: 0, n: 0, pts: [] };
+        s.x += a.x; s.y += a.y; s.n += 1; s.pts.push([a.x, a.y]); sums.set(p, s);
+      });
+      clusters = [...sums].filter(([, s]) => s.n >= 3).map(([p, s]) => {
+        const x = s.x / s.n, y = s.y / s.n;
+        const reach = s.pts.map(([px, py]) => Math.hypot(px - x, py - y)).sort((a, b) => a - b);
+        const c = known.find((k) => k.p === p) || { t: p };
+        return { p, t: c.t, n: s.n, x, y, r: reach[Math.floor(reach.length * 0.8)] || 10 };
+      });
+    }
+    function layout(mode) {
+      panel.querySelectorAll("[data-layout]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.layout === mode)));
+      clearTimeout(settle);
+      cancelAnimationFrame(frame);
+      if (worker) { worker.kill(); worker = null; }
+      r.reset();
+      if (mode === "home") {
+        clusters = known.filter((c) => c.n >= 3);
+        glide(home);
+        return;
+      }
+      const settings = { ...B.forceAtlas2.inferSettings(graph), barnesHutOptimize: true, gravity: 0.4, scalingRatio: 6, slowDown: 6 };
+      worker = new B.FA2Layout(graph, { settings });
+      worker.start();
+      settle = setTimeout(() => { if (worker) { worker.stop(); recentre(); sigma.refresh(); } }, 2600);
+    }
+    panel.querySelectorAll("[data-layout]").forEach((b) => b.addEventListener("click", () => layout(b.dataset.layout)));
+
+    // Selection: a card with the note's summary, its neighbours and a path finder.
+    let pathFrom = null;
+    function select(key, fly) {
+      if (key === null) {
+        r.clear(); card.hidden = true; pathFrom = null;
+        if (own) history.replaceState(null, "", location.pathname + location.search);
+        return;
+      }
+      const n = v.nodes[graph.getNodeAttribute(key, "i")];
+      if (pathFrom && pathFrom !== key) {
+        const route = B.bidirectional(graph, pathFrom, key);
+        if (route) {
+          r.showPath(route);
+          card.hidden = false;
+          card.innerHTML = `<button type="button" class="brain-card-close" aria-label="Close">×</button><h3>Path: ${plural(route.length - 1, "step")}</h3><ol class="brain-route"></ol>`;
+          const list = card.querySelector(".brain-route");
+          route.forEach((step) => {
+            const m = v.nodes[graph.getNodeAttribute(step, "i")];
+            const li = document.createElement("li");
+            li.innerHTML = `<span class="brain-swatch" style="background:${graph.getNodeAttribute(step, "color")}"></span><a href="${escapeHtml(siteUrl(m.u))}"></a><span class="brain-origin"></span>`;
+            li.querySelector("a").textContent = m.t;
+            li.querySelector(".brain-origin").textContent = m.p;
+            list.appendChild(li);
+          });
+          card.querySelector(".brain-card-close").addEventListener("click", () => select(null));
+          r.fit(route);
+        } else {
+          card.querySelector(".brain-card-hint").textContent = `No path links ${v.nodes[graph.getNodeAttribute(pathFrom, "i")].t} to ${n.t}.`;
+        }
+        pathFrom = null;
+        return;
+      }
+      r.select(key);
+      if (own) history.replaceState(null, "", `#${encodeURIComponent(n.f)}`);
+      const near = graph.neighbors(key).map((k) => v.nodes[graph.getNodeAttribute(k, "i")]).sort((a, b) => (b.d || 0) - (a.d || 0));
+      card.hidden = false;
+      card.innerHTML = `<button type="button" class="brain-card-close" aria-label="Close">×</button>
+        <div class="brain-card-where"><span class="brain-swatch" style="background:${graph.getNodeAttribute(key, "color")}"></span><span></span></div>
+        <h3></h3><p class="brain-card-summary"></p>
+        <p class="brain-card-meta">${plural(n.w || 0, "word")} · ${plural(n.d || 0, "link")}</p>
+        <div class="brain-card-actions"><a class="md-button md-button--primary" href="${escapeHtml(siteUrl(n.u))}">Open note</a><button type="button" class="md-button" data-path>Path to…</button></div>
+        <p class="brain-card-hint"></p>
+        ${near.length ? `<details open><summary>Linked notes (${near.length})</summary><ul class="brain-near"></ul></details>` : ""}`;
+      card.querySelector(".brain-card-where span:last-child").textContent = `${n.p || "vault"} · ${n.k}`;
+      card.querySelector("h3").textContent = n.t;
+      card.querySelector(".brain-card-summary").textContent = n.s || "";
+      const list = card.querySelector(".brain-near");
+      near.slice(0, 14).forEach((m) => {
+        const li = document.createElement("li");
+        const b = document.createElement("button");
+        b.type = "button";
+        b.textContent = m.t;
+        b.addEventListener("click", () => select(String(v.byPath.get(m.f)), true));
+        li.appendChild(b);
+        list.appendChild(li);
+      });
+      if (near.length > 14) list.insertAdjacentHTML("beforeend", `<li class="brain-more">and ${near.length - 14} more</li>`);
+      card.querySelector(".brain-card-close").addEventListener("click", () => select(null));
+      card.querySelector("[data-path]").addEventListener("click", () => {
+        pathFrom = key;
+        card.querySelector(".brain-card-hint").textContent = "Now select or find the note to reach.";
+        find.focus();
+      });
+      if (fly) r.fly(key);
+    }
+    sigma.on("clickNode", ({ node }) => (node === r.look.selected && !pathFrom ? open(v.nodes[graph.getNodeAttribute(node, "i")].u) : select(node)));
+    sigma.on("doubleClickNode", (e) => { e.event.preventSigmaDefault(); open(v.nodes[graph.getNodeAttribute(e.node, "i")].u); });
+    sigma.on("clickStage", () => { if (!pathFrom) select(null); });
+
+    // Find: suggestions as you type; choosing one flies to it.
+    const find = panel.querySelector(".brain-find input");
+    const suggest = panel.querySelector(".brain-suggest");
+    let rows = [], cursor = 0;
+    function paintSuggest() {
+      suggest.replaceChildren(...rows.map((i, k) => {
+        const li = document.createElement("li");
+        li.setAttribute("role", "option");
+        li.innerHTML = `<span class="brain-swatch" style="background:${colourOf(v, v.nodes[i])}"></span><span></span><small></small>`;
+        li.children[1].textContent = v.nodes[i].t;
+        li.children[2].textContent = v.nodes[i].p;
+        if (k === cursor) li.className = "is-active";
+        li.addEventListener("mousedown", (e) => { e.preventDefault(); choose(i); });
+        return li;
+      }));
+    }
+    function choose(i) {
+      rows = []; paintSuggest(); find.value = ""; find.blur();
+      const key = String(i);
+      const n = v.nodes[i];
+      // A note the filters hide is shown before flying to it.
+      if (hidden.has(n.p) || (!orphans.checked && !(n.d > 0)) || (!concepts.checked && n.k === "concept")) {
+        hidden.delete(n.p);
+        if (boxes.has(n.p)) boxes.get(n.p).checked = true;
+        if (!(n.d > 0)) orphans.checked = true;
+        if (n.k === "concept") concepts.checked = true;
+        apply();
+      }
+      select(key, true);
+    }
+    find.addEventListener("input", () => {
+      const term = find.value.trim().toLowerCase();
+      rows = !term ? [] : v.nodes.map((n, i) => [score(term, n.t), i]).filter((x) => x[0] >= 0)
+        .sort((a, b) => b[0] - a[0]).slice(0, 8).map((x) => x[1]);
+      cursor = 0;
+      paintSuggest();
+    });
+    find.addEventListener("keydown", (e) => {
+      e.stopPropagation();
+      if (e.key === "ArrowDown") { e.preventDefault(); cursor = Math.min(cursor + 1, rows.length - 1); paintSuggest(); }
+      if (e.key === "ArrowUp") { e.preventDefault(); cursor = Math.max(cursor - 1, 0); paintSuggest(); }
+      if (e.key === "Enter" && rows[cursor] !== undefined) { e.preventDefault(); choose(rows[cursor]); }
+      if (e.key === "Escape") { rows = []; paintSuggest(); find.blur(); }
+    });
+    find.addEventListener("blur", () => setTimeout(() => { rows = []; paintSuggest(); }, 150));
+    const keys = (e) => {
+      if (e.key === "/" && document.activeElement !== find && !e.target.closest("input, textarea")) { e.preventDefault(); find.focus(); }
+      if (e.key === "Escape" && document.activeElement !== find) select(null);
+    };
+    // On its own page the graph answers anywhere; in a workspace pane, only while it has the focus.
+    const listener = own ? document : host;
+    listener.addEventListener("keydown", keys);
+    stops.push(() => listener.removeEventListener("keydown", keys));
+
     apply();
-    return { destroy() { graph.destroy(); panel.remove(); } };
+    if (own) {
+      // A note's path in the address selects it; an address that is not one is left alone.
+      let deep = "";
+      try { deep = decodeURIComponent(location.hash.slice(1)); } catch (error) { deep = ""; }
+      if (deep && v.byPath.has(deep)) {
+        const timer = setTimeout(() => choose(v.byPath.get(deep)), 300);
+        stops.push(() => clearTimeout(timer));
+      }
+    }
   }
 
-  /* ---- local graph -------------------------------------------------------- */
+  /* ---- local graph: a note at the centre, its links in rings ----------------- */
+  // Rings: the note, then its links, then theirs, each ring sorted by repository so colours band together.
+  function ringLayout(v, centre, depth, cap) {
+    const rings = [[centre]];
+    const seen = new Set([centre]);
+    for (let d = 1; d <= depth; d += 1) {
+      const next = [];
+      rings[d - 1].forEach((i) => v.neighbours[i].forEach((j) => { if (!seen.has(j) && seen.size < cap) { seen.add(j); next.push(j); } }));
+      if (!next.length) break;
+      next.sort((a, b) => (v.nodes[a].p + v.nodes[a].t).localeCompare(v.nodes[b].p + v.nodes[b].t));
+      rings.push(next);
+    }
+    const where = new Map([[centre, [0, 0]]]);
+    rings.slice(1).forEach((ring, d) => ring.forEach((i, k) => {
+      const angle = (2 * Math.PI * k) / ring.length + d * 0.35;
+      where.set(i, [Math.cos(angle) * (d + 1) * 10, Math.sin(angle) * (d + 1) * 10]);
+    }));
+    return where;
+  }
+  // Draws note `centre`'s rings into `host` and resolves to a handle, or to null
+  // where WebGL 2 is missing. The page's side panel and the workspace both use it.
+  async function localGraph(host, centre, depth = 1, options = {}) {
+    if (!hasWebGL2()) return null;
+    const [B, v] = await Promise.all([engine(), vault()]);
+    const where = ringLayout(v, centre, depth, options.cap || 90);
+    // Small dots in a small panel: the more rings, the smaller.
+    const scale = depth > 1 ? 0.35 : 0.55;
+    const graph = buildGraph(B, v, [...where.keys()], (i) => where.get(i), scale);
+    graph.setNodeAttribute(String(centre), "size", Math.max(7, sizeOf(v.nodes[centre]) * scale + 3));
+    const r = renderer(B, graph, host, { labelAt: 6, labelDensity: 0.5, pinned: String(centre), screenSizes: true });
+    r.sigma.on("clickNode", ({ node, event }) => { if (+node !== centre) open(v.nodes[+node].u, false, event && event.original); });
+    r.redraw();
+    return { destroy() { r.destroy(); } };
+  }
   async function mountLocalGraph() {
     const panel = document.querySelector(".brain-panel[data-brain-path]");
     const sidebar = document.querySelector(".md-sidebar--secondary .md-sidebar__inner");
-    if (!panel) return;
+    if (!panel || !hasWebGL2()) return;
     const page = generation;
-    const v = await vault();
+    const [v] = await Promise.all([vault(), engine()]);
     // The reader may have moved on while the vault was loading.
     if (page !== generation || !panel.isConnected) return;
     const centre = v.byPath.get(panel.dataset.brainPath);
     if (centre === undefined || !v.neighbours[centre].size) return;
-    const near = new Set([centre, ...v.neighbours[centre]]);
-    if (near.size < 40) [...near].forEach((i) => v.neighbours[i].forEach((j) => { if (near.size < 60) near.add(j); }));
-    const { nodes, links, lookup } = buildSubgraph(v, [...near]);
     const title = document.createElement("div");
     title.className = "brain-local-title";
-    title.textContent = "Local graph";
+    title.innerHTML = 'Local graph <span class="brain-depth" role="group" aria-label="Depth"><button type="button" aria-pressed="true" data-depth="1">1</button><button type="button" aria-pressed="false" data-depth="2">2</button></span>';
     const host = document.createElement("div");
     host.className = "brain-local";
     const visible = sidebar && sidebar.offsetParent !== null;
     if (visible) { sidebar.append(title, host); } else { panel.prepend(title, host); }
-    const graph = createGraph(host, v, nodes, links, { focus: lookup.get(centre), scale: 0.8, repel: -90, distance: 40, labelAt: 8 });
-    active.push({ destroy() { graph.destroy(); title.remove(); host.remove(); } });
+    let drawn = null, asked = 0;
+    function draw(depth) {
+      asked += 1;
+      const mine = asked;
+      if (drawn) { drawn.destroy(); drawn = null; }
+      title.querySelectorAll("[data-depth]").forEach((b) => b.setAttribute("aria-pressed", String(+b.dataset.depth === depth)));
+      localGraph(host, centre, depth).then((handle) => {
+        if (!handle) return;
+        if (mine === asked) { drawn = handle; } else { handle.destroy(); }
+      }).catch((error) => console.error("brain: the local graph failed to draw", error));
+    }
+    title.querySelectorAll("[data-depth]").forEach((b) => b.addEventListener("click", () => draw(+b.dataset.depth)));
+    active.push({ destroy() { asked += 1; if (drawn) drawn.destroy(); title.remove(); host.remove(); } });
+    draw(1);
+  }
+
+  /* ---- atlas: the server drew it; hovering a wedge names it in the middle ---- */
+  function mountAtlas(host) {
+    const svg = host.querySelector("svg.atlas");
+    if (!svg) return;
+    const main = svg.querySelector(".atlas-centre"), sub = svg.querySelector(".atlas-sub");
+    const rest = [main.textContent, sub.textContent];
+    const show = (arc) => {
+      const [path, pages] = arc.dataset.label.split(" · ");
+      const parts = path.split(" › ");
+      main.textContent = parts[parts.length - 1].slice(0, 26);
+      sub.textContent = `${parts.length > 1 ? parts[0] + " · " : ""}${pages}`;
+      svg.classList.add("is-focused");
+      arc.classList.add("is-active");
+    };
+    const reset = (arc) => { [main.textContent, sub.textContent] = rest; svg.classList.remove("is-focused"); arc.classList.remove("is-active"); };
+    svg.querySelectorAll(".atlas-arc").forEach((arc) => {
+      const target = arc.closest("a") || arc;
+      target.addEventListener("mouseenter", () => show(arc));
+      target.addEventListener("mouseleave", () => reset(arc));
+      target.addEventListener("focus", () => show(arc));
+      target.addEventListener("blur", () => reset(arc));
+    });
+  }
+
+  /* ---- Atlas links --------------------------------------------------------- */
+  // Material's instant navigation follows a clicked link with `new URL(link.href)`. On an SVG link
+  // `href` is an object, not a string, so that throws and the browser reloads the whole page.
+  // A click on the Atlas or an emblem is taken here first, on the way down, and followed with an
+  // ordinary link instead; a modified click is left to the browser, or to the workspace.
+  const XLINK = "http://www.w3.org/1999/xlink";
+  function bindAtlasLinks() {
+    document.addEventListener("click", (event) => {
+      const link = event.target instanceof Element ? event.target.closest("svg.atlas a") : null;
+      if (!link || event.button !== 0) return;
+      event.stopPropagation();
+      const raw = link.getAttributeNS(XLINK, "href") || link.getAttribute("href");
+      if (!raw) return;
+      const modified = event.metaKey || event.ctrlKey || event.shiftKey || event.altKey;
+      if (modified && !api.opener) return;
+      event.preventDefault();
+      open(new URL(raw, location.href).href, false, event);
+    }, true);
   }
 
   /* ---- hover preview ------------------------------------------------------ */
@@ -590,14 +991,17 @@
 
   /* ---- mounting ----------------------------------------------------------- */
   api.views.graph = mountGlobalGraph;
+  api.views.atlas = mountAtlas;
   api.views.canvas = mountCanvas;
   api.views.table = mountTable;
+  // The site draws these at build time: their host keeps what it holds.
+  const DRAWN = new Set(["atlas"]);
 
   function mountHost(host) {
     const mount = api.views[host.dataset.brainView];
     if (!mount || host.dataset.brainMounted) return;
     host.dataset.brainMounted = "1";
-    host.replaceChildren();
+    if (!DRAWN.has(host.dataset.brainView)) host.replaceChildren();
     const page = generation;
     Promise.resolve().then(() => mount(host)).then((handle) => {
       if (!handle) return;
@@ -631,7 +1035,7 @@
 
   Object.assign(api, {
     vault, siteUrl, cssVar, colourOf, score, rank, pick, open, openSwitcher,
-    createGraph, buildSubgraph, indexForUrl, hidePreview,
+    localGraph, indexForUrl, hidePreview,
   });
   window.BrainVault = api;
 
@@ -639,5 +1043,6 @@
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "o") { e.preventDefault(); openSwitcher(); }
   });
   bindPreviews();
+  bindAtlasLinks();
   if (typeof document$ !== "undefined") { document$.subscribe(mountPage); } else { document.addEventListener("DOMContentLoaded", mountPage); }
 })();

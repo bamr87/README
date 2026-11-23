@@ -73,8 +73,8 @@ class TestViewsAgree(unittest.TestCase):
             for page in sorted((root / "docs" / "brain").glob("*.md")):
                 for view in HOST.findall(page.read_text(encoding="utf-8")):
                     asked[view] = page.name
-        self.assertEqual(asked, {"graph": "graph.md", "canvas": "canvas.md", "table": "pages.md",
-                                 "workspace": "workspace.md"})
+        self.assertEqual(asked, {"graph": "graph.md", "atlas": "atlas.md", "canvas": "canvas.md",
+                                 "table": "pages.md", "workspace": "workspace.md"})
         self.assertEqual(set(asked) - self._views_in_the_browser(), set())
 
     def test_the_workspace_reads_and_never_writes(self):

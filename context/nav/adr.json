@@ -5,18 +5,18 @@
   "title": "Adr",
   "corpus": "docs/adr",
   "counts": {
-    "pages": 4,
+    "pages": 6,
     "sections": 0,
     "max_depth": 1,
     "skipped": 0
   },
   "skipped": [],
-  "fingerprint": "5e760fee94927e8b",
+  "fingerprint": "046d2f2d7e4e3849",
   "tree": {
     "type": "section",
     "title": "Adr",
     "index": "adr/README.md",
-    "pages": 4,
+    "pages": 6,
     "children": [
       {
         "type": "page",
@@ -36,6 +36,18 @@
         "title": "ADR 0002 \u2014 Treat docs/ as an Obsidian vault with one link resolver",
         "path": "adr/0002-docs-as-an-obsidian-vault.md",
         "rel": "0002-docs-as-an-obsidian-vault.md"
+      },
+      {
+        "type": "page",
+        "title": "ADR 0003 \u2014 README is the fleet's knowledge plane, and the hub console\u2026",
+        "path": "adr/0003-readme-as-the-fleet-knowledge-plane.md",
+        "rel": "0003-readme-as-the-fleet-knowledge-plane.md"
+      },
+      {
+        "type": "page",
+        "title": "ADR 0004 \u2014 The site's graph is a WebGL explorer, and the Atlas draws\u2026",
+        "path": "adr/0004-webgl-graph-explorer-and-atlas.md",
+        "rel": "0004-webgl-graph-explorer-and-atlas.md"
       },
       {
         "type": "page",
