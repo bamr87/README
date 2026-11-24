@@ -1,5 +1,29 @@
 # Changelog
 
+## [0.6.0](https://github.com/bamr87/README/compare/v0.5.0...v0.6.0) (2026-11-23)
+
+
+### Added
+
+* **assist:** adopt the fleet page bridge (kit v0.1.1) ([abd5959](https://github.com/bamr87/README/commit/abd59591ac87f722b4a3b219891bf3780d4bd671))
+* **assist:** let an assistant session see and use this repo's pages ([479a807](https://github.com/bamr87/README/commit/479a807b4d6b2cba55cb50132193ab3990986128))
+* **assist:** mount the page bridge behind FLEET_ASSIST=1 ([9c8feb2](https://github.com/bamr87/README/commit/9c8feb2116c571934556cae57e8fc10c11a1a2f8))
+* **site:** vault workspace at /brain/workspace/ (README-019) ([0c21df8](https://github.com/bamr87/README/commit/0c21df8026612f2794a0c20c65912a75ff3911cc))
+* **site:** vault workspace at /brain/workspace/ (README-019) ([41ffe7d](https://github.com/bamr87/README/commit/41ffe7dc5ca377a667ddbeb86008a69d352b854a))
+* **site:** WebGL graph explorer and Atlas; propose README as the fleet's knowledge plane ([1c7f65e](https://github.com/bamr87/README/commit/1c7f65e6abb1c32d4afa44f82f0efbc92423e764))
+* **site:** WebGL graph explorer, build-time constellation layout and the Atlas ([fbda271](https://github.com/bamr87/README/commit/fbda271546dc00645e16307c9c4598fd913161de))
+
+
+### Fixed
+
+* **site:** graph theme, Atlas clicks and contrast, paths and teardown ([d274ced](https://github.com/bamr87/README/commit/d274ceda2686c771406cfee6db25460fc389714a))
+* **site:** graph theme, Atlas clicks and contrast, paths and teardown ([7166ee9](https://github.com/bamr87/README/commit/7166ee935ab34edad91dcb244305abd5bcd931b3))
+
+
+### Documentation
+
+* **adr:** ADR 0004 names the Atlas as README-020 ([427ca96](https://github.com/bamr87/README/commit/427ca96f9646074654158c5304c8aa0346e4a43b))
+
 ## [0.5.0](https://github.com/bamr87/README/compare/v0.4.0...v0.5.0) (2026-11-21)
 
 
